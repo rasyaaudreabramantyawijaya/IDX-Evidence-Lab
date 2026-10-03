@@ -1,0 +1,427 @@
+{
+  "symbol": "AADI.JK",
+  "start": "2026-05-29",
+  "end": "2026-08-26",
+  "data": [
+    {
+      "date": "2026-05-29",
+      "net_foreign_inflow": -39726915000,
+      "foreign_buy_idr": 69731372500,
+      "foreign_sell_idr": 109458287500,
+      "foreign_share": 0.5144
+    },
+    {
+      "date": "2026-06-02",
+      "net_foreign_inflow": -58734537500,
+      "foreign_buy_idr": 27247157500,
+      "foreign_sell_idr": 85981695000,
+      "foreign_share": 0.4064
+    },
+    {
+      "date": "2026-06-03",
+      "net_foreign_inflow": -14790050000,
+      "foreign_buy_idr": 36039110000,
+      "foreign_sell_idr": 50829160000,
+      "foreign_share": 0.2276
+    },
+    {
+      "date": "2026-06-04",
+      "net_foreign_inflow": -17065570000,
+      "foreign_buy_idr": 42494740000,
+      "foreign_sell_idr": 59560310000,
+      "foreign_share": 0.4139
+    },
+    {
+      "date": "2026-06-05",
+      "net_foreign_inflow": -40844922500,
+      "foreign_buy_idr": 70499932500,
+      "foreign_sell_idr": 111344855000,
+      "foreign_share": 0.4873
+    },
+    {
+      "date": "2026-06-08",
+      "net_foreign_inflow": -8329347500,
+      "foreign_buy_idr": 49077862500,
+      "foreign_sell_idr": 57407210000,
+      "foreign_share": 0.4843
+    },
+    {
+      "date": "2026-06-09",
+      "net_foreign_inflow": -52739885000,
+      "foreign_buy_idr": 14797485000,
+      "foreign_sell_idr": 67537370000,
+      "foreign_share": 0.4095
+    },
+    {
+      "date": "2026-06-10",
+      "net_foreign_inflow": -37138585000,
+      "foreign_buy_idr": 25565570000,
+      "foreign_sell_idr": 62704155000,
+      "foreign_share": 0.3942
+    },
+    {
+      "date": "2026-06-11",
+      "net_foreign_inflow": -30634960000,
+      "foreign_buy_idr": 55607560000,
+      "foreign_sell_idr": 86242520000,
+      "foreign_share": 0.4894
+    },
+    {
+      "date": "2026-06-12",
+      "net_foreign_inflow": -35617055000,
+      "foreign_buy_idr": 49550537500,
+      "foreign_sell_idr": 85167592500,
+      "foreign_share": 0.3696
+    },
+    {
+      "date": "2026-06-15",
+      "net_foreign_inflow": -32331152500,
+      "foreign_buy_idr": 25849057500,
+      "foreign_sell_idr": 58180210000,
+      "foreign_share": 0.2177
+    },
+    {
+      "date": "2026-06-17",
+      "net_foreign_inflow": -25928552500,
+      "foreign_buy_idr": 23841150000,
+      "foreign_sell_idr": 49769702500,
+      "foreign_share": 0.3009
+    },
+    {
+      "date": "2026-06-18",
+      "net_foreign_inflow": -48517667500,
+      "foreign_buy_idr": 11677362500,
+      "foreign_sell_idr": 60195030000,
+      "foreign_share": 0.4039
+    },
+    {
+      "date": "2026-06-19",
+      "net_foreign_inflow": -104752877500,
+      "foreign_buy_idr": 346370247500,
+      "foreign_sell_idr": 451123125000,
+      "foreign_share": 0.8502
+    },
+    {
+      "date": "2026-06-22",
+      "net_foreign_inflow": -60773807500,
+      "foreign_buy_idr": 95914467500,
+      "foreign_sell_idr": 156688275000,
+      "foreign_share": 0.5922
+    },
+    {
+      "date": "2026-06-23",
+      "net_foreign_inflow": -49105742500,
+      "foreign_buy_idr": 26690117500,
+      "foreign_sell_idr": 75795860000,
+      "foreign_share": 0.4469
+    },
+    {
+      "date": "2026-06-24",
+      "net_foreign_inflow": -53350575000,
+      "foreign_buy_idr": 20080217500,
+      "foreign_sell_idr": 73430792500,
+      "foreign_share": 0.338
+    },
+    {
+      "date": "2026-06-25",
+      "net_foreign_inflow": -13200542500,
+      "foreign_buy_idr": 20427410000,
+      "foreign_sell_idr": 33627952500,
+      "foreign_share": 0.5038
+    },
+    {
+      "date": "2026-06-26",
+      "net_foreign_inflow": -25778065000,
+      "foreign_buy_idr": 19620642500,
+      "foreign_sell_idr": 45398707500,
+      "foreign_share": 0.3432
+    },
+    {
+      "date": "2026-06-29",
+      "net_foreign_inflow": -43178960000,
+      "foreign_buy_idr": 21446455000,
+      "foreign_sell_idr": 64625415000,
+      "foreign_share": 0.3504
+    },
+    {
+      "date": "2026-06-30",
+      "net_foreign_inflow": -59362067500,
+      "foreign_buy_idr": 20907830000,
+      "foreign_sell_idr": 80269897500,
+      "foreign_share": 0.3475
+    },
+    {
+      "date": "2026-07-01",
+      "net_foreign_inflow": 2855992500,
+      "foreign_buy_idr": 24170255000,
+      "foreign_sell_idr": 21314262500,
+      "foreign_share": 0.433
+    },
+    {
+      "date": "2026-07-02",
+      "net_foreign_inflow": -2065817500,
+      "foreign_buy_idr": 14105872500,
+      "foreign_sell_idr": 16171690000,
+      "foreign_share": 0.3239
+    },
+    {
+      "date": "2026-07-03",
+      "net_foreign_inflow": 7251302500,
+      "foreign_buy_idr": 16017460000,
+      "foreign_sell_idr": 8766157500,
+      "foreign_share": 0.311
+    },
+    {
+      "date": "2026-07-06",
+      "net_foreign_inflow": -3271017500,
+      "foreign_buy_idr": 8180272500,
+      "foreign_sell_idr": 11451290000,
+      "foreign_share": 0.313
+    },
+    {
+      "date": "2026-07-07",
+      "net_foreign_inflow": -486455000,
+      "foreign_buy_idr": 28095402500,
+      "foreign_sell_idr": 28581857500,
+      "foreign_share": 0.421
+    },
+    {
+      "date": "2026-07-08",
+      "net_foreign_inflow": -2547987500,
+      "foreign_buy_idr": 9626307500,
+      "foreign_sell_idr": 12174295000,
+      "foreign_share": 0.3496
+    },
+    {
+      "date": "2026-07-09",
+      "net_foreign_inflow": -22845947500,
+      "foreign_buy_idr": 10479950000,
+      "foreign_sell_idr": 33325897500,
+      "foreign_share": 0.3786
+    },
+    {
+      "date": "2026-07-10",
+      "net_foreign_inflow": 157675000,
+      "foreign_buy_idr": 23193245000,
+      "foreign_sell_idr": 23035570000,
+      "foreign_share": 0.4461
+    },
+    {
+      "date": "2026-07-13",
+      "net_foreign_inflow": -14958245000,
+      "foreign_buy_idr": 55146912500,
+      "foreign_sell_idr": 70105157500,
+      "foreign_share": 0.564
+    },
+    {
+      "date": "2026-07-14",
+      "net_foreign_inflow": -18387052500,
+      "foreign_buy_idr": 27100212500,
+      "foreign_sell_idr": 45487265000,
+      "foreign_share": 0.4555
+    },
+    {
+      "date": "2026-07-15",
+      "net_foreign_inflow": 6192390000,
+      "foreign_buy_idr": 36298380000,
+      "foreign_sell_idr": 30105990000,
+      "foreign_share": 0.5238
+    },
+    {
+      "date": "2026-07-16",
+      "net_foreign_inflow": -4161290000,
+      "foreign_buy_idr": 15795452500,
+      "foreign_sell_idr": 19956742500,
+      "foreign_share": 0.3589
+    },
+    {
+      "date": "2026-07-17",
+      "net_foreign_inflow": -5718130000,
+      "foreign_buy_idr": 17104955000,
+      "foreign_sell_idr": 22823085000,
+      "foreign_share": 0.3066
+    },
+    {
+      "date": "2026-07-20",
+      "net_foreign_inflow": -28067772500,
+      "foreign_buy_idr": 17725015000,
+      "foreign_sell_idr": 45792787500,
+      "foreign_share": 0.3021
+    },
+    {
+      "date": "2026-07-21",
+      "net_foreign_inflow": -27900695000,
+      "foreign_buy_idr": 7405085000,
+      "foreign_sell_idr": 35305780000,
+      "foreign_share": 0.2715
+    },
+    {
+      "date": "2026-07-22",
+      "net_foreign_inflow": 4788330000,
+      "foreign_buy_idr": 26517497500,
+      "foreign_sell_idr": 21729167500,
+      "foreign_share": 0.4128
+    },
+    {
+      "date": "2026-07-23",
+      "net_foreign_inflow": -11403877500,
+      "foreign_buy_idr": 19684015000,
+      "foreign_sell_idr": 31087892500,
+      "foreign_share": 0.2686
+    },
+    {
+      "date": "2026-07-24",
+      "net_foreign_inflow": -2081002500,
+      "foreign_buy_idr": 49096682500,
+      "foreign_sell_idr": 51177685000,
+      "foreign_share": 0.4913
+    },
+    {
+      "date": "2026-07-27",
+      "net_foreign_inflow": 15217020000,
+      "foreign_buy_idr": 42947087500,
+      "foreign_sell_idr": 27730067500,
+      "foreign_share": 0.4873
+    },
+    {
+      "date": "2026-07-28",
+      "net_foreign_inflow": -10363675000,
+      "foreign_buy_idr": 29419372500,
+      "foreign_sell_idr": 39783047500,
+      "foreign_share": 0.5758
+    },
+    {
+      "date": "2026-07-29",
+      "net_foreign_inflow": 4738205000,
+      "foreign_buy_idr": 30446397500,
+      "foreign_sell_idr": 25708192500,
+      "foreign_share": 0.4712
+    },
+    {
+      "date": "2026-07-30",
+      "net_foreign_inflow": 9907607500,
+      "foreign_buy_idr": 46095092500,
+      "foreign_sell_idr": 36187485000,
+      "foreign_share": 0.2986
+    },
+    {
+      "date": "2026-07-31",
+      "net_foreign_inflow": -29296912500,
+      "foreign_buy_idr": 48009185000,
+      "foreign_sell_idr": 77306097500,
+      "foreign_share": 0.4856
+    },
+    {
+      "date": "2026-08-03",
+      "net_foreign_inflow": -17308890000,
+      "foreign_buy_idr": 4589462500,
+      "foreign_sell_idr": 21898352500,
+      "foreign_share": 0.3197
+    },
+    {
+      "date": "2026-08-04",
+      "net_foreign_inflow": 4019620000,
+      "foreign_buy_idr": 20427962500,
+      "foreign_sell_idr": 16408342500,
+      "foreign_share": 0.345
+    },
+    {
+      "date": "2026-08-05",
+      "net_foreign_inflow": 7047500,
+      "foreign_buy_idr": 11147345000,
+      "foreign_sell_idr": 11140297500,
+      "foreign_share": 0.2272
+    },
+    {
+      "date": "2026-08-06",
+      "net_foreign_inflow": -11472717500,
+      "foreign_buy_idr": 11692910000,
+      "foreign_sell_idr": 23165627500,
+      "foreign_share": 0.195
+    },
+    {
+      "date": "2026-08-07",
+      "net_foreign_inflow": 29210540000,
+      "foreign_buy_idr": 45599267500,
+      "foreign_sell_idr": 16388727500,
+      "foreign_share": 0.2993
+    },
+    {
+      "date": "2026-08-10",
+      "net_foreign_inflow": 6696465000,
+      "foreign_buy_idr": 17587015000,
+      "foreign_sell_idr": 10890550000,
+      "foreign_share": 0.322
+    },
+    {
+      "date": "2026-08-11",
+      "net_foreign_inflow": 4700382500,
+      "foreign_buy_idr": 31636907500,
+      "foreign_sell_idr": 26936525000,
+      "foreign_share": 0.3173
+    },
+    {
+      "date": "2026-08-12",
+      "net_foreign_inflow": -17377115000,
+      "foreign_buy_idr": 10073385000,
+      "foreign_sell_idr": 27450500000,
+      "foreign_share": 0.4016
+    },
+    {
+      "date": "2026-08-13",
+      "net_foreign_inflow": -29510622500,
+      "foreign_buy_idr": 15270332500,
+      "foreign_sell_idr": 44780955000,
+      "foreign_share": 0.3653
+    },
+    {
+      "date": "2026-08-14",
+      "net_foreign_inflow": 21066210000,
+      "foreign_buy_idr": 46347430000,
+      "foreign_sell_idr": 25281220000,
+      "foreign_share": 0.3597
+    },
+    {
+      "date": "2026-08-18",
+      "net_foreign_inflow": 4699567500,
+      "foreign_buy_idr": 53404147500,
+      "foreign_sell_idr": 48704580000,
+      "foreign_share": 0.3315
+    },
+    {
+      "date": "2026-08-19",
+      "net_foreign_inflow": -49009692500,
+      "foreign_buy_idr": 25488105000,
+      "foreign_sell_idr": 74497797500,
+      "foreign_share": 0.3338
+    },
+    {
+      "date": "2026-08-20",
+      "net_foreign_inflow": -22287690000,
+      "foreign_buy_idr": 29992610000,
+      "foreign_sell_idr": 52280300000,
+      "foreign_share": 0.4087
+    },
+    {
+      "date": "2026-08-21",
+      "net_foreign_inflow": 0,
+      "foreign_buy_idr": 0,
+      "foreign_sell_idr": 0,
+      "foreign_share": 0.0
+    },
+    {
+      "date": "2026-08-24",
+      "net_foreign_inflow": 41187650000,
+      "foreign_buy_idr": 58896515000,
+      "foreign_sell_idr": 17708865000,
+      "foreign_share": 0.2711
+    },
+    {
+      "date": "2026-08-26",
+      "net_foreign_inflow": -29007440000,
+      "foreign_buy_idr": 16047485000,
+      "foreign_sell_idr": 45054925000,
+      "foreign_share": 0.3267
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "results": [
+    {
+      "title": "Mery Sofi sells shares of AKR Corporindo",
+      "body": "Mery Sofi sold 135,700 shares of AKR Corporindo. This decreases their holdings from 20,303,000 to 20,167,300 shares. The stated purpose of the transaction was divestiture.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-10092026-8683-00.pdf-0.pdf",
+      "timestamp": "2026-09-10T17:39:02",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "AKRA.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Mery Sofi",
+      "holding_before": 20303000,
+      "holding_after": 20167300,
+      "amount_transaction": 135700,
+      "price": 1524.897,
+      "transaction_value": 206928500.0,
+      "price_transaction": [
+        {
+          "date": "2026-09-08",
+          "type": "sell",
+          "price": 1505,
+          "amount_transacted": 75700
+        },
+        {
+          "date": "2026-09-09",
+          "type": "sell",
+          "price": 1550,
+          "amount_transacted": 60000
+        }
+      ],
+      "share_percentage_before": 0.101,
+      "share_percentage_after": 0.1,
+      "share_percentage_transaction": 0.001,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Bambang Soetiono S sells shares of AKR Corporindo",
+      "body": "This is Bambang Soetiono S's 3rd insider disposal in the last 6 months, totaling a distribution of 8,750,000 shares transacted at an average price of IDR 1,492. Bambang Soetiono S's ownership in AKR Corporindo has decreased from 0.05% to 0.025% in this period.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-10092026-3226-00.pdf-0.pdf",
+      "timestamp": "2026-09-10T17:30:51",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "AKRA.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Bambang Soetiono S",
+      "holding_before": 10030000,
+      "holding_after": 5030000,
+      "amount_transaction": 5000000,
+      "price": 1522.5,
+      "transaction_value": 7612500000.0,
+      "price_transaction": [
+        {
+          "date": "2026-09-08",
+          "type": "sell",
+          "price": 1520,
+          "amount_transacted": 2500000
+        },
+        {
+          "date": "2026-09-08",
+          "type": "sell",
+          "price": 1525,
+          "amount_transacted": 2500000
+        }
+      ],
+      "share_percentage_before": 0.05,
+      "share_percentage_after": 0.025,
+      "share_percentage_transaction": 0.025,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Bambang Soetiono S sells shares of AKR Corporindo",
+      "body": "Bambang Soetiono S sold 1,009,200 shares of AKR Corporindo. This decreases their holdings from 11,039,200 to 10,030,000 shares. The stated purpose of the transaction was divestiture.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-09092026-9257-00.pdf-0.pdf",
+      "timestamp": "2026-09-09T18:53:33",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "AKRA.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Bambang Soetiono S",
+      "holding_before": 11039200,
+      "holding_after": 10030000,
+      "amount_transaction": 1009200,
+      "price": 1459.997,
+      "transaction_value": 1473428500.0,
+      "price_transaction": [
+        {
+          "date": "2026-09-07",
+          "type": "sell",
+          "price": 1445,
+          "amount_transacted": 538000
+        },
+        {
+          "date": "2026-09-08",
+          "type": "sell",
+          "price": 1480,
+          "amount_transacted": 199700
+        },
+        {
+          "date": "2026-09-08",
+          "type": "sell",
+          "price": 1475,
+          "amount_transacted": 271500
+        }
+      ],
+      "share_percentage_before": 0.055,
+      "share_percentage_after": 0.05,
+      "share_percentage_transaction": 0.005,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Nery Polim sells shares of AKR Corporindo",
+      "body": "Nery Polim sold 550,000 shares of AKR Corporindo. This decreases their holdings from 6,565,000 to 6,015,000 shares. The stated purpose of the transaction was divestiture.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-09092026-4898-00.pdf-0.pdf",
+      "timestamp": "2026-09-09T18:33:15",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "AKRA.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Nery Polim",
+      "holding_before": 6565000,
+      "holding_after": 6015000,
+      "amount_transaction": 550000,
+      "price": 1534.545,
+      "transaction_value": 844000000.0,
+      "price_transaction": [
+        {
+          "date": "2026-09-08",
+          "type": "sell",
+          "price": 1540,
+          "amount_transacted": 250000
+        },
+        {
+          "date": "2026-09-08",
+          "type": "sell",
+          "price": 1530,
+          "amount_transacted": 300000
+        }
+      ],
+      "share_percentage_before": 0.033,
+      "share_percentage_after": 0.03,
+      "share_percentage_transaction": 0.003,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Jimmy Tandyo sells shares of AKR Corporindo",
+      "body": "This is Jimmy Tandyo's 4th insider disposal in the last 6 months, totaling a distribution of 6,250,000 shares transacted at an average price of IDR 1,455. Jimmy Tandyo's ownership in AKR Corporindo has decreased from 0.272% to 0.259% in this period.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-09092026-4675-00.pdf-0.pdf",
+      "timestamp": "2026-09-09T18:14:06",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "AKRA.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Jimmy Tandyo",
+      "holding_before": 54614000,
+      "holding_after": 52000000,
+      "amount_transaction": 2614000,
+      "price": 1469.128,
+      "transaction_value": 3840300000.0,
+      "price_transaction": [
+        {
+          "date": "2026-09-07",
+          "type": "sell",
+          "price": 1450,
+          "amount_transacted": 1614000
+        },
+        {
+          "date": "2026-09-08",
+          "type": "sell",
+          "price": 1500,
+          "amount_transacted": 1000000
+        }
+      ],
+      "share_percentage_before": 0.272,
+      "share_percentage_after": 0.259,
+      "share_percentage_transaction": 0.013,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Jimmy Tandyo sells shares of AKR Corporindo",
+      "body": "This is Jimmy Tandyo's 3rd insider disposal in the last 6 months, totaling a distribution of 3,636,000 shares transacted at an average price of IDR 1,446. Jimmy Tandyo's ownership in AKR Corporindo has decreased from 0.282% to 0.272% in this period.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-03092026-8380-00.pdf-0.pdf",
+      "timestamp": "2026-09-03T21:18:25",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "AKRA.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Jimmy Tandyo",
+      "holding_before": 56624700,
+      "holding_after": 54614000,
+      "amount_transaction": 2010700,
+      "price": 1447.125,
+      "transaction_value": 2909734000.0,
+      "price_transaction": [
+        {
+          "date": "2026-09-02",
+          "type": "sell",
+          "price": 1455,
+          "amount_transacted": 1722800
+        },
+        {
+          "date": "2026-09-02",
+          "type": "sell",
+          "price": 1400,
+          "amount_transacted": 287900
+        }
+      ],
+      "share_percentage_before": 0.282,
+      "share_percentage_after": 0.272,
+      "share_percentage_transaction": 0.01,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    }
+  ],
+  "pagination": {
+    "total_count": 6,
+    "showing": 6,
+    "limit": 30,
+    "offset": 0,
+    "has_next": false,
+    "has_previous": false,
+    "next_offset": null,
+    "previous_offset": null
+  }
+}

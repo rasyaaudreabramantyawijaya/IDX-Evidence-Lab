@@ -1,0 +1,130 @@
+{
+  "symbol": "ESSA.JK",
+  "corporate_actions": {
+    "agm": [
+      {
+        "agm_date": "2022-03-16",
+        "agm_time": "11:00:00",
+        "agm_place": "Dbs Tower Lantai 19 Ciputra World 1Jl. Prof. Dr. Satrio Kav. 3-5Jakarta Selatan 12940",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2022-06-07",
+        "agm_time": "15:00:00",
+        "agm_place": "Dbs Tower Lantai 19 Ciputra World 1Jl. Prof. Dr. Satrio Kav. 3-5Jakarta Selatan 12940",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2022-11-23",
+        "agm_time": "15:00:00",
+        "agm_place": "Online Melalui Microsoft Teams Dengan Link Registrasi",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2023-02-08",
+        "agm_time": "15:00:00",
+        "agm_place": "Dbs Tower Lantai 19 Ciputra World 1Jl. Prof. Dr. Satrio Kav. 3-5Jakarta Selatan 12940",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2023-03-15",
+        "agm_time": "15:00:00",
+        "agm_place": "Ruang Rapat Dbs Bank Tower Lt.19, Ciputra World 1, Jl. Prof. Dr. Satrio KAV 3/5Jakarta 12940",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2023-10-04",
+        "agm_time": "15:00:00",
+        "agm_place": "Ruang Rapat Dbs Bank Tower Lt.19, Ciputra World 1, Jl. Prof. Dr. Satrio KAV 3/5Jakarta 12940",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2023-12-06",
+        "agm_time": "15:10:00",
+        "agm_place": "Microsoft Teams Dengan Link Yang Akan Diberikan Pada H-1Kepada Peserta Setelah Melakukan Pendaftaran Melalui Linkpendaftaran Di Bawah Ini",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2024-03-20",
+        "agm_time": "15:00:00",
+        "agm_place": "Raffles Hotel, The Dining Room Lt. 12, Ciputra World Jl. Prof. Dr. Satrio, Kuningan Jakarta Selatan",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2025-04-09",
+        "agm_time": "15:00:00",
+        "agm_place": "",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2025-04-16",
+        "agm_time": "09:00:00",
+        "agm_place": "Essa Head Office - Epic Hall, 19Th Fl. Dbs Bank Tower, Jl. Prof. Dr. Satrio Kav. 3 - 5, Kuningan, Jakarta, Indonesia",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2025-12-03",
+        "agm_time": "14:00:00",
+        "agm_place": "Microsoft Teams Dengan Link Yang Akan Diberikan Pada H-1Kepada Peserta Setelah Melakukan Pendaftaran Melalui Link",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2026-06-18",
+        "agm_time": "15:00:00",
+        "agm_place": "Epic Hall, Essa Head Office, DBS Bank Tower, 18Th Floor, JL. Prof. DR. Satrio NO. Kav. 3-5, Jakarta 12940",
+        "agm_result": "Agenda #1: Shareholders approved the 2025 Annual Report and Financial Statements audited by Tanubrata, Sutanto, Fahmi, Bambang, dan Rekan, granting discharge of liability to the Board.\nAgenda #2: The Board of Commissioners was authorized to appoint a Public Accountant and Firm for the 2026 audit and determine their remuneration.\nAgenda #3: The Board of Commissioners was granted the authority to determine the 2026 fiscal year salaries, honorarium, and allowances for both the Board of Commissioners and Directors.\nAgenda #4: The meeting approved a dividend distribution of IDR 52 per share from the 2025 net profit, with USD 10.1 million retained as earnings.\nAgenda #5: Shareholders accepted the resignation of Arif Rachmat and approved the appointment of Bambang Irawan as a new Commissioner effective June 18, 2026."
+      }
+    ],
+    "bonus": null,
+    "warrant": null,
+    "dividend": [
+      {
+        "ex_date": "2024-04-01",
+        "payment_date": "2024-04-19",
+        "dividend_yield": 0.00657231,
+        "dividend_amount": 5
+      },
+      {
+        "ex_date": "2025-04-28",
+        "payment_date": "2025-05-16",
+        "dividend_yield": 0.0153596,
+        "dividend_amount": 10
+      },
+      {
+        "ex_date": "2026-06-29",
+        "payment_date": "2026-07-15",
+        "dividend_yield": null,
+        "dividend_amount": 52
+      },
+      {
+        "ex_date": "2023-03-28",
+        "payment_date": "2023-04-05",
+        "dividend_yield": 0.0621737,
+        "dividend_amount": 45
+      },
+      {
+        "ex_date": "2022-06-16",
+        "payment_date": "2022-06-28",
+        "dividend_yield": 0.00523155,
+        "dividend_amount": 5
+      }
+    ],
+    "right_issue": [
+      {
+        "price": 150,
+        "ex_date": "2018-01-30",
+        "new_ratio": 3,
+        "old_ratio": 10,
+        "trading_period_end": "2018-02-09",
+        "trading_period_start": "2018-02-05"
+      }
+    ],
+    "stock_split": [
+      {
+        "date": "2017-10-27",
+        "split_ratio": 10
+      }
+    ],
+    "upcoming_dividend": null
+  }
+}

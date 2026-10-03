@@ -1,0 +1,14 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/corporate-actions/AMMN/",
+  "retrieved_at": "2026-09-26T14:11:57.786056+00:00",
+  "sha256": "6bb870287f36dd18180e5ef22a3a1bc9d29c506d82098c1861905c9fb7934a7e",
+  "http_status": 200,
+  "request_number": 5,
+  "request_budget": 45,
+  "symbol": "AMMN",
+  "query_parameters": {},
+  "history_scope": "complete endpoint history; endpoint called without date filters",
+  "snapshot_sha256": "90a81a5c3d2d82056693ac7948d120e77cc32527dd63149da7b597db64c895ee"
+}

@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/BBTN/",
+  "retrieved_at": "2026-09-26T15:28:14.247063+00:00",
+  "sha256": "34a168fdac6e38054e0e42c87d275a8b824197910b31e068c85f21c8b91b162b",
+  "http_status": 200,
+  "request_number": 11,
+  "request_budget": 35,
+  "symbol": "BBTN",
+  "request_scope": "approved full company-report completion",
+  "snapshot_sha256": "f32e0314c8818d50d814bc17087a67f074445f0b8f49c83485ad7176535c53d4"
+}

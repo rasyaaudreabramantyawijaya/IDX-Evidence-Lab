@@ -1,0 +1,47 @@
+{
+  "results": [
+    {
+      "title": "Wati Kumaedi Buy Transaction of Unilever Indonesia",
+      "body": "On January 23, 2025, Wati Kumaedi, an insider, purchased 4,977 shares of Unilever Indonesia a consumer non-cyclicals company in the nondurable household products sub-sector, at a price of IDR 1,000 per share. This \"buy\" transaction increased Kumaedi's holding from 2,483,523 to 2,488,500 shares. The purpose of the transaction is not disclosed. As an insider, Kumaedi's purchase may indicate confidence in the company's prospects, potentially influencing investor sentiment and share price.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202501/6d5224d96d_f7299b60a6.pdf",
+      "timestamp": "2025-01-23T04:52:00",
+      "sector": "consumer-non-cyclicals",
+      "sub_sector": "nondurable-household-products",
+      "tags": [
+        "inheritance"
+      ],
+      "symbol": "UNVR.JK",
+      "transaction_type": "others",
+      "holder_type": "insider",
+      "holder_name": "Wati Kumaedi",
+      "holding_before": 2483523,
+      "holding_after": 2488500,
+      "amount_transaction": 4977,
+      "price": 1000.0,
+      "transaction_value": 4977000.0,
+      "price_transaction": [
+        {
+          "date": "2025-01-22",
+          "type": "others",
+          "price": 1000,
+          "amount_transacted": 4977
+        }
+      ],
+      "share_percentage_before": null,
+      "share_percentage_after": null,
+      "share_percentage_transaction": null,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    }
+  ],
+  "pagination": {
+    "total_count": 1,
+    "showing": 1,
+    "limit": 30,
+    "offset": 0,
+    "has_next": false,
+    "has_previous": false,
+    "next_offset": null,
+    "previous_offset": null
+  }
+}

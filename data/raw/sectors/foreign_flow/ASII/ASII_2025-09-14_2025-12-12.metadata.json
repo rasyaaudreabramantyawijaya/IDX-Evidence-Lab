@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/ASII/?start=2025-09-14&end=2025-12-12",
+  "retrieved_at": "2026-09-25T03:22:31.539580+00:00",
+  "sha256": "fd08fc6cd4f95107e14ba5d0055477708544d1468532eef2bed87c54bdf8cdd9",
+  "http_status": 200,
+  "request_number": 70,
+  "request_budget": 558,
+  "ticker": "ASII",
+  "requested_start": "2025-09-14",
+  "requested_end": "2025-12-12",
+  "window_days": 90,
+  "snapshot_sha256": "241b53bf224e81eca24bfc10f97f00452f92865abf5abe870beccc8b926bf3ce"
+}

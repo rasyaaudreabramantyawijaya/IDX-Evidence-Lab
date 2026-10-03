@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/MBMA/?start=2024-03-23&end=2024-06-20",
+  "retrieved_at": "2026-09-25T03:45:36.998154+00:00",
+  "sha256": "4b69d553966afdba791908d2ab894bf7cbe5d5010e20e189c675a62607cb0ca9",
+  "http_status": 200,
+  "request_number": 402,
+  "request_budget": 558,
+  "ticker": "MBMA",
+  "requested_start": "2024-03-23",
+  "requested_end": "2024-06-20",
+  "window_days": 90,
+  "snapshot_sha256": "3180eb6507b7b25594288d3586ec8ca10250f2a1611dd9d5868e410b408d31ed"
+}

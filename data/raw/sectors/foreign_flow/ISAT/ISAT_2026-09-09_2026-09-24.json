@@ -1,0 +1,91 @@
+{
+  "symbol": "ISAT.JK",
+  "start": "2026-09-09",
+  "end": "2026-09-24",
+  "data": [
+    {
+      "date": "2026-09-09",
+      "net_foreign_inflow": -40156263000,
+      "foreign_buy_idr": 68537169000,
+      "foreign_sell_idr": 108693432000,
+      "foreign_share": 0.3342
+    },
+    {
+      "date": "2026-09-10",
+      "net_foreign_inflow": -142784083000,
+      "foreign_buy_idr": 121131348000,
+      "foreign_sell_idr": 263915431000,
+      "foreign_share": 0.4656
+    },
+    {
+      "date": "2026-09-11",
+      "net_foreign_inflow": 16943849000,
+      "foreign_buy_idr": 129241640000,
+      "foreign_sell_idr": 112297791000,
+      "foreign_share": 0.5402
+    },
+    {
+      "date": "2026-09-14",
+      "net_foreign_inflow": -22823463000,
+      "foreign_buy_idr": 70782182000,
+      "foreign_sell_idr": 93605645000,
+      "foreign_share": 0.3725
+    },
+    {
+      "date": "2026-09-15",
+      "net_foreign_inflow": 8698259000,
+      "foreign_buy_idr": 59823797000,
+      "foreign_sell_idr": 51125538000,
+      "foreign_share": 0.5677
+    },
+    {
+      "date": "2026-09-16",
+      "net_foreign_inflow": -17363525000,
+      "foreign_buy_idr": 31457050000,
+      "foreign_sell_idr": 48820575000,
+      "foreign_share": 0.5153
+    },
+    {
+      "date": "2026-09-17",
+      "net_foreign_inflow": 14330413000,
+      "foreign_buy_idr": 62832759000,
+      "foreign_sell_idr": 48502346000,
+      "foreign_share": 0.5217
+    },
+    {
+      "date": "2026-09-18",
+      "net_foreign_inflow": 2307867000,
+      "foreign_buy_idr": 113280122000,
+      "foreign_sell_idr": 110972255000,
+      "foreign_share": 0.7771
+    },
+    {
+      "date": "2026-09-21",
+      "net_foreign_inflow": 2231277000,
+      "foreign_buy_idr": 58884523000,
+      "foreign_sell_idr": 56653246000,
+      "foreign_share": 0.5194
+    },
+    {
+      "date": "2026-09-22",
+      "net_foreign_inflow": 13052568000,
+      "foreign_buy_idr": 132000424000,
+      "foreign_sell_idr": 118947856000,
+      "foreign_share": 0.4579
+    },
+    {
+      "date": "2026-09-23",
+      "net_foreign_inflow": -66486347000,
+      "foreign_buy_idr": 53930993000,
+      "foreign_sell_idr": 120417340000,
+      "foreign_share": 0.4915
+    },
+    {
+      "date": "2026-09-24",
+      "net_foreign_inflow": -24019415000,
+      "foreign_buy_idr": 34171378000,
+      "foreign_sell_idr": 58190793000,
+      "foreign_share": 0.506
+    }
+  ]
+}

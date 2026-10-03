@@ -1,0 +1,18 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/filings/?symbol=ADMR&start=2023-09-25&end=2026-09-24&limit=30&offset=0",
+  "retrieved_at": "2026-09-26T12:21:26.498894+00:00",
+  "sha256": "bb45d855b93bedebfe5341bed04f56a8acef67071322eda49671ca86477d6931",
+  "http_status": 200,
+  "request_number": 2,
+  "request_budget": 615,
+  "run_id": "filings_full_20260926T122124Z",
+  "symbol": "ADMR",
+  "requested_start": "2023-09-25",
+  "requested_end": "2026-09-24",
+  "limit": 30,
+  "offset": 0,
+  "pagination_followed": true,
+  "snapshot_sha256": "fd0a7972990480bd322f49f91cd4a2b75b4628a1ade63395f5ee7963f34ba0a0"
+}

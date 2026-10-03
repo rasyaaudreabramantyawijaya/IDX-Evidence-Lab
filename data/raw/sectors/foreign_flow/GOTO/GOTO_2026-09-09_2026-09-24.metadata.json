@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/GOTO/?start=2026-09-09&end=2026-09-24",
+  "retrieved_at": "2026-09-25T03:35:37.555536+00:00",
+  "sha256": "56a963ec5132216816317b02e9e8a774ab6991f2a3716358ec4df52cbab00e71",
+  "http_status": 200,
+  "request_number": 256,
+  "request_budget": 558,
+  "ticker": "GOTO",
+  "requested_start": "2026-09-09",
+  "requested_end": "2026-09-24",
+  "window_days": 90,
+  "snapshot_sha256": "22865a077ce54d542eca1dd486cf1c34a6a6345fe92cf3071466ddf040804485"
+}

@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/corporate-actions/INKP/",
+  "retrieved_at": "2026-09-26T14:26:06.471493+00:00",
+  "sha256": "22e338d3e1f13a8512ac6efa2f28c06ce405e15ec45e33613fde11aeca17fdf5",
+  "http_status": 200,
+  "request_number": 3,
+  "request_budget": 20,
+  "symbol": "INKP",
+  "query_parameters": {},
+  "history_scope": "complete endpoint history; endpoint called without date filters",
+  "retry_of_prior_http_429": true,
+  "snapshot_sha256": "dc2d9e13ab5aac87b0495b20941b10f3edf7f717b302d0ed5743fe2091ab6ceb"
+}

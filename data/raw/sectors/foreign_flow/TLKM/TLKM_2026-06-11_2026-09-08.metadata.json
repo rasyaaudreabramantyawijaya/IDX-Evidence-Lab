@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/TLKM/?start=2026-06-11&end=2026-09-08",
+  "retrieved_at": "2026-09-25T03:57:16.055948+00:00",
+  "sha256": "4c22874dae3439c6b999be0b07eefc63eefa7f4c4ce69e682329dc666b2bafe4",
+  "http_status": 200,
+  "request_number": 63,
+  "request_budget": 105,
+  "ticker": "TLKM",
+  "requested_start": "2026-06-11",
+  "requested_end": "2026-09-08",
+  "window_days": 90,
+  "snapshot_sha256": "44ac06c918ece4b6a1f7ae1f0a3fb7a4e379b39e5c3c0d33aa8b82085a3fbfcc"
+}

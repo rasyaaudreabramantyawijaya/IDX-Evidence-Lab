@@ -1,0 +1,85 @@
+{
+  "symbol": "EMTK.JK",
+  "corporate_actions": {
+    "agm": [
+      {
+        "agm_date": "2022-06-29",
+        "agm_time": "14:00:00",
+        "agm_place": "Ruang Studio Sctv, Lantai 8 Sctv Tower, Senayan Cityjl. Asia Afrika Lot. 19Jakarta Pusat 10270",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2023-06-14",
+        "agm_time": "14:00:00",
+        "agm_place": "Ruang Studio Sctv, Lantai 8 Sctv Tower, Senayan Cityjl. Asia Afrika Lot. 19Jakarta Pusat 10270",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2024-06-12",
+        "agm_time": "14:00:00",
+        "agm_place": "Studio Sctv, Sctv Tower Lantai 8, Senayan Cityjalan Asia Afrika Lot 19, Jakarta Pusat, 10270 DKI Jakarta, kota Adm. Jakarta Pusat",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2025-04-28",
+        "agm_time": null,
+        "agm_place": "",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2026-05-21",
+        "agm_time": "14:00:00",
+        "agm_place": "Studio Sctv, Sctv Tower Lantai 8, Senayan City, JL. Asia Afrika Lot. 19, Gelora, Tanah Abang",
+        "agm_result": "Agenda #1: The meeting approved the 2025 Annual Report, audited Consolidated Financial Statements, and oversight reports, granting full discharge to the Board of Directors and Commissioners.\nAgenda #2: Shareholders approved a mandatory reserve of Rp1,000,000,000 and a dividend payment of Rp5 per share, totaling Rp305,912,524,665.\nAgenda #3: The Board of Commissioners was authorized to set 2026 remuneration and manage the Management and Employee Stock Ownership Program (MESOP) for up to 300,000,000 shares.\nAgenda #4: KAP Purwanto Susanti dan Surja and Public Accountant Sandy Hasonudin were appointed to audit the 2026 Consolidated Financial Statements."
+      },
+      {
+        "agm_date": "2026-08-11",
+        "agm_time": "14:00:00",
+        "agm_place": "Lifestyle & Entertainment Room, Sctv Tower Lantai 19, Senayan City, Jl. Asia",
+        "agm_result": "Agenda #1: Approval of change in composition of Board of Directors. The meeting approved the resignation of Yuslinda Nasution as Director effective from the close of the meeting, and approved the new composition of the Board of Commissioners and Directors effective until the AGM in 2029. Voting results showed 96.18% approve, 3.76% against, and 0.06% abstain, with total approve including abstain at 96.24%; quorum was 82.4085% and no questions were raised.\nAgenda #2: Granting authority to Board of Directors for actions related to change in composition. The resolution grants authority and power with substitution to the Board of Directors to take any actions, prepare and execute deeds, and register the new composition with government authorities."
+      }
+    ],
+    "bonus": null,
+    "warrant": null,
+    "dividend": [
+      {
+        "ex_date": "2025-11-20",
+        "payment_date": "2025-12-11",
+        "dividend_yield": 0.00591728,
+        "dividend_amount": 5
+      },
+      {
+        "ex_date": "2025-05-08",
+        "payment_date": "2025-05-28",
+        "dividend_yield": 0.039054,
+        "dividend_amount": 33
+      },
+      {
+        "ex_date": "2024-06-25",
+        "payment_date": "2024-07-12",
+        "dividend_yield": 0.00890676,
+        "dividend_amount": 4
+      },
+      {
+        "ex_date": "2023-06-23",
+        "payment_date": "2023-07-14",
+        "dividend_yield": 0.00691155,
+        "dividend_amount": 5
+      },
+      {
+        "ex_date": "2022-09-16",
+        "payment_date": "2022-09-27",
+        "dividend_yield": 0.00268111,
+        "dividend_amount": 5
+      }
+    ],
+    "right_issue": null,
+    "stock_split": [
+      {
+        "date": "2021-01-11",
+        "split_ratio": 10
+      }
+    ],
+    "upcoming_dividend": null
+  }
+}

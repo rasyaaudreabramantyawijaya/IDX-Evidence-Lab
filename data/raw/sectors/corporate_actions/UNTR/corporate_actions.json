@@ -1,0 +1,146 @@
+{
+  "symbol": "UNTR.JK",
+  "corporate_actions": {
+    "agm": [
+      {
+        "agm_date": "2022-04-08",
+        "agm_time": "09:00:00",
+        "agm_place": "Catur Dharma Hall, Menara Astra Lt.5Jl. Jend. Sudirman No. Kav. 5-6Karet Tengsin, Kec. Tanah Abangjakarta Pusat 10220",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2022-09-12",
+        "agm_time": "15:00:00",
+        "agm_place": "Pubex Live 2022",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2023-04-12",
+        "agm_time": "10:00:00",
+        "agm_place": "Catur Dharma Hall, Menara Astra Lt.5Jl. Jend. Sudirman No. Kav. 5-6Karet Tengsin, Kec. Tanah Abangjakarta Pusat 10220",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2023-11-28",
+        "agm_time": "16:00:00",
+        "agm_place": "Pubex Live 2023(",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2024-04-24",
+        "agm_time": "10:00:00",
+        "agm_place": "Catur Dharma Hall, Menara Astra Lt.5Jl. Jend. Sudirman No. Kav. 5-6Karet Tengsin, Kec. Tanah Abangjakarta Pusat 10220",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2025-04-25",
+        "agm_time": "08:35:00",
+        "agm_place": "Catur Dharma Hall, Menara Astra Lt. 5 Jalan Jend. Sudirman KAV 5-6, Karet Tengsin, Kec. Tanah Abang, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10220 Kota Adm. Jakartapusat",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2025-09-08",
+        "agm_time": "15:00:00",
+        "agm_place": "IDX Public Expose",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2026-04-16",
+        "agm_time": "11:00:00",
+        "agm_place": "Catur Dharma Hall, Menara Astra LT. 5 Jalan Jend. Sudirman Kav. 5-6, Karet Tengsin, Kec. Tanah Abang, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10220. Kota Adm. Jakartapusat",
+        "agm_result": "Agenda #1: The meeting approved the 2025 Annual Report, the Board of Commissioners' Supervisory Report, and the Consolidated Financial Statements for the 2025 fiscal year.\nAgenda #2: Shareholders approved the allocation and use of the company's net profit earned during the 2025 fiscal year.\nAgenda #3: The meeting approved changes to the Board of Directors and Board of Commissioners, appointing Iwan Hadiantoro as President Director and Frans Kesuma as President Commissioner.\nAgenda #4: The meeting established the salaries, honorariums, and allowances for the Board of Directors and Board of Commissioners for the 2026-2027 term.\nAgenda #5: Shareholders authorized the appointment of a Public Accounting Firm and Public Accountant to audit the company's financial statements for the 2026 fiscal year.\nAgenda #6: Corporate Secretary Ari Setiyawan submitted the official electronic summary and minutes of the Annual General Meeting of Shareholders, though specific meeting decisions within this reporting step are not stated."
+      },
+      {
+        "agm_date": "2026-09-07",
+        "agm_time": "14:00:00",
+        "agm_place": "IDX Public Expose",
+        "agm_result": null
+      }
+    ],
+    "bonus": null,
+    "warrant": null,
+    "dividend": [
+      {
+        "ex_date": "2026-04-27",
+        "payment_date": "2026-05-18",
+        "dividend_yield": null,
+        "dividend_amount": 1096
+      },
+      {
+        "ex_date": "2024-10-08",
+        "payment_date": "2024-10-24",
+        "dividend_yield": 0.0268105,
+        "dividend_amount": 667
+      },
+      {
+        "ex_date": "2024-05-06",
+        "payment_date": "2024-05-22",
+        "dividend_yield": 0.0630671,
+        "dividend_amount": 1569
+      },
+      {
+        "ex_date": "2022-10-05",
+        "payment_date": "2022-10-24",
+        "dividend_yield": 0.0283036,
+        "dividend_amount": 818
+      },
+      {
+        "ex_date": "2025-10-08",
+        "payment_date": "2025-10-24",
+        "dividend_yield": 0.022885,
+        "dividend_amount": 567
+      },
+      {
+        "ex_date": "2025-05-07",
+        "payment_date": "2025-05-28",
+        "dividend_yield": 0.0598965,
+        "dividend_amount": 1484
+      },
+      {
+        "ex_date": "2020-06-22",
+        "payment_date": "2020-07-03",
+        "dividend_yield": 0.0403348,
+        "dividend_amount": 805
+      },
+      {
+        "ex_date": "2023-10-11",
+        "payment_date": "2023-10-24",
+        "dividend_yield": 0.0275874,
+        "dividend_amount": 701
+      },
+      {
+        "ex_date": "2023-04-28",
+        "payment_date": "2023-05-12",
+        "dividend_yield": 0.243407,
+        "dividend_amount": 6185
+      },
+      {
+        "ex_date": "2022-04-20",
+        "payment_date": "2022-05-11",
+        "dividend_yield": 0.0313139,
+        "dividend_amount": 905
+      },
+      {
+        "ex_date": "2021-10-07",
+        "payment_date": "2021-10-22",
+        "dividend_yield": 0.0150318,
+        "dividend_amount": 335
+      },
+      {
+        "ex_date": "2021-04-20",
+        "payment_date": "2021-05-11",
+        "dividend_yield": 0.021224,
+        "dividend_amount": 473
+      },
+      {
+        "ex_date": "2020-10-07",
+        "payment_date": "2020-10-20",
+        "dividend_yield": 0.00856801,
+        "dividend_amount": 171
+      }
+    ],
+    "right_issue": null,
+    "stock_split": null,
+    "upcoming_dividend": null
+  }
+}

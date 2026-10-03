@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/PGAS/",
+  "ticker": "PGAS",
+  "start": "2025-09-13",
+  "end": "2025-12-11",
+  "retrieved_at": "2026-09-24T12:44:46.807637",
+  "http_status": 200,
+  "observations_count": 64,
+  "sha256": "af0dc27d5a667de9896605daa8a416be547d9572725447e3d50c648340b316eb"
+}

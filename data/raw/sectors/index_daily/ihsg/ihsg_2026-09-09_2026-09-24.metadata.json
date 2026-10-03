@@ -1,0 +1,16 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/index-daily/ihsg/?start=2026-09-09&end=2026-09-24",
+  "retrieved_at": "2026-09-27T16:43:12.252647+00:00",
+  "sha256": "2531f62f947f2064f4e3d918272873d29383d86b51abbfcfdc25ef587135a760",
+  "http_status": 200,
+  "request_number": 13,
+  "request_budget": 13,
+  "index_code": "ihsg",
+  "requested_start": "2026-09-09",
+  "requested_end": "2026-09-24",
+  "window_days": 90,
+  "window_inclusive_days": 16,
+  "snapshot_sha256": "1cdf9ed837ed685793ab223d654966305a619be74ef21a9cd6c6a209167fafbf"
+}

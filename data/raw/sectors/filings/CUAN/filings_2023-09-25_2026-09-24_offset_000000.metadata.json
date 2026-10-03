@@ -1,0 +1,18 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/filings/?symbol=CUAN&start=2023-09-25&end=2026-09-24&limit=30&offset=0",
+  "retrieved_at": "2026-09-26T12:22:00.838638+00:00",
+  "sha256": "d97f829b3b87e37c416e38a619da84a2a0cf914a30d63237e31cdc766c3bd77c",
+  "http_status": 200,
+  "request_number": 18,
+  "request_budget": 615,
+  "run_id": "filings_full_20260926T122124Z",
+  "symbol": "CUAN",
+  "requested_start": "2023-09-25",
+  "requested_end": "2026-09-24",
+  "limit": 30,
+  "offset": 0,
+  "pagination_followed": true,
+  "snapshot_sha256": "b0ffed3cab6b02c4964c04bf97c3fd00a6755cce7a311bf608295dfc4d115ef8"
+}

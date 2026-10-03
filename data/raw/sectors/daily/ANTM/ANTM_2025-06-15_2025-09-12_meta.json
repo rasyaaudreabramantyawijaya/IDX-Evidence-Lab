@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/ANTM/",
+  "ticker": "ANTM",
+  "start": "2025-06-15",
+  "end": "2025-09-12",
+  "retrieved_at": "2026-09-24T12:28:47.377137",
+  "http_status": 200,
+  "observations_count": 62,
+  "sha256": "2cfcb48369cc3415ecf4f5c998348e22702c4f7132ee347ab68b3b817dfa6094"
+}

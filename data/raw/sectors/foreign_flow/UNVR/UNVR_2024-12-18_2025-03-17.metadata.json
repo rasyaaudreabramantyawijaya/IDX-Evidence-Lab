@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/UNVR/?start=2024-12-18&end=2025-03-17",
+  "retrieved_at": "2026-09-25T03:58:31.558836+00:00",
+  "sha256": "be06ed6463a9ba3a6b79a80e682c0c5a6f7f9d134f1baa10f62bc27678538d3c",
+  "http_status": 200,
+  "request_number": 83,
+  "request_budget": 105,
+  "ticker": "UNVR",
+  "requested_start": "2024-12-18",
+  "requested_end": "2025-03-17",
+  "window_days": 90,
+  "snapshot_sha256": "18a20cb5535af7f77e31724ec7900745c301bf645b4d32fbf84303cf876b45c8"
+}

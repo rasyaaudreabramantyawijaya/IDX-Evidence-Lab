@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/AMRT/",
+  "ticker": "AMRT",
+  "start": "2026-03-12",
+  "end": "2026-06-09",
+  "retrieved_at": "2026-09-24T12:28:40.482879",
+  "http_status": 200,
+  "observations_count": 52,
+  "sha256": "f4a628ec80a8b8c0afa80598da87c2b00b6c03adceb7ce7118d4a0fd79a49086"
+}

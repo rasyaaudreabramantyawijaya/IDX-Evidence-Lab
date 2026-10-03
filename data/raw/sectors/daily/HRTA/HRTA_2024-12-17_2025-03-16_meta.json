@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/HRTA/",
+  "ticker": "HRTA",
+  "start": "2024-12-17",
+  "end": "2025-03-16",
+  "retrieved_at": "2026-09-24T12:37:04.782536",
+  "http_status": 200,
+  "observations_count": 57,
+  "sha256": "8547e0e519cdeae9f2275e8fde345ac551517b167991e5d3549e1a97cbf788ae"
+}

@@ -1,0 +1,47 @@
+{
+  "results": [
+    {
+      "title": "Iwan Hadiantoro buys shares of United Tractors",
+      "body": "Iwan Hadiantoro bought 40,000 shares of United Tractors. This increases their holdings from 168,100 to 208,100 shares. The stated purpose of the transaction was investment.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-23012026-5407-00.pdf-0.pdf",
+      "timestamp": "2026-01-23T15:33:27",
+      "sector": "industrials",
+      "sub_sector": "industrial-goods",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "UNTR.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Iwan Hadiantoro",
+      "holding_before": 168100,
+      "holding_after": 208100,
+      "amount_transaction": 40000,
+      "price": 27250.0,
+      "transaction_value": 1090000000.0,
+      "price_transaction": [
+        {
+          "date": "2026-01-21",
+          "type": "buy",
+          "price": 27250.0,
+          "amount_transacted": 40000
+        }
+      ],
+      "share_percentage_before": 0.0,
+      "share_percentage_after": 0.0,
+      "share_percentage_transaction": 0.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    }
+  ],
+  "pagination": {
+    "total_count": 1,
+    "showing": 1,
+    "limit": 30,
+    "offset": 0,
+    "has_next": false,
+    "has_previous": false,
+    "next_offset": null,
+    "previous_offset": null
+  }
+}

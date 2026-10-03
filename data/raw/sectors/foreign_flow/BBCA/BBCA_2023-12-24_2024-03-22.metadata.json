@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/BBCA/?start=2023-12-24&end=2024-03-22",
+  "retrieved_at": "2026-09-25T03:22:58.534235+00:00",
+  "sha256": "2a44f1b291ddaeef273f3e56da95b712b3e56f045cf04e1f6d8cb86cb8e5014e",
+  "http_status": 200,
+  "request_number": 76,
+  "request_budget": 558,
+  "ticker": "BBCA",
+  "requested_start": "2023-12-24",
+  "requested_end": "2024-03-22",
+  "window_days": 90,
+  "snapshot_sha256": "4bc9dc5a95ecd0b8d37a54a03f94eb4132395c54d8a99e1b038c8f55a06f020e"
+}

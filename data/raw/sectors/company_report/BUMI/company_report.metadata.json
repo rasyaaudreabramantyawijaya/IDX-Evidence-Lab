@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/BUMI/",
+  "retrieved_at": "2026-09-26T12:13:52.488684+00:00",
+  "sha256": "1c840e3dae58269b22e33b70d977cb8cbf7aeb5d39cf878a53abd6e5b5fe7e3d",
+  "http_status": 200,
+  "request_number": 2,
+  "request_budget": 10,
+  "symbol": "BUMI",
+  "request_scope": "approved company report collection",
+  "snapshot_sha256": "1e4cbbde08d2bc899c3d292c40107fb57788a792f4fb3d69f0acfdcab93ea9c1"
+}

@@ -1,0 +1,332 @@
+{
+  "type": "daily_price_volume",
+  "provider": "Sectors.app",
+  "ticker_count": 45,
+  "tickers": [
+    "AADI",
+    "ADMR",
+    "ADRO",
+    "AKRA",
+    "AMMN",
+    "AMRT",
+    "ANTM",
+    "ASII",
+    "BBCA",
+    "BBNI",
+    "BBRI",
+    "BBTN",
+    "BMRI",
+    "BRPT",
+    "BUMI",
+    "CPIN",
+    "CUAN",
+    "DEWA",
+    "EMTK",
+    "ESSA",
+    "EXCL",
+    "GOTO",
+    "HRTA",
+    "ICBP",
+    "INCO",
+    "INDF",
+    "INDY",
+    "INKP",
+    "ISAT",
+    "ITMG",
+    "JPFA",
+    "KLBF",
+    "MAPI",
+    "MBMA",
+    "MDKA",
+    "MEDC",
+    "NCKL",
+    "PGAS",
+    "PGEO",
+    "PTBA",
+    "SCMA",
+    "TLKM",
+    "UNTR",
+    "UNVR",
+    "WIFI"
+  ],
+  "window_count": 585,
+  "metadata_count": 585,
+  "http_status_counts": {
+    "200": 585
+  },
+  "provider_counts": {
+    "Sectors.app": 585
+  },
+  "coverage": [
+    {
+      "ticker": "AADI",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 424
+    },
+    {
+      "ticker": "ADMR",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "ADRO",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "AKRA",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "AMMN",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "AMRT",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "ANTM",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "ASII",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "BBCA",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "BBNI",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "BBRI",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "BBTN",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "BMRI",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "BRPT",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "BUMI",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "CPIN",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "CUAN",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "DEWA",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "EMTK",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "ESSA",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "EXCL",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "GOTO",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "HRTA",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "ICBP",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "INCO",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "INDF",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "INDY",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "INKP",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "ISAT",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "ITMG",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "JPFA",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "KLBF",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "MAPI",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "MBMA",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "MDKA",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "MEDC",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "NCKL",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "PGAS",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "PGEO",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "PTBA",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "SCMA",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "TLKM",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "UNTR",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "UNVR",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    },
+    {
+      "ticker": "WIFI",
+      "data_files": 13,
+      "metadata_files": 13,
+      "observations": 712
+    }
+  ]
+}

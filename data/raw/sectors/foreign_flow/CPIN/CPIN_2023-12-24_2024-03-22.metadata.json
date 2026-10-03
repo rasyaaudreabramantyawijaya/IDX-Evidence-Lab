@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/CPIN/?start=2023-12-24&end=2024-03-22",
+  "retrieved_at": "2026-09-25T03:29:16.829027+00:00",
+  "sha256": "692c4d77810949a70e096015b34a9499deed265b0f6d91005e9fdbebbbbb023d",
+  "http_status": 200,
+  "request_number": 167,
+  "request_budget": 558,
+  "ticker": "CPIN",
+  "requested_start": "2023-12-24",
+  "requested_end": "2024-03-22",
+  "window_days": 90,
+  "snapshot_sha256": "7996c4a2c4d7ff61c4a486fd4fbae715ab1acf54b185c99f7216c69cad180fdc"
+}

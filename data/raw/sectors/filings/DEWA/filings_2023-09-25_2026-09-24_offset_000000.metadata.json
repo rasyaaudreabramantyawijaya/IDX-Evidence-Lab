@@ -1,0 +1,18 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/filings/?symbol=DEWA&start=2023-09-25&end=2026-09-24&limit=30&offset=0",
+  "retrieved_at": "2026-09-26T12:22:02.816210+00:00",
+  "sha256": "8fbaaea3b67372217bcf9a745f966b8efb319f84f1ef87166136f6b842235eca",
+  "http_status": 200,
+  "request_number": 19,
+  "request_budget": 615,
+  "run_id": "filings_full_20260926T122124Z",
+  "symbol": "DEWA",
+  "requested_start": "2023-09-25",
+  "requested_end": "2026-09-24",
+  "limit": 30,
+  "offset": 0,
+  "pagination_followed": true,
+  "snapshot_sha256": "f54933e63b9d9bbf704971938d37931e0e5dd5ad96e6bf3c848a0c21c6b938f3"
+}

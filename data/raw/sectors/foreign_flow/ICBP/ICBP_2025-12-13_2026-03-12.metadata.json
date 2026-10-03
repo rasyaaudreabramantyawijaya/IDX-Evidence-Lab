@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/ICBP/?start=2025-12-13&end=2026-03-12",
+  "retrieved_at": "2026-09-25T03:37:09.555217+00:00",
+  "sha256": "01a4e345e3be98a9562db63ae39e3795c7792b1a308aea79fad697d9210a8dbc",
+  "http_status": 200,
+  "request_number": 279,
+  "request_budget": 558,
+  "ticker": "ICBP",
+  "requested_start": "2025-12-13",
+  "requested_end": "2026-03-12",
+  "window_days": 90,
+  "snapshot_sha256": "1a1ede769dc8b41421f6e9d8ac6a3976b8d0c2d41123e3226193d5b734814ea1"
+}

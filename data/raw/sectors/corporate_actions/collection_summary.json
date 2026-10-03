@@ -1,0 +1,930 @@
+{
+  "provider": "Sectors.app",
+  "endpoint_template": "/v2/company/corporate-actions/{symbol}/",
+  "snapshot": "data/raw/sectors/lq45-universe.json",
+  "scope": "45 symbols in saved LQ45 snapshot; one unfiltered request per symbol; complete after retry batch.",
+  "generated_at": "2026-09-26T15:16:15+00:00",
+  "approved_request_budgets": [
+    45,
+    20
+  ],
+  "approved_max_requests": 65,
+  "api_requests_attempted": 65,
+  "successful_http_responses": 45,
+  "failed_http_attempts": 20,
+  "successful_symbols": 45,
+  "failed_symbols": 0,
+  "successful_symbols_count": 45,
+  "failed_symbols_count": 0,
+  "reused_verified_snapshots": 0,
+  "status": "COMPLETE",
+  "initial_rate_limited_symbols_resolved": [
+    {
+      "event": "result",
+      "endpoint": "/v2/company/corporate-actions/INDF/",
+      "symbol": "INDF",
+      "status": "error",
+      "error_type": "SectorsClientError",
+      "error": "Sectors returned HTTP 429",
+      "request_number": 26,
+      "recorded_at": "2026-09-26T14:12:05.762308+00:00"
+    },
+    {
+      "event": "result",
+      "endpoint": "/v2/company/corporate-actions/INDY/",
+      "symbol": "INDY",
+      "status": "error",
+      "error_type": "SectorsClientError",
+      "error": "Sectors returned HTTP 429",
+      "request_number": 27,
+      "recorded_at": "2026-09-26T14:12:06.431802+00:00"
+    },
+    {
+      "event": "result",
+      "endpoint": "/v2/company/corporate-actions/INKP/",
+      "symbol": "INKP",
+      "status": "error",
+      "error_type": "SectorsClientError",
+      "error": "Sectors returned HTTP 429",
+      "request_number": 28,
+      "recorded_at": "2026-09-26T14:12:06.682981+00:00"
+    },
+    {
+      "event": "result",
+      "endpoint": "/v2/company/corporate-actions/ISAT/",
+      "symbol": "ISAT",
+      "status": "error",
+      "error_type": "SectorsClientError",
+      "error": "Sectors returned HTTP 429",
+      "request_number": 29,
+      "recorded_at": "2026-09-26T14:12:07.125361+00:00"
+    },
+    {
+      "event": "result",
+      "endpoint": "/v2/company/corporate-actions/ITMG/",
+      "symbol": "ITMG",
+      "status": "error",
+      "error_type": "SectorsClientError",
+      "error": "Sectors returned HTTP 429",
+      "request_number": 30,
+      "recorded_at": "2026-09-26T14:12:07.323699+00:00"
+    },
+    {
+      "event": "result",
+      "endpoint": "/v2/company/corporate-actions/JPFA/",
+      "symbol": "JPFA",
+      "status": "error",
+      "error_type": "SectorsClientError",
+      "error": "Sectors returned HTTP 429",
+      "request_number": 31,
+      "recorded_at": "2026-09-26T14:12:07.665431+00:00"
+    },
+    {
+      "event": "result",
+      "endpoint": "/v2/company/corporate-actions/KLBF/",
+      "symbol": "KLBF",
+      "status": "error",
+      "error_type": "SectorsClientError",
+      "error": "Sectors returned HTTP 429",
+      "request_number": 32,
+      "recorded_at": "2026-09-26T14:12:07.882412+00:00"
+    },
+    {
+      "event": "result",
+      "endpoint": "/v2/company/corporate-actions/MAPI/",
+      "symbol": "MAPI",
+      "status": "error",
+      "error_type": "SectorsClientError",
+      "error": "Sectors returned HTTP 429",
+      "request_number": 33,
+      "recorded_at": "2026-09-26T14:12:08.175059+00:00"
+    },
+    {
+      "event": "result",
+      "endpoint": "/v2/company/corporate-actions/MBMA/",
+      "symbol": "MBMA",
+      "status": "error",
+      "error_type": "SectorsClientError",
+      "error": "Sectors returned HTTP 429",
+      "request_number": 34,
+      "recorded_at": "2026-09-26T14:12:09.229307+00:00"
+    },
+    {
+      "event": "result",
+      "endpoint": "/v2/company/corporate-actions/MDKA/",
+      "symbol": "MDKA",
+      "status": "error",
+      "error_type": "SectorsClientError",
+      "error": "Sectors returned HTTP 429",
+      "request_number": 35,
+      "recorded_at": "2026-09-26T14:12:09.407934+00:00"
+    },
+    {
+      "event": "result",
+      "endpoint": "/v2/company/corporate-actions/MEDC/",
+      "symbol": "MEDC",
+      "status": "error",
+      "error_type": "SectorsClientError",
+      "error": "Sectors returned HTTP 429",
+      "request_number": 36,
+      "recorded_at": "2026-09-26T14:12:09.610455+00:00"
+    },
+    {
+      "event": "result",
+      "endpoint": "/v2/company/corporate-actions/NCKL/",
+      "symbol": "NCKL",
+      "status": "error",
+      "error_type": "SectorsClientError",
+      "error": "Sectors returned HTTP 429",
+      "request_number": 37,
+      "recorded_at": "2026-09-26T14:12:09.872576+00:00"
+    },
+    {
+      "event": "result",
+      "endpoint": "/v2/company/corporate-actions/PGAS/",
+      "symbol": "PGAS",
+      "status": "error",
+      "error_type": "SectorsClientError",
+      "error": "Sectors returned HTTP 429",
+      "request_number": 38,
+      "recorded_at": "2026-09-26T14:12:10.685159+00:00"
+    },
+    {
+      "event": "result",
+      "endpoint": "/v2/company/corporate-actions/PGEO/",
+      "symbol": "PGEO",
+      "status": "error",
+      "error_type": "SectorsClientError",
+      "error": "Sectors returned HTTP 429",
+      "request_number": 39,
+      "recorded_at": "2026-09-26T14:12:10.938066+00:00"
+    },
+    {
+      "event": "result",
+      "endpoint": "/v2/company/corporate-actions/PTBA/",
+      "symbol": "PTBA",
+      "status": "error",
+      "error_type": "SectorsClientError",
+      "error": "Sectors returned HTTP 429",
+      "request_number": 40,
+      "recorded_at": "2026-09-26T14:12:11.133647+00:00"
+    },
+    {
+      "event": "result",
+      "endpoint": "/v2/company/corporate-actions/SCMA/",
+      "symbol": "SCMA",
+      "status": "error",
+      "error_type": "SectorsClientError",
+      "error": "Sectors returned HTTP 429",
+      "request_number": 41,
+      "recorded_at": "2026-09-26T14:12:11.474680+00:00"
+    },
+    {
+      "event": "result",
+      "endpoint": "/v2/company/corporate-actions/TLKM/",
+      "symbol": "TLKM",
+      "status": "error",
+      "error_type": "SectorsClientError",
+      "error": "Sectors returned HTTP 429",
+      "request_number": 42,
+      "recorded_at": "2026-09-26T14:12:11.688285+00:00"
+    },
+    {
+      "event": "result",
+      "endpoint": "/v2/company/corporate-actions/UNTR/",
+      "symbol": "UNTR",
+      "status": "error",
+      "error_type": "SectorsClientError",
+      "error": "Sectors returned HTTP 429",
+      "request_number": 43,
+      "recorded_at": "2026-09-26T14:12:11.921503+00:00"
+    },
+    {
+      "event": "result",
+      "endpoint": "/v2/company/corporate-actions/UNVR/",
+      "symbol": "UNVR",
+      "status": "error",
+      "error_type": "SectorsClientError",
+      "error": "Sectors returned HTTP 429",
+      "request_number": 44,
+      "recorded_at": "2026-09-26T14:12:12.140926+00:00"
+    },
+    {
+      "event": "result",
+      "endpoint": "/v2/company/corporate-actions/WIFI/",
+      "symbol": "WIFI",
+      "status": "error",
+      "error_type": "SectorsClientError",
+      "error": "Sectors returned HTTP 429",
+      "request_number": 45,
+      "recorded_at": "2026-09-26T14:12:12.686308+00:00"
+    }
+  ],
+  "retry_batch": {
+    "symbols": [
+      "INDF",
+      "INDY",
+      "INKP",
+      "ISAT",
+      "ITMG",
+      "JPFA",
+      "KLBF",
+      "MAPI",
+      "MBMA",
+      "MDKA",
+      "MEDC",
+      "NCKL",
+      "PGAS",
+      "PGEO",
+      "PTBA",
+      "SCMA",
+      "TLKM",
+      "UNTR",
+      "UNVR",
+      "WIFI"
+    ],
+    "requests": 20,
+    "successes": 20,
+    "failures": 0,
+    "completed_at": "2026-09-26T14:26:49.838585+00:00"
+  },
+  "symbols": [
+    {
+      "symbol": "AADI",
+      "status": "success",
+      "sha256": "34ef600357363d799d162878f2231b777d43648f40274e45d1ec46f7af231d01",
+      "action_counts": {
+        "agm": 3,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 1,
+        "right_issue": 0,
+        "stock_split": 0,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": false
+    },
+    {
+      "symbol": "ADMR",
+      "status": "success",
+      "sha256": "a69468bdd1294964fa9596f34f62be4f361019bd16645df06c9aaf9f8b4baaf0",
+      "action_counts": {
+        "agm": 8,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 1,
+        "right_issue": 0,
+        "stock_split": 0,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": false
+    },
+    {
+      "symbol": "ADRO",
+      "status": "success",
+      "sha256": "f164e3c58f93ddea824d6b3999947232a61200b31126b26c45c7a1510a977db0",
+      "action_counts": {
+        "agm": 11,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 13,
+        "right_issue": 0,
+        "stock_split": 0,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": false
+    },
+    {
+      "symbol": "AKRA",
+      "status": "success",
+      "sha256": "2a96680a3f8933f95b3da7da08aec2c6381bcb81aa6c954e173661b19da577e4",
+      "action_counts": {
+        "agm": 7,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 15,
+        "right_issue": 0,
+        "stock_split": 1,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": false
+    },
+    {
+      "symbol": "AMMN",
+      "status": "success",
+      "sha256": "90a81a5c3d2d82056693ac7948d120e77cc32527dd63149da7b597db64c895ee",
+      "action_counts": {
+        "agm": 4,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 0,
+        "right_issue": 0,
+        "stock_split": 0,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": false
+    },
+    {
+      "symbol": "AMRT",
+      "status": "success",
+      "sha256": "6044835a0d1ddcb7a0b0bc0fabc290fdb721887391e9517b3055fd9f653badb2",
+      "action_counts": {
+        "agm": 5,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 8,
+        "right_issue": 0,
+        "stock_split": 1,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": false
+    },
+    {
+      "symbol": "ANTM",
+      "status": "success",
+      "sha256": "5b98b52dd4fd687af93c064ad9e75e6ca94998aab747b3222982a8575857b1dc",
+      "action_counts": {
+        "agm": 14,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 7,
+        "right_issue": 1,
+        "stock_split": 0,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": false
+    },
+    {
+      "symbol": "ASII",
+      "status": "success",
+      "sha256": "646a991f45c90358c494d0e8726a98c55448c021f7a52b1762dbf425a5a53bf8",
+      "action_counts": {
+        "agm": 13,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 13,
+        "right_issue": 0,
+        "stock_split": 1,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": false
+    },
+    {
+      "symbol": "BBCA",
+      "status": "success",
+      "sha256": "9ef6a5d8096fab95504880b39f0db920eeaf63a9f173b4dcd00daf075f340007",
+      "action_counts": {
+        "agm": 9,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 15,
+        "right_issue": 0,
+        "stock_split": 1,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": false
+    },
+    {
+      "symbol": "BBNI",
+      "status": "success",
+      "sha256": "d8d813528a1551302a59da26d702cb1a9cdefb6bf06fbf21ff6f5fd17b2e663c",
+      "action_counts": {
+        "agm": 12,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 6,
+        "right_issue": 0,
+        "stock_split": 1,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": false
+    },
+    {
+      "symbol": "BBRI",
+      "status": "success",
+      "sha256": "b266caa07a473f8bff4b6bd6ba3d16fa65160f7ae6c16f90ec3e0e43022bcc89",
+      "action_counts": {
+        "agm": 9,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 11,
+        "right_issue": 1,
+        "stock_split": 2,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": false
+    },
+    {
+      "symbol": "BBTN",
+      "status": "success",
+      "sha256": "b60ab7d215a6efc0de4ca7a279c9bd8bf4d7a4142e15d2cbefbfaf0d28e23b0c",
+      "action_counts": {
+        "agm": 16,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 5,
+        "right_issue": 1,
+        "stock_split": 0,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": false
+    },
+    {
+      "symbol": "BMRI",
+      "status": "success",
+      "sha256": "18969bcd3397bf2a3d6c4b6b6babf324073bfe15a00a400c4a6157fe632b7685",
+      "action_counts": {
+        "agm": 10,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 9,
+        "right_issue": 0,
+        "stock_split": 2,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": false
+    },
+    {
+      "symbol": "BRPT",
+      "status": "success",
+      "sha256": "410327cb12bf549662911175a62f788be752a8d49cbbea6a80d0594054af4b9f",
+      "action_counts": {
+        "agm": 11,
+        "bonus": 2,
+        "warrant": 0,
+        "dividend": 5,
+        "right_issue": 1,
+        "stock_split": 2,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": false
+    },
+    {
+      "symbol": "BUMI",
+      "status": "success",
+      "sha256": "d63c1b849e9c2cf840bf4547be17d49c3c56c7956e9a5f43b77ddde27ef21fc9",
+      "action_counts": {
+        "agm": 10,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 0,
+        "right_issue": 0,
+        "stock_split": 0,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": false
+    },
+    {
+      "symbol": "CPIN",
+      "status": "success",
+      "sha256": "2d49272e03f1df18eabf7a788e879a6fcce5aee5e7534c0607eb4f84351632a7",
+      "action_counts": {
+        "agm": 6,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 6,
+        "right_issue": 0,
+        "stock_split": 1,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": false
+    },
+    {
+      "symbol": "CUAN",
+      "status": "success",
+      "sha256": "af0d98092e1e556ef74aa232fd5b056afeff88aab6aec7a05ccef9c1b2f6d3dc",
+      "action_counts": {
+        "agm": 7,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 1,
+        "right_issue": 0,
+        "stock_split": 1,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": false
+    },
+    {
+      "symbol": "DEWA",
+      "status": "success",
+      "sha256": "589d3d4da8816788c42ce28fbf57b2d952117bd5b8bf877d6f7f827ffc2fa547",
+      "action_counts": {
+        "agm": 15,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 1,
+        "right_issue": 0,
+        "stock_split": 0,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": false
+    },
+    {
+      "symbol": "EMTK",
+      "status": "success",
+      "sha256": "a8817f089d1a575a273c54a1528da18cfc37a19e3d59d24c2cf5fba06ce205db",
+      "action_counts": {
+        "agm": 6,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 5,
+        "right_issue": 0,
+        "stock_split": 1,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": false
+    },
+    {
+      "symbol": "ESSA",
+      "status": "success",
+      "sha256": "fa056ada5fa44e3fd70aa862b78d832e53264bb7e518c758146e565766b5f186",
+      "action_counts": {
+        "agm": 12,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 5,
+        "right_issue": 1,
+        "stock_split": 1,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": false
+    },
+    {
+      "symbol": "EXCL",
+      "status": "success",
+      "sha256": "b9afa21f1caf4961df413eba3c8ff3224e208ec87694d3e748eb10232549ce78",
+      "action_counts": {
+        "agm": 11,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 7,
+        "right_issue": 2,
+        "stock_split": 0,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": false
+    },
+    {
+      "symbol": "GOTO",
+      "status": "success",
+      "sha256": "226a7c45b6df512702178a04db5d85e47bcc990eca42324778092168a8c5801d",
+      "action_counts": {
+        "agm": 15,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 0,
+        "right_issue": 0,
+        "stock_split": 0,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": false
+    },
+    {
+      "symbol": "HRTA",
+      "status": "success",
+      "sha256": "cb309e525fde417a9f5066bad8c1954e2dc64372bd0af3ba4366db26998883a6",
+      "action_counts": {
+        "agm": 7,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 7,
+        "right_issue": 0,
+        "stock_split": 0,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": false
+    },
+    {
+      "symbol": "ICBP",
+      "status": "success",
+      "sha256": "1e760e634b89a5a9e017f10211649d829a75a0d8813e0afddb2291c97803e957",
+      "action_counts": {
+        "agm": 5,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 7,
+        "right_issue": 0,
+        "stock_split": 1,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": false
+    },
+    {
+      "symbol": "INCO",
+      "status": "success",
+      "sha256": "bff184b42309073ffcd885f6392f8db61af06c71ce4151af5bd890edd12d37ed",
+      "action_counts": {
+        "agm": 19,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 3,
+        "right_issue": 1,
+        "stock_split": 0,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": false
+    },
+    {
+      "symbol": "INDF",
+      "status": "success",
+      "sha256": "1f48bd926b49b75afda46c1b21ba30767cc25455ee240aded73be4f296037cc0",
+      "action_counts": {
+        "agm": 5,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 7,
+        "right_issue": 0,
+        "stock_split": 0,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": true
+    },
+    {
+      "symbol": "INDY",
+      "status": "success",
+      "sha256": "7b0e94897c92c1aa8e02d824e22678094efccbf75cd087cd4b54a1f3a4bbd4cd",
+      "action_counts": {
+        "agm": 10,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 5,
+        "right_issue": 0,
+        "stock_split": 0,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": true
+    },
+    {
+      "symbol": "INKP",
+      "status": "success",
+      "sha256": "dc2d9e13ab5aac87b0495b20941b10f3edf7f717b302d0ed5743fe2091ab6ceb",
+      "action_counts": {
+        "agm": 5,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 7,
+        "right_issue": 0,
+        "stock_split": 0,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": true
+    },
+    {
+      "symbol": "ISAT",
+      "status": "success",
+      "sha256": "f418d4d532fb340d15968341dea6b9d5c8d5dc2aa2afa8d4b8ded77927640831",
+      "action_counts": {
+        "agm": 11,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 6,
+        "right_issue": 0,
+        "stock_split": 1,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": true
+    },
+    {
+      "symbol": "ITMG",
+      "status": "success",
+      "sha256": "ee75fbe547c2bc51c898a160e6f84e0c5ac4e260898e0462e1a5dd15bb6fa037",
+      "action_counts": {
+        "agm": 11,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 13,
+        "right_issue": 0,
+        "stock_split": 0,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": true
+    },
+    {
+      "symbol": "JPFA",
+      "status": "success",
+      "sha256": "25383582bfe4930dade8020d36d9d13a4f0757265b6f639d0ea45048669a6070",
+      "action_counts": {
+        "agm": 6,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 7,
+        "right_issue": 0,
+        "stock_split": 1,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": true
+    },
+    {
+      "symbol": "KLBF",
+      "status": "success",
+      "sha256": "e831dc54874f43c2da3549b92f55558ce01e43fc6d85d167218c3a4177fd13f5",
+      "action_counts": {
+        "agm": 10,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 7,
+        "right_issue": 0,
+        "stock_split": 1,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": true
+    },
+    {
+      "symbol": "MAPI",
+      "status": "success",
+      "sha256": "227e098965f36b777eaff5ee50cb766cc44ade47197c246983de69d31e159206",
+      "action_counts": {
+        "agm": 5,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 4,
+        "right_issue": 0,
+        "stock_split": 1,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": true
+    },
+    {
+      "symbol": "MBMA",
+      "status": "success",
+      "sha256": "9095ceabb422e20f2f1ef97fb137df9c09d92f51358893c7bac81ff2a585621d",
+      "action_counts": {
+        "agm": 7,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 0,
+        "right_issue": 0,
+        "stock_split": 0,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": true
+    },
+    {
+      "symbol": "MDKA",
+      "status": "success",
+      "sha256": "8841cee1d44eed03689fe0e5b8c3ef68375be549fd7e3a62abe0f96df213bcd8",
+      "action_counts": {
+        "agm": 8,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 1,
+        "right_issue": 2,
+        "stock_split": 1,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": true
+    },
+    {
+      "symbol": "MEDC",
+      "status": "success",
+      "sha256": "7a23128473077ab013dd04d72985b4935329ea81d82c7b2082f50cca600a4aeb",
+      "action_counts": {
+        "agm": 8,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 9,
+        "right_issue": 2,
+        "stock_split": 1,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": true
+    },
+    {
+      "symbol": "NCKL",
+      "status": "success",
+      "sha256": "c25bc59c3a72903ff5a07879b0512a43dbb78a6333a7a0fb694d98623c039d7b",
+      "action_counts": {
+        "agm": 6,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 4,
+        "right_issue": 0,
+        "stock_split": 0,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": true
+    },
+    {
+      "symbol": "PGAS",
+      "status": "success",
+      "sha256": "5f40dd6df8fed7a351bc5b121294ba524e751dfe49bd2f7436e2eaf7f56fd9ac",
+      "action_counts": {
+        "agm": 13,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 5,
+        "right_issue": 0,
+        "stock_split": 0,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": true
+    },
+    {
+      "symbol": "PGEO",
+      "status": "success",
+      "sha256": "bc7511ed946a8dd62f1b90be10b31e924e512cb43ee94e85b78606b104a4295a",
+      "action_counts": {
+        "agm": 9,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 3,
+        "right_issue": 0,
+        "stock_split": 0,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": true
+    },
+    {
+      "symbol": "PTBA",
+      "status": "success",
+      "sha256": "d8d951df693ce931a1f4153246e491a53070864a1bcb3ee4efb300084870cfc4",
+      "action_counts": {
+        "agm": 12,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 7,
+        "right_issue": 0,
+        "stock_split": 1,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": true
+    },
+    {
+      "symbol": "SCMA",
+      "status": "success",
+      "sha256": "695c9b3fba6acb62aa7dcffcb9ed47128b2b510bb6fd10cb26d73ab26e7f088d",
+      "action_counts": {
+        "agm": 5,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 6,
+        "right_issue": 0,
+        "stock_split": 2,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": true
+    },
+    {
+      "symbol": "TLKM",
+      "status": "success",
+      "sha256": "83ddfd371f784a4567ae498663e613053d9af6270c51cda3760c0daa81b4cce8",
+      "action_counts": {
+        "agm": 13,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 7,
+        "right_issue": 0,
+        "stock_split": 1,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": true
+    },
+    {
+      "symbol": "UNTR",
+      "status": "success",
+      "sha256": "e9ff1bf3b185ddfa69a1a6e4ceca8d6666b328621e3310495cdaa89bc48346c2",
+      "action_counts": {
+        "agm": 9,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 13,
+        "right_issue": 0,
+        "stock_split": 0,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": true
+    },
+    {
+      "symbol": "UNVR",
+      "status": "success",
+      "sha256": "7fb0a37e987afe9a5c56b2b8e9a2101ef4c57d97e9f58ba436648c5d8692cfa1",
+      "action_counts": {
+        "agm": 13,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 13,
+        "right_issue": 0,
+        "stock_split": 1,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": true
+    },
+    {
+      "symbol": "WIFI",
+      "status": "success",
+      "sha256": "4ba049298a8c616b525d5daeca89fc4c32c67879b0ba9525172cd564a1ee6414",
+      "action_counts": {
+        "agm": 26,
+        "bonus": 0,
+        "warrant": 0,
+        "dividend": 3,
+        "right_issue": 1,
+        "stock_split": 0,
+        "upcoming_dividend": 0
+      },
+      "retry_of_prior_http_429": true
+    }
+  ],
+  "request_ledger": "request_ledger.jsonl",
+  "billing_note": "Attempt counts come from the local request ledger; credit treatment of HTTP 429 responses was not verified from the billing dashboard."
+}

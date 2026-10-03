@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/ADRO/?start=2025-06-16&end=2025-09-13",
+  "retrieved_at": "2026-09-25T03:17:59.058011+00:00",
+  "sha256": "97dc996a239bb71bc7766b3b7f8b88902ed731cb44466d07dfa2a945900f5817",
+  "http_status": 200,
+  "request_number": 4,
+  "request_budget": 558,
+  "ticker": "ADRO",
+  "requested_start": "2025-06-16",
+  "requested_end": "2025-09-13",
+  "window_days": 90,
+  "snapshot_sha256": "fd69b337f790d6bd2ee9205edcc4042ca9ed7fff6c03e443a3fb86917722319e"
+}

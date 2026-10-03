@@ -1,0 +1,10 @@
+{
+  "source_data_provider": "Sectors.app",
+  "model_inference_provider": "OpenRouter",
+  "legal_corpus_mode": "private_local_only",
+  "network_fallbacks": [],
+  "allow_web_search": false,
+  "allow_external_market_data": false,
+  "allow_external_regulation_api": false,
+  "live_calls": "approval_gated"
+}

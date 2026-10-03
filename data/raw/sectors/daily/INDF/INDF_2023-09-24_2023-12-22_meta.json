@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/INDF/",
+  "ticker": "INDF",
+  "start": "2023-09-24",
+  "end": "2023-12-22",
+  "retrieved_at": "2026-09-24T12:38:36.734604",
+  "http_status": 200,
+  "observations_count": 64,
+  "sha256": "f173b604e75d53d4a36d069c5a599ca105c944832e3d2a6045407567c69fb1f1"
+}

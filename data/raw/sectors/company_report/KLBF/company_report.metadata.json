@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/KLBF/",
+  "retrieved_at": "2026-09-26T15:28:28.642784+00:00",
+  "sha256": "6168949bdde5eb9848e95cd1258936f0c9df5116ae6b69eedda5462b9c19ddea",
+  "http_status": 200,
+  "request_number": 25,
+  "request_budget": 35,
+  "symbol": "KLBF",
+  "request_scope": "approved full company-report completion",
+  "snapshot_sha256": "48988d41cd200b89a8974310f7c680b53537584c57d1799264ec31d0c5d6af03"
+}

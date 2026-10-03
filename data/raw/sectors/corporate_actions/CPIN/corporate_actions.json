@@ -1,0 +1,91 @@
+{
+  "symbol": "CPIN.JK",
+  "corporate_actions": {
+    "agm": [
+      {
+        "agm_date": "2022-05-23",
+        "agm_time": "10:00:00",
+        "agm_place": "Gerbera Room, Mezzanine Floorhotel Mulia Senayan Jakartajl. Asia Afrika Senayanjakarta Pusat 10270",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2022-06-23",
+        "agm_time": "11:00:00",
+        "agm_place": "Gerbera Room, Mezzanine Floorhotel Mulia Senayan Jakartajl. Asia Afrika Senayanjakarta Pusat 10270",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2023-05-22",
+        "agm_time": "14:00:00",
+        "agm_place": "Kantor Pusat Perseroanjl Ancol Viii/1, Jakarta 14430",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2024-05-21",
+        "agm_time": "14:00:00",
+        "agm_place": "Kantor Pusat Perseroanjl Ancol Viii/1, Jakarta 14430",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2025-05-21",
+        "agm_time": "14:00:00",
+        "agm_place": "Jl. Ancol Viii/1",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2026-05-20",
+        "agm_time": "14:00:00",
+        "agm_place": "JL. Ancol Viii/1",
+        "agm_result": "Agenda #1: Shareholders approved the 2025 Annual Report and Financial Statements, granting a full discharge of responsibility to the Board of Directors and Board of Commissioners for their management and supervision.\nAgenda #2: The meeting approved a cash dividend of Rp180 per share, totaling Rp2,951,640,000,000 or 52.30% of the 2025 net profit, with the remainder allocated to retained earnings.\nAgenda #3: The Board of Commissioners was authorized to appoint a Public Accountant from Purwantono, Sungkoro & Surja to audit the 2026 Financial Statements.\nAgenda #4: Shareholders approved amending Article 3 of the Articles of Association to align with the 2025 Indonesia Standard Industrial Classification (KBLI) and BPS Regulation No. 7 of 2025."
+      }
+    ],
+    "bonus": null,
+    "warrant": null,
+    "dividend": [
+      {
+        "ex_date": "2025-06-03",
+        "payment_date": "2025-06-13",
+        "dividend_yield": 0.0231748,
+        "dividend_amount": 108
+      },
+      {
+        "ex_date": "2024-06-03",
+        "payment_date": "2024-06-13",
+        "dividend_yield": 0.00600743,
+        "dividend_amount": 30
+      },
+      {
+        "ex_date": "2023-11-17",
+        "payment_date": "2023-11-29",
+        "dividend_yield": 0.019039,
+        "dividend_amount": 100
+      },
+      {
+        "ex_date": "2022-06-03",
+        "payment_date": "2022-06-14",
+        "dividend_yield": 0.0190233,
+        "dividend_amount": 108
+      },
+      {
+        "ex_date": "2021-08-04",
+        "payment_date": "2021-08-13",
+        "dividend_yield": 0.01745,
+        "dividend_amount": 112
+      },
+      {
+        "ex_date": "2020-09-03",
+        "payment_date": "2020-09-16",
+        "dividend_yield": 0.0136987,
+        "dividend_amount": 81
+      }
+    ],
+    "right_issue": null,
+    "stock_split": [
+      {
+        "date": "2010-12-08",
+        "split_ratio": 5
+      }
+    ],
+    "upcoming_dividend": null
+  }
+}

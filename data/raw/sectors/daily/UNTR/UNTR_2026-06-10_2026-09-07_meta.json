@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/UNTR/",
+  "ticker": "UNTR",
+  "start": "2026-06-10",
+  "end": "2026-09-07",
+  "retrieved_at": "2026-09-24T12:47:57.416815",
+  "http_status": 200,
+  "observations_count": 61,
+  "sha256": "9037951e762a2216c3e096eafab08f8b5060ce8683578aa33a4f4694704d7298"
+}

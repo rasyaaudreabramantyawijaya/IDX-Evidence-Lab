@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/JPFA/",
+  "retrieved_at": "2026-09-26T15:28:27.568735+00:00",
+  "sha256": "6068152c1d2e5ff615048af1d401339d1d26f60cce4c0f58e43262ebec5a6042",
+  "http_status": 200,
+  "request_number": 24,
+  "request_budget": 35,
+  "symbol": "JPFA",
+  "request_scope": "approved full company-report completion",
+  "snapshot_sha256": "5ed6bdb7a3b7f4da95601bf0b5a908dc61fd68a15abf9f31b895207f9fa0535d"
+}

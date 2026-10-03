@@ -1,0 +1,113 @@
+{
+  "results": [
+    {
+      "title": "Change in Perusahaan Perseroan Danantara Asset Management's position in Bank Negara Indonesia",
+      "body": "Perusahaan Perseroan Danantara Asset Management executed a transaction for 223,783,877 shares of Bank Negara Indonesia. This decreases their holdings from 22,378,387,749 to 22,154,603,872 shares. The stated purpose of the transaction was in order to fulfill the provisions of law number 16 of 2025 which regulates state share ownership through the head of bp bumn.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-08012026-2658-00.pdf-0.pdf",
+      "timestamp": "2026-01-08T15:43:18",
+      "sector": "financials",
+      "sub_sector": "banks",
+      "tags": [
+        "share-transfer"
+      ],
+      "symbol": "BBNI.JK",
+      "transaction_type": "others",
+      "holder_type": "insider",
+      "holder_name": "Perusahaan Perseroan Danantara Asset Management",
+      "holding_before": 22378387749,
+      "holding_after": 22154603872,
+      "amount_transaction": 223783877,
+      "price": 3750.0,
+      "transaction_value": 839189538750.0,
+      "price_transaction": [
+        {
+          "date": "2026-01-05",
+          "type": "others",
+          "price": 3750.0,
+          "amount_transacted": 223783877
+        }
+      ],
+      "share_percentage_before": 60.0,
+      "share_percentage_after": 59.4,
+      "share_percentage_transaction": 0.6,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Change in Negara Republik Indonesia's position in Bank Negara Indonesia",
+      "body": "Negara Republik Indonesia executed a transaction for 223,783,877 shares of Bank Negara Indonesia. This increases their holdings from 1 to 223,783,878 shares. The stated purpose of the transaction was fulfillment of law number 16 of 2025.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-08012026-1312-00.pdf-0.pdf",
+      "timestamp": "2026-01-08T15:27:57",
+      "sector": "financials",
+      "sub_sector": "banks",
+      "tags": [
+        "share-transfer"
+      ],
+      "symbol": "BBNI.JK",
+      "transaction_type": "others",
+      "holder_type": "insider",
+      "holder_name": "Negara Republik Indonesia",
+      "holding_before": 0,
+      "holding_after": 223783878,
+      "amount_transaction": 223783877,
+      "price": 3750.0,
+      "transaction_value": 839189538750.0,
+      "price_transaction": [
+        {
+          "date": "2026-01-05",
+          "type": "others",
+          "price": 3750.0,
+          "amount_transacted": 223783877
+        }
+      ],
+      "share_percentage_before": 0.0,
+      "share_percentage_after": 0.6,
+      "share_percentage_transaction": 0.6,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Agung Prabowo Sell Transaction of Bank Negara Indonesia",
+      "body": "On July 30, 2025, Agung Prabowo, an insider shareholder, sold 75,000 shares of Bank Negara Indonesia changing its holding from 1,990,356 to 1,915,356 shares.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202507/9c43314deb_e9c694aec4.pdf",
+      "timestamp": "2025-07-30T18:29:30",
+      "sector": "financials",
+      "sub_sector": "banks",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "BBNI.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Agung Prabowo",
+      "holding_before": 1990356,
+      "holding_after": 1915356,
+      "amount_transaction": 75000,
+      "price": 4160.0,
+      "transaction_value": 312000000.0,
+      "price_transaction": [
+        {
+          "date": "2025-07-29",
+          "type": "sell",
+          "price": 4160,
+          "amount_transacted": 75000
+        }
+      ],
+      "share_percentage_before": 0.005,
+      "share_percentage_after": 0.005,
+      "share_percentage_transaction": 0.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    }
+  ],
+  "pagination": {
+    "total_count": 3,
+    "showing": 3,
+    "limit": 30,
+    "offset": 0,
+    "has_next": false,
+    "has_previous": false,
+    "next_offset": null,
+    "previous_offset": null
+  }
+}

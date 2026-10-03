@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/BMRI/",
+  "retrieved_at": "2026-09-26T15:28:15.415024+00:00",
+  "sha256": "2b4d6bd607fa5ab4a7edca3996a2e96be80defdf56a7df1c1d5334fb24c07b20",
+  "http_status": 200,
+  "request_number": 12,
+  "request_budget": 35,
+  "symbol": "BMRI",
+  "request_scope": "approved full company-report completion",
+  "snapshot_sha256": "514de523e9fa98de3180b4bcd635b130dd01d4daee1f9ff07c35f66254ecadca"
+}

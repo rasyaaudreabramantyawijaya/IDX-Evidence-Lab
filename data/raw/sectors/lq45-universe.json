@@ -1,0 +1,750 @@
+{
+  "results": [
+    {
+      "symbol": "AADI.JK",
+      "company_name": "PT Adaro Andalan Indonesia Tbk",
+      "query_values": {
+        "indices": [
+          "LQ45",
+          "KOMPAS100",
+          "IDXQ30",
+          "IDX30",
+          "JII70",
+          "IDXV30"
+        ],
+        "symbol": "AADI.JK"
+      }
+    },
+    {
+      "symbol": "ADMR.JK",
+      "company_name": "PT Alamtri Minerals Indonesia Tbk",
+      "query_values": {
+        "indices": [
+          "LQ45",
+          "KOMPAS100",
+          "IDXQ30",
+          "IDX30",
+          "IDXG30",
+          "JII70"
+        ],
+        "symbol": "ADMR.JK"
+      }
+    },
+    {
+      "symbol": "ADRO.JK",
+      "company_name": "Alamtri Resources Indonesia Tbk",
+      "query_values": {
+        "indices": [
+          "IDXHIDIV20",
+          "LQ45",
+          "KOMPAS100",
+          "IDX30",
+          "IDXG30",
+          "IDXVESTA28",
+          "JII70",
+          "FTSE",
+          "IDXV30"
+        ],
+        "symbol": "ADRO.JK"
+      }
+    },
+    {
+      "symbol": "AKRA.JK",
+      "company_name": "PT AKR Corporindo Tbk.",
+      "query_values": {
+        "indices": [
+          "IDXHIDIV20",
+          "SMINFRA18",
+          "LQ45",
+          "KOMPAS100",
+          "IDXG30",
+          "JII70",
+          "SRIKEHATI"
+        ],
+        "symbol": "AKRA.JK"
+      }
+    },
+    {
+      "symbol": "AMMN.JK",
+      "company_name": "PT Amman Mineral Internasional Tbk.",
+      "query_values": {
+        "indices": [
+          "LQ45",
+          "KOMPAS100",
+          "ECONOMIC30",
+          "FTSE"
+        ],
+        "symbol": "AMMN.JK"
+      }
+    },
+    {
+      "symbol": "AMRT.JK",
+      "company_name": "PT Sumber Alfaria Trijaya Tbk.",
+      "query_values": {
+        "indices": [
+          "LQ45",
+          "KOMPAS100",
+          "IDXQ30",
+          "IDX30",
+          "IDXVESTA28",
+          "FTSE"
+        ],
+        "symbol": "AMRT.JK"
+      }
+    },
+    {
+      "symbol": "ANTM.JK",
+      "company_name": "Aneka Tambang Tbk.",
+      "query_values": {
+        "indices": [
+          "IDXHIDIV20",
+          "LQ45",
+          "KOMPAS100",
+          "IDXQ30",
+          "IDX30",
+          "ECONOMIC30",
+          "JII70",
+          "SRIKEHATI",
+          "IDXBUMN20"
+        ],
+        "symbol": "ANTM.JK"
+      }
+    },
+    {
+      "symbol": "ASII.JK",
+      "company_name": "Astra International Tbk",
+      "query_values": {
+        "indices": [
+          "IDXHIDIV20",
+          "LQ45",
+          "KOMPAS100",
+          "IDXQ30",
+          "IDX30",
+          "IDXVESTA28",
+          "FTSE",
+          "IDXV30",
+          "SRIKEHATI"
+        ],
+        "symbol": "ASII.JK"
+      }
+    },
+    {
+      "symbol": "BBCA.JK",
+      "company_name": "PT Bank Central Asia Tbk.",
+      "query_values": {
+        "indices": [
+          "IDXHIDIV20",
+          "LQ45",
+          "KOMPAS100",
+          "IDXQ30",
+          "IDXESGL",
+          "IDX30",
+          "ECONOMIC30",
+          "IDXG30",
+          "FTSE",
+          "SRIKEHATI"
+        ],
+        "symbol": "BBCA.JK"
+      }
+    },
+    {
+      "symbol": "BBNI.JK",
+      "company_name": "PT Bank Negara Indonesia (Persero) Tbk",
+      "query_values": {
+        "indices": [
+          "IDXHIDIV20",
+          "SMINFRA18",
+          "LQ45",
+          "KOMPAS100",
+          "IDXQ30",
+          "IDXESGL",
+          "IDX30",
+          "ECONOMIC30",
+          "IDXG30",
+          "FTSE",
+          "IDXV30",
+          "SRIKEHATI",
+          "IDXBUMN20"
+        ],
+        "symbol": "BBNI.JK"
+      }
+    },
+    {
+      "symbol": "BBRI.JK",
+      "company_name": "PT Bank Rakyat Indonesia (Persero) Tbk",
+      "query_values": {
+        "indices": [
+          "IDXHIDIV20",
+          "SMINFRA18",
+          "LQ45",
+          "KOMPAS100",
+          "IDXQ30",
+          "IDXESGL",
+          "IDX30",
+          "ECONOMIC30",
+          "IDXG30",
+          "FTSE",
+          "SRIKEHATI",
+          "IDXBUMN20"
+        ],
+        "symbol": "BBRI.JK"
+      }
+    },
+    {
+      "symbol": "BBTN.JK",
+      "company_name": "PT Bank Tabungan Negara (Persero) Tbk",
+      "query_values": {
+        "indices": [
+          "LQ45",
+          "KOMPAS100",
+          "ECONOMIC30",
+          "IDXV30",
+          "SRIKEHATI",
+          "IDXBUMN20"
+        ],
+        "symbol": "BBTN.JK"
+      }
+    },
+    {
+      "symbol": "BMRI.JK",
+      "company_name": "PT Bank Mandiri (Persero) Tbk",
+      "query_values": {
+        "indices": [
+          "IDXHIDIV20",
+          "SMINFRA18",
+          "LQ45",
+          "KOMPAS100",
+          "IDXQ30",
+          "IDXESGL",
+          "IDX30",
+          "ECONOMIC30",
+          "IDXG30",
+          "FTSE",
+          "SRIKEHATI",
+          "IDXBUMN20"
+        ],
+        "symbol": "BMRI.JK"
+      }
+    },
+    {
+      "symbol": "BRPT.JK",
+      "company_name": "Barito Pacific Tbk",
+      "query_values": {
+        "indices": [
+          "LQ45",
+          "KOMPAS100",
+          "IDXESGL",
+          "IDX30",
+          "ECONOMIC30",
+          "FTSE"
+        ],
+        "symbol": "BRPT.JK"
+      }
+    },
+    {
+      "symbol": "BUMI.JK",
+      "company_name": "Bumi Resources Tbk",
+      "query_values": {
+        "indices": [
+          "LQ45",
+          "KOMPAS100",
+          "IDX30",
+          "JII70"
+        ],
+        "symbol": "BUMI.JK"
+      }
+    },
+    {
+      "symbol": "CPIN.JK",
+      "company_name": "Charoen Pokphand Indonesia Tbk",
+      "query_values": {
+        "indices": [
+          "LQ45",
+          "KOMPAS100",
+          "IDXQ30",
+          "IDX30",
+          "JII70",
+          "FTSE"
+        ],
+        "symbol": "CPIN.JK"
+      }
+    },
+    {
+      "symbol": "CUAN.JK",
+      "company_name": "PT Petrindo Jaya Kreasi Tbk",
+      "query_values": {
+        "indices": [
+          "LQ45",
+          "KOMPAS100",
+          "FTSE"
+        ],
+        "symbol": "CUAN.JK"
+      }
+    },
+    {
+      "symbol": "DEWA.JK",
+      "company_name": "Darma Henwa Tbk",
+      "query_values": {
+        "indices": [
+          "LQ45",
+          "KOMPAS100",
+          "IDX30",
+          "JII70"
+        ],
+        "symbol": "DEWA.JK"
+      }
+    },
+    {
+      "symbol": "EMTK.JK",
+      "company_name": "Elang Mahkota Teknologi Tbk",
+      "query_values": {
+        "indices": [
+          "LQ45",
+          "KOMPAS100",
+          "IDXESGL",
+          "IDX30",
+          "IDXVESTA28",
+          "FTSE",
+          "IDXV30",
+          "SRIKEHATI"
+        ],
+        "symbol": "EMTK.JK"
+      }
+    },
+    {
+      "symbol": "ESSA.JK",
+      "company_name": "ESSA Industries Indonesia Tbk",
+      "query_values": {
+        "indices": [
+          "LQ45",
+          "KOMPAS100",
+          "ECONOMIC30",
+          "IDXG30",
+          "JII70"
+        ],
+        "symbol": "ESSA.JK"
+      }
+    },
+    {
+      "symbol": "EXCL.JK",
+      "company_name": "PT XLSMART Telecom Sejahtera Tbk",
+      "query_values": {
+        "indices": [
+          "LQ45",
+          "KOMPAS100",
+          "IDXESGL",
+          "IDXVESTA28",
+          "JII70",
+          "FTSE"
+        ],
+        "symbol": "EXCL.JK"
+      }
+    },
+    {
+      "symbol": "GOTO.JK",
+      "company_name": "PT GoTo Gojek Tokopedia Tbk",
+      "query_values": {
+        "indices": [
+          "LQ45",
+          "KOMPAS100",
+          "IDXESGL",
+          "IDX30",
+          "FTSE"
+        ],
+        "symbol": "GOTO.JK"
+      }
+    },
+    {
+      "symbol": "HRTA.JK",
+      "company_name": "PT Hartadinata Abadi Tbk",
+      "query_values": {
+        "indices": [
+          "LQ45",
+          "KOMPAS100",
+          "ECONOMIC30",
+          "IDXG30",
+          "JII70"
+        ],
+        "symbol": "HRTA.JK"
+      }
+    },
+    {
+      "symbol": "ICBP.JK",
+      "company_name": "Indofood CBP Sukses Makmur Tbk",
+      "query_values": {
+        "indices": [
+          "LQ45",
+          "KOMPAS100",
+          "IDX30",
+          "IDXVESTA28",
+          "JII70",
+          "FTSE",
+          "SRIKEHATI"
+        ],
+        "symbol": "ICBP.JK"
+      }
+    },
+    {
+      "symbol": "INCO.JK",
+      "company_name": "Vale Indonesia Tbk",
+      "query_values": {
+        "indices": [
+          "LQ45",
+          "KOMPAS100",
+          "IDXESGL",
+          "IDX30",
+          "ECONOMIC30",
+          "IDXG30",
+          "FTSE"
+        ],
+        "symbol": "INCO.JK"
+      }
+    },
+    {
+      "symbol": "INDF.JK",
+      "company_name": "Indofood Sukses Makmur Tbk",
+      "query_values": {
+        "indices": [
+          "IDXHIDIV20",
+          "LQ45",
+          "KOMPAS100",
+          "IDX30",
+          "IDXG30",
+          "IDXVESTA28",
+          "JII70",
+          "FTSE",
+          "IDXV30",
+          "SRIKEHATI"
+        ],
+        "symbol": "INDF.JK"
+      }
+    },
+    {
+      "symbol": "INDY.JK",
+      "company_name": "Indika Energy Tbk",
+      "query_values": {
+        "indices": [
+          "LQ45",
+          "KOMPAS100",
+          "IDXG30",
+          "JII70"
+        ],
+        "symbol": "INDY.JK"
+      }
+    },
+    {
+      "symbol": "INKP.JK",
+      "company_name": "Indah Kiat Pulp & Paper Tbk",
+      "query_values": {
+        "indices": [
+          "LQ45",
+          "KOMPAS100",
+          "IDX30",
+          "ECONOMIC30",
+          "IDXG30",
+          "IDXVESTA28",
+          "JII70",
+          "FTSE",
+          "IDXV30"
+        ],
+        "symbol": "INKP.JK"
+      }
+    },
+    {
+      "symbol": "ISAT.JK",
+      "company_name": "PT Indosat Tbk",
+      "query_values": {
+        "indices": [
+          "SMINFRA18",
+          "LQ45",
+          "KOMPAS100",
+          "IDXG30",
+          "IDXVESTA28",
+          "JII70",
+          "FTSE",
+          "SRIKEHATI"
+        ],
+        "symbol": "ISAT.JK"
+      }
+    },
+    {
+      "symbol": "ITMG.JK",
+      "company_name": "Indo Tambangraya Megah Tbk",
+      "query_values": {
+        "indices": [
+          "IDXHIDIV20",
+          "LQ45",
+          "KOMPAS100",
+          "IDXG30",
+          "IDXVESTA28",
+          "JII70",
+          "IDXV30"
+        ],
+        "symbol": "ITMG.JK"
+      }
+    },
+    {
+      "symbol": "JPFA.JK",
+      "company_name": "JAPFA Comfeed Indonesia Tbk",
+      "query_values": {
+        "indices": [
+          "LQ45",
+          "KOMPAS100",
+          "IDXQ30",
+          "IDX30",
+          "IDXG30",
+          "IDXVESTA28",
+          "JII70",
+          "IDXV30"
+        ],
+        "symbol": "JPFA.JK"
+      }
+    },
+    {
+      "symbol": "KLBF.JK",
+      "company_name": "Kalbe Farma Tbk",
+      "query_values": {
+        "indices": [
+          "LQ45",
+          "KOMPAS100",
+          "IDXQ30",
+          "IDX30",
+          "IDXVESTA28",
+          "JII70",
+          "FTSE",
+          "SRIKEHATI"
+        ],
+        "symbol": "KLBF.JK"
+      }
+    },
+    {
+      "symbol": "MAPI.JK",
+      "company_name": "Mitra Adiperkasa Tbk",
+      "query_values": {
+        "indices": [
+          "LQ45",
+          "KOMPAS100",
+          "IDXESGL",
+          "ECONOMIC30",
+          "IDXVESTA28",
+          "JII70"
+        ],
+        "symbol": "MAPI.JK"
+      }
+    },
+    {
+      "symbol": "MBMA.JK",
+      "company_name": "PT Merdeka Battery Materials Tbk",
+      "query_values": {
+        "indices": [
+          "LQ45",
+          "KOMPAS100",
+          "IDX30",
+          "ECONOMIC30",
+          "JII70"
+        ],
+        "symbol": "MBMA.JK"
+      }
+    },
+    {
+      "symbol": "MDKA.JK",
+      "company_name": "PT Merdeka Copper Gold Tbk",
+      "query_values": {
+        "indices": [
+          "LQ45",
+          "KOMPAS100",
+          "IDX30",
+          "ECONOMIC30",
+          "JII70",
+          "FTSE"
+        ],
+        "symbol": "MDKA.JK"
+      }
+    },
+    {
+      "symbol": "MEDC.JK",
+      "company_name": "PT Medco Energi Internasional Tbk",
+      "query_values": {
+        "indices": [
+          "SMINFRA18",
+          "LQ45",
+          "KOMPAS100",
+          "IDX30",
+          "IDXG30",
+          "IDXVESTA28",
+          "JII70",
+          "IDXV30"
+        ],
+        "symbol": "MEDC.JK"
+      }
+    },
+    {
+      "symbol": "NCKL.JK",
+      "company_name": "PT Trimegah Bangun Persada Tbk",
+      "query_values": {
+        "indices": [
+          "LQ45",
+          "KOMPAS100",
+          "IDXQ30",
+          "ECONOMIC30",
+          "FTSE",
+          "IDXV30"
+        ],
+        "symbol": "NCKL.JK"
+      }
+    },
+    {
+      "symbol": "PGAS.JK",
+      "company_name": "PT Perusahaan Gas Negara Tbk",
+      "query_values": {
+        "indices": [
+          "IDXHIDIV20",
+          "SMINFRA18",
+          "LQ45",
+          "KOMPAS100",
+          "IDX30",
+          "IDXG30",
+          "IDXVESTA28",
+          "JII70",
+          "FTSE",
+          "IDXV30",
+          "SRIKEHATI",
+          "IDXBUMN20"
+        ],
+        "symbol": "PGAS.JK"
+      }
+    },
+    {
+      "symbol": "PGEO.JK",
+      "company_name": "PT Pertamina Geothermal Energy Tbk",
+      "query_values": {
+        "indices": [
+          "SMINFRA18",
+          "LQ45",
+          "KOMPAS100",
+          "IDXQ30",
+          "IDXESGL",
+          "IDX30",
+          "SRIKEHATI",
+          "IDXBUMN20"
+        ],
+        "symbol": "PGEO.JK"
+      }
+    },
+    {
+      "symbol": "PTBA.JK",
+      "company_name": "Bukit Asam Tbk",
+      "query_values": {
+        "indices": [
+          "IDXHIDIV20",
+          "LQ45",
+          "KOMPAS100",
+          "IDXQ30",
+          "IDXVESTA28",
+          "JII70",
+          "FTSE",
+          "IDXBUMN20"
+        ],
+        "symbol": "PTBA.JK"
+      }
+    },
+    {
+      "symbol": "SCMA.JK",
+      "company_name": "Surya Citra Media Tbk",
+      "query_values": {
+        "indices": [
+          "IDXHIDIV20",
+          "LQ45",
+          "KOMPAS100",
+          "IDXQ30",
+          "IDXESGL",
+          "ECONOMIC30",
+          "IDXG30"
+        ],
+        "symbol": "SCMA.JK"
+      }
+    },
+    {
+      "symbol": "TLKM.JK",
+      "company_name": "PT Telkom Indonesia (Persero) Tbk",
+      "query_values": {
+        "indices": [
+          "IDXHIDIV20",
+          "SMINFRA18",
+          "LQ45",
+          "KOMPAS100",
+          "IDXQ30",
+          "IDXESGL",
+          "IDX30",
+          "IDXG30",
+          "JII70",
+          "FTSE",
+          "IDXBUMN20"
+        ],
+        "symbol": "TLKM.JK"
+      }
+    },
+    {
+      "symbol": "UNTR.JK",
+      "company_name": "United Tractors Tbk",
+      "query_values": {
+        "indices": [
+          "IDXHIDIV20",
+          "SMINFRA18",
+          "LQ45",
+          "KOMPAS100",
+          "IDXQ30",
+          "IDX30",
+          "IDXG30",
+          "IDXVESTA28",
+          "JII70",
+          "FTSE",
+          "IDXV30"
+        ],
+        "symbol": "UNTR.JK"
+      }
+    },
+    {
+      "symbol": "UNVR.JK",
+      "company_name": "Unilever Indonesia Tbk",
+      "query_values": {
+        "indices": [
+          "IDXHIDIV20",
+          "LQ45",
+          "KOMPAS100",
+          "IDXQ30",
+          "IDXESGL",
+          "IDX30",
+          "JII70",
+          "FTSE",
+          "SRIKEHATI"
+        ],
+        "symbol": "UNVR.JK"
+      }
+    },
+    {
+      "symbol": "WIFI.JK",
+      "company_name": "PT Solusi Sinergi Digital Tbk",
+      "query_values": {
+        "indices": [
+          "SMINFRA18",
+          "LQ45",
+          "KOMPAS100",
+          "IDXG30",
+          "JII70"
+        ],
+        "symbol": "WIFI.JK"
+      }
+    }
+  ],
+  "pagination": {
+    "total_count": 45,
+    "showing": 45,
+    "limit": 100,
+    "offset": 0,
+    "has_next": false,
+    "has_previous": false,
+    "next_offset": null,
+    "previous_offset": null
+  }
+}

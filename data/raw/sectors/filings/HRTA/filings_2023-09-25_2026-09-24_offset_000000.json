@@ -1,0 +1,95 @@
+{
+  "results": [
+    {
+      "title": "Terang Anugrah Abadi buys shares of Hartadinata Abadi",
+      "body": "Terang Anugrah Abadi bought 2,050,000 shares of Hartadinata Abadi. This increases their holdings from 3,269,608,000 to 3,271,658,000 shares. The stated purpose of the transaction was investment.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-09062026-2862-00.pdf-0.pdf",
+      "timestamp": "2026-06-09T18:18:46",
+      "sector": "consumer-cyclicals",
+      "sub_sector": "apparel-luxury-goods",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "HRTA.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Terang Anugrah Abadi",
+      "holding_before": 3269608000,
+      "holding_after": 3271658000,
+      "amount_transaction": 2050000,
+      "price": 2048.049,
+      "transaction_value": 4198500000.0,
+      "price_transaction": [
+        {
+          "date": "2026-06-05",
+          "type": "buy",
+          "price": 2220,
+          "amount_transacted": 100000
+        },
+        {
+          "date": "2026-06-08",
+          "type": "buy",
+          "price": 2020,
+          "amount_transacted": 200000
+        },
+        {
+          "date": "2026-06-08",
+          "type": "buy",
+          "price": 2030,
+          "amount_transacted": 150000
+        },
+        {
+          "date": "2026-06-08",
+          "type": "buy",
+          "price": 2000,
+          "amount_transacted": 200000
+        },
+        {
+          "date": "2026-06-08",
+          "type": "buy",
+          "price": 2050,
+          "amount_transacted": 300000
+        },
+        {
+          "date": "2026-06-08",
+          "type": "buy",
+          "price": 2060,
+          "amount_transacted": 300000
+        },
+        {
+          "date": "2026-06-08",
+          "type": "buy",
+          "price": 2070,
+          "amount_transacted": 300000
+        },
+        {
+          "date": "2026-06-08",
+          "type": "buy",
+          "price": 2010,
+          "amount_transacted": 200000
+        },
+        {
+          "date": "2026-06-08",
+          "type": "buy",
+          "price": 2040,
+          "amount_transacted": 300000
+        }
+      ],
+      "share_percentage_before": 70.997,
+      "share_percentage_after": 71.041,
+      "share_percentage_transaction": 0.044,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    }
+  ],
+  "pagination": {
+    "total_count": 1,
+    "showing": 1,
+    "limit": 30,
+    "offset": 0,
+    "has_next": false,
+    "has_previous": false,
+    "next_offset": null,
+    "previous_offset": null
+  }
+}

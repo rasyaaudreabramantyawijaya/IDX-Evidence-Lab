@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/AADI/",
+  "retrieved_at": "2026-09-26T12:13:51.220259+00:00",
+  "sha256": "926e3e7c90ab017d8f28d02528bdd84a07021b05abce6553984f542042954a74",
+  "http_status": 200,
+  "request_number": 1,
+  "request_budget": 10,
+  "symbol": "AADI",
+  "request_scope": "approved company report collection",
+  "snapshot_sha256": "31f506ff8973ac7edf2245759d09737e7f4c13d3fd921f34f0223b5fc7951edf"
+}

@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/TLKM/",
+  "retrieved_at": "2026-09-26T15:55:19.391895+00:00",
+  "sha256": "7e4ee3dc27aaa0d43188230c9be88d3870c0f434c399fc709eeaab800a0207e0",
+  "http_status": 200,
+  "request_number": 8,
+  "request_budget": 10,
+  "symbol": "TLKM",
+  "request_scope": "approved retry after cooldown",
+  "snapshot_sha256": "b45fc422070d468832b5529826c0dfffdc2686206fd2d78ac08620294fc912f0"
+}

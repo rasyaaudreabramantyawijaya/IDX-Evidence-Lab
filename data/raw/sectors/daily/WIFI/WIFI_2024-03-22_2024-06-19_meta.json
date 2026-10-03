@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/WIFI/",
+  "ticker": "WIFI",
+  "start": "2024-03-22",
+  "end": "2024-06-19",
+  "retrieved_at": "2026-09-24T12:48:55.352109",
+  "http_status": 200,
+  "observations_count": 50,
+  "sha256": "d6a432283f6bea0d4aad8cf1f29c147981b30adcb140a84f1e9d290ccccf9fc3"
+}

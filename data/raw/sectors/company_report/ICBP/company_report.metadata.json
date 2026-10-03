@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/ICBP/",
+  "retrieved_at": "2026-09-26T15:28:21.037148+00:00",
+  "sha256": "424209d701bdd505b548cce95911c2d2615bb304a3cef0c7f3635ff0bea6c673",
+  "http_status": 200,
+  "request_number": 18,
+  "request_budget": 35,
+  "symbol": "ICBP",
+  "request_scope": "approved full company-report completion",
+  "snapshot_sha256": "fff61398ebb45d54a76b6656ca08659d096c9191d0354363020275c0007de2ac"
+}

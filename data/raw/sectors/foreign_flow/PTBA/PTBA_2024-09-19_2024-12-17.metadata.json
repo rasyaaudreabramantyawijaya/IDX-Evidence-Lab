@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/PTBA/?start=2024-09-19&end=2024-12-17",
+  "retrieved_at": "2026-09-25T03:55:09.647220+00:00",
+  "sha256": "403301a9ce374f47ac36c440e8fb4be44534897827c5f02ba625b8c93623aa1c",
+  "http_status": 200,
+  "request_number": 30,
+  "request_budget": 105,
+  "ticker": "PTBA",
+  "requested_start": "2024-09-19",
+  "requested_end": "2024-12-17",
+  "window_days": 90,
+  "snapshot_sha256": "56bbbd21de41eb25ad1f226c71a6935e766155ff0c72b6e573373ecd0002087d"
+}

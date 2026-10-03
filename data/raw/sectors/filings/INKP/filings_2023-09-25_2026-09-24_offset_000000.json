@@ -1,0 +1,111 @@
+{
+  "results": [
+    {
+      "title": "App Purinusa Ekapersada buys shares of Indah Kiat Pulp & Paper",
+      "body": "App Purinusa Ekapersada bought 46,666,600 shares of Indah Kiat Pulp & Paper. This increases their holdings from 3,143,477,898 to 3,190,144,498 shares. The stated purpose of the transaction was investment.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-10122025-8427-00.pdf-0.pdf",
+      "timestamp": "2025-12-10T10:37:00",
+      "sector": "basic-materials",
+      "sub_sector": "basic-materials",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "INKP.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "App Purinusa Ekapersada",
+      "holding_before": 3143477898,
+      "holding_after": 3190144498,
+      "amount_transaction": 46666600,
+      "price": 7500.0,
+      "transaction_value": 349999500000.0,
+      "price_transaction": [
+        {
+          "date": "2025-12-08",
+          "type": "buy",
+          "price": 7500.0,
+          "amount_transacted": 46666600
+        }
+      ],
+      "share_percentage_before": 57.46,
+      "share_percentage_after": 58.31,
+      "share_percentage_transaction": 0.85,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Jackson Wijaya Limantara receives shares of Indah Kiat Pulp & Paper",
+      "body": "Jackson Wijaya Limantara received 3,143,477,898 shares of Indah Kiat Pulp & Paper increasing his holding from 0 to 3,143,477,898 shares, as part of a leadership succession plan.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202501/17337cb8bc_fde602af2d.pdf",
+      "timestamp": "2025-01-20T18:22:00",
+      "sector": "basic-materials",
+      "sub_sector": "basic-materials",
+      "tags": [
+        "takeover"
+      ],
+      "symbol": "INKP.JK",
+      "transaction_type": "others",
+      "holder_type": "insider",
+      "holder_name": "Bapak Jackson Wijaya Limantara",
+      "holding_before": 0,
+      "holding_after": 3143477898,
+      "amount_transaction": 3143477898,
+      "price": 0.0,
+      "transaction_value": 0.0,
+      "price_transaction": [
+        {
+          "date": "2025-01-13",
+          "type": "transfer",
+          "price": 0,
+          "amount_transacted": 3143477898
+        }
+      ],
+      "share_percentage_before": 0.0,
+      "share_percentage_after": 57.4573,
+      "share_percentage_transaction": 57.457,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Bapak Oei Tjie Goan Transfers Shares of Indah Kiat Pulp & Paper",
+      "body": "Bapak Oei Tjie Goan transferred 3,143,477,898 shares of Indah Kiat Pulp & Paper reducing his holding from 3,143,477,898 shares to 0 shares, as part of a leadership succession plan.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202501/e9d2c9519b_4373ee6584.pdf",
+      "timestamp": "2025-01-20T18:20:00",
+      "sector": "basic-materials",
+      "sub_sector": "basic-materials",
+      "tags": [],
+      "symbol": "INKP.JK",
+      "transaction_type": "others",
+      "holder_type": "insider",
+      "holder_name": "Bapak Oei Tjie Goan (Bapak Teguh Ganda Wijaya)",
+      "holding_before": 3143477898,
+      "holding_after": 0,
+      "amount_transaction": 3143477898,
+      "price": 0.0,
+      "transaction_value": 0.0,
+      "price_transaction": [
+        {
+          "date": "2025-01-13",
+          "type": "transfer",
+          "price": 0,
+          "amount_transacted": 3143477898
+        }
+      ],
+      "share_percentage_before": 57.4573,
+      "share_percentage_after": 0.0,
+      "share_percentage_transaction": 57.457,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    }
+  ],
+  "pagination": {
+    "total_count": 3,
+    "showing": 3,
+    "limit": 30,
+    "offset": 0,
+    "has_next": false,
+    "has_previous": false,
+    "next_offset": null,
+    "previous_offset": null
+  }
+}

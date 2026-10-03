@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/NCKL/?start=2023-09-25&end=2023-12-23",
+  "retrieved_at": "2026-09-25T03:48:04.154143+00:00",
+  "sha256": "1062f22924f6ec9326763e7e7d3cb85c3ccaa35d0a5d080ffa77b1f55df28173",
+  "http_status": 200,
+  "request_number": 439,
+  "request_budget": 558,
+  "ticker": "NCKL",
+  "requested_start": "2023-09-25",
+  "requested_end": "2023-12-23",
+  "window_days": 90,
+  "snapshot_sha256": "c831736e3ca8e989076cd6b7c233ea6730a16905dba492cddf8422d0f9d53d41"
+}

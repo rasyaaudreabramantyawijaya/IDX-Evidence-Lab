@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/INKP/",
+  "retrieved_at": "2026-09-26T15:28:23.967158+00:00",
+  "sha256": "0bac2688dd6bd06f62a22dad566b8d365caacbfe7f324d0c7972782c698fd6d5",
+  "http_status": 200,
+  "request_number": 21,
+  "request_budget": 35,
+  "symbol": "INKP",
+  "request_scope": "approved full company-report completion",
+  "snapshot_sha256": "0deefe90a1f1baddfffd3b9433ad8e66943e2e5462da4671fe56b2ec02a0d41f"
+}

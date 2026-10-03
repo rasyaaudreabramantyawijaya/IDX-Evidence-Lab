@@ -1,0 +1,17 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/filings/?symbol=ASII&start=2026-08-26&end=2026-09-25&limit=30&offset=0",
+  "retrieved_at": "2026-09-25T12:34:05.049940+00:00",
+  "sha256": "933508984983c0b78495aa1f95ea9c934cfdd5ef652ecb72f614cbc60489e6f9",
+  "http_status": 200,
+  "request_number": 8,
+  "request_budget": 15,
+  "symbol": "ASII",
+  "requested_start": "2026-08-26",
+  "requested_end": "2026-09-25",
+  "limit": 30,
+  "offset": 0,
+  "pagination_followed": false,
+  "snapshot_sha256": "2e35c984378400144a381304983e28f08a38403f1233501f3a72cf4e1372179f"
+}

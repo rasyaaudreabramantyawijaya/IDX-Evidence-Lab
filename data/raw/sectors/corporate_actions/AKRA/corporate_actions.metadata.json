@@ -1,0 +1,14 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/corporate-actions/AKRA/",
+  "retrieved_at": "2026-09-26T14:11:57.007977+00:00",
+  "sha256": "35dedaaf001870fc2ad382228241d8d1bc58a6795130f298639998edde4456f4",
+  "http_status": 200,
+  "request_number": 4,
+  "request_budget": 45,
+  "symbol": "AKRA",
+  "query_parameters": {},
+  "history_scope": "complete endpoint history; endpoint called without date filters",
+  "snapshot_sha256": "2a96680a3f8933f95b3da7da08aec2c6381bcb81aa6c954e173661b19da577e4"
+}

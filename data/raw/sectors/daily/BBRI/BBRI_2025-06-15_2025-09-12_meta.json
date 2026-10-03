@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/BBRI/",
+  "ticker": "BBRI",
+  "start": "2025-06-15",
+  "end": "2025-09-12",
+  "retrieved_at": "2026-09-24T12:30:55.994585",
+  "http_status": 200,
+  "observations_count": 62,
+  "sha256": "294ba7c5f3b02014012a662b68060acff2ec1d3eb9247260bc9a87af46e33ebb"
+}

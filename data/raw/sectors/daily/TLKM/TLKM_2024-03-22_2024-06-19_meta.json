@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/TLKM/",
+  "ticker": "TLKM",
+  "start": "2024-03-22",
+  "end": "2024-06-19",
+  "retrieved_at": "2026-09-24T12:46:51.043402",
+  "http_status": 200,
+  "observations_count": 50,
+  "sha256": "be022c726a10a39ab47262b6a66316e19cb8218a0ed38f36da05f593999b22e7"
+}

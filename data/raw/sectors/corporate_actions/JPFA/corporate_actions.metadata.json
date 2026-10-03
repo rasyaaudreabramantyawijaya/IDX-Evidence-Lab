@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/corporate-actions/JPFA/",
+  "retrieved_at": "2026-09-26T14:26:13.970652+00:00",
+  "sha256": "fde12e7a16d90fdc6a67fb9bbbce79685f6408349e08631d0bc748f3452ca696",
+  "http_status": 200,
+  "request_number": 6,
+  "request_budget": 20,
+  "symbol": "JPFA",
+  "query_parameters": {},
+  "history_scope": "complete endpoint history; endpoint called without date filters",
+  "retry_of_prior_http_429": true,
+  "snapshot_sha256": "25383582bfe4930dade8020d36d9d13a4f0757265b6f639d0ea45048669a6070"
+}

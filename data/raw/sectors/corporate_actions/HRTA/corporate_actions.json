@@ -1,0 +1,98 @@
+{
+  "symbol": "HRTA.JK",
+  "corporate_actions": {
+    "agm": [
+      {
+        "agm_date": "2022-06-22",
+        "agm_time": "10:00:00",
+        "agm_place": "Pt Hartadinata Abadi Tbkjl. Kopo Sayati Nomor 165Bandung 40228",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2023-05-31",
+        "agm_time": "10:00:00",
+        "agm_place": "Ibis Bandung Trans Studio Hoteljl. Gatot Subroto No.289, Cibangkong, Kec. Batununggaljawa Barat 40273",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2024-04-24",
+        "agm_time": "10:00:00",
+        "agm_place": "Hotel Mercure Bandung City Centrejl. Lengkong Besar No.8, Jawa Barat 40261",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2025-06-12",
+        "agm_time": null,
+        "agm_place": "",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2025-09-08",
+        "agm_time": "14:00:00",
+        "agm_place": "IDX Public Expose",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2026-06-03",
+        "agm_time": "10:00:00",
+        "agm_place": "Kantor PT Hartadinata Abadi, Tbk, JL. Kopo Sayati NO. 165, DS. Sayati, Kec. Margahayu, Kabupaten Bandung, Jawa Barat 40228",
+        "agm_result": "Agenda #1: Shareholders approved the 2025 Annual Report and audited financial statements on June 3, 2026, granting full discharge to the Board of Directors and Commissioners. The owner is not stated.\nAgenda #2: The meeting approved the allocation of Rp 979.6 billion in net profit, including Rp 184.2 billion for cash dividends at Rp 40 per share. The owner is not stated.\nAgenda #3: Shareholders approved a maximum 2026 remuneration of Rp 15 billion for the boards and a maximum 2025 bonus of Rp 6.5 billion for boards and employees. The owner is not stated.\nAgenda #4: The Board of Commissioners was authorized to appoint an independent auditor for the 2026 financial year and determine the associated fees. The owner is not stated.\nAgenda #5: Shareholders approved delegating authority to the Board of Commissioners to authorize the pledging or transfer of more than 50% of the company's net assets for financing purposes until December 31, 2026. The owner is not stated.\nAgenda #6: The meeting approved updating the company's business activities in the Articles of Association to align with the 2025 Indonesian Standard Industrial Classification (KBLI) regulations. The owner is not stated.\nAgenda #7: Shareholders ratified the increase in PT Terang Anugrah Abadi's shareholding to 3,269,608,000 shares following transactions conducted through the stock exchange. The owner is not stated."
+      },
+      {
+        "agm_date": "2026-10-16",
+        "agm_time": "10:00:00",
+        "agm_place": "Bandung",
+        "agm_result": null
+      }
+    ],
+    "bonus": null,
+    "warrant": null,
+    "dividend": [
+      {
+        "ex_date": "2025-06-23",
+        "payment_date": "2025-07-16",
+        "dividend_yield": 0.0257018,
+        "dividend_amount": 21
+      },
+      {
+        "ex_date": "2026-06-12",
+        "payment_date": "2026-07-03",
+        "dividend_yield": null,
+        "dividend_amount": 40
+      },
+      {
+        "ex_date": "2024-05-06",
+        "payment_date": "2024-05-22",
+        "dividend_yield": 0.0388117,
+        "dividend_amount": 15
+      },
+      {
+        "ex_date": "2023-06-13",
+        "payment_date": "2023-06-27",
+        "dividend_yield": 0.031529,
+        "dividend_amount": 12
+      },
+      {
+        "ex_date": "2022-07-01",
+        "payment_date": "2022-07-22",
+        "dividend_yield": 0.048156,
+        "dividend_amount": 10
+      },
+      {
+        "ex_date": "2021-08-26",
+        "payment_date": "2021-09-15",
+        "dividend_yield": 0.0353767,
+        "dividend_amount": 8
+      },
+      {
+        "ex_date": "2020-08-26",
+        "payment_date": "2020-09-11",
+        "dividend_yield": 0.0344705,
+        "dividend_amount": 8
+      }
+    ],
+    "right_issue": null,
+    "stock_split": null,
+    "upcoming_dividend": null
+  }
+}

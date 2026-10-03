@@ -1,0 +1,18 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/filings/?symbol=GOTO&start=2023-09-25&end=2026-09-24&limit=30&offset=0",
+  "retrieved_at": "2026-09-26T12:22:09.924776+00:00",
+  "sha256": "16b873a3a1da2542550cfefa68a43237ba1b3357d90c258af76b9e9c66748c54",
+  "http_status": 200,
+  "request_number": 23,
+  "request_budget": 615,
+  "run_id": "filings_full_20260926T122124Z",
+  "symbol": "GOTO",
+  "requested_start": "2023-09-25",
+  "requested_end": "2026-09-24",
+  "limit": 30,
+  "offset": 0,
+  "pagination_followed": true,
+  "snapshot_sha256": "65cc46e4bcab732b54a42d637f56c52bd4eb361364219c6e3bb84c54d4ee9d4d"
+}

@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/WIFI/",
+  "retrieved_at": "2026-09-26T12:14:02.970220+00:00",
+  "sha256": "0f9f0d684b06b1eb30434a9dca214f43117fe3c03f4a08e2f5dbf09165e3865f",
+  "http_status": 200,
+  "request_number": 10,
+  "request_budget": 10,
+  "symbol": "WIFI",
+  "request_scope": "approved company report collection",
+  "snapshot_sha256": "f504e2574689e8e07e97d794e165d18fa9e1356c95551bb319e8649d5f3596d1"
+}

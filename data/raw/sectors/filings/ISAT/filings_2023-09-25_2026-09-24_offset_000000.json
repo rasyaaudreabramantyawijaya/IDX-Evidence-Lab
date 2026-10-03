@@ -1,0 +1,428 @@
+{
+  "results": [
+    {
+      "title": "Vikram Sinha buys shares of Indosat",
+      "body": "This transaction is part of a cluster-buy transaction amidst other insider buys during the last 6 months. Vikram Sinha's insider purchase comes after Chi Hung Lee and Irsyad Sahroni in Indosat, totaling an accumulation of 4,816,200 shares transacted at an average price of IDR 1,961.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-03082026-6036-00.pdf-0.pdf",
+      "timestamp": "2026-08-03T20:43:42",
+      "sector": "infrastructures",
+      "sub_sector": "telecommunication",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "ISAT.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Vikram Sinha",
+      "holding_before": 11170700,
+      "holding_after": 14256900,
+      "amount_transaction": 3086200,
+      "price": 1940.605,
+      "transaction_value": 5989096000.0,
+      "price_transaction": [
+        {
+          "date": "2026-07-30",
+          "type": "buy",
+          "price": 1915,
+          "amount_transacted": 100000
+        },
+        {
+          "date": "2026-07-30",
+          "type": "buy",
+          "price": 1945,
+          "amount_transacted": 696400
+        },
+        {
+          "date": "2026-07-30",
+          "type": "buy",
+          "price": 1950,
+          "amount_transacted": 775000
+        },
+        {
+          "date": "2026-07-30",
+          "type": "buy",
+          "price": 1910,
+          "amount_transacted": 32100
+        },
+        {
+          "date": "2026-07-30",
+          "type": "buy",
+          "price": 1935,
+          "amount_transacted": 408600
+        },
+        {
+          "date": "2026-07-30",
+          "type": "buy",
+          "price": 1940,
+          "amount_transacted": 688300
+        },
+        {
+          "date": "2026-07-30",
+          "type": "buy",
+          "price": 1930,
+          "amount_transacted": 385800
+        }
+      ],
+      "share_percentage_before": 0.035,
+      "share_percentage_after": 0.044,
+      "share_percentage_transaction": 0.009,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Irsyad Sahroni buys shares of Indosat",
+      "body": "Irsyad Sahroni bought 1,000,000 shares of Indosat. This increases their holdings from 1,547,500 to 2,547,500 shares. The stated purpose of the transaction was long-term investment.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-03082026-4727-00.pdf-0.pdf",
+      "timestamp": "2026-08-03T20:27:55",
+      "sector": "infrastructures",
+      "sub_sector": "telecommunication",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "ISAT.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Irsyad Sahroni",
+      "holding_before": 1547500,
+      "holding_after": 2547500,
+      "amount_transaction": 1000000,
+      "price": 1925.713,
+      "transaction_value": 1925713000.0,
+      "price_transaction": [
+        {
+          "date": "2026-07-30",
+          "type": "buy",
+          "price": 1900,
+          "amount_transacted": 78800
+        },
+        {
+          "date": "2026-07-30",
+          "type": "buy",
+          "price": 1905,
+          "amount_transacted": 108900
+        },
+        {
+          "date": "2026-07-30",
+          "type": "buy",
+          "price": 1910,
+          "amount_transacted": 312300
+        },
+        {
+          "date": "2026-07-30",
+          "type": "buy",
+          "price": 1960,
+          "amount_transacted": 204400
+        },
+        {
+          "date": "2026-07-30",
+          "type": "buy",
+          "price": 1925,
+          "amount_transacted": 22700
+        },
+        {
+          "date": "2026-07-30",
+          "type": "buy",
+          "price": 1935,
+          "amount_transacted": 144000
+        },
+        {
+          "date": "2026-07-30",
+          "type": "buy",
+          "price": 1955,
+          "amount_transacted": 45600
+        },
+        {
+          "date": "2026-07-30",
+          "type": "buy",
+          "price": 1920,
+          "amount_transacted": 83300
+        }
+      ],
+      "share_percentage_before": 0.005,
+      "share_percentage_after": 0.008,
+      "share_percentage_transaction": 0.003,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Chi Hung Lee buys shares of Indosat",
+      "body": "This transaction is part of a cluster-buy transaction amidst other insider buys during the last 6 months. Chi Hung Lee's insider purchase comes after Vikram Sinha and Irsyad Sahroni in Indosat, totaling an accumulation of 3,070,200 shares transacted at an average price of IDR 2,102.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-08052026-4477-00.pdf-0.pdf",
+      "timestamp": "2026-05-08T20:16:12",
+      "sector": "infrastructures",
+      "sub_sector": "telecommunication",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "ISAT.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Chi Hung Lee",
+      "holding_before": 1200000,
+      "holding_after": 1400000,
+      "amount_transaction": 200000,
+      "price": 2150.0,
+      "transaction_value": 430000000.0,
+      "price_transaction": [
+        {
+          "date": "2026-05-06",
+          "type": "buy",
+          "price": 2150,
+          "amount_transacted": 200000
+        }
+      ],
+      "share_percentage_before": 0.004,
+      "share_percentage_after": 0.004,
+      "share_percentage_transaction": 0.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Irsyad Sahroni buys shares of Indosat",
+      "body": "This transaction is part of a cluster-buy transaction amidst other insider buys during the last 6 months. Irsyad Sahroni's insider purchase comes after Vikram Sinha and Chi Hung Lee in Indosat totaling an accumulation of 2,900,200 shares transacted at an average price of IDR 2,100.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-06052026-8394-00.pdf-0.pdf",
+      "timestamp": "2026-05-06T21:39:14",
+      "sector": "infrastructures",
+      "sub_sector": "telecommunication",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "ISAT.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Irsyad Sahroni",
+      "holding_before": 1047500,
+      "holding_after": 1547500,
+      "amount_transaction": 500000,
+      "price": 2068.0,
+      "transaction_value": 1034000000.0,
+      "price_transaction": [
+        {
+          "date": "2026-05-04",
+          "type": "buy",
+          "price": 2080,
+          "amount_transacted": 100000
+        },
+        {
+          "date": "2026-05-04",
+          "type": "buy",
+          "price": 2070,
+          "amount_transacted": 300000
+        },
+        {
+          "date": "2026-05-04",
+          "type": "buy",
+          "price": 2050,
+          "amount_transacted": 100000
+        }
+      ],
+      "share_percentage_before": 0.003,
+      "share_percentage_after": 0.005,
+      "share_percentage_transaction": 0.002,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Chi Hung Lee buys shares of Indosat",
+      "body": "This transaction is part of a cluster-buy transaction amidst other insider buys during the last 6 months. Chi Hung Lee's insider purchase comes after Irsyad Sahroni and Vikram Sinha in Indosat, totaling an accumulation of 3,447,700 shares transacted at an average price of IDR 2,047.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-31032026-4110-00.pdf-0.pdf",
+      "timestamp": "2026-03-31T20:59:32",
+      "sector": "infrastructures",
+      "sub_sector": "telecommunication",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "ISAT.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Chi Hung Lee",
+      "holding_before": 1170000,
+      "holding_after": 1200000,
+      "amount_transaction": 30000,
+      "price": 2150.0,
+      "transaction_value": 64500000.0,
+      "price_transaction": [
+        {
+          "date": "2026-03-25",
+          "type": "buy",
+          "price": 2150,
+          "amount_transacted": 30000
+        }
+      ],
+      "share_percentage_before": 0.004,
+      "share_percentage_after": 0.004,
+      "share_percentage_transaction": 0.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Vikram Sinha buys shares of ISAT",
+      "body": "This transaction is part of a cluster-buy transaction amidst other insider buys during the last 6 months. Vikram Sinha's insider purchase comes after Chi Hung Lee and Irsyad Sahroni in Indosat, totaling an accumulation of 3,667,700 shares transacted at an average price of IDR 2,058.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202511/771c87b6ba_276c0b1be1.pdf",
+      "timestamp": "2025-11-14T12:35:10",
+      "sector": "infrastructures",
+      "sub_sector": "telecommunication",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "ISAT.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Vikram Sinha",
+      "holding_before": 8800500,
+      "holding_after": 11170700,
+      "amount_transaction": 2370200,
+      "price": 2105.66,
+      "transaction_value": 4990839000.0,
+      "price_transaction": [
+        {
+          "date": "2025-11-07",
+          "type": "buy",
+          "price": 1995,
+          "amount_transacted": 140800
+        },
+        {
+          "date": "2025-11-07",
+          "type": "buy",
+          "price": 2000,
+          "amount_transacted": 359200
+        },
+        {
+          "date": "2025-11-07",
+          "type": "buy",
+          "price": 2120,
+          "amount_transacted": 699300
+        },
+        {
+          "date": "2025-11-07",
+          "type": "buy",
+          "price": 2130,
+          "amount_transacted": 420400
+        },
+        {
+          "date": "2025-11-07",
+          "type": "buy",
+          "price": 2150,
+          "amount_transacted": 750500
+        }
+      ],
+      "share_percentage_before": 0.0272,
+      "share_percentage_after": 0.0346,
+      "share_percentage_transaction": 0.0074,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Irsyad Sahroni buys shares of ISAT",
+      "body": "Irsyad Sahroni bought 1,047,500 shares of ISAT. This increases their holdings from 0 to 1,047,500 shares. The stated purpose of the transaction was investasi jangka panjang.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202511/a3e194225e_3af3e06c83.pdf",
+      "timestamp": "2025-11-07T10:49:55",
+      "sector": "infrastructures",
+      "sub_sector": "telecommunication",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "ISAT.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Irsyad Sahroni",
+      "holding_before": 0,
+      "holding_after": 1047500,
+      "amount_transaction": 1047500,
+      "price": 1910.8,
+      "transaction_value": 2001565500.0,
+      "price_transaction": [
+        {
+          "date": "2025-10-31",
+          "type": "buy",
+          "price": 1855.0,
+          "amount_transacted": 19600
+        },
+        {
+          "date": "2025-10-31",
+          "type": "buy",
+          "price": 1885.0,
+          "amount_transacted": 100000
+        },
+        {
+          "date": "2025-10-31",
+          "type": "buy",
+          "price": 1890.0,
+          "amount_transacted": 400000
+        },
+        {
+          "date": "2025-11-03",
+          "type": "buy",
+          "price": 1925.0,
+          "amount_transacted": 27900
+        },
+        {
+          "date": "2025-11-03",
+          "type": "buy",
+          "price": 1930.0,
+          "amount_transacted": 200000
+        },
+        {
+          "date": "2025-11-03",
+          "type": "buy",
+          "price": 1935.0,
+          "amount_transacted": 200000
+        },
+        {
+          "date": "2025-11-03",
+          "type": "buy",
+          "price": 1940.0,
+          "amount_transacted": 100000
+        }
+      ],
+      "share_percentage_before": 0.0,
+      "share_percentage_after": 0.0032,
+      "share_percentage_transaction": 0.0032,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Chi Hung Lee Buy Transaction of Indosat",
+      "body": "On August 08, 2025, Chi Hung Lee, an insider shareholder, bought 250,000 shares of Indosat changing its holding from 920,000 to 1,170,000 shares.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202508/ae6d32db99_27f1697897.pdf",
+      "timestamp": "2025-08-08T20:29:34",
+      "sector": "infrastructures",
+      "sub_sector": "telecommunication",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "ISAT.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Chi Hung Lee",
+      "holding_before": 920000,
+      "holding_after": 1170000,
+      "amount_transaction": 250000,
+      "price": 2230.0,
+      "transaction_value": 557500000.0,
+      "price_transaction": [
+        {
+          "date": "2025-08-04",
+          "type": "buy",
+          "price": 2230,
+          "amount_transacted": 250000
+        }
+      ],
+      "share_percentage_before": 0.003,
+      "share_percentage_after": 0.004,
+      "share_percentage_transaction": 0.001,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    }
+  ],
+  "pagination": {
+    "total_count": 8,
+    "showing": 8,
+    "limit": 30,
+    "offset": 0,
+    "has_next": false,
+    "has_previous": false,
+    "next_offset": null,
+    "previous_offset": null
+  }
+}

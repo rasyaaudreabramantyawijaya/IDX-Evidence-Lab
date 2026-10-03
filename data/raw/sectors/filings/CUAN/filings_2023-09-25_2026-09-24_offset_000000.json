@@ -1,0 +1,1307 @@
+{
+  "results": [
+    {
+      "title": "Prajogo Pangestu buys shares of Petrindo Jaya Kreasi",
+      "body": "This transaction is part of a cluster-buy transaction amidst other insider buys during the last 6 months. Prajogo Pangestu's insider purchase comes after Michael, Erwin Ciputra and Kartika Hendrawan in Petrindo Jaya Kreasi, totaling an accumulation of 53,701,500 shares transacted at an average price of IDR 704.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-11082026-3956-00.pdf-0.pdf",
+      "timestamp": "2026-08-11T21:13:53",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "CUAN.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Prajogo Pangestu",
+      "holding_before": 90353198700,
+      "holding_after": 90404898700,
+      "amount_transaction": 51700000,
+      "price": 709.496,
+      "transaction_value": 36680939000.0,
+      "price_transaction": [
+        {
+          "date": "2026-08-11",
+          "type": "buy",
+          "price": 685,
+          "amount_transacted": 2155100
+        },
+        {
+          "date": "2026-08-11",
+          "type": "buy",
+          "price": 680,
+          "amount_transacted": 2032800
+        },
+        {
+          "date": "2026-08-11",
+          "type": "buy",
+          "price": 690,
+          "amount_transacted": 3653100
+        },
+        {
+          "date": "2026-08-11",
+          "type": "buy",
+          "price": 695,
+          "amount_transacted": 3408000
+        },
+        {
+          "date": "2026-08-11",
+          "type": "buy",
+          "price": 700,
+          "amount_transacted": 4039800
+        },
+        {
+          "date": "2026-08-11",
+          "type": "buy",
+          "price": 705,
+          "amount_transacted": 3587800
+        },
+        {
+          "date": "2026-08-11",
+          "type": "buy",
+          "price": 735,
+          "amount_transacted": 2093100
+        },
+        {
+          "date": "2026-08-11",
+          "type": "buy",
+          "price": 715,
+          "amount_transacted": 4264400
+        },
+        {
+          "date": "2026-08-11",
+          "type": "buy",
+          "price": 740,
+          "amount_transacted": 3180700
+        },
+        {
+          "date": "2026-08-11",
+          "type": "buy",
+          "price": 720,
+          "amount_transacted": 2833400
+        },
+        {
+          "date": "2026-08-11",
+          "type": "buy",
+          "price": 725,
+          "amount_transacted": 2337000
+        },
+        {
+          "date": "2026-08-11",
+          "type": "buy",
+          "price": 730,
+          "amount_transacted": 1943000
+        },
+        {
+          "date": "2026-08-11",
+          "type": "buy",
+          "price": 710,
+          "amount_transacted": 16171800
+        }
+      ],
+      "share_percentage_before": 80.372,
+      "share_percentage_after": 80.418,
+      "share_percentage_transaction": 0.046,
+      "idx_investor_slug": "prajogo-pangestu",
+      "idx_conglomerates_group_slug": "barito-group"
+    },
+    {
+      "title": "Kartika Hendrawan buys shares of Petrindo Jaya Kreasi",
+      "body": "This transaction is part of a cluster-buy transaction amidst other insider buys during the last 6 months. Kartika Hendrawan's insider purchase comes after Prajogo Pangestu, Michael and Erwin Ciputra in Petrindo Jaya Kreasi, totaling an accumulation of 26,301,500 shares transacted at an average price of IDR 1,635.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-09072026-9071-00.pdf-0.pdf",
+      "timestamp": "2026-07-09T09:06:25",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "CUAN.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Kartika Hendrawan",
+      "holding_before": 3146000,
+      "holding_after": 3346000,
+      "amount_transaction": 200000,
+      "price": 620.0,
+      "transaction_value": 124000000.0,
+      "price_transaction": [
+        {
+          "date": "2026-07-08",
+          "type": "buy",
+          "price": 620,
+          "amount_transacted": 200000
+        }
+      ],
+      "share_percentage_before": 0.003,
+      "share_percentage_after": 0.003,
+      "share_percentage_transaction": 0.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Erwin Ciputra buys shares of Petrindo Jaya Kreasi",
+      "body": "Erwin Ciputra's acquisition of CUAN shares is the latest in a series of investments, with Erwin Ciputra adding to their position across 3 companies in the last 6 months. Alongside CUAN, Erwin Ciputra has also acquired shares of CDIA and PTRO, totaling IDR 8,603,458,000.0 across all purchases in this period.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-06072026-1238-00.pdf-0.pdf",
+      "timestamp": "2026-07-06T18:45:54",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "CUAN.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Erwin Ciputra",
+      "holding_before": 16333000,
+      "holding_after": 17334500,
+      "amount_transaction": 1001500,
+      "price": 540.0,
+      "transaction_value": 540810000.0,
+      "price_transaction": [
+        {
+          "date": "2026-07-01",
+          "type": "buy",
+          "price": 540,
+          "amount_transacted": 1001500
+        }
+      ],
+      "share_percentage_before": 0.015,
+      "share_percentage_after": 0.015,
+      "share_percentage_transaction": 0.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Michael buys shares of Petrindo Jaya Kreasi",
+      "body": "Michael bought 800,000 shares of Petrindo Jaya Kreasi. This increases their holdings from 3,542,000 to 4,342,000 shares. The stated purpose of the transaction was for personal investment purposes.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-01072026-2060-00.pdf-0.pdf",
+      "timestamp": "2026-07-01T17:07:13",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "CUAN.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Michael",
+      "holding_before": 3542000,
+      "holding_after": 4342000,
+      "amount_transaction": 800000,
+      "price": 580.0,
+      "transaction_value": 464000000.0,
+      "price_transaction": [
+        {
+          "date": "2026-07-01",
+          "type": "buy",
+          "price": 580,
+          "amount_transacted": 800000
+        }
+      ],
+      "share_percentage_before": 0.003,
+      "share_percentage_after": 0.004,
+      "share_percentage_transaction": 0.001,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Prajogo Pangestu sells shares of Petrindo Jaya Kreasi",
+      "body": "This is Prajogo Pangestu's 8th insider disposal in the last 6 months, totaling a distribution of 4,188,751,300 shares transacted at an average price of IDR 1,198. Prajogo Pangestu's ownership in Petrindo Jaya Kreasi has decreased from 81.261% to 80.372% in this period.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-13052026-0499-00.pdf-0.pdf",
+      "timestamp": "2026-05-13T22:46:09",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "free_float_compliance"
+      ],
+      "symbol": "CUAN.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Prajogo Pangestu",
+      "holding_before": 91353198700,
+      "holding_after": 90353198700,
+      "amount_transaction": 1000000000,
+      "price": 1035.0,
+      "transaction_value": 1035000000000.0,
+      "price_transaction": [
+        {
+          "date": "2026-05-11",
+          "type": "sell",
+          "price": 1035,
+          "amount_transacted": 1000000000
+        }
+      ],
+      "share_percentage_before": 81.261,
+      "share_percentage_after": 80.372,
+      "share_percentage_transaction": 0.889,
+      "idx_investor_slug": "prajogo-pangestu-d14b5",
+      "idx_conglomerates_group_slug": "barito-group"
+    },
+    {
+      "title": "Prajogo Pangestu sells shares of Petrindo Jaya Kreasi",
+      "body": "This is Prajogo Pangestu's 7th insider disposal in the last 6 months, totaling a distribution of 3,188,751,300 shares transacted at an average price of IDR 1,250. Prajogo Pangestu's ownership in Petrindo Jaya Kreasi has decreased from 81.298% to 81.261% in this period.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-08052026-0120-00.pdf-0.pdf",
+      "timestamp": "2026-05-08T21:11:27",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "free_float_compliance"
+      ],
+      "symbol": "CUAN.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Prajogo Pangestu",
+      "holding_before": 91394285500,
+      "holding_after": 91353198700,
+      "amount_transaction": 41086800,
+      "price": 1185.0,
+      "transaction_value": 48687858000.0,
+      "price_transaction": [
+        {
+          "date": "2026-05-05",
+          "type": "sell",
+          "price": 1185,
+          "amount_transacted": 41086800
+        }
+      ],
+      "share_percentage_before": 81.298,
+      "share_percentage_after": 81.261,
+      "share_percentage_transaction": 0.037,
+      "idx_investor_slug": "prajogo-pangestu-d14b5",
+      "idx_conglomerates_group_slug": "barito-group"
+    },
+    {
+      "title": "Prajogo Pangestu sells shares of Petrindo Jaya Kreasi",
+      "body": "This is Prajogo Pangestu's 6th insider disposal in the last 6 months, totaling a distribution of 3,147,664,500 shares transacted at an average price of IDR 1,250. Prajogo Pangestu's ownership in Petrindo Jaya Kreasi has decreased from 81.641% to 81.298% in this period.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-06052026-6309-00.pdf-0.pdf",
+      "timestamp": "2026-05-06T21:00:36",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "free_float_compliance"
+      ],
+      "symbol": "CUAN.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Prajogo Pangestu",
+      "holding_before": 91780563000,
+      "holding_after": 91394285500,
+      "amount_transaction": 386277500,
+      "price": 1211.514,
+      "transaction_value": 467980756300.0,
+      "price_transaction": [
+        {
+          "date": "2026-04-30",
+          "type": "sell",
+          "price": 1267,
+          "amount_transacted": 66033800
+        },
+        {
+          "date": "2026-04-30",
+          "type": "sell",
+          "price": 1221,
+          "amount_transacted": 86057700
+        },
+        {
+          "date": "2026-05-04",
+          "type": "sell",
+          "price": 1187,
+          "amount_transacted": 12000000
+        },
+        {
+          "date": "2026-05-04",
+          "type": "sell",
+          "price": 1180,
+          "amount_transacted": 94186000
+        },
+        {
+          "date": "2026-05-04",
+          "type": "sell",
+          "price": 1202,
+          "amount_transacted": 128000000
+        }
+      ],
+      "share_percentage_before": 81.641,
+      "share_percentage_after": 81.298,
+      "share_percentage_transaction": 0.343,
+      "idx_investor_slug": "prajogo-pangestu-d14b5",
+      "idx_conglomerates_group_slug": "barito-group"
+    },
+    {
+      "title": "Prajogo Pangestu sells shares of Petrindo Jaya Kreasi",
+      "body": "This is Prajogo Pangestu's 5th insider disposal in the last 6 months, totaling a distribution of 2,761,387,000 shares transacted at an average price of IDR 1,256. Prajogo Pangestu's ownership in Petrindo Jaya Kreasi has decreased from 82.338% to 81.641% in this period.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-30042026-6522-00.pdf-0.pdf",
+      "timestamp": "2026-04-30T22:27:09",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "free_float_compliance"
+      ],
+      "symbol": "CUAN.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Prajogo Pangestu",
+      "holding_before": 92563472200,
+      "holding_after": 91780563000,
+      "amount_transaction": 782909200,
+      "price": 1300.429,
+      "transaction_value": 1018118092700.0,
+      "price_transaction": [
+        {
+          "date": "2026-04-27",
+          "type": "sell",
+          "price": 1321,
+          "amount_transacted": 96000000
+        },
+        {
+          "date": "2026-04-27",
+          "type": "sell",
+          "price": 1315,
+          "amount_transacted": 96000000
+        },
+        {
+          "date": "2026-04-28",
+          "type": "sell",
+          "price": 1303,
+          "amount_transacted": 136000000
+        },
+        {
+          "date": "2026-04-28",
+          "type": "sell",
+          "price": 1304,
+          "amount_transacted": 167452500
+        },
+        {
+          "date": "2026-04-29",
+          "type": "sell",
+          "price": 1281,
+          "amount_transacted": 129456700
+        },
+        {
+          "date": "2026-04-29",
+          "type": "sell",
+          "price": 1289,
+          "amount_transacted": 158000000
+        }
+      ],
+      "share_percentage_before": 82.338,
+      "share_percentage_after": 81.641,
+      "share_percentage_transaction": 0.697,
+      "idx_investor_slug": "prajogo-pangestu-d14b5",
+      "idx_conglomerates_group_slug": "barito-group"
+    },
+    {
+      "title": "Prajogo Pangestu sells shares of Petrindo Jaya Kreasi",
+      "body": "This is Prajogo Pangestu's 4th insider disposal in the last 6 months, totaling a distribution of 1,978,477,800 shares transacted at an average price of IDR 1,238. Prajogo Pangestu's ownership in Petrindo Jaya Kreasi has decreased from 82.389% to 82.338% in this period.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-21042026-6349-00.pdf-0.pdf",
+      "timestamp": "2026-04-21T21:53:33",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "free-float-compliance"
+      ],
+      "symbol": "CUAN.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Prajogo Pangestu",
+      "holding_before": 92620628900,
+      "holding_after": 92563472200,
+      "amount_transaction": 57156700,
+      "price": 1575.851,
+      "transaction_value": 90070428000.0,
+      "price_transaction": [
+        {
+          "date": "2026-04-16",
+          "type": "sell",
+          "price": 1561,
+          "amount_transacted": 13436300
+        },
+        {
+          "date": "2026-04-16",
+          "type": "sell",
+          "price": 1545,
+          "amount_transacted": 12000000
+        },
+        {
+          "date": "2026-04-16",
+          "type": "sell",
+          "price": 1533,
+          "amount_transacted": 1048900
+        },
+        {
+          "date": "2026-04-17",
+          "type": "sell",
+          "price": 1590,
+          "amount_transacted": 12600000
+        },
+        {
+          "date": "2026-04-17",
+          "type": "sell",
+          "price": 1600,
+          "amount_transacted": 18071500
+        }
+      ],
+      "share_percentage_before": 82.389,
+      "share_percentage_after": 82.338,
+      "share_percentage_transaction": 0.051,
+      "idx_investor_slug": "prajogo-pangestu-d14b5",
+      "idx_conglomerates_group_slug": "barito-group"
+    },
+    {
+      "title": "Prajogo Pangestu sells shares of Petrindo Jaya Kreasi",
+      "body": "This is Prajogo Pangestu's 3rd insider disposal in the last 6 months, totaling a distribution of 1,921,321,100 shares transacted at an average price of IDR 1,228. Prajogo Pangestu's ownership in Petrindo Jaya Kreasi has decreased from 82.862% to 82.389% in this period.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-15042026-1916-00.pdf-0.pdf",
+      "timestamp": "2026-04-15T21:56:52",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "free-float-compliance"
+      ],
+      "symbol": "CUAN.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Prajogo Pangestu",
+      "holding_before": 93152298800,
+      "holding_after": 92620628900,
+      "amount_transaction": 531669900,
+      "price": 1456.207,
+      "transaction_value": 774221372400.0,
+      "price_transaction": [
+        {
+          "date": "2026-04-10",
+          "type": "sell",
+          "price": 1380,
+          "amount_transacted": 54490400
+        },
+        {
+          "date": "2026-04-10",
+          "type": "sell",
+          "price": 1356,
+          "amount_transacted": 4079200
+        },
+        {
+          "date": "2026-04-13",
+          "type": "sell",
+          "price": 1430,
+          "amount_transacted": 16000000
+        },
+        {
+          "date": "2026-04-13",
+          "type": "sell",
+          "price": 1418,
+          "amount_transacted": 36000000
+        },
+        {
+          "date": "2026-04-13",
+          "type": "sell",
+          "price": 1409,
+          "amount_transacted": 44896100
+        },
+        {
+          "date": "2026-04-13",
+          "type": "sell",
+          "price": 1430,
+          "amount_transacted": 58000000
+        },
+        {
+          "date": "2026-04-13",
+          "type": "sell",
+          "price": 1440,
+          "amount_transacted": 13227000
+        },
+        {
+          "date": "2026-04-13",
+          "type": "sell",
+          "price": 1435,
+          "amount_transacted": 5627800
+        },
+        {
+          "date": "2026-04-13",
+          "type": "sell",
+          "price": 1430,
+          "amount_transacted": 11372200
+        },
+        {
+          "date": "2026-04-13",
+          "type": "sell",
+          "price": 1440,
+          "amount_transacted": 1000000
+        },
+        {
+          "date": "2026-04-14",
+          "type": "sell",
+          "price": 1488,
+          "amount_transacted": 88000000
+        },
+        {
+          "date": "2026-04-14",
+          "type": "sell",
+          "price": 1466,
+          "amount_transacted": 36000000
+        },
+        {
+          "date": "2026-04-14",
+          "type": "sell",
+          "price": 1519,
+          "amount_transacted": 14463200
+        },
+        {
+          "date": "2026-04-14",
+          "type": "sell",
+          "price": 1500,
+          "amount_transacted": 1092200
+        },
+        {
+          "date": "2026-04-14",
+          "type": "sell",
+          "price": 1495,
+          "amount_transacted": 1854300
+        },
+        {
+          "date": "2026-04-14",
+          "type": "sell",
+          "price": 1490,
+          "amount_transacted": 1053500
+        },
+        {
+          "date": "2026-04-14",
+          "type": "sell",
+          "price": 1460,
+          "amount_transacted": 5000000
+        },
+        {
+          "date": "2026-04-14",
+          "type": "sell",
+          "price": 1465,
+          "amount_transacted": 5000000
+        },
+        {
+          "date": "2026-04-14",
+          "type": "sell",
+          "price": 1470,
+          "amount_transacted": 5210300
+        },
+        {
+          "date": "2026-04-14",
+          "type": "sell",
+          "price": 1475,
+          "amount_transacted": 3441800
+        },
+        {
+          "date": "2026-04-14",
+          "type": "sell",
+          "price": 1480,
+          "amount_transacted": 566800
+        },
+        {
+          "date": "2026-04-15",
+          "type": "sell",
+          "price": 1502,
+          "amount_transacted": 80061800
+        },
+        {
+          "date": "2026-04-15",
+          "type": "sell",
+          "price": 1510,
+          "amount_transacted": 9654100
+        },
+        {
+          "date": "2026-04-15",
+          "type": "sell",
+          "price": 1523,
+          "amount_transacted": 23240300
+        },
+        {
+          "date": "2026-04-15",
+          "type": "sell",
+          "price": 1495,
+          "amount_transacted": 12338900
+        }
+      ],
+      "share_percentage_before": 82.862,
+      "share_percentage_after": 82.389,
+      "share_percentage_transaction": 0.473,
+      "idx_investor_slug": "prajogo-pangestu-d14b5",
+      "idx_conglomerates_group_slug": "barito-group"
+    },
+    {
+      "title": "Prajogo Pangestu sells shares of Petrindo Jaya Kreasi",
+      "body": "Prajogo Pangestu sold 625,624,200 shares of Petrindo Jaya Kreasi. This decreases their holdings from 93,777,923,000 to 93,152,298,800 shares. The stated purpose of the transaction was adding free float shares.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-09042026-9349-00.pdf-0.pdf",
+      "timestamp": "2026-04-09T22:30:12",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "free-float-compliance"
+      ],
+      "symbol": "CUAN.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Prajogo Pangestu",
+      "holding_before": 93777923000,
+      "holding_after": 93152298800,
+      "amount_transaction": 625624200,
+      "price": 1177.0,
+      "transaction_value": 736359683400.0,
+      "price_transaction": [
+        {
+          "date": "2026-04-09",
+          "type": "sell",
+          "price": 1177.0,
+          "amount_transacted": 625624200
+        }
+      ],
+      "share_percentage_before": 83.418,
+      "share_percentage_after": 82.862,
+      "share_percentage_transaction": 0.556,
+      "idx_investor_slug": "prajogo-pangestu-d14b5",
+      "idx_conglomerates_group_slug": "barito-group"
+    },
+    {
+      "title": "Prajogo Pangestu sells shares of Petrindo Jaya Kreasi",
+      "body": "Prajogo Pangestu sold 764,027,000 shares of Petrindo Jaya Kreasi. This decreases their holdings from 94,541,950,000 to 93,777,923,000 shares. The stated purpose of the transaction was adding free float shares.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-02042026-0739-00.pdf-0.pdf",
+      "timestamp": "2026-04-02T19:50:42",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "free-float-compliance"
+      ],
+      "symbol": "CUAN.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Prajogo Pangestu",
+      "holding_before": 94541950000,
+      "holding_after": 93777923000,
+      "amount_transaction": 764027000,
+      "price": 1111.607,
+      "transaction_value": 849297880400.0,
+      "price_transaction": [
+        {
+          "date": "2026-03-30",
+          "type": "sell",
+          "price": 1148.0,
+          "amount_transacted": 100000000
+        },
+        {
+          "date": "2026-03-30",
+          "type": "sell",
+          "price": 1114.0,
+          "amount_transacted": 102000000
+        },
+        {
+          "date": "2026-03-30",
+          "type": "sell",
+          "price": 1150.0,
+          "amount_transacted": 1064700
+        },
+        {
+          "date": "2026-03-30",
+          "type": "sell",
+          "price": 1132.0,
+          "amount_transacted": 22000000
+        },
+        {
+          "date": "2026-03-30",
+          "type": "sell",
+          "price": 1130.0,
+          "amount_transacted": 8000000
+        },
+        {
+          "date": "2026-03-31",
+          "type": "sell",
+          "price": 1060.0,
+          "amount_transacted": 8000000
+        },
+        {
+          "date": "2026-03-31",
+          "type": "sell",
+          "price": 1109.0,
+          "amount_transacted": 69225700
+        },
+        {
+          "date": "2026-03-31",
+          "type": "sell",
+          "price": 1060.0,
+          "amount_transacted": 8800000
+        },
+        {
+          "date": "2026-03-31",
+          "type": "sell",
+          "price": 1114.0,
+          "amount_transacted": 22000000
+        },
+        {
+          "date": "2026-03-31",
+          "type": "sell",
+          "price": 1118.0,
+          "amount_transacted": 106000000
+        },
+        {
+          "date": "2026-04-01",
+          "type": "sell",
+          "price": 1130.0,
+          "amount_transacted": 7721200
+        },
+        {
+          "date": "2026-04-01",
+          "type": "sell",
+          "price": 1115.0,
+          "amount_transacted": 26000000
+        },
+        {
+          "date": "2026-04-01",
+          "type": "sell",
+          "price": 1113.0,
+          "amount_transacted": 110000000
+        },
+        {
+          "date": "2026-04-01",
+          "type": "sell",
+          "price": 1130.0,
+          "amount_transacted": 7484800
+        },
+        {
+          "date": "2026-04-02",
+          "type": "sell",
+          "price": 1045.0,
+          "amount_transacted": 8200000
+        },
+        {
+          "date": "2026-04-02",
+          "type": "sell",
+          "price": 1130.0,
+          "amount_transacted": 20033500
+        },
+        {
+          "date": "2026-04-02",
+          "type": "sell",
+          "price": 1053.0,
+          "amount_transacted": 51836300
+        },
+        {
+          "date": "2026-04-02",
+          "type": "sell",
+          "price": 1094.0,
+          "amount_transacted": 85660800
+        }
+      ],
+      "share_percentage_before": 84.098,
+      "share_percentage_after": 83.418,
+      "share_percentage_transaction": 0.68,
+      "idx_investor_slug": "prajogo-pangestu-d14b5",
+      "idx_conglomerates_group_slug": "barito-group"
+    },
+    {
+      "title": "Prajogo Pangestu buys shares of Petrindo Jaya Kreasi",
+      "body": "This is Prajogo Pangestu's 5th insider purchase in the last 6 months, totaling an accumulation of 24,300,000 shares transacted at an average price of IDR 1,724. Prajogo Pangestu's ownership in Petrindo Jaya Kreasi has increased from 84.091% to 84.098% in this period.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-30012026-6862-00.pdf-0.pdf",
+      "timestamp": "2026-01-30T23:02:43",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "CUAN.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Prajogo Pangestu",
+      "holding_before": 94534650000,
+      "holding_after": 94541950000,
+      "amount_transaction": 7300000,
+      "price": 1769.424,
+      "transaction_value": 12916798500.0,
+      "price_transaction": [
+        {
+          "date": "2026-01-30",
+          "type": "buy",
+          "price": 1735,
+          "amount_transacted": 123000
+        },
+        {
+          "date": "2026-01-30",
+          "type": "buy",
+          "price": 1740,
+          "amount_transacted": 353000
+        },
+        {
+          "date": "2026-01-30",
+          "type": "buy",
+          "price": 1745,
+          "amount_transacted": 404400
+        },
+        {
+          "date": "2026-01-30",
+          "type": "buy",
+          "price": 1750,
+          "amount_transacted": 370400
+        },
+        {
+          "date": "2026-01-30",
+          "type": "buy",
+          "price": 1755,
+          "amount_transacted": 195800
+        },
+        {
+          "date": "2026-01-30",
+          "type": "buy",
+          "price": 1760,
+          "amount_transacted": 727000
+        },
+        {
+          "date": "2026-01-30",
+          "type": "buy",
+          "price": 1795,
+          "amount_transacted": 560800
+        },
+        {
+          "date": "2026-01-30",
+          "type": "buy",
+          "price": 1770,
+          "amount_transacted": 1093700
+        },
+        {
+          "date": "2026-01-30",
+          "type": "buy",
+          "price": 1775,
+          "amount_transacted": 545700
+        },
+        {
+          "date": "2026-01-30",
+          "type": "buy",
+          "price": 1780,
+          "amount_transacted": 1789500
+        },
+        {
+          "date": "2026-01-30",
+          "type": "buy",
+          "price": 1785,
+          "amount_transacted": 174300
+        },
+        {
+          "date": "2026-01-30",
+          "type": "buy",
+          "price": 1790,
+          "amount_transacted": 238900
+        },
+        {
+          "date": "2026-01-30",
+          "type": "buy",
+          "price": 1765,
+          "amount_transacted": 723500
+        }
+      ],
+      "share_percentage_before": 84.091,
+      "share_percentage_after": 84.098,
+      "share_percentage_transaction": 0.007,
+      "idx_investor_slug": "prajogo-pangestu-d14b5",
+      "idx_conglomerates_group_slug": "barito-group"
+    },
+    {
+      "title": "Prajogo Pangestu buys shares of Petrindo Jaya Kreasi",
+      "body": "This is Prajogo Pangestu's 4th insider purchase in the last 6 months, totaling an accumulation of 17,000,000 shares transacted at an average price of IDR 1,704. Prajogo Pangestu's ownership in Petrindo Jaya Kreasi has increased from 84.088% to 84.091% in this period.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-29012026-9901-00.pdf-0.pdf",
+      "timestamp": "2026-01-29T16:48:07",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "CUAN.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Prajogo Pangestu",
+      "holding_before": 94530650000,
+      "holding_after": 94534650000,
+      "amount_transaction": 4000000,
+      "price": 1804.579,
+      "transaction_value": 7218316000.0,
+      "price_transaction": [
+        {
+          "date": "2026-01-29",
+          "type": "buy",
+          "price": 1805,
+          "amount_transacted": 789700
+        },
+        {
+          "date": "2026-01-29",
+          "type": "buy",
+          "price": 1770,
+          "amount_transacted": 69900
+        },
+        {
+          "date": "2026-01-29",
+          "type": "buy",
+          "price": 1775,
+          "amount_transacted": 176900
+        },
+        {
+          "date": "2026-01-29",
+          "type": "buy",
+          "price": 1780,
+          "amount_transacted": 67900
+        },
+        {
+          "date": "2026-01-29",
+          "type": "buy",
+          "price": 1785,
+          "amount_transacted": 255800
+        },
+        {
+          "date": "2026-01-29",
+          "type": "buy",
+          "price": 1810,
+          "amount_transacted": 733800
+        },
+        {
+          "date": "2026-01-29",
+          "type": "buy",
+          "price": 1800,
+          "amount_transacted": 520400
+        },
+        {
+          "date": "2026-01-29",
+          "type": "buy",
+          "price": 1820,
+          "amount_transacted": 240000
+        },
+        {
+          "date": "2026-01-29",
+          "type": "buy",
+          "price": 1825,
+          "amount_transacted": 184800
+        },
+        {
+          "date": "2026-01-29",
+          "type": "buy",
+          "price": 1830,
+          "amount_transacted": 399600
+        },
+        {
+          "date": "2026-01-29",
+          "type": "buy",
+          "price": 1790,
+          "amount_transacted": 146800
+        },
+        {
+          "date": "2026-01-29",
+          "type": "buy",
+          "price": 1795,
+          "amount_transacted": 370600
+        },
+        {
+          "date": "2026-01-29",
+          "type": "buy",
+          "price": 1815,
+          "amount_transacted": 43800
+        }
+      ],
+      "share_percentage_before": 84.088,
+      "share_percentage_after": 84.091,
+      "share_percentage_transaction": 0.003,
+      "idx_investor_slug": "prajogo-pangestu-d14b5",
+      "idx_conglomerates_group_slug": "barito-group"
+    },
+    {
+      "title": "Prajogo Pangestu buys shares of Petrindo Jaya Kreasi",
+      "body": "This is Prajogo Pangestu's 3rd insider purchase in the last 6 months, totaling an accumulation of 13,000,000 shares transacted at an average price of IDR 1,673. Prajogo Pangestu's ownership in Petrindo Jaya Kreasi has increased from 84.082% to 84.088% in this period.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-29012026-9626-00.pdf-0.pdf",
+      "timestamp": "2026-01-29T07:44:20",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "CUAN.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Prajogo Pangestu",
+      "holding_before": 94523650000,
+      "holding_after": 94530650000,
+      "amount_transaction": 7000000,
+      "price": 1551.894,
+      "transaction_value": 10863259000.0,
+      "price_transaction": [
+        {
+          "date": "2026-01-28",
+          "type": "buy",
+          "price": 1525,
+          "amount_transacted": 434400
+        },
+        {
+          "date": "2026-01-28",
+          "type": "buy",
+          "price": 1530,
+          "amount_transacted": 223700
+        },
+        {
+          "date": "2026-01-28",
+          "type": "buy",
+          "price": 1535,
+          "amount_transacted": 397100
+        },
+        {
+          "date": "2026-01-28",
+          "type": "buy",
+          "price": 1540,
+          "amount_transacted": 349100
+        },
+        {
+          "date": "2026-01-28",
+          "type": "buy",
+          "price": 1545,
+          "amount_transacted": 666500
+        },
+        {
+          "date": "2026-01-28",
+          "type": "buy",
+          "price": 1580,
+          "amount_transacted": 356700
+        },
+        {
+          "date": "2026-01-28",
+          "type": "buy",
+          "price": 1555,
+          "amount_transacted": 228900
+        },
+        {
+          "date": "2026-01-28",
+          "type": "buy",
+          "price": 1560,
+          "amount_transacted": 1459800
+        },
+        {
+          "date": "2026-01-28",
+          "type": "buy",
+          "price": 1565,
+          "amount_transacted": 335500
+        },
+        {
+          "date": "2026-01-28",
+          "type": "buy",
+          "price": 1570,
+          "amount_transacted": 201600
+        },
+        {
+          "date": "2026-01-28",
+          "type": "buy",
+          "price": 1575,
+          "amount_transacted": 234600
+        },
+        {
+          "date": "2026-01-28",
+          "type": "buy",
+          "price": 1550,
+          "amount_transacted": 2112100
+        }
+      ],
+      "share_percentage_before": 84.082,
+      "share_percentage_after": 84.088,
+      "share_percentage_transaction": 0.006,
+      "idx_investor_slug": "prajogo-pangestu-d14b5",
+      "idx_conglomerates_group_slug": "barito-group"
+    },
+    {
+      "title": "Prajogo Pangestu buys shares of Petrindo Jaya Kreasi",
+      "body": "Prajogo Pangestu's acquisition of CUAN.JK shares is the latest in a series of investments, with Prajogo Pangestu adding to their position across 3 companies in the last 6 months. Alongside CUAN.JK, Prajogo Pangestu has also acquired shares of BRPT.JK and BREN.JK, totaling IDR 55,743,686,000.0 across all purchases in this period.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-23012026-3298-00.pdf-0.pdf",
+      "timestamp": "2026-01-23T17:08:15",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "CUAN.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Prajogo Pangestu",
+      "holding_before": 94521150000,
+      "holding_after": 94523650000,
+      "amount_transaction": 2500000,
+      "price": 1735.0,
+      "transaction_value": 4337500000.0,
+      "price_transaction": [
+        {
+          "date": "2026-01-23",
+          "type": "buy",
+          "price": 1735,
+          "amount_transacted": 2500000
+        }
+      ],
+      "share_percentage_before": 84.079,
+      "share_percentage_after": 84.082,
+      "share_percentage_transaction": 0.003,
+      "idx_investor_slug": "prajogo-pangestu-d14b5",
+      "idx_conglomerates_group_slug": "barito-group"
+    },
+    {
+      "title": "Prajogo Pangestu buys shares of Petrindo Jaya Kreasi",
+      "body": "Prajogo Pangestu's acquisition of CUAN.JK shares is the latest in a series of investments, with Prajogo Pangestu adding to their position across 2 companies in the last 6 months. Alongside CUAN.JK, Prajogo Pangestu has also acquired shares of BREN.JK, totaling IDR 28,034,489,500.0 across all purchases in this period.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-19012026-6139-00.pdf-0.pdf",
+      "timestamp": "2026-01-19T10:27:47",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "CUAN.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Prajogo Pangestu",
+      "holding_before": 94517650000,
+      "holding_after": 94521150000,
+      "amount_transaction": 3500000,
+      "price": 1871.399,
+      "transaction_value": 6549897000.0,
+      "price_transaction": [
+        {
+          "date": "2026-01-15",
+          "type": "buy",
+          "price": 1870,
+          "amount_transacted": 341700
+        },
+        {
+          "date": "2026-01-15",
+          "type": "buy",
+          "price": 1855,
+          "amount_transacted": 202500
+        },
+        {
+          "date": "2026-01-15",
+          "type": "buy",
+          "price": 1865,
+          "amount_transacted": 265300
+        },
+        {
+          "date": "2026-01-15",
+          "type": "buy",
+          "price": 1875,
+          "amount_transacted": 257500
+        },
+        {
+          "date": "2026-01-15",
+          "type": "buy",
+          "price": 1880,
+          "amount_transacted": 177400
+        },
+        {
+          "date": "2026-01-15",
+          "type": "buy",
+          "price": 1900,
+          "amount_transacted": 169400
+        },
+        {
+          "date": "2026-01-15",
+          "type": "buy",
+          "price": 1850,
+          "amount_transacted": 656500
+        },
+        {
+          "date": "2026-01-15",
+          "type": "buy",
+          "price": 1860,
+          "amount_transacted": 470400
+        },
+        {
+          "date": "2026-01-15",
+          "type": "buy",
+          "price": 1890,
+          "amount_transacted": 472000
+        },
+        {
+          "date": "2026-01-15",
+          "type": "buy",
+          "price": 1895,
+          "amount_transacted": 220200
+        },
+        {
+          "date": "2026-01-15",
+          "type": "buy",
+          "price": 1885,
+          "amount_transacted": 267100
+        }
+      ],
+      "share_percentage_before": 84.076,
+      "share_percentage_after": 84.079,
+      "share_percentage_transaction": 0.003,
+      "idx_investor_slug": "prajogo-pangestu-d14b5",
+      "idx_conglomerates_group_slug": "barito-group"
+    },
+    {
+      "title": "Michael buys shares of PETRINDO JAYA KREASI TBK",
+      "body": "Michael's acquisition of CUAN.JK shares is the latest in a series of investments, with Michael adding to their position across 2 companies in the last 6 months. Alongside CUAN.JK, Michael has also acquired shares of PTRO.JK, totaling IDR 800,890,000.0 across all purchases in this period.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202511/7d1d35541a_d253dfb72f.pdf",
+      "timestamp": "2025-11-13T08:53:51",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "CUAN.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Michael",
+      "holding_before": 3402000,
+      "holding_after": 3542000,
+      "amount_transaction": 140000,
+      "price": 2180.0,
+      "transaction_value": 305200000.0,
+      "price_transaction": [
+        {
+          "date": "2025-11-12",
+          "type": "buy",
+          "price": 2180,
+          "amount_transacted": 140000
+        }
+      ],
+      "share_percentage_before": 0.00303,
+      "share_percentage_after": 0.00315,
+      "share_percentage_transaction": 0.00012,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Prajogo Pangestu Sell Transaction of Petrindo Jaya Kreasi",
+      "body": "On August 06, 2025, Prajogo Pangestu, an insider shareholder, sold 1,000,000,000 shares of Petrindo Jaya Kreasi changing its holding from 95,517,650,000 to 94,517,650,000 shares.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202508/61f5e5fdfb_4bb8bc3b10.pdf",
+      "timestamp": "2025-08-06T15:09:29",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "CUAN.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Prajogo Pangestu",
+      "holding_before": 95517650000,
+      "holding_after": 94517650000,
+      "amount_transaction": 1000000000,
+      "price": 1450.0,
+      "transaction_value": 1450000000000.0,
+      "price_transaction": [
+        {
+          "date": "2025-08-05",
+          "type": "sell",
+          "price": 1450,
+          "amount_transacted": 1000000000
+        }
+      ],
+      "share_percentage_before": 84.966,
+      "share_percentage_after": 84.076,
+      "share_percentage_transaction": 0.889,
+      "idx_investor_slug": "prajogo-pangestu-d14b5",
+      "idx_conglomerates_group_slug": "barito-group"
+    }
+  ],
+  "pagination": {
+    "total_count": 19,
+    "showing": 19,
+    "limit": 30,
+    "offset": 0,
+    "has_next": false,
+    "has_previous": false,
+    "next_offset": null,
+    "previous_offset": null
+  }
+}

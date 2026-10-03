@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/SCMA/?start=2023-09-25&end=2023-12-23",
+  "retrieved_at": "2026-09-25T03:55:44.331949+00:00",
+  "sha256": "1213f082e40df4535892bf860ce580492f7e4b8cc5583713813d6feea657d230",
+  "http_status": 200,
+  "request_number": 39,
+  "request_budget": 105,
+  "ticker": "SCMA",
+  "requested_start": "2023-09-25",
+  "requested_end": "2023-12-23",
+  "window_days": 90,
+  "snapshot_sha256": "f2b04c16f5a887ed4c9655a42beeacb65083297e9a7e622c769368da228d5a97"
+}

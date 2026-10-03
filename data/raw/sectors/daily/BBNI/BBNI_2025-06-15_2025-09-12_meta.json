@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/BBNI/",
+  "ticker": "BBNI",
+  "start": "2025-06-15",
+  "end": "2025-09-12",
+  "retrieved_at": "2026-09-24T12:30:46.936446",
+  "http_status": 200,
+  "observations_count": 62,
+  "sha256": "a0a77209ef8133ce4fdd663db4d56ddd02343eff2c22cf0fc3b99e9719a16d35"
+}

@@ -1,0 +1,10 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/companies/?where=indices+in+%5B%27LQ45%27%5D&order_by=symbol&limit=100&offset=0&include_query_values=true",
+  "retrieved_at": "2026-09-18T12:05:48.047234+00:00",
+  "sha256": "1bea3161faaf5f3978e2be3de8df0823c53c2a6559a3e7a8a67d17464cb23827",
+  "http_status": 200,
+  "request_number": 1,
+  "request_budget": 300
+}

@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/BBNI/?start=2025-09-14&end=2025-12-12",
+  "retrieved_at": "2026-09-25T03:24:21.756297+00:00",
+  "sha256": "c5f586377e084d6a6226e35b1c7c10b00a5785635a4402239f9e505b5357a5c3",
+  "http_status": 200,
+  "request_number": 96,
+  "request_budget": 558,
+  "ticker": "BBNI",
+  "requested_start": "2025-09-14",
+  "requested_end": "2025-12-12",
+  "window_days": 90,
+  "snapshot_sha256": "5bb717b1500bb4ac4e4a834e95258796e8bca368f84749c14be7d15fa6e26b13"
+}

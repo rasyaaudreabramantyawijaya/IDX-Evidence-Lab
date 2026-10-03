@@ -1,0 +1,18 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/filings/?symbol=AMMN&start=2023-09-25&end=2026-09-24&limit=30&offset=0",
+  "retrieved_at": "2026-09-26T12:21:34.696829+00:00",
+  "sha256": "dbe9c44e8101fcfb72647e8e830e0ec73fc3967ff641607c0f5450fe103198c8",
+  "http_status": 200,
+  "request_number": 6,
+  "request_budget": 615,
+  "run_id": "filings_full_20260926T122124Z",
+  "symbol": "AMMN",
+  "requested_start": "2023-09-25",
+  "requested_end": "2026-09-24",
+  "limit": 30,
+  "offset": 0,
+  "pagination_followed": true,
+  "snapshot_sha256": "464921772436d5ef4b16ca724b8f98b43bf2b3993531f36386aec77f8015ec94"
+}

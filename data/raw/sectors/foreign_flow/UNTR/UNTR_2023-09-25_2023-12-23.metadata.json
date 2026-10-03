@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/UNTR/?start=2023-09-25&end=2023-12-23",
+  "retrieved_at": "2026-09-25T03:57:23.862289+00:00",
+  "sha256": "940b938837060326131a907e232d1732c4d76656dcba2415f7636afa894668c1",
+  "http_status": 200,
+  "request_number": 65,
+  "request_budget": 105,
+  "ticker": "UNTR",
+  "requested_start": "2023-09-25",
+  "requested_end": "2023-12-23",
+  "window_days": 90,
+  "snapshot_sha256": "8963d43d5c45695ec01e45f4617a49e1c195af0b3414c11a90170dc64aea7a9b"
+}

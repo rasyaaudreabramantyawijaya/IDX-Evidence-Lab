@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/INDY/",
+  "retrieved_at": "2026-09-26T12:13:58.999502+00:00",
+  "sha256": "e0287e4cbe9172be0a50afa2516c859107964a538ca05690c29ba0143ce5c3cc",
+  "http_status": 200,
+  "request_number": 7,
+  "request_budget": 10,
+  "symbol": "INDY",
+  "request_scope": "approved company report collection",
+  "snapshot_sha256": "95ee27f290e5286214548e35a3bbc4a0b7201a998a832fb724e6a3f496f1dea6"
+}

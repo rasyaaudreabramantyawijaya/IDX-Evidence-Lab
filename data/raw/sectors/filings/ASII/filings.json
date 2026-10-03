@@ -1,0 +1,152 @@
+{
+  "results": [
+    {
+      "title": "Djap Tet Fa buys shares of Astra International",
+      "body": "This transaction is part of a cluster-buy transaction amidst other insider buys during the last 6 months. Djap Tet Fa's insider purchase comes after Prijono Sugiarto, Ir Fxl Kesuma Msc, Rudy and Thomas Junaidi Alim W in Astra International, totaling an accumulation of 8,422,500 shares transacted at an average price of IDR 4,812.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-25092026-9217-00.pdf-0.pdf",
+      "timestamp": "2026-09-25T15:14:33",
+      "sector": "industrials",
+      "sub_sector": "multi-sector-holdings",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "ASII.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Djap Tet Fa",
+      "holding_before": 3500000,
+      "holding_after": 4000000,
+      "amount_transaction": 500000,
+      "price": 4769.0,
+      "transaction_value": 2384500000.0,
+      "price_transaction": [
+        {
+          "date": "2026-09-24",
+          "type": "buy",
+          "price": 4769,
+          "amount_transacted": 500000
+        }
+      ],
+      "share_percentage_before": 0.009,
+      "share_percentage_after": 0.01,
+      "share_percentage_transaction": 0.001,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Thomas Junaidi Alim W buys shares of Astra International",
+      "body": "This transaction is part of a cluster-buy transaction amidst other insider buys during the last 6 months. Thomas Junaidi Alim W's insider purchase comes after Prijono Sugiarto, Djap Tet Fa, Ir Fxl Kesuma Msc and Rudy in Astra International, totaling an accumulation of 7,922,500 shares transacted at an average price of IDR 4,814.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-25092026-1259-00.pdf-0.pdf",
+      "timestamp": "2026-09-25T14:25:24",
+      "sector": "industrials",
+      "sub_sector": "multi-sector-holdings",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "ASII.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Thomas Junaidi Alim W",
+      "holding_before": 1407800,
+      "holding_after": 1657800,
+      "amount_transaction": 250000,
+      "price": 4762.0,
+      "transaction_value": 1190500000.0,
+      "price_transaction": [
+        {
+          "date": "2026-09-23",
+          "type": "buy",
+          "price": 4762,
+          "amount_transacted": 250000
+        }
+      ],
+      "share_percentage_before": 0.004,
+      "share_percentage_after": 0.004,
+      "share_percentage_transaction": 0.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Prijono Sugiarto buys shares of Astra International",
+      "body": "This transaction is part of a cluster-buy transaction amidst other insider buys during the last 6 months. Prijono Sugiarto's insider purchase comes after Djap Tet Fa, Ir Fxl Kesuma Msc and Rudy in Astra International, totaling an accumulation of 7,672,500 shares transacted at an average price of IDR 4,816.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-23092026-3032-00.pdf-0.pdf",
+      "timestamp": "2026-09-23T16:08:04",
+      "sector": "industrials",
+      "sub_sector": "multi-sector-holdings",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "ASII.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Prijono Sugiarto",
+      "holding_before": 5587100,
+      "holding_after": 5595800,
+      "amount_transaction": 8700,
+      "price": 4850.0,
+      "transaction_value": 42195000.0,
+      "price_transaction": [
+        {
+          "date": "2026-09-21",
+          "type": "buy",
+          "price": 4850,
+          "amount_transacted": 8700
+        }
+      ],
+      "share_percentage_before": 0.014,
+      "share_percentage_after": 0.014,
+      "share_percentage_transaction": 0.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Rudy buys shares of Astra International",
+      "body": "This transaction is part of a cluster-buy transaction amidst other insider buys during the last 6 months. Rudy's insider purchase comes after Prijono Sugiarto, Djap Tet Fa and Ir Fxl Kesuma Msc in Astra International, totaling an accumulation of 7,663,800 shares transacted at an average price of IDR 4,816.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-23092026-1413-00.pdf-0.pdf",
+      "timestamp": "2026-09-23T16:00:15",
+      "sector": "industrials",
+      "sub_sector": "multi-sector-holdings",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "ASII.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Rudy",
+      "holding_before": 1200000,
+      "holding_after": 5600000,
+      "amount_transaction": 4400000,
+      "price": 4805.0,
+      "transaction_value": 21142000000.0,
+      "price_transaction": [
+        {
+          "date": "2026-09-21",
+          "type": "buy",
+          "price": 4820,
+          "amount_transacted": 2200000
+        },
+        {
+          "date": "2026-09-22",
+          "type": "buy",
+          "price": 4790,
+          "amount_transacted": 2200000
+        }
+      ],
+      "share_percentage_before": 0.003,
+      "share_percentage_after": 0.014,
+      "share_percentage_transaction": 0.011,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    }
+  ],
+  "pagination": {
+    "total_count": 4,
+    "showing": 4,
+    "limit": 30,
+    "offset": 0,
+    "has_next": false,
+    "has_previous": false,
+    "next_offset": null,
+    "previous_offset": null
+  }
+}

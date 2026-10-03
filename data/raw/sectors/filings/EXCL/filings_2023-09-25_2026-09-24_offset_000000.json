@@ -1,0 +1,495 @@
+{
+  "results": [
+    {
+      "title": "Sanjay Kumar Gordhan A Vaghasia buys shares of XLSMART Telecom Sejahtera",
+      "body": "Sanjay Kumar Gordhan A Vaghasia bought 1,500 shares of XLSMART Telecom Sejahtera. This increases their holdings from 303,000 to 304,500 shares. The stated purpose of the transaction was purchase.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-10032026-7673-00.pdf-0.pdf",
+      "timestamp": "2026-03-10T09:30:33",
+      "sector": "infrastructures",
+      "sub_sector": "telecommunication",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "EXCL.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Sanjay Kumar Gordhan A Vaghasia",
+      "holding_before": 303000,
+      "holding_after": 304500,
+      "amount_transaction": 1500,
+      "price": 2580.0,
+      "transaction_value": 3870000.0,
+      "price_transaction": [
+        {
+          "date": "2026-03-09",
+          "type": "buy",
+          "price": 2580.0,
+          "amount_transacted": 1500
+        }
+      ],
+      "share_percentage_before": 0.002,
+      "share_percentage_after": 0.002,
+      "share_percentage_transaction": 0.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Sanjay Kumar Gordhan A Vaghasia buys shares of XLSMART Telecom Sejahtera",
+      "body": "Sanjay Kumar Gordhan A Vaghasia bought 3,000 shares of XLSMART Telecom Sejahtera. This increases their holdings from 300,000 to 303,000 shares. The stated purpose of the transaction was purchase.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-04032026-6845-00.pdf-0.pdf",
+      "timestamp": "2026-03-04T15:08:16",
+      "sector": "infrastructures",
+      "sub_sector": "telecommunication",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "EXCL.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Sanjay Kumar Gordhan A Vaghasia",
+      "holding_before": 300000,
+      "holding_after": 303000,
+      "amount_transaction": 3000,
+      "price": 2790.0,
+      "transaction_value": 8370000.0,
+      "price_transaction": [
+        {
+          "date": "2026-03-04",
+          "type": "buy",
+          "price": 2790.0,
+          "amount_transacted": 3000
+        }
+      ],
+      "share_percentage_before": 0.002,
+      "share_percentage_after": 0.002,
+      "share_percentage_transaction": 0.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Yessie Dianty Yosetya buys shares of XLSMART Telecom Sejahtera",
+      "body": "This is Yessie Dianty Yosetya's 6th insider purchase in the last 6 months, totaling an accumulation of 1,030,000 shares transacted at an average price of IDR 3,002. Yessie Dianty Yosetya's ownership in XLSMART Telecom Sejahtera has increased from 0.012% to 0.013% in this period.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-24022026-1438-00.pdf-0.pdf",
+      "timestamp": "2026-02-24T09:51:15",
+      "sector": "infrastructures",
+      "sub_sector": "telecommunication",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "EXCL.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Yessie Dianty Yosetya",
+      "holding_before": 2241900,
+      "holding_after": 2381900,
+      "amount_transaction": 140000,
+      "price": 3284.286,
+      "transaction_value": 459800000.0,
+      "price_transaction": [
+        {
+          "date": "2026-02-23",
+          "type": "buy",
+          "price": 3280,
+          "amount_transacted": 80000
+        },
+        {
+          "date": "2026-02-23",
+          "type": "buy",
+          "price": 3290,
+          "amount_transacted": 60000
+        }
+      ],
+      "share_percentage_before": 0.012,
+      "share_percentage_after": 0.013,
+      "share_percentage_transaction": 0.001,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Yessie Dianty Yosetya buys shares of XLSMART Telecom Sejahtera",
+      "body": "This is Yessie Dianty Yosetya's 5th insider purchase in the last 6 months, totaling an accumulation of 890,000 shares transacted at an average price of IDR 2,958. Yessie Dianty Yosetya's ownership in XLSMART Telecom Sejahtera has decreased from 0.01% to 0.01% in this period.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-07012026-1473-00.pdf-0.pdf",
+      "timestamp": "2026-01-07T09:56:39",
+      "sector": "infrastructures",
+      "sub_sector": "telecommunication",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "EXCL.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Yessie Dianty Yosetya",
+      "holding_before": 1869700,
+      "holding_after": 1899700,
+      "amount_transaction": 30000,
+      "price": 3760.0,
+      "transaction_value": 112800000.0,
+      "price_transaction": [
+        {
+          "date": "2025-12-30",
+          "type": "buy",
+          "price": 3760,
+          "amount_transacted": 30000
+        }
+      ],
+      "share_percentage_before": 0.01,
+      "share_percentage_after": 0.01,
+      "share_percentage_transaction": 0.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Yessie Dianty Yosetya buys shares of XLSMART Telecom Sejahtera",
+      "body": "This is Yessie Dianty Yosetya's 4th insider purchase in the last 6 months, totaling an accumulation of 860,000 shares transacted at an average price of IDR 2,930. Yessie Dianty Yosetya's ownership in XLSMART Telecom Sejahtera has decreased from 0.01% to 0.01% in this period.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-23122025-2649-00.pdf-0.pdf",
+      "timestamp": "2025-12-23T10:27:58",
+      "sector": "infrastructures",
+      "sub_sector": "telecommunication",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "EXCL.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Yessie Dianty Yosetya",
+      "holding_before": 1839700,
+      "holding_after": 1869700,
+      "amount_transaction": 30000,
+      "price": 3790.0,
+      "transaction_value": 113700000.0,
+      "price_transaction": [
+        {
+          "date": "2025-12-22",
+          "type": "buy",
+          "price": 3790,
+          "amount_transacted": 30000
+        }
+      ],
+      "share_percentage_before": 0.01,
+      "share_percentage_after": 0.01,
+      "share_percentage_transaction": 0.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Yessie Dianty Yosetya buys shares of XLSMART Telecom Sejahtera",
+      "body": "This is Yessie Dianty Yosetya's 3rd insider purchase in the last 6 months, totaling an accumulation of 830,000 shares transacted at an average price of IDR 2,899. Yessie Dianty Yosetya's ownership in XLSMART Telecom Sejahtera has increased from 0.009% to 0.01% in this period.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-16122025-5459-00.pdf-0.pdf",
+      "timestamp": "2025-12-16T15:18:35",
+      "sector": "infrastructures",
+      "sub_sector": "telecommunication",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "EXCL.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Yessie Dianty Yosetya",
+      "holding_before": 1669700,
+      "holding_after": 1749700,
+      "amount_transaction": 80000,
+      "price": 3716.875,
+      "transaction_value": 297350000.0,
+      "price_transaction": [
+        {
+          "date": "2025-12-11",
+          "type": "buy",
+          "price": 3780,
+          "amount_transacted": 25000
+        },
+        {
+          "date": "2025-12-12",
+          "type": "buy",
+          "price": 3620,
+          "amount_transacted": 30000
+        },
+        {
+          "date": "2025-12-15",
+          "type": "buy",
+          "price": 3770,
+          "amount_transacted": 25000
+        }
+      ],
+      "share_percentage_before": 0.009,
+      "share_percentage_after": 0.01,
+      "share_percentage_transaction": 0.001,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Yessie Dianty Yosetya buys shares of XLSMART Telecom Sejahtera",
+      "body": "Yessie Dianty Yosetya bought 150,000 shares of XLSMART Telecom Sejahtera. This increases their holdings from 1,519,700 to 1,669,700 shares. The stated purpose of the transaction was purchase.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-11122025-0923-00.pdf-0.pdf",
+      "timestamp": "2025-12-11T22:40:55",
+      "sector": "infrastructures",
+      "sub_sector": "telecommunication",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "EXCL.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Yessie Dianty Yosetya",
+      "holding_before": 1519700,
+      "holding_after": 1669700,
+      "amount_transaction": 150000,
+      "price": 3403.333,
+      "transaction_value": 510500000.0,
+      "price_transaction": [
+        {
+          "date": "2025-12-05",
+          "type": "buy",
+          "price": 3190.0,
+          "amount_transacted": 40000
+        },
+        {
+          "date": "2025-12-08",
+          "type": "buy",
+          "price": 3400.0,
+          "amount_transacted": 40000
+        },
+        {
+          "date": "2025-12-09",
+          "type": "buy",
+          "price": 3390.0,
+          "amount_transacted": 40000
+        },
+        {
+          "date": "2025-12-10",
+          "type": "buy",
+          "price": 3710.0,
+          "amount_transacted": 30000
+        }
+      ],
+      "share_percentage_before": 0.008,
+      "share_percentage_after": 0.009,
+      "share_percentage_transaction": 0.001,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "XLSMART Telecom Sejahtera sells shares of Mora Telematika Indonesia",
+      "body": "XLSMART Telecom Sejahtera sold 4,331,835,710 shares of Mora Telematika Indonesia. This decreases their holdings from 4,331,835,710 to 0 shares. The stated purpose of the transaction was divestment.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202512/57dd977002_66d87a441d.pdf",
+      "timestamp": "2025-12-05T08:37:00",
+      "sector": "infrastructures",
+      "sub_sector": "telecommunication",
+      "tags": [],
+      "symbol": "EXCL.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "XLSMART Telecom Sejahtera",
+      "holding_before": 4331835710,
+      "holding_after": 0,
+      "amount_transaction": 4331835710,
+      "price": 432.0,
+      "transaction_value": 1871353026720.0,
+      "price_transaction": [
+        {
+          "date": "2025-12-04",
+          "type": "sell",
+          "price": 432,
+          "amount_transacted": 4331835710
+        }
+      ],
+      "share_percentage_before": 18.32,
+      "share_percentage_after": 0.0,
+      "share_percentage_transaction": 18.32,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Yessie Dianty Yosetya Buy Transaction of XLSMART Telecom Sejahtera",
+      "body": "On September 26, 2025, Yessie Dianty Yosetya, an insider shareholder, bought 600,000 shares of XLSMART Telecom Sejahtera changing its holding from 727,600 to 1,327,600 shares.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202509/41466c8498_ad5134f2c0.pdf",
+      "timestamp": "2025-09-26T18:03:27",
+      "sector": "infrastructures",
+      "sub_sector": "telecommunication",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "EXCL.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Yessie Dianty Yosetya",
+      "holding_before": 727600,
+      "holding_after": 1327600,
+      "amount_transaction": 600000,
+      "price": 2663.33,
+      "transaction_value": 1598000000.0,
+      "price_transaction": [
+        {
+          "date": "2025-09-23",
+          "type": "buy",
+          "price": 2650.0,
+          "amount_transacted": 200000
+        },
+        {
+          "date": "2025-09-23",
+          "type": "buy",
+          "price": 2730.0,
+          "amount_transacted": 200000
+        },
+        {
+          "date": "2025-09-24",
+          "type": "buy",
+          "price": 2610.0,
+          "amount_transacted": 200000
+        }
+      ],
+      "share_percentage_before": 0.004,
+      "share_percentage_after": 0.007,
+      "share_percentage_transaction": 0.003,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Sanjay Kumar Gordhan A Vaghasia Buy Transaction of XLSMART Telecom Sejahtera",
+      "body": "On September 10, 2025, Sanjay Kumar Gordhan A Vaghasia, an insider shareholder, bought 150,000 shares of XLSMART Telecom Sejahtera changing its holding from 150,000 to 300,000 shares.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202509/dde076a7b3_f9048c1512.pdf",
+      "timestamp": "2025-09-10T19:21:40",
+      "sector": "infrastructures",
+      "sub_sector": "telecommunication",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "EXCL.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Sanjay Kumar Gordhan A Vaghasia",
+      "holding_before": 150000,
+      "holding_after": 300000,
+      "amount_transaction": 150000,
+      "price": 2580.0,
+      "transaction_value": 387000000.0,
+      "price_transaction": [
+        {
+          "date": "2025-09-09",
+          "type": "buy",
+          "price": 2580.0,
+          "amount_transacted": 150000
+        }
+      ],
+      "share_percentage_before": 0.001,
+      "share_percentage_after": 0.002,
+      "share_percentage_transaction": 0.001,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "David Arcelus Oses Buy Transaction of XLSMART Telecom Sejahtera",
+      "body": "On September 10, 2025, David Arcelus Oses, an insider shareholder, bought 1,619,800 shares of XLSMART Telecom Sejahtera changing its holding from 0 to 1,619,800 shares.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202509/8dac2e0c58_3d51a9f161.pdf",
+      "timestamp": "2025-09-10T19:20:22",
+      "sector": "infrastructures",
+      "sub_sector": "telecommunication",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "EXCL.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "David Arcelus Oses",
+      "holding_before": 0,
+      "holding_after": 1619800,
+      "amount_transaction": 1619800,
+      "price": 2580.0,
+      "transaction_value": 4179084000.0,
+      "price_transaction": [
+        {
+          "date": "2025-09-09",
+          "type": "buy",
+          "price": 2580.0,
+          "amount_transacted": 1619800
+        }
+      ],
+      "share_percentage_before": 0.0,
+      "share_percentage_after": 0.009,
+      "share_percentage_transaction": 0.009,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Andrijanto Muljono Sell Transaction of XLSMART Telecom Sejahtera",
+      "body": "On July 30, 2025, Andrijanto Muljono, an insider shareholder, sold 539,800 shares of XLSMART Telecom Sejahtera changing its holding from 539,866 to 66 shares.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202507/1199d3ec5e_9393a951bb.pdf",
+      "timestamp": "2025-07-30T19:08:54",
+      "sector": "infrastructures",
+      "sub_sector": "telecommunication",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "EXCL.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Andrijanto Muljono",
+      "holding_before": 539866,
+      "holding_after": 66,
+      "amount_transaction": 539800,
+      "price": 2164.73,
+      "transaction_value": 1168520000.0,
+      "price_transaction": [
+        {
+          "date": "2025-06-03",
+          "type": "sell",
+          "price": 2160,
+          "amount_transacted": 507900
+        },
+        {
+          "date": "2025-06-30",
+          "type": "sell",
+          "price": 2240,
+          "amount_transacted": 31900
+        }
+      ],
+      "share_percentage_before": 0.003,
+      "share_percentage_after": 0.0,
+      "share_percentage_transaction": 0.003,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "I Gede Darmayusa Sell Transaction of XL Axiata",
+      "body": "On December 18, 2024, I Gede Darmayusa, an insider, sold 200,000 shares of XL Axiata reducing their holding from 454,924 to 254,924 shares. The transaction was valued at IDR 4,580,000,000 (approximately USD 320,000). The purpose of the sale was reportedly for educational expenses. This transaction may indicate a shift in the insider's investment strategy or a need for liquidity, potentially influencing market sentiment and investor confidence in the company.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202412/3c8859f6b1_654b3d725d.pdf",
+      "timestamp": "2024-12-18T21:57:00",
+      "sector": "infrastructures",
+      "sub_sector": "telecommunication",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "EXCL.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "I Gede Darmayusa",
+      "holding_before": 454924,
+      "holding_after": 254924,
+      "amount_transaction": 200000,
+      "price": 2290.0,
+      "transaction_value": 458000000.0,
+      "price_transaction": [
+        {
+          "date": "2024-12-18",
+          "type": "sell",
+          "price": 2290.0,
+          "amount_transacted": 200000
+        }
+      ],
+      "share_percentage_before": null,
+      "share_percentage_after": null,
+      "share_percentage_transaction": null,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    }
+  ],
+  "pagination": {
+    "total_count": 13,
+    "showing": 13,
+    "limit": 30,
+    "offset": 0,
+    "has_next": false,
+    "has_previous": false,
+    "next_offset": null,
+    "previous_offset": null
+  }
+}

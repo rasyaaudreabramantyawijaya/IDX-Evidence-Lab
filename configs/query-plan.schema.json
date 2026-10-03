@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "IDX Evidence Lab Query Plan",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["intent", "query", "entities", "scopes", "filters", "requested_metrics", "needs_clarification"],
+  "properties": {
+    "intent": {"type": "string"},
+    "query": {"type": "string"},
+    "entities": {"type": "array", "items": {"type": "string"}},
+    "scopes": {"type": "array", "items": {"type": "string"}},
+    "filters": {"type": "object"},
+    "requested_metrics": {"type": "array", "items": {"type": "string"}},
+    "needs_clarification": {"type": "boolean"}
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/MBMA/",
+  "ticker": "MBMA",
+  "start": "2023-09-24",
+  "end": "2023-12-22",
+  "retrieved_at": "2026-09-24T12:42:55.660815",
+  "http_status": 200,
+  "observations_count": 64,
+  "sha256": "af8529192663793ad5a8da565b4b2e210dd4fa35964280bf5a8bf02381ca3a29"
+}

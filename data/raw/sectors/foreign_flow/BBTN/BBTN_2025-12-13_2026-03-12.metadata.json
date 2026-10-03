@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/BBTN/?start=2025-12-13&end=2026-03-12",
+  "retrieved_at": "2026-09-25T03:26:12.600838+00:00",
+  "sha256": "cbc37d98cf764b0236da4f80e9090adf5c9b06d38c9dc35bcb53d280ba46c480",
+  "http_status": 200,
+  "request_number": 123,
+  "request_budget": 558,
+  "ticker": "BBTN",
+  "requested_start": "2025-12-13",
+  "requested_end": "2026-03-12",
+  "window_days": 90,
+  "snapshot_sha256": "486ebae9db36749de2804b6174bf04e83164e54057937d78baa44284eaa5c7ad"
+}

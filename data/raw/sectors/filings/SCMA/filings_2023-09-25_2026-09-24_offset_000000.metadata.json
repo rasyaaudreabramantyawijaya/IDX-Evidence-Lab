@@ -1,0 +1,18 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/filings/?symbol=SCMA&start=2023-09-25&end=2026-09-24&limit=30&offset=0",
+  "retrieved_at": "2026-09-26T12:25:50.058159+00:00",
+  "sha256": "dbf1d055adc9b74e73ec322f8ea75ec2bfb5ece4b33c6c11aa0a7f6561ae4d6c",
+  "http_status": 200,
+  "request_number": 5,
+  "request_budget": 577,
+  "run_id": "filings_full_20260926T122124Z",
+  "symbol": "SCMA",
+  "requested_start": "2023-09-25",
+  "requested_end": "2026-09-24",
+  "limit": 30,
+  "offset": 0,
+  "pagination_followed": true,
+  "snapshot_sha256": "ffe9d18f3a28d363fb96bd617389e9b699ee1c8f4d6284320f90951b27d2d6bb"
+}

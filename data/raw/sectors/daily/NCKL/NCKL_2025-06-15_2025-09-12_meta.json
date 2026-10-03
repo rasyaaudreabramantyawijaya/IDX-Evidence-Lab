@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/NCKL/",
+  "ticker": "NCKL",
+  "start": "2025-06-15",
+  "end": "2025-09-12",
+  "retrieved_at": "2026-09-24T12:44:36.752974",
+  "http_status": 200,
+  "observations_count": 62,
+  "sha256": "f4614bc0a16bb1f76b36e97596887a815ac98c8d0943a28e03c0e801368f8279"
+}

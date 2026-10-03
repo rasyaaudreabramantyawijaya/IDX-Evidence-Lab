@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/INDY/",
+  "ticker": "INDY",
+  "start": "2024-03-22",
+  "end": "2024-06-19",
+  "retrieved_at": "2026-09-24T12:38:47.424847",
+  "http_status": 200,
+  "observations_count": 50,
+  "sha256": "81cf48fb1b875fa580f9074ffda893386e3f933421eff482d8b38e5f3a84f4e7"
+}

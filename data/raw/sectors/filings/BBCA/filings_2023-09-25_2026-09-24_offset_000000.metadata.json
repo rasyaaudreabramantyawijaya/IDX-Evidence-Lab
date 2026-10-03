@@ -1,0 +1,18 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/filings/?symbol=BBCA&start=2023-09-25&end=2026-09-24&limit=30&offset=0",
+  "retrieved_at": "2026-09-26T12:21:44.322457+00:00",
+  "sha256": "1aa256ff3b8410a0288df7fecd324a17ad4599cfba3e759218477461bc531fa6",
+  "http_status": 200,
+  "request_number": 10,
+  "request_budget": 615,
+  "run_id": "filings_full_20260926T122124Z",
+  "symbol": "BBCA",
+  "requested_start": "2023-09-25",
+  "requested_end": "2026-09-24",
+  "limit": 30,
+  "offset": 0,
+  "pagination_followed": true,
+  "snapshot_sha256": "1ebb7722a2c074c5d14722c327b9d574fe75be5fd69a99b81ec63641c3ebcbe1"
+}

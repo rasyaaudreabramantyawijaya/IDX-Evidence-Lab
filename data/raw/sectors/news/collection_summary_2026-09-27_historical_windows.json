@@ -1,0 +1,93 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/news/",
+  "extension": "idx",
+  "universe_snapshot": "data/raw/sectors/lq45-universe.json",
+  "symbols_count": 45,
+  "symbols_sha256": "09a50e8dfc8dd4bb5a41fbcc20947bf9a0140d3874cea28db4e3d0643ecc29db",
+  "windows": [
+    {
+      "start": "2026-09-21",
+      "end": "2026-09-23"
+    },
+    {
+      "start": "2026-09-26",
+      "end": "2026-09-27"
+    }
+  ],
+  "page_limit": 30,
+  "approved_max_requests": 10,
+  "pages": [
+    {
+      "file": "idx_lq45_2026-09-21_2026-09-23_offset_000000.json",
+      "metadata_file": "idx_lq45_2026-09-21_2026-09-23_offset_000000.metadata.json",
+      "start": "2026-09-21",
+      "end": "2026-09-23",
+      "offset": 0,
+      "rows": 30,
+      "total_count": 91,
+      "has_next": true,
+      "next_offset": 30,
+      "snapshot_sha256": "03a9817bf7198b668d817afc237b8e4efedd0fd020db5b5bc9031e51dc715612",
+      "http_status": 200
+    },
+    {
+      "file": "idx_lq45_2026-09-21_2026-09-23_offset_000030.json",
+      "metadata_file": "idx_lq45_2026-09-21_2026-09-23_offset_000030.metadata.json",
+      "start": "2026-09-21",
+      "end": "2026-09-23",
+      "offset": 30,
+      "rows": 30,
+      "total_count": 91,
+      "has_next": true,
+      "next_offset": 60,
+      "snapshot_sha256": "42575cdaeab0d80328eabc74339614456b3d934ceec248599ad593d93f29e982",
+      "http_status": 200
+    },
+    {
+      "file": "idx_lq45_2026-09-21_2026-09-23_offset_000060.json",
+      "metadata_file": "idx_lq45_2026-09-21_2026-09-23_offset_000060.metadata.json",
+      "start": "2026-09-21",
+      "end": "2026-09-23",
+      "offset": 60,
+      "rows": 30,
+      "total_count": 91,
+      "has_next": true,
+      "next_offset": 90,
+      "snapshot_sha256": "bf6a65cda1f0bbf39e2012ae7a47a694499347b84c03fe72db07f9bc36dc308c",
+      "http_status": 200
+    },
+    {
+      "file": "idx_lq45_2026-09-21_2026-09-23_offset_000090.json",
+      "metadata_file": "idx_lq45_2026-09-21_2026-09-23_offset_000090.metadata.json",
+      "start": "2026-09-21",
+      "end": "2026-09-23",
+      "offset": 90,
+      "rows": 1,
+      "total_count": 91,
+      "has_next": false,
+      "next_offset": null,
+      "snapshot_sha256": "9426211e660023b6073ee520275469415f7bf2030fb2475dd8a78207f0412c06",
+      "http_status": 200
+    },
+    {
+      "file": "idx_lq45_2026-09-26_2026-09-27_offset_000000.json",
+      "metadata_file": "idx_lq45_2026-09-26_2026-09-27_offset_000000.metadata.json",
+      "start": "2026-09-26",
+      "end": "2026-09-27",
+      "offset": 0,
+      "rows": 18,
+      "total_count": 18,
+      "has_next": false,
+      "next_offset": null,
+      "snapshot_sha256": "3a3b9c300d4709bdf696f0382194a9cb577ab569d5b995cd616ec02a808e032b",
+      "http_status": 200
+    }
+  ],
+  "errors": [],
+  "complete": true,
+  "created_at_utc": "2026-09-27T12:06:43.048643+00:00",
+  "requests_attempted_this_run": 5,
+  "articles_returned_across_pages": 109,
+  "status": "COMPLETE"
+}

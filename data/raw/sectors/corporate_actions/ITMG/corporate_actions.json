@@ -1,0 +1,158 @@
+{
+  "symbol": "ITMG.JK",
+  "corporate_actions": {
+    "agm": [
+      {
+        "agm_date": "2022-03-24",
+        "agm_time": "13:00:00",
+        "agm_place": "Virtual Dan Offline Secara Terbatas Dikantor Perseroan",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2022-09-15",
+        "agm_time": "16:00:00",
+        "agm_place": "Pubex Live 2022",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2023-03-30",
+        "agm_time": "13:00:00",
+        "agm_place": "Pondok Indah Office Tower Iii, Lt.3Jl. Sultan Iskandar Muda KAV V-Tajakarta Selatan 12310",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2023-11-30",
+        "agm_time": "10:00:00",
+        "agm_place": "IDX Public Expose",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2024-03-28",
+        "agm_time": null,
+        "agm_place": "",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2024-08-28",
+        "agm_time": "15:00:00",
+        "agm_place": "IDX Public Expose",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2025-04-09",
+        "agm_time": "13:30:00",
+        "agm_place": "Intercontinental Jakarta Pondok Indah Jalan Metro Pondok Indah Kav. IV Ta, Jakarta, 12310",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2025-09-10",
+        "agm_time": "14:00:00",
+        "agm_place": "IDX Public Expose",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2025-11-03",
+        "agm_time": "14:30:00",
+        "agm_place": "Secara Elektronik Melalui Sistem Easy. Ksei (E-Rups Ksei Kota Adm. Jakartaselatan",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2026-04-17",
+        "agm_time": "09:00:00",
+        "agm_place": "Rapat Akan Dilaksanakan Secara Elektronik Melalui Fasilitas Electronic General Meetingsystem Kseie-Rups Ksei",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2026-09-09",
+        "agm_time": "09:00:00",
+        "agm_place": "IDX Public Expose",
+        "agm_result": null
+      }
+    ],
+    "bonus": null,
+    "warrant": null,
+    "dividend": [
+      {
+        "ex_date": "2026-04-28",
+        "payment_date": "2026-05-19",
+        "dividend_yield": null,
+        "dividend_amount": 0.05712
+      },
+      {
+        "ex_date": "2020-06-08",
+        "payment_date": "2020-06-23",
+        "dividend_yield": 0.0617741,
+        "dividend_amount": 570
+      },
+      {
+        "ex_date": "2025-11-13",
+        "payment_date": "2025-11-26",
+        "dividend_yield": 0.0319903,
+        "dividend_amount": 738
+      },
+      {
+        "ex_date": "2024-04-17",
+        "payment_date": "2024-04-25",
+        "dividend_yield": 0.0668031,
+        "dividend_amount": 1747
+      },
+      {
+        "ex_date": "2021-11-11",
+        "payment_date": "2021-11-24",
+        "dividend_yield": 0.0753372,
+        "dividend_amount": 1218
+      },
+      {
+        "ex_date": "2023-09-12",
+        "payment_date": "2023-09-22",
+        "dividend_yield": 0.0894397,
+        "dividend_amount": 2660
+      },
+      {
+        "ex_date": "2023-04-11",
+        "payment_date": "2023-04-18",
+        "dividend_yield": 0.215731,
+        "dividend_amount": 6416
+      },
+      {
+        "ex_date": "2022-11-11",
+        "payment_date": "2022-11-22",
+        "dividend_yield": 0.12167,
+        "dividend_amount": 4128
+      },
+      {
+        "ex_date": "2022-04-04",
+        "payment_date": "2022-04-22",
+        "dividend_yield": 0.0896019,
+        "dividend_amount": 3040
+      },
+      {
+        "ex_date": "2021-04-15",
+        "payment_date": "2021-04-29",
+        "dividend_yield": 0.0103295,
+        "dividend_amount": 167
+      },
+      {
+        "ex_date": "2020-11-10",
+        "payment_date": "2020-11-24",
+        "dividend_yield": 0.0332713,
+        "dividend_amount": 307
+      },
+      {
+        "ex_date": "2025-04-21",
+        "payment_date": "2025-05-07",
+        "dividend_yield": 0.0973147,
+        "dividend_amount": 2245
+      },
+      {
+        "ex_date": "2024-09-10",
+        "payment_date": "2024-09-25",
+        "dividend_yield": 0.0469572,
+        "dividend_amount": 1228
+      }
+    ],
+    "right_issue": null,
+    "stock_split": null,
+    "upcoming_dividend": null
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/PGAS/",
+  "retrieved_at": "2026-09-26T15:55:11.338209+00:00",
+  "sha256": "75b97e42a98bc98bf8946be59a4c89b14dde15ccd5df63129990d6597c49407b",
+  "http_status": 200,
+  "request_number": 5,
+  "request_budget": 10,
+  "symbol": "PGAS",
+  "request_scope": "approved retry after cooldown",
+  "snapshot_sha256": "b965e16325e658654ef05f4a2b397cc1473537747a702f67807bace5f95d87ba"
+}

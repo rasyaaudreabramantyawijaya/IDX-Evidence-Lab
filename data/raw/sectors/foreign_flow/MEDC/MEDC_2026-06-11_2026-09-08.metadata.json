@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/MEDC/?start=2026-06-11&end=2026-09-08",
+  "retrieved_at": "2026-09-25T03:47:55.679895+00:00",
+  "sha256": "05e305fc6673e5e38fd85e6a2a31f3a83fad62404040b64558eaa80c49c66ae4",
+  "http_status": 200,
+  "request_number": 437,
+  "request_budget": 558,
+  "ticker": "MEDC",
+  "requested_start": "2026-06-11",
+  "requested_end": "2026-09-08",
+  "window_days": 90,
+  "snapshot_sha256": "2d74e63fc1775b2a1096bca68e482ddd0aa791354ea1c2020b59a02db9bce51d"
+}

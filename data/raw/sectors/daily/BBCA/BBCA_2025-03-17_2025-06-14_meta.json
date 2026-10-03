@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/BBCA/",
+  "ticker": "BBCA",
+  "start": "2025-03-17",
+  "end": "2025-06-14",
+  "retrieved_at": "2026-09-24T12:29:51.071805",
+  "http_status": 200,
+  "observations_count": 50,
+  "sha256": "6c8028f5be7d680045e3e128efddd7f9e0a7d22b2f10a9bbd2b321e777949756"
+}

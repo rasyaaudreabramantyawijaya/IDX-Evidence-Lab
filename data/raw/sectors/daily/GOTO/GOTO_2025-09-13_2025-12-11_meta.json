@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/GOTO/",
+  "ticker": "GOTO",
+  "start": "2025-09-13",
+  "end": "2025-12-11",
+  "retrieved_at": "2026-09-24T12:36:52.322830",
+  "http_status": 200,
+  "observations_count": 64,
+  "sha256": "e06361f508137ca63f692aada976d32c678aac3cba20b7660dd539d3a085a7ef"
+}

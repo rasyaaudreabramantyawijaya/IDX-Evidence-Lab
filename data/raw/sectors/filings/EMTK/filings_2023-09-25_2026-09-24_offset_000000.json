@@ -1,0 +1,788 @@
+{
+  "results": [
+    {
+      "title": "Elang Mahkota Teknologi buys shares of Surya Citra Media",
+      "body": "Elang Mahkota Teknologi bought 300,000,000 shares of Surya Citra Media. This increases their holdings from 54,750,691,340 to 55,050,691,340 shares. The stated purpose of the transaction was for investment.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-20022026-2642-00.pdf-0.pdf",
+      "timestamp": "2026-02-20T16:36:32",
+      "sector": "consumer-cyclicals",
+      "sub_sector": "media-entertainment",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "EMTK.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Elang Mahkota Teknologi",
+      "holding_before": 54750691340,
+      "holding_after": 55050691340,
+      "amount_transaction": 300000000,
+      "price": 320.0,
+      "transaction_value": 96000000000.0,
+      "price_transaction": [
+        {
+          "date": "2026-02-19",
+          "type": "buy",
+          "price": 320,
+          "amount_transacted": 300000000
+        }
+      ],
+      "share_percentage_before": 74.02,
+      "share_percentage_after": 74.42,
+      "share_percentage_transaction": 0.4,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Elang Mahkota Teknologi buys shares of Surya Citra Media",
+      "body": "Elang Mahkota Teknologi bought 2,682,371,500 shares of Surya Citra Media. This increases their holdings from 52,068,319,840 to 54,750,691,340 shares. The stated purpose of the transaction was for investment.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-12022026-4929-00.pdf-0.pdf",
+      "timestamp": "2026-02-12T16:24:44",
+      "sector": "consumer-cyclicals",
+      "sub_sector": "media-entertainment",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "EMTK.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Elang Mahkota Teknologi",
+      "holding_before": 52068319840,
+      "holding_after": 54750691340,
+      "amount_transaction": 2682371500,
+      "price": 280.596,
+      "transaction_value": 752663892000.0,
+      "price_transaction": [
+        {
+          "date": "2026-02-10",
+          "type": "buy",
+          "price": 258,
+          "amount_transacted": 351139000
+        },
+        {
+          "date": "2026-02-11",
+          "type": "buy",
+          "price": 284,
+          "amount_transacted": 2331232500
+        }
+      ],
+      "share_percentage_before": 70.39,
+      "share_percentage_after": 74.02,
+      "share_percentage_transaction": 3.63,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Elang Mahkota Teknologi buys shares of Sarana Meditama Metropolitan",
+      "body": "Elang Mahkota Teknologi bought 979,611,500 shares of Sarana Meditama Metropolitan. This increases their holdings from 13,553,866,945 to 14,533,478,445 shares. The stated purpose of the transaction was for investment.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-10022026-2903-00.pdf-0.pdf",
+      "timestamp": "2026-02-10T19:22:21",
+      "sector": "healthcare",
+      "sub_sector": "healthcare-equipment-providers",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "EMTK.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Elang Mahkota Teknologi",
+      "holding_before": 13553866945,
+      "holding_after": 14533478445,
+      "amount_transaction": 979611500,
+      "price": 308.0,
+      "transaction_value": 301720342000.0,
+      "price_transaction": [
+        {
+          "date": "2026-02-06",
+          "type": "buy",
+          "price": 308,
+          "amount_transacted": 485035400
+        },
+        {
+          "date": "2026-02-09",
+          "type": "buy",
+          "price": 308,
+          "amount_transacted": 494576100
+        }
+      ],
+      "share_percentage_before": 79.0,
+      "share_percentage_after": 84.71,
+      "share_percentage_transaction": 5.71,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Change in Jay Geoffrey Wacher's position in Elang Mahkota Teknologi",
+      "body": "Jay Geoffrey Wacher executed a transaction for 17,000,000 shares of Elang Mahkota Teknologi. This increases their holdings from 54,949,000 to 71,949,000 shares. The stated purpose of the transaction was mesop program - implementation period i.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-19122025-5640-00.pdf-0.pdf",
+      "timestamp": "2025-12-19T23:00:00",
+      "sector": "technology",
+      "sub_sector": "software-it-services",
+      "tags": [
+        "mesop"
+      ],
+      "symbol": "EMTK.JK",
+      "transaction_type": "others",
+      "holder_type": "insider",
+      "holder_name": "Jay Geoffrey Wacher",
+      "holding_before": 54949000,
+      "holding_after": 71949000,
+      "amount_transaction": 17000000,
+      "price": 0.0,
+      "transaction_value": 0.0,
+      "price_transaction": [
+        {
+          "date": "2025-12-17",
+          "type": "others",
+          "price": null,
+          "amount_transacted": 17000000
+        }
+      ],
+      "share_percentage_before": 0.09,
+      "share_percentage_after": 0.11,
+      "share_percentage_transaction": 0.02,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Change in Yuslinda Nasution's position in Elang Mahkota Teknologi",
+      "body": "Yuslinda Nasution executed a transaction for 200,000 shares of Elang Mahkota Teknologi. This increases their holdings from 14,046,000 to 14,246,000 shares. The stated purpose of the transaction was mesop program - implementation period i.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-19122025-7725-00.pdf-0.pdf",
+      "timestamp": "2025-12-19T23:00:00",
+      "sector": "technology",
+      "sub_sector": "software-it-services",
+      "tags": [
+        "mesop"
+      ],
+      "symbol": "EMTK.JK",
+      "transaction_type": "others",
+      "holder_type": "insider",
+      "holder_name": "Yuslinda Nasution",
+      "holding_before": 14046000,
+      "holding_after": 14246000,
+      "amount_transaction": 200000,
+      "price": 0.0,
+      "transaction_value": 0.0,
+      "price_transaction": [
+        {
+          "date": "2025-12-17",
+          "type": "others",
+          "price": null,
+          "amount_transacted": 200000
+        }
+      ],
+      "share_percentage_before": 0.02,
+      "share_percentage_after": 0.02,
+      "share_percentage_transaction": 0.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Change in Titi Maria Rusli's position in Elang Mahkota Teknologi",
+      "body": "Titi Maria Rusli executed a transaction for 1,500,000 shares of Elang Mahkota Teknologi. This increases their holdings from 12,000,000 to 13,500,000 shares. The stated purpose of the transaction was mesop program - implementation period i.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-19122025-1959-00.pdf-0.pdf",
+      "timestamp": "2025-12-19T22:54:50",
+      "sector": "technology",
+      "sub_sector": "software-it-services",
+      "tags": [
+        "mesop"
+      ],
+      "symbol": "EMTK.JK",
+      "transaction_type": "others",
+      "holder_type": "insider",
+      "holder_name": "Titi Maria Rusli",
+      "holding_before": 12000000,
+      "holding_after": 13500000,
+      "amount_transaction": 1500000,
+      "price": 0.0,
+      "transaction_value": 0.0,
+      "price_transaction": [
+        {
+          "date": "2025-12-17",
+          "type": "others",
+          "price": null,
+          "amount_transacted": 1500000
+        }
+      ],
+      "share_percentage_before": 0.02,
+      "share_percentage_after": 0.02,
+      "share_percentage_transaction": 0.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Change in Sutiana Ali's position in Elang Mahkota Teknologi",
+      "body": "Sutiana Ali executed a transaction for 2,000,000 shares of Elang Mahkota Teknologi. This increases their holdings from 11,860,000 to 13,860,000 shares. The stated purpose of the transaction was mesop program - implementation period i.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-19122025-5008-00.pdf-0.pdf",
+      "timestamp": "2025-12-19T22:41:59",
+      "sector": "technology",
+      "sub_sector": "software-it-services",
+      "tags": [
+        "mesop"
+      ],
+      "symbol": "EMTK.JK",
+      "transaction_type": "others",
+      "holder_type": "insider",
+      "holder_name": "Sutiana Ali",
+      "holding_before": 11860000,
+      "holding_after": 13860000,
+      "amount_transaction": 2000000,
+      "price": 0.0,
+      "transaction_value": 0.0,
+      "price_transaction": [
+        {
+          "date": "2025-12-17",
+          "type": "others",
+          "price": null,
+          "amount_transacted": 2000000
+        }
+      ],
+      "share_percentage_before": 0.01,
+      "share_percentage_after": 0.02,
+      "share_percentage_transaction": 0.01,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Change in Sutanto Hartono's position in Elang Mahkota Teknologi",
+      "body": "Sutanto Hartono executed a transaction for 3,500,000 shares of Elang Mahkota Teknologi. This increases their holdings from 34,000,000 to 37,500,000 shares. The stated purpose of the transaction was mesop program - implementation period i.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-19122025-6177-00.pdf-0.pdf",
+      "timestamp": "2025-12-19T22:30:31",
+      "sector": "technology",
+      "sub_sector": "software-it-services",
+      "tags": [
+        "mesop"
+      ],
+      "symbol": "EMTK.JK",
+      "transaction_type": "others",
+      "holder_type": "insider",
+      "holder_name": "Sutanto Hartono",
+      "holding_before": 34000000,
+      "holding_after": 37500000,
+      "amount_transaction": 3500000,
+      "price": 0.0,
+      "transaction_value": 0.0,
+      "price_transaction": [
+        {
+          "date": "2025-12-17",
+          "type": "others",
+          "price": null,
+          "amount_transacted": 3500000
+        }
+      ],
+      "share_percentage_before": 0.05,
+      "share_percentage_after": 0.06,
+      "share_percentage_transaction": 0.01,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Change in Rd Alvin W Sariaatmadja's position in Elang Mahkota Teknologi",
+      "body": "Rd Alvin W Sariaatmadja executed a transaction for 7,000,000 shares of Elang Mahkota Teknologi. This increases their holdings from 98,091,000 to 105,091,000 shares. The stated purpose of the transaction was mesop program - implementation period i.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-19122025-9762-00.pdf-0.pdf",
+      "timestamp": "2025-12-19T22:25:22",
+      "sector": "technology",
+      "sub_sector": "software-it-services",
+      "tags": [
+        "mesop"
+      ],
+      "symbol": "EMTK.JK",
+      "transaction_type": "others",
+      "holder_type": "insider",
+      "holder_name": "Rd Alvin W Sariaatmadja",
+      "holding_before": 98091000,
+      "holding_after": 105091000,
+      "amount_transaction": 7000000,
+      "price": 0.0,
+      "transaction_value": 0.0,
+      "price_transaction": [
+        {
+          "date": "2025-12-17",
+          "type": "others",
+          "price": null,
+          "amount_transacted": 7000000
+        }
+      ],
+      "share_percentage_before": 0.16,
+      "share_percentage_after": 0.17,
+      "share_percentage_transaction": 0.01,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Elang Mahkota Teknologi buys shares of Surya Citra Media",
+      "body": "Elang Mahkota Teknologi bought 2,100,000,000 shares of Surya Citra Media. This increases their holdings from 49,968,319,840 to 52,068,319,840 shares. The stated purpose of the transaction was untuk investasi.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202511/50dcc8c989_0bb0a4f83d.pdf",
+      "timestamp": "2025-11-17T16:53:42",
+      "sector": "consumer-cyclicals",
+      "sub_sector": "media-entertainment",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "EMTK.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Elang Mahkota Teknologi",
+      "holding_before": 49968319840,
+      "holding_after": 52068319840,
+      "amount_transaction": 2100000000,
+      "price": 359.52,
+      "transaction_value": 755000000000.0,
+      "price_transaction": [
+        {
+          "date": "2025-11-11",
+          "type": "buy",
+          "price": 370,
+          "amount_transacted": 1000000000
+        },
+        {
+          "date": "2025-11-14",
+          "type": "buy",
+          "price": 350,
+          "amount_transacted": 1100000000
+        }
+      ],
+      "share_percentage_before": 67.55,
+      "share_percentage_after": 70.39,
+      "share_percentage_transaction": 2.84,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Elang Mahkota Teknologi Buy Transaction of Surya Citra Media",
+      "body": "Elang Mahkota Teknologi an insider, bought 256984200 shares of Surya Citra Media increasing its holding from 49711335640 to 49968319840 shares in the energy sector, specifically alternative-energy, with no disclosed purpose.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202510/425388a8a5_732c18d0de.pdf",
+      "timestamp": "2025-10-14T07:41:00",
+      "sector": "energy",
+      "sub_sector": "alternative-energy",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "EMTK.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Elang Mahkota Teknologi",
+      "holding_before": 49711335640,
+      "holding_after": 49968319840,
+      "amount_transaction": 256984200,
+      "price": 400.171,
+      "transaction_value": 102837498000.0,
+      "price_transaction": [
+        {
+          "date": "2025-09-30",
+          "type": "buy",
+          "price": 338,
+          "amount_transacted": 5400000
+        },
+        {
+          "date": "2025-10-01",
+          "type": "buy",
+          "price": 358,
+          "amount_transacted": 38218400
+        },
+        {
+          "date": "2025-10-02",
+          "type": "buy",
+          "price": 383,
+          "amount_transacted": 9251700
+        },
+        {
+          "date": "2025-10-03",
+          "type": "buy",
+          "price": 399,
+          "amount_transacted": 37951200
+        },
+        {
+          "date": "2025-10-06",
+          "type": "buy",
+          "price": 400,
+          "amount_transacted": 62400000
+        },
+        {
+          "date": "2025-10-07",
+          "type": "buy",
+          "price": 421,
+          "amount_transacted": 103762900
+        }
+      ],
+      "share_percentage_before": 67.2,
+      "share_percentage_after": 67.55,
+      "share_percentage_transaction": 0.35,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Elang Mahkota Teknologi Buy Transaction of Surya Citra Media",
+      "body": "Elang Mahkota Teknologi an insider, bought 342410300 shares, increasing its holding from 49135335640 to 49477745940 in the energy sector, specifically alternative-energy. The transaction occurred on 2025-10-02.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202509/2db5d769cd_7f87b588f5.pdf",
+      "timestamp": "2025-10-02T10:01:00",
+      "sector": "energy",
+      "sub_sector": "alternative-energy",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "EMTK.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Elang Mahkota Teknologi",
+      "holding_before": 49135335640,
+      "holding_after": 49477745940,
+      "amount_transaction": 342410300,
+      "price": 306.818,
+      "transaction_value": 105057643100.0,
+      "price_transaction": [
+        {
+          "date": "2025-08-20",
+          "type": "buy",
+          "price": 281,
+          "amount_transacted": 69508800
+        },
+        {
+          "date": "2025-08-22",
+          "type": "buy",
+          "price": 299,
+          "amount_transacted": 38214000
+        },
+        {
+          "date": "2025-09-15",
+          "type": "buy",
+          "price": 309,
+          "amount_transacted": 32260900
+        },
+        {
+          "date": "2025-09-16",
+          "type": "buy",
+          "price": 304,
+          "amount_transacted": 34016300
+        },
+        {
+          "date": "2025-09-17",
+          "type": "buy",
+          "price": 294,
+          "amount_transacted": 48229700
+        },
+        {
+          "date": "2025-09-18",
+          "type": "buy",
+          "price": 324,
+          "amount_transacted": 73770300
+        },
+        {
+          "date": "2025-09-19",
+          "type": "buy",
+          "price": 337,
+          "amount_transacted": 23500000
+        },
+        {
+          "date": "2025-09-22",
+          "type": "buy",
+          "price": 340,
+          "amount_transacted": 22910300
+        }
+      ],
+      "share_percentage_before": 66.43,
+      "share_percentage_after": 66.89,
+      "share_percentage_transaction": 0.46,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Elang Mahkota Teknologi Buy Transaction of Surya Citra Media",
+      "body": "Elang Mahkota Teknologi bought 23,358,970 shares of Surya Citra Media increasing ownership to 49,711,335,640 shares. The transaction was for investment purposes, with prices ranging from 340 to 360.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202509/9e2e73474b_6727c863b7.pdf",
+      "timestamp": "2025-09-30T11:38:00",
+      "sector": "technology",
+      "sub_sector": "software-it-services",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "EMTK.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Elang Mahkota Teknologi",
+      "holding_before": 49477745940,
+      "holding_after": 49711335640,
+      "amount_transaction": 233589700,
+      "price": 353.01,
+      "transaction_value": 82459536200.0,
+      "price_transaction": [
+        {
+          "date": "2025-09-23",
+          "type": "buy",
+          "price": 346,
+          "amount_transacted": 74589700
+        },
+        {
+          "date": "2025-09-24",
+          "type": "buy",
+          "price": 340,
+          "amount_transacted": 9000000
+        },
+        {
+          "date": "2025-09-25",
+          "type": "buy",
+          "price": 351,
+          "amount_transacted": 6500000
+        },
+        {
+          "date": "2025-09-26",
+          "type": "buy",
+          "price": 360,
+          "amount_transacted": 108500000
+        },
+        {
+          "date": "2025-09-29",
+          "type": "buy",
+          "price": 350,
+          "amount_transacted": 35000000
+        }
+      ],
+      "share_percentage_before": 66.89,
+      "share_percentage_after": 67.2,
+      "share_percentage_transaction": 0.31,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Elang Mahkota Teknologi Buy Transaction of Surya Citra Media",
+      "body": "Elang Mahkota Teknologi acquired 325,024,100 shares of Surya Citra Media increasing its stake from 48,579,574,040 to 48,904,598,140 shares. The transaction was made for investment purposes. This buy transaction suggests the company's confidence in its own growth prospects.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202508/3cab5fbe86_cf054a05f6.pdf",
+      "timestamp": "2025-08-05T08:47:00",
+      "sector": "technology",
+      "sub_sector": "software-it-services",
+      "tags": [],
+      "symbol": "EMTK.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Elang Mahkota Teknologi",
+      "holding_before": 48579574040,
+      "holding_after": 48904598140,
+      "amount_transaction": 325024100,
+      "price": 210.556,
+      "transaction_value": 68435636300.0,
+      "price_transaction": [
+        {
+          "date": "2025-07-28",
+          "type": "buy",
+          "price": 193,
+          "amount_transacted": 49565800
+        },
+        {
+          "date": "2025-08-01",
+          "type": "buy",
+          "price": 199,
+          "amount_transacted": 130699900
+        },
+        {
+          "date": "2025-08-04",
+          "type": "buy",
+          "price": 227,
+          "amount_transacted": 144758400
+        }
+      ],
+      "share_percentage_before": 65.67,
+      "share_percentage_after": 66.11,
+      "share_percentage_transaction": 0.44,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Elang Mahkota Teknologi Insider Buy Transaction of Surya Citra Media",
+      "body": "Elang Mahkota Teknologi an insider, purchased 228,317,300 shares of Surya Citra Media increasing its holding from 48,351,256,740 to 48,579,574,040 shares. The transaction was conducted in two tranches at prices of IDR 177 and IDR 187 per share, totaling IDR 228,317,300,000. This insider buy transaction may indicate the company's confidence in its future prospects.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202507/4e379e5121_c7f0049c00.pdf",
+      "timestamp": "2025-07-21T04:22:00",
+      "sector": "technology",
+      "sub_sector": "software-it-services",
+      "tags": [],
+      "symbol": "EMTK.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Elang Mahkota Teknologi",
+      "holding_before": 48351256740,
+      "holding_after": 48579574040,
+      "amount_transaction": 228317300,
+      "price": 180.505,
+      "transaction_value": 41393013100.0,
+      "price_transaction": [
+        {
+          "date": "2025-07-18",
+          "type": "buy",
+          "price": 177,
+          "amount_transacted": 147932200
+        },
+        {
+          "date": "2025-07-21",
+          "type": "buy",
+          "price": 187,
+          "amount_transacted": 80385100
+        }
+      ],
+      "share_percentage_before": 65.37,
+      "share_percentage_after": 65.67,
+      "share_percentage_transaction": 0.3,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Elang Mahkota Teknologi Buy Transaction of Surya Citra Media",
+      "body": "Elang Mahkota Teknologi acquired 244,921,100 shares of Surya Citra Media increasing its holding from 48,106,335,640 to 48,351,256,740 shares for investment purposes.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202507/f778cdaf93_1addd17926.pdf",
+      "timestamp": "2025-07-08T16:28:00",
+      "sector": "technology",
+      "sub_sector": "software-it-services",
+      "tags": [],
+      "symbol": "EMTK.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Elang Mahkota Teknologi",
+      "holding_before": 48106335640,
+      "holding_after": 48351256740,
+      "amount_transaction": 244921100,
+      "price": 156.864,
+      "transaction_value": 38419302400.0,
+      "price_transaction": [
+        {
+          "date": "2025-07-07",
+          "type": "buy",
+          "price": 149,
+          "amount_transacted": 48000000
+        },
+        {
+          "date": "2025-07-08",
+          "type": "buy",
+          "price": 149,
+          "amount_transacted": 13914900
+        },
+        {
+          "date": "2025-07-09",
+          "type": "buy",
+          "price": 150,
+          "amount_transacted": 76085100
+        },
+        {
+          "date": "2025-07-15",
+          "type": "buy",
+          "price": 160,
+          "amount_transacted": 15500000
+        },
+        {
+          "date": "2025-07-16",
+          "type": "buy",
+          "price": 163,
+          "amount_transacted": 11505500
+        },
+        {
+          "date": "2025-07-17",
+          "type": "buy",
+          "price": 168,
+          "amount_transacted": 79915600
+        }
+      ],
+      "share_percentage_before": 65.03,
+      "share_percentage_after": 65.37,
+      "share_percentage_transaction": 0.34,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Elang Mahkota Teknologi Buys Transaction of Surya Citra Media",
+      "body": "Elang Mahkota Teknologi acquired 16,000,000 shares of Surya Citra Media (SCMA.JK) at IDR 150 per share, increasing its holding to 48,106,335,640 shares. The purpose of the transaction was for investment, resulting in a 0.34% increase in the company's ownership.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202507/59ef3a120a_f7e1b1ba8c.pdf",
+      "timestamp": "2025-07-07T16:41:00",
+      "sector": "consumer-cyclicals",
+      "sub_sector": "media-entertainment",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "EMTK.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Elang Mahkota Teknologi",
+      "holding_before": 48022335640,
+      "holding_after": 48106335640,
+      "amount_transaction": 84000000,
+      "price": 149.071,
+      "transaction_value": 12522000000.0,
+      "price_transaction": [
+        {
+          "date": "2025-07-04",
+          "type": "buy",
+          "price": 150,
+          "amount_transacted": 16000000
+        },
+        {
+          "date": "2025-07-03",
+          "type": "buy",
+          "price": 149,
+          "amount_transacted": 4000000
+        },
+        {
+          "date": "2025-07-02",
+          "type": "buy",
+          "price": 150,
+          "amount_transacted": 27000000
+        },
+        {
+          "date": "2025-06-26",
+          "type": "buy",
+          "price": 148,
+          "amount_transacted": 37000000
+        }
+      ],
+      "share_percentage_before": 64.92,
+      "share_percentage_after": 65.03,
+      "share_percentage_transaction": 0.11,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Elang Mahkota Teknologi Insider Buy Transaction of Elang Mahkota Teknologi",
+      "body": "On January 9, 2025, an insider trading transaction occurred in Elang Mahkota Teknologi where an undisclosed holder purchased 36,225,500 shares for investment purposes. The transaction type was a \"buy\" with a total amount of 121,636,300, increasing the holder's stake from 45,793,856,640 to 45,915,471,940 shares. The transaction was executed in two tranches at a price of 165 per share, with 8,541,080 shares transacted in the first tranche and 36,225,500 shares in the second. This transaction suggests that the insider has confidence in the company's prospects, potentially indicating a positive outlook for Elang Mahkota Teknologi.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202501/ff57ef2aa9_38b88ebf3b.pdf",
+      "timestamp": "2025-01-09T16:21:00",
+      "sector": "technology",
+      "sub_sector": "software-it-services",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "EMTK.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Elang Mahkota Teknologi",
+      "holding_before": 45793835640,
+      "holding_after": 45915471940,
+      "amount_transaction": 121636300,
+      "price": 165.0,
+      "transaction_value": 20069989500.0,
+      "price_transaction": [
+        {
+          "date": "2025-01-06",
+          "type": "buy",
+          "price": 165,
+          "amount_transacted": 85410800
+        },
+        {
+          "date": "2025-01-07",
+          "type": "buy",
+          "price": 165,
+          "amount_transacted": 36225500
+        }
+      ],
+      "share_percentage_before": 61.91,
+      "share_percentage_after": 62.07,
+      "share_percentage_transaction": 0.16,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    }
+  ],
+  "pagination": {
+    "total_count": 18,
+    "showing": 18,
+    "limit": 30,
+    "offset": 0,
+    "has_next": false,
+    "has_previous": false,
+    "next_offset": null,
+    "previous_offset": null
+  }
+}

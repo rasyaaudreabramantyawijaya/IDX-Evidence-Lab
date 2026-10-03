@@ -1,0 +1,14 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/corporate-actions/ESSA/",
+  "retrieved_at": "2026-09-26T14:12:04.050298+00:00",
+  "sha256": "5f949df7a28d57b72c00b3758669385952bf9a7c81364ec56f34ebcae2d486ff",
+  "http_status": 200,
+  "request_number": 20,
+  "request_budget": 45,
+  "symbol": "ESSA",
+  "query_parameters": {},
+  "history_scope": "complete endpoint history; endpoint called without date filters",
+  "snapshot_sha256": "fa056ada5fa44e3fd70aa862b78d832e53264bb7e518c758146e565766b5f186"
+}

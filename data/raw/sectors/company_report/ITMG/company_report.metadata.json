@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/ITMG/",
+  "retrieved_at": "2026-09-26T15:28:25.733068+00:00",
+  "sha256": "fe39db6bbc230b8e6edb08f31c33c607579b9b41f238691467108bce3e73edc0",
+  "http_status": 200,
+  "request_number": 23,
+  "request_budget": 35,
+  "symbol": "ITMG",
+  "request_scope": "approved full company-report completion",
+  "snapshot_sha256": "8bd06d575617e487ec043e0ee7394cccf3f5ae150f7329a44a834d01de8b974e"
+}

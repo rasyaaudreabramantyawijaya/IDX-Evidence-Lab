@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/ANTM/?start=2026-06-11&end=2026-09-08",
+  "retrieved_at": "2026-09-25T03:21:51.901194+00:00",
+  "sha256": "63fa38e417205ce8cde62cf92553dfb15a3f85188273dcffe21b24e54fa93879",
+  "http_status": 200,
+  "request_number": 60,
+  "request_budget": 558,
+  "ticker": "ANTM",
+  "requested_start": "2026-06-11",
+  "requested_end": "2026-09-08",
+  "window_days": 90,
+  "snapshot_sha256": "b0c670696425e1015109130eaa43c34d6c26c91fe239309b7f111fbd0349a7d8"
+}

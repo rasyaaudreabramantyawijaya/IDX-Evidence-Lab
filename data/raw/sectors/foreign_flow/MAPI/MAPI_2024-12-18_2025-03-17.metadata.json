@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/MAPI/?start=2024-12-18&end=2025-03-17",
+  "retrieved_at": "2026-09-25T03:44:54.847578+00:00",
+  "sha256": "c338c925490518946208bc9af0b9d24422afebd1a291a9179c3d410f3bda0995",
+  "http_status": 200,
+  "request_number": 392,
+  "request_budget": 558,
+  "ticker": "MAPI",
+  "requested_start": "2024-12-18",
+  "requested_end": "2025-03-17",
+  "window_days": 90,
+  "snapshot_sha256": "298b1e042ff30a2525ac393cadb80c3017d3f4083eb8a20cc3d584d92d948c24"
+}

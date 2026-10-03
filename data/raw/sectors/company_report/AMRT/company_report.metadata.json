@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/AMRT/",
+  "retrieved_at": "2026-09-26T15:28:08.770879+00:00",
+  "sha256": "d1061cb7e9493f47d1c916c150549c6ac92b225fffb08c502126a3b9413fa7a7",
+  "http_status": 200,
+  "request_number": 5,
+  "request_budget": 35,
+  "symbol": "AMRT",
+  "request_scope": "approved full company-report completion",
+  "snapshot_sha256": "76661c79d3f46bdde249e33badd7174fd9860766a4b2f8e832f5bf2daca78b60"
+}

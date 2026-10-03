@@ -1,0 +1,14 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/corporate-actions/ASII/",
+  "retrieved_at": "2026-09-26T14:11:58.483654+00:00",
+  "sha256": "feb15f573c794d64706eff29c1e7964188093b48662360198c95b2a91d72844c",
+  "http_status": 200,
+  "request_number": 8,
+  "request_budget": 45,
+  "symbol": "ASII",
+  "query_parameters": {},
+  "history_scope": "complete endpoint history; endpoint called without date filters",
+  "snapshot_sha256": "646a991f45c90358c494d0e8726a98c55448c021f7a52b1762dbf425a5a53bf8"
+}

@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/MDKA/",
+  "retrieved_at": "2026-09-26T15:55:06.589302+00:00",
+  "sha256": "2c5f05ccebb0b466f4b4c328fcba51c7344514c3388c557ece2779ad8fb0c99f",
+  "http_status": 200,
+  "request_number": 3,
+  "request_budget": 10,
+  "symbol": "MDKA",
+  "request_scope": "approved retry after cooldown",
+  "snapshot_sha256": "41b91092feae9b77ed0cb0851a4b641a0fbfb3c633585a956b68798f3e0af07f"
+}

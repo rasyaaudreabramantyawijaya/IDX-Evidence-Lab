@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/AADI/?start=2026-08-27&end=2026-09-24",
+  "retrieved_at": "2026-09-25T03:12:42.019042+00:00",
+  "sha256": "f0f8320389d88c3aaac9debcd7644e045ff9d2e29d76540de01b04eab5536fda",
+  "http_status": 200,
+  "request_number": 8,
+  "request_budget": 584,
+  "ticker": "AADI",
+  "requested_start": "2026-08-27",
+  "requested_end": "2026-09-24",
+  "window_days": 90,
+  "snapshot_sha256": "b0d323fb3d62129bcc45482d63de97494da463fa428c23a690fe09f4733d5c94"
+}

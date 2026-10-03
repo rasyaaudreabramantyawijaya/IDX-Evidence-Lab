@@ -1,0 +1,22 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/suspensions/?start=2023-09-25&end=2026-09-24&limit=30&offset=0",
+  "retrieved_at": "2026-09-26T12:46:56.687292+00:00",
+  "sha256": "11c969fa7e83745aa4995ca830dad1a852ac8969294b569ff713d7f644bc271b",
+  "http_status": 200,
+  "request_number": 1,
+  "request_budget": 1,
+  "requested_start": "2023-09-25",
+  "requested_end": "2026-09-24",
+  "limit": 30,
+  "offset": 0,
+  "symbol_filter": null,
+  "pagination_followed": false,
+  "snapshot_sha256": "95ae7c3329ab6b1a38fadde09e587e2bd89cea20b24e1c661ee65fe61ebf510c",
+  "page_rows": 30,
+  "total_count": 559,
+  "has_next": true,
+  "next_offset": 30,
+  "total_pages_estimate": 19
+}

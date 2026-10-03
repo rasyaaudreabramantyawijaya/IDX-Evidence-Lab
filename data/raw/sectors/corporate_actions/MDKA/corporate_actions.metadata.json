@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/corporate-actions/MDKA/",
+  "retrieved_at": "2026-09-26T14:26:23.457847+00:00",
+  "sha256": "d44ad43e745d6b1629ba1f5a24f0d85085b45982d7f2c5ab2242fa71f26fc23a",
+  "http_status": 200,
+  "request_number": 10,
+  "request_budget": 20,
+  "symbol": "MDKA",
+  "query_parameters": {},
+  "history_scope": "complete endpoint history; endpoint called without date filters",
+  "retry_of_prior_http_429": true,
+  "snapshot_sha256": "8841cee1d44eed03689fe0e5b8c3ef68375be549fd7e3a62abe0f96df213bcd8"
+}

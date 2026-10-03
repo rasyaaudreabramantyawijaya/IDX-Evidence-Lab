@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/PGEO/?start=2024-12-18&end=2025-03-17",
+  "retrieved_at": "2026-09-25T03:54:24.554475+00:00",
+  "sha256": "b8ed407f79148a92e7b7fab91a655223d7ab3da481285002a8132e1b064166d5",
+  "http_status": 200,
+  "request_number": 18,
+  "request_budget": 105,
+  "ticker": "PGEO",
+  "requested_start": "2024-12-18",
+  "requested_end": "2025-03-17",
+  "window_days": 90,
+  "snapshot_sha256": "fa19ea40bb353d2f4c66af151b4b4abce73d2371687d330e965862269ba70b31"
+}

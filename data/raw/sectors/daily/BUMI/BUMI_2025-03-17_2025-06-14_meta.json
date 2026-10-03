@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/BUMI/",
+  "ticker": "BUMI",
+  "start": "2025-03-17",
+  "end": "2025-06-14",
+  "retrieved_at": "2026-09-24T12:33:04.892924",
+  "http_status": 200,
+  "observations_count": 50,
+  "sha256": "bee055fed898005181cc4c391e5e8e126c77d33075e3db059cb2113c9633efd6"
+}

@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/MEDC/",
+  "ticker": "MEDC",
+  "start": "2026-03-12",
+  "end": "2026-06-09",
+  "retrieved_at": "2026-09-24T12:44:07.895865",
+  "http_status": 200,
+  "observations_count": 52,
+  "sha256": "3f6b8678803c6f1f261272001a459a6fa19efd4c9bd640cf1ed07f5396b4537d"
+}

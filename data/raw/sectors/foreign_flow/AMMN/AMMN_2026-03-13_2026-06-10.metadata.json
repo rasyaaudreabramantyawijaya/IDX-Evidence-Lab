@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/AMMN/?start=2026-03-13&end=2026-06-10",
+  "retrieved_at": "2026-09-25T03:19:55.058322+00:00",
+  "sha256": "4c5ed4b6251338958f23447366f80b266ece15b383a669e76e079e07df3d0145",
+  "http_status": 200,
+  "request_number": 33,
+  "request_budget": 558,
+  "ticker": "AMMN",
+  "requested_start": "2026-03-13",
+  "requested_end": "2026-06-10",
+  "window_days": 90,
+  "snapshot_sha256": "00890193e90c5c760221fbb414cf1809ee4f95b37e8b080d8264ae3e2d417b49"
+}

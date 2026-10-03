@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/AMRT/?start=2024-12-18&end=2025-03-17",
+  "retrieved_at": "2026-09-25T03:20:29.697996+00:00",
+  "sha256": "a015fb17639577af357edd27f8383fa9ca7d53a9c0c9cd59af4bc0459d0e05b3",
+  "http_status": 200,
+  "request_number": 41,
+  "request_budget": 558,
+  "ticker": "AMRT",
+  "requested_start": "2024-12-18",
+  "requested_end": "2025-03-17",
+  "window_days": 90,
+  "snapshot_sha256": "05f3ac053997a633f4d31b4f50abf39b1a0a38b7848c00ddd4327e8c6ee2c535"
+}

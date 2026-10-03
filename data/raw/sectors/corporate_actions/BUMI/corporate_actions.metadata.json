@@ -1,0 +1,14 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/corporate-actions/BUMI/",
+  "retrieved_at": "2026-09-26T14:12:02.559111+00:00",
+  "sha256": "ab4cb982e6ed50088a5bac510d48dcf523692093a89cac43d0ce2263dde478fa",
+  "http_status": 200,
+  "request_number": 15,
+  "request_budget": 45,
+  "symbol": "BUMI",
+  "query_parameters": {},
+  "history_scope": "complete endpoint history; endpoint called without date filters",
+  "snapshot_sha256": "d63c1b849e9c2cf840bf4547be17d49c3c56c7956e9a5f43b77ddde27ef21fc9"
+}

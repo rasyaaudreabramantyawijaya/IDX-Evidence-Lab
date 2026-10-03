@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/MDKA/?start=2024-12-18&end=2025-03-17",
+  "retrieved_at": "2026-09-25T03:46:42.858737+00:00",
+  "sha256": "776c806545795088cad2f028a84bafbaf24b71572ffdb17cce1fe5ddebe8e6b1",
+  "http_status": 200,
+  "request_number": 418,
+  "request_budget": 558,
+  "ticker": "MDKA",
+  "requested_start": "2024-12-18",
+  "requested_end": "2025-03-17",
+  "window_days": 90,
+  "snapshot_sha256": "18ca68f07322ecd71ea681e67fbb339adb38b4cc0f7b3003c5a0215cbda2bcd9"
+}

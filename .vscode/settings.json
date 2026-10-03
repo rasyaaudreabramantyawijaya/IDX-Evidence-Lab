@@ -1,0 +1,24 @@
+{
+  "liveServer.settings.ignoreFiles": [
+    ".vscode/**",
+    "**/*.scss",
+    "**/*.sass",
+    "**/*.ts",
+    "node_modules/**",
+    "venv/**",
+    ".venv/**",
+    "**/__pycache__/**",
+    ".pytest_cache/**",
+    "tests/**",
+    "reports/**",
+    "scripts/**",
+    ".superpowers/**",
+    "**/ihsg-evt-tail-surface-data.json",
+    "**/ihsg-evt-tail-surface-data.json.tmp"
+  ],
+  "liveServer.settings.proxy": {
+    "enable": true,
+    "baseUri": "/api",
+    "proxyUri": "http://127.0.0.1:5501/api"
+  }
+}

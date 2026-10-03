@@ -1,0 +1,14 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/corporate-actions/ADRO/",
+  "retrieved_at": "2026-09-26T14:11:56.691841+00:00",
+  "sha256": "347d48bfc60d3e11189101aba46cdd9817da4c2455a2d7a85780d2053d0b303a",
+  "http_status": 200,
+  "request_number": 3,
+  "request_budget": 45,
+  "symbol": "ADRO",
+  "query_parameters": {},
+  "history_scope": "complete endpoint history; endpoint called without date filters",
+  "snapshot_sha256": "f164e3c58f93ddea824d6b3999947232a61200b31126b26c45c7a1510a977db0"
+}

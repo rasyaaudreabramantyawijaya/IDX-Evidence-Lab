@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/MEDC/",
+  "retrieved_at": "2026-09-26T15:55:09.011304+00:00",
+  "sha256": "37e8304efaae46c4e17211bf881f008e6bbff09f76f6a4494db6a41540f7fead",
+  "http_status": 200,
+  "request_number": 4,
+  "request_budget": 10,
+  "symbol": "MEDC",
+  "request_scope": "approved retry after cooldown",
+  "snapshot_sha256": "f579059fbffed50497e6e769eb85b24d9388ac3757aefaa5aef46fec69575b08"
+}

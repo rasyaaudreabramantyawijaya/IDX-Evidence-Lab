@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/BBRI/",
+  "retrieved_at": "2026-09-26T15:28:13.086439+00:00",
+  "sha256": "8cc2e7361f02b01b103c05a7d5b1052e7d74e0bc424ce438c46502e9c81ca4f8",
+  "http_status": 200,
+  "request_number": 10,
+  "request_budget": 35,
+  "symbol": "BBRI",
+  "request_scope": "approved full company-report completion",
+  "snapshot_sha256": "2173c2e68fb18e50d1ca6156be33213f01b14c057385caaef5ccbb0a5a94896c"
+}

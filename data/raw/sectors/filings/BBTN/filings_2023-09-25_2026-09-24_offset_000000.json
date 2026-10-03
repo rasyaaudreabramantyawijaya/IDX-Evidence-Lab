@@ -1,0 +1,113 @@
+{
+  "results": [
+    {
+      "title": "Change in Tan Jacky Chen's position in Bank Tabungan Negara",
+      "body": "Tan Jacky Chen executed a transaction for 53,800 shares of Bank Tabungan Negara. This increases their holdings from 724,135 to 777,935 shares. The stated purpose of the transaction was 2025 employee performance bonus issued as equity awards and employee stock purchases..",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-10062026-4290-00.pdf-0.pdf",
+      "timestamp": "2026-06-10T17:16:54",
+      "sector": "financials",
+      "sub_sector": "banks",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "BBTN.JK",
+      "transaction_type": "others",
+      "holder_type": "insider",
+      "holder_name": "Tan Jacky Chen",
+      "holding_before": 724135,
+      "holding_after": 777935,
+      "amount_transaction": 53800,
+      "price": 1293.0,
+      "transaction_value": 69563400.0,
+      "price_transaction": [
+        {
+          "date": "2026-06-10",
+          "type": "others",
+          "price": 1293,
+          "amount_transacted": 53800
+        }
+      ],
+      "share_percentage_before": 0.0,
+      "share_percentage_after": 0.0,
+      "share_percentage_transaction": 0.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Change in Negara Republik Indonesia's position in Bank Tabungan Negara",
+      "body": "Negara Republik Indonesia executed a transaction for 84,206,665 shares of Bank Tabungan Negara. This increases their holdings from 1 to 84,206,666 shares. The stated purpose of the transaction was the transaction to transfer ownership of dam's bbtn shares to bp bumn was carried out in order to fulfill the provisions of law number 16 of 2025.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-07012026-8415-00.pdf-0.pdf",
+      "timestamp": "2026-01-07T22:04:17",
+      "sector": "financials",
+      "sub_sector": "banks",
+      "tags": [
+        "share-transfer"
+      ],
+      "symbol": "BBTN.JK",
+      "transaction_type": "others",
+      "holder_type": "insider",
+      "holder_name": "Negara Republik Indonesia",
+      "holding_before": 0,
+      "holding_after": 84206666,
+      "amount_transaction": 84206665,
+      "price": 500.0,
+      "transaction_value": 42103332500.0,
+      "price_transaction": [
+        {
+          "date": "2026-01-05",
+          "type": "others",
+          "price": 500.0,
+          "amount_transacted": 84206665
+        }
+      ],
+      "share_percentage_before": 0.0,
+      "share_percentage_after": 1.0,
+      "share_percentage_transaction": 1.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Change in Perusahaan Perseroan Danantara Asset Management's position in Bank Tabungan Negara",
+      "body": "Perusahaan Perseroan Danantara Asset Management executed a transaction for 84,206,665 shares of Bank Tabungan Negara. This decreases their holdings from 8,420,666,647 to 8,336,459,982 shares. The stated purpose of the transaction was the transaction to transfer ownership of dam's bbtn shares to bp bumn was carried out in order to fulfill the provisions of law number 16 of 2025.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-07012026-1073-00.pdf-0.pdf",
+      "timestamp": "2026-01-07T21:49:46",
+      "sector": "financials",
+      "sub_sector": "banks",
+      "tags": [
+        "share-transfer"
+      ],
+      "symbol": "BBTN.JK",
+      "transaction_type": "others",
+      "holder_type": "insider",
+      "holder_name": "Perusahaan Perseroan Danantara Asset Management",
+      "holding_before": 8420666647,
+      "holding_after": 8336459982,
+      "amount_transaction": 84206665,
+      "price": 500.0,
+      "transaction_value": 42103332500.0,
+      "price_transaction": [
+        {
+          "date": "2026-01-05",
+          "type": "others",
+          "price": 500.0,
+          "amount_transacted": 84206665
+        }
+      ],
+      "share_percentage_before": 60.0,
+      "share_percentage_after": 59.4,
+      "share_percentage_transaction": 0.6,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    }
+  ],
+  "pagination": {
+    "total_count": 3,
+    "showing": 3,
+    "limit": 30,
+    "offset": 0,
+    "has_next": false,
+    "has_previous": false,
+    "next_offset": null,
+    "previous_offset": null
+  }
+}

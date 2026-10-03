@@ -1,0 +1,22 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/news/?extension=idx&symbols=AADI%2CADMR%2CADRO%2CAKRA%2CAMMN%2CAMRT%2CANTM%2CASII%2CBBCA%2CBBNI%2CBBRI%2CBBTN%2CBMRI%2CBRPT%2CBUMI%2CCPIN%2CCUAN%2CDEWA%2CEMTK%2CESSA%2CEXCL%2CGOTO%2CHRTA%2CICBP%2CINCO%2CINDF%2CINDY%2CINKP%2CISAT%2CITMG%2CJPFA%2CKLBF%2CMAPI%2CMBMA%2CMDKA%2CMEDC%2CNCKL%2CPGAS%2CPGEO%2CPTBA%2CSCMA%2CTLKM%2CUNTR%2CUNVR%2CWIFI&start=2026-09-24&end=2026-09-25&limit=30&offset=30",
+  "retrieved_at": "2026-09-25T04:45:33.425341+00:00",
+  "sha256": "89ae472d435e2679e41dc42c3670d71206fab69c4eef7793acf6bfe3013fc334",
+  "http_status": 200,
+  "request_number": 2,
+  "request_budget": 17,
+  "query_scope": "all LQ45 symbols from local approved universe snapshot",
+  "symbols_count": 45,
+  "symbols_sha256": "4ae32762b0baec16f0b7dff55f2b656cb1d34004b8c6d59f8d9cc4f5e99d175f",
+  "date_start": "2026-09-24",
+  "date_end": "2026-09-25",
+  "extension": "idx",
+  "limit": 30,
+  "offset": 30,
+  "pagination_total_count": 36,
+  "pagination_has_next": false,
+  "pagination_next_offset": null,
+  "snapshot_sha256": "213ae140bf382c60bf39fc684ffa6d77c3355606f5cf1465d243a11b05ab5709"
+}

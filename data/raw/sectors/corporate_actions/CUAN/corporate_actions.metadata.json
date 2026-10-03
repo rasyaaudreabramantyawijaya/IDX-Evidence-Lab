@@ -1,0 +1,14 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/corporate-actions/CUAN/",
+  "retrieved_at": "2026-09-26T14:12:03.171029+00:00",
+  "sha256": "d90e151f8d08311e4de4de7850c8d3f9dcd6c6a8978d90718c9970136826dde3",
+  "http_status": 200,
+  "request_number": 17,
+  "request_budget": 45,
+  "symbol": "CUAN",
+  "query_parameters": {},
+  "history_scope": "complete endpoint history; endpoint called without date filters",
+  "snapshot_sha256": "af0d98092e1e556ef74aa232fd5b056afeff88aab6aec7a05ccef9c1b2f6d3dc"
+}

@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/corporate-actions/INDF/",
+  "retrieved_at": "2026-09-26T14:26:01.789694+00:00",
+  "sha256": "0d0050434d0f0630db7e7b6c9f5419b43100dfd2056bafdb37783f4d1e8459ba",
+  "http_status": 200,
+  "request_number": 1,
+  "request_budget": 20,
+  "symbol": "INDF",
+  "query_parameters": {},
+  "history_scope": "complete endpoint history; endpoint called without date filters",
+  "retry_of_prior_http_429": true,
+  "snapshot_sha256": "1f48bd926b49b75afda46c1b21ba30767cc25455ee240aded73be4f296037cc0"
+}

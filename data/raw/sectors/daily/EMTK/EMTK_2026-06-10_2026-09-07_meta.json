@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/EMTK/",
+  "ticker": "EMTK",
+  "start": "2026-06-10",
+  "end": "2026-09-07",
+  "retrieved_at": "2026-09-24T12:34:54.254602",
+  "http_status": 200,
+  "observations_count": 61,
+  "sha256": "1105d7a7dbfa2c009a0c4713cbfd9621cdd525c42fcda1c243038151f36f1bf1"
+}

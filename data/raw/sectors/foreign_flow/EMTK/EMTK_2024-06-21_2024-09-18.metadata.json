@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/EMTK/?start=2024-06-21&end=2024-09-18",
+  "retrieved_at": "2026-09-25T03:32:08.111934+00:00",
+  "sha256": "6d36935d79c0512650eb4c2c9ceb7ef078829b7afb1d0be8df6aa629cfb57e80",
+  "http_status": 200,
+  "request_number": 208,
+  "request_budget": 558,
+  "ticker": "EMTK",
+  "requested_start": "2024-06-21",
+  "requested_end": "2024-09-18",
+  "window_days": 90,
+  "snapshot_sha256": "8e15949e4d1732ef22d2ae52ecb8194656cf99401fd2bb7addc6ed1464cad81e"
+}

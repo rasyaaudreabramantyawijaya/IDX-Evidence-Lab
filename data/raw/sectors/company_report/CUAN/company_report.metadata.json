@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/CUAN/",
+  "retrieved_at": "2026-09-26T12:13:53.793492+00:00",
+  "sha256": "2f02316991d398b59d9afc597d7ba4a43af0a2519a7feffc6a52428a992287b8",
+  "http_status": 200,
+  "request_number": 3,
+  "request_budget": 10,
+  "symbol": "CUAN",
+  "request_scope": "approved company report collection",
+  "snapshot_sha256": "16befeb1593b647c7afd109f48d0d4901f3b0f2e1826a879a6216dde27dab547"
+}

@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/ASII/",
+  "ticker": "ASII",
+  "start": "2025-12-12",
+  "end": "2026-03-11",
+  "retrieved_at": "2026-09-24T12:29:43.784420",
+  "http_status": 200,
+  "observations_count": 57,
+  "sha256": "86d247125d98ff515f77bcc2aa5b6b87d715a20c76a3ad7a2c36f9605f9714d9"
+}

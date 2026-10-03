@@ -1,0 +1,74 @@
+{
+  "symbol": "NCKL.JK",
+  "corporate_actions": {
+    "agm": [
+      {
+        "agm_date": "2023-06-28",
+        "agm_time": "09:00:00",
+        "agm_place": "Ballroom 1, Lantai 3 Sheraton Grand Jakarta Gandaria City Hotel Jln. Sultan Iskandar Muda Jakarta Selatan 12240",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2024-03-15",
+        "agm_time": "09:30:00",
+        "agm_place": "Meeting Room 7, Lantai Ug Sheraton Grand Jakarta Gandaria City Hotel Jl. Sultan Iskandar Muda, Jakarta Selatan 12240",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2024-06-27",
+        "agm_time": null,
+        "agm_place": "",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2024-10-31",
+        "agm_time": "09:50:00",
+        "agm_place": "Meeting Room 7, Lantai Ug Sheraton Grand Jakarta Gandaria City Hotel Jl. Sultan Iskandarmuda Jakarta 12240",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2025-06-18",
+        "agm_time": null,
+        "agm_place": "",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2026-06-30",
+        "agm_time": "11:30:00",
+        "agm_place": "Zoom Meeting",
+        "agm_result": "Agenda #1: Shareholders approved the Company's Annual Report and audited consolidated financial statements for the fiscal year ended December 31, 2025, as presented by the Board of Directors and reviewed by the Board of Commissioners. The resolution passed with 99.88% in favor and a quorum of 90.25%.\nAgenda #2: Shareholders granted full discharge and release (acquit et de charge) to all members of the Board of Commissioners and Directors for their accountability in FY2025. The resolution passed with 99.9% in favor and a quorum of 90.25%.\nAgenda #3: Shareholders approved the use of FY2025 net profit, including a cash dividend of IDR42.64 per share totaling IDR2,685,802,636,088, an IDR18 billion mandatory reserve, and retained earnings for operational and business development. The resolution passed with 99.9% in favor and a quorum of 90.25%.\nAgenda #4: Shareholders granted authority to the Board of Commissioners to appoint a Public Accounting Firm and determine fees for the audit of financial statements for FY2026, per the Audit Committee's recommendation. The resolution passed with 99.61% in favor and a quorum of 90.25%.\nAgenda #5: Shareholders granted authority to the President Commissioner to determine salaries, honoraria, and other benefits for directors and commissioners for FY2026, considering the Nomination and Remuneration function and company finances. The resolution passed with 99.9% in favor and a quorum of 90.25%.\nAgenda #6: Shareholders approved the continuation of the share buyback plan up to IDR1,000,000,000,000 (including brokerage and other fees) for a maximum 12-month period from the meeting date, with authority to the Directors to execute. The resolution passed with 97.02% in favor and a quorum of 90.25%.\nAgenda #7: Shareholders approved and released the Board of Commissioners and Directors from responsibility regarding the use of all IPO proceeds as reported. The resolution passed with 97.11% in favor and a quorum of 90.25%."
+      }
+    ],
+    "bonus": null,
+    "warrant": null,
+    "dividend": [
+      {
+        "ex_date": "2025-06-30",
+        "payment_date": "2025-07-18",
+        "dividend_yield": 0.0354692,
+        "dividend_amount": 30.357
+      },
+      {
+        "ex_date": "2024-07-08",
+        "payment_date": "2024-07-31",
+        "dividend_yield": 0.0294042,
+        "dividend_amount": 26.716
+      },
+      {
+        "ex_date": "2026-07-09",
+        "payment_date": "2026-07-31",
+        "dividend_yield": null,
+        "dividend_amount": 42.64
+      },
+      {
+        "ex_date": "2023-07-11",
+        "payment_date": "2023-08-03",
+        "dividend_yield": 0.0218347,
+        "dividend_amount": 22.189
+      }
+    ],
+    "right_issue": null,
+    "stock_split": null,
+    "upcoming_dividend": null
+  }
+}

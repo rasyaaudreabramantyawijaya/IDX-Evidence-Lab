@@ -1,0 +1,18 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/filings/?symbol=KLBF&start=2023-09-25&end=2026-09-24&limit=30&offset=0",
+  "retrieved_at": "2026-09-26T12:22:25.224352+00:00",
+  "sha256": "22f188249cb0130bf88223349fbdb92fc7d7b57f8d386a233ad916be73cf9eff",
+  "http_status": 200,
+  "request_number": 33,
+  "request_budget": 615,
+  "run_id": "filings_full_20260926T122124Z",
+  "symbol": "KLBF",
+  "requested_start": "2023-09-25",
+  "requested_end": "2026-09-24",
+  "limit": 30,
+  "offset": 0,
+  "pagination_followed": true,
+  "snapshot_sha256": "8fb533405fbbb48ce94e1bcccf6fdabf9893671036cc09488f3e5a96ff52137c"
+}

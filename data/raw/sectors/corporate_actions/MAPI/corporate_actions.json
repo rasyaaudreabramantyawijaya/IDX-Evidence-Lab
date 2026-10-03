@@ -1,0 +1,73 @@
+{
+  "symbol": "MAPI.JK",
+  "corporate_actions": {
+    "agm": [
+      {
+        "agm_date": "2022-07-28",
+        "agm_time": "09:00:00",
+        "agm_place": "Hotel Grand Sahid Jayajl. Jend. Sudirman Kav. 86Jakarta Pusat 10220",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2023-06-20",
+        "agm_time": "11:00:00",
+        "agm_place": "Hotel Ayana Jl. Jend. Sudirman Kav. 10-11 Jakarta Kota Adm. Jakarta Pusat, DKI Jakarta",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2024-06-27",
+        "agm_time": "11:00:00",
+        "agm_place": "Hotel Ayanajl. Jend. Sudirman Kav. 10-11 Jakarta, kota Adm. Jakarta Pusat, DKI Jakarta",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2025-06-30",
+        "agm_time": "11:00:00",
+        "agm_place": "Hotel Ayana Midplaza JL Jendral Sudirman KAV 10-11, Jakarta Pusat 10220 Kota Adm. Jakartapusat",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2026-06-24",
+        "agm_time": "11:00:00",
+        "agm_place": "Hotel Ayana Midplaza Jalan Jenderal Sudirman KAV 10-11 Jakarta Pusat 10220 Kota Adm. Jakarta Pusat",
+        "agm_result": "Agenda #1: Annual General Meeting of Shareholders (RUPST) was held on 24 June 2026, attended by shareholders representing 13,527,805,511 shares or 81.49% of all valid voting shares, in accordance with the company's articles of association and applicable regulations.\nAgenda #2: Approval of the Annual Report and Financial Statements for FY2025, including ratification of the audited financial statements from Public Accounting Firm Liana Ramon Xenia & Rekan with an unmodified opinion, and granting of full release (acquit et de charge) to the Board of Directors and Board of Commissioners for FY2025.\nAgenda #3: Approval of the Use of Net Profit, including cash dividends of Rp166,000,000,000 (Rp10 per share) for 16,600,000,000 shares, Rp5,000,000,000 allocated to the reserve fund, and the remainder recorded as retained earnings.\nAgenda #4: Approval of the Appointment of a Public Accountant, authorizing the Board of Commissioners to appoint a public accounting firm to audit FY2026 financial statements, with the honorarium set by the Board of Directors.\nAgenda #5: Approval of the Appointment of the Board of Directors and Board of Commissioners and Setting of Remuneration, with terms until the close of the 2028 Annual General Meeting, and authority delegated to set salaries, allowances, and honorarium; the board composition is listed with terms ending 30 June 2028, with some commissioners marked as independent.\nAgenda #6: Approval of the Adjustment to Article 3 of the Articles of Association to align with the 2025 KBLI classification per the Head of Statistics Indonesia Regulation No. 7 of 2025, with the Board of Directors authorized to restate the decision in a notarial deed."
+      }
+    ],
+    "bonus": null,
+    "warrant": null,
+    "dividend": [
+      {
+        "ex_date": "2026-07-03",
+        "payment_date": "2026-07-24",
+        "dividend_yield": null,
+        "dividend_amount": 10
+      },
+      {
+        "ex_date": "2025-07-09",
+        "payment_date": "2025-08-01",
+        "dividend_yield": 0.00787231,
+        "dividend_amount": 10
+      },
+      {
+        "ex_date": "2024-07-08",
+        "payment_date": "2024-07-30",
+        "dividend_yield": 0.00493323,
+        "dividend_amount": 8
+      },
+      {
+        "ex_date": "2023-07-04",
+        "payment_date": "2023-07-21",
+        "dividend_yield": 0.00473566,
+        "dividend_amount": 8
+      }
+    ],
+    "right_issue": null,
+    "stock_split": [
+      {
+        "date": "2018-06-04",
+        "split_ratio": 10
+      }
+    ],
+    "upcoming_dividend": null
+  }
+}

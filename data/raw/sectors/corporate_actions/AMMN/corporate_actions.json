@@ -1,0 +1,37 @@
+{
+  "symbol": "AMMN.JK",
+  "corporate_actions": {
+    "agm": [
+      {
+        "agm_date": "2024-06-06",
+        "agm_time": null,
+        "agm_place": "",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2025-05-28",
+        "agm_time": "11:00:00",
+        "agm_place": "Dibatalkan",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2025-06-16",
+        "agm_time": "13:00:00",
+        "agm_place": "Financial Hall Jakarta, Graha Cimb Niaga Lantai 2, Jalan Jenderal Sudirman Kav. 58, Jakartaselatan",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2026-05-19",
+        "agm_time": "13:00:00",
+        "agm_place": "Soehanna Hall, THE Energy Building, Scbd, LOT 11A, Jalan Jenderal Sudirman Kav. 52-53, Jakarta Selatan, DKI Jakarta",
+        "agm_result": null
+      }
+    ],
+    "bonus": null,
+    "warrant": null,
+    "dividend": null,
+    "right_issue": null,
+    "stock_split": null,
+    "upcoming_dividend": null
+  }
+}

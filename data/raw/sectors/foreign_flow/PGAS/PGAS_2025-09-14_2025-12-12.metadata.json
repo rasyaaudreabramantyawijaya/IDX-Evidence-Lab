@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/PGAS/?start=2025-09-14&end=2025-12-12",
+  "retrieved_at": "2026-09-25T03:53:47.101712+00:00",
+  "sha256": "d6ab41102fdeb6f6a98dde9eba49bac4d8e8062bb98d9ed50430125fb7994c24",
+  "http_status": 200,
+  "request_number": 8,
+  "request_budget": 105,
+  "ticker": "PGAS",
+  "requested_start": "2025-09-14",
+  "requested_end": "2025-12-12",
+  "window_days": 90,
+  "snapshot_sha256": "a7bd9324673c9842c00a723195dd91866425e79a90b089fe3f190944d0e317f0"
+}

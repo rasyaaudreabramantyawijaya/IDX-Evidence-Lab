@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/ADRO/",
+  "ticker": "ADRO",
+  "start": "2024-09-18",
+  "end": "2024-12-16",
+  "retrieved_at": "2026-09-24T12:27:21.178000",
+  "http_status": 200,
+  "observations_count": 63,
+  "sha256": "04508ec81dddd60ca23fc64704cace6648da3939c01a1db252fddcc5d927974d"
+}

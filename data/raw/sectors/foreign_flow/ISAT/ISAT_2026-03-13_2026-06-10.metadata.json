@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/ISAT/?start=2026-03-13&end=2026-06-10",
+  "retrieved_at": "2026-09-25T03:41:50.670254+00:00",
+  "sha256": "5c8349cea5d67566313441866dccc0f5de7e7250167f65726fb0e2e2a0285bc2",
+  "http_status": 200,
+  "request_number": 345,
+  "request_budget": 558,
+  "ticker": "ISAT",
+  "requested_start": "2026-03-13",
+  "requested_end": "2026-06-10",
+  "window_days": 90,
+  "snapshot_sha256": "cc17c5727034e7e15b946442010e0346c5f9ffd5361ab8ccf5ee49f1bb580922"
+}

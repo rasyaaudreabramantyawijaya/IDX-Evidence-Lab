@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/CPIN/",
+  "retrieved_at": "2026-09-26T15:28:17.513048+00:00",
+  "sha256": "82a9d88e8db01473916c21b177f50538d4f58e1f76c0fa7f650fd42452fc23fa",
+  "http_status": 200,
+  "request_number": 14,
+  "request_budget": 35,
+  "symbol": "CPIN",
+  "request_scope": "approved full company-report completion",
+  "snapshot_sha256": "cffcb0c5e478de1eb29cb76292d591b9eb21c79fac0b2e7d0e9aaee2ec928b7d"
+}

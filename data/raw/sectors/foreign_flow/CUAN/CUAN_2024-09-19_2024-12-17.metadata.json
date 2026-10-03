@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/CUAN/?start=2024-09-19&end=2024-12-17",
+  "retrieved_at": "2026-09-25T03:30:24.617734+00:00",
+  "sha256": "2a07ba21a069df62348f093ba0865dac4d3da2f52cfbf52b66682682e1b3463e",
+  "http_status": 200,
+  "request_number": 183,
+  "request_budget": 558,
+  "ticker": "CUAN",
+  "requested_start": "2024-09-19",
+  "requested_end": "2024-12-17",
+  "window_days": 90,
+  "snapshot_sha256": "8c93cdde797a5a0c6e452920b6a85b3f781c095e99a5ff46d814cbb55001cf45"
+}

@@ -1,0 +1,47 @@
+{
+  "results": [
+    {
+      "title": "Provident Indonesia sells shares of Merdeka Battery Materials",
+      "body": "Provident Indonesia sold 1,194,212,325 shares of Merdeka Battery Materials. This decreases their holdings from 2,192,848,313 to 998,635,988 shares. The stated purpose of the transaction was divestiture.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-10072026-5799-00.pdf-0.pdf",
+      "timestamp": "2026-07-10T22:14:23",
+      "sector": "basic-materials",
+      "sub_sector": "basic-materials",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "MBMA.JK",
+      "transaction_type": "sell",
+      "holder_type": "institution",
+      "holder_name": "Provident Indonesia",
+      "holding_before": 2192848313,
+      "holding_after": 998635988,
+      "amount_transaction": 1194212325,
+      "price": 478.0,
+      "transaction_value": 570833491350.0,
+      "price_transaction": [
+        {
+          "date": "2026-07-09",
+          "type": "sell",
+          "price": 478,
+          "amount_transacted": 1194212325
+        }
+      ],
+      "share_percentage_before": 2.042,
+      "share_percentage_after": 0.93,
+      "share_percentage_transaction": 1.112,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    }
+  ],
+  "pagination": {
+    "total_count": 1,
+    "showing": 1,
+    "limit": 30,
+    "offset": 0,
+    "has_next": false,
+    "has_previous": false,
+    "next_offset": null,
+    "previous_offset": null
+  }
+}

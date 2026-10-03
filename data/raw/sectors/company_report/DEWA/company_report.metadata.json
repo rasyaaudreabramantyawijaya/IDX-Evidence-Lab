@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/DEWA/",
+  "retrieved_at": "2026-09-26T12:13:55.095873+00:00",
+  "sha256": "bd62343c22139668e03b5eac6983be8f9129b1edf352061d619f3fa547051cca",
+  "http_status": 200,
+  "request_number": 4,
+  "request_budget": 10,
+  "symbol": "DEWA",
+  "request_scope": "approved company report collection",
+  "snapshot_sha256": "f02c4d445da28b250046b97554112073b1a79186ff8f059ce53f19b2182b7c76"
+}

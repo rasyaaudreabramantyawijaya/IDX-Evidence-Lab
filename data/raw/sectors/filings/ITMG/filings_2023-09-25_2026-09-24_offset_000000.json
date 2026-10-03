@@ -1,0 +1,45 @@
+{
+  "results": [
+    {
+      "title": "Indo Tambangraya Megah Buy Transaction of Adhi Kartiko Pratama",
+      "body": "Indo Tambangraya Megah acquired 585,000,000 shares of Adhi Kartiko Pratama increasing its holding from 0 to 585,000,000 shares, representing a long-term investment and diversification strategy.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202507/18461218f6_94ea329fe5.pdf",
+      "timestamp": "2025-07-08T16:28:00",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [],
+      "symbol": "ITMG.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Indo Tambangraya Megah",
+      "holding_before": 0,
+      "holding_after": 585000000,
+      "amount_transaction": 585000000,
+      "price": 438.0,
+      "transaction_value": 256230000000.0,
+      "price_transaction": [
+        {
+          "date": "2025-07-04",
+          "type": "buy",
+          "price": 438,
+          "amount_transacted": 585000000
+        }
+      ],
+      "share_percentage_before": 0.0,
+      "share_percentage_after": 9.62,
+      "share_percentage_transaction": 9.62,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    }
+  ],
+  "pagination": {
+    "total_count": 1,
+    "showing": 1,
+    "limit": 30,
+    "offset": 0,
+    "has_next": false,
+    "has_previous": false,
+    "next_offset": null,
+    "previous_offset": null
+  }
+}

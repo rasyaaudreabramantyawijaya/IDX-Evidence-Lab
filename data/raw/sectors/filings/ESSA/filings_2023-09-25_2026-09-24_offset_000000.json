@@ -1,0 +1,242 @@
+{
+  "results": [
+    {
+      "title": "Chander Vinod Laroya buys shares of ESSA Industries Indonesia",
+      "body": "Chander Vinod Laroya bought 429,965,278 shares of ESSA Industries Indonesia. This increases their holdings from 2,821,983,677 to 3,251,948,955 shares. The stated purpose of the transaction was investment.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-24042026-6216-00.pdf-0.pdf",
+      "timestamp": "2026-04-24T16:21:03",
+      "sector": "basic-materials",
+      "sub_sector": "basic-materials",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "ESSA.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Chander Vinod Laroya",
+      "holding_before": 2821983677,
+      "holding_after": 3251948955,
+      "amount_transaction": 429965278,
+      "price": 711.0,
+      "transaction_value": 305705312658.0,
+      "price_transaction": [
+        {
+          "date": "2026-04-24",
+          "type": "buy",
+          "price": 711.0,
+          "amount_transacted": 429965278
+        }
+      ],
+      "share_percentage_before": 16.38,
+      "share_percentage_after": 18.88,
+      "share_percentage_transaction": 2.5,
+      "idx_investor_slug": "chander-vinod-laroya-1fe8b",
+      "idx_conglomerates_group_slug": "akraya-group"
+    },
+    {
+      "title": "Ir.T. Permadi Rachmat sells shares of ESSA Industries Indonesia",
+      "body": "This is Ir.T. Permadi Rachmat's 3rd insider disposal in the last 6 months, totaling a distribution of 117,339,900 shares transacted at an average price of IDR 764. Ir.T. Permadi Rachmat's ownership in ESSA Industries Indonesia has decreased from 5.075% to 4.992% in this period.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-01042026-0649-00.pdf-0.pdf",
+      "timestamp": "2026-04-01T13:51:27",
+      "sector": "basic-materials",
+      "sub_sector": "basic-materials",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "ESSA.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Ir.T. Permadi Rachmat",
+      "holding_before": 874208456,
+      "holding_after": 859930556,
+      "amount_transaction": 14277900,
+      "price": 755.307,
+      "transaction_value": 10784201000.0,
+      "price_transaction": [
+        {
+          "date": "2026-03-31",
+          "type": "sell",
+          "price": 755,
+          "amount_transacted": 2649000
+        },
+        {
+          "date": "2026-03-31",
+          "type": "sell",
+          "price": 765,
+          "amount_transacted": 1877000
+        },
+        {
+          "date": "2026-03-31",
+          "type": "sell",
+          "price": 760,
+          "amount_transacted": 3437600
+        },
+        {
+          "date": "2026-03-31",
+          "type": "sell",
+          "price": 750,
+          "amount_transacted": 6314300
+        }
+      ],
+      "share_percentage_before": 5.075,
+      "share_percentage_after": 4.992,
+      "share_percentage_transaction": 0.083,
+      "idx_investor_slug": "t-permadi-rachmat",
+      "idx_conglomerates_group_slug": "triputra-group"
+    },
+    {
+      "title": "Ir.T. Permadi Rachmat sells shares of ESSA Industries Indonesia",
+      "body": "Ir.T. Permadi Rachmat sold 60,822,800 shares of ESSA Industries Indonesia. This decreases their holdings from 1,041,915,856 to 981,093,056 shares. The stated purpose of the transaction was divestment.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-27032026-0841-00.pdf-0.pdf",
+      "timestamp": "2026-03-27T11:01:17",
+      "sector": "basic-materials",
+      "sub_sector": "basic-materials",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "ESSA.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Ir.T. Permadi Rachmat",
+      "holding_before": 1041915856,
+      "holding_after": 981093056,
+      "amount_transaction": 60822800,
+      "price": 754.303,
+      "transaction_value": 45878825000.0,
+      "price_transaction": [
+        {
+          "date": "2026-03-26",
+          "type": "sell",
+          "price": 740.0,
+          "amount_transacted": 5000000
+        },
+        {
+          "date": "2026-03-26",
+          "type": "sell",
+          "price": 745.0,
+          "amount_transacted": 5369000
+        },
+        {
+          "date": "2026-03-26",
+          "type": "sell",
+          "price": 750.0,
+          "amount_transacted": 24758600
+        },
+        {
+          "date": "2026-03-26",
+          "type": "sell",
+          "price": 775.0,
+          "amount_transacted": 466300
+        },
+        {
+          "date": "2026-03-26",
+          "type": "sell",
+          "price": 760.0,
+          "amount_transacted": 9187500
+        },
+        {
+          "date": "2026-03-26",
+          "type": "sell",
+          "price": 765.0,
+          "amount_transacted": 14342900
+        },
+        {
+          "date": "2026-03-26",
+          "type": "sell",
+          "price": 770.0,
+          "amount_transacted": 760100
+        },
+        {
+          "date": "2026-03-26",
+          "type": "sell",
+          "price": 755.0,
+          "amount_transacted": 938400
+        }
+      ],
+      "share_percentage_before": 6.048,
+      "share_percentage_after": 5.695,
+      "share_percentage_transaction": 0.353,
+      "idx_investor_slug": "t-permadi-rachmat",
+      "idx_conglomerates_group_slug": "triputra-group"
+    },
+    {
+      "title": "Ir.T. Permadi Rachmat sells shares of ESSA Industries Indonesia",
+      "body": "Ir.T. Permadi Rachmat sold 42,239,200 shares of ESSA Industries Indonesia. This decreases their holdings from 1,224,349,556 to 1,182,110,356 shares. The stated purpose of the transaction was divestment.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-09032026-3713-00.pdf-0.pdf",
+      "timestamp": "2026-03-09T13:11:35",
+      "sector": "basic-materials",
+      "sub_sector": "basic-materials",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "ESSA.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Ir.T. Permadi Rachmat",
+      "holding_before": 1224349556,
+      "holding_after": 1182110356,
+      "amount_transaction": 42239200,
+      "price": 780.461,
+      "transaction_value": 32966065500.0,
+      "price_transaction": [
+        {
+          "date": "2026-03-05",
+          "type": "sell",
+          "price": 765.0,
+          "amount_transacted": 7842900
+        },
+        {
+          "date": "2026-03-05",
+          "type": "sell",
+          "price": 775.0,
+          "amount_transacted": 2580600
+        },
+        {
+          "date": "2026-03-05",
+          "type": "sell",
+          "price": 780.0,
+          "amount_transacted": 2564100
+        },
+        {
+          "date": "2026-03-05",
+          "type": "sell",
+          "price": 770.0,
+          "amount_transacted": 5194800
+        },
+        {
+          "date": "2026-03-05",
+          "type": "sell",
+          "price": 790.0,
+          "amount_transacted": 11392200
+        },
+        {
+          "date": "2026-03-05",
+          "type": "sell",
+          "price": 795.0,
+          "amount_transacted": 2473900
+        },
+        {
+          "date": "2026-03-05",
+          "type": "sell",
+          "price": 785.0,
+          "amount_transacted": 10190700
+        }
+      ],
+      "share_percentage_before": 7.11,
+      "share_percentage_after": 6.86,
+      "share_percentage_transaction": 0.25,
+      "idx_investor_slug": "t-permadi-rachmat",
+      "idx_conglomerates_group_slug": "triputra-group"
+    }
+  ],
+  "pagination": {
+    "total_count": 4,
+    "showing": 4,
+    "limit": 30,
+    "offset": 0,
+    "has_next": false,
+    "has_previous": false,
+    "next_offset": null,
+    "previous_offset": null
+  }
+}

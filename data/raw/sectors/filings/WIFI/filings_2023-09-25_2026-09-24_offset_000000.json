@@ -1,0 +1,80 @@
+{
+  "results": [
+    {
+      "title": "Investasi Sukses Bersama Buy Transaction of Solusi Sinergi Digital",
+      "body": "On August 20, 2025, Investasi Sukses Bersama, an institution shareholder, bought 10,739,675 shares of Solusi Sinergi Digital changing its holding from 2,878,347,729 to 2,889,087,404 shares.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202508/2d6e1daf25_7cccc6c86f.pdf",
+      "timestamp": "2025-08-20T09:01:00",
+      "sector": "technology",
+      "sub_sector": "software-it-services",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "WIFI.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Investasi Sukses Bersama",
+      "holding_before": 2878347729,
+      "holding_after": 2889087404,
+      "amount_transaction": 10739675,
+      "price": 3000.0,
+      "transaction_value": 32219025000.0,
+      "price_transaction": [
+        {
+          "date": "2025-08-19",
+          "type": "buy",
+          "price": 3000,
+          "amount_transacted": 10739675
+        }
+      ],
+      "share_percentage_before": 54.22,
+      "share_percentage_after": 54.422,
+      "share_percentage_transaction": 0.202,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Investasi Sukses Bersama Buy Transaction of Solusi Sinergi Digital",
+      "body": "On August 11, 2025, Investasi Sukses Bersama, an institution shareholder, bought 30,095,800 shares of Solusi Sinergi Digital changing its holding from 2,848,251,929 to 2,878,347,729 shares.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202508/e45840628a_49c6e31877.pdf",
+      "timestamp": "2025-08-11T09:48:22",
+      "sector": "technology",
+      "sub_sector": "software-it-services",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "WIFI.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Investasi Sukses Bersama",
+      "holding_before": 2848251929,
+      "holding_after": 2878347729,
+      "amount_transaction": 30095800,
+      "price": 2880.0,
+      "transaction_value": 86675904000.0,
+      "price_transaction": [
+        {
+          "date": "2025-08-08",
+          "type": "buy",
+          "price": 2880,
+          "amount_transacted": 30095800
+        }
+      ],
+      "share_percentage_before": 53.65,
+      "share_percentage_after": 54.217,
+      "share_percentage_transaction": 0.567,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    }
+  ],
+  "pagination": {
+    "total_count": 2,
+    "showing": 2,
+    "limit": 30,
+    "offset": 0,
+    "has_next": false,
+    "has_previous": false,
+    "next_offset": null,
+    "previous_offset": null
+  }
+}

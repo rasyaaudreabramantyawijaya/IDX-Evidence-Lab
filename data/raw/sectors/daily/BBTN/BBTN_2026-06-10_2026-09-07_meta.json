@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/BBTN/",
+  "ticker": "BBTN",
+  "start": "2026-06-10",
+  "end": "2026-09-07",
+  "retrieved_at": "2026-09-24T12:31:55.196541",
+  "http_status": 200,
+  "observations_count": 61,
+  "sha256": "90fa3a74c244f9190fb0cf68e281629ea179bb5693f9eca2fc1d951fc417304c"
+}

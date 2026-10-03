@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/DEWA/?start=2023-12-24&end=2024-03-22",
+  "retrieved_at": "2026-09-25T03:31:06.758001+00:00",
+  "sha256": "3da944fd0eea3d0cb881a6f2512c39135d3fb128547aadb12d990bcc68a3f905",
+  "http_status": 200,
+  "request_number": 193,
+  "request_budget": 558,
+  "ticker": "DEWA",
+  "requested_start": "2023-12-24",
+  "requested_end": "2024-03-22",
+  "window_days": 90,
+  "snapshot_sha256": "f8abd8d8fe60e43c7f948352599cd52a519ccc36ba099c38c1e0d60e50f8ef44"
+}

@@ -1,0 +1,14 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/corporate-actions/DEWA/",
+  "retrieved_at": "2026-09-26T14:12:03.466801+00:00",
+  "sha256": "d9336a16c971d1bda54047998619e7fb27f484267b76b34c9968ec733b765726",
+  "http_status": 200,
+  "request_number": 18,
+  "request_budget": 45,
+  "symbol": "DEWA",
+  "query_parameters": {},
+  "history_scope": "complete endpoint history; endpoint called without date filters",
+  "snapshot_sha256": "589d3d4da8816788c42ce28fbf57b2d952117bd5b8bf877d6f7f827ffc2fa547"
+}

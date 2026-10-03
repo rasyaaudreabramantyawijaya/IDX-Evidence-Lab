@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/INDF/",
+  "retrieved_at": "2026-09-26T15:28:23.068594+00:00",
+  "sha256": "1432dea0f9963d087fff514c098f06f69912c9180230c5af586b382de17047d7",
+  "http_status": 200,
+  "request_number": 20,
+  "request_budget": 35,
+  "symbol": "INDF",
+  "request_scope": "approved full company-report completion",
+  "snapshot_sha256": "122aeba48227c8cd4a29f02ce1103734b0efe7e48933b1d3739ff05ab5e2d5c0"
+}

@@ -1,0 +1,14 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/corporate-actions/ICBP/",
+  "retrieved_at": "2026-09-26T14:12:05.031254+00:00",
+  "sha256": "a9f0f2cc52c5bcba09347b220f525039b3cf2405a148a2f98fe2e2c76aad608d",
+  "http_status": 200,
+  "request_number": 24,
+  "request_budget": 45,
+  "symbol": "ICBP",
+  "query_parameters": {},
+  "history_scope": "complete endpoint history; endpoint called without date filters",
+  "snapshot_sha256": "1e760e634b89a5a9e017f10211649d829a75a0d8813e0afddb2291c97803e957"
+}

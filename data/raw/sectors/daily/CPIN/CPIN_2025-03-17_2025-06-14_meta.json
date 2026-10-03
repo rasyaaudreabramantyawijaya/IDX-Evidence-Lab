@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/CPIN/",
+  "ticker": "CPIN",
+  "start": "2025-03-17",
+  "end": "2025-06-14",
+  "retrieved_at": "2026-09-24T12:34:00.534750",
+  "http_status": 200,
+  "observations_count": 50,
+  "sha256": "4abdd82e0ad09f9ad28be485363f61b80ea25744edbf9e541c16a5a86cc9ce7b"
+}

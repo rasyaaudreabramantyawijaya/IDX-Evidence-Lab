@@ -1,0 +1,319 @@
+{
+  "results": [
+    {
+      "title": "Morgan Stanley And Co International Plc buys shares of Sumber Alfaria Trijaya",
+      "body": "Morgan Stanley And Co International Plc bought 179,137,756 shares of Sumber Alfaria Trijaya. This increases their holdings from 3,649,457,440 to 3,828,595,196 shares. The stated purpose of the transaction was capital investment.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-03062026-2858-00.pdf-0.pdf",
+      "timestamp": "2026-06-03T13:32:13",
+      "sector": "consumer-non-cyclicals",
+      "sub_sector": "food-staples-retailing",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "AMRT.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Morgan Stanley And Co International Plc",
+      "holding_before": 3649457440,
+      "holding_after": 3828595196,
+      "amount_transaction": 179137756,
+      "price": 1151.0,
+      "transaction_value": 206187557156.0,
+      "price_transaction": [
+        {
+          "date": "2026-05-29",
+          "type": "buy",
+          "price": 1151,
+          "classification": "Saham Biasa",
+          "amount_transacted": 179137756
+        }
+      ],
+      "share_percentage_before": 8.881,
+      "share_percentage_after": 9.317,
+      "share_percentage_transaction": 0.436,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Morgan Stanley And Co International Plc sells shares of Sumber Alfaria Trijaya",
+      "body": "Morgan Stanley And Co International Plc sold 1,293,000 shares of Sumber Alfaria Trijaya. This decreases their holdings from 3,828,595,196 to 3,827,302,196 shares. The stated purpose of the transaction was investment.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-03062026-2858-00.pdf-0.pdf",
+      "timestamp": "2026-06-03T13:32:13",
+      "sector": "consumer-non-cyclicals",
+      "sub_sector": "food-staples-retailing",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "AMRT.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Morgan Stanley And Co International Plc",
+      "holding_before": 3828595196,
+      "holding_after": 3827302196,
+      "amount_transaction": 1293000,
+      "price": 1346.0,
+      "transaction_value": 1740378000.0,
+      "price_transaction": [
+        {
+          "date": "2026-05-29",
+          "type": "sell",
+          "price": 1346,
+          "classification": "Saham Biasa",
+          "amount_transacted": 1293000
+        }
+      ],
+      "share_percentage_before": 9.317,
+      "share_percentage_after": 9.314,
+      "share_percentage_transaction": 0.003,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Amanda Cipta Persada buys shares of Sumber Alfaria Trijaya",
+      "body": "Amanda Cipta Persada bought 2,117,749,600 shares of Sumber Alfaria Trijaya. This increases their holdings from 3,710,794,900 to 5,828,544,500 shares. The stated purpose of the transaction was internal restructuring.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-13052026-8826-00.pdf-0.pdf",
+      "timestamp": "2026-05-13T16:51:59",
+      "sector": "consumer-non-cyclicals",
+      "sub_sector": "food-staples-retailing",
+      "tags": [
+        "capital-restructuring"
+      ],
+      "symbol": "AMRT.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Amanda Cipta Persada",
+      "holding_before": 3710794900,
+      "holding_after": 5828544500,
+      "amount_transaction": 2117749600,
+      "price": 1415.0,
+      "transaction_value": 2996615684000.0,
+      "price_transaction": [
+        {
+          "date": "2026-05-13",
+          "type": "buy",
+          "price": 1415,
+          "amount_transacted": 2117749600
+        }
+      ],
+      "share_percentage_before": 8.94,
+      "share_percentage_after": 14.04,
+      "share_percentage_transaction": 5.1,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Sigmantara Alfindo sells shares of Sumber Alfaria Trijaya",
+      "body": "Sigmantara Alfindo sold 2,117,749,600 shares of Sumber Alfaria Trijaya. This decreases their holdings from 18,269,532,859 to 16,151,783,259 shares. The stated purpose of the transaction was internal restructuring.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-13052026-6778-00.pdf-0.pdf",
+      "timestamp": "2026-05-13T16:46:29",
+      "sector": "consumer-non-cyclicals",
+      "sub_sector": "food-staples-retailing",
+      "tags": [
+        "capital-restructuring"
+      ],
+      "symbol": "AMRT.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Sigmantara Alfindo",
+      "holding_before": 18269532859,
+      "holding_after": 16151783259,
+      "amount_transaction": 2117749600,
+      "price": 1415.0,
+      "transaction_value": 2996615684000.0,
+      "price_transaction": [
+        {
+          "date": "2026-05-13",
+          "type": "sell",
+          "price": 1415,
+          "amount_transacted": 2117749600
+        }
+      ],
+      "share_percentage_before": 44.0,
+      "share_percentage_after": 38.9,
+      "share_percentage_transaction": 5.1,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Feny Djoko Susanto buys shares of Sumber Alfaria Trijaya",
+      "body": "Feny Djoko Susanto bought 37,500 shares of Sumber Alfaria Trijaya. This increases their holdings from 266,326,400 to 266,363,900 shares. The stated purpose of the transaction was investment.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-05052026-4608-00.pdf-0.pdf",
+      "timestamp": "2026-05-05T13:54:08",
+      "sector": "consumer-non-cyclicals",
+      "sub_sector": "food-staples-retailing",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "AMRT.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Feny Djoko Susanto",
+      "holding_before": 266326400,
+      "holding_after": 266363900,
+      "amount_transaction": 37500,
+      "price": 1330.0,
+      "transaction_value": 49875000.0,
+      "price_transaction": [
+        {
+          "date": "2026-04-29",
+          "type": "buy",
+          "price": 1330,
+          "amount_transacted": 37500
+        }
+      ],
+      "share_percentage_before": 0.641,
+      "share_percentage_after": 0.641,
+      "share_percentage_transaction": 0.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Amanda Cipta Persada buys shares of Sumber Alfaria Trijaya",
+      "body": "Amanda Cipta Persada bought 2,569,718,200 shares of Sumber Alfaria Trijaya. This increases their holdings from 1,141,076,700 to 3,710,794,900 shares. The stated purpose of the transaction was internal restructuring.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-17032026-7467-00.pdf-0.pdf",
+      "timestamp": "2026-03-17T16:43:12",
+      "sector": "consumer-non-cyclicals",
+      "sub_sector": "food-staples-retailing",
+      "tags": [
+        "capital-restructuring"
+      ],
+      "symbol": "AMRT.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Amanda Cipta Persada",
+      "holding_before": 1141076700,
+      "holding_after": 3710794900,
+      "amount_transaction": 2569718200,
+      "price": 1420.0,
+      "transaction_value": 3648999844000.0,
+      "price_transaction": [
+        {
+          "date": "2026-03-17",
+          "type": "buy",
+          "price": 1420.0,
+          "amount_transacted": 2569718200
+        }
+      ],
+      "share_percentage_before": 2.75,
+      "share_percentage_after": 8.94,
+      "share_percentage_transaction": 6.19,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Sigmantara Alfindo sells shares of Sumber Alfaria Trijaya",
+      "body": "Sigmantara Alfindo sold 2,569,718,200 shares of Sumber Alfaria Trijaya. This decreases their holdings from 20,839,251,059 to 18,269,532,859 shares. The stated purpose of the transaction was internal restructuring.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-17032026-9518-00.pdf-0.pdf",
+      "timestamp": "2026-03-17T16:39:15",
+      "sector": "consumer-non-cyclicals",
+      "sub_sector": "food-staples-retailing",
+      "tags": [
+        "capital-restructuring"
+      ],
+      "symbol": "AMRT.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Sigmantara Alfindo",
+      "holding_before": 20839251059,
+      "holding_after": 18269532859,
+      "amount_transaction": 2569718200,
+      "price": 1420.0,
+      "transaction_value": 3648999844000.0,
+      "price_transaction": [
+        {
+          "date": "2026-03-17",
+          "type": "sell",
+          "price": 1420.0,
+          "amount_transacted": 2569718200
+        }
+      ],
+      "share_percentage_before": 50.19,
+      "share_percentage_after": 44.0,
+      "share_percentage_transaction": 6.19,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Morgan Stanley & Co. International Plc Sell Transaction of Sumber Alfaria Trijaya",
+      "body": "Morgan Stanley & Co. International Plc, an institutional holder, sold 43124508 shares of Sumber Alfaria Trijaya reducing its holding from 3740813211 to 3697688703 shares. The transaction occurred in the energy sector, specifically alternative-energy. The purpose of the transaction is not disclosed.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202510/562a59c8e1_a792384a59.pdf",
+      "timestamp": "2025-10-07T07:47:00",
+      "sector": "energy",
+      "sub_sector": "alternative-energy",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "AMRT.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Morgan Stanley & Co. International Plc",
+      "holding_before": 3740813211,
+      "holding_after": 3697688703,
+      "amount_transaction": 43124508,
+      "price": 1909.0,
+      "transaction_value": 82329516972.0,
+      "price_transaction": [
+        {
+          "date": "2025-09-25",
+          "type": "buy",
+          "price": 1865,
+          "amount_transacted": 109800
+        },
+        {
+          "date": "2025-09-25",
+          "type": "sell",
+          "price": 1909,
+          "amount_transacted": 43234308
+        }
+      ],
+      "share_percentage_before": 9.0087,
+      "share_percentage_after": 8.9048,
+      "share_percentage_transaction": 0.104,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Budiyanto Djoko Susanto Sell Transaction of Sumber Alfaria Trijaya",
+      "body": "On December 30, 2024, Budiyanto Djoko Susanto, an insider, sold 31,675,000 shares of Sumber Alfaria Trijaya reducing their holding from 136,239,300 to 104,564,300 shares. The transaction type was a sell, with a purpose of divestment. The sale was executed at a price of 2,850 per share, resulting in a total transaction amount of 31,675,000,000. This transaction implies a significant change in ownership and may have implications for the company's shareholding structure and market dynamics.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202412/74f61e59a1_46bc93df13.pdf",
+      "timestamp": "2024-12-30T15:26:00",
+      "sector": "consumer-non-cyclicals",
+      "sub_sector": "food-staples-retailing",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "AMRT.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Budiyanto Djoko Susanto",
+      "holding_before": 136239300,
+      "holding_after": 104564300,
+      "amount_transaction": 31675000,
+      "price": 2850.0,
+      "transaction_value": 90273750000.0,
+      "price_transaction": [
+        {
+          "date": "2024-12-27",
+          "type": "sell",
+          "price": 2850.0,
+          "amount_transacted": 31675000
+        }
+      ],
+      "share_percentage_before": null,
+      "share_percentage_after": null,
+      "share_percentage_transaction": null,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    }
+  ],
+  "pagination": {
+    "total_count": 9,
+    "showing": 9,
+    "limit": 30,
+    "offset": 0,
+    "has_next": false,
+    "has_previous": false,
+    "next_offset": null,
+    "previous_offset": null
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/filings/?symbol=EXCL&start=2023-09-25&end=2026-09-24&limit=30&offset=0",
+  "retrieved_at": "2026-09-26T12:22:08.123216+00:00",
+  "sha256": "694e0bdd65628b3a7bc4fa58e378c4a79e37679855e7c0881b54fb12ef901b9a",
+  "http_status": 200,
+  "request_number": 22,
+  "request_budget": 615,
+  "run_id": "filings_full_20260926T122124Z",
+  "symbol": "EXCL",
+  "requested_start": "2023-09-25",
+  "requested_end": "2026-09-24",
+  "limit": 30,
+  "offset": 0,
+  "pagination_followed": true,
+  "snapshot_sha256": "c1ee6e84e3645bc3e87af16e614bb469ef0e7b51bd4eb31f71c6cf4b3fd5a963"
+}

@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/corporate-actions/ISAT/",
+  "retrieved_at": "2026-09-26T14:26:09.093470+00:00",
+  "sha256": "c305ef97a49a0c63fbef584b95f7dd7d2373f076de387a0827767c58f58467e2",
+  "http_status": 200,
+  "request_number": 4,
+  "request_budget": 20,
+  "symbol": "ISAT",
+  "query_parameters": {},
+  "history_scope": "complete endpoint history; endpoint called without date filters",
+  "retry_of_prior_http_429": true,
+  "snapshot_sha256": "f418d4d532fb340d15968341dea6b9d5c8d5dc2aa2afa8d4b8ded77927640831"
+}

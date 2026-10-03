@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/BBRI/?start=2025-09-14&end=2025-12-12",
+  "retrieved_at": "2026-09-25T03:25:14.890621+00:00",
+  "sha256": "285357743f5515c0857d69d798fc218b5c90e6dda937abf098eab5c3be177ac9",
+  "http_status": 200,
+  "request_number": 109,
+  "request_budget": 558,
+  "ticker": "BBRI",
+  "requested_start": "2025-09-14",
+  "requested_end": "2025-12-12",
+  "window_days": 90,
+  "snapshot_sha256": "89f09149050105a64b0a035f1da4d36693b8581767f7c0e75faa2cc9376292b4"
+}

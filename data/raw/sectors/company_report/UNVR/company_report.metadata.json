@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/UNVR/",
+  "retrieved_at": "2026-09-26T15:55:25.867881+00:00",
+  "sha256": "063b4c8e2ed439d31213917a2762ca4abe4eddd68b40eea3f4593117fb015121",
+  "http_status": 200,
+  "request_number": 10,
+  "request_budget": 10,
+  "symbol": "UNVR",
+  "request_scope": "approved retry after cooldown",
+  "snapshot_sha256": "74c0abb916bcbdc43baece53440483ddbc5a7ba4661d0e20325c6751daef77c9"
+}

@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/JPFA/?start=2026-09-09&end=2026-09-24",
+  "retrieved_at": "2026-09-25T03:43:41.069828+00:00",
+  "sha256": "929c4a1928e0bbefb7e1da154320e2fe73ed20c8138cf5d414909d91b136def4",
+  "http_status": 200,
+  "request_number": 373,
+  "request_budget": 558,
+  "ticker": "JPFA",
+  "requested_start": "2026-09-09",
+  "requested_end": "2026-09-24",
+  "window_days": 90,
+  "snapshot_sha256": "d4f483e8ba203031ddb6436aa3ab415adfa00c9e0fc126703ca955cccb3330ab"
+}

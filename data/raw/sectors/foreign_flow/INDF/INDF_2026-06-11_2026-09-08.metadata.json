@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/INDF/?start=2026-06-11&end=2026-09-08",
+  "retrieved_at": "2026-09-25T03:39:05.770600+00:00",
+  "sha256": "ce74845cb2e1276f5386d244239c9ad5b8e7c87376167391698d0ce984c09800",
+  "http_status": 200,
+  "request_number": 307,
+  "request_budget": 558,
+  "ticker": "INDF",
+  "requested_start": "2026-06-11",
+  "requested_end": "2026-09-08",
+  "window_days": 90,
+  "snapshot_sha256": "3e479c035782076e7318d28f1d752d85828f19b4d710263ae8dadb4edfe7adb4"
+}

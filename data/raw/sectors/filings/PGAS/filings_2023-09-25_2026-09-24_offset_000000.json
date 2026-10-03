@@ -1,0 +1,533 @@
+{
+  "results": [
+    {
+      "title": "Eri Surya Kelana buys shares of Perusahaan Gas Negara",
+      "body": "This transaction is part of a cluster-buy transaction amidst other insider buys during the last 6 months. Eri Surya Kelana's insider purchase comes after Catur Dermawan, Dr Mirza Mahendra St Mt, Mirza Mahendra St Mt and Arief Kurnia Risdianto in Perusahaan Gas Negara, totaling an accumulation of 881,300 shares transacted at an average price of IDR 1,511.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-16072026-5594-00.pdf-0.pdf",
+      "timestamp": "2026-07-16T14:09:06",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "PGAS.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Eri Surya Kelana",
+      "holding_before": 0,
+      "holding_after": 67300,
+      "amount_transaction": 67300,
+      "price": 1490.0,
+      "transaction_value": 100277000.0,
+      "price_transaction": [
+        {
+          "date": "2026-07-14",
+          "type": "buy",
+          "price": 1490,
+          "amount_transacted": 67300
+        }
+      ],
+      "share_percentage_before": 0.0,
+      "share_percentage_after": 0.0,
+      "share_percentage_transaction": 0.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Arief Kurnia Risdianto buys shares of Perusahaan Gas Negara",
+      "body": "This transaction is part of a cluster-buy transaction amidst other insider buys during the last 6 months. Arief Kurnia Risdianto's insider purchase comes after Catur Dermawan, Dr Mirza Mahendra St Mt and Mirza Mahendra St Mt in Perusahaan Gas Negara, totaling an accumulation of 814,000 shares transacted at an average price of IDR 1,512.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-12072026-0811-00.pdf-0.pdf",
+      "timestamp": "2026-07-12T17:56:36",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "PGAS.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Arief Kurnia Risdianto",
+      "holding_before": 0,
+      "holding_after": 679000,
+      "amount_transaction": 679000,
+      "price": 1470.0,
+      "transaction_value": 998130000.0,
+      "price_transaction": [
+        {
+          "date": "2026-07-10",
+          "type": "buy",
+          "price": 1470,
+          "amount_transacted": 679000
+        }
+      ],
+      "share_percentage_before": 0.0,
+      "share_percentage_after": 0.0,
+      "share_percentage_transaction": 0.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Mirza Mahendra St Mt buys shares of Perusahaan Gas Negara",
+      "body": "This transaction is part of a cluster-buy transaction amidst other insider buys during the last 6 months. Mirza Mahendra St Mt's insider purchase comes after Catur Dermawan and Dr Mirza Mahendra St Mt in Perusahaan Gas Negara, totaling an accumulation of 135,000 shares transacted at an average price of IDR 1,726.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-10072026-7135-00.pdf-0.pdf",
+      "timestamp": "2026-07-10T22:14:27",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "PGAS.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Mirza Mahendra St Mt",
+      "holding_before": 50000,
+      "holding_after": 70000,
+      "amount_transaction": 20000,
+      "price": 1450.0,
+      "transaction_value": 29000000.0,
+      "price_transaction": [
+        {
+          "date": "2026-07-10",
+          "type": "buy",
+          "price": 1450,
+          "amount_transacted": 20000
+        }
+      ],
+      "share_percentage_before": 0.0,
+      "share_percentage_after": 0.0,
+      "share_percentage_transaction": 0.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Catur Dermawan buys shares of Perusahaan Gas Negara",
+      "body": "This is Catur Dermawan's 4th insider purchase in the last 6 months, totaling an accumulation of 65,000 shares transacted at an average price of IDR 1,608. Catur Dermawan's ownership in Perusahaan Gas Negara has decreased from 0.0% to 0.0% in this period.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-10072026-4660-00.pdf-0.pdf",
+      "timestamp": "2026-07-10T19:55:37",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "PGAS.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Catur Dermawan",
+      "holding_before": 50000,
+      "holding_after": 75000,
+      "amount_transaction": 25000,
+      "price": 1410.0,
+      "transaction_value": 35250000.0,
+      "price_transaction": [
+        {
+          "date": "2026-07-09",
+          "type": "buy",
+          "price": 1410,
+          "amount_transacted": 25000
+        }
+      ],
+      "share_percentage_before": 0.0,
+      "share_percentage_after": 0.0,
+      "share_percentage_transaction": 0.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Catur Dermawan buys shares of Perusahaan Gas Negara",
+      "body": "This is Catur Dermawan's 3rd insider purchase in the last 6 months, totaling an accumulation of 40,000 shares transacted at an average price of IDR 1,731. Catur Dermawan's ownership in Perusahaan Gas Negara has decreased from 0.0% to 0.0% in this period.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-12062026-0195-00.pdf-0.pdf",
+      "timestamp": "2026-06-12T16:13:05",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "PGAS.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Catur Dermawan",
+      "holding_before": 20000,
+      "holding_after": 40000,
+      "amount_transaction": 20000,
+      "price": 1485.0,
+      "transaction_value": 29700000.0,
+      "price_transaction": [
+        {
+          "date": "2026-06-10",
+          "type": "buy",
+          "price": 1485,
+          "amount_transacted": 20000
+        }
+      ],
+      "share_percentage_before": 0.0,
+      "share_percentage_after": 0.0,
+      "share_percentage_transaction": 0.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Dr Mirza Mahendra St Mt buys shares of Perusahaan Gas Negara",
+      "body": "Dr Mirza Mahendra St Mt bought 50,000 shares of Perusahaan Gas Negara. This increases their holdings from 0 to 50,000 shares. The stated purpose of the transaction was investment.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-17032026-5235-00.pdf-0.pdf",
+      "timestamp": "2026-03-17T16:18:06",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "PGAS.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Dr Mirza Mahendra St Mt",
+      "holding_before": 0,
+      "holding_after": 50000,
+      "amount_transaction": 50000,
+      "price": 1991.0,
+      "transaction_value": 99550000.0,
+      "price_transaction": [
+        {
+          "date": "2026-03-13",
+          "type": "buy",
+          "price": 1975.0,
+          "amount_transacted": 10000
+        },
+        {
+          "date": "2026-03-13",
+          "type": "buy",
+          "price": 1995.0,
+          "amount_transacted": 40000
+        }
+      ],
+      "share_percentage_before": 0.0,
+      "share_percentage_after": 0.0,
+      "share_percentage_transaction": 0.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Catur Dermawan buys shares of Perusahaan Gas Negara",
+      "body": "Catur Dermawan bought 19,000 shares of Perusahaan Gas Negara. This increases their holdings from 1,000 to 20,000 shares. The stated purpose of the transaction was investment.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-12032026-6116-00.pdf-0.pdf",
+      "timestamp": "2026-03-12T10:17:09",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "PGAS.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Catur Dermawan",
+      "holding_before": 1000,
+      "holding_after": 20000,
+      "amount_transaction": 19000,
+      "price": 1965.789,
+      "transaction_value": 37350000.0,
+      "price_transaction": [
+        {
+          "date": "2026-03-11",
+          "type": "buy",
+          "price": 1960.0,
+          "amount_transacted": 5000
+        },
+        {
+          "date": "2026-03-11",
+          "type": "buy",
+          "price": 1980.0,
+          "amount_transacted": 5000
+        },
+        {
+          "date": "2026-03-11",
+          "type": "buy",
+          "price": 1975.0,
+          "amount_transacted": 4000
+        },
+        {
+          "date": "2026-03-11",
+          "type": "buy",
+          "price": 1950.0,
+          "amount_transacted": 5000
+        }
+      ],
+      "share_percentage_before": 0.0,
+      "share_percentage_after": 0.0,
+      "share_percentage_transaction": 0.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Catur Dermawan buys shares of Perusahaan Gas Negara",
+      "body": "Catur Dermawan bought 1,000 shares of Perusahaan Gas Negara. This increases their holdings from 0 to 1,000 shares. The stated purpose of the transaction was price monitoring.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-26022026-0721-00.pdf-0.pdf",
+      "timestamp": "2026-02-26T14:46:17",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [],
+      "symbol": "PGAS.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Catur Dermawan",
+      "holding_before": 0,
+      "holding_after": 1000,
+      "amount_transaction": 1000,
+      "price": 2190.0,
+      "transaction_value": 2190000.0,
+      "price_transaction": [
+        {
+          "date": "2026-02-13",
+          "type": "buy",
+          "price": 2190.0,
+          "amount_transacted": 1000
+        }
+      ],
+      "share_percentage_before": 0.0,
+      "share_percentage_after": 0.0,
+      "share_percentage_transaction": 0.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Warih Sadono Buy Transaction of Perusahaan Gas Negara",
+      "body": "This transaction is part of a cluster-buy transaction amidst other insider buys during the last 6 months. Warih Sadono's insider purchase comes after Fadjar Harianto Widodo, Harry Budi Sidharta, Ratih Esti Prihatini, Rosa Permata Sari and 2 other insiders in Perusahaan Gas Negara, totaling an accumulation of 2,519,200 shares transacted at an average price of IDR 1,575.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202412/0c398f83b0_0a312f3a42.pdf",
+      "timestamp": "2024-12-24T17:28:00",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "PGAS.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Warih Sadono",
+      "holding_before": 563600,
+      "holding_after": 1016000,
+      "amount_transaction": 452400,
+      "price": 1575.0,
+      "transaction_value": 712530000.0,
+      "price_transaction": [
+        {
+          "date": "2024-12-24",
+          "type": "buy",
+          "price": 1575,
+          "amount_transacted": 452400
+        }
+      ],
+      "share_percentage_before": null,
+      "share_percentage_after": null,
+      "share_percentage_transaction": null,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Luky Alfirman Buy Transaction of Perusahaan Gas Negara",
+      "body": "This transaction is part of a cluster-buy transaction amidst other insider buys during the last 6 months. Luky Alfirman's insider purchase comes after Fadjar Harianto Widodo, Harry Budi Sidharta, Ratih Esti Prihatini, Rosa Permata Sari and 1 other insiders in Perusahaan Gas Negara, totaling an accumulation of 2,066,800 shares transacted at an average price of IDR 1,575.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202412/d843aa571d_95552dbecd.pdf",
+      "timestamp": "2024-12-24T17:26:00",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "PGAS.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Luky Alfirman",
+      "holding_before": 563600,
+      "holding_after": 886700,
+      "amount_transaction": 323100,
+      "price": 1575.0,
+      "transaction_value": 508882500.0,
+      "price_transaction": [
+        {
+          "date": "2024-12-24",
+          "type": "buy",
+          "price": 1575,
+          "amount_transacted": 323100
+        }
+      ],
+      "share_percentage_before": null,
+      "share_percentage_after": null,
+      "share_percentage_transaction": null,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Arief Setiawan Handoko Buy Transaction of Perusahaan Gas Negara",
+      "body": "This transaction is part of a cluster-buy transaction amidst other insider buys during the last 6 months. Arief Setiawan Handoko's insider purchase comes after Fadjar Harianto Widodo, Harry Budi Sidharta, Ratih Esti Prihatini and Rosa Permata Sari in Perusahaan Gas Negara, totaling an accumulation of 1,743,700 shares transacted at an average price of IDR 1,575.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202412/3a7d759139_e22f98b488.pdf",
+      "timestamp": "2024-12-24T17:22:00",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "PGAS.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Arief Setiawan Handoko",
+      "holding_before": 0,
+      "holding_after": 472200,
+      "amount_transaction": 472200,
+      "price": 1575.0,
+      "transaction_value": 743715000.0,
+      "price_transaction": [
+        {
+          "date": "2024-12-24",
+          "type": "buy",
+          "price": 1575,
+          "amount_transacted": 472200
+        }
+      ],
+      "share_percentage_before": null,
+      "share_percentage_after": null,
+      "share_percentage_transaction": null,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Rosa Permata Sari Buys Transaction of Perusahaan Gas Negara",
+      "body": "This transaction is part of a cluster-buy transaction amidst other insider buys during the last 6 months. Rosa Permata Sari's insider purchase comes after Fadjar Harianto Widodo, Harry Budi Sidharta and Ratih Esti Prihatini in Perusahaan Gas Negara, totaling an accumulation of 1,271,500 shares transacted at an average price of IDR 1,575.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202412/8aa7a54fcc_52ed65a09f.pdf",
+      "timestamp": "2024-12-24T17:21:00",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment",
+        "bonus"
+      ],
+      "symbol": "PGAS.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Rosa Permata Sari",
+      "holding_before": 0,
+      "holding_after": 95900,
+      "amount_transaction": 95900,
+      "price": 1575.0,
+      "transaction_value": 151042500.0,
+      "price_transaction": [
+        {
+          "date": "2024-12-24",
+          "type": "buy",
+          "price": 1575,
+          "amount_transacted": 95900
+        }
+      ],
+      "share_percentage_before": null,
+      "share_percentage_after": null,
+      "share_percentage_transaction": null,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Ratih Esti Prihatini Buy Transaction of Perusahaan Gas Negara",
+      "body": "This transaction is part of a cluster-buy transaction amidst other insider buys during the last 6 months. Ratih Esti Prihatini's insider purchase comes after Fadjar Harianto Widodo and Harry Budi Sidharta in Perusahaan Gas Negara, totaling an accumulation of 1,175,600 shares transacted at an average price of IDR 1,575.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202412/35a16ccf02_e6174bc978.pdf",
+      "timestamp": "2024-12-24T17:20:00",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment",
+        "bonus"
+      ],
+      "symbol": "PGAS.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Ratih Esti Prihatini",
+      "holding_before": 0,
+      "holding_after": 95900,
+      "amount_transaction": 95900,
+      "price": 1575.0,
+      "transaction_value": 151042500.0,
+      "price_transaction": [
+        {
+          "date": "2024-12-24",
+          "type": "buy",
+          "price": 1575,
+          "amount_transacted": 95900
+        }
+      ],
+      "share_percentage_before": null,
+      "share_percentage_after": null,
+      "share_percentage_transaction": null,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Harry Budi Sidharta Buy Transaction of Perusahaan Gas Negara",
+      "body": "On December 24, 2024, Harry Budi Sidharta, an insider, purchased 401,400 shares of Perusahaan Gas Negara a gas company, at a price of IDR 1,575 per share, resulting in a total transaction value of IDR 401,400,000. This \"buy\" transaction marks a change in ownership, with Sidharta acquiring a new stake in the company. The purpose of the transaction is stated as \"Pembelian saham untuk Tantiem Yang,\" which translates to \"buying shares for bonus shares.\" This transaction may indicate Sidharta's confidence in the company's future performance and could potentially impact the company's ownership structure and stock price.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202412/3949a7530c_336141828f.pdf",
+      "timestamp": "2024-12-24T17:19:00",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "PGAS.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Harry Budi Sidharta",
+      "holding_before": 0,
+      "holding_after": 401400,
+      "amount_transaction": 401400,
+      "price": 1575.0,
+      "transaction_value": 632205000.0,
+      "price_transaction": [
+        {
+          "date": "2024-12-24",
+          "type": "buy",
+          "price": 1575.0,
+          "amount_transacted": 401400
+        }
+      ],
+      "share_percentage_before": null,
+      "share_percentage_after": null,
+      "share_percentage_transaction": null,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Fadjar Harianto Widodo Buys Transaction of Perusahaan Gas Negara",
+      "body": "On December 24, 2024, Fadjar Harianto Widodo, an insider, purchased 678,300 shares of Perusahaan Gas Negara increasing their holding from 1,183,000 to 1,861,300 shares. The transaction, valued at 1,075,475,000 (1575 per share), was made to acquire shares for a deferred bonus period in 2023. This buy transaction suggests that Widodo has confidence in the company's future performance, potentially indicating a positive outlook for the company's prospects.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202412/0a010b758d_d38dc46b0f.pdf",
+      "timestamp": "2024-12-24T17:18:00",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "PGAS.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Fadjar Harianto Widodo",
+      "holding_before": 1183000,
+      "holding_after": 1861300,
+      "amount_transaction": 678300,
+      "price": 1575.0,
+      "transaction_value": 1068322500.0,
+      "price_transaction": [
+        {
+          "date": "2024-12-24",
+          "type": "buy",
+          "price": 1575.0,
+          "amount_transacted": 678300
+        }
+      ],
+      "share_percentage_before": null,
+      "share_percentage_after": null,
+      "share_percentage_transaction": null,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    }
+  ],
+  "pagination": {
+    "total_count": 15,
+    "showing": 15,
+    "limit": 30,
+    "offset": 0,
+    "has_next": false,
+    "has_previous": false,
+    "next_offset": null,
+    "previous_offset": null
+  }
+}

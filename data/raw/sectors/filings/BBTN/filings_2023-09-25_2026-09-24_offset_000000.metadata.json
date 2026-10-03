@@ -1,0 +1,18 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/filings/?symbol=BBTN&start=2023-09-25&end=2026-09-24&limit=30&offset=0",
+  "retrieved_at": "2026-09-26T12:21:51.314450+00:00",
+  "sha256": "3278ad31d50ffa3c0d788249735fce64a508c7dc815018416ed77dece3088b8d",
+  "http_status": 200,
+  "request_number": 13,
+  "request_budget": 615,
+  "run_id": "filings_full_20260926T122124Z",
+  "symbol": "BBTN",
+  "requested_start": "2023-09-25",
+  "requested_end": "2026-09-24",
+  "limit": 30,
+  "offset": 0,
+  "pagination_followed": true,
+  "snapshot_sha256": "1d5310d0c32d5f29705b9a49954f1a485b2fd49066370cb5a593c552bc2d9227"
+}

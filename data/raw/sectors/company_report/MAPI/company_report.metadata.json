@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/MAPI/",
+  "retrieved_at": "2026-09-26T15:55:00.794851+00:00",
+  "sha256": "05933326ad3b3c61a47d2c22333befb2766a2d007e092d375859a884521f0a93",
+  "http_status": 200,
+  "request_number": 1,
+  "request_budget": 10,
+  "symbol": "MAPI",
+  "request_scope": "approved retry after cooldown",
+  "snapshot_sha256": "1bf9cefc0dadd520c0050347cc37c0ceed7f00b2059557b1f735fce7ad4b4633"
+}

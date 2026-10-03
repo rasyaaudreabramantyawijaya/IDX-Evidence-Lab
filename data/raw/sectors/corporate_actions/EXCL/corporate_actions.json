@@ -1,0 +1,139 @@
+{
+  "symbol": "EXCL.JK",
+  "corporate_actions": {
+    "agm": [
+      {
+        "agm_date": "2022-04-21",
+        "agm_time": "09:00:00",
+        "agm_place": "Gedung Xl Axiata Towerjl. Hr. Rasuna Said Blok X-5 Kav.11-12Jakarta Selatan 12950",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2022-04-22",
+        "agm_time": "13:00:00",
+        "agm_place": "Akses Link Zoom Webinar Xlaxiata Publicexpose",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2022-08-10",
+        "agm_time": "13:00:00",
+        "agm_place": "Gedung Xl Axiata Towerjl. Hr. Rasuna Said Blok X-5 Kav.11-12Jakarta Selatan 12950",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2023-05-05",
+        "agm_time": "09:00:00",
+        "agm_place": "Gedung Xl Axiata Towerjl. Hr. Rasuna Said Blok X-5 Kav.11-12Jakarta Selatan 12950",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2024-01-11",
+        "agm_time": "09:00:00",
+        "agm_place": "Xl Axiata Tower Jl. H. R Rasuna Said X5 Kav. 11-12 Kuningan Timur, Setiabudi Jakarta Selatan",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2024-05-03",
+        "agm_time": "08:00:00",
+        "agm_place": "Xl Axiata Tower Jl. H. R Rasuna Said X5 Kav. 11-12 Kuningan Timur, Setiabudi Jakarta Selatan",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2025-03-25",
+        "agm_time": "10:30:00",
+        "agm_place": "Dua Mutiara Ballroom, Jw Marriott Hotel Jakarta, Jalan Dr Ide Anak Agung Gde Agung Kave.1.2 NO 1&2, Kawasan Mega Kuningan, Jakarta, Indonesia, 12950 Kotaadm. Jakarta Selatan Dki. Jakarta",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2025-08-12",
+        "agm_time": "09:00:00",
+        "agm_place": "Xlsmart Tower Jl. H. R Rasuna Said X5 Kav.11-12 Kuningan Timur, Setiabudi Kota Adm. Jakartaselatan",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2025-11-21",
+        "agm_time": "09:00:00",
+        "agm_place": "Xlsmart Tower Jl. H. R Rasuna Said X5 Kav.11-12 Kuningan Timur, Setiabudi Kota Adm. Jakartaselatan",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2026-05-20",
+        "agm_time": "09:00:00",
+        "agm_place": "Xlsmart Tower JL. H. R. Rasuna Said X5 Kav. 11-12, Kuningan Timur, Setiabudi, Jakarta Selatan12950",
+        "agm_result": "Agenda #1: Shareholders approved the 2025 Annual Report and Financial Statements audited by Rintis, Jumadi, Rianto dan Rekan (PwC) and granted discharge to the Board of Directors and Commissioners.\nAgenda #2: The meeting appointed Lukmanul Arsyad from Rintis, Jumadi, Rianto dan Rekan (PwC) to audit the 2026 financial statements and authorized the Board to determine professional fees.\nAgenda #3: Authority was granted to the Board of Commissioners and the Nomination and Remuneration Committee to determine the 2026 salaries, bonuses, and allowances for the Board of Directors and Board of Commissioners."
+      },
+      {
+        "agm_date": "2026-10-12",
+        "agm_time": "09:00:00",
+        "agm_place": "Xlsmart Tower, Jl. H. R. Rasuna Said Blok X5, Kav. 11-12, Jakarta Selatan 12950",
+        "agm_result": null
+      }
+    ],
+    "bonus": null,
+    "warrant": null,
+    "dividend": [
+      {
+        "ex_date": "2025-12-02",
+        "payment_date": "2025-12-11",
+        "dividend_yield": 0.063038,
+        "dividend_amount": 159
+      },
+      {
+        "ex_date": "2020-06-02",
+        "payment_date": "2020-06-17",
+        "dividend_yield": 0.00804762,
+        "dividend_amount": 20
+      },
+      {
+        "ex_date": "2023-05-16",
+        "payment_date": "2023-05-31",
+        "dividend_yield": 0.0196216,
+        "dividend_amount": 42
+      },
+      {
+        "ex_date": "2022-05-11",
+        "payment_date": "2022-05-20",
+        "dividend_yield": 0.0195957,
+        "dividend_amount": 51
+      },
+      {
+        "ex_date": "2021-05-04",
+        "payment_date": "2021-05-21",
+        "dividend_yield": 0.0122121,
+        "dividend_amount": 31.7
+      },
+      {
+        "ex_date": "2024-05-16",
+        "payment_date": "2024-05-31",
+        "dividend_yield": 0.0213446,
+        "dividend_amount": 48.6
+      },
+      {
+        "ex_date": "2025-04-14",
+        "payment_date": "2025-04-24",
+        "dividend_yield": 0.0339771,
+        "dividend_amount": 85.7
+      }
+    ],
+    "right_issue": [
+      {
+        "price": 3150,
+        "ex_date": "2016-05-16",
+        "new_ratio": 25,
+        "old_ratio": 100,
+        "trading_period_end": "2016-05-26",
+        "trading_period_start": "2016-05-20"
+      },
+      {
+        "price": 2080,
+        "ex_date": "2022-12-15",
+        "new_ratio": 5633,
+        "old_ratio": 25000,
+        "trading_period_end": "2022-12-26",
+        "trading_period_start": "2022-12-20"
+      }
+    ],
+    "stock_split": null,
+    "upcoming_dividend": null
+  }
+}

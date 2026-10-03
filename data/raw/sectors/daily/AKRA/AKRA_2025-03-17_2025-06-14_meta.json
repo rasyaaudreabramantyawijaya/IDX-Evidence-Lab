@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/AKRA/",
+  "ticker": "AKRA",
+  "start": "2025-03-17",
+  "end": "2025-06-14",
+  "retrieved_at": "2026-09-24T12:27:32.459395",
+  "http_status": 200,
+  "observations_count": 50,
+  "sha256": "cd7021fc66d8b46ec8654a389d78d881ed01e79f47bb9f7c5eb3c8f857d3ffd7"
+}

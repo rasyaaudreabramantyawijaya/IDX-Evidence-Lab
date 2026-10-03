@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/ANTM/",
+  "retrieved_at": "2026-09-26T15:28:09.647469+00:00",
+  "sha256": "84c6ec0e057d696a11da82c58ffb41c8651b57a7ea27d9b909ea0f2b22d32cea",
+  "http_status": 200,
+  "request_number": 6,
+  "request_budget": 35,
+  "symbol": "ANTM",
+  "request_scope": "approved full company-report completion",
+  "snapshot_sha256": "5102c0dd76bedaf7dd381c9b025499bd47a7f72e51151bbf11868499a312c2cf"
+}

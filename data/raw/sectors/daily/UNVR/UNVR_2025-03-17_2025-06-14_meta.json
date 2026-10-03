@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/UNVR/",
+  "ticker": "UNVR",
+  "start": "2025-03-17",
+  "end": "2025-06-14",
+  "retrieved_at": "2026-09-24T12:48:03.043251",
+  "http_status": 200,
+  "observations_count": 50,
+  "sha256": "ab0a40b03b040b17e6a5724b460afb5806ca7c25a9bbdff85cba7cd814a24960"
+}

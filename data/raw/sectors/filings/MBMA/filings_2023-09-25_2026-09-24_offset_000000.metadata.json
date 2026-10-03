@@ -1,0 +1,18 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/filings/?symbol=MBMA&start=2023-09-25&end=2026-09-24&limit=30&offset=0",
+  "retrieved_at": "2026-09-26T12:22:27.702883+00:00",
+  "sha256": "198f23bfcfb8307df8ccebced67b73f7e0c4381623e508683345e928a591a60b",
+  "http_status": 200,
+  "request_number": 35,
+  "request_budget": 615,
+  "run_id": "filings_full_20260926T122124Z",
+  "symbol": "MBMA",
+  "requested_start": "2023-09-25",
+  "requested_end": "2026-09-24",
+  "limit": 30,
+  "offset": 0,
+  "pagination_followed": true,
+  "snapshot_sha256": "ba9c52ed9dbf3d671c908a2b425c92d33f2d965312140d0f56c26ea4beb143e7"
+}

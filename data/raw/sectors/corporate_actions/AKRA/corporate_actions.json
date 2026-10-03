@@ -1,0 +1,151 @@
+{
+  "symbol": "AKRA.JK",
+  "corporate_actions": {
+    "agm": [
+      {
+        "agm_date": "2022-04-28",
+        "agm_time": "10:00:00",
+        "agm_place": "Akr Gallery West, Meeting Room P2 Floorjl. Panjang No.5, Kebon Jerukjakarta Barat 11530",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2022-09-12",
+        "agm_time": "14:00:00",
+        "agm_place": "IDX Public Expose",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2023-04-28",
+        "agm_time": "09:00:00",
+        "agm_place": "Akr Gallery West, Meeting Room P2 Floorjl. Panjang No.5, Kebon Jerukjakarta Barat 11530",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2023-11-28",
+        "agm_time": "15:00:00",
+        "agm_place": "Pubex Live 2023",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2024-04-29",
+        "agm_time": "10:00:00",
+        "agm_place": "Akr Gallery West, Meeting Room Lantai P2, Jl. Panjang No.5, Kebon Jeruk, Jakarta Barat 11530",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2025-04-28",
+        "agm_time": "10:00:00",
+        "agm_place": "Akr Gallery West, Meeting Room Lantai P2, Jl. Panjang No.5, Kebon Jeruk, Jakarta Barat11530",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2026-04-27",
+        "agm_time": "11:30:00",
+        "agm_place": "AKR Gallery West, Meeting Room Lantai P2, JL. Panjang No.5, Kebon Jeruk, Jakarta Barat11530",
+        "agm_result": "Agenda #1: Shareholders approved the 2025 Annual Report and ratified the audited Financial Statements, granting full discharge to the Board of Directors and Commissioners for the fiscal year.\nAgenda #2: The meeting approved the allocation of Rp2.47 trillion in net profit, designating Rp1.98 trillion for cash dividends, Rp200 million for reserves, and the remainder for working capital.\nAgenda #3: Purwanto Susanti dan Surja was appointed to audit the 2026 consolidated financial statements, with the Board of Commissioners authorized to determine fees.\nAgenda #4: Shareholders approved the end of Suresh Vembu's term as Director and established the Board composition for the 2025-2030 term, including Soegiarto Adikoesoemo as President Commissioner.\nAgenda #5: The meeting approved a maximum monthly honorarium of Rp420,000,000 for the Board of Commissioners and delegated the authority to set Directors' salaries to the Board.\nAgenda #6: Shareholders approved amendments to the Articles of Association to align the company's business activities with the 2025 Indonesian Standard Industrial Classification (KBLI 2025).\nAgenda #7: PT AKR Corporindo Tbk. filed official resumes for the Annual and Extraordinary General Meetings of Shareholders conducted in April 2026."
+      }
+    ],
+    "bonus": null,
+    "warrant": null,
+    "dividend": [
+      {
+        "ex_date": "2026-08-03",
+        "payment_date": "2026-08-14",
+        "dividend_yield": null,
+        "dividend_amount": 50
+      },
+      {
+        "ex_date": "2026-05-07",
+        "payment_date": "2026-05-21",
+        "dividend_yield": null,
+        "dividend_amount": 50
+      },
+      {
+        "ex_date": "2022-05-18",
+        "payment_date": "2022-05-24",
+        "dividend_yield": 0.0152444,
+        "dividend_amount": 17
+      },
+      {
+        "ex_date": "2021-08-04",
+        "payment_date": "2021-08-19",
+        "dividend_yield": 0.0165965,
+        "dividend_amount": 12
+      },
+      {
+        "ex_date": "2021-05-11",
+        "payment_date": "2021-05-28",
+        "dividend_yield": 0.0207456,
+        "dividend_amount": 15
+      },
+      {
+        "ex_date": "2020-08-05",
+        "payment_date": "2020-08-13",
+        "dividend_yield": 0.0185344,
+        "dividend_amount": 10
+      },
+      {
+        "ex_date": "2020-05-13",
+        "payment_date": "2020-06-03",
+        "dividend_yield": 0.0185344,
+        "dividend_amount": 10
+      },
+      {
+        "ex_date": "2023-11-03",
+        "payment_date": "2023-11-15",
+        "dividend_yield": 0.0176204,
+        "dividend_amount": 25
+      },
+      {
+        "ex_date": "2023-08-04",
+        "payment_date": "2023-08-16",
+        "dividend_yield": 0.0352409,
+        "dividend_amount": 50
+      },
+      {
+        "ex_date": "2023-05-10",
+        "payment_date": "2023-05-24",
+        "dividend_yield": 0.0352409,
+        "dividend_amount": 50
+      },
+      {
+        "ex_date": "2022-08-04",
+        "payment_date": "2022-08-16",
+        "dividend_yield": 0.0224182,
+        "dividend_amount": 25
+      },
+      {
+        "ex_date": "2025-05-08",
+        "payment_date": "2025-05-22",
+        "dividend_yield": 0.0414188,
+        "dividend_amount": 50
+      },
+      {
+        "ex_date": "2025-08-06",
+        "payment_date": "2025-08-19",
+        "dividend_yield": 0.0414188,
+        "dividend_amount": 50
+      },
+      {
+        "ex_date": "2024-05-13",
+        "payment_date": "2024-05-27",
+        "dividend_yield": 0.0326065,
+        "dividend_amount": 50
+      },
+      {
+        "ex_date": "2024-08-05",
+        "payment_date": "2024-08-15",
+        "dividend_yield": 0.0326065,
+        "dividend_amount": 50
+      }
+    ],
+    "right_issue": null,
+    "stock_split": [
+      {
+        "date": "2022-01-12",
+        "split_ratio": 5
+      }
+    ],
+    "upcoming_dividend": null
+  }
+}

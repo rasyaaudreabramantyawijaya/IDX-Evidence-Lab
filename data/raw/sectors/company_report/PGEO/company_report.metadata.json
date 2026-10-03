@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/PGEO/",
+  "retrieved_at": "2026-09-26T15:55:13.772351+00:00",
+  "sha256": "6c77e91be98904ab6b079f304f2fb345af1a5d8257083c262c7fcddabaa64f42",
+  "http_status": 200,
+  "request_number": 6,
+  "request_budget": 10,
+  "symbol": "PGEO",
+  "request_scope": "approved retry after cooldown",
+  "snapshot_sha256": "6168a1dff28cc9d98c517448344f5b8d24bcc406c720e69bfa27f3e55d02d298"
+}

@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/PTBA/",
+  "retrieved_at": "2026-09-26T15:55:16.551761+00:00",
+  "sha256": "630a44752c3818ce0a63015c6a3a6ac6331049b661fe041762cc1967dc19d375",
+  "http_status": 200,
+  "request_number": 7,
+  "request_budget": 10,
+  "symbol": "PTBA",
+  "request_scope": "approved retry after cooldown",
+  "snapshot_sha256": "edca67e13f2b8f985b43c25448b8650dec72b3dc59363c8d631e43b0ccc39f13"
+}

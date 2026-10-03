@@ -1,0 +1,1364 @@
+{
+  "results": [
+    {
+      "title": "Adrian Maulana Krisbiantoro sells shares of PT Bumi Resources Tbk",
+      "body": "This transaction is part of a cluster-sell transaction amidst other insider sells during the last 6 months. Adrian Maulana Krisbiantoro's insider disposal comes after Hsbc-Fund Svs A/C Chengdong Investment Corp-Self, Chengdong Corporation, Ubs Ag, London and Treasure Global Investments Limited in PT Bumi Resources Tbk, totaling a distribution of 33,338,045,700 shares transacted at an average price of IDR 365.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-19062026-1891-00.pdf-0.pdf",
+      "timestamp": "2026-06-19T09:23:00",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "BUMI.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Adrian Maulana Krisbiantoro",
+      "holding_before": 1200,
+      "holding_after": 1000,
+      "amount_transaction": 200,
+      "price": 165.0,
+      "transaction_value": 33000.0,
+      "price_transaction": [
+        {
+          "date": "2026-05-21",
+          "type": "sell",
+          "price": 165,
+          "amount_transacted": 200
+        }
+      ],
+      "share_percentage_before": 0.0,
+      "share_percentage_after": 0.0,
+      "share_percentage_transaction": 0.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Adrian Maulana Krisbiantoro buys shares of Bumi Resources",
+      "body": "Adrian Maulana Krisbiantoro bought 1,200 shares of Bumi Resources. This increases their holdings from 0 to 1,200 shares. The stated purpose of the transaction was investment.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-19052026-1250-00.pdf-0.pdf",
+      "timestamp": "2026-05-19T19:05:41",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "BUMI.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Adrian Maulana Krisbiantoro",
+      "holding_before": 0,
+      "holding_after": 1200,
+      "amount_transaction": 1200,
+      "price": 316.833,
+      "transaction_value": 380200.0,
+      "price_transaction": [
+        {
+          "date": "2026-01-12",
+          "type": "buy",
+          "price": 462,
+          "amount_transacted": 100
+        },
+        {
+          "date": "2026-01-13",
+          "type": "buy",
+          "price": 436,
+          "amount_transacted": 400
+        },
+        {
+          "date": "2026-03-03",
+          "type": "buy",
+          "price": 252,
+          "amount_transacted": 100
+        },
+        {
+          "date": "2026-03-25",
+          "type": "buy",
+          "price": 228,
+          "amount_transacted": 100
+        },
+        {
+          "date": "2026-04-06",
+          "type": "buy",
+          "price": 244,
+          "amount_transacted": 100
+        },
+        {
+          "date": "2026-04-10",
+          "type": "buy",
+          "price": 246,
+          "amount_transacted": 200
+        },
+        {
+          "date": "2026-05-19",
+          "type": "buy",
+          "price": 190,
+          "amount_transacted": 200
+        }
+      ],
+      "share_percentage_before": 0.0,
+      "share_percentage_after": 0.0,
+      "share_percentage_transaction": 0.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Change in Ubs Ag Ldn Branch A/C Client's position in Bumi Resources",
+      "body": "Ubs Ag Ldn Branch A/C Client executed a transaction for 3,544,230,907 shares of Bumi Resources. This decreases their holdings from 20,580,099,719 to 17,035,868,812 shares.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-05052026-2800-00.pdf-0.pdf",
+      "timestamp": "2026-05-07T09:21:00",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "share-transfer"
+      ],
+      "symbol": "BUMI.JK",
+      "transaction_type": "others",
+      "holder_type": "insider",
+      "holder_name": "Ubs Ag Ldn Branch A/C Client",
+      "holding_before": 20580099719,
+      "holding_after": 17035868812,
+      "amount_transaction": 3544230907,
+      "price": 0.0,
+      "transaction_value": 0.0,
+      "price_transaction": [
+        {
+          "date": "2026-04-30",
+          "type": "others",
+          "price": 0.0,
+          "amount_transacted": 3544230907
+        }
+      ],
+      "share_percentage_before": 5.54,
+      "share_percentage_after": 4.59,
+      "share_percentage_transaction": 0.95,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Treasure Global Investments Limited sells shares of Bumi Resources",
+      "body": "This transaction is part of a cluster-sell transaction amidst other insider sells during the last 6 months. Treasure Global Investments Limited's insider disposal comes after UBS Group AG, Chengdong Investment Corporation, Ubs Group Ag, Hsbc-Fund Svs A/C Chengdong Investment Corp-Self and 2 other insiders in Bumi Resources, totaling a distribution of 49,881,080,000 shares transacted at an average price of IDR 306.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-21012026-4744-00.pdf-0.pdf",
+      "timestamp": "2026-01-21T14:38:18",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "capital-restructuring"
+      ],
+      "symbol": "BUMI.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Treasure Global Investments Limited",
+      "holding_before": 30000000000,
+      "holding_after": 11805000000,
+      "amount_transaction": 18195000000,
+      "price": 380.0,
+      "transaction_value": 6914100000000.0,
+      "price_transaction": [
+        {
+          "date": "2026-01-19",
+          "type": "sell",
+          "price": 380,
+          "amount_transacted": 18195000000
+        }
+      ],
+      "share_percentage_before": 8.08,
+      "share_percentage_after": 3.18,
+      "share_percentage_transaction": 4.9,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Chengdong Corporation sells shares of Bumi Resources",
+      "body": "Chengdong Corporation sold 3,713,353,900 shares of Bumi Resources. This decreases their holdings from 22,276,410,130 to 18,563,056,230 shares. The stated purpose of the transaction was divestment.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-13012026-9517-00.pdf-0.pdf",
+      "timestamp": "2026-01-13T09:54:33",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "BUMI.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Chengdong Corporation",
+      "holding_before": 22276410130,
+      "holding_after": 18563056230,
+      "amount_transaction": 3713353900,
+      "price": 410.926,
+      "transaction_value": 1525912005200.0,
+      "price_transaction": [
+        {
+          "date": "2025-12-23",
+          "type": "sell",
+          "price": 383.0,
+          "amount_transacted": 224000000
+        },
+        {
+          "date": "2025-12-23",
+          "type": "sell",
+          "price": 386.0,
+          "amount_transacted": 300000000
+        },
+        {
+          "date": "2025-12-24",
+          "type": "sell",
+          "price": 374.0,
+          "amount_transacted": 300000000
+        },
+        {
+          "date": "2025-12-24",
+          "type": "sell",
+          "price": 366.0,
+          "amount_transacted": 57414300
+        },
+        {
+          "date": "2025-12-29",
+          "type": "sell",
+          "price": 367.0,
+          "amount_transacted": 255000000
+        },
+        {
+          "date": "2025-12-29",
+          "type": "sell",
+          "price": 363.0,
+          "amount_transacted": 300000000
+        },
+        {
+          "date": "2025-12-30",
+          "type": "sell",
+          "price": 365.0,
+          "amount_transacted": 254996600
+        },
+        {
+          "date": "2026-01-02",
+          "type": "sell",
+          "price": 409.0,
+          "amount_transacted": 291410900
+        },
+        {
+          "date": "2026-01-02",
+          "type": "sell",
+          "price": 393.0,
+          "amount_transacted": 300000000
+        },
+        {
+          "date": "2026-01-02",
+          "type": "sell",
+          "price": 409.0,
+          "amount_transacted": 8589100
+        },
+        {
+          "date": "2026-01-05",
+          "type": "sell",
+          "price": 461.0,
+          "amount_transacted": 300000000
+        },
+        {
+          "date": "2026-01-05",
+          "type": "sell",
+          "price": 461.0,
+          "amount_transacted": 200000000
+        },
+        {
+          "date": "2026-01-06",
+          "type": "sell",
+          "price": 461.0,
+          "amount_transacted": 209760700
+        },
+        {
+          "date": "2026-01-06",
+          "type": "sell",
+          "price": 461.0,
+          "amount_transacted": 300000000
+        },
+        {
+          "date": "2026-01-07",
+          "type": "sell",
+          "price": 460.0,
+          "amount_transacted": 161335400
+        },
+        {
+          "date": "2026-01-07",
+          "type": "sell",
+          "price": 461.0,
+          "amount_transacted": 200000000
+        },
+        {
+          "date": "2026-01-08",
+          "type": "sell",
+          "price": 453.0,
+          "amount_transacted": 50846900
+        }
+      ],
+      "share_percentage_before": 5.99,
+      "share_percentage_after": 4.99,
+      "share_percentage_transaction": 1.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Hsbc-Fund Svs A/C Chengdong Investment Corp-Self sells shares of Bumi Resources",
+      "body": "Hsbc-Fund Svs A/C Chengdong Investment Corp-Self sold 3,713,353,900 shares of Bumi Resources. This decreases their holdings from 22,276,410,130 to 18,563,056,230 shares. The stated purpose of the transaction was divestment.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-13012026-9439-00.pdf-0.pdf",
+      "timestamp": "2026-01-13T09:40:56",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "BUMI.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Hsbc-Fund Svs A/C Chengdong Investment Corp-Self",
+      "holding_before": 22276410130,
+      "holding_after": 18563056230,
+      "amount_transaction": 3713353900,
+      "price": 410.926,
+      "transaction_value": 1525912005200.0,
+      "price_transaction": [
+        {
+          "date": "2025-12-23",
+          "type": "sell",
+          "price": 386.0,
+          "amount_transacted": 300000000
+        },
+        {
+          "date": "2025-12-23",
+          "type": "sell",
+          "price": 383.0,
+          "amount_transacted": 224000000
+        },
+        {
+          "date": "2025-12-24",
+          "type": "sell",
+          "price": 366.0,
+          "amount_transacted": 57414300
+        },
+        {
+          "date": "2025-12-24",
+          "type": "sell",
+          "price": 374.0,
+          "amount_transacted": 300000000
+        },
+        {
+          "date": "2025-12-29",
+          "type": "sell",
+          "price": 363.0,
+          "amount_transacted": 300000000
+        },
+        {
+          "date": "2025-12-29",
+          "type": "sell",
+          "price": 367.0,
+          "amount_transacted": 255000000
+        },
+        {
+          "date": "2025-12-30",
+          "type": "sell",
+          "price": 365.0,
+          "amount_transacted": 254996600
+        },
+        {
+          "date": "2026-01-02",
+          "type": "sell",
+          "price": 409.0,
+          "amount_transacted": 291410900
+        },
+        {
+          "date": "2026-01-02",
+          "type": "sell",
+          "price": 393.0,
+          "amount_transacted": 300000000
+        },
+        {
+          "date": "2026-01-02",
+          "type": "sell",
+          "price": 409.0,
+          "amount_transacted": 8589100
+        },
+        {
+          "date": "2026-01-05",
+          "type": "sell",
+          "price": 461.0,
+          "amount_transacted": 300000000
+        },
+        {
+          "date": "2026-01-05",
+          "type": "sell",
+          "price": 461.0,
+          "amount_transacted": 200000000
+        },
+        {
+          "date": "2026-01-06",
+          "type": "sell",
+          "price": 461.0,
+          "amount_transacted": 300000000
+        },
+        {
+          "date": "2026-01-06",
+          "type": "sell",
+          "price": 461.0,
+          "amount_transacted": 209760700
+        },
+        {
+          "date": "2026-01-07",
+          "type": "sell",
+          "price": 461.0,
+          "amount_transacted": 200000000
+        },
+        {
+          "date": "2026-01-07",
+          "type": "sell",
+          "price": 460.0,
+          "amount_transacted": 161335400
+        },
+        {
+          "date": "2026-01-08",
+          "type": "sell",
+          "price": 453.0,
+          "amount_transacted": 50846900
+        }
+      ],
+      "share_percentage_before": 5.99,
+      "share_percentage_after": 4.99,
+      "share_percentage_transaction": 1.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Ubs Ag, London sells shares of Bumi Resources",
+      "body": "This transaction is part of a cluster-sell transaction amidst other insider sells during the last 6 months. Ubs Ag, London's insider disposal comes after UBS Group AG, Chengdong Investment Corporation, Ubs Group Ag, Hsbc-Fund Svs A/C Chengdong Investment Corp-Self and 1 other insiders in Bumi Resources, totaling a distribution of 24,259,372,200 shares transacted at an average price of IDR 219.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-09012026-6924-00.pdf-0.pdf",
+      "timestamp": "2026-01-09T21:39:34",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "BUMI.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Ubs Ag, London",
+      "holding_before": 22425165266,
+      "holding_after": 22135535366,
+      "amount_transaction": 289629900,
+      "price": 462.0,
+      "transaction_value": 133809013800.0,
+      "price_transaction": [
+        {
+          "date": "2026-01-06",
+          "type": "sell",
+          "price": 462,
+          "amount_transacted": 289629900
+        }
+      ],
+      "share_percentage_before": 6.04,
+      "share_percentage_after": 5.96,
+      "share_percentage_transaction": 0.08,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Ubs Ag, London buys shares of Bumi Resources",
+      "body": "Ubs Ag, London bought 185,412,005 shares of Bumi Resources. This increases their holdings from 22,239,753,261 to 22,425,165,266 shares. The stated purpose of the transaction was clients sold shares in the ubs omnibus account.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-09012026-1744-00.pdf-0.pdf",
+      "timestamp": "2026-01-09T21:26:59",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "BUMI.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Ubs Ag, London",
+      "holding_before": 22239753261,
+      "holding_after": 22425165266,
+      "amount_transaction": 185412005,
+      "price": 453.0,
+      "transaction_value": 83991638265.0,
+      "price_transaction": [
+        {
+          "date": "2026-01-05",
+          "type": "sell",
+          "price": 453.0,
+          "amount_transacted": 34124900
+        },
+        {
+          "date": "2026-01-05",
+          "type": "buy",
+          "price": 453.0,
+          "amount_transacted": 219536905
+        }
+      ],
+      "share_percentage_before": 5.99,
+      "share_percentage_after": 6.04,
+      "share_percentage_transaction": 0.05,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Chengdong Corporation Others transaction of Bumi Resources",
+      "body": "Chengdong Corporation executed a transaction for 3,713,353,900 shares of Bumi Resources. This decreases their holdings from 25,989,764,030 to 22,276,410,130 shares. The stated purpose of the transaction was investment.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-29122025-0329-00.pdf-0.pdf",
+      "timestamp": "2025-12-29T11:53:22",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "BUMI.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Chengdong Corporation",
+      "holding_before": 25989764030,
+      "holding_after": 22276410130,
+      "amount_transaction": 3713353900,
+      "price": 278.12,
+      "transaction_value": 1032771273700.0,
+      "price_transaction": [
+        {
+          "date": "2025-12-01",
+          "type": "sell",
+          "price": 246,
+          "amount_transacted": 160327100
+        },
+        {
+          "date": "2025-12-01",
+          "type": "sell",
+          "price": 244,
+          "amount_transacted": 300000000
+        },
+        {
+          "date": "2025-12-03",
+          "type": "sell",
+          "price": 243,
+          "amount_transacted": 195000000
+        },
+        {
+          "date": "2025-12-04",
+          "type": "sell",
+          "price": 242,
+          "amount_transacted": 174331100
+        },
+        {
+          "date": "2025-12-05",
+          "type": "sell",
+          "price": 238,
+          "amount_transacted": 207000000
+        },
+        {
+          "date": "2025-12-08",
+          "type": "sell",
+          "price": 245,
+          "amount_transacted": 300000000
+        },
+        {
+          "date": "2025-12-08",
+          "type": "sell",
+          "price": 248,
+          "amount_transacted": 230112400
+        },
+        {
+          "date": "2025-12-09",
+          "type": "sell",
+          "price": 272,
+          "amount_transacted": 221556500
+        },
+        {
+          "date": "2025-12-09",
+          "type": "sell",
+          "price": 270,
+          "amount_transacted": 300000000
+        },
+        {
+          "date": "2025-12-09",
+          "type": "sell",
+          "price": 254,
+          "amount_transacted": 300000000
+        },
+        {
+          "date": "2025-12-10",
+          "type": "sell",
+          "price": 326,
+          "amount_transacted": 300000000
+        },
+        {
+          "date": "2025-12-10",
+          "type": "sell",
+          "price": 323,
+          "amount_transacted": 240844500
+        },
+        {
+          "date": "2025-12-10",
+          "type": "sell",
+          "price": 280,
+          "amount_transacted": 72000000
+        },
+        {
+          "date": "2025-12-10",
+          "type": "sell",
+          "price": 299,
+          "amount_transacted": 300000000
+        },
+        {
+          "date": "2025-12-11",
+          "type": "sell",
+          "price": 358,
+          "amount_transacted": 95667700
+        },
+        {
+          "date": "2025-12-12",
+          "type": "sell",
+          "price": 366,
+          "amount_transacted": 85000000
+        },
+        {
+          "date": "2025-12-16",
+          "type": "sell",
+          "price": 347,
+          "amount_transacted": 65000000
+        },
+        {
+          "date": "2025-12-17",
+          "type": "sell",
+          "price": 352,
+          "amount_transacted": 65667700
+        },
+        {
+          "date": "2025-12-18",
+          "type": "sell",
+          "price": 339,
+          "amount_transacted": 25000000
+        },
+        {
+          "date": "2025-12-19",
+          "type": "sell",
+          "price": 343,
+          "amount_transacted": 25000000
+        },
+        {
+          "date": "2025-12-22",
+          "type": "sell",
+          "price": 388,
+          "amount_transacted": 50846900
+        }
+      ],
+      "share_percentage_before": 6.99,
+      "share_percentage_after": 5.99,
+      "share_percentage_transaction": 1.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Hsbc-Fund Svs A/C Chengdong Investment Corp-Self sells shares of Bumi Resources",
+      "body": "Hsbc-Fund Svs A/C Chengdong Investment Corp-Self sold 3,713,353,900 shares of Bumi Resources. This decreases their holdings from 25,989,764,030 to 22,276,410,130 shares. The stated purpose of the transaction was divestment.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-26122025-9925-00.pdf-0.pdf",
+      "timestamp": "2025-12-26T15:38:43",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "BUMI.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Hsbc-Fund Svs A/C Chengdong Investment Corp-Self",
+      "holding_before": 25989764030,
+      "holding_after": 22276410130,
+      "amount_transaction": 3713353900,
+      "price": 278.124,
+      "transaction_value": 1032771273700.0,
+      "price_transaction": [
+        {
+          "date": "2025-12-01",
+          "type": "sell",
+          "price": 244.0,
+          "amount_transacted": 300000000
+        },
+        {
+          "date": "2025-12-01",
+          "type": "sell",
+          "price": 246.0,
+          "amount_transacted": 160327100
+        },
+        {
+          "date": "2025-12-03",
+          "type": "sell",
+          "price": 243.0,
+          "amount_transacted": 195000000
+        },
+        {
+          "date": "2025-12-04",
+          "type": "sell",
+          "price": 242.0,
+          "amount_transacted": 174331100
+        },
+        {
+          "date": "2025-12-05",
+          "type": "sell",
+          "price": 238.0,
+          "amount_transacted": 207000000
+        },
+        {
+          "date": "2025-12-08",
+          "type": "sell",
+          "price": 248.0,
+          "amount_transacted": 230112400
+        },
+        {
+          "date": "2025-12-08",
+          "type": "sell",
+          "price": 245.0,
+          "amount_transacted": 300000000
+        },
+        {
+          "date": "2025-12-09",
+          "type": "sell",
+          "price": 272.0,
+          "amount_transacted": 221556500
+        },
+        {
+          "date": "2025-12-09",
+          "type": "sell",
+          "price": 270.0,
+          "amount_transacted": 300000000
+        },
+        {
+          "date": "2025-12-09",
+          "type": "sell",
+          "price": 254.0,
+          "amount_transacted": 300000000
+        },
+        {
+          "date": "2025-12-10",
+          "type": "sell",
+          "price": 280.0,
+          "amount_transacted": 72000000
+        },
+        {
+          "date": "2025-12-10",
+          "type": "sell",
+          "price": 299.0,
+          "amount_transacted": 300000000
+        },
+        {
+          "date": "2025-12-10",
+          "type": "sell",
+          "price": 323.0,
+          "amount_transacted": 240844500
+        },
+        {
+          "date": "2025-12-10",
+          "type": "sell",
+          "price": 326.0,
+          "amount_transacted": 300000000
+        },
+        {
+          "date": "2025-12-11",
+          "type": "sell",
+          "price": 358.0,
+          "amount_transacted": 95667700
+        },
+        {
+          "date": "2025-12-12",
+          "type": "sell",
+          "price": 366.0,
+          "amount_transacted": 85000000
+        },
+        {
+          "date": "2025-12-16",
+          "type": "sell",
+          "price": 347.0,
+          "amount_transacted": 65000000
+        },
+        {
+          "date": "2025-12-17",
+          "type": "sell",
+          "price": 352.0,
+          "amount_transacted": 65667700
+        },
+        {
+          "date": "2025-12-18",
+          "type": "sell",
+          "price": 339.0,
+          "amount_transacted": 25000000
+        },
+        {
+          "date": "2025-12-19",
+          "type": "sell",
+          "price": 343.0,
+          "amount_transacted": 25000000
+        },
+        {
+          "date": "2025-12-22",
+          "type": "sell",
+          "price": 388.0,
+          "amount_transacted": 50846900
+        }
+      ],
+      "share_percentage_before": 6.99,
+      "share_percentage_after": 5.99,
+      "share_percentage_transaction": 1.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Chengdong Investment Corporation sells shares of Bumi Resources",
+      "body": "This is Chengdong Investment Corporation's 3rd insider disposal in the last 6 months, totaling a distribution of 11,140,061,800 shares transacted at an average price of IDR 179. Chengdong Investment Corporation's ownership in Bumi Resources has decreased from 7.99% to 6.99% in this period.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202512/f23ba275d6_e060a13c9e.pdf",
+      "timestamp": "2025-12-03T17:20:21",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "BUMI.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Chengdong Investment Corporation",
+      "holding_before": 29703117930,
+      "holding_after": 25989764030,
+      "amount_transaction": 3713353900,
+      "price": 238.08,
+      "transaction_value": 884081371578.0,
+      "price_transaction": [
+        {
+          "date": "2025-11-28",
+          "type": "sell",
+          "price": 240.72,
+          "amount_transacted": 84769000
+        },
+        {
+          "date": "2025-11-28",
+          "type": "sell",
+          "price": 238.02,
+          "amount_transacted": 3628584900
+        }
+      ],
+      "share_percentage_before": 7.99,
+      "share_percentage_after": 6.99,
+      "share_percentage_transaction": 1.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Ubs Group Ag sells shares of Bumi Resources",
+      "body": "This is Ubs Group Ag's 3rd insider disposal in the last 6 months, totaling a distribution of 4,929,701,900 shares transacted at an average price of IDR 217. Ubs Group Ag's ownership in Bumi Resources has decreased from 7.11% to 6.9% in this period.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202511/05d6ebb680_87261f1563.pdf",
+      "timestamp": "2025-11-27T20:22:20",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "BUMI.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Ubs Group Ag",
+      "holding_before": 26384420663,
+      "holding_after": 25614966563,
+      "amount_transaction": 769454100,
+      "price": 228.994,
+      "transaction_value": 176200372175.4,
+      "price_transaction": [
+        {
+          "date": "2025-11-20",
+          "type": "sell",
+          "price": 228.994,
+          "amount_transacted": 769454100
+        }
+      ],
+      "share_percentage_before": 7.11,
+      "share_percentage_after": 6.9,
+      "share_percentage_transaction": 0.20999,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Ubs Group Ag sells shares of Bumi Resources",
+      "body": "Ubs Group Ag sold 3,571,342,300 shares of Bumi Resources. This decreases their holdings from 29,891,179,063 to 26,319,836,763 shares. The stated purpose of the transaction was ubs menjual saham untuk kegiatan.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202511/a176a27532_130dbef5b7.pdf",
+      "timestamp": "2025-11-24T17:30:31",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "BUMI.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Ubs Group Ag",
+      "holding_before": 29891179063,
+      "holding_after": 26319836763,
+      "amount_transaction": 3571342300,
+      "price": 226.59,
+      "transaction_value": 809227237548.93,
+      "price_transaction": [
+        {
+          "date": "2025-11-17",
+          "type": "sell",
+          "price": 226.5891,
+          "amount_transacted": 3571342300
+        }
+      ],
+      "share_percentage_before": 8.05,
+      "share_percentage_after": 7.09,
+      "share_percentage_transaction": 0.96,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Ubs Group Ag buys shares of Bumi Resources",
+      "body": "Ubs Group Ag bought 2,921,668,200 shares of Bumi Resources. This increases their holdings from 27,169,510,863 to 30,091,179,063 shares. The stated purpose of the transaction was ubs membeli saham untuk kegiatan.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202511/43ba64bb1f_cad0761bf1.pdf",
+      "timestamp": "2025-11-21T16:51:06",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "BUMI.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Ubs Group Ag",
+      "holding_before": 27169510863,
+      "holding_after": 30091179063,
+      "amount_transaction": 2921668200,
+      "price": 197.72,
+      "transaction_value": 577677495506.76,
+      "price_transaction": [
+        {
+          "date": "2025-11-14",
+          "type": "buy",
+          "price": 197.7218,
+          "amount_transacted": 2921668200
+        }
+      ],
+      "share_percentage_before": 7.32,
+      "share_percentage_after": 8.1,
+      "share_percentage_transaction": 0.77999,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Chengdong Investment Corporation sells shares of Bumi Resources",
+      "body": "Chengdong Investment Corporation sold 3,713,354,000 shares of Bumi Resources. This decreases their holdings from 33,407,279,430 to 29,703,117,930 shares. The stated purpose of the transaction was divestasi.*.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202511/b6529e23fa_e9897095ea.pdf",
+      "timestamp": "2025-11-20T16:08:58",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "BUMI.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Chengdong Investment Corporation",
+      "holding_before": 33407279430,
+      "holding_after": 29703117930,
+      "amount_transaction": 3713354000,
+      "price": 174.0,
+      "transaction_value": 646128855963.0,
+      "price_transaction": [
+        {
+          "date": "2025-11-18",
+          "type": "sell",
+          "price": 213.72,
+          "amount_transacted": 50846900
+        },
+        {
+          "date": "2025-11-18",
+          "type": "sell",
+          "price": 173.45,
+          "amount_transacted": 3662507100
+        }
+      ],
+      "share_percentage_before": 8.99,
+      "share_percentage_after": 7.99,
+      "share_percentage_transaction": 1.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Ubs Group Ag buys shares of Bumi Resources",
+      "body": "Ubs Group Ag bought 2,288,151,600 shares of Bumi Resources. This increases their holdings from 25,976,928,863 to 28,265,080,463 shares. The stated purpose of the transaction was ubs membeli saham untuk kegiatan.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202511/d464d5105e_4a7e981da4.pdf",
+      "timestamp": "2025-11-18T15:36:48",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "BUMI.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Ubs Group Ag",
+      "holding_before": 25976928863,
+      "holding_after": 28265080463,
+      "amount_transaction": 2288151600,
+      "price": 182.199,
+      "transaction_value": 416898933368.0,
+      "price_transaction": [
+        {
+          "date": "2025-11-11",
+          "type": "buy",
+          "price": 182.199,
+          "amount_transacted": 2288151600
+        }
+      ],
+      "share_percentage_before": 6.99,
+      "share_percentage_after": 7.61,
+      "share_percentage_transaction": 0.62,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Ubs Group Ag Sell Transaction of Bumi Resources",
+      "body": "Ubs Group Ag, an insider sold 588,905,500 shares of Bumi Resources decreasing its holdings from 26,302,247,734 to 25,713,342,234. The transaction occurred in the energy sector, specifically oil-gas-coal. The purpose of the transaction is UBS menjual saham untuk kegiatan.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202510/6b1355373c_2eb612fb45.pdf",
+      "timestamp": "2025-10-15T16:52:22",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "BUMI.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Ubs Group Ag",
+      "holding_before": 26302247734,
+      "holding_after": 25713342234,
+      "amount_transaction": 588905500,
+      "price": 146.525,
+      "transaction_value": 86289378387.5,
+      "price_transaction": [
+        {
+          "date": "2025-10-09",
+          "type": "sell",
+          "price": 146.525,
+          "amount_transacted": 588905500
+        }
+      ],
+      "share_percentage_before": 7.08,
+      "share_percentage_after": 6.92,
+      "share_percentage_transaction": 0.16,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Chengdong Investment Corporation Sell Transaction of Bumi Resources",
+      "body": "Chengdong Investment Corporation, an institution sold 3,713,353,900 shares of Bumi Resources decreasing its holdings from 37,120,633,330 to 33,407,279,430. The transaction occurred in the energy sector, specifically oil-gas-coal. The purpose of the transaction is Divestasi.*.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202510/0b106e5be5_fb8782e7ff.pdf",
+      "timestamp": "2025-10-13T16:11:01",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "BUMI.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Chengdong Investment Corporation",
+      "holding_before": 37120633330,
+      "holding_after": 33407279430,
+      "amount_transaction": 3713353900,
+      "price": 123.71,
+      "transaction_value": 459384142867.0,
+      "price_transaction": [
+        {
+          "date": "2025-10-09",
+          "type": "sell",
+          "price": 145.42,
+          "amount_transacted": 50846800
+        },
+        {
+          "date": "2025-10-09",
+          "type": "sell",
+          "price": 123.41,
+          "amount_transacted": 3662507100
+        }
+      ],
+      "share_percentage_before": 9.99,
+      "share_percentage_after": 8.99,
+      "share_percentage_transaction": 1.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Van Eck Associates Corporation Buy Transaction of Bumi Resources Minerals",
+      "body": "Van Eck Associates Corporation, an institution, bought 50,450,100 shares of Bumi Resources Minerals increasing its holding from 7,085,821,900 to 7,136,272,000. The transaction occurred in the energy sector, specifically oil-gas-coal sub-sector, at a price of 838. The purpose of the transaction is not specified.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202510/d613b4be9d_ec72a22979.pdf",
+      "timestamp": "2025-10-07T07:44:00",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "BUMI.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Van Eck Associates Corporation",
+      "holding_before": 7085821900,
+      "holding_after": 7136272000,
+      "amount_transaction": 50450100,
+      "price": 838.18,
+      "transaction_value": 42286264818.0,
+      "price_transaction": [
+        {
+          "date": "2025-09-30",
+          "type": "buy",
+          "price": 838.18,
+          "amount_transacted": 50450100
+        }
+      ],
+      "share_percentage_before": 4.998,
+      "share_percentage_after": 5.033,
+      "share_percentage_transaction": 0.035,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "UBS Group AG Buy Transaction of Bumi Resources",
+      "body": "This is UBS Group AG's 4th insider purchase in the last 6 months, totaling an accumulation of 655,027,200 shares transacted at an average price of IDR 117. UBS Group AG's ownership in Bumi Resources has increased from 6.95% to 7.06% in this period.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202509/8e5ec09d65_c624c56232.pdf",
+      "timestamp": "2025-09-26T16:13:13",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "BUMI.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "UBS Group AG",
+      "holding_before": 25805133255,
+      "holding_after": 26226497655,
+      "amount_transaction": 421364400,
+      "price": 119.1,
+      "transaction_value": 50183741584.08,
+      "price_transaction": [
+        {
+          "date": "2025-09-22",
+          "type": "buy",
+          "price": 119.0982,
+          "amount_transacted": 421364400
+        }
+      ],
+      "share_percentage_before": 6.95,
+      "share_percentage_after": 7.06,
+      "share_percentage_transaction": 0.11,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "UBS Group AG Sell Transaction of Bumi Resources",
+      "body": "This is UBS Group AG's 3rd insider disposal in the last 6 months, totaling a distribution of 473,270,800 shares transacted at an average price of IDR 115. UBS Group AG's ownership in Bumi Resources has decreased from 7.01% to 6.99% in this period.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202509/6065cee08a_435e28b56f.pdf",
+      "timestamp": "2025-09-18T16:04:10",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "BUMI.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "UBS Group AG",
+      "holding_before": 26041884955,
+      "holding_after": 25980792955,
+      "amount_transaction": 61092000,
+      "price": 112.72,
+      "transaction_value": 6886180274.4,
+      "price_transaction": [
+        {
+          "date": "2025-09-18",
+          "type": "sell",
+          "price": 112.7182,
+          "amount_transacted": 61092000
+        }
+      ],
+      "share_percentage_before": 7.01,
+      "share_percentage_after": 6.99,
+      "share_percentage_transaction": 0.02,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "UBS Group AG Buy Transaction of Bumi Resources",
+      "body": "This is UBS Group AG's 3rd insider purchase in the last 6 months, totaling an accumulation of 233,662,800 shares transacted at an average price of IDR 112. UBS Group AG's ownership in Bumi Resources has increased from 6.99% to 7.02% in this period.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202509/76c5e64474_aa2385e663.pdf",
+      "timestamp": "2025-09-17T11:32:39",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "BUMI.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "UBS Group AG",
+      "holding_before": 25971918055,
+      "holding_after": 26061884955,
+      "amount_transaction": 89966900,
+      "price": 113.43,
+      "transaction_value": 10204711553.060001,
+      "price_transaction": [
+        {
+          "date": "2025-09-17",
+          "type": "buy",
+          "price": 113.4274,
+          "amount_transacted": 89966900
+        }
+      ],
+      "share_percentage_before": 6.99,
+      "share_percentage_after": 7.02,
+      "share_percentage_transaction": 0.03,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "UBS Group AG Sell Transaction of Bumi Resources",
+      "body": "On September 16, 2025, UBS Group AG, an insider shareholder, sold 306,758,500 shares of Bumi Resources changing its holding from 26,278,676,555 to 25,971,918,055 shares.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202509/3a23fa0535_6e09c60ccb.pdf",
+      "timestamp": "2025-09-16T11:14:54",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "BUMI.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "UBS Group AG",
+      "holding_before": 26278676555,
+      "holding_after": 25971918055,
+      "amount_transaction": 306758500,
+      "price": 117.06,
+      "transaction_value": 35908689872.25,
+      "price_transaction": [
+        {
+          "date": "2025-09-16",
+          "type": "sell",
+          "price": 117.0585,
+          "amount_transacted": 306758500
+        }
+      ],
+      "share_percentage_before": 7.08,
+      "share_percentage_after": 6.99,
+      "share_percentage_transaction": 0.09,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "UBS Group AG Buy Transaction of Bumi Resources",
+      "body": "On September 12, 2025, UBS Group AG, an insider shareholder, bought 52,715,300 shares of Bumi Resources changing its holding from 25,959,662,155 to 26,012,377,455 shares.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202509/a72ec9524f_f636bbdf09.pdf",
+      "timestamp": "2025-09-12T15:19:43",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "BUMI.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "UBS Group AG",
+      "holding_before": 25959662155,
+      "holding_after": 26012377455,
+      "amount_transaction": 52715300,
+      "price": 109.96,
+      "transaction_value": 5796727262.37,
+      "price_transaction": [
+        {
+          "date": "2025-09-12",
+          "type": "buy",
+          "price": 109.9629,
+          "amount_transacted": 52715300
+        }
+      ],
+      "share_percentage_before": 6.99,
+      "share_percentage_after": 7.01,
+      "share_percentage_transaction": 0.02,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "UBS Group AG Sell Transaction of Bumi Resources",
+      "body": "On September 11, 2025, UBS Group AG, an insider shareholder, sold 105,420,300 shares of Bumi Resources changing its holding from 26,065,082,455 to 25,959,662,155 shares.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202509/c588b0b6ac_705703ee39.pdf",
+      "timestamp": "2025-09-11T17:04:53",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "BUMI.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "UBS Group AG",
+      "holding_before": 26065082455,
+      "holding_after": 25959662155,
+      "amount_transaction": 105420300,
+      "price": 108.26,
+      "transaction_value": 11413265527.32,
+      "price_transaction": [
+        {
+          "date": "2025-09-11",
+          "type": "sell",
+          "price": 108.2644,
+          "amount_transacted": 105420300
+        }
+      ],
+      "share_percentage_before": 7.02,
+      "share_percentage_after": 6.99,
+      "share_percentage_transaction": 0.03,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Ubs Group Ag Buy Transaction of Bumi Resources",
+      "body": "On August 25, 2025, Ubs Group Ag, an insider shareholder, bought 90,980,600 shares of Bumi Resources changing its holding from 25,932,108,355 to 26,023,088,955 shares.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202509/a6b5f78173_7227090c3a.pdf",
+      "timestamp": "2025-08-25T12:11:42",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "BUMI.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "UBS Group AG",
+      "holding_before": 25932108355,
+      "holding_after": 26023088955,
+      "amount_transaction": 90980600,
+      "price": 111.92,
+      "transaction_value": 10182585144.24,
+      "price_transaction": [
+        {
+          "date": "2025-08-25",
+          "type": "buy",
+          "price": 111.9204,
+          "amount_transacted": 90980600
+        }
+      ],
+      "share_percentage_before": 6.98,
+      "share_percentage_after": 7.01,
+      "share_percentage_transaction": 0.03,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    }
+  ],
+  "pagination": {
+    "total_count": 26,
+    "showing": 26,
+    "limit": 30,
+    "offset": 0,
+    "has_next": false,
+    "has_previous": false,
+    "next_offset": null,
+    "previous_offset": null
+  }
+}

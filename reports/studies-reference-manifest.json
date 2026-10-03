@@ -1,0 +1,43 @@
+{
+  "test_run": {
+    "file": "reports/studies-reference-tests.xml",
+    "sha256": "45c05b038c10c3d7024860c6fde75df16563165a812b7ce693d55ddefd374669",
+    "passed_tests": 40
+  },
+  "reference_cases": 43,
+  "passed_cases": 43,
+  "atol": 1e-10,
+  "rtol": 1e-8,
+  "widgets": {
+    "custom_engineering": {
+      "reference_cases": 15,
+      "passed_cases": 15,
+      "scope": "Five transforms, three hand-calculated timestamps each; nulls included",
+      "source_hashes": {
+        "src/idx_evidence_lab/studies_transforms.py": "b039592b0acf8b74013c03aa06030b21aab740e105f47ad99012fbb25a7c4d31",
+        "src/idx_evidence_lab/studies_indicators.py": "d30f0fae136fb7912902f43ffe050b657cb5b3617f6d9e1e6934b8a449fd5cc1",
+        "src/idx_evidence_lab/studies_service.py": "c0092dca9dd8ed27e47c7240f02ad90ef8ac87af6330c5f00562e8cbbfc690df"
+      }
+    },
+    "trend_momentum": {
+      "reference_cases": 24,
+      "passed_cases": 24,
+      "scope": "Nonlinear SMA, EMA, Wilder RSI and ATR, six timestamps each; MACD is difference of tested EMAs",
+      "source_hashes": {
+        "src/idx_evidence_lab/studies_transforms.py": "b039592b0acf8b74013c03aa06030b21aab740e105f47ad99012fbb25a7c4d31",
+        "src/idx_evidence_lab/studies_indicators.py": "d30f0fae136fb7912902f43ffe050b657cb5b3617f6d9e1e6934b8a449fd5cc1",
+        "src/idx_evidence_lab/studies_service.py": "c0092dca9dd8ed27e47c7240f02ad90ef8ac87af6330c5f00562e8cbbfc690df"
+      }
+    },
+    "price_risk": {
+      "reference_cases": 4,
+      "passed_cases": 4,
+      "scope": "Cumulative return, maximum drawdown, sample annual volatility and downside RMS on [1,2,1]; ATR covered by indicator fixtures",
+      "source_hashes": {
+        "src/idx_evidence_lab/studies_transforms.py": "b039592b0acf8b74013c03aa06030b21aab740e105f47ad99012fbb25a7c4d31",
+        "src/idx_evidence_lab/studies_indicators.py": "d30f0fae136fb7912902f43ffe050b657cb5b3617f6d9e1e6934b8a449fd5cc1",
+        "src/idx_evidence_lab/studies_service.py": "c0092dca9dd8ed27e47c7240f02ad90ef8ac87af6330c5f00562e8cbbfc690df"
+      }
+    }
+  }
+}

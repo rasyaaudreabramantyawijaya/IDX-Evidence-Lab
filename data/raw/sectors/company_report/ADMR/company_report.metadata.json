@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/ADMR/",
+  "retrieved_at": "2026-09-26T15:28:05.155730+00:00",
+  "sha256": "4bb6f47b944315ca0aaff86e2ff28a59d9a0875fb0a4ca370c45b1b8230fd8ff",
+  "http_status": 200,
+  "request_number": 1,
+  "request_budget": 35,
+  "symbol": "ADMR",
+  "request_scope": "approved full company-report completion",
+  "snapshot_sha256": "75060c4851d461b9deaeccdaf885261e7c5583d9116e9e72776343844b37a4f4"
+}

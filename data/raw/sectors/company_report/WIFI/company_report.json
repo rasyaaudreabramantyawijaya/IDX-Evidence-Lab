@@ -1,0 +1,1453 @@
+{
+  "symbol": "WIFI.JK",
+  "company_name": "PT Solusi Sinergi Digital Tbk",
+  "overview": {
+    "listing_board": "Development",
+    "industry": "Online Applications & Services",
+    "sub_industry": "Online Applications & Services",
+    "sector": "Technology",
+    "sub_sector": "Software & IT Services",
+    "market_cap": 9157247050875,
+    "market_cap_rank": 171,
+    "address": "Fatmawati Mas Blok 328 - 329\r\nJl. RS Fatmawati No 20\r\nJakarta Selatan, Indonesia",
+    "employee_num": 18.0,
+    "employee_num_rank": 835,
+    "listing_date": "2020-12-30",
+    "website": "www.surge.co.id",
+    "phone": "(021) 7659228",
+    "email": "corporate@surge.co.id",
+    "last_close_price": 1725,
+    "latest_close_date": "2026-09-25",
+    "daily_close_change": -0.0443213296398892,
+    "all_time_price": {
+      "ytd_low": {
+        "2026-06-08": 1270
+      },
+      "52_w_low": {
+        "2026-06-08": 1270
+      },
+      "90_d_low": {
+        "2026-06-30": 1510
+      },
+      "ytd_high": {
+        "2026-01-05": 3630
+      },
+      "52_w_high": {
+        "2025-12-12": 4420
+      },
+      "90_d_high": {
+        "2026-09-01": 2250
+      },
+      "all_time_low": {
+        "2023-01-27": 122
+      },
+      "all_time_high": {
+        "2025-12-12": 4420
+      }
+    },
+    "esg_score": 32.04,
+    "tags": [
+      "last-volume-above-10d-volume-average",
+      "top-3-nipe-per-sectors",
+      "top-30-yoy-ttm-revenue-growth"
+    ],
+    "indices": [
+      "SMINFRA18",
+      "LQ45",
+      "KOMPAS100",
+      "IDXG30",
+      "JII70"
+    ],
+    "affiliates": null
+  },
+  "valuation": {
+    "last_close_price": 1725,
+    "latest_close_date": "2026-09-25",
+    "daily_close_change": -0.0443213296398892,
+    "forward_pe": null,
+    "intrinsic_value": -9054,
+    "historical_valuation": [
+      {
+        "pb": 0.478190125316459,
+        "pe": 5.00941749382608,
+        "ps": 0.635226664223646,
+        "pcf": 5.29856885964877,
+        "peg": 0.03958907932197681,
+        "year": 2022,
+        "pb_peer_avg": 2.7094075204924,
+        "pe_peer_avg": 20.528933708268,
+        "ps_peer_avg": 3.64737150468417,
+        "enterprise_to_ebitda": 6.015233919708695,
+        "enterprise_to_revenue": 1.94785107355445
+      },
+      {
+        "pb": 0.489251542150224,
+        "pe": 6.20635503114657,
+        "ps": 0.827040476661193,
+        "pcf": 1.61617386468323,
+        "peg": 67.85827150451203,
+        "year": 2023,
+        "pb_peer_avg": 2.7489540944428,
+        "pe_peer_avg": -1.1429895576035,
+        "ps_peer_avg": 1.24180740924816,
+        "enterprise_to_ebitda": 4.006658214725179,
+        "enterprise_to_revenue": 2.04793469343145
+      },
+      {
+        "pb": 0.997414292870281,
+        "pe": 4.18421675461469,
+        "ps": 1.43980030862148,
+        "pcf": 2.30989086109147,
+        "peg": 0.014188663396602895,
+        "year": 2024,
+        "pb_peer_avg": 1.162617831504,
+        "pe_peer_avg": 4.18421675461469,
+        "ps_peer_avg": 1.43980030862148,
+        "enterprise_to_ebitda": 6.116408631560032,
+        "enterprise_to_revenue": 3.74666623933361
+      },
+      {
+        "pb": 2.02546325392553,
+        "pe": 42.229181941695,
+        "ps": 10.3970261302513,
+        "pcf": -21.1938075683563,
+        "peg": 0.5504388562245098,
+        "year": 2025,
+        "pb_peer_avg": 2.54240600262395,
+        "pe_peer_avg": 15.3208397947199,
+        "ps_peer_avg": 3.48580867898799,
+        "enterprise_to_ebitda": 20.441428068490904,
+        "enterprise_to_revenue": 9.98696241926628
+      },
+      {
+        "pb": 1.1999427155572,
+        "pe": 17.8922074737139,
+        "ps": 3.37056472156675,
+        "pcf": -3.43168313976391,
+        "peg": 4.013476241692265,
+        "year": 2026,
+        "pb_peer_avg": 2.01398792846493,
+        "pe_peer_avg": 16.3536409782669,
+        "ps_peer_avg": 1.39480704236969,
+        "enterprise_to_ebitda": 7.781861248150152,
+        "enterprise_to_revenue": 1.21951157900896
+      }
+    ]
+  },
+  "future": {
+    "company_value_forecasts": null,
+    "company_growth_forecasts": null,
+    "analyst_rating_breakdown": {
+      "buy": 30,
+      "hold": 0,
+      "sell": 0,
+      "n_analyst": 30,
+      "strong_buy": 0,
+      "updated_on": "2026-08-31 00:00:00",
+      "strong_sell": 0
+    }
+  },
+  "financials": {
+    "eps": 76.96099830887593,
+    "historical_eps": {
+      "2020": {
+        "eps": 1.1347654077714007
+      },
+      "2021": {
+        "eps": 12.5975985575707,
+        "eps_growth": 10.1015
+      },
+      "2022": {
+        "eps": 25.95112110520349,
+        "eps_growth": 1.06
+      },
+      "2023": {
+        "eps": 24.813275944922843,
+        "eps_growth": -0.0438
+      },
+      "2024": {
+        "eps": 97.9872755272104,
+        "eps_growth": 2.949
+      },
+      "2025": {
+        "eps": 76.96099830887593,
+        "eps_growth": -0.2146
+      }
+    },
+    "historical_financials": [
+      {
+        "tax": 216000000,
+        "ebit": 28057000000,
+        "year": 2018,
+        "ebitda": 28401000000,
+        "revenue": 4951000000,
+        "earnings": 27838000000,
+        "net_debt": 209689000000,
+        "cash_only": 831000000,
+        "total_debt": 210520000000,
+        "inventories": null,
+        "fixed_assets": 237791000000,
+        "gross_profit": 3304000000,
+        "total_assets": 248874000000,
+        "total_equity": 29158000000,
+        "net_cash_flow": null,
+        "operating_pnl": -14180000000,
+        "current_assets": null,
+        "free_cash_flow": -485000000,
+        "long_term_debt": null,
+        "prepaid_assets": null,
+        "cost_of_revenue": null,
+        "short_term_debt": null,
+        "operating_expense": null,
+        "retained_earnings": null,
+        "total_liabilities": 219716000000,
+        "industry_breakdown": null,
+        "outstanding_shares": 2299000000,
+        "capital_expenditure": null,
+        "current_liabilities": 9048000000,
+        "earnings_before_tax": 28055000000,
+        "financing_cash_flow": null,
+        "investing_cash_flow": null,
+        "operating_cash_flow": -485000000,
+        "cash_and_equivalents": 831000000,
+        "net_increased_decreased": null,
+        "non_current_liabilities": null,
+        "non_operating_income_or_loss": null,
+        "total_cash_and_due_from_banks": null,
+        "interest_expense_non_operating": 2000000
+      },
+      {
+        "tax": 68000000,
+        "ebit": 25717000000,
+        "year": 2019,
+        "ebitda": 38515000000,
+        "revenue": 36631000000,
+        "earnings": 2785000000,
+        "net_debt": 372094000000,
+        "cash_only": 6377000000,
+        "total_debt": 378471000000,
+        "inventories": null,
+        "fixed_assets": 375928000000,
+        "gross_profit": 20401000000,
+        "total_assets": 419385000000,
+        "total_equity": 32575000000,
+        "net_cash_flow": null,
+        "operating_pnl": 11473000000,
+        "current_assets": null,
+        "free_cash_flow": 4304000000,
+        "long_term_debt": null,
+        "prepaid_assets": null,
+        "cost_of_revenue": null,
+        "short_term_debt": null,
+        "operating_expense": null,
+        "retained_earnings": null,
+        "total_liabilities": 386810000000,
+        "industry_breakdown": null,
+        "outstanding_shares": 2299000000,
+        "capital_expenditure": null,
+        "current_liabilities": 193392000000,
+        "earnings_before_tax": 2239000000,
+        "financing_cash_flow": null,
+        "investing_cash_flow": null,
+        "operating_cash_flow": 7496000000,
+        "cash_and_equivalents": 6377000000,
+        "net_increased_decreased": null,
+        "non_current_liabilities": null,
+        "non_operating_income_or_loss": null,
+        "total_cash_and_due_from_banks": null,
+        "interest_expense_non_operating": 23478000000
+      },
+      {
+        "tax": 2436313682,
+        "ebit": 29897000000,
+        "year": 2020,
+        "ebitda": 53417000000,
+        "revenue": 47504673355,
+        "earnings": 2209353861,
+        "net_debt": 39832824230,
+        "cash_only": 26212000000,
+        "total_debt": 66045317660,
+        "inventories": null,
+        "fixed_assets": 393136675839,
+        "gross_profit": 27238921660,
+        "total_assets": 510500276432,
+        "total_equity": 413221984830,
+        "net_cash_flow": null,
+        "operating_pnl": 14045273398,
+        "current_assets": 117363600593,
+        "free_cash_flow": -54467354706,
+        "long_term_debt": null,
+        "prepaid_assets": null,
+        "cost_of_revenue": 20265751695,
+        "short_term_debt": null,
+        "operating_expense": 13193648262,
+        "retained_earnings": null,
+        "total_liabilities": 97278291602,
+        "industry_breakdown": null,
+        "outstanding_shares": 1946969696,
+        "capital_expenditure": 36480614967,
+        "current_liabilities": 49826734387,
+        "earnings_before_tax": 3360634381,
+        "financing_cash_flow": 64024800847,
+        "investing_cash_flow": -26202577965,
+        "operating_cash_flow": -17986739739,
+        "cash_and_equivalents": 26212493430,
+        "net_increased_decreased": null,
+        "non_current_liabilities": 47451557215,
+        "non_operating_income_or_loss": -10684639017,
+        "total_cash_and_due_from_banks": null,
+        "interest_expense_non_operating": 26536000000
+      },
+      {
+        "tax": -314869507,
+        "ebit": 41862662374,
+        "year": 2021,
+        "ebitda": 75341000000,
+        "revenue": 390957116885,
+        "earnings": 25819298323,
+        "net_debt": 315558683255,
+        "cash_only": 10565474157,
+        "total_debt": 326124157412,
+        "inventories": 3551534255,
+        "fixed_assets": 799460519850,
+        "gross_profit": 51679234495,
+        "total_assets": 896309450876,
+        "total_equity": 515955398906,
+        "net_cash_flow": null,
+        "operating_pnl": 18777163051,
+        "current_assets": 96848931026,
+        "free_cash_flow": -217462869098,
+        "long_term_debt": null,
+        "prepaid_assets": null,
+        "cost_of_revenue": 339277882390,
+        "short_term_debt": null,
+        "operating_expense": 32902071444,
+        "retained_earnings": 56195548225,
+        "total_liabilities": 380354051970,
+        "industry_breakdown": null,
+        "outstanding_shares": 1964938990,
+        "capital_expenditure": 325447780415,
+        "current_liabilities": 87198032789,
+        "earnings_before_tax": 24494116821,
+        "financing_cash_flow": 167757710321,
+        "investing_cash_flow": -291389640911,
+        "operating_cash_flow": 107984911317,
+        "cash_and_equivalents": 10565474157,
+        "net_increased_decreased": null,
+        "non_current_liabilities": 293156019181,
+        "non_operating_income_or_loss": 5716953770,
+        "total_cash_and_due_from_banks": null,
+        "interest_expense_non_operating": 17368545553
+      },
+      {
+        "tax": -4268160588,
+        "ebit": 99223010690,
+        "year": 2022,
+        "ebitda": 149362690792,
+        "revenue": 461252677984,
+        "earnings": 58489834469,
+        "net_debt": 605451523991,
+        "cash_only": 20928775242,
+        "total_debt": 626380299233,
+        "inventories": null,
+        "fixed_assets": 1175434488742,
+        "gross_profit": 108763857854,
+        "total_assets": 1407734393802,
+        "total_equity": 612726998087,
+        "net_cash_flow": null,
+        "operating_pnl": 58883644671,
+        "current_assets": 232299905060,
+        "free_cash_flow": -442716386866,
+        "long_term_debt": 569808667126,
+        "prepaid_assets": null,
+        "cost_of_revenue": 352488820130,
+        "short_term_debt": 56571632107,
+        "operating_expense": 49880213183,
+        "retained_earnings": 114736903807,
+        "total_liabilities": 795007395715,
+        "industry_breakdown": null,
+        "outstanding_shares": 2067509172,
+        "capital_expenditure": 498014337645,
+        "current_liabilities": 131024915221,
+        "earnings_before_tax": 54178065670,
+        "financing_cash_flow": 284342203818,
+        "investing_cash_flow": -329276853509,
+        "operating_cash_flow": 55297950779,
+        "cash_and_equivalents": 20928775242,
+        "net_increased_decreased": null,
+        "non_current_liabilities": 663982480494,
+        "non_operating_income_or_loss": -4705579001,
+        "total_cash_and_due_from_banks": null,
+        "interest_expense_non_operating": 45044945020
+      },
+      {
+        "tax": 9318897299,
+        "ebit": 125488071511,
+        "year": 2023,
+        "ebitda": 224554144874,
+        "revenue": 439326367240,
+        "earnings": 58543329595,
+        "net_debt": 536371021038,
+        "cash_only": 40072539130,
+        "total_debt": 576443560168,
+        "inventories": null,
+        "fixed_assets": 1301396619146,
+        "gross_profit": 171975856180,
+        "total_assets": 1564229614546,
+        "total_equity": 742645974247,
+        "net_cash_flow": 19143763888,
+        "operating_pnl": 123752426657,
+        "current_assets": 262832995400,
+        "free_cash_flow": -100382823150,
+        "long_term_debt": 487278761947,
+        "prepaid_assets": 131764199189,
+        "cost_of_revenue": 267350511060,
+        "short_term_debt": 89164798221,
+        "operating_expense": 48223429523,
+        "retained_earnings": 173199784351,
+        "total_liabilities": 821583640299,
+        "industry_breakdown": null,
+        "outstanding_shares": 2255135963,
+        "capital_expenditure": 325198170132,
+        "current_liabilities": 222841096106,
+        "earnings_before_tax": 67575618404,
+        "financing_cash_flow": -873611761,
+        "investing_cash_flow": -204797971333,
+        "operating_cash_flow": 224815346982,
+        "cash_and_equivalents": 40072539130,
+        "net_increased_decreased": null,
+        "non_current_liabilities": 598742544193,
+        "non_operating_income_or_loss": -56176808253,
+        "total_cash_and_due_from_banks": null,
+        "interest_expense_non_operating": 57912453107
+      },
+      {
+        "tax": 43102216446,
+        "ebit": 345430210831,
+        "year": 2024,
+        "ebitda": 411550773658,
+        "revenue": 671854001272,
+        "earnings": 231186780014,
+        "net_debt": 1549877105947,
+        "cash_only": 18495026165,
+        "total_debt": 1568372132112,
+        "inventories": null,
+        "fixed_assets": 2321068531723,
+        "gross_profit": 414773313888,
+        "total_assets": 2907415732374,
+        "total_equity": 969843329191,
+        "net_cash_flow": -21577512965,
+        "operating_pnl": 346098787727,
+        "current_assets": 586347200651,
+        "free_cash_flow": -1060085320119,
+        "long_term_debt": 1179379075560,
+        "prepaid_assets": 431056413519,
+        "cost_of_revenue": 257080687384,
+        "short_term_debt": 388993056552,
+        "operating_expense": 68674526161,
+        "retained_earnings": 402299619306,
+        "total_liabilities": 1937572403183,
+        "industry_breakdown": null,
+        "outstanding_shares": 2321618598,
+        "capital_expenditure": 1478865105205,
+        "current_liabilities": 583511605222,
+        "earnings_before_tax": 272380687949,
+        "financing_cash_flow": 1036994719112,
+        "investing_cash_flow": -1477352017163,
+        "operating_cash_flow": 418779785086,
+        "cash_and_equivalents": 18495026165,
+        "net_increased_decreased": null,
+        "non_current_liabilities": 1354060797961,
+        "non_operating_income_or_loss": -73718099778,
+        "total_cash_and_due_from_banks": null,
+        "interest_expense_non_operating": 73049522882
+      },
+      {
+        "tax": 71156782186,
+        "ebit": 1016705594714,
+        "year": 2025,
+        "ebitda": 810722525492,
+        "revenue": 1659396069858,
+        "earnings": 408551231766,
+        "net_debt": -680458110400,
+        "cash_only": 6164698518517,
+        "total_debt": 5484240408117,
+        "inventories": 965970457939,
+        "fixed_assets": 6481801847708,
+        "gross_profit": 1126634964753,
+        "total_assets": 15169662226172,
+        "total_equity": 8517944853017,
+        "net_cash_flow": 6146203492352,
+        "operating_pnl": 916235813143,
+        "current_assets": 8687860378464,
+        "free_cash_flow": -4091263001789,
+        "long_term_debt": 2294893834888,
+        "prepaid_assets": 1331453109628,
+        "cost_of_revenue": 532761105105,
+        "short_term_debt": 3189346573229,
+        "operating_expense": 210399151610,
+        "retained_earnings": 780547985456,
+        "total_liabilities": 6651717373155,
+        "industry_breakdown": null,
+        "outstanding_shares": 5308549015,
+        "capital_expenditure": 3277214641526,
+        "current_liabilities": 3981006903219,
+        "earnings_before_tax": 704059678259,
+        "financing_cash_flow": 10909102818568,
+        "investing_cash_flow": -3944132255717,
+        "operating_cash_flow": -814048360263,
+        "cash_and_equivalents": 6164698518517,
+        "net_increased_decreased": null,
+        "non_current_liabilities": 2670710469936,
+        "non_operating_income_or_loss": -212176134884,
+        "total_cash_and_due_from_banks": null,
+        "interest_expense_non_operating": 312645916455
+      }
+    ],
+    "historical_financial_ratio": [
+      {
+        "year": "2018",
+        "leverage": {
+          "debt_to_asset_ratio": 0.8458898880558033,
+          "debt_to_equity_ratio": 7.5353590781260715,
+          "cash_flow_to_debt_ratio": -0.002303819114573437,
+          "interest_coverage_ratio": 14028.5
+        },
+        "liquidity": {
+          "current_ratio": null,
+          "operating_cash_flow_margin": -0.09796000807917593
+        },
+        "efficiency": {
+          "fixed_asset_turnover": null,
+          "total_asset_turnover": 0.01989360077790368
+        },
+        "profitability": {
+          "roa": 0.1118557985165184,
+          "roe": 0.9547294053090061,
+          "net_profit_margin": 5.622702484346597,
+          "gross_profit_margin": 0.6673399313270046,
+          "operating_profit_margin": -2.8640678650777622
+        }
+      },
+      {
+        "year": "2019",
+        "leverage": {
+          "debt_to_asset_ratio": 0.9024428627633321,
+          "debt_to_equity_ratio": 11.874443591711435,
+          "cash_flow_to_debt_ratio": 0.01980600891481778,
+          "interest_coverage_ratio": 1.0953658744356418
+        },
+        "liquidity": {
+          "current_ratio": null,
+          "operating_cash_flow_margin": 0.20463541808850427
+        },
+        "efficiency": {
+          "fixed_asset_turnover": null,
+          "total_asset_turnover": 0.08734456406404616
+        },
+        "profitability": {
+          "roa": 0.006640676228286658,
+          "roe": 0.08549501151189562,
+          "net_profit_margin": 0.07602850045043816,
+          "gross_profit_margin": 0.5569326526712347,
+          "operating_profit_margin": 0.3132046627173705
+        }
+      },
+      {
+        "year": "2020",
+        "leverage": {
+          "debt_to_asset_ratio": 0.12937371576290893,
+          "debt_to_equity_ratio": 0.2354141240622045,
+          "cash_flow_to_debt_ratio": -0.2723393629749104,
+          "interest_coverage_ratio": 1.1266581248115768
+        },
+        "liquidity": {
+          "current_ratio": 2.3554343273120595,
+          "operating_cash_flow_margin": -0.37863095288722465
+        },
+        "efficiency": {
+          "fixed_asset_turnover": 0.40476496217715185,
+          "total_asset_turnover": 0.09305513737822187
+        },
+        "profitability": {
+          "roa": 0.0043278210864872895,
+          "roe": 0.005346651296660634,
+          "net_profit_margin": 0.04650813709399939,
+          "gross_profit_margin": 0.5733945680763854,
+          "operating_profit_margin": 0.2956608772581255
+        }
+      },
+      {
+        "year": "2021",
+        "leverage": {
+          "debt_to_asset_ratio": 0.3638521908848172,
+          "debt_to_equity_ratio": 0.7371839751584716,
+          "cash_flow_to_debt_ratio": 0.33111595342684236,
+          "interest_coverage_ratio": 2.4102572231080814
+        },
+        "liquidity": {
+          "current_ratio": 1.1106779353652743,
+          "operating_cash_flow_margin": 0.27620653686364216
+        },
+        "efficiency": {
+          "fixed_asset_turnover": 4.036772659680094,
+          "total_asset_turnover": 0.43618542290600815
+        },
+        "profitability": {
+          "roa": 0.02880623237629118,
+          "roe": 0.05004172526878418,
+          "net_profit_margin": 0.06604125416290796,
+          "gross_profit_margin": 0.13218645284362848,
+          "operating_profit_margin": 0.0480287024843272
+        }
+      },
+      {
+        "year": "2022",
+        "leverage": {
+          "debt_to_asset_ratio": 0.4449563085130542,
+          "debt_to_equity_ratio": 1.2974903965340179,
+          "cash_flow_to_debt_ratio": 0.08828175286916287,
+          "interest_coverage_ratio": 2.20275572866045
+        },
+        "liquidity": {
+          "current_ratio": 1.7729445172178075,
+          "operating_cash_flow_margin": 0.11988646010835341
+        },
+        "efficiency": {
+          "fixed_asset_turnover": 1.9855913323118428,
+          "total_asset_turnover": 0.32765604080912714
+        },
+        "profitability": {
+          "roa": 0.04154891343602896,
+          "roe": 0.09545822960569976,
+          "net_profit_margin": 0.1268064929717956,
+          "gross_profit_margin": 0.23580103280781997,
+          "operating_profit_margin": 0.1276602770706137
+        }
+      },
+      {
+        "year": "2023",
+        "leverage": {
+          "debt_to_asset_ratio": 0.3685159485586815,
+          "debt_to_equity_ratio": 1.106292458034312,
+          "cash_flow_to_debt_ratio": 0.39000409149592946,
+          "interest_coverage_ratio": 2.166858158799562
+        },
+        "liquidity": {
+          "current_ratio": 1.1794637523905234,
+          "operating_cash_flow_margin": 0.5117274166683136
+        },
+        "efficiency": {
+          "fixed_asset_turnover": 1.6715038633996406,
+          "total_asset_turnover": 0.2808579783649663
+        },
+        "profitability": {
+          "roa": 0.03742630177219317,
+          "roe": 0.07883073715488668,
+          "net_profit_margin": 0.13325703613645914,
+          "gross_profit_margin": 0.3914535275003222,
+          "operating_profit_margin": 0.28168677294389477
+        }
+      },
+      {
+        "year": "2024",
+        "leverage": {
+          "debt_to_asset_ratio": 0.5394385517861159,
+          "debt_to_equity_ratio": 1.9978200033599616,
+          "cash_flow_to_debt_ratio": 0.2670155739901238,
+          "interest_coverage_ratio": 4.72871275817897
+        },
+        "liquidity": {
+          "current_ratio": 1.0048595356178411,
+          "operating_cash_flow_margin": 0.6233196264264816
+        },
+        "efficiency": {
+          "fixed_asset_turnover": 1.1458296390365041,
+          "total_asset_turnover": 0.23108288016430634
+        },
+        "profitability": {
+          "roa": 0.07951624442275011,
+          "roe": 0.23837538812258027,
+          "net_profit_margin": 0.34410270620745187,
+          "gross_profit_margin": 0.6173563201271746,
+          "operating_profit_margin": 0.5151398772229414
+        }
+      },
+      {
+        "year": "2025",
+        "leverage": {
+          "debt_to_asset_ratio": 0.3615268637066367,
+          "debt_to_equity_ratio": 0.7809063674319288,
+          "cash_flow_to_debt_ratio": -0.1484341129645156,
+          "interest_coverage_ratio": 3.2519394663526247
+        },
+        "liquidity": {
+          "current_ratio": 2.182327383416263,
+          "operating_cash_flow_margin": -0.49056905403702733
+        },
+        "efficiency": {
+          "fixed_asset_turnover": 0.19100169634072534,
+          "total_asset_turnover": 0.10938912449843925
+        },
+        "profitability": {
+          "roa": 0.02693212450446869,
+          "roe": 0.047963592018477774,
+          "net_profit_margin": 0.24620477243926525,
+          "gross_profit_margin": 0.6789427703353605,
+          "operating_profit_margin": 0.5521501646206776
+        }
+      }
+    ],
+    "yoy_quarter_earnings_growth": 0.146716175407322,
+    "yoy_quarter_revenue_growth": 1.79294301188618
+  },
+  "dividend": {
+    "historical_dividends": {
+      "2024": {
+        "breakdown": [
+          {
+            "date": "2024-06-19",
+            "total": 1.06,
+            "yield": 0.00442944001406431
+          }
+        ],
+        "total_yield": 0.00442944001406431,
+        "total_dividend": 1.06
+      },
+      "2025": {
+        "breakdown": [
+          {
+            "date": "2025-06-23",
+            "total": 2,
+            "yield": 0.000820331741124392
+          }
+        ],
+        "total_yield": 0.000820331741124392,
+        "total_dividend": 2
+      },
+      "2026": {
+        "breakdown": [
+          {
+            "date": "2026-07-09",
+            "total": 2,
+            "yield": 0.00115942028985507
+          }
+        ],
+        "total_yield": 0.00115942028985507,
+        "total_dividend": 2
+      }
+    },
+    "upcoming_dividends": null,
+    "yield_ttm": 0.00115942028985507,
+    "dividend_yield_avg": {
+      "period": 5,
+      "avg_yield": 0.00104995435103774
+    },
+    "dividend_ttm": 2.0,
+    "payout_ratio": 0.0181398330009051,
+    "cash_payout_ratio": -0.00166464554577108,
+    "last_ex_dividend_date": "2026-07-09"
+  },
+  "management": {
+    "key_executives": [
+      {
+        "name": "Hendrik Tee",
+        "position": "President Director"
+      },
+      {
+        "name": "Shannedy Ong",
+        "position": "Director"
+      },
+      {
+        "name": "Andrew",
+        "position": "Director"
+      },
+      {
+        "name": "Yune Marketatmo",
+        "position": "Director"
+      },
+      {
+        "name": "Mohammad Mustaghfirin",
+        "position": "Director"
+      },
+      {
+        "name": "Henny Santoso",
+        "position": "Director"
+      }
+    ],
+    "executives_shareholdings": null
+  },
+  "ownership": {
+    "major_shareholders": [
+      {
+        "name": "PT Investasi Sukses Bersama",
+        "share_value": 4983675771900,
+        "share_amount": 2889087404,
+        "share_percentage": "0.5442"
+      },
+      {
+        "name": "Public",
+        "share_value": 3690557478975,
+        "share_amount": 2139453611,
+        "share_percentage": "0.403"
+      },
+      {
+        "name": "Djoni",
+        "share_value": 483000000000,
+        "share_amount": 280000000,
+        "share_percentage": "0.0528"
+      }
+    ],
+    "top_transactions": {
+      "date": "2026-02-28",
+      "top_buyers": [
+        {
+          "name": "Lazard Asset Management LLC",
+          "changeAmount": 22878600
+        },
+        {
+          "name": "FIL Fund Management Limited",
+          "changeAmount": 7222912
+        },
+        {
+          "name": "State Street Investment Management",
+          "changeAmount": 4271205
+        }
+      ],
+      "top_sellers": null
+    },
+    "institutional_transaction_flow": [
+      {
+        "date": "2026-02-28",
+        "net_transaction": 110396924
+      },
+      {
+        "date": "2026-01-31",
+        "net_transaction": 46064926
+      },
+      {
+        "date": "2025-12-31",
+        "net_transaction": 15211184
+      },
+      {
+        "date": "2025-11-30",
+        "net_transaction": 26139840
+      },
+      {
+        "date": "2025-10-31",
+        "net_transaction": -4749496
+      },
+      {
+        "date": "2025-09-30",
+        "net_transaction": -3148588
+      },
+      {
+        "date": "2025-08-31",
+        "net_transaction": 4862446
+      },
+      {
+        "date": "2025-07-31",
+        "net_transaction": -4443044
+      },
+      {
+        "date": "2025-06-30",
+        "net_transaction": 9929578
+      },
+      {
+        "date": "2025-05-31",
+        "net_transaction": 923386
+      },
+      {
+        "date": "2025-04-30",
+        "net_transaction": 5146200
+      },
+      {
+        "date": "2025-03-31",
+        "net_transaction": 907218
+      },
+      {
+        "date": "2024-01-31",
+        "net_transaction": 850000
+      }
+    ],
+    "whale_investors": [
+      "Hashim Djojohadikusumo",
+      "Djoni",
+      "Fransiska Diana Patrisia Valensia"
+    ],
+    "conglomerates_group": [
+      "Arsari Group"
+    ]
+  },
+  "peers": [
+    {
+      "peers_data": {
+        "companies": [
+          {
+            "year": 2025,
+            "group": [
+              "self"
+            ],
+            "pb_mrq": 1.25559223280044,
+            "pe_ttm": 18.7219910087267,
+            "symbol": "WIFI.JK",
+            "market_cap": 9581930972075,
+            "net_income": 408551231766,
+            "company_name": "PT Solusi Sinergi Digital Tbk",
+            "employee_num": 18,
+            "total_assets": 15169662226172,
+            "total_equity": 8517944853017,
+            "pretax_income": 704059678259,
+            "total_revenue": 1659396069858,
+            "point_summaries": [
+              {
+                "name": "value",
+                "point": 8,
+                "maxpoint": 18
+              },
+              {
+                "name": "competitive",
+                "point": 9.5,
+                "maxpoint": 25.5
+              },
+              {
+                "name": "future",
+                "point": 12,
+                "maxpoint": 18
+              },
+              {
+                "name": "financials",
+                "point": 6.5,
+                "maxpoint": 7.5
+              },
+              {
+                "name": "dividend",
+                "point": 1.5,
+                "maxpoint": 9
+              },
+              {
+                "updatedAt": "2026-09-23T23:01:11.988Z"
+              }
+            ],
+            "yearly_mcap_chg": -0.286561264822134,
+            "operating_expense": 210399151610,
+            "revenue_breakdown": null,
+            "total_liabilities": 6651717373155,
+            "int_income_breakdown": null,
+            "operating_expense_breakdown": null
+          },
+          {
+            "year": 2025,
+            "group": [
+              "sub_sector",
+              "sector",
+              "industry",
+              "sub_industry"
+            ],
+            "pb_mrq": 1.76026992058475,
+            "pe_ttm": 30826.3045194595,
+            "symbol": "GOTO.JK",
+            "market_cap": 57028663361000,
+            "net_income": -1185654000000,
+            "company_name": "PT GoTo Gojek Tokopedia Tbk",
+            "employee_num": 3352,
+            "total_assets": 45757642000000,
+            "total_equity": 28711657000000,
+            "pretax_income": -1086604000000,
+            "total_revenue": 18322117000000,
+            "point_summaries": [
+              {
+                "name": "value",
+                "point": 9.5,
+                "maxpoint": 18
+              },
+              {
+                "name": "competitive",
+                "point": 15,
+                "maxpoint": 25.5
+              },
+              {
+                "name": "future",
+                "point": 24,
+                "maxpoint": 30
+              },
+              {
+                "name": "financials",
+                "point": 3,
+                "maxpoint": 7.5
+              },
+              {
+                "name": "dividend",
+                "point": 1.5,
+                "maxpoint": 15.5
+              },
+              {
+                "updatedAt": "2026-09-23T23:01:12.049Z"
+              }
+            ],
+            "yearly_mcap_chg": -0.137931034482759,
+            "operating_expense": 10954337000000,
+            "revenue_breakdown": null,
+            "total_liabilities": 17045985000000,
+            "int_income_breakdown": null,
+            "operating_expense_breakdown": null
+          },
+          {
+            "year": 2025,
+            "group": [
+              "sub_sector",
+              "sector",
+              "industry",
+              "sub_industry"
+            ],
+            "pb_mrq": 4.1994961206729,
+            "pe_ttm": -22.108317836129,
+            "symbol": "BELI.JK",
+            "market_cap": 38421315992920,
+            "net_income": -2278884000000,
+            "company_name": "PT Global Digital Niaga Tbk",
+            "employee_num": 1814,
+            "total_assets": 17800778000000,
+            "total_equity": 9454333000000,
+            "pretax_income": -2200939000000,
+            "total_revenue": 22361030000000,
+            "point_summaries": [
+              {
+                "name": "value",
+                "point": 4,
+                "maxpoint": 18
+              },
+              {
+                "name": "competitive",
+                "point": 10.5,
+                "maxpoint": 25.5
+              },
+              {
+                "name": "future",
+                "point": 12,
+                "maxpoint": 18
+              },
+              {
+                "name": "financials",
+                "point": 2,
+                "maxpoint": 7.5
+              },
+              {
+                "name": "dividend",
+                "point": 1.5,
+                "maxpoint": 15.5
+              },
+              {
+                "updatedAt": "2026-09-23T23:01:11.792Z"
+              }
+            ],
+            "yearly_mcap_chg": -0.215798783547591,
+            "operating_expense": 5953646000000,
+            "revenue_breakdown": null,
+            "total_liabilities": 8346445000000,
+            "int_income_breakdown": null,
+            "operating_expense_breakdown": null
+          },
+          {
+            "year": 2025,
+            "group": [
+              "sub_sector",
+              "sector",
+              "industry",
+              "sub_industry"
+            ],
+            "pb_mrq": 0.721153697911185,
+            "pe_ttm": 11.7760553237556,
+            "symbol": "EMTK.JK",
+            "market_cap": 26413374137690,
+            "net_income": 6789292000000,
+            "company_name": "Elang Mahkota Teknologi Tbk",
+            "employee_num": 9303,
+            "total_assets": 60770077000000,
+            "total_equity": 53391480000000,
+            "pretax_income": 9495939000000,
+            "total_revenue": 19119724000000,
+            "point_summaries": [
+              {
+                "name": "value",
+                "point": 13,
+                "maxpoint": 18
+              },
+              {
+                "name": "competitive",
+                "point": 16.5,
+                "maxpoint": 25.5
+              },
+              {
+                "name": "future",
+                "point": 12,
+                "maxpoint": 18
+              },
+              {
+                "name": "financials",
+                "point": 5,
+                "maxpoint": 7.5
+              },
+              {
+                "name": "dividend",
+                "point": 3.5,
+                "maxpoint": 11
+              },
+              {
+                "updatedAt": "2026-09-23T23:01:12.353Z"
+              }
+            ],
+            "yearly_mcap_chg": -0.655805563455812,
+            "operating_expense": 4034594000000,
+            "revenue_breakdown": null,
+            "total_liabilities": 7378597000000,
+            "int_income_breakdown": null,
+            "operating_expense_breakdown": null
+          },
+          {
+            "year": 2025,
+            "group": [
+              "sub_sector",
+              "sector",
+              "industry",
+              "sub_industry"
+            ],
+            "pb_mrq": 0.445825162636907,
+            "pe_ttm": 5.83378572099826,
+            "symbol": "BUKA.JK",
+            "market_cap": 10832544530535,
+            "net_income": 3142054776000,
+            "company_name": "PT Bukalapak.com Tbk",
+            "employee_num": 989,
+            "total_assets": 26030762801000,
+            "total_equity": 25313466848000,
+            "pretax_income": 3163709046000,
+            "total_revenue": 6510030453000,
+            "point_summaries": [
+              {
+                "name": "value",
+                "point": 13,
+                "maxpoint": 18
+              },
+              {
+                "name": "competitive",
+                "point": 12.5,
+                "maxpoint": 25.5
+              },
+              {
+                "name": "future",
+                "point": 12,
+                "maxpoint": 18
+              },
+              {
+                "name": "financials",
+                "point": 6,
+                "maxpoint": 7.5
+              },
+              {
+                "name": "dividend",
+                "point": 1.5,
+                "maxpoint": 15.5
+              },
+              {
+                "updatedAt": "2026-09-23T23:01:12.269Z"
+              }
+            ],
+            "yearly_mcap_chg": -0.374832084628059,
+            "operating_expense": 694400038000,
+            "revenue_breakdown": null,
+            "total_liabilities": 717295953000,
+            "int_income_breakdown": null,
+            "operating_expense_breakdown": null
+          },
+          {
+            "year": 2025,
+            "group": [
+              "sub_sector",
+              "sector",
+              "industry",
+              "sub_industry"
+            ],
+            "pb_mrq": 4.31893992552718,
+            "pe_ttm": -94.0984493483607,
+            "symbol": "NFCX.JK",
+            "market_cap": 1133334750000,
+            "net_income": 5646379667,
+            "company_name": "PT NFC Indonesia Tbk",
+            "employee_num": null,
+            "total_assets": 1376206862017,
+            "total_equity": 750615327085,
+            "pretax_income": 19879059947,
+            "total_revenue": 4069974238531,
+            "point_summaries": [
+              {
+                "name": "value",
+                "point": 5.5,
+                "maxpoint": 18
+              },
+              {
+                "name": "competitive",
+                "point": 4.5,
+                "maxpoint": 25.5
+              },
+              {
+                "name": "future",
+                "point": 12,
+                "maxpoint": 18
+              },
+              {
+                "name": "financials",
+                "point": 3,
+                "maxpoint": 7.5
+              },
+              {
+                "name": "dividend",
+                "point": 1.5,
+                "maxpoint": 15.5
+              },
+              {
+                "updatedAt": "2026-09-23T23:01:11.932Z"
+              }
+            ],
+            "yearly_mcap_chg": -0.0502793296089385,
+            "operating_expense": 131490393481,
+            "revenue_breakdown": null,
+            "total_liabilities": 625591534932,
+            "int_income_breakdown": null,
+            "operating_expense_breakdown": null
+          },
+          {
+            "year": 2025,
+            "group": [
+              "sub_sector",
+              "sector",
+              "industry",
+              "sub_industry"
+            ],
+            "pb_mrq": 237.120948121467,
+            "pe_ttm": null,
+            "symbol": "PGJO.JK",
+            "market_cap": 652604457900,
+            "net_income": -6817676184,
+            "company_name": "PT Bahtera Bumi Raya Tbk",
+            "employee_num": 8,
+            "total_assets": 30397356013,
+            "total_equity": -2000513755,
+            "pretax_income": -6545568371,
+            "total_revenue": 28025828926,
+            "point_summaries": [
+              {
+                "name": "value",
+                "point": 4,
+                "maxpoint": 15
+              },
+              {
+                "name": "competitive",
+                "point": 0,
+                "maxpoint": 21
+              },
+              {
+                "name": "future",
+                "point": 12,
+                "maxpoint": 18
+              },
+              {
+                "name": "financials",
+                "point": 2,
+                "maxpoint": 7.5
+              },
+              {
+                "name": "dividend",
+                "point": 1.5,
+                "maxpoint": 15.5
+              },
+              {
+                "updatedAt": "2026-09-23T23:01:12.149Z"
+              }
+            ],
+            "yearly_mcap_chg": -0.103825136612022,
+            "operating_expense": 4621260607,
+            "revenue_breakdown": null,
+            "total_liabilities": 32397869768,
+            "int_income_breakdown": null,
+            "operating_expense_breakdown": null
+          },
+          {
+            "year": 2025,
+            "group": [
+              "sub_sector",
+              "sector",
+              "industry",
+              "sub_industry"
+            ],
+            "pb_mrq": -12.2231645269002,
+            "pe_ttm": null,
+            "symbol": "CASH.JK",
+            "market_cap": 626372971728,
+            "net_income": -68119715915,
+            "company_name": "PT Cashlez Worldwide Indonesia Tbk.",
+            "employee_num": 7883,
+            "total_assets": 271633116614,
+            "total_equity": 62035810766,
+            "pretax_income": -54836269741,
+            "total_revenue": 110185952915,
+            "point_summaries": [
+              {
+                "name": "value",
+                "point": 10,
+                "maxpoint": 15
+              },
+              {
+                "name": "competitive",
+                "point": 6,
+                "maxpoint": 21
+              },
+              {
+                "name": "future",
+                "point": 12,
+                "maxpoint": 18
+              },
+              {
+                "name": "financials",
+                "point": 2,
+                "maxpoint": 7.5
+              },
+              {
+                "name": "dividend",
+                "point": 1.5,
+                "maxpoint": 15.5
+              },
+              {
+                "updatedAt": "2026-09-23T23:01:12.270Z"
+              }
+            ],
+            "yearly_mcap_chg": 3.20844780160967,
+            "operating_expense": 54982291301,
+            "revenue_breakdown": null,
+            "total_liabilities": 209597305848,
+            "int_income_breakdown": null,
+            "operating_expense_breakdown": null
+          },
+          {
+            "year": 2025,
+            "group": [
+              "sub_sector",
+              "sector",
+              "industry",
+              "sub_industry"
+            ],
+            "pb_mrq": 7.4807823547963,
+            "pe_ttm": -60.3847736150055,
+            "symbol": "AWAN.JK",
+            "market_cap": 546165000000,
+            "net_income": -6525948000,
+            "company_name": "PT Era Digital Media Tbk",
+            "employee_num": 31,
+            "total_assets": 91966641000,
+            "total_equity": 74980420000,
+            "pretax_income": -5706906000,
+            "total_revenue": 63101970000,
+            "point_summaries": [
+              {
+                "name": "value",
+                "point": 4,
+                "maxpoint": 18
+              },
+              {
+                "name": "competitive",
+                "point": 0,
+                "maxpoint": 25.5
+              },
+              {
+                "name": "future",
+                "point": 12,
+                "maxpoint": 18
+              },
+              {
+                "name": "financials",
+                "point": 2,
+                "maxpoint": 7.5
+              },
+              {
+                "name": "dividend",
+                "point": 1.5,
+                "maxpoint": 15.5
+              },
+              {
+                "updatedAt": "2026-09-23T23:01:11.790Z"
+              }
+            ],
+            "yearly_mcap_chg": -0.358870967741935,
+            "operating_expense": 26342476000,
+            "revenue_breakdown": null,
+            "total_liabilities": 16986221000,
+            "int_income_breakdown": null,
+            "operating_expense_breakdown": null
+          },
+          {
+            "year": 2025,
+            "group": [
+              "sub_sector",
+              "sector",
+              "industry",
+              "sub_industry"
+            ],
+            "pb_mrq": 2.09344512066242,
+            "pe_ttm": 19.6023748179331,
+            "symbol": "JATI.JK",
+            "market_cap": 381714852402,
+            "net_income": 20809772692,
+            "company_name": "PT Informasi Teknologi Indonesia Tbk",
+            "employee_num": 354,
+            "total_assets": 412834783826,
+            "total_equity": 188684995587,
+            "pretax_income": 27324144391,
+            "total_revenue": 634943344152,
+            "point_summaries": [
+              {
+                "name": "value",
+                "point": 5.5,
+                "maxpoint": 18
+              },
+              {
+                "name": "competitive",
+                "point": 7.5,
+                "maxpoint": 25.5
+              },
+              {
+                "name": "future",
+                "point": 12,
+                "maxpoint": 18
+              },
+              {
+                "name": "financials",
+                "point": 6.5,
+                "maxpoint": 7.5
+              },
+              {
+                "name": "dividend",
+                "point": 1.5,
+                "maxpoint": 11
+              },
+              {
+                "updatedAt": "2026-09-23T23:01:12.111Z"
+              }
+            ],
+            "yearly_mcap_chg": -0.139705882352941,
+            "operating_expense": 73829982730,
+            "revenue_breakdown": null,
+            "total_liabilities": 224149788239,
+            "int_income_breakdown": null,
+            "operating_expense_breakdown": null
+          }
+        ],
+        "group_name": {
+          "sector": "Technology",
+          "industry": "Online Applications & Services",
+          "sub_sector": "Software & IT Services",
+          "sub_industry": "Online Applications & Services"
+        }
+      }
+    }
+  ]
+}

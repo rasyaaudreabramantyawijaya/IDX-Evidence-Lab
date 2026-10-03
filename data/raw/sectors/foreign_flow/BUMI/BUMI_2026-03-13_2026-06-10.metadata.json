@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/BUMI/?start=2026-03-13&end=2026-06-10",
+  "retrieved_at": "2026-09-25T03:29:00.070363+00:00",
+  "sha256": "c9ac8c7575ee8d0bee83cbaf5d9bfe0796a288e860b91ee49a0d7683088c9730",
+  "http_status": 200,
+  "request_number": 163,
+  "request_budget": 558,
+  "ticker": "BUMI",
+  "requested_start": "2026-03-13",
+  "requested_end": "2026-06-10",
+  "window_days": 90,
+  "snapshot_sha256": "880de80b9b8cd5bd01c9158b10d2e957014ecd065d8198fd611a63ffc9205196"
+}

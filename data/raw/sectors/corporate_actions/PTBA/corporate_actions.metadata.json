@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/corporate-actions/PTBA/",
+  "retrieved_at": "2026-09-26T14:26:36.172852+00:00",
+  "sha256": "74385ce998f09751d7cd5e5965768e9c5dead93ba5cdfde332b0f4553626fe36",
+  "http_status": 200,
+  "request_number": 15,
+  "request_budget": 20,
+  "symbol": "PTBA",
+  "query_parameters": {},
+  "history_scope": "complete endpoint history; endpoint called without date filters",
+  "retry_of_prior_http_429": true,
+  "snapshot_sha256": "d8d951df693ce931a1f4153246e491a53070864a1bcb3ee4efb300084870cfc4"
+}

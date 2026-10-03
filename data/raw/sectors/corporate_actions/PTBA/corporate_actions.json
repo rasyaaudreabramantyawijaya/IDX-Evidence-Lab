@@ -1,0 +1,133 @@
+{
+  "symbol": "PTBA.JK",
+  "corporate_actions": {
+    "agm": [
+      {
+        "agm_date": "2022-05-24",
+        "agm_time": "13:00:00",
+        "agm_place": "Grand Ballroom Hotel Borobudurjl. Lapangan Banteng Selatanjakarta 10710",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2022-09-13",
+        "agm_time": "11:00:00",
+        "agm_place": "Pubex Live 2022",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2023-05-24",
+        "agm_time": "13:00:00",
+        "agm_place": "",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2023-06-15",
+        "agm_time": "16:00:00",
+        "agm_place": "Sumba Room, Hotel Borobudur Jl. Lapangan Banteng Selatan No.1, Jakarta Pusat 10710",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2023-11-27",
+        "agm_time": "10:00:00",
+        "agm_place": "IDX Public Expose",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2024-05-08",
+        "agm_time": "13:00:00",
+        "agm_place": "Flores Ballroom, Hotel Borobudur Jakarta 10710 Jl. Lapangan Banteng Selatan No. 1, Jakarta Pusat",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2024-08-27",
+        "agm_time": "11:00:00",
+        "agm_place": "IDX Public Expose",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2025-06-12",
+        "agm_time": "14:30:00",
+        "agm_place": "E-RUPS KSEI",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2025-09-11",
+        "agm_time": "14:00:00",
+        "agm_place": "IDX Public Expose",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2025-12-16",
+        "agm_time": "14:00:00",
+        "agm_place": "Flores Ballroom, Hotel Borobudur Jl. Lapangan Banteng, Selatan, Jakarta, 10710 Kota Adm. Jakarta Pusat",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2026-06-11",
+        "agm_time": "14:00:00",
+        "agm_place": "DKI Jakarta Secara Elektronik Melalui Fasilitas Electronic General Meeting System Ksei Dalam Ksei Yang Disediakan Oleh PT Kustodian Sentralefek",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2026-09-07",
+        "agm_time": "16:00:00",
+        "agm_place": "IDX Public Expose",
+        "agm_result": null
+      }
+    ],
+    "bonus": null,
+    "warrant": null,
+    "dividend": [
+      {
+        "ex_date": "2026-06-23",
+        "payment_date": "2026-07-10",
+        "dividend_yield": null,
+        "dividend_amount": 114.508
+      },
+      {
+        "ex_date": "2025-06-23",
+        "payment_date": "2025-07-11",
+        "dividend_yield": 0.13232,
+        "dividend_amount": 332.437
+      },
+      {
+        "ex_date": "2024-05-21",
+        "payment_date": "2024-06-07",
+        "dividend_yield": 0.144983,
+        "dividend_amount": 397.712
+      },
+      {
+        "ex_date": "2023-06-26",
+        "payment_date": "2023-07-14",
+        "dividend_yield": 0.352986,
+        "dividend_amount": 1094.05
+      },
+      {
+        "ex_date": "2022-06-06",
+        "payment_date": "2022-06-24",
+        "dividend_yield": 0.184659,
+        "dividend_amount": 688.515
+      },
+      {
+        "ex_date": "2021-04-14",
+        "payment_date": "2021-05-07",
+        "dividend_yield": 0.0300437,
+        "dividend_amount": 74.6944
+      },
+      {
+        "ex_date": "2020-06-19",
+        "payment_date": "2020-07-10",
+        "dividend_yield": 0.149406,
+        "dividend_amount": 326.465
+      }
+    ],
+    "right_issue": null,
+    "stock_split": [
+      {
+        "date": "2017-12-14",
+        "split_ratio": 5
+      }
+    ],
+    "upcoming_dividend": null
+  }
+}

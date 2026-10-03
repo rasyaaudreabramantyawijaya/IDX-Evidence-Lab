@@ -1,0 +1,18 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/filings/?symbol=MEDC&start=2023-09-25&end=2026-09-24&limit=30&offset=0",
+  "retrieved_at": "2026-09-26T12:22:30.274999+00:00",
+  "sha256": "8cb4f983218090be592020d934fc5ea20a4c16721836830758abac730162ce76",
+  "http_status": 200,
+  "request_number": 37,
+  "request_budget": 615,
+  "run_id": "filings_full_20260926T122124Z",
+  "symbol": "MEDC",
+  "requested_start": "2023-09-25",
+  "requested_end": "2026-09-24",
+  "limit": 30,
+  "offset": 0,
+  "pagination_followed": true,
+  "snapshot_sha256": "134bd1b2950f67f2b69c9ff143eabfa45d11ef1a43e782b646d6e3f06619e111"
+}

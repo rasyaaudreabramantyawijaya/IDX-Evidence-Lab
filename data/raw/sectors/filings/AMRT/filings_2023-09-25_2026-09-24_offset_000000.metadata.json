@@ -1,0 +1,18 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/filings/?symbol=AMRT&start=2023-09-25&end=2026-09-24&limit=30&offset=0",
+  "retrieved_at": "2026-09-26T12:21:37.185393+00:00",
+  "sha256": "2b3facc6ec331123c4f7686a5eeade797d6089a0dc1311a3cfb692a1b15a1315",
+  "http_status": 200,
+  "request_number": 7,
+  "request_budget": 615,
+  "run_id": "filings_full_20260926T122124Z",
+  "symbol": "AMRT",
+  "requested_start": "2023-09-25",
+  "requested_end": "2026-09-24",
+  "limit": 30,
+  "offset": 0,
+  "pagination_followed": true,
+  "snapshot_sha256": "109b23cd785ab1a9480a3521f3ff27a1c6dcba5e75f9c0a0d51506ea78eb22dd"
+}

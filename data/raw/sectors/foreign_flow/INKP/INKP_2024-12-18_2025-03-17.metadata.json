@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/INKP/?start=2024-12-18&end=2025-03-17",
+  "retrieved_at": "2026-09-25T03:40:25.875247+00:00",
+  "sha256": "c6521ef93de01fc4c167ccb7ca159927134652b713803243982424ce0816f9e6",
+  "http_status": 200,
+  "request_number": 327,
+  "request_budget": 558,
+  "ticker": "INKP",
+  "requested_start": "2024-12-18",
+  "requested_end": "2025-03-17",
+  "window_days": 90,
+  "snapshot_sha256": "686b4b52c2d9e1f21f20319ca2b96bcf493d13662e2758c587422285989623e1"
+}

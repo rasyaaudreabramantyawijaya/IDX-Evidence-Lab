@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/GOTO/",
+  "retrieved_at": "2026-09-26T15:28:20.133625+00:00",
+  "sha256": "146499f9632a1c88e7612d802a99254e0c7e82b0d6c7870fe5e4a1aa858d5f5a",
+  "http_status": 200,
+  "request_number": 17,
+  "request_budget": 35,
+  "symbol": "GOTO",
+  "request_scope": "approved full company-report completion",
+  "snapshot_sha256": "58e4f8aa173526fc2cc00b547b82f5058edd0c355c0eb856908c665156e4c0a5"
+}

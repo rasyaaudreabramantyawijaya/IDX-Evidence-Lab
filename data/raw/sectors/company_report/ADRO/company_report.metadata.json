@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/ADRO/",
+  "retrieved_at": "2026-09-26T15:28:06.226707+00:00",
+  "sha256": "08f805b597484ac38734dbf178bf8a3929df0c2d856343befa8abd9a92174e98",
+  "http_status": 200,
+  "request_number": 2,
+  "request_budget": 35,
+  "symbol": "ADRO",
+  "request_scope": "approved full company-report completion",
+  "snapshot_sha256": "1da675a9a45ca6a327988d7d2bfa0b891a37235e21f39bb84e4e72275d5f615d"
+}

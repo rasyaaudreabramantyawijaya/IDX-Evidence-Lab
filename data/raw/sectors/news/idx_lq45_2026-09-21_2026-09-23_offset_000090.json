@@ -1,0 +1,47 @@
+{
+  "results": [
+    {
+      "title": "Analysts forecast IHSG weakness on Monday 21 Sep 2026 and recommend buying PT Buana Listya Tama Tbk (BULL), PT Kalbe Farma Tbk (KLBF), PT Telkom Indonesia Tbk (TLKM) and PT Bank Central Asia Tbk (BBCA).",
+      "body": "Analysts note that the Jakarta Composite Index (IHSG) fell 1.53% to 6,441,159 last week, reflecting pressure from higher U.S. interest‑rate expectations. BEI’s market capitalization declined 1.58% to Rp11,266 trillion, while average daily transaction value dropped 6.95% to Rp15.22 trillion and average daily volume fell 20.71% to 28.61 billion shares. MNC Sekuritas recommends investors consider a buy‑on‑weakness position in PT Buana Listya Tama Tbk (BULL), PT Kalbe Farma Tbk (KLBF) and PT Telkom Indonesia Tbk (TLKM). It also advises a buying trade for PT Bank Central Asia Tbk (BBCA) as the index remains above the 6,370 support level, offering upside toward 6,541‑6,581.",
+      "source": "https://market.bisnis.com/read/20260921/7/2005694/rekomendasi-saham-dan-pergerakan-ihsg-hari-ini-senin-21-september-2026",
+      "thumbnail": "https://images.bisnis.com/thumb/posts/2026/09/21/2005694/12072026-BI-HIL-21-IHSG-25_1783865476.jpg?w=368&h=208",
+      "timestamp": "2026-09-21T05:10:00",
+      "sector": "energy",
+      "sub_sector": [
+        "oil-gas-coal",
+        "pharmaceuticals-health-care-research",
+        "telecommunication",
+        "banks"
+      ],
+      "tags": [
+        "Analyst Ratings"
+      ],
+      "symbols": [
+        "BULL.JK",
+        "KLBF.JK",
+        "TLKM.JK",
+        "BBCA.JK"
+      ],
+      "dimension": {
+        "future": 1,
+        "dividend": 0,
+        "ownership": 0,
+        "technical": 1,
+        "valuation": 0,
+        "financials": 0,
+        "management": 0,
+        "sustainability": 0
+      }
+    }
+  ],
+  "pagination": {
+    "total_count": 91,
+    "showing": 1,
+    "limit": 30,
+    "offset": 90,
+    "has_next": false,
+    "has_previous": true,
+    "next_offset": null,
+    "previous_offset": 60
+  }
+}

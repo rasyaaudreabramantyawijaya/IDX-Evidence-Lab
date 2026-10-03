@@ -1,0 +1,18 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/filings/?symbol=MAPI&start=2023-09-25&end=2026-09-24&limit=30&offset=0",
+  "retrieved_at": "2026-09-26T12:22:26.457978+00:00",
+  "sha256": "fc26f23f0f941b2bdfb118156ab089f4cc8a1dd7a675ea8ce78bb0a4e9e83ec3",
+  "http_status": 200,
+  "request_number": 34,
+  "request_budget": 615,
+  "run_id": "filings_full_20260926T122124Z",
+  "symbol": "MAPI",
+  "requested_start": "2023-09-25",
+  "requested_end": "2026-09-24",
+  "limit": 30,
+  "offset": 0,
+  "pagination_followed": true,
+  "snapshot_sha256": "b8b26a23d6f351850de0101a250bea7b57aa18122a8f6089378e0b67a62b51fc"
+}

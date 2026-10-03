@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/SCMA/",
+  "ticker": "SCMA",
+  "start": "2026-03-12",
+  "end": "2026-06-09",
+  "retrieved_at": "2026-09-24T12:46:47.676586",
+  "http_status": 200,
+  "observations_count": 52,
+  "sha256": "f793f8f4ee5dd001574dcc90416d0bd865a0feca5b9930174d62d0500d3f2cd0"
+}

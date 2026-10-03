@@ -1,0 +1,18 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/filings/?symbol=MDKA&start=2023-09-25&end=2026-09-24&limit=30&offset=0",
+  "retrieved_at": "2026-09-26T12:22:29.013676+00:00",
+  "sha256": "981273fc7031190530d6b6b151dfeb575f1e9530638fa69372ed73998adf1d15",
+  "http_status": 200,
+  "request_number": 36,
+  "request_budget": 615,
+  "run_id": "filings_full_20260926T122124Z",
+  "symbol": "MDKA",
+  "requested_start": "2023-09-25",
+  "requested_end": "2026-09-24",
+  "limit": 30,
+  "offset": 0,
+  "pagination_followed": true,
+  "snapshot_sha256": "86ede9872b82209a6e311d724ee19de4f738a4db3d8f6d34378c710c5243e562"
+}

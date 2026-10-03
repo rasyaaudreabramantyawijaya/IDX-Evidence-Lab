@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/AADI/",
+  "ticker": "AADI",
+  "start": "2025-03-17",
+  "end": "2025-06-14",
+  "retrieved_at": "2026-09-24T12:22:33.910680",
+  "http_status": 200,
+  "observations_count": 50,
+  "sha256": "672f6fa03df2fc706b349358b784d3940ec346660b46916bcc3b38ebb3fc5c1c"
+}

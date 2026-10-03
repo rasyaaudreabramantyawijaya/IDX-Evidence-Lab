@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/ESSA/?start=2023-09-25&end=2023-12-23",
+  "retrieved_at": "2026-09-25T03:32:52.540532+00:00",
+  "sha256": "db06ea08c6d6d7e03574d2a98361fcb7770386fccd407107d12a8e0fe01068eb",
+  "http_status": 200,
+  "request_number": 218,
+  "request_budget": 558,
+  "ticker": "ESSA",
+  "requested_start": "2023-09-25",
+  "requested_end": "2023-12-23",
+  "window_days": 90,
+  "snapshot_sha256": "13ac473a7e05d8c554272ba168a3b004725a4d5131855b58bdd2fcf9acbe9824"
+}

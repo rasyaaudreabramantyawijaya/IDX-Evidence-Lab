@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/ASII/",
+  "retrieved_at": "2026-09-26T15:28:10.484787+00:00",
+  "sha256": "9fdc838872e0525981fbef181feccd0ffc648c33db5932947d85a3c7e719231b",
+  "http_status": 200,
+  "request_number": 7,
+  "request_budget": 35,
+  "symbol": "ASII",
+  "request_scope": "approved full company-report completion",
+  "snapshot_sha256": "20272255e70bec0220a87009f26379ee4274677753e4ceea706473d53edad3b6"
+}

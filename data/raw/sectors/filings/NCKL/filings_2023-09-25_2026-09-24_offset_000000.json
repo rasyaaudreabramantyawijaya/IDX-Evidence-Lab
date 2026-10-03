@@ -1,0 +1,191 @@
+{
+  "results": [
+    {
+      "title": "Harita Jayaraya sells shares of Trimegah Bangun Persada",
+      "body": "This transaction is part of a cluster-sell transaction amidst other insider sells during the last 6 months. Harita Jayaraya's insider disposal comes after Glencore International Investments Ltd and Glencore Plc in Trimegah Bangun Persada, totaling a distribution of 1,401,074,200 shares transacted at an average price of IDR 1,382.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-02032026-1070-00.pdf-0.pdf",
+      "timestamp": "2026-03-02T14:31:17",
+      "sector": "basic-materials",
+      "sub_sector": "basic-materials",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "NCKL.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Harita Jayaraya",
+      "holding_before": 51335566000,
+      "holding_after": 50344432000,
+      "amount_transaction": 991134000,
+      "price": 1394.816,
+      "transaction_value": 1382449224000.0,
+      "price_transaction": [
+        {
+          "date": "2025-09-26",
+          "type": "sell",
+          "price": 1186,
+          "amount_transacted": 13134000
+        },
+        {
+          "date": "2025-09-29",
+          "type": "sell",
+          "price": 1180,
+          "amount_transacted": 150000
+        },
+        {
+          "date": "2025-10-14",
+          "type": "sell",
+          "price": 1203,
+          "amount_transacted": 9600000
+        },
+        {
+          "date": "2026-01-06",
+          "type": "sell",
+          "price": 1277,
+          "amount_transacted": 3500000
+        },
+        {
+          "date": "2026-01-07",
+          "type": "sell",
+          "price": 1412,
+          "amount_transacted": 2250000
+        },
+        {
+          "date": "2026-02-26",
+          "type": "sell",
+          "price": 1400,
+          "amount_transacted": 962500000
+        }
+      ],
+      "share_percentage_before": 81.36,
+      "share_percentage_after": 79.79,
+      "share_percentage_transaction": 1.57,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Glencore Plc sells shares of Trimegah Bangun Persada",
+      "body": "Glencore Plc sold 204,970,100 shares of Trimegah Bangun Persada. This decreases their holdings from 4,534,708,000 to 4,329,737,900 shares.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-09012026-7943-00.pdf-0.pdf",
+      "timestamp": "2026-01-09T10:00:18",
+      "sector": "basic-materials",
+      "sub_sector": "basic-materials",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "NCKL.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Glencore Plc",
+      "holding_before": 4534708000,
+      "holding_after": 4329737900,
+      "amount_transaction": 204970100,
+      "price": 1351.141,
+      "transaction_value": 276943442300.0,
+      "price_transaction": [
+        {
+          "date": "2025-12-29",
+          "type": "sell",
+          "price": 1129.0,
+          "amount_transacted": 3281900
+        },
+        {
+          "date": "2025-12-30",
+          "type": "sell",
+          "price": 1137.0,
+          "amount_transacted": 5000000
+        },
+        {
+          "date": "2026-01-02",
+          "type": "sell",
+          "price": 1167.0,
+          "amount_transacted": 10000000
+        },
+        {
+          "date": "2026-01-06",
+          "type": "sell",
+          "price": 1288.0,
+          "amount_transacted": 64237600
+        },
+        {
+          "date": "2026-01-07",
+          "type": "sell",
+          "price": 1414.0,
+          "amount_transacted": 122450600
+        }
+      ],
+      "share_percentage_before": 7.2,
+      "share_percentage_after": 6.87,
+      "share_percentage_transaction": 0.33,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Glencore International Investments Ltd. sells shares of Trimegah Bangun Persada",
+      "body": "Glencore International Investments Ltd. sold 204,970,100 shares of Trimegah Bangun Persada. This decreases their holdings from 4,534,708,000 to 4,329,737,900 shares.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-09012026-5378-00.pdf-0.pdf",
+      "timestamp": "2026-01-09T09:41:26",
+      "sector": "basic-materials",
+      "sub_sector": "basic-materials",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "NCKL.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Glencore International Investments Ltd",
+      "holding_before": 4534708000,
+      "holding_after": 4329737900,
+      "amount_transaction": 204970100,
+      "price": 1351.141,
+      "transaction_value": 276943442300.0,
+      "price_transaction": [
+        {
+          "date": "2025-12-29",
+          "type": "sell",
+          "price": 1129.0,
+          "amount_transacted": 3281900
+        },
+        {
+          "date": "2025-12-30",
+          "type": "sell",
+          "price": 1137.0,
+          "amount_transacted": 5000000
+        },
+        {
+          "date": "2026-01-02",
+          "type": "sell",
+          "price": 1167.0,
+          "amount_transacted": 10000000
+        },
+        {
+          "date": "2026-01-06",
+          "type": "sell",
+          "price": 1288.0,
+          "amount_transacted": 64237600
+        },
+        {
+          "date": "2026-01-07",
+          "type": "sell",
+          "price": 1414.0,
+          "amount_transacted": 122450600
+        }
+      ],
+      "share_percentage_before": 7.2,
+      "share_percentage_after": 6.87,
+      "share_percentage_transaction": 0.33,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    }
+  ],
+  "pagination": {
+    "total_count": 3,
+    "showing": 3,
+    "limit": 30,
+    "offset": 0,
+    "has_next": false,
+    "has_previous": false,
+    "next_offset": null,
+    "previous_offset": null
+  }
+}

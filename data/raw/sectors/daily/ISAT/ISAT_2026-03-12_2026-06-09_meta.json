@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/ISAT/",
+  "ticker": "ISAT",
+  "start": "2026-03-12",
+  "end": "2026-06-09",
+  "retrieved_at": "2026-09-24T12:40:44.062508",
+  "http_status": 200,
+  "observations_count": 52,
+  "sha256": "99bed62cb29599db74f9e84a5be7291d30ce3a0f070668b7a3ef0ab1887928f2"
+}

@@ -1,0 +1,380 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/suspensions/",
+  "run_id": "20260926T125917Z",
+  "scope": "45-symbol LQ45 snapshot; ticker-specific suspension history",
+  "date_policy": "start equals first observed daily date for each ticker; end=2026-09-24",
+  "limit": 30,
+  "pagination": "follow has_next/next_offset until exhausted",
+  "approved_max_requests": 90,
+  "requests_used_total": 46,
+  "completed_symbols": 45,
+  "symbols_total": 45,
+  "total_rows_saved": 2,
+  "status": "complete",
+  "stop_reason": null,
+  "per_symbol": [
+    {
+      "symbol": "AADI",
+      "status": "complete",
+      "start": "2024-12-05",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "ADMR",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "ADRO",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "AKRA",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "AMMN",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "AMRT",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "ANTM",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "ASII",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "BBCA",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "BBNI",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "BBRI",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "BBTN",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "BMRI",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "BRPT",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "BUMI",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "CPIN",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "CUAN",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "DEWA",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "EMTK",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "ESSA",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "EXCL",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "GOTO",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "HRTA",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "ICBP",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "INCO",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "INDF",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "INDY",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "INKP",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "ISAT",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "ITMG",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "JPFA",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "KLBF",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "MAPI",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "MBMA",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "MDKA",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "MEDC",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "NCKL",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "PGAS",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "PGEO",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "PTBA",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "SCMA",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "TLKM",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "UNTR",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "UNVR",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 0,
+      "total_count": 0
+    },
+    {
+      "symbol": "WIFI",
+      "status": "complete",
+      "start": "2023-09-25",
+      "pages": 1,
+      "rows": 2,
+      "total_count": 2
+    }
+  ],
+  "updated_at": "2026-09-26T12:59:28.881639+00:00",
+  "ledger": "data/raw/sectors/suspensions/lq45_request_ledger.jsonl"
+}

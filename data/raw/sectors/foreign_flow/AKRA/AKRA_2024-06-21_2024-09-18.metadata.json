@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/AKRA/?start=2024-06-21&end=2024-09-18",
+  "retrieved_at": "2026-09-25T03:18:36.310468+00:00",
+  "sha256": "e5de7848df052d95acf2c57bda88b5bc198ff56cb902d801c31a91c6e1022e1a",
+  "http_status": 200,
+  "request_number": 13,
+  "request_budget": 558,
+  "ticker": "AKRA",
+  "requested_start": "2024-06-21",
+  "requested_end": "2024-09-18",
+  "window_days": 90,
+  "snapshot_sha256": "0e321b2da7108e9c7d5bd8bf23eb993f291c10f9ba78cea760d66e99d7ae68d5"
+}

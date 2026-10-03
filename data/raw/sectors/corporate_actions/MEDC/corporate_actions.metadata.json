@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/corporate-actions/MEDC/",
+  "retrieved_at": "2026-09-26T14:26:25.704889+00:00",
+  "sha256": "0b7a10d724be0b759ddd2b4b38ebd27d194b62f67274f706c3209890efda802c",
+  "http_status": 200,
+  "request_number": 11,
+  "request_budget": 20,
+  "symbol": "MEDC",
+  "query_parameters": {},
+  "history_scope": "complete endpoint history; endpoint called without date filters",
+  "retry_of_prior_http_429": true,
+  "snapshot_sha256": "7a23128473077ab013dd04d72985b4935329ea81d82c7b2082f50cca600a4aeb"
+}

@@ -1,0 +1,18 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/filings/?symbol=WIFI&start=2023-09-25&end=2026-09-24&limit=30&offset=0",
+  "retrieved_at": "2026-09-26T12:26:03.349774+00:00",
+  "sha256": "7662c8e808426e15d524322fa39a91ec82c55774305d756001834e2cfe063bcc",
+  "http_status": 200,
+  "request_number": 9,
+  "request_budget": 577,
+  "run_id": "filings_full_20260926T122124Z",
+  "symbol": "WIFI",
+  "requested_start": "2023-09-25",
+  "requested_end": "2026-09-24",
+  "limit": 30,
+  "offset": 0,
+  "pagination_followed": true,
+  "snapshot_sha256": "ad6c52f00581e96aa00cbbf3b763405a928ef2c69cfddfe8c0bc88744e962efa"
+}

@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/HRTA/",
+  "retrieved_at": "2026-09-26T12:13:57.715059+00:00",
+  "sha256": "200a46cee45aa83c1f73a945467d58642f4a6c7cc9ec11b32300860baca3d749",
+  "http_status": 200,
+  "request_number": 6,
+  "request_budget": 10,
+  "symbol": "HRTA",
+  "request_scope": "approved company report collection",
+  "snapshot_sha256": "3097cf63f3b224d320b96ace0c8e9bc53b105c4e42bff5c0effb21dc6fac8414"
+}

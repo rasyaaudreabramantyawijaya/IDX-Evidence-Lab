@@ -1,0 +1,18 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/filings/?symbol=BBRI&start=2023-09-25&end=2026-09-24&limit=30&offset=0",
+  "retrieved_at": "2026-09-26T12:21:48.678559+00:00",
+  "sha256": "d341c2a8f8b789fe21ffa3bc2d5460881f1d9e23e596fe1a556f480ed5d7e23a",
+  "http_status": 200,
+  "request_number": 12,
+  "request_budget": 615,
+  "run_id": "filings_full_20260926T122124Z",
+  "symbol": "BBRI",
+  "requested_start": "2023-09-25",
+  "requested_end": "2026-09-24",
+  "limit": 30,
+  "offset": 0,
+  "pagination_followed": true,
+  "snapshot_sha256": "44fe17e8d0d9c8b601335e5db0023fe698fc2d6151d1c59d616a46d1449b47a2"
+}

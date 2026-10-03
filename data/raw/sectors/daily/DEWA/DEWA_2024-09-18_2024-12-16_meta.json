@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/DEWA/",
+  "ticker": "DEWA",
+  "start": "2024-09-18",
+  "end": "2024-12-16",
+  "retrieved_at": "2026-09-24T12:34:39.671609",
+  "http_status": 200,
+  "observations_count": 63,
+  "sha256": "9e2e6513a9fa3b95ca155a1b4dda24cd26bcb5bf4fd00d444477d0aa3cefb395"
+}

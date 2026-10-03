@@ -1,0 +1,17 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/filings/?symbol=BMRI&start=2026-08-26&end=2026-09-25&limit=30&offset=0",
+  "retrieved_at": "2026-09-25T12:34:08.498614+00:00",
+  "sha256": "58329747567e8cf63163ac69fc06c6570d3653d9ce29917f7c5cba06302b3cd4",
+  "http_status": 200,
+  "request_number": 13,
+  "request_budget": 15,
+  "symbol": "BMRI",
+  "requested_start": "2026-08-26",
+  "requested_end": "2026-09-25",
+  "limit": 30,
+  "offset": 0,
+  "pagination_followed": false,
+  "snapshot_sha256": "9c942592ec3bc629f5575c0fce5d6df02b386ae2b9e926f9811d4b04b06189f7"
+}

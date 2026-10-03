@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/AMMN/",
+  "retrieved_at": "2026-09-26T15:28:07.878923+00:00",
+  "sha256": "9469f155ea91a68c7ddc8226b5fd3302417baf7b4a540fa8ac2d26a525f49370",
+  "http_status": 200,
+  "request_number": 4,
+  "request_budget": 35,
+  "symbol": "AMMN",
+  "request_scope": "approved full company-report completion",
+  "snapshot_sha256": "6f285fa5fd7a60b96c94bba8014f08acf8dbc8882e45f6881e71c627c5f597d4"
+}

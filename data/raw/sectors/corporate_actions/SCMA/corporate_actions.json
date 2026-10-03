@@ -1,0 +1,89 @@
+{
+  "symbol": "SCMA.JK",
+  "corporate_actions": {
+    "agm": [
+      {
+        "agm_date": "2022-06-29",
+        "agm_time": "10:00:00",
+        "agm_place": "Ruang Studio Sctv, Lantai 8Sctv Tower - Senayan Cityjl. Asia Afrika Lot. 19Jakarta Pusat 10270",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2023-06-14",
+        "agm_time": "10:00:00",
+        "agm_place": "Ruang Studio Sctv, Lantai 8 Sctv Tower, Senayan City Jl. Asia Afrika Lot. 19Jakarta 10270",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2024-06-12",
+        "agm_time": null,
+        "agm_place": "",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2025-04-28",
+        "agm_time": "10:00:00",
+        "agm_place": "Studio Sctv, Lantai 8 Sctv Tower ? Senayan Cityjl. Asiaafrika Lot. 19, Jakarta 10270",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2026-05-21",
+        "agm_time": "10:00:00",
+        "agm_place": "Studio Sctv, Lantai 8, Sctv Tower ? Senayan City JL. Asia Afrika Lot. 19, Jakarta 10270",
+        "agm_result": "Agenda #1: Shareholders approved the 2025 Annual Report and audited Financial Statements, granting full discharge to the Board of Directors and Commissioners for their oversight.\nAgenda #2: The meeting approved the 2025 net profit usage, including a IDR 1 billion reserve fund and a total cash dividend of IDR 21.00 per share.\nAgenda #3: Authority was granted to the Board of Commissioners to determine the 2026 salary and remuneration for both the Board and Directors based on committee recommendations.\nAgenda #4: The Board of Commissioners was authorized to appoint a registered Public Accountant to audit the 2026 financial statements and determine the associated honorarium.\nAgenda #5: Shareholders reappointed the current Board of Directors and Board of Commissioners for a term ending at the 2031 Annual General Meeting.\nAgenda #6: Authority was reaffirmed and extended for the Board to implement a Management and Employee Stock Option Program (MESOP) for up to 400 million shares.\nAgenda #7: Shareholders approved the transfer of 10,405,866,225 treasury shares through a reduction of the company's issued and paid-up capital and the amendment of the Articles of Association."
+      }
+    ],
+    "bonus": null,
+    "warrant": null,
+    "dividend": [
+      {
+        "ex_date": "2023-06-23",
+        "payment_date": "2023-07-14",
+        "dividend_yield": 0.0380452,
+        "dividend_amount": 6.5
+      },
+      {
+        "ex_date": "2022-07-08",
+        "payment_date": "2022-07-29",
+        "dividend_yield": 0.0103219,
+        "dividend_amount": 2.5
+      },
+      {
+        "ex_date": "2024-06-25",
+        "payment_date": "2024-07-10",
+        "dividend_yield": 0.0358374,
+        "dividend_amount": 5
+      },
+      {
+        "ex_date": "2025-11-19",
+        "payment_date": "2025-12-09",
+        "dividend_yield": 0.0352227,
+        "dividend_amount": 9
+      },
+      {
+        "ex_date": "2025-05-08",
+        "payment_date": "2025-05-27",
+        "dividend_yield": 0.0704454,
+        "dividend_amount": 18
+      },
+      {
+        "ex_date": "2024-11-15",
+        "payment_date": "2024-12-06",
+        "dividend_yield": 0.0358374,
+        "dividend_amount": 5
+      }
+    ],
+    "right_issue": null,
+    "stock_split": [
+      {
+        "date": "2021-10-29",
+        "split_ratio": 5
+      },
+      {
+        "date": "2012-10-29",
+        "split_ratio": 5
+      }
+    ],
+    "upcoming_dividend": null
+  }
+}

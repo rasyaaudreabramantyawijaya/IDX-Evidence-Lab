@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/EXCL/?start=2024-03-23&end=2024-06-20",
+  "retrieved_at": "2026-09-25T03:34:01.286064+00:00",
+  "sha256": "6ec06473c8778720fe8650d80719da53ba97480e32fedfc615fb98805144b696",
+  "http_status": 200,
+  "request_number": 233,
+  "request_budget": 558,
+  "ticker": "EXCL",
+  "requested_start": "2024-03-23",
+  "requested_end": "2024-06-20",
+  "window_days": 90,
+  "snapshot_sha256": "2e86799af78573a2581a08503132c89033b4be65f8e9d6af16caa40e1fc7f4dc"
+}

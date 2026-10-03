@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/INCO/",
+  "retrieved_at": "2026-09-26T15:28:21.913217+00:00",
+  "sha256": "9cc1c279942889c2f483e82e2e2ca057e509628ee32a46568ae554f1e0e21a76",
+  "http_status": 200,
+  "request_number": 19,
+  "request_budget": 35,
+  "symbol": "INCO",
+  "request_scope": "approved full company-report completion",
+  "snapshot_sha256": "f17e798e34cbaf3cbe5270680a6667b2dc4a0ba4a0483833d0664ab6e42586ad"
+}

@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/NCKL/",
+  "retrieved_at": "2026-09-26T12:14:00.345524+00:00",
+  "sha256": "91dc4cc32fd283f893812031818797543e5330912a5e7608f53c86770a8383b6",
+  "http_status": 200,
+  "request_number": 8,
+  "request_budget": 10,
+  "symbol": "NCKL",
+  "request_scope": "approved company report collection",
+  "snapshot_sha256": "86494e023876231e90786baf5b6db6633c2269a08ed9a70e4ab568de0b7e25ac"
+}

@@ -1,0 +1,47 @@
+{
+  "results": [
+    {
+      "title": "Roberto Lorato sells shares of Medco Energi Internasional",
+      "body": "Roberto Lorato sold 3,000,000 shares of Medco Energi Internasional. This decreases their holdings from 13,134,130 to 10,134,130 shares. The stated purpose of the transaction was personal.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-25092026-5441-00.pdf-0.pdf",
+      "timestamp": "2026-09-25T15:25:04",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "MEDC.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Roberto Lorato",
+      "holding_before": 13134130,
+      "holding_after": 10134130,
+      "amount_transaction": 3000000,
+      "price": 1500.0,
+      "transaction_value": 4500000000.0,
+      "price_transaction": [
+        {
+          "date": "2026-09-07",
+          "type": "sell",
+          "price": 1500,
+          "amount_transacted": 3000000
+        }
+      ],
+      "share_percentage_before": 0.05,
+      "share_percentage_after": 0.04,
+      "share_percentage_transaction": 0.01,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    }
+  ],
+  "pagination": {
+    "total_count": 1,
+    "showing": 1,
+    "limit": 30,
+    "offset": 0,
+    "has_next": false,
+    "has_previous": false,
+    "next_offset": null,
+    "previous_offset": null
+  }
+}

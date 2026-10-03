@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/KLBF/?start=2025-03-18&end=2025-06-15",
+  "retrieved_at": "2026-09-25T03:44:07.074712+00:00",
+  "sha256": "49b2fde7aed91bfe73835ce570742502173374dcc9f44bb65877421bc578660e",
+  "http_status": 200,
+  "request_number": 380,
+  "request_budget": 558,
+  "ticker": "KLBF",
+  "requested_start": "2025-03-18",
+  "requested_end": "2025-06-15",
+  "window_days": 90,
+  "snapshot_sha256": "cb938f5fc18ed604559b263a9198704bc5e7ef181c32177f03335c8b96a2b1ff"
+}

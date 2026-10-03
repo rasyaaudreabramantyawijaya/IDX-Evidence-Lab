@@ -1,0 +1,14 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/corporate-actions/EXCL/",
+  "retrieved_at": "2026-09-26T14:12:04.257611+00:00",
+  "sha256": "4d8bdf123c5c0f07d24eabb37e2809b4d09acf9823d0942c74e88b8cdaa3f71d",
+  "http_status": 200,
+  "request_number": 21,
+  "request_budget": 45,
+  "symbol": "EXCL",
+  "query_parameters": {},
+  "history_scope": "complete endpoint history; endpoint called without date filters",
+  "snapshot_sha256": "b9afa21f1caf4961df413eba3c8ff3224e208ec87694d3e748eb10232549ce78"
+}

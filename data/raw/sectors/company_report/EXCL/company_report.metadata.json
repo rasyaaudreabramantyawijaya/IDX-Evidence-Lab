@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/EXCL/",
+  "retrieved_at": "2026-09-26T15:28:19.218377+00:00",
+  "sha256": "6c16fa97063bf6e7126dde4af713d48871bb29951a4b0c14b8b4ed6678896818",
+  "http_status": 200,
+  "request_number": 16,
+  "request_budget": 35,
+  "symbol": "EXCL",
+  "request_scope": "approved full company-report completion",
+  "snapshot_sha256": "bea8e5ae14da806026b9fe4a7e03af6726763cb25165336f3dca6931d6e4f440"
+}

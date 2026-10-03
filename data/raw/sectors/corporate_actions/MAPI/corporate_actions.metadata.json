@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/corporate-actions/MAPI/",
+  "retrieved_at": "2026-09-26T14:26:18.852011+00:00",
+  "sha256": "a7a8754b11b5b667700fbc2c023cf5400d2d0fcc52c7fb8a8352a1ec70c9fce6",
+  "http_status": 200,
+  "request_number": 8,
+  "request_budget": 20,
+  "symbol": "MAPI",
+  "query_parameters": {},
+  "history_scope": "complete endpoint history; endpoint called without date filters",
+  "retry_of_prior_http_429": true,
+  "snapshot_sha256": "227e098965f36b777eaff5ee50cb766cc44ade47197c246983de69d31e159206"
+}

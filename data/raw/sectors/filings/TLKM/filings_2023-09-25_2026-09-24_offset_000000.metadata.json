@@ -1,0 +1,18 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/filings/?symbol=TLKM&start=2023-09-25&end=2026-09-24&limit=30&offset=0",
+  "retrieved_at": "2026-09-26T12:25:53.339395+00:00",
+  "sha256": "afe26ffac4edebc6e8198b71c45c3ce4fa31e2de14410640b6f4632e333743a8",
+  "http_status": 200,
+  "request_number": 6,
+  "request_budget": 577,
+  "run_id": "filings_full_20260926T122124Z",
+  "symbol": "TLKM",
+  "requested_start": "2023-09-25",
+  "requested_end": "2026-09-24",
+  "limit": 30,
+  "offset": 0,
+  "pagination_followed": true,
+  "snapshot_sha256": "346e819a90e6550448d49773363d4d6ab534ef2de43eb5f3cf9821ca6d58ec23"
+}

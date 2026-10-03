@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/INCO/",
+  "ticker": "INCO",
+  "start": "2025-03-17",
+  "end": "2025-06-14",
+  "retrieved_at": "2026-09-24T12:38:10.083489",
+  "http_status": 200,
+  "observations_count": 50,
+  "sha256": "cc2be9932037b1dffb0b6692200477a7dd201cb9844e0e898a3754c759d2188b"
+}

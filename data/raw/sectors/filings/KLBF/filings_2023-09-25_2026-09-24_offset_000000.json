@@ -1,0 +1,380 @@
+{
+  "results": [
+    {
+      "title": "Ferdinand Aryanto buys shares of Kalbe Farma",
+      "body": "This transaction is part of a cluster-buy transaction amidst other insider buys during the last 6 months. Ferdinand Aryanto's insider purchase comes after B. R Irawati Setiady, Sie Djohan, Kartika Setiabudy, Mulialie and 2 other insiders in Kalbe Farma, totaling an accumulation of 625,700 shares transacted at an average price of IDR 870.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-24082026-4295-00.pdf-0.pdf",
+      "timestamp": "2026-08-24T10:05:15",
+      "sector": "healthcare",
+      "sub_sector": "pharmaceuticals-health-care-research",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "KLBF.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Ferdinand Aryanto",
+      "holding_before": 360000,
+      "holding_after": 410000,
+      "amount_transaction": 50000,
+      "price": 810.0,
+      "transaction_value": 40500000.0,
+      "price_transaction": [
+        {
+          "date": "2026-08-21",
+          "type": "buy",
+          "price": 810,
+          "amount_transacted": 50000
+        }
+      ],
+      "share_percentage_before": 0.001,
+      "share_percentage_after": 0.001,
+      "share_percentage_transaction": 0.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Ronny Hadiana buys shares of Kalbe Farma",
+      "body": "This transaction is part of a cluster-buy transaction amidst other insider buys during the last 6 months. Ronny Hadiana's insider purchase comes after B. R Irawati Setiady, Sie Djohan, Kartika Setiabudy, Mulialie and 1 other insiders in Kalbe Farma, totaling an accumulation of 575,700 shares transacted at an average price of IDR 876.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-10072026-4527-00.pdf-0.pdf",
+      "timestamp": "2026-07-10T09:05:36",
+      "sector": "healthcare",
+      "sub_sector": "pharmaceuticals-health-care-research",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "KLBF.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Ronny Hadiana",
+      "holding_before": 93571007,
+      "holding_after": 93572007,
+      "amount_transaction": 1000,
+      "price": 720.0,
+      "transaction_value": 720000.0,
+      "price_transaction": [
+        {
+          "date": "2026-07-09",
+          "type": "buy",
+          "price": 720,
+          "amount_transacted": 1000
+        }
+      ],
+      "share_percentage_before": 0.2,
+      "share_percentage_after": 0.2,
+      "share_percentage_transaction": 0.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Jos Iwan Atmadjaja buys shares of Kalbe Farma",
+      "body": "This transaction is part of a cluster-buy transaction amidst other insider buys during the last 6 months. Jos Iwan Atmadjaja's insider purchase comes after Ferdinand Aryanto, B. R Irawati Setiady, Sie Djohan, Kartika Setiabudy and 1 other insiders in Kalbe Farma, totaling an accumulation of 594,700 shares transacted at an average price of IDR 885.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-05052026-7538-00.pdf-0.pdf",
+      "timestamp": "2026-05-05T16:27:19",
+      "sector": "healthcare",
+      "sub_sector": "pharmaceuticals-health-care-research",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "KLBF.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Jos Iwan Atmadjaja",
+      "holding_before": 0,
+      "holding_after": 114940,
+      "amount_transaction": 114940,
+      "price": 876.0,
+      "transaction_value": 100687440.0,
+      "price_transaction": [
+        {
+          "date": "2026-04-29",
+          "type": "buy",
+          "price": 876,
+          "amount_transacted": 114940
+        }
+      ],
+      "share_percentage_before": 0.0,
+      "share_percentage_after": 0.0,
+      "share_percentage_transaction": 0.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Mulialie buys shares of Kalbe Farma",
+      "body": "This transaction is part of a cluster-buy transaction amidst other insider buys during the last 6 months. Mulialie's insider purchase comes after Ferdinand Aryanto, B. R Irawati Setiady, Sie Djohan and Kartika Setiabudy in Kalbe Farma, totaling an accumulation of 479,760 shares transacted at an average price of IDR 888.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-05052026-0928-00.pdf-0.pdf",
+      "timestamp": "2026-05-05T16:26:16",
+      "sector": "healthcare",
+      "sub_sector": "pharmaceuticals-health-care-research",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "KLBF.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Mulialie",
+      "holding_before": 250045,
+      "holding_after": 364985,
+      "amount_transaction": 114940,
+      "price": 876.0,
+      "transaction_value": 100687440.0,
+      "price_transaction": [
+        {
+          "date": "2026-04-29",
+          "type": "buy",
+          "price": 876,
+          "amount_transacted": 114940
+        }
+      ],
+      "share_percentage_before": 0.001,
+      "share_percentage_after": 0.001,
+      "share_percentage_transaction": 0.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Kartika Setiabudy buys shares of Kalbe Farma",
+      "body": "This transaction is part of a cluster-buy transaction amidst other insider buys during the last 6 months. Kartika Setiabudy's insider purchase comes after Ferdinand Aryanto, B. R Irawati Setiady and Sie Djohan in Kalbe Farma, totaling an accumulation of 364,820 shares transacted at an average price of IDR 891.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-05052026-2391-00.pdf-0.pdf",
+      "timestamp": "2026-05-05T16:25:04",
+      "sector": "healthcare",
+      "sub_sector": "pharmaceuticals-health-care-research",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "KLBF.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Kartika Setiabudy",
+      "holding_before": 0,
+      "holding_after": 114940,
+      "amount_transaction": 114940,
+      "price": 876.0,
+      "transaction_value": 100687440.0,
+      "price_transaction": [
+        {
+          "date": "2026-04-29",
+          "type": "buy",
+          "price": 876,
+          "amount_transacted": 114940
+        }
+      ],
+      "share_percentage_before": 0.0,
+      "share_percentage_after": 0.0,
+      "share_percentage_transaction": 0.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Sie Djohan buys shares of Kalbe Farma",
+      "body": "This transaction is part of a cluster-buy transaction amidst other insider buys during the last 6 months. Sie Djohan's insider purchase comes after Ferdinand Aryanto and B. R Irawati Setiady in Kalbe Farma, totaling an accumulation of 249,880 shares transacted at an average price of IDR 899.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-05052026-6145-00.pdf-0.pdf",
+      "timestamp": "2026-05-05T16:23:47",
+      "sector": "healthcare",
+      "sub_sector": "pharmaceuticals-health-care-research",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "KLBF.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Sie Djohan",
+      "holding_before": 0,
+      "holding_after": 114940,
+      "amount_transaction": 114940,
+      "price": 876.0,
+      "transaction_value": 100687440.0,
+      "price_transaction": [
+        {
+          "date": "2026-04-29",
+          "type": "buy",
+          "price": 876,
+          "amount_transacted": 114940
+        }
+      ],
+      "share_percentage_before": 0.0,
+      "share_percentage_after": 0.0,
+      "share_percentage_transaction": 0.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "B. R Irawati Setiady buys shares of Kalbe Farma",
+      "body": "B. R Irawati Setiady bought 114,940 shares of Kalbe Farma. This increases their holdings from 21,588,000 to 21,702,940 shares. The stated purpose of the transaction was investment.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-05052026-4286-00.pdf-0.pdf",
+      "timestamp": "2026-05-05T16:22:16",
+      "sector": "healthcare",
+      "sub_sector": "pharmaceuticals-health-care-research",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "KLBF.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "B. R Irawati Setiady",
+      "holding_before": 21588000,
+      "holding_after": 21702940,
+      "amount_transaction": 114940,
+      "price": 876.0,
+      "transaction_value": 100687440.0,
+      "price_transaction": [
+        {
+          "date": "2026-04-29",
+          "type": "buy",
+          "price": 876,
+          "amount_transacted": 114940
+        }
+      ],
+      "share_percentage_before": 0.046,
+      "share_percentage_after": 0.046,
+      "share_percentage_transaction": 0.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Ferdinand Aryanto buys shares of Kalbe Farma",
+      "body": "Ferdinand Aryanto bought 20,000 shares of Kalbe Farma. This increases their holdings from 340,000 to 360,000 shares. The stated purpose of the transaction was investment.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-15122025-2000-00.pdf-0.pdf",
+      "timestamp": "2025-12-15T09:08:22",
+      "sector": "healthcare",
+      "sub_sector": "pharmaceuticals-health-care-research",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "KLBF.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Ferdinand Aryanto",
+      "holding_before": 340000,
+      "holding_after": 360000,
+      "amount_transaction": 20000,
+      "price": 1157.5,
+      "transaction_value": 23150000.0,
+      "price_transaction": [
+        {
+          "date": "2025-12-08",
+          "type": "sell",
+          "price": 1190.0,
+          "amount_transacted": 10000
+        },
+        {
+          "date": "2025-12-10",
+          "type": "buy",
+          "price": 1170.0,
+          "amount_transacted": 20000
+        },
+        {
+          "date": "2025-12-11",
+          "type": "buy",
+          "price": 1165.0,
+          "amount_transacted": 10000
+        }
+      ],
+      "share_percentage_before": 0.001,
+      "share_percentage_after": 0.001,
+      "share_percentage_transaction": 0.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Ferdinand Aryanto Buy Transaction of Kalbe Farma",
+      "body": "On October 02, 2025, Ferdinand Aryanto, an insider shareholder, bought 340,000 shares of Kalbe Farma changing its holding from 0 to 340,000 shares.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202510/4e48bf0011_6372801bc2.pdf",
+      "timestamp": "2025-10-02T16:12:44",
+      "sector": "healthcare",
+      "sub_sector": "pharmaceuticals-health-care-research",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "KLBF.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Ferdinand Aryanto",
+      "holding_before": 0,
+      "holding_after": 340000,
+      "amount_transaction": 340000,
+      "price": 1181.91,
+      "transaction_value": 401850000.0,
+      "price_transaction": [
+        {
+          "date": "2025-08-29",
+          "type": "buy",
+          "price": 1215.0,
+          "amount_transacted": 100000
+        },
+        {
+          "date": "2025-09-01",
+          "type": "buy",
+          "price": 1168.0,
+          "amount_transacted": 40000
+        },
+        {
+          "date": "2025-09-02",
+          "type": "buy",
+          "price": 1171.0,
+          "amount_transacted": 180000
+        },
+        {
+          "date": "2025-09-09",
+          "type": "buy",
+          "price": 1140.0,
+          "amount_transacted": 10000
+        },
+        {
+          "date": "2025-09-10",
+          "type": "buy",
+          "price": 1145.0,
+          "amount_transacted": 10000
+        }
+      ],
+      "share_percentage_before": 0.0,
+      "share_percentage_after": 0.001,
+      "share_percentage_transaction": 0.001,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Kalbe Farma Sell Transaction of Enseval Putera Megatrading",
+      "body": "Kalbe Farma an insider, sold 5,500,000 shares of Enseval Putera Megatrading reducing its holding from 2,496,785,795 to 2,491,285,795. The transaction occurred in the healthcare sector, specifically pharmaceuticals and healthcare research. The purpose of the transaction is not disclosed.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202509/128254602a_d4e082b28e.pdf",
+      "timestamp": "2025-10-02T09:00:00",
+      "sector": "healthcare",
+      "sub_sector": "pharmaceuticals-health-care-research",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "KLBF.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Kalbe Farma",
+      "holding_before": 2496785795,
+      "holding_after": 2491285795,
+      "amount_transaction": 5500000,
+      "price": 2400.0,
+      "transaction_value": 13200000000.0,
+      "price_transaction": [
+        {
+          "date": "2025-09-25",
+          "type": "sell",
+          "price": 2400,
+          "amount_transacted": 5500000
+        }
+      ],
+      "share_percentage_before": 92.18,
+      "share_percentage_after": 91.98,
+      "share_percentage_transaction": 0.2,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    }
+  ],
+  "pagination": {
+    "total_count": 10,
+    "showing": 10,
+    "limit": 30,
+    "offset": 0,
+    "has_next": false,
+    "has_previous": false,
+    "next_offset": null,
+    "previous_offset": null
+  }
+}

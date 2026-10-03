@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/ADMR/",
+  "ticker": "ADMR",
+  "start": "2025-06-15",
+  "end": "2025-09-12",
+  "retrieved_at": "2026-09-24T12:22:37.275567",
+  "http_status": 200,
+  "observations_count": 62,
+  "sha256": "84bf227188a4bead2a81e208bba343d644d4d3ee956f38d640e4f03444637e24"
+}

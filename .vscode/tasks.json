@@ -1,0 +1,35 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "IDX Evidence Lab: Local API (5501)",
+      "type": "process",
+      "command": "python3",
+      "args": [
+        "${workspaceFolder}/scripts/run_portfolio_api_sidecar.py"
+      ],
+      "isBackground": true,
+      "problemMatcher": {
+        "owner": "idx-evidence-lab-api",
+        "pattern": [
+          {
+            "regexp": ".*"
+          }
+        ],
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "STARTING: IDX Evidence Lab API",
+          "endsPattern": "READY: IDX Evidence Lab API"
+        }
+      },
+      "runOptions": {
+        "runOn": "folderOpen"
+      },
+      "presentation": {
+        "reveal": "never",
+        "panel": "dedicated",
+        "clear": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/CUAN/",
+  "ticker": "CUAN",
+  "start": "2023-09-24",
+  "end": "2023-12-22",
+  "retrieved_at": "2026-09-24T12:34:05.682848",
+  "http_status": 200,
+  "observations_count": 64,
+  "sha256": "516f5bc33f1d2c8814450994832ce73d732cb911b5407391e766a32e8b09b666"
+}

@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/MAPI/",
+  "ticker": "MAPI",
+  "start": "2025-03-17",
+  "end": "2025-06-14",
+  "retrieved_at": "2026-09-24T12:42:50.679984",
+  "http_status": 200,
+  "observations_count": 50,
+  "sha256": "62996f8493f27173768fd5077e39f638a8b289d34a64ea569d4aaeed8d7eb906"
+}

@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/EMTK/",
+  "retrieved_at": "2026-09-26T12:13:56.444053+00:00",
+  "sha256": "734e7dae17f8ea89bcc8725160c04d5481dd02a57e36d12f37455177dbe16d40",
+  "http_status": 200,
+  "request_number": 5,
+  "request_budget": 10,
+  "symbol": "EMTK",
+  "request_scope": "approved company report collection",
+  "snapshot_sha256": "e0ab33d07f93bd4b26c631d726ffb14af23efb5c8b1af88d0ec117f23d45f2bd"
+}

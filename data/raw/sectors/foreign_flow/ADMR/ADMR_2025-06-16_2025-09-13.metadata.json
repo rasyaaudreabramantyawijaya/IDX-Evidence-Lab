@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/ADMR/?start=2025-06-16&end=2025-09-13",
+  "retrieved_at": "2026-09-25T03:12:46.253130+00:00",
+  "sha256": "ffbabc0d768c4489609cb422968e01421c679a84c8d8ccf9d5e08c002cd98944",
+  "http_status": 200,
+  "request_number": 16,
+  "request_budget": 584,
+  "ticker": "ADMR",
+  "requested_start": "2025-06-16",
+  "requested_end": "2025-09-13",
+  "window_days": 90,
+  "snapshot_sha256": "b85099ebb6a709937517f397b8cfac2768e46c8b475173e399a23ba043632dc3"
+}

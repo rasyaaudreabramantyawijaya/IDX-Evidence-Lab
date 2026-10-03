@@ -1,0 +1,18 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/filings/?symbol=PGAS&start=2023-09-25&end=2026-09-24&limit=30&offset=0",
+  "retrieved_at": "2026-09-26T12:25:40.157966+00:00",
+  "sha256": "ab517e6a26fa311f577dbeb371c8a98aba4cd09a5752f7ceb3686ffe5073da38",
+  "http_status": 200,
+  "request_number": 2,
+  "request_budget": 577,
+  "run_id": "filings_full_20260926T122124Z",
+  "symbol": "PGAS",
+  "requested_start": "2023-09-25",
+  "requested_end": "2026-09-24",
+  "limit": 30,
+  "offset": 0,
+  "pagination_followed": true,
+  "snapshot_sha256": "12eaf6640dc0edcfd090f71d6a4dbb955d16e44cf2562f69f8c873fee2d9b9ec"
+}

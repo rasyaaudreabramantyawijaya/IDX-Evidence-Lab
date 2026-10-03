@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/corporate-actions/MBMA/",
+  "retrieved_at": "2026-09-26T14:26:21.149376+00:00",
+  "sha256": "055207df26c93bc28a7ac5cd9a0483f37cf248cddbc9f0c5ff369fe7cd0129a9",
+  "http_status": 200,
+  "request_number": 9,
+  "request_budget": 20,
+  "symbol": "MBMA",
+  "query_parameters": {},
+  "history_scope": "complete endpoint history; endpoint called without date filters",
+  "retry_of_prior_http_429": true,
+  "snapshot_sha256": "9095ceabb422e20f2f1ef97fb137df9c09d92f51358893c7bac81ff2a585621d"
+}

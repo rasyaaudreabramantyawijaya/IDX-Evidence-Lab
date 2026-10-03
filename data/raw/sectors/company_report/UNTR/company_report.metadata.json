@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/UNTR/",
+  "retrieved_at": "2026-09-26T15:55:21.898111+00:00",
+  "sha256": "d2249625f9d84de91b49e04e673e7500e1f719f2faa44be6ff55adad77c61bc2",
+  "http_status": 200,
+  "request_number": 9,
+  "request_budget": 10,
+  "symbol": "UNTR",
+  "request_scope": "approved retry after cooldown",
+  "snapshot_sha256": "18afbbfba3bfaefd770e67fad378ab578730074b96939cee20ae955d56d1647f"
+}

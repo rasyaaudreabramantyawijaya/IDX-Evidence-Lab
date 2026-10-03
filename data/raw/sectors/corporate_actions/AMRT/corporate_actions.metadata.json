@@ -1,0 +1,14 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/corporate-actions/AMRT/",
+  "retrieved_at": "2026-09-26T14:11:57.988523+00:00",
+  "sha256": "22a2b094fdfca72c5071d915cb8cbd0f85e16e7e36fce82bfd0423dbb50432f5",
+  "http_status": 200,
+  "request_number": 6,
+  "request_budget": 45,
+  "symbol": "AMRT",
+  "query_parameters": {},
+  "history_scope": "complete endpoint history; endpoint called without date filters",
+  "snapshot_sha256": "6044835a0d1ddcb7a0b0bc0fabc290fdb721887391e9517b3055fd9f653badb2"
+}

@@ -1,0 +1,14 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/corporate-actions/HRTA/",
+  "retrieved_at": "2026-09-26T14:12:04.782247+00:00",
+  "sha256": "5b2b43891643d14883bd777e8a049f3c13c07319c3c5303132e7972563f6b9e4",
+  "http_status": 200,
+  "request_number": 23,
+  "request_budget": 45,
+  "symbol": "HRTA",
+  "query_parameters": {},
+  "history_scope": "complete endpoint history; endpoint called without date filters",
+  "snapshot_sha256": "cb309e525fde417a9f5066bad8c1954e2dc64372bd0af3ba4366db26998883a6"
+}

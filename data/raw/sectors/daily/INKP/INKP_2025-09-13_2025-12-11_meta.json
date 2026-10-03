@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/INKP/",
+  "ticker": "INKP",
+  "start": "2025-09-13",
+  "end": "2025-12-11",
+  "retrieved_at": "2026-09-24T12:39:47.148139",
+  "http_status": 200,
+  "observations_count": 64,
+  "sha256": "5d8ff4eda898fbdb573b514e3335ae1eb246856c3532595f296d331af237cbc1"
+}

@@ -1,0 +1,16 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/index-daily/lq45/?start=2026-06-11&end=2026-09-08",
+  "retrieved_at": "2026-09-28T20:21:13.331256+00:00",
+  "sha256": "336bb03b06dded905d06a50fa89a11a12de583ddc3d30fa5c9b9e7f9415b4b08",
+  "http_status": 200,
+  "request_number": 12,
+  "request_budget": 13,
+  "index_code": "lq45",
+  "requested_start": "2026-06-11",
+  "requested_end": "2026-09-08",
+  "window_days": 90,
+  "window_inclusive_days": 90,
+  "snapshot_sha256": "ae541fbc704e2a166c6ea5c3ae3f5a18d7fa9c856d2ce25832b056b89b9fdcf2"
+}

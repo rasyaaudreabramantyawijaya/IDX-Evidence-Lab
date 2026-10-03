@@ -1,0 +1,255 @@
+{
+  "results": [
+    {
+      "title": "Change in Samudra (Investment) (“Sipl”)'s position in Mitra Adiperkasa",
+      "body": "Samudra (Investment) (“Sipl”) executed a transaction for 151 shares of Mitra Adiperkasa. Their holdings remain at 4,980,000,000 shares. The stated purpose of the transaction was no purpose.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202608/010ed6d730_f6275b957d.pdf",
+      "timestamp": "2026-08-06T17:13:14",
+      "sector": "consumer-cyclicals",
+      "sub_sector": "retailing",
+      "tags": [],
+      "symbol": "MAPI.JK",
+      "transaction_type": "others",
+      "holder_type": "insider",
+      "holder_name": "Samudra (Investment) (“Sipl”)",
+      "holding_before": 4980000000,
+      "holding_after": 4980000000,
+      "amount_transaction": 151,
+      "price": 0.0,
+      "transaction_value": 0.0,
+      "price_transaction": [
+        {
+          "date": "2026-08-03",
+          "type": "others",
+          "price": null,
+          "amount_transacted": 51
+        },
+        {
+          "date": "2026-08-03",
+          "type": "others",
+          "price": null,
+          "amount_transacted": 49
+        },
+        {
+          "date": "2026-08-03",
+          "type": "others",
+          "price": null,
+          "amount_transacted": 51
+        }
+      ],
+      "share_percentage_before": 30.0,
+      "share_percentage_after": 30.0,
+      "share_percentage_transaction": 0.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Pacific Universal Investments buys shares of Mitra Adiperkasa",
+      "body": "This transaction is part of a cluster-buy transaction amidst other insider buys during the last 6 months. Pacific Universal Investments's insider purchase comes after Pacific Universal Investments Pte Ltd, Samudra (Investment) and Ocean Continuum in Mitra Adiperkasa, totaling an accumulation of 20,497,303,804 shares transacted at an average price of IDR 1,486.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-03082026-5759-00.pdf-0.pdf",
+      "timestamp": "2026-08-03T18:33:02",
+      "sector": "consumer-cyclicals",
+      "sub_sector": "retailing",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "MAPI.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Pacific Universal Investments",
+      "holding_before": 8466000000,
+      "holding_after": 14481151902,
+      "amount_transaction": 6015151902,
+      "price": 1550.0,
+      "transaction_value": 9323485448100.0,
+      "price_transaction": [
+        {
+          "date": "2026-07-29",
+          "type": "buy",
+          "price": 1550,
+          "amount_transacted": 6015151902
+        }
+      ],
+      "share_percentage_before": 51.0,
+      "share_percentage_after": 87.24,
+      "share_percentage_transaction": 36.24,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Ocean Continuum buys shares of Mitra Adiperkasa",
+      "body": "This transaction is part of a cluster-buy transaction amidst other insider buys during the last 6 months. Ocean Continuum's insider purchase comes after Pacific Universal Investments, Pacific Universal Investments Pte Ltd and Samudra (Investment) in Mitra Adiperkasa, totaling an accumulation of 14,482,151,902 shares transacted at an average price of IDR 1,459.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-03082026-7286-00.pdf-0.pdf",
+      "timestamp": "2026-08-03T18:29:00",
+      "sector": "consumer-cyclicals",
+      "sub_sector": "retailing",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "MAPI.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Ocean Continuum",
+      "holding_before": 0,
+      "holding_after": 1035151902,
+      "amount_transaction": 1035151902,
+      "price": 1550.0,
+      "transaction_value": 1604485448100.0,
+      "price_transaction": [
+        {
+          "date": "2026-07-29",
+          "type": "buy",
+          "price": 1550,
+          "amount_transacted": 1035151902
+        }
+      ],
+      "share_percentage_before": 0.0,
+      "share_percentage_after": 6.24,
+      "share_percentage_transaction": 6.24,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Samudra (Investment) buys shares of Mitra Adiperkasa",
+      "body": "Samudra (Investment) bought 4,980,000,000 shares of Mitra Adiperkasa. This increases their holdings from 0 to 4,980,000,000 shares. The stated purpose of the transaction was proceeds from the mandatory tender offer.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-03082026-6797-00.pdf-0.pdf",
+      "timestamp": "2026-08-03T18:25:57",
+      "sector": "consumer-cyclicals",
+      "sub_sector": "retailing",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "MAPI.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Samudra (Investment)",
+      "holding_before": 0,
+      "holding_after": 4980000000,
+      "amount_transaction": 4980000000,
+      "price": 1550.0,
+      "transaction_value": 7719000000000.0,
+      "price_transaction": [
+        {
+          "date": "2026-07-29",
+          "type": "buy",
+          "price": 1550,
+          "amount_transacted": 4980000000
+        }
+      ],
+      "share_percentage_before": 0.0,
+      "share_percentage_after": 30.0,
+      "share_percentage_transaction": 30.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Pacific Universal Investments Pte Ltd buys shares of PT Mitra Adiperkasa Tbk",
+      "body": "Pacific Universal Investments Pte Ltd bought 1,000,000 shares of PT Mitra Adiperkasa Tbk. This increases their holdings from 83,660,000 to 84,660,000 shares.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-09052026-9895-00.pdf-0.pdf",
+      "timestamp": "2026-05-12T07:02:00",
+      "sector": "consumer-cyclicals",
+      "sub_sector": "retailing",
+      "tags": [
+        "share-transfer",
+        "takeover"
+      ],
+      "symbol": "MAPI.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Pacific Universal Investments Pte Ltd",
+      "holding_before": 83660000,
+      "holding_after": 84660000,
+      "amount_transaction": 1000000,
+      "price": 1395.0,
+      "transaction_value": 1395000000.0,
+      "price_transaction": [
+        {
+          "date": "2026-05-08",
+          "type": "buy",
+          "price": 1395,
+          "amount_transacted": 1000000
+        }
+      ],
+      "share_percentage_before": 0.0,
+      "share_percentage_after": 51.0,
+      "share_percentage_transaction": 51.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Pacific Universal Investments buys shares of Mitra Adiperkasa",
+      "body": "Pacific Universal Investments bought 8,466,000,000 shares of Mitra Adiperkasa. This increases their holdings from 0 to 8,466,000,000 shares. The stated purpose of the transaction was acquirer.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-11052026-4992-00.pdf-0.pdf",
+      "timestamp": "2026-05-11T13:37:12",
+      "sector": "consumer-cyclicals",
+      "sub_sector": "retailing",
+      "tags": null,
+      "symbol": "MAPI.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Pacific Universal Investments",
+      "holding_before": 0,
+      "holding_after": 8466000000,
+      "amount_transaction": 8466000000,
+      "price": 1395.0,
+      "transaction_value": 11810070000000.0,
+      "price_transaction": [
+        {
+          "date": "2026-05-08",
+          "type": "buy",
+          "price": 1395,
+          "amount_transacted": 8466000000
+        }
+      ],
+      "share_percentage_before": 0.0,
+      "share_percentage_after": 51.0,
+      "share_percentage_transaction": 51.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Satya Mulia Gema Gemilang sells shares of Mitra Adiperkasa",
+      "body": "Satya Mulia Gema Gemilang sold 8,466,000,000 shares of Mitra Adiperkasa. This decreases their holdings from 8,466,000,000 to 0 shares. The stated purpose of the transaction was divestiture.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-11052026-9474-00.pdf-0.pdf",
+      "timestamp": "2026-05-11T11:52:34",
+      "sector": "consumer-cyclicals",
+      "sub_sector": "retailing",
+      "tags": [
+        "divestment",
+        "takeover"
+      ],
+      "symbol": "MAPI.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Satya Mulia Gema Gemilang",
+      "holding_before": 8466000000,
+      "holding_after": 0,
+      "amount_transaction": 8466000000,
+      "price": 1395.0,
+      "transaction_value": 11810070000000.0,
+      "price_transaction": [
+        {
+          "date": "2026-05-08",
+          "type": "sell",
+          "price": 1395,
+          "amount_transacted": 8466000000
+        }
+      ],
+      "share_percentage_before": 51.0,
+      "share_percentage_after": 0.0,
+      "share_percentage_transaction": 51.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    }
+  ],
+  "pagination": {
+    "total_count": 7,
+    "showing": 7,
+    "limit": 30,
+    "offset": 0,
+    "has_next": false,
+    "has_previous": false,
+    "next_offset": null,
+    "previous_offset": null
+  }
+}

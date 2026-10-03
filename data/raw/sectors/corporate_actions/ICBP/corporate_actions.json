@@ -1,0 +1,91 @@
+{
+  "symbol": "ICBP.JK",
+  "corporate_actions": {
+    "agm": [
+      {
+        "agm_date": "2022-07-22",
+        "agm_time": "10:00:00",
+        "agm_place": "Sudirman Plaza, Indofood Tower Lantai Phjl. Jend. Sudirman Kav. 76-78Jakarta Selatan 12910",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2023-06-23",
+        "agm_time": "10:00:00",
+        "agm_place": "Sudirman Plaza, Indofood Tower Lantai Phjl. Jend. Sudirman Kav. 76-78Jakarta Selatan 12910",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2024-06-28",
+        "agm_time": null,
+        "agm_place": "",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2025-06-20",
+        "agm_time": "10:00:00",
+        "agm_place": "Sudirman Plaza, Indofood Tower Lantai Ph, Jalan Jenderal Sudirman Kav. 76-78, Jakarta 12910",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2026-06-26",
+        "agm_time": "10:00:00",
+        "agm_place": "Sudirman Plaza, Indofood Tower Lantai PH, Jalan Jenderal Sudirman Kav. 76-78, Jakarta 12910",
+        "agm_result": "Agenda #1: Acceptance and approval of the Annual Report on business activities and financial performance for the fiscal year ended December 31, 2025, approved with 99.089% votes in favor; quorum 90.088%.\nAgenda #2: Ratification of the company's audited financial statements, including the balance sheet and statement of finance for the year ended December 31, 2025, approved with 99.079% in favor; audited by Purwanto Susanti dan Surja.\nAgenda #3: Determination of net profit usage, including setting aside Rp5 billion as a reserve fund, a cash dividend of Rp265 per share, and retaining the remainder as unappropriated retained earnings, approved with 99.114% in favor.\nAgenda #4: Determination of maximum total remuneration for the Board of Commissioners and Directors from January 1, 2026 to December 31, 2026, set at Rp140,000,000,000 before tax, approved with 95.407% in favor.\nAgenda #5: Appointment of Purwanto Susanti dan Surja as the registered Public Accountant for the 2026 fiscal year audit, with authorization for the Board to set the fee and conditions, approved with 98.826% in favor."
+      }
+    ],
+    "bonus": null,
+    "warrant": null,
+    "dividend": [
+      {
+        "ex_date": "2025-07-02",
+        "payment_date": "2025-07-22",
+        "dividend_yield": 0.0250946,
+        "dividend_amount": 250
+      },
+      {
+        "ex_date": "2026-07-07",
+        "payment_date": "2026-07-28",
+        "dividend_yield": null,
+        "dividend_amount": 265
+      },
+      {
+        "ex_date": "2024-07-09",
+        "payment_date": "2024-07-25",
+        "dividend_yield": 0.0177561,
+        "dividend_amount": 200
+      },
+      {
+        "ex_date": "2022-08-02",
+        "payment_date": "2022-08-23",
+        "dividend_yield": 0.0244124,
+        "dividend_amount": 215
+      },
+      {
+        "ex_date": "2023-07-07",
+        "payment_date": "2023-07-25",
+        "dividend_yield": 0.0175194,
+        "dividend_amount": 188
+      },
+      {
+        "ex_date": "2021-09-07",
+        "payment_date": "2021-09-28",
+        "dividend_yield": 0.0247625,
+        "dividend_amount": 215
+      },
+      {
+        "ex_date": "2020-07-24",
+        "payment_date": "2020-08-12",
+        "dividend_yield": 0.0214082,
+        "dividend_amount": 215
+      }
+    ],
+    "right_issue": null,
+    "stock_split": [
+      {
+        "date": "2016-07-27",
+        "split_ratio": 2
+      }
+    ],
+    "upcoming_dividend": null
+  }
+}

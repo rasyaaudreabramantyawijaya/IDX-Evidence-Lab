@@ -1,3 +1,49 @@
 .agents-protection.env
 .DS_Store
 *.swp
+
+# Credentials and local-only material
+.env
+.env.*
+*.pem
+*.key
+Business & Corporate Law/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+node_modules/
+
+# Planning, agent instructions, handoff and design QA stay local
+**/*.md
+!README.md
+!**/README.md
+.agents*/
+.superpowers/
+**/skills/
+docs/superpowers/
+docs/product/
+docs/frontend-handoff/
+configs/request-plan-*.json
+scripts/protect-agents.sh
+.agents-protection.env.example
+
+# Screenshots, photos, exports and private logs
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.heic
+*.tiff
+*.svg
+*.pdf
+*.docx
+*.zip
+data/usage-log*
+
+# Numerical verification artifacts used by Studies
+reports/*
+!reports/studies-reference-manifest.json
+!reports/studies-reference-tests.xml

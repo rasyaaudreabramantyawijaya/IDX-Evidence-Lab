@@ -1,0 +1,121 @@
+{
+  "symbol": "KLBF.JK",
+  "corporate_actions": {
+    "agm": [
+      {
+        "agm_date": "2022-05-19",
+        "agm_time": "10:00:00",
+        "agm_place": "Ruang Auditorium Lt. 4 Kalbe Business Innovation Centerjl. Pulogadung No.23, Kav. No. II G.5. Kipkel. Jatinegara, Kec. Cakungjakarta Timur",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2023-05-03",
+        "agm_time": "10:00:00",
+        "agm_place": "Ruang Auditorium Lt. 4 Kalbe Business Innovation Centerjl. Pulogadung No.23, Kav. No. II G.5. Kipkel. Jatinegara, Kec. Cakungjakarta Timur",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2023-11-28",
+        "agm_time": "15:00:00",
+        "agm_place": "IDX Public Expose",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2024-05-16",
+        "agm_time": "10:00:00",
+        "agm_place": "Ruang Auditorium Lt. 4 Kalbe Business Innovation Centerjl. Pulogadung No.23, Kav. No. II G.5. Kipkel. Jatinegara, Kec. Cakungjakarta Timur",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2024-06-10",
+        "agm_time": null,
+        "agm_place": "",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2024-08-27",
+        "agm_time": "13:00:00",
+        "agm_place": "IDX Public Expose",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2025-02-17",
+        "agm_time": "10:00:00",
+        "agm_place": "Diselenggarakan Secara Elektronik Oleh Perseroan Dengan Menggunakan Easy Yangdisediakan Oleh Pt Kustodian Sentral Efek Indonesia, Yang Berkedudukan Di Jakartaselatan",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2025-05-22",
+        "agm_time": null,
+        "agm_place": "",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2026-05-21",
+        "agm_time": "11:00:00",
+        "agm_place": "Kalbe Business Innovation Center, Ruang Auditorium, Lantai 4 JL. Pulogadung NO. 23, RW. 9, Jatinegara, Kec. Cakung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13930 Kota Adm. Jakarta Timur",
+        "agm_result": "Agenda #1: Shareholders approved the 2025 Annual Report and Financial Statements, granting full discharge of responsibility to the Board of Directors and Commissioners. This approval was passed with 98% of the votes on May 21, 2026.\nAgenda #2: The meeting approved a cash dividend of IDR 20.00 per share from 2025 profits, with the remainder allocated to retained earnings. This distribution totals IDR 936,267,830,800 and was approved by 98.12% of votes.\nAgenda #3: A new Board of Directors and Commissioners were appointed for the 2026-2029 term, naming Bernadette Ruth Irawati Setiady as President Director and Ronny Hadiana as President Commissioner. The board consists of four directors and five commissioners, including two independent members.\nAgenda #4: The 2026 compensation for the Board of Commissioners was capped at 0.1% of 2025 Net Sales, with the board authorized to set Director salaries. This determination was approved by 95.68% of the votes.\nAgenda #5: Purwanto, Susanti dan Surja was appointed as the registered public accounting firm to audit the company's financial records for the fiscal year ending December 31, 2026. The appointment was approved by 92.32% of votes.\nAgenda #6: Shareholders approved adjusting the company's purpose and business activities to align with the 2025 Indonesian Standard Industrial Classification (KBLI 2025). The Board of Directors and Corporate Secretary were granted authority to execute all necessary legal actions and documentation.\nAgenda #7: The specific agenda items and decisions for the Extraordinary General Meeting (RUPS Luar Biasa) held on May 21, 2026, are not stated.\nAgenda #8: The meeting was confirmed to have met quorum requirements with 86.41% of valid voting shares present. This quorum allowed for the formal reporting of the general meeting results."
+      },
+      {
+        "agm_date": "2026-09-11",
+        "agm_time": "09:00:00",
+        "agm_place": "IDX Public Expose",
+        "agm_result": null
+      }
+    ],
+    "bonus": null,
+    "warrant": null,
+    "dividend": [
+      {
+        "ex_date": "2024-05-29",
+        "payment_date": "2024-06-14",
+        "dividend_yield": 0.0199403,
+        "dividend_amount": 31
+      },
+      {
+        "ex_date": "2023-05-12",
+        "payment_date": "2023-05-31",
+        "dividend_yield": 0.0196672,
+        "dividend_amount": 38
+      },
+      {
+        "ex_date": "2022-05-31",
+        "payment_date": "2022-06-22",
+        "dividend_yield": 0.0200009,
+        "dividend_amount": 35
+      },
+      {
+        "ex_date": "2021-06-08",
+        "payment_date": "2021-06-30",
+        "dividend_yield": 0.0188506,
+        "dividend_amount": 28
+      },
+      {
+        "ex_date": "2025-06-04",
+        "payment_date": "2025-06-25",
+        "dividend_yield": 0.0280128,
+        "dividend_amount": 36
+      },
+      {
+        "ex_date": "2020-06-02",
+        "payment_date": "2020-06-19",
+        "dividend_yield": 0.0138489,
+        "dividend_amount": 20
+      },
+      {
+        "ex_date": "2020-12-04",
+        "payment_date": "2020-12-18",
+        "dividend_yield": 0.00415468,
+        "dividend_amount": 6
+      }
+    ],
+    "right_issue": null,
+    "stock_split": [
+      {
+        "date": "2012-10-08",
+        "split_ratio": 5
+      }
+    ],
+    "upcoming_dividend": null
+  }
+}

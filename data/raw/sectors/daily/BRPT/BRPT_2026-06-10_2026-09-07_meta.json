@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/BRPT/",
+  "ticker": "BRPT",
+  "start": "2026-06-10",
+  "end": "2026-09-07",
+  "retrieved_at": "2026-09-24T12:32:59.263326",
+  "http_status": 200,
+  "observations_count": 61,
+  "sha256": "f588b9aecb4c7550eec076b9e0862db9d0824a34b2adf5d43284e40787e9ee7f"
+}

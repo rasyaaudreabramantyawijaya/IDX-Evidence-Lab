@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/corporate-actions/PGEO/",
+  "retrieved_at": "2026-09-26T14:26:33.951734+00:00",
+  "sha256": "dbc02a062647baf99e6d3b9e5df0812b7c86e32ebdf39b0f8ac34ad80c008930",
+  "http_status": 200,
+  "request_number": 14,
+  "request_budget": 20,
+  "symbol": "PGEO",
+  "query_parameters": {},
+  "history_scope": "complete endpoint history; endpoint called without date filters",
+  "retry_of_prior_http_429": true,
+  "snapshot_sha256": "bc7511ed946a8dd62f1b90be10b31e924e512cb43ee94e85b78606b104a4295a"
+}

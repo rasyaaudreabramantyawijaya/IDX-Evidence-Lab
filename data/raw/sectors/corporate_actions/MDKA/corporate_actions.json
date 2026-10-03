@@ -1,0 +1,90 @@
+{
+  "symbol": "MDKA.JK",
+  "corporate_actions": {
+    "agm": [
+      {
+        "agm_date": "2022-01-27",
+        "agm_time": "14:00:00",
+        "agm_place": "The Westin Jakarta Jl. H. R. Rasuna Said Kav. C-22 Akaret Kuningan, Kota Jakarta Selatan daerah Khusus Ibukota Jakarta 12940, DKI Jakarta, kota Adm. Jakarta Selatan",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2022-06-10",
+        "agm_time": "14:00:00",
+        "agm_place": "The Westin Jakartajl. H. R. Rasuna Said Kav. C-22 Akaret Kuningan",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2023-04-12",
+        "agm_time": "14:00:00",
+        "agm_place": "Ashta Residence Hotel District 8 Scbd Lot. 28Jl. Jend. Sudirman Kav. 52-53, Senayan, Kebayoran Baru, kota Adm. Jakarta Selatan, DKI Jakarta, Indonesia, 12190",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2023-06-13",
+        "agm_time": "14:00:00",
+        "agm_place": "Zoom Meeting",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2023-06-21",
+        "agm_time": "14:00:00",
+        "agm_place": "Four Seasons Hotel Jakarta - Ballroom 1 Capital Place Jakarta, Jl. Jend. Gatot Subroto Kav.18, Jakarta Selatan 12710",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2024-06-12",
+        "agm_time": "14:00:00",
+        "agm_place": "E-RUPS KSEI",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2025-06-10",
+        "agm_time": null,
+        "agm_place": "",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2026-06-11",
+        "agm_time": "14:00:00",
+        "agm_place": null,
+        "agm_result": null
+      }
+    ],
+    "bonus": null,
+    "warrant": null,
+    "dividend": [
+      {
+        "ex_date": "2026-07-02",
+        "payment_date": "2026-07-24",
+        "dividend_yield": null,
+        "dividend_amount": 12.2852
+      }
+    ],
+    "right_issue": [
+      {
+        "price": 2250,
+        "ex_date": "2018-08-15",
+        "new_ratio": 1,
+        "old_ratio": 6,
+        "trading_period_end": "2018-08-29",
+        "trading_period_start": "2018-08-23"
+      },
+      {
+        "price": 2830,
+        "ex_date": "2022-04-14",
+        "new_ratio": 495,
+        "old_ratio": 9401,
+        "trading_period_end": "2022-04-26",
+        "trading_period_start": "2022-04-20"
+      }
+    ],
+    "stock_split": [
+      {
+        "date": "2019-10-18",
+        "split_ratio": 5
+      }
+    ],
+    "upcoming_dividend": null
+  }
+}

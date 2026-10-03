@@ -1,0 +1,30 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/suspensions/?symbol=WIFI&start=2023-09-25&end=2026-09-24&limit=30&offset=0",
+  "retrieved_at": "2026-09-26T12:59:26.491509+00:00",
+  "sha256": "95a0a91d1c8e8ac0620557b8ab4752895c3118c66c87e9f6e0f5cac2f97213c4",
+  "http_status": 200,
+  "request_number": 5,
+  "request_budget": 49,
+  "run_id": "20260926T125917Z",
+  "symbol": "WIFI",
+  "requested_start": "2023-09-25",
+  "requested_end": "2026-09-24",
+  "limit": 30,
+  "offset": 0,
+  "pagination": {
+    "total_count": 2,
+    "showing": 2,
+    "limit": 30,
+    "offset": 0,
+    "has_next": false,
+    "has_previous": false,
+    "next_offset": null,
+    "previous_offset": null
+  },
+  "row_count": 2,
+  "first_daily_observation": "2023-09-25",
+  "scope": "LQ45 snapshot ticker-scoped suspension history",
+  "snapshot_sha256": "1b6a479bfd60f5106582aa02d838e30d883e0d717c013c705c98aa4a8bf51f74"
+}

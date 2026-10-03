@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/BRPT/?start=2024-12-18&end=2025-03-17",
+  "retrieved_at": "2026-09-25T03:27:44.406715+00:00",
+  "sha256": "e305453abe048b15e8b6f07e1a8915d82e7a8b28a851fed2c01439669ad8d9c5",
+  "http_status": 200,
+  "request_number": 145,
+  "request_budget": 558,
+  "ticker": "BRPT",
+  "requested_start": "2024-12-18",
+  "requested_end": "2025-03-17",
+  "window_days": 90,
+  "snapshot_sha256": "5c5fe24a01ba0d7c4b2c42ebaac348a2a113c6da0210b35c37d58096873b0b08"
+}

@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/ISAT/",
+  "retrieved_at": "2026-09-26T15:28:24.854907+00:00",
+  "sha256": "1f0cf2147c6fd91a6953f70abd989fa719a5064b9059705804a991e54a0cafd8",
+  "http_status": 200,
+  "request_number": 22,
+  "request_budget": 35,
+  "symbol": "ISAT",
+  "request_scope": "approved full company-report completion",
+  "snapshot_sha256": "8985b2e15827d33474def058bb917a0f4a9858cef5ccf6a659a1c831fd89e6dc"
+}

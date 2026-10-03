@@ -1,0 +1,18 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/filings/?symbol=EMTK&start=2023-09-25&end=2026-09-24&limit=30&offset=0",
+  "retrieved_at": "2026-09-26T12:22:04.806166+00:00",
+  "sha256": "d550cd577130d4909ec82640676ddaae3101e4d1f3f86cbeb2ca7d8567c30652",
+  "http_status": 200,
+  "request_number": 20,
+  "request_budget": 615,
+  "run_id": "filings_full_20260926T122124Z",
+  "symbol": "EMTK",
+  "requested_start": "2023-09-25",
+  "requested_end": "2026-09-24",
+  "limit": 30,
+  "offset": 0,
+  "pagination_followed": true,
+  "snapshot_sha256": "0b2daa6a27c300034e286f6e10e37ea40e5e0ada583c12e48f0e68fe5cd1172d"
+}

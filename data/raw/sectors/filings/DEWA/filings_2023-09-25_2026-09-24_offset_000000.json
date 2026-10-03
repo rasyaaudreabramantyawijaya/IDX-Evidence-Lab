@@ -1,0 +1,507 @@
+{
+  "results": [
+    {
+      "title": "Change in Cgs International Sekuritas Indonesia's position in Darma Henwa",
+      "body": "Cgs International Sekuritas Indonesia executed a transaction for 300,000,218 shares of Darma Henwa. This decreases their holdings from 2,249,540,595 to 1,949,540,377 shares. The stated purpose of the transaction was transaksi repurchase agreement (repo).",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-17032026-2819-00.pdf-0.pdf",
+      "timestamp": "2026-03-17T14:22:24",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "repurchase-agreement"
+      ],
+      "symbol": "DEWA.JK",
+      "transaction_type": "others",
+      "holder_type": "insider",
+      "holder_name": "Cgs International Sekuritas Indonesia",
+      "holding_before": 2249540595,
+      "holding_after": 1949540377,
+      "amount_transaction": 300000218,
+      "price": 264.0,
+      "transaction_value": 79200000000.0,
+      "price_transaction": [
+        {
+          "date": "2026-03-16",
+          "type": "others",
+          "price": 264.0,
+          "amount_transacted": 300000000
+        }
+      ],
+      "share_percentage_before": 5.53,
+      "share_percentage_after": 4.79,
+      "share_percentage_transaction": 0.74,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Andhesti Tungkas Pratama sells shares of Darma Henwa",
+      "body": "This transaction is part of a cluster-sell transaction amidst other insider sells during the last 6 months. Andhesti Tungkas Pratama's insider disposal comes after Madhani Talatah Nusantara and Antareja Mahada Makmur in Darma Henwa, totaling a distribution of 7,924,018,066 shares transacted at an average price of IDR 145.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-07012026-9265-00.pdf-0.pdf",
+      "timestamp": "2026-01-07T11:14:01",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "DEWA.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Andhesti Tungkas Pratama",
+      "holding_before": 3805013366,
+      "holding_after": 3405013366,
+      "amount_transaction": 400000000,
+      "price": 581.0,
+      "transaction_value": 232400000000.0,
+      "price_transaction": [
+        {
+          "date": "2025-12-31",
+          "type": "sell",
+          "price": 581,
+          "amount_transacted": 400000000
+        }
+      ],
+      "share_percentage_before": 9.35,
+      "share_percentage_after": 8.37,
+      "share_percentage_transaction": 0.98,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Change in CGS International Sekuritas Indonesia's position in Darma Henwa",
+      "body": "Cgs International Sekuritas Indonesia executed a transaction for 680,340,377 shares of Darma Henwa. This increases their holdings from 1,569,200,000 to 2,249,540,377 shares. The stated purpose of the transaction was transaksi repurchase agreement.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-24122025-2781-00.pdf-0.pdf",
+      "timestamp": "2025-12-24T19:26:51",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "repurchase-agreement"
+      ],
+      "symbol": "DEWA.JK",
+      "transaction_type": "others",
+      "holder_type": "insider",
+      "holder_name": "Cgs International Sekuritas Indonesia",
+      "holding_before": 1569200000,
+      "holding_after": 2249540377,
+      "amount_transaction": 680340377,
+      "price": 264.0,
+      "transaction_value": 179609859528.0,
+      "price_transaction": [
+        {
+          "date": "2025-12-11",
+          "type": "others",
+          "price": 264.0,
+          "amount_transacted": 680340377
+        }
+      ],
+      "share_percentage_before": 3.86,
+      "share_percentage_after": 5.53,
+      "share_percentage_transaction": 1.67,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Andhesti Tungkas Pratama sells shares of Darma Henwa",
+      "body": "This transaction is part of a cluster-sell transaction amidst other insider sells during the last 6 months. Andhesti Tungkas Pratama's insider disposal comes after Madhani Talatah Nusantara and Antareja Mahada Makmur in Darma Henwa, totaling a distribution of 9,193,120,098 shares transacted at an average price of IDR 138.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202512/780512b694_5d1bc2c6c6.pdf",
+      "timestamp": "2025-12-04T21:10:25",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "DEWA.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Andhesti Tungkas Pratama",
+      "holding_before": 4140782066,
+      "holding_after": 3805013366,
+      "amount_transaction": 335768700,
+      "price": 422.0,
+      "transaction_value": 141694391400.0,
+      "price_transaction": [
+        {
+          "date": "2025-11-28",
+          "type": "sell",
+          "price": 422,
+          "amount_transacted": 335768700
+        }
+      ],
+      "share_percentage_before": 10.18,
+      "share_percentage_after": 9.35,
+      "share_percentage_transaction": 0.83,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Andhesti Tungkas Pratama sells shares of Darma Henwa",
+      "body": "This transaction is part of a cluster-sell transaction amidst other insider sells during the last 6 months. Andhesti Tungkas Pratama's insider disposal comes after Madhani Talatah Nusantara and Antareja Mahada Makmur in Darma Henwa, totaling a distribution of 9,502,200,998 shares transacted at an average price of IDR 146.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202511/f0057d4630_74f2a3daa9.pdf",
+      "timestamp": "2025-11-25T16:23:51",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "DEWA.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Andhesti Tungkas Pratama",
+      "holding_before": 4785666666,
+      "holding_after": 4140782066,
+      "amount_transaction": 644849600,
+      "price": 416.0,
+      "transaction_value": 268257433600.0,
+      "price_transaction": [
+        {
+          "date": "2025-11-21",
+          "type": "sell",
+          "price": 416,
+          "amount_transacted": 644849600
+        }
+      ],
+      "share_percentage_before": 11.76,
+      "share_percentage_after": 10.18,
+      "share_percentage_transaction": 1.58,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Antareja Mahada Makmur Sell Transaction of Darma Henwa",
+      "body": "Antareja Mahada Makmur, an institution sold 954,823,266 shares of Darma Henwa decreasing its holdings from 3,954,823,266 to 3,000,000,000. The transaction occurred in the energy sector, specifically oil-gas-coal. The purpose of the transaction is divestment.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202510/9dd6d4aacc_2e85034f22.pdf",
+      "timestamp": "2025-10-23T16:48:49",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "DEWA.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Antareja Mahada Makmur",
+      "holding_before": 3954823266,
+      "holding_after": 3000000000,
+      "amount_transaction": 954823266,
+      "price": 75.0,
+      "transaction_value": 71611744950.0,
+      "price_transaction": [
+        {
+          "date": "2025-10-20",
+          "type": "sell",
+          "price": 75,
+          "amount_transacted": 954823266
+        }
+      ],
+      "share_percentage_before": 9.72,
+      "share_percentage_after": 7.37,
+      "share_percentage_transaction": 2.35,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Madhani Talatah Nusantara Sell Transaction of Darma Henwa",
+      "body": "This is Madhani Talatah Nusantara's 9th insider disposal in the last 6 months, totaling a distribution of 8,395,861,464 shares transacted at an average price of IDR 130. Madhani Talatah Nusantara's ownership in Darma Henwa has decreased from 6.07% to 5.81% in this period.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202510/55053b0d4f_7fd87b6cfb.pdf",
+      "timestamp": "2025-10-20T18:25:53",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "DEWA.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Madhani Talatah Nusantara",
+      "holding_before": 2469015622,
+      "holding_after": 2364015622,
+      "amount_transaction": 105000000,
+      "price": 75.0,
+      "transaction_value": 7875000000.0,
+      "price_transaction": [
+        {
+          "date": "2025-10-13",
+          "type": "sell",
+          "price": 75,
+          "amount_transacted": 105000000
+        }
+      ],
+      "share_percentage_before": 6.07,
+      "share_percentage_after": 5.81,
+      "share_percentage_transaction": 0.26,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Madhani Talatah Nusantara Sell Transaction of Darma Henwa",
+      "body": "This is Madhani Talatah Nusantara's 8th insider disposal in the last 6 months, totaling a distribution of 8,290,861,464 shares transacted at an average price of IDR 130. Madhani Talatah Nusantara's ownership in Darma Henwa has decreased from 8.07% to 6.07% in this period.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202510/a2a43f9e7d_62e3ae52ce.pdf",
+      "timestamp": "2025-10-15T17:41:47",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "DEWA.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Madhani Talatah Nusantara",
+      "holding_before": 3285015622,
+      "holding_after": 2469015622,
+      "amount_transaction": 816000000,
+      "price": 75.0,
+      "transaction_value": 61200000000.0,
+      "price_transaction": [
+        {
+          "date": "2025-10-10",
+          "type": "sell",
+          "price": 75,
+          "amount_transacted": 816000000
+        }
+      ],
+      "share_percentage_before": 8.07,
+      "share_percentage_after": 6.07,
+      "share_percentage_transaction": 2.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Madhani Talatah Nusantara Sell Transaction of Darma Henwa",
+      "body": "This is Madhani Talatah Nusantara's 7th insider disposal in the last 6 months, totaling a distribution of 7,474,861,464 shares transacted at an average price of IDR 136. Madhani Talatah Nusantara's ownership in Darma Henwa has decreased from 13.09% to 8.07% in this period.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202509/ebdac17064_b7e334dd27.pdf",
+      "timestamp": "2025-09-22T16:25:09",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "DEWA.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Madhani Talatah Nusantara",
+      "holding_before": 5326847622,
+      "holding_after": 3285015622,
+      "amount_transaction": 2041832000,
+      "price": 75.0,
+      "transaction_value": 153137400000.0,
+      "price_transaction": [
+        {
+          "date": "2025-09-17",
+          "type": "sell",
+          "price": 75,
+          "amount_transacted": 2041832000
+        }
+      ],
+      "share_percentage_before": 13.09,
+      "share_percentage_after": 8.07,
+      "share_percentage_transaction": 5.02,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Madhani Talatah Nusantara Sell Transaction of Darma Henwa",
+      "body": "This is Madhani Talatah Nusantara's 6th insider disposal in the last 6 months, totaling a distribution of 5,433,029,464 shares transacted at an average price of IDR 159. Madhani Talatah Nusantara's ownership in Darma Henwa has decreased from 19.58% to 13.094% in this period.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202508/b093a1747a_625910fe64.pdf",
+      "timestamp": "2025-08-13T10:58:49",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "DEWA.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Madhani Talatah Nusantara",
+      "holding_before": 7965764622,
+      "holding_after": 5326847622,
+      "amount_transaction": 2638917000,
+      "price": 208.0,
+      "transaction_value": 548894736000.0,
+      "price_transaction": [
+        {
+          "date": "2025-08-08",
+          "type": "sell",
+          "price": 208,
+          "amount_transacted": 2638917000
+        }
+      ],
+      "share_percentage_before": 19.58,
+      "share_percentage_after": 13.094,
+      "share_percentage_transaction": 6.486,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Madhani Talatah Nusantara Sell Transaction of Darma Henwa",
+      "body": "This is Madhani Talatah Nusantara's 5th insider disposal in the last 6 months, totaling a distribution of 2,794,112,464 shares transacted at an average price of IDR 113. Madhani Talatah Nusantara's ownership in Darma Henwa has decreased from 21.07% to 19.58% in this period.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202508/fa7b283845_44983bc778.pdf",
+      "timestamp": "2025-08-07T16:31:00",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [],
+      "symbol": "DEWA.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Madhani Talatah Nusantara",
+      "holding_before": 8571764622,
+      "holding_after": 7965764622,
+      "amount_transaction": 606000000,
+      "price": 75.0,
+      "transaction_value": 45450000000.0,
+      "price_transaction": [
+        {
+          "date": "2025-08-04",
+          "type": "sell",
+          "price": 75,
+          "amount_transacted": 606000000
+        }
+      ],
+      "share_percentage_before": 21.07,
+      "share_percentage_after": 19.58,
+      "share_percentage_transaction": 1.49,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Madhani Talatah Nusantara Sell Transaction of Darma Henwa (Seller)",
+      "body": "This is Madhani Talatah Nusantara's 4th insider disposal in the last 6 months, totaling a distribution of 2,188,112,464 shares transacted at an average price of IDR 124. Madhani Talatah Nusantara's ownership in Darma Henwa has decreased from 21.96% to 21.07% in this period.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202507/7838c3614a_31b4f0bae2.pdf",
+      "timestamp": "2025-07-11T15:20:00",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "DEWA.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Madhani Talatah Nusantara",
+      "holding_before": 8933210522,
+      "holding_after": 8571764722,
+      "amount_transaction": 361445800,
+      "price": 75.0,
+      "transaction_value": 27108435000.0,
+      "price_transaction": [
+        {
+          "date": "2025-07-07",
+          "type": "sell",
+          "price": 75,
+          "amount_transacted": 361445800
+        }
+      ],
+      "share_percentage_before": 21.96,
+      "share_percentage_after": 21.07,
+      "share_percentage_transaction": 0.89,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Madhani Talatah Nusantara Sells Shares of Darma Henwa",
+      "body": "This is Madhani Talatah Nusantara's 3rd insider disposal in the last 6 months, totaling a distribution of 1,826,666,664 shares transacted at an average price of IDR 134. Madhani Talatah Nusantara's ownership in Darma Henwa has decreased from 23.59% to 21.96% in this period.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202507/fae528288d_c05239c624.pdf",
+      "timestamp": "2025-07-09T15:26:00",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "DEWA.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Madhani Talatah Nusantara",
+      "holding_before": 9599877188,
+      "holding_after": 8933210522,
+      "amount_transaction": 666666666,
+      "price": 75.0,
+      "transaction_value": 49999999950.0,
+      "price_transaction": [
+        {
+          "date": "2025-06-19",
+          "type": "sell",
+          "price": 75,
+          "amount_transacted": 666666666
+        }
+      ],
+      "share_percentage_before": 23.59,
+      "share_percentage_after": 21.96,
+      "share_percentage_transaction": 1.63,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Madhani Talatah Nusantara Sell Transaction of Darma Henwa",
+      "body": "On July 01, 2025, Madhani Talatah Nusantara, an institution shareholder, sold 666,666,666 shares of Darma Henwa changing its holding from 9,599,877,188 to 8,933,210,522 shares.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202507/0a5285efd3_6f740af19d.pdf",
+      "timestamp": "2025-07-01T20:13:52",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "DEWA.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Madhani Talatah Nusantara",
+      "holding_before": 9599877188,
+      "holding_after": 8933210522,
+      "amount_transaction": 666666666,
+      "price": 0.0,
+      "transaction_value": 157333333176.0,
+      "price_transaction": [
+        {
+          "date": "2025-06-19",
+          "type": "sell",
+          "price": 0,
+          "amount_transacted": 666666666
+        }
+      ],
+      "share_percentage_before": 23.59,
+      "share_percentage_after": 21.952,
+      "share_percentage_transaction": 1.638,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Madhani Talatah Nusantara Sell Transaction of Darma Henwa",
+      "body": "Madhani Talatah Nusantara sold 493,333,332 shares of Darma Henwa at a price of 75 per share, reducing its stake from 10,093,210,520 shares to 9,599,877,188 shares, a 4.93% decrease, for divestment purposes.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202505/23e5c5b0e3_9f8dca9c14.pdf",
+      "timestamp": "2025-05-02T20:36:00",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "DEWA.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Madhani Talatah Nusantara",
+      "holding_before": 10093210520,
+      "holding_after": 9599877188,
+      "amount_transaction": 493333332,
+      "price": 75.0,
+      "transaction_value": 36999999900.0,
+      "price_transaction": [
+        {
+          "date": "2025-04-29",
+          "type": "sell",
+          "price": 75,
+          "amount_transacted": 493333332
+        }
+      ],
+      "share_percentage_before": 24.81,
+      "share_percentage_after": 23.59,
+      "share_percentage_transaction": 1.22,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    }
+  ],
+  "pagination": {
+    "total_count": 15,
+    "showing": 15,
+    "limit": 30,
+    "offset": 0,
+    "has_next": false,
+    "has_previous": false,
+    "next_offset": null,
+    "previous_offset": null
+  }
+}

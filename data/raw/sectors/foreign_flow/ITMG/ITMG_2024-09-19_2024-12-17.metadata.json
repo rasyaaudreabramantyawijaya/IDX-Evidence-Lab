@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/ITMG/?start=2024-09-19&end=2024-12-17",
+  "retrieved_at": "2026-09-25T03:42:18.700385+00:00",
+  "sha256": "ae3caff094689a93377a0bb7599f19222d94b641153e49c24b6701eaa94bd811",
+  "http_status": 200,
+  "request_number": 352,
+  "request_budget": 558,
+  "ticker": "ITMG",
+  "requested_start": "2024-09-19",
+  "requested_end": "2024-12-17",
+  "window_days": 90,
+  "snapshot_sha256": "29da352a3a0d50ad8d5c4b4e8201e563a45bb8d24613c69a37d91af9d96eca25"
+}

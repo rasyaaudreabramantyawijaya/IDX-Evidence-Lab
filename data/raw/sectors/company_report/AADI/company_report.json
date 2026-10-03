@@ -1,0 +1,1061 @@
+{
+  "symbol": "AADI.JK",
+  "company_name": "PT Adaro Andalan Indonesia Tbk",
+  "overview": {
+    "listing_board": "Main",
+    "industry": "Coal",
+    "sub_industry": "Coal Production",
+    "sector": "Energy",
+    "sub_sector": "Oil, Gas & Coal",
+    "market_cap": 87602532300000,
+    "market_cap_rank": 25,
+    "address": "Cyber 2 Tower Lantai 26\nJl. H.R. Rasuna Said Blok X-5, No.13\nJakarta 12950 - Indonesia",
+    "employee_num": 2838.0,
+    "employee_num_rank": 187,
+    "listing_date": "2024-12-05",
+    "website": "www.adaroindonesia.com",
+    "phone": "(021) 2553 3065",
+    "email": "corsec@adaroindonesia.com",
+    "last_close_price": 11250,
+    "latest_close_date": "2026-09-25",
+    "daily_close_change": 0.00896860986547085,
+    "all_time_price": {
+      "ytd_low": {
+        "2026-01-29": 6750
+      },
+      "52_w_low": {
+        "2026-01-29": 6750
+      },
+      "90_d_low": {
+        "2026-06-30": 7725
+      },
+      "ytd_high": {
+        "2026-09-10": 12925
+      },
+      "52_w_high": {
+        "2026-09-10": 12925
+      },
+      "90_d_high": {
+        "2026-09-10": 12925
+      },
+      "all_time_low": {
+        "2025-04-08": 5575
+      },
+      "all_time_high": {
+        "2026-09-10": 12925
+      }
+    },
+    "esg_score": null,
+    "tags": [
+      "public-float-under-25",
+      "top-30-yoy-earning-growth"
+    ],
+    "indices": [
+      "LQ45",
+      "KOMPAS100",
+      "IDXQ30",
+      "IDX30",
+      "JII70",
+      "IDXV30"
+    ],
+    "affiliates": [
+      "Boy Thohir",
+      "Saratoga"
+    ]
+  },
+  "valuation": {
+    "last_close_price": 11250,
+    "latest_close_date": "2026-09-25",
+    "daily_close_change": 0.00896860986547085,
+    "forward_pe": null,
+    "intrinsic_value": 33687,
+    "historical_valuation": [
+      {
+        "pb": 1.21437833872185,
+        "pe": 3.37342784137473,
+        "ps": 0.767830946770036,
+        "pcf": 3.40800047014918,
+        "peg": 0.3129571624872,
+        "year": 2024,
+        "pb_peer_avg": 0.932470584173396,
+        "pe_peer_avg": 8.67162536782097,
+        "ps_peer_avg": 0.990877077958308,
+        "enterprise_to_ebitda": 2.4771472878181324,
+        "enterprise_to_revenue": 0.612350497366305
+      },
+      {
+        "pb": 0.889193227212779,
+        "pe": 4.26902115215623,
+        "ps": 0.660906452352169,
+        "pcf": 3.77684575410201,
+        "peg": -0.12209437738267634,
+        "year": 2025,
+        "pb_peer_avg": 1.61127517039477,
+        "pe_peer_avg": 14.797623491379,
+        "ps_peer_avg": 1.35228832204911,
+        "enterprise_to_ebitda": 2.299876465183342,
+        "enterprise_to_revenue": 0.554697681050103
+      },
+      {
+        "pb": 1.3640251744825,
+        "pe": 6.30934096711086,
+        "ps": 1.01215960729844,
+        "pcf": 0.111181625373551,
+        "peg": 6.584634046410499,
+        "year": 2026,
+        "pb_peer_avg": 1.20577321194198,
+        "pe_peer_avg": 10.7983771931371,
+        "ps_peer_avg": 1.56586755901547,
+        "enterprise_to_ebitda": 3.5313026911944996,
+        "enterprise_to_revenue": 0.909536951287217
+      }
+    ]
+  },
+  "future": {
+    "company_value_forecasts": null,
+    "company_growth_forecasts": null,
+    "analyst_rating_breakdown": {
+      "buy": 48,
+      "hold": 0,
+      "sell": 0,
+      "n_analyst": 48,
+      "strong_buy": 0,
+      "updated_on": "2026-09-01 17:00:00",
+      "strong_sell": 0
+    }
+  },
+  "financials": {
+    "eps": 1633.8640056812603,
+    "historical_eps": {
+      "2024": {
+        "eps": 2512.2813940334004
+      },
+      "2025": {
+        "eps": 1633.8640056812603,
+        "eps_growth": -0.3496
+      }
+    },
+    "historical_financials": [
+      {
+        "tax": 4231582876000,
+        "ebit": 25110051356000,
+        "year": 2023,
+        "ebitda": 25175420082000,
+        "revenue": 91327984112000,
+        "earnings": 17659328907000,
+        "net_debt": -25066358986000,
+        "cash_only": null,
+        "total_debt": 14808733703000,
+        "inventories": 1004924510000,
+        "fixed_assets": 58556298128000,
+        "gross_profit": 26692116564000,
+        "total_assets": 109044360124000,
+        "total_equity": 73959973696000,
+        "net_cash_flow": -849716000,
+        "operating_pnl": 21878591461000,
+        "current_assets": 3270164000,
+        "free_cash_flow": 4986843317000,
+        "long_term_debt": null,
+        "prepaid_assets": 2103996042000,
+        "cost_of_revenue": 4186532000,
+        "short_term_debt": null,
+        "operating_expense": 311777000,
+        "retained_earnings": 28447283840000,
+        "total_liabilities": 35084386428000,
+        "industry_breakdown": null,
+        "outstanding_shares": 120221821882640,
+        "capital_expenditure": -272203000,
+        "current_liabilities": 27764046334000,
+        "earnings_before_tax": 24084454025000,
+        "financing_cash_flow": -21088238173000,
+        "investing_cash_flow": -1219912585000,
+        "operating_cash_flow": null,
+        "cash_and_equivalents": 39875092689000,
+        "net_increased_decreased": null,
+        "non_current_liabilities": 474146000,
+        "non_operating_income_or_loss": 36711000,
+        "total_cash_and_due_from_banks": null,
+        "interest_expense_non_operating": 1025597331000
+      },
+      {
+        "tax": 3446934380000,
+        "ebit": 18587772179000,
+        "year": 2024,
+        "ebitda": 21246455000000,
+        "revenue": 85948486374000,
+        "earnings": 19562863286000,
+        "net_debt": -13363309287000,
+        "cash_only": 24537442016000,
+        "total_debt": 11174132729000,
+        "inventories": 1107546193000,
+        "fixed_assets": 61050937142000,
+        "gross_profit": 23685370307000,
+        "total_assets": 96823375306000,
+        "total_equity": 54343778674000,
+        "net_cash_flow": -16065163612000,
+        "operating_pnl": 18587772179000,
+        "current_assets": 35772438164000,
+        "free_cash_flow": 13386316855000,
+        "long_term_debt": 10470656949000,
+        "prepaid_assets": 144851000,
+        "cost_of_revenue": 62263116067000,
+        "short_term_debt": 703475780000,
+        "operating_expense": 5097598128000,
+        "retained_earnings": 6379446037000,
+        "total_liabilities": 42479596632000,
+        "industry_breakdown": null,
+        "outstanding_shares": 7008203000,
+        "capital_expenditure": 5978090000000,
+        "current_liabilities": 14100197743000,
+        "earnings_before_tax": 24883007932000,
+        "financing_cash_flow": -38622629906000,
+        "investing_cash_flow": 3193059439000,
+        "operating_cash_flow": 19364406855000,
+        "cash_and_equivalents": 24537442016000,
+        "net_increased_decreased": null,
+        "non_current_liabilities": 28379398889000,
+        "non_operating_income_or_loss": 6295235753000,
+        "total_cash_and_due_from_banks": null,
+        "interest_expense_non_operating": 1257143856000
+      },
+      {
+        "tax": 3450422066520,
+        "ebit": 18643629826380,
+        "year": 2025,
+        "ebitda": 19820755267560,
+        "revenue": 82180420288980,
+        "earnings": 12722722162800,
+        "net_debt": -8728281463980,
+        "cash_only": 15488673224700,
+        "total_debt": 6760391760720,
+        "inventories": 1430264398680,
+        "fixed_assets": 65439625545840,
+        "gross_profit": 21116307899700,
+        "total_assets": 95502860022960,
+        "total_equity": 61081853036880,
+        "net_cash_flow": -582814000,
+        "operating_pnl": 16980962944140,
+        "current_assets": 30063234477120,
+        "free_cash_flow": 8947796873340,
+        "long_term_debt": 6019702986960,
+        "prepaid_assets": 155169000,
+        "cost_of_revenue": 61064112389280,
+        "short_term_debt": 740688773760,
+        "operating_expense": 4135344955560,
+        "retained_earnings": 12695676043440,
+        "total_liabilities": 34421006986080,
+        "industry_breakdown": null,
+        "outstanding_shares": 7787133784,
+        "capital_expenditure": 5432872489980,
+        "current_liabilities": 15441995237760,
+        "earnings_before_tax": 17662756115160,
+        "financing_cash_flow": -17757551424600,
+        "investing_cash_flow": -6377361137160,
+        "operating_cash_flow": 14380669363320,
+        "cash_and_equivalents": 15488673224700,
+        "net_increased_decreased": null,
+        "non_current_liabilities": 18979011748320,
+        "non_operating_income_or_loss": 681793171020,
+        "total_cash_and_due_from_banks": null,
+        "interest_expense_non_operating": 980873711220
+      }
+    ],
+    "historical_financial_ratio": [
+      {
+        "year": "2023",
+        "leverage": {
+          "debt_to_asset_ratio": 0.1358046733105703,
+          "debt_to_equity_ratio": 0.47436991489759656,
+          "cash_flow_to_debt_ratio": null,
+          "interest_coverage_ratio": 24.483343118216442
+        },
+        "liquidity": {
+          "current_ratio": 0.00011778412846096356,
+          "operating_cash_flow_margin": null
+        },
+        "efficiency": {
+          "fixed_asset_turnover": 27927.64647644583,
+          "total_asset_turnover": 0.8375305610317325
+        },
+        "profitability": {
+          "roa": 0.16194628394277943,
+          "roe": 0.23876872887469774,
+          "net_profit_margin": 0.19336164132719164,
+          "gross_profit_margin": 0.2922665689331995,
+          "operating_profit_margin": 0.23956065245203712
+        }
+      },
+      {
+        "year": "2024",
+        "leverage": {
+          "debt_to_asset_ratio": 0.1154073868390287,
+          "debt_to_equity_ratio": 0.7816827918210949,
+          "cash_flow_to_debt_ratio": 1.7329673205638545,
+          "interest_coverage_ratio": 14.785716121735554
+        },
+        "liquidity": {
+          "current_ratio": 2.5370167721058463,
+          "operating_cash_flow_margin": 0.225302476773551
+        },
+        "efficiency": {
+          "fixed_asset_turnover": 2.4026454663214776,
+          "total_asset_turnover": 0.8876832283771241
+        },
+        "profitability": {
+          "roa": 0.20204690472908682,
+          "roe": 0.3599834932965302,
+          "net_profit_margin": 0.2276114927827036,
+          "gross_profit_margin": 0.27557635167575195,
+          "operating_profit_margin": 0.2162664284524611
+        }
+      },
+      {
+        "year": "2025",
+        "leverage": {
+          "debt_to_asset_ratio": 0.0707873225900745,
+          "debt_to_equity_ratio": 0.563522638471647,
+          "cash_flow_to_debt_ratio": 2.12719467633166,
+          "interest_coverage_ratio": 19.00716637944273
+        },
+        "liquidity": {
+          "current_ratio": 1.9468490965213472,
+          "operating_cash_flow_margin": 0.17498899753434796
+        },
+        "efficiency": {
+          "fixed_asset_turnover": 2.7335854480835864,
+          "total_asset_turnover": 0.860502190921014
+        },
+        "profitability": {
+          "roa": 0.1332182319957885,
+          "roe": 0.20828972158258321,
+          "net_profit_margin": 0.1548145180818217,
+          "gross_profit_margin": 0.2569505951106896,
+          "operating_profit_margin": 0.20663027621942043
+        }
+      }
+    ],
+    "yoy_quarter_earnings_growth": 0.56748054778949,
+    "yoy_quarter_revenue_growth": 0.341476005926851
+  },
+  "dividend": {
+    "historical_dividends": {
+      "2025": {
+        "breakdown": [
+          {
+            "date": "2025-11-18",
+            "total": 538.08,
+            "yield": 0.072930671274662
+          }
+        ],
+        "total_yield": 0.072930671274662,
+        "total_dividend": 538.08
+      }
+    },
+    "upcoming_dividends": null,
+    "yield_ttm": 0.0478293348524306,
+    "dividend_yield_avg": {
+      "period": 1,
+      "avg_yield": 0.072930671274662
+    },
+    "dividend_ttm": 538.08,
+    "payout_ratio": 0.301771583442813,
+    "cash_payout_ratio": 0.503332395114328,
+    "last_ex_dividend_date": "2025-11-18"
+  },
+  "management": {
+    "key_executives": [
+      {
+        "name": "Julius Aslan",
+        "position": "President Director"
+      },
+      {
+        "name": "Priyadi",
+        "position": "Director"
+      },
+      {
+        "name": "Lie Luckman",
+        "position": "Director"
+      },
+      {
+        "name": "Susanti",
+        "position": "Director"
+      }
+    ],
+    "executives_shareholdings": [
+      {
+        "name": "Julius Aslan",
+        "position": "President Director",
+        "share_amount": 2506265,
+        "share_percentage": 0.00032
+      },
+      {
+        "name": "Priyadi",
+        "position": "Director",
+        "share_amount": 207108,
+        "share_percentage": 3e-05
+      }
+    ]
+  },
+  "ownership": {
+    "major_shareholders": [
+      {
+        "name": "PT Adaro Strategic Investments",
+        "share_value": 36001606837500,
+        "share_amount": 3200142830,
+        "share_percentage": "0.41096"
+      },
+      {
+        "name": "Afiliasi",
+        "share_value": 16891542798750,
+        "share_amount": 1501470471,
+        "share_percentage": "0.19282"
+      },
+      {
+        "name": "Public",
+        "share_value": 16104356291250,
+        "share_amount": 1431498337,
+        "share_percentage": "0.18383"
+      },
+      {
+        "name": "PT Alamtri Resources Indonesia Tbk",
+        "symbol": "ADRO.JK",
+        "share_value": 13466519347500,
+        "share_amount": 1197023942,
+        "share_percentage": "0.15372"
+      },
+      {
+        "name": "Garibaldi Thohir",
+        "share_value": 5107630578750,
+        "share_amount": 454011607,
+        "share_percentage": "0.0583"
+      },
+      {
+        "name": "Julius Aslan",
+        "share_value": 28195481250,
+        "share_amount": 2506265,
+        "share_percentage": "0.00032"
+      },
+      {
+        "name": "Priyadi",
+        "share_value": 2329965000,
+        "share_amount": 207108,
+        "share_percentage": "0.00003"
+      }
+    ],
+    "top_transactions": null,
+    "institutional_transaction_flow": null,
+    "whale_investors": [
+      "Edwin Soeryadjaya",
+      "Garibaldi Thohir",
+      "T Permadi Rachmat",
+      "Sandiaga Salahuddin Uno"
+    ],
+    "conglomerates_group": [
+      "Saratoga Group",
+      "Thohir Group"
+    ]
+  },
+  "peers": [
+    {
+      "peers_data": {
+        "companies": [
+          {
+            "year": 2025,
+            "group": [
+              "self"
+            ],
+            "pb_mrq": 1.35190050626488,
+            "pe_ttm": 6.2532579362921,
+            "symbol": "AADI.JK",
+            "market_cap": 86823843124000,
+            "net_income": 12722722162800,
+            "company_name": "PT Adaro Andalan Indonesia Tbk",
+            "employee_num": 2838,
+            "total_assets": 95502860022960,
+            "total_equity": 61081853036880,
+            "pretax_income": 17662756115160,
+            "total_revenue": 82180420288980,
+            "point_summaries": [
+              {
+                "name": "value",
+                "point": 9,
+                "maxpoint": 18
+              },
+              {
+                "name": "competitive",
+                "point": 18.5,
+                "maxpoint": 25.5
+              },
+              {
+                "name": "future",
+                "point": 0,
+                "maxpoint": 6
+              },
+              {
+                "name": "financials",
+                "point": 1,
+                "maxpoint": 7.5
+              },
+              {
+                "name": "dividend",
+                "point": 11,
+                "maxpoint": 11
+              },
+              {
+                "updatedAt": "2026-09-23T23:01:12.316Z"
+              }
+            ],
+            "yearly_mcap_chg": 0.581560283687943,
+            "operating_expense": 4135344955560,
+            "revenue_breakdown": null,
+            "total_liabilities": 34421006986080,
+            "int_income_breakdown": null,
+            "operating_expense_breakdown": null
+          },
+          {
+            "year": 2025,
+            "group": [
+              "sub_sector",
+              "sector",
+              "industry",
+              "sub_industry"
+            ],
+            "pb_mrq": 9.28629572344723,
+            "pe_ttm": 29.1262840703222,
+            "symbol": "BYAN.JK",
+            "market_cap": 412500020625000,
+            "net_income": 12852187283440,
+            "company_name": "Bayan Resources Tbk",
+            "employee_num": 3384,
+            "total_assets": 56486296335228,
+            "total_equity": 45097802085795,
+            "pretax_income": 16937619897693,
+            "total_revenue": 57365496738143,
+            "point_summaries": [
+              {
+                "name": "value",
+                "point": 6,
+                "maxpoint": 18
+              },
+              {
+                "name": "competitive",
+                "point": 19.5,
+                "maxpoint": 25.5
+              },
+              {
+                "name": "future",
+                "point": 0,
+                "maxpoint": 6
+              },
+              {
+                "name": "financials",
+                "point": 2,
+                "maxpoint": 7.5
+              },
+              {
+                "name": "dividend",
+                "point": 1.5,
+                "maxpoint": 11
+              },
+              {
+                "updatedAt": "2026-09-23T23:01:12.347Z"
+              }
+            ],
+            "yearly_mcap_chg": -0.309623430962343,
+            "operating_expense": 1739370128629,
+            "revenue_breakdown": null,
+            "total_liabilities": 11388494249434,
+            "int_income_breakdown": null,
+            "operating_expense_breakdown": null
+          },
+          {
+            "year": 2025,
+            "group": [
+              "sub_sector",
+              "sector",
+              "industry",
+              "sub_industry"
+            ],
+            "pb_mrq": 6.54683333142338,
+            "pe_ttm": 53.9286280230856,
+            "symbol": "DSSA.JK",
+            "market_cap": 209975507200000,
+            "net_income": 3858409145254,
+            "company_name": "Dian Swastatika Sentosa Tbk",
+            "employee_num": 1424,
+            "total_assets": 73890636185794,
+            "total_equity": 37844443720063,
+            "pretax_income": 7767131955390,
+            "total_revenue": 46715084876817,
+            "point_summaries": [
+              {
+                "name": "value",
+                "point": 6,
+                "maxpoint": 18
+              },
+              {
+                "name": "competitive",
+                "point": 16.5,
+                "maxpoint": 25.5
+              },
+              {
+                "name": "future",
+                "point": 0,
+                "maxpoint": 6
+              },
+              {
+                "name": "financials",
+                "point": 2,
+                "maxpoint": 7.5
+              },
+              {
+                "name": "dividend",
+                "point": 1.5,
+                "maxpoint": 15.5
+              },
+              {
+                "updatedAt": "2026-09-23T23:01:11.828Z"
+              }
+            ],
+            "yearly_mcap_chg": -0.723350253807107,
+            "operating_expense": 9019312687425,
+            "revenue_breakdown": null,
+            "total_liabilities": 36046192465731,
+            "int_income_breakdown": null,
+            "operating_expense_breakdown": null
+          },
+          {
+            "year": 2025,
+            "group": [
+              "sub_sector",
+              "sector",
+              "industry",
+              "sub_industry"
+            ],
+            "pb_mrq": 17.0062079921048,
+            "pe_ttm": 41.1620625120563,
+            "symbol": "CUAN.JK",
+            "market_cap": 105673766000000,
+            "net_income": 2252175212820,
+            "company_name": "PT Petrindo Jaya Kreasi Tbk",
+            "employee_num": 3565,
+            "total_assets": 45039654870600,
+            "total_equity": 10483885908600,
+            "pretax_income": 2498251384200,
+            "total_revenue": 20345142032280,
+            "point_summaries": [
+              {
+                "name": "value",
+                "point": 6,
+                "maxpoint": 18
+              },
+              {
+                "name": "competitive",
+                "point": 10,
+                "maxpoint": 25.5
+              },
+              {
+                "name": "future",
+                "point": 0,
+                "maxpoint": 6
+              },
+              {
+                "name": "financials",
+                "point": 0,
+                "maxpoint": 7.5
+              },
+              {
+                "name": "dividend",
+                "point": 1.5,
+                "maxpoint": 11
+              },
+              {
+                "updatedAt": "2026-09-23T23:01:11.827Z"
+              }
+            ],
+            "yearly_mcap_chg": -0.375415282392027,
+            "operating_expense": 1746700647900,
+            "revenue_breakdown": null,
+            "total_liabilities": 34555768962000,
+            "int_income_breakdown": null,
+            "operating_expense_breakdown": null
+          },
+          {
+            "year": 2025,
+            "group": [
+              "sub_sector",
+              "sector",
+              "industry",
+              "sub_industry"
+            ],
+            "pb_mrq": 0.893725687779955,
+            "pe_ttm": 7.39124607187592,
+            "symbol": "ADRO.JK",
+            "market_cap": 73729265152000,
+            "net_income": 7492812723240,
+            "company_name": "Alamtri Resources Indonesia Tbk",
+            "employee_num": 13015,
+            "total_assets": 114092330664780,
+            "total_equity": 83748459226380,
+            "pretax_income": 10250429028060,
+            "total_revenue": 31356226430880,
+            "point_summaries": [
+              {
+                "name": "value",
+                "point": 14.5,
+                "maxpoint": 18
+              },
+              {
+                "name": "competitive",
+                "point": 14,
+                "maxpoint": 25.5
+              },
+              {
+                "name": "future",
+                "point": 0,
+                "maxpoint": 6
+              },
+              {
+                "name": "financials",
+                "point": 3,
+                "maxpoint": 7.5
+              },
+              {
+                "name": "dividend",
+                "point": 9,
+                "maxpoint": 9
+              },
+              {
+                "updatedAt": "2026-09-23T23:01:11.786Z"
+              }
+            ],
+            "yearly_mcap_chg": 0.458533679929198,
+            "operating_expense": 1793294952540,
+            "revenue_breakdown": null,
+            "total_liabilities": 30343871438400,
+            "int_income_breakdown": null,
+            "operating_expense_breakdown": null
+          },
+          {
+            "year": 2025,
+            "group": [
+              "sub_sector",
+              "sector",
+              "industry",
+              "sub_industry"
+            ],
+            "pb_mrq": 2.30526551580782,
+            "pe_ttm": 33.590855004446,
+            "symbol": "BUMI.JK",
+            "market_cap": 68697047532580,
+            "net_income": 1355850850647,
+            "company_name": "Bumi Resources Tbk",
+            "employee_num": 70,
+            "total_assets": 70604594591720,
+            "total_equity": 48333602232812,
+            "pretax_income": 2976797604229,
+            "total_revenue": 23845559235376,
+            "point_summaries": [
+              {
+                "name": "value",
+                "point": 6,
+                "maxpoint": 18
+              },
+              {
+                "name": "competitive",
+                "point": 12.5,
+                "maxpoint": 25.5
+              },
+              {
+                "name": "future",
+                "point": 0,
+                "maxpoint": 6
+              },
+              {
+                "name": "financials",
+                "point": 4.5,
+                "maxpoint": 7.5
+              },
+              {
+                "name": "dividend",
+                "point": 1.5,
+                "maxpoint": 15.5
+              },
+              {
+                "updatedAt": "2026-09-23T23:01:11.811Z"
+              }
+            ],
+            "yearly_mcap_chg": 0.728971962616822,
+            "operating_expense": 1803793231804,
+            "revenue_breakdown": null,
+            "total_liabilities": 22270992358908,
+            "int_income_breakdown": null,
+            "operating_expense_breakdown": null
+          },
+          {
+            "year": 2025,
+            "group": [
+              "sub_sector",
+              "sector",
+              "industry",
+              "sub_industry"
+            ],
+            "pb_mrq": 2.14714708348832,
+            "pe_ttm": 12.0208250856538,
+            "symbol": "ADMR.JK",
+            "market_cap": 62754378852500,
+            "net_income": 4539128789520,
+            "company_name": "PT Alamtri Minerals Indonesia Tbk",
+            "employee_num": 510,
+            "total_assets": 48389725122960,
+            "total_equity": 28743380505060,
+            "pretax_income": 5726145478560,
+            "total_revenue": 16283705284080,
+            "point_summaries": [
+              {
+                "name": "value",
+                "point": 7.5,
+                "maxpoint": 18
+              },
+              {
+                "name": "competitive",
+                "point": 15.5,
+                "maxpoint": 25.5
+              },
+              {
+                "name": "future",
+                "point": 0,
+                "maxpoint": 6
+              },
+              {
+                "name": "financials",
+                "point": 2,
+                "maxpoint": 7.5
+              },
+              {
+                "name": "dividend",
+                "point": 1.5,
+                "maxpoint": 11
+              },
+              {
+                "updatedAt": "2026-09-23T23:01:11.778Z"
+              }
+            ],
+            "yearly_mcap_chg": 0.55050505050505,
+            "operating_expense": 729826811220,
+            "revenue_breakdown": null,
+            "total_liabilities": 19646344617900,
+            "int_income_breakdown": null,
+            "operating_expense_breakdown": null
+          },
+          {
+            "year": 2025,
+            "group": [
+              "sub_sector",
+              "sector",
+              "industry",
+              "sub_industry"
+            ],
+            "pb_mrq": 3.19552384235599,
+            "pe_ttm": 11.293518659914,
+            "symbol": "GEMS.JK",
+            "market_cap": 42500000425000,
+            "net_income": 4321931513762,
+            "company_name": "Golden Energy Mines Tbk",
+            "employee_num": 528,
+            "total_assets": 20026914195226,
+            "total_equity": 11859233463176,
+            "pretax_income": 5927649879545,
+            "total_revenue": 40402709974502,
+            "point_summaries": [
+              {
+                "name": "value",
+                "point": 9,
+                "maxpoint": 18
+              },
+              {
+                "name": "competitive",
+                "point": 4.5,
+                "maxpoint": 25.5
+              },
+              {
+                "name": "future",
+                "point": 0,
+                "maxpoint": 6
+              },
+              {
+                "name": "financials",
+                "point": 2,
+                "maxpoint": 7.5
+              },
+              {
+                "name": "dividend",
+                "point": 1.5,
+                "maxpoint": 11
+              },
+              {
+                "updatedAt": "2026-09-23T23:01:12.287Z"
+              }
+            ],
+            "yearly_mcap_chg": -0.214673913043478,
+            "operating_expense": 6740537716634,
+            "revenue_breakdown": null,
+            "total_liabilities": 8167680732051,
+            "int_income_breakdown": null,
+            "operating_expense_breakdown": null
+          },
+          {
+            "year": 2025,
+            "group": [
+              "sub_sector",
+              "sector",
+              "industry",
+              "sub_industry"
+            ],
+            "pb_mrq": 1.39292890834017,
+            "pe_ttm": 7.40244414830417,
+            "symbol": "PTBA.JK",
+            "market_cap": 35138010712500,
+            "net_income": 2929957000000,
+            "company_name": "Bukit Asam Tbk",
+            "employee_num": 178,
+            "total_assets": 43917063000000,
+            "total_equity": 22616801000000,
+            "pretax_income": 3773209000000,
+            "total_revenue": 42651724000000,
+            "point_summaries": [
+              {
+                "name": "value",
+                "point": 12,
+                "maxpoint": 18
+              },
+              {
+                "name": "competitive",
+                "point": 9,
+                "maxpoint": 25.5
+              },
+              {
+                "name": "future",
+                "point": 0,
+                "maxpoint": 6
+              },
+              {
+                "name": "financials",
+                "point": 0,
+                "maxpoint": 7.5
+              },
+              {
+                "name": "dividend",
+                "point": 6.5,
+                "maxpoint": 11
+              },
+              {
+                "updatedAt": "2026-09-23T23:01:11.928Z"
+              }
+            ],
+            "yearly_mcap_chg": 0.270833333333333,
+            "operating_expense": 3152672000000,
+            "revenue_breakdown": null,
+            "total_liabilities": 21300262000000,
+            "int_income_breakdown": null,
+            "operating_expense_breakdown": null
+          },
+          {
+            "year": 2025,
+            "group": [
+              "sub_sector",
+              "sector",
+              "industry",
+              "sub_industry"
+            ],
+            "pb_mrq": 0.832093942366259,
+            "pe_ttm": 8.04708660413123,
+            "symbol": "ITMG.JK",
+            "market_cap": 28304621250000,
+            "net_income": 3204927900000,
+            "company_name": "Indo Tambangraya Megah Tbk",
+            "employee_num": 1518,
+            "total_assets": 40385767455000,
+            "total_equity": 32031335835000,
+            "pretax_income": 4820886990000,
+            "total_revenue": 31574380995000,
+            "point_summaries": [
+              {
+                "name": "value",
+                "point": 14.5,
+                "maxpoint": 18
+              },
+              {
+                "name": "competitive",
+                "point": 9,
+                "maxpoint": 25.5
+              },
+              {
+                "name": "future",
+                "point": 0,
+                "maxpoint": 6
+              },
+              {
+                "name": "financials",
+                "point": 2,
+                "maxpoint": 7.5
+              },
+              {
+                "name": "dividend",
+                "point": 3.5,
+                "maxpoint": 9
+              },
+              {
+                "updatedAt": "2026-09-23T23:01:12.111Z"
+              }
+            ],
+            "yearly_mcap_chg": 0.128378378378378,
+            "operating_expense": 3770347410000,
+            "revenue_breakdown": [
+              {
+                "class": "Product/Service Sales",
+                "amount": 31319165070000,
+                "category": "Coal"
+              },
+              {
+                "class": "Product/Service Sales",
+                "amount": 77949540000,
+                "category": "Services"
+              },
+              {
+                "class": "Other income",
+                "amount": 177266385000,
+                "category": "Gain on coal swap"
+              }
+            ],
+            "total_liabilities": 8354431620000,
+            "int_income_breakdown": null,
+            "operating_expense_breakdown": [
+              {
+                "class": "Salaries & Benefits",
+                "amount": 2869513245000,
+                "category": "Selling expenses"
+              },
+              {
+                "class": "General & Admin",
+                "amount": 753730425000,
+                "category": "General and administrative"
+              },
+              {
+                "class": "General & Admin",
+                "amount": 147103740000,
+                "category": "Others (expense)"
+              }
+            ]
+          }
+        ],
+        "group_name": {
+          "sector": "Energy",
+          "industry": "Coal",
+          "sub_sector": "Oil, Gas & Coal",
+          "sub_industry": "Coal Production"
+        }
+      }
+    }
+  ]
+}

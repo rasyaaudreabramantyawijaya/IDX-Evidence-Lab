@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/MDKA/",
+  "ticker": "MDKA",
+  "start": "2025-03-17",
+  "end": "2025-06-14",
+  "retrieved_at": "2026-09-24T12:43:55.512896",
+  "http_status": 200,
+  "observations_count": 50,
+  "sha256": "b65f2083a9660a59e69bf4c5c252f14dcbfe9b289c332d0acdb4b84c35859a04"
+}

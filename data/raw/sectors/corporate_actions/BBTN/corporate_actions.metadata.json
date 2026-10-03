@@ -1,0 +1,14 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/corporate-actions/BBTN/",
+  "retrieved_at": "2026-09-26T14:12:01.137942+00:00",
+  "sha256": "506508ce228cd1d58159340713db199d1eca6161ec96e3cbf793927a45437422",
+  "http_status": 200,
+  "request_number": 12,
+  "request_budget": 45,
+  "symbol": "BBTN",
+  "query_parameters": {},
+  "history_scope": "complete endpoint history; endpoint called without date filters",
+  "snapshot_sha256": "b60ab7d215a6efc0de4ca7a279c9bd8bf4d7a4142e15d2cbefbfaf0d28e23b0c"
+}

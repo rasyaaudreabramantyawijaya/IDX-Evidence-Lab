@@ -1,0 +1,86 @@
+{
+  "results": [
+    {
+      "title": "Arthakencana Rayatama Buys Transaction of AKR Corporindo",
+      "body": "On January 10, 2025, Arthakencana Rayatama, an insider, purchased 282,500 shares of AKR Corporindo increasing their holding from 12,768,961,300 to 12,770,472,000 shares. The transaction type was a \"buy\" with a total amount of 1,510,700. The purpose of the transaction was for investment. This insider trading activity may indicate confidence in the company's prospects, potentially influencing market sentiment and stock price.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202501/46d7fba9e1_da0b2f1cee.pdf",
+      "timestamp": "2025-01-10T17:08:00",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "AKRA.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Arthakencana Rayatama",
+      "holding_before": 12768961300,
+      "holding_after": 12770472000,
+      "amount_transaction": 1510700,
+      "price": 1065.123,
+      "transaction_value": 1609081200.0,
+      "price_transaction": [
+        {
+          "date": "2025-01-07",
+          "type": "buy",
+          "price": 1041,
+          "amount_transacted": 1228200
+        },
+        {
+          "date": "2025-01-09",
+          "type": "buy",
+          "price": 1170,
+          "amount_transacted": 282500
+        }
+      ],
+      "share_percentage_before": 63.611,
+      "share_percentage_after": 63.619,
+      "share_percentage_transaction": 0.008,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Nery Polim Buy Transaction of AKR Corporindo",
+      "body": "On January 10, 2025, Nery Polim, an insider, purchased 630,000 shares of AKR Corporindo increasing their holding from 1,050,000 to 1,680,000 shares. The transaction type was a \"buy\" with a price of IDR 1,045 per share. The purpose of the transaction was for investment. This transaction indicates a significant increase in Nery Polim's ownership stake in the company, potentially signaling confidence in the company's future performance.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202501/0dfc922278_c2979b693a.pdf",
+      "timestamp": "2025-01-10T17:08:00",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "AKRA.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Nery Polim",
+      "holding_before": 1050000,
+      "holding_after": 1680000,
+      "amount_transaction": 630000,
+      "price": 1045.0,
+      "transaction_value": 658350000.0,
+      "price_transaction": [
+        {
+          "date": "2025-01-07",
+          "type": "buy",
+          "price": 1045,
+          "amount_transacted": 630000
+        }
+      ],
+      "share_percentage_before": 0.005,
+      "share_percentage_after": 0.008,
+      "share_percentage_transaction": 0.003,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    }
+  ],
+  "pagination": {
+    "total_count": 32,
+    "showing": 2,
+    "limit": 30,
+    "offset": 30,
+    "has_next": false,
+    "has_previous": true,
+    "next_offset": null,
+    "previous_offset": 0
+  }
+}

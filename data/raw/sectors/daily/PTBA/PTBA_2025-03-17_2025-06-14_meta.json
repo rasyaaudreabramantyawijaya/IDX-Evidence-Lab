@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/PTBA/",
+  "ticker": "PTBA",
+  "start": "2025-03-17",
+  "end": "2025-06-14",
+  "retrieved_at": "2026-09-24T12:45:49.666276",
+  "http_status": 200,
+  "observations_count": 50,
+  "sha256": "d9971770362aa0366331d52bd2a93c82457722a09e5e94afa0936c3ee4d1bf59"
+}

@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/ESSA/",
+  "retrieved_at": "2026-09-26T15:28:18.318796+00:00",
+  "sha256": "215ffedd7514321c621ef0b812b04c8bdd0186c02be563a3cc1e265875fb8e99",
+  "http_status": 200,
+  "request_number": 15,
+  "request_budget": 35,
+  "symbol": "ESSA",
+  "request_scope": "approved full company-report completion",
+  "snapshot_sha256": "b00c185bb3cf2408c6c6bf55d0c298c7b2c206b49abaa1f021489ab2d7a5e90b"
+}

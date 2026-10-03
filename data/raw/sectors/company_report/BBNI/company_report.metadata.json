@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/BBNI/",
+  "retrieved_at": "2026-09-26T15:28:12.273229+00:00",
+  "sha256": "5d459097f207ab92139994d6385a2a827708fac353f6727ea318e90f30ce59ca",
+  "http_status": 200,
+  "request_number": 9,
+  "request_budget": 35,
+  "symbol": "BBNI",
+  "request_scope": "approved full company-report completion",
+  "snapshot_sha256": "e32a1ae8eff1782134dd8000631a5913190649bc8c3ec8235d07bb85de024f91"
+}

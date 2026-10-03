@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/ESSA/",
+  "ticker": "ESSA",
+  "start": "2025-03-17",
+  "end": "2025-06-14",
+  "retrieved_at": "2026-09-24T12:35:46.320148",
+  "http_status": 200,
+  "observations_count": 50,
+  "sha256": "cf5d38788055004fd4a85db362a7b2cc68988da33b89dd8e54143a71e5a1f4fd"
+}

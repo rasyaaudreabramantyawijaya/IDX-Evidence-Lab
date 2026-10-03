@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/PGEO/",
+  "ticker": "PGEO",
+  "start": "2025-12-12",
+  "end": "2026-03-11",
+  "retrieved_at": "2026-09-24T12:45:42.661000",
+  "http_status": 200,
+  "observations_count": 57,
+  "sha256": "357429258c28dcc006f04ec70eb62c975e40d8ee1c22c18d86c600877f1e7231"
+}

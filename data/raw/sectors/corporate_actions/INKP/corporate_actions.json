@@ -1,0 +1,86 @@
+{
+  "symbol": "INKP.JK",
+  "corporate_actions": {
+    "agm": [
+      {
+        "agm_date": "2022-06-10",
+        "agm_time": "09:00:00",
+        "agm_place": "Hotel Grand Hyatt, Grand Ballroomjl. Mh. Thamrin No. Kav 28-30Jakarta Pusat",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2023-05-16",
+        "agm_time": "10:00:00",
+        "agm_place": "Hotel Grand Hyatt, Grand Ballroomjl. Mh. Thamrin No. Kav 28-30Jakarta Pusat",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2024-06-19",
+        "agm_time": null,
+        "agm_place": "",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2025-06-16",
+        "agm_time": "09:00:00",
+        "agm_place": "Hotel Grand Hyatt, Ballroom Jl. Mh. Thamrin No. Kav 28-30 Jakarta Pusat Kota Adm. Jakartapusat",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2026-06-23",
+        "agm_time": "09:00:00",
+        "agm_place": "Hotel Grand Hyatt, Ballroom JL. Mh. Thamrin No. Kav 28-30 Jakarta Pusat Kota Adm. Jakartapusat",
+        "agm_result": null
+      }
+    ],
+    "bonus": null,
+    "warrant": null,
+    "dividend": [
+      {
+        "ex_date": "2026-07-02",
+        "payment_date": "2026-07-24",
+        "dividend_yield": null,
+        "dividend_amount": 75
+      },
+      {
+        "ex_date": "2025-06-25",
+        "payment_date": "2025-07-18",
+        "dividend_yield": 0.00749456,
+        "dividend_amount": 50
+      },
+      {
+        "ex_date": "2024-06-28",
+        "payment_date": "2024-07-19",
+        "dividend_yield": 0.00597263,
+        "dividend_amount": 50
+      },
+      {
+        "ex_date": "2023-05-26",
+        "payment_date": "2023-06-16",
+        "dividend_yield": 0.00580936,
+        "dividend_amount": 50
+      },
+      {
+        "ex_date": "2022-06-21",
+        "payment_date": "2022-07-14",
+        "dividend_yield": 0.00596255,
+        "dividend_amount": 50
+      },
+      {
+        "ex_date": "2021-09-06",
+        "payment_date": "2021-09-29",
+        "dividend_yield": 0.00534869,
+        "dividend_amount": 50
+      },
+      {
+        "ex_date": "2020-09-03",
+        "payment_date": "2020-09-25",
+        "dividend_yield": 0.00675757,
+        "dividend_amount": 50
+      }
+    ],
+    "right_issue": null,
+    "stock_split": null,
+    "upcoming_dividend": null
+  }
+}

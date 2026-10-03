@@ -1,0 +1,18 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/filings/?symbol=INCO&start=2023-09-25&end=2026-09-24&limit=30&offset=0",
+  "retrieved_at": "2026-09-26T12:22:14.731190+00:00",
+  "sha256": "b575ae3f9dd6218aa769bf7e10dd8c8f9ddf5df913643f5e95260273be74e62b",
+  "http_status": 200,
+  "request_number": 26,
+  "request_budget": 615,
+  "run_id": "filings_full_20260926T122124Z",
+  "symbol": "INCO",
+  "requested_start": "2023-09-25",
+  "requested_end": "2026-09-24",
+  "limit": 30,
+  "offset": 0,
+  "pagination_followed": true,
+  "snapshot_sha256": "1047e8466b808e9462ae2ae444c1fa535a8cb2f1aac62ad84e18536f94642699"
+}

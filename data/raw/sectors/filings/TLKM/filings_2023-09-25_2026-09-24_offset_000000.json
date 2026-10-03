@@ -1,0 +1,78 @@
+{
+  "results": [
+    {
+      "title": "Change in Perusahaan Perseroan Danantara Asset Management's position in Telkom Indonesia",
+      "body": "Perusahaan Perseroan Danantara Asset Management executed a transaction for 516,023,535 shares of Telkom Indonesia. This decreases their holdings from 51,602,353,559 to 51,086,330,024 shares. The stated purpose of the transaction was fulfillment of the provisions of law number 16 of 2025.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-08012026-8259-00.pdf-0.pdf",
+      "timestamp": "2026-01-08T14:59:50",
+      "sector": "infrastructures",
+      "sub_sector": "telecommunication",
+      "tags": [
+        "share-transfer"
+      ],
+      "symbol": "TLKM.JK",
+      "transaction_type": "others",
+      "holder_type": "insider",
+      "holder_name": "Perusahaan Perseroan Danantara Asset Management",
+      "holding_before": 51602353559,
+      "holding_after": 51086330024,
+      "amount_transaction": 516023535,
+      "price": 50.0,
+      "transaction_value": 25801176750.0,
+      "price_transaction": [
+        {
+          "date": "2026-01-05",
+          "type": "others",
+          "price": 50.0,
+          "amount_transacted": 516023535
+        }
+      ],
+      "share_percentage_before": 52.091,
+      "share_percentage_after": 51.57,
+      "share_percentage_transaction": 0.521,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Change in Negara Republik Indonesia's position in Telkom Indonesia",
+      "body": "Badan Pengaturan Badan Usaha Milik Negara Republik Indonesia executed a transaction for 516,023,535 shares of Telkom Indonesia. This increases their holdings from 1 to 516,023,536 shares. The stated purpose of the transaction was fulfillment of law number 16 of 2025.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-08012026-8418-00.pdf-0.pdf",
+      "timestamp": "2026-01-08T14:21:48",
+      "sector": "infrastructures",
+      "sub_sector": "telecommunication",
+      "tags": [],
+      "symbol": "TLKM.JK",
+      "transaction_type": "others",
+      "holder_type": "insider",
+      "holder_name": "Negara Republik Indonesia",
+      "holding_before": 1,
+      "holding_after": 516023536,
+      "amount_transaction": 516023535,
+      "price": 50.0,
+      "transaction_value": 25801176750.0,
+      "price_transaction": [
+        {
+          "date": "2026-01-05",
+          "type": "others",
+          "price": 50.0,
+          "amount_transacted": 516023535
+        }
+      ],
+      "share_percentage_before": 0.0,
+      "share_percentage_after": 0.52,
+      "share_percentage_transaction": 0.52,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    }
+  ],
+  "pagination": {
+    "total_count": 2,
+    "showing": 2,
+    "limit": 30,
+    "offset": 0,
+    "has_next": false,
+    "has_previous": false,
+    "next_offset": null,
+    "previous_offset": null
+  }
+}

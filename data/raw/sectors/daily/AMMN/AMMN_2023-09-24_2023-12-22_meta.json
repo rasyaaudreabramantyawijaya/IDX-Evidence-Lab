@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/AMMN/",
+  "ticker": "AMMN",
+  "start": "2023-09-24",
+  "end": "2023-12-22",
+  "retrieved_at": "2026-09-24T12:27:37.458786",
+  "http_status": 200,
+  "observations_count": 64,
+  "sha256": "460d0f447d8a2b4c8b97e2deaa34f2fa1da7f7f493ba8c0b69206d1ce8ceb794"
+}

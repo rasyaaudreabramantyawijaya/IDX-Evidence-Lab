@@ -1,0 +1,18 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/filings/?symbol=AKRA&start=2023-09-25&end=2026-09-24&limit=30&offset=0",
+  "retrieved_at": "2026-09-26T12:21:30.593990+00:00",
+  "sha256": "07f1d939d7db74e79110727a17be51724efb2d19d24993ff137a28bd69bb8729",
+  "http_status": 200,
+  "request_number": 4,
+  "request_budget": 615,
+  "run_id": "filings_full_20260926T122124Z",
+  "symbol": "AKRA",
+  "requested_start": "2023-09-25",
+  "requested_end": "2026-09-24",
+  "limit": 30,
+  "offset": 0,
+  "pagination_followed": true,
+  "snapshot_sha256": "5f6f17a00644bf38e5f6799e379efd9b26556768fabe1dc85a9823851115f60e"
+}

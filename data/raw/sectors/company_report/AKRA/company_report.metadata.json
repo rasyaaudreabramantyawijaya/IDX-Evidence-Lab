@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/AKRA/",
+  "retrieved_at": "2026-09-26T15:28:07.074252+00:00",
+  "sha256": "ce93af37b84c3540b8efe89f41cc0b03710aab075436a2a91861525bb070c8b3",
+  "http_status": 200,
+  "request_number": 3,
+  "request_budget": 35,
+  "symbol": "AKRA",
+  "request_scope": "approved full company-report completion",
+  "snapshot_sha256": "eaaf28c879b11b25c2c84a5d901e1f35a3ffb0941d599cf1efd94f4428e7c868"
+}

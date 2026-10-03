@@ -1,0 +1,104 @@
+{
+  "symbol": "INDY.JK",
+  "corporate_actions": {
+    "agm": [
+      {
+        "agm_date": "2022-04-22",
+        "agm_time": "10:00:00",
+        "agm_place": "Gedung Tribrata Opus Ballroom 3-4 Lobby Level Jl. Dharmawangsa III No.2 Kebayoran Baru Jakarta Selatan 12160, DKI Jakarta, kota Adm. Jakarta Selatan",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2022-05-20",
+        "agm_time": "10:00:00",
+        "agm_place": "DKI Jakarta",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2023-04-19",
+        "agm_time": "10:00:00",
+        "agm_place": "Graha Mitrajl. Jend. Gatot Subroto Kav.21 Jakarta Selatan 12930",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2023-05-15",
+        "agm_time": "13:30:00",
+        "agm_place": "Ms Teams",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2023-05-25",
+        "agm_time": "11:00:00",
+        "agm_place": "Ms Teams",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2024-05-06",
+        "agm_time": "10:00:00",
+        "agm_place": "Graha Mitra Jl. Jend. Gatot Subroto Kav.21 Karet Semanggisetiabudi 12930",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2024-11-20",
+        "agm_time": "10:00:00",
+        "agm_place": "Live Event - Microsoft Teamspendaftaran",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2025-05-05",
+        "agm_time": "10:00:00",
+        "agm_place": "Balai Kartini Lantai 2, Ruang Miangas Jl. Jend. Gatot Subroto Kav.37 Karet Semanggi ?Setiabudi Jakarta Selatan 12950",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2025-11-26",
+        "agm_time": "10:00:00",
+        "agm_place": "Live Event - Microsoft Teams",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2026-05-20",
+        "agm_time": "14:00:00",
+        "agm_place": "Balai Kartini Lantai 2, Ruang Miangas JL. Jend. Gatot Subroto Kav.37 Karet Semanggi -Setiabudi Jakarta Selatan 12950",
+        "agm_result": "Agenda #1: Shareholders approved the 2025 Annual Report and audited Financial Statements, granting full discharge of responsibility to the Board of Directors and Commissioners for their management and supervision.\nAgenda #2: The meeting approved a final cash dividend of USD 3,013,598 (approximately Rp10.24875 per share) with a recording date of June 4, 2026, and a payment date of June 19, 2026.\nAgenda #3: The Board of Commissioners was granted authority to appoint a registered Public Accountant or Firm for the 2026 fiscal year audit and determine their honorarium.\nAgenda #4: Shareholders reappointed Farid Harianto, Retina Rosabai, and Kamen Kamenov Palatov, and appointed Feri Wibisono as a new Independent Commissioner with terms lasting until 2029.\nAgenda #5: The meeting approved maintaining or adjusting Board of Commissioners remuneration based on committee recommendations and delegated the authority to set Board of Directors remuneration to the Board of Commissioners.\nAgenda #6: Shareholders approved updating the company's business purposes and activities to align with the Indonesia Standard Industrial Classification (KBLI) and the Online Single Submission (OSS) system.\nAgenda #7: The meeting confirmed the leadership members and their terms, including Azis Armand as President Director and Agus Lasmono as President Commissioner.\nAgenda #8: The Board of Commissioners is authorized to determine the specific duties and authorities for each member of the Board of Directors."
+      }
+    ],
+    "bonus": null,
+    "warrant": null,
+    "dividend": [
+      {
+        "ex_date": "2024-05-17",
+        "payment_date": "2024-06-05",
+        "dividend_yield": 0.063813,
+        "dividend_amount": 92.1331
+      },
+      {
+        "ex_date": "2022-08-16",
+        "payment_date": "2022-08-30",
+        "dividend_yield": 0.0435584,
+        "dividend_amount": 114.464
+      },
+      {
+        "ex_date": "2020-05-04",
+        "payment_date": "2020-05-20",
+        "dividend_yield": 0.0932655,
+        "dividend_amount": 89.6339
+      },
+      {
+        "ex_date": "2025-05-16",
+        "payment_date": "2025-06-04",
+        "dividend_yield": 0.00963949,
+        "dividend_amount": 15.9313
+      },
+      {
+        "ex_date": "2023-05-05",
+        "payment_date": "2023-05-17",
+        "dividend_yield": 0.101668,
+        "dividend_amount": 208
+      }
+    ],
+    "right_issue": null,
+    "stock_split": null,
+    "upcoming_dividend": null
+  }
+}

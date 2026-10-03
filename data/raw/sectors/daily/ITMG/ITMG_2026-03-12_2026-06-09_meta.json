@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/ITMG/",
+  "ticker": "ITMG",
+  "start": "2026-03-12",
+  "end": "2026-06-09",
+  "retrieved_at": "2026-09-24T12:40:53.617949",
+  "http_status": 200,
+  "observations_count": 52,
+  "sha256": "198300aa73c8d610d4e12789c1cf573800ce9487c1bc4b9d7c60a313c9cfc7d6"
+}

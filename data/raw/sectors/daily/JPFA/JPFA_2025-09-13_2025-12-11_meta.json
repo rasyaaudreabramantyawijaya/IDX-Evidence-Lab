@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/JPFA/",
+  "ticker": "JPFA",
+  "start": "2025-09-13",
+  "end": "2025-12-11",
+  "retrieved_at": "2026-09-24T12:41:47.446122",
+  "http_status": 200,
+  "observations_count": 64,
+  "sha256": "f2ab6c9b06417a21e9acdcd3daf9c909829c05890add8d9ded374709d8bb70ac"
+}

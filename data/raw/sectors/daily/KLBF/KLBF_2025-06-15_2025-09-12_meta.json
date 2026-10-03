@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/KLBF/",
+  "ticker": "KLBF",
+  "start": "2025-06-15",
+  "end": "2025-09-12",
+  "retrieved_at": "2026-09-24T12:41:55.990503",
+  "http_status": 200,
+  "observations_count": 62,
+  "sha256": "d70d41149293d2185746ac9fd8b4b9c6241c159c7b3d3f2c08096f90ee91e3ed"
+}

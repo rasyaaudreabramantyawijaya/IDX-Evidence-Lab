@@ -1,0 +1,139 @@
+{
+  "symbol": "BRPT.JK",
+  "corporate_actions": {
+    "agm": [
+      {
+        "agm_date": "2022-03-02",
+        "agm_time": "14:00:00",
+        "agm_place": "Wisma Barito Pacific Tower B, Lantai Mjl. Let. Jend. S. Parman Kav. 62-63Jakarta Barat 11410",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2022-05-10",
+        "agm_time": "14:00:00",
+        "agm_place": "Dibatalkan",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2022-05-11",
+        "agm_time": "14:00:00",
+        "agm_place": "Wisma Barito Pacific Tower B, Lantai Mjl. Let. Jend. S. Parman Kav. 62-63Jakarta Barat 11410",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2022-12-02",
+        "agm_time": "10:00:00",
+        "agm_place": "Akan Diselenggarakan Secara Elektronik",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2022-12-09",
+        "agm_time": "10:00:00",
+        "agm_place": "Wisma Barito Pacific Tower B, Lantai Mjl. Let. Jend. S. Parman Kav. 62-63Jakarta Barat 11410",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2023-06-12",
+        "agm_time": "14:00:00",
+        "agm_place": "Wisma Barito Pacific Tower B, Lantai Mjl. Let. Jend. S. Parman Kav. 62-63Jakarta Barat 11410",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2023-11-28",
+        "agm_time": null,
+        "agm_place": "",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2024-06-14",
+        "agm_time": "14:00:00",
+        "agm_place": "Wisma Barito Pacific Tower B, Lantai Mjl. Let. Jend. S. Parman Kav. 62-63Jakarta Barat 11410",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2024-10-25",
+        "agm_time": "14:00:00",
+        "agm_place": "",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2025-06-19",
+        "agm_time": "14:35:00",
+        "agm_place": "Wisma Barito Pacific Ii, Ruang Auditorium, Lantai Mezzanine, Jl. Let. Jend. S. Parman Kav. 60, Jakarta Barat 11410",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2026-06-25",
+        "agm_time": "14:00:00",
+        "agm_place": "Wisma Barito Pacific II, Ruang Auditorium, Lantai Mezzanine, JL. Let. Jend. S. Parman Kav. 60, Jakarta Barat 11410",
+        "agm_result": "Agenda #1: Approval of Annual Report and Financial Statements - Approved the annual report and audited financial statements for fiscal year 2025, granting full discharge to directors and commissioners, with 99.75% shareholder approval.\nAgenda #2: Approval of Net Profit Utilization - Allocated US$489.8 million net profit: US$1 million to mandatory reserve, US$8.5 million cash dividend with recording date 7 July 2026, and US$480.3 million to retained earnings; approved with 99.914% for, 0.012% against, and 0.074% abstain.\nAgenda #3: Appointment of Public Accountant - Approved appointment of KAP Liana Ramon Xenia & Rekan (Deloitte) to audit fiscal year 2026 financial statements, with authority to the Board of Directors to determine honorarium; votes were 99.681% for, 0.244% against, and 0.075% abstain.\nAgenda #4: Restatement of Article 3 of the Articles of Association - Approved revision of Article 3 to align with KBLI 2025, authorizing directors to execute the changes; votes were 95.522% for, 4.395% against, and 0.083% abstain.\nAgenda #5: Report on Realization of Bond Proceeds - This item was informational only and did not require shareholder approval; it was presented without a binding vote."
+      }
+    ],
+    "bonus": [
+      {
+        "new_ratio": 1,
+        "old_ratio": 625,
+        "payment_date": "2024-07-19"
+      },
+      {
+        "new_ratio": 2,
+        "old_ratio": 475,
+        "payment_date": "2023-01-12"
+      }
+    ],
+    "warrant": null,
+    "dividend": [
+      {
+        "ex_date": "2026-07-06",
+        "payment_date": "2026-07-29",
+        "dividend_yield": null,
+        "dividend_amount": 1.63
+      },
+      {
+        "ex_date": "2022-05-23",
+        "payment_date": "2022-06-10",
+        "dividend_yield": 0.00367501,
+        "dividend_amount": 3.1218
+      },
+      {
+        "ex_date": "2023-06-21",
+        "payment_date": "2023-07-14",
+        "dividend_yield": 0.00165445,
+        "dividend_amount": 1.59
+      },
+      {
+        "ex_date": "2021-05-19",
+        "payment_date": "2021-06-04",
+        "dividend_yield": 0.00279449,
+        "dividend_amount": 2.7244
+      },
+      {
+        "ex_date": "2024-06-27",
+        "payment_date": "2024-07-19",
+        "dividend_yield": 0.000850965,
+        "dividend_amount": 0.873
+      }
+    ],
+    "right_issue": [
+      {
+        "price": 2330,
+        "ex_date": "2018-05-31",
+        "new_ratio": 20,
+        "old_ratio": 63,
+        "trading_period_end": "2018-06-22",
+        "trading_period_start": "2018-06-07"
+      }
+    ],
+    "stock_split": [
+      {
+        "date": "2019-08-06",
+        "split_ratio": 5
+      },
+      {
+        "date": "2017-07-12",
+        "split_ratio": 2
+      }
+    ],
+    "upcoming_dividend": null
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/EXCL/",
+  "ticker": "EXCL",
+  "start": "2023-12-23",
+  "end": "2024-03-21",
+  "retrieved_at": "2026-09-24T12:35:52.105006",
+  "http_status": 200,
+  "observations_count": 56,
+  "sha256": "813d101be586da31f645beffa5e2240f9cc61f15563bd9f233fd29156490a220"
+}

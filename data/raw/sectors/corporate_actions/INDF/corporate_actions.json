@@ -1,0 +1,86 @@
+{
+  "symbol": "INDF.JK",
+  "corporate_actions": {
+    "agm": [
+      {
+        "agm_date": "2022-07-22",
+        "agm_time": "14:00:00",
+        "agm_place": "Sudirman Plaza, Indofood Tower Lantai Phjl. Jend. Sudirman Kav. 76-78Jakarta Selatan 12910",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2023-06-23",
+        "agm_time": "14:00:00",
+        "agm_place": "Sudirman Plaza, Indofood Tower Lantai Phjl. Jend. Sudirman Kav. 76-78Jakarta Selatan 12910",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2024-06-28",
+        "agm_time": null,
+        "agm_place": "",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2025-06-20",
+        "agm_time": "14:00:00",
+        "agm_place": "Sudirman Plaza, Indofood Tower Lantai Ph, Jalan Jenderal Sudirman Kav. 76-78, Jakarta 12910",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2026-06-26",
+        "agm_time": "14:00:00",
+        "agm_place": "Sudirman Plaza, Indofood Tower Lantai PH, Jalan Jenderal Sudirman Kav. 76-78, Jakarta Kotaadm. Jakarta Selatan",
+        "agm_result": "Agenda #1: Acceptance and approval of the Board of Directors' Annual Report. Shareholders approved the report covering the fiscal year ended 31 December 2025, with 99.16% approval at a meeting on 26 June 2026 (quorum 80.849%).\nAgenda #2: Ratification of the Company's Financial Statements (Balance Sheet and Income Statement). Approved the audited statements for fiscal year 2025, with an unmodified opinion from Purwanto Susanti dan Surja, and 99.108% approval.\nAgenda #3: Determination of the use of net profit for fiscal year 2025. Approved setting aside Rp5,000,000,000 as a reserve fund, declaring a cash dividend (amount per share not stated in the voting figures), and recording the remainder as unappropriated retained earnings, with 98.335% approval (as per chunk summary; exact figure not stated).\nAgenda #4: Determination of remuneration for members of the Board of Commissioners and the Board of Directors. Approved a maximum remuneration of Rp340,000,000,000 before tax for 1 January 2026 to 31 December 2026, with 86.041% approval.\nAgenda #5: Appointment of a Public Accountant and authorization of the Board of Directors to set fees. Appointed Purwanto Susanti dan Surja to audit the consolidated financial statements for the fiscal year ended 31 December 2026, with 89.595% approval."
+      }
+    ],
+    "bonus": null,
+    "warrant": null,
+    "dividend": [
+      {
+        "ex_date": "2026-07-07",
+        "payment_date": "2026-07-29",
+        "dividend_yield": null,
+        "dividend_amount": 290
+      },
+      {
+        "ex_date": "2025-07-02",
+        "payment_date": "2025-07-23",
+        "dividend_yield": 0.0369668,
+        "dividend_amount": 280
+      },
+      {
+        "ex_date": "2024-07-09",
+        "payment_date": "2024-07-26",
+        "dividend_yield": 0.0399035,
+        "dividend_amount": 267
+      },
+      {
+        "ex_date": "2021-09-07",
+        "payment_date": "2021-09-29",
+        "dividend_yield": 0.0433156,
+        "dividend_amount": 278
+      },
+      {
+        "ex_date": "2023-07-07",
+        "payment_date": "2023-07-26",
+        "dividend_yield": 0.0380841,
+        "dividend_amount": 257
+      },
+      {
+        "ex_date": "2022-08-02",
+        "payment_date": "2022-08-24",
+        "dividend_yield": 0.0429701,
+        "dividend_amount": 278
+      },
+      {
+        "ex_date": "2020-07-24",
+        "payment_date": "2020-08-14",
+        "dividend_yield": 0.0399104,
+        "dividend_amount": 278
+      }
+    ],
+    "right_issue": null,
+    "stock_split": null,
+    "upcoming_dividend": null
+  }
+}

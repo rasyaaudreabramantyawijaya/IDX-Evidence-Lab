@@ -1,0 +1,97 @@
+{
+  "symbol": "JPFA.JK",
+  "corporate_actions": {
+    "agm": [
+      {
+        "agm_date": "2022-04-06",
+        "agm_time": "10:00:00",
+        "agm_place": "Ballroom 1, Pullman Jakarta Central Parkjl. Let. Jend. S. Parman Kav. 28Jakarta Barat 11470",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2023-04-05",
+        "agm_time": "10:00:00",
+        "agm_place": "Ballroom 1, Pullman Jakarta Central Parkjl. Let. Jend. S. Parman Kav. 28Jakarta Barat 11470",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2024-04-03",
+        "agm_time": "10:00:00",
+        "agm_place": "Ballroom 1, Pullman Jakarta Central Parkjl. Let. Jend. S. Parman Kav. 28Jakarta Barat 11470",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2025-04-10",
+        "agm_time": "10:00:00",
+        "agm_place": "Ballroom 1, Pullman Jakarta Central Park, Podomoro City, Jl. Let. Jend. S. Parman Kav. 28, Jakarta 11470",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2025-09-03",
+        "agm_time": "11:00:00",
+        "agm_place": "Hotel Js Luwansa, Ruang Rapha 1 & 2, Lantai 2, Jl. Hr. Rasunasaid Kav. C No. 22, RT 2, RW 5, Karet Kuningan, Kecamatansetiabudi, Jakarta Selatan 12940",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2026-04-29",
+        "agm_time": "11:00:00",
+        "agm_place": "Ballroom 1, Pullman Jakarta, Central Park, Podomoro City, JL. Let. Jend. S. Parman Kav. 28, Jakarta 11470",
+        "agm_result": "Agenda #1: Annual General Shareholders Meeting. The meeting was held on April 29, 2026, but the specific agenda items and resolutions are not stated.\nAgenda #2: Extraordinary General Shareholders Meeting. The meeting was held on April 29, 2026, but the specific agenda items and resolutions are not stated."
+      }
+    ],
+    "bonus": null,
+    "warrant": null,
+    "dividend": [
+      {
+        "ex_date": "2026-05-11",
+        "payment_date": "2026-05-19",
+        "dividend_yield": null,
+        "dividend_amount": 140
+      },
+      {
+        "ex_date": "2023-04-17",
+        "payment_date": "2023-05-03",
+        "dividend_yield": 0.0400946,
+        "dividend_amount": 50
+      },
+      {
+        "ex_date": "2022-04-18",
+        "payment_date": "2022-04-22",
+        "dividend_yield": 0.0401425,
+        "dividend_amount": 60
+      },
+      {
+        "ex_date": "2021-04-26",
+        "payment_date": "2021-05-07",
+        "dividend_yield": 0.022647,
+        "dividend_amount": 40
+      },
+      {
+        "ex_date": "2020-06-29",
+        "payment_date": "2020-07-15",
+        "dividend_yield": 0.0164218,
+        "dividend_amount": 20
+      },
+      {
+        "ex_date": "2024-10-22",
+        "payment_date": "2024-10-29",
+        "dividend_yield": 0.048266,
+        "dividend_amount": 70
+      },
+      {
+        "ex_date": "2025-04-22",
+        "payment_date": "2025-04-29",
+        "dividend_yield": 0.0354058,
+        "dividend_amount": 70
+      }
+    ],
+    "right_issue": null,
+    "stock_split": [
+      {
+        "date": "2013-04-19",
+        "split_ratio": 5
+      }
+    ],
+    "upcoming_dividend": null
+  }
+}

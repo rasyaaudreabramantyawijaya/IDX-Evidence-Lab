@@ -1,0 +1,7 @@
+-r requirements-portfolio.txt
+pandas>=2.2,<4
+nbformat>=5.10,<6
+ipython>=8,<10
+httpx>=0.27,<1
+scikit-learn>=1.4,<2
+xgboost>=2,<4

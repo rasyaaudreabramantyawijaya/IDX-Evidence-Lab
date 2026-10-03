@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/INDY/?start=2024-09-19&end=2024-12-17",
+  "retrieved_at": "2026-09-25T03:39:29.357108+00:00",
+  "sha256": "5bb10d787de04b9a3138a48890671119e0347938b29eb4b3674ae9f512feae53",
+  "http_status": 200,
+  "request_number": 313,
+  "request_budget": 558,
+  "ticker": "INDY",
+  "requested_start": "2024-09-19",
+  "requested_end": "2024-12-17",
+  "window_days": 90,
+  "snapshot_sha256": "bd79c4f9f6efbe0b85142a127a5f16da13b3f6fd26909ebec9aa7187ee09b820"
+}

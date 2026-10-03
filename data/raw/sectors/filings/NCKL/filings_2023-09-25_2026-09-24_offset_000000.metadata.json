@@ -1,0 +1,18 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/filings/?symbol=NCKL&start=2023-09-25&end=2026-09-24&limit=30&offset=0",
+  "retrieved_at": "2026-09-26T12:25:36.708288+00:00",
+  "sha256": "0a76f3d94588e3d74921d63228ab153aea94c68a5ad08fca8b5e17abb8283e1c",
+  "http_status": 200,
+  "request_number": 1,
+  "request_budget": 577,
+  "run_id": "filings_full_20260926T122124Z",
+  "symbol": "NCKL",
+  "requested_start": "2023-09-25",
+  "requested_end": "2026-09-24",
+  "limit": 30,
+  "offset": 0,
+  "pagination_followed": true,
+  "snapshot_sha256": "94d24fbf5c876bb17347a54cbed7f562cf7354c894f0a4714106ab7e48696408"
+}

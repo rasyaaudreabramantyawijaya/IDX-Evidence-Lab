@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/WIFI/?start=2025-09-14&end=2025-12-12",
+  "retrieved_at": "2026-09-25T03:59:34.918048+00:00",
+  "sha256": "f101d0e69f81689e80624c6410f64d42424b3460a6e163dafd630e1a8f0a93e7",
+  "http_status": 200,
+  "request_number": 99,
+  "request_budget": 105,
+  "ticker": "WIFI",
+  "requested_start": "2025-09-14",
+  "requested_end": "2025-12-12",
+  "window_days": 90,
+  "snapshot_sha256": "4ce768ec74255ce8f5d460662401abac7ef93ac2c1202bd3e7b5d704279cb95d"
+}

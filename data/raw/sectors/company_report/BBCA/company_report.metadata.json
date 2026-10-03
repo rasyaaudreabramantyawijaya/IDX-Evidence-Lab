@@ -1,0 +1,13 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/report/BBCA/",
+  "retrieved_at": "2026-09-26T15:28:11.398970+00:00",
+  "sha256": "ab5a0dd0289bca03d1943193feeff47d50669c9c1a910500912075a65e9ab35f",
+  "http_status": 200,
+  "request_number": 8,
+  "request_budget": 35,
+  "symbol": "BBCA",
+  "request_scope": "approved full company-report completion",
+  "snapshot_sha256": "6bac691617de3141e8c09e48e0b1ee8af94f40019c3049fe353f500b59f705e3"
+}

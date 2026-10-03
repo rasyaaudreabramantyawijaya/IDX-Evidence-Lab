@@ -1,0 +1,17 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/filings/?symbol=CPIN&start=2026-08-26&end=2026-09-25&limit=30&offset=0",
+  "retrieved_at": "2026-09-25T13:50:48.132543+00:00",
+  "sha256": "3f4c5f6cdb37e5aa8e3804ddfd47989080778c552af4ad4427c702560de00209",
+  "http_status": 200,
+  "request_number": 1,
+  "request_budget": 30,
+  "symbol": "CPIN",
+  "requested_start": "2026-08-26",
+  "requested_end": "2026-09-25",
+  "limit": 30,
+  "offset": 0,
+  "pagination_followed": false,
+  "snapshot_sha256": "f7f11bb6ba8488bb202d2f2d31d5d830a102adfed4627b1d50428184a578dc7a"
+}

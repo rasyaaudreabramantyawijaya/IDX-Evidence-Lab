@@ -1,0 +1,973 @@
+{
+  "generated_at_utc": "2026-09-26T15:56:24.780263+00:00",
+  "provider": "Sectors.app",
+  "endpoint": "/v2/company/report/{symbol}/",
+  "universe_snapshot": "data/raw/sectors/lq45-universe.json",
+  "universe_symbols": 45,
+  "symbol_coverage": {
+    "present": 45,
+    "expected": 45,
+    "missing_symbols": []
+  },
+  "section_presence_by_symbol": {
+    "overview": 45,
+    "valuation": 45,
+    "future": 45,
+    "financials": 45,
+    "dividend": 45,
+    "management": 45,
+    "ownership": 45,
+    "peers": 45
+  },
+  "complete_report_sections_used_for_audit": [
+    "valuation",
+    "future",
+    "financials",
+    "dividend",
+    "management",
+    "ownership",
+    "peers"
+  ],
+  "reports_with_all_audited_sections": 45,
+  "symbols_with_all_audited_sections": [
+    "AADI",
+    "ADMR",
+    "ADRO",
+    "AKRA",
+    "AMMN",
+    "AMRT",
+    "ANTM",
+    "ASII",
+    "BBCA",
+    "BBNI",
+    "BBRI",
+    "BBTN",
+    "BMRI",
+    "BRPT",
+    "BUMI",
+    "CPIN",
+    "CUAN",
+    "DEWA",
+    "EMTK",
+    "ESSA",
+    "EXCL",
+    "GOTO",
+    "HRTA",
+    "ICBP",
+    "INCO",
+    "INDF",
+    "INDY",
+    "INKP",
+    "ISAT",
+    "ITMG",
+    "JPFA",
+    "KLBF",
+    "MAPI",
+    "MBMA",
+    "MDKA",
+    "MEDC",
+    "NCKL",
+    "PGAS",
+    "PGEO",
+    "PTBA",
+    "SCMA",
+    "TLKM",
+    "UNTR",
+    "UNVR",
+    "WIFI"
+  ],
+  "overview_only_symbols": [],
+  "source_counts": {
+    "new_live_report": 45,
+    "existing_cache_used_for_coverage": 0,
+    "legacy_cache_preserved_separately": 45
+  },
+  "field_coverage_status": "SECTION_COMPLETE_NESTED_FIELDS_UNVERIFIED",
+  "request_history_note": "All 45 current LQ45 symbols now have fresh live company reports with all audited top-level sections. Across the 35-symbol batch: 25 succeeded initially, 10 received HTTP 429, then all 10 retries succeeded after cooldown. Total for that batch: 45 attempts, 35 successful responses, 10 failed attempts later resolved. Ten reports for the remaining tickers had been collected in the earlier approved batch. Legacy cache preserved; it is not the selected source for current coverage.",
+  "point_in_time_note": "Fresh reports retrieved 2026-09-26 include latest_close_date=2026-09-25. Align report availability and price timestamps before using them as evidence for dates up to 2026-09-24.",
+  "scope_note": "This audit measures top-level section presence, not whether every nested financial metric is non-null or sufficient for scoring.",
+  "per_ticker": [
+    {
+      "symbol": "AADI",
+      "kind": "new_live_report",
+      "path": "company_report/AADI/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "926e3e7c90ab017d8f28d02528bdd84a07021b05abce6553984f542042954a74",
+      "snapshot_sha256": "31f506ff8973ac7edf2245759d09737e7f4c13d3fd921f34f0223b5fc7951edf"
+    },
+    {
+      "symbol": "ADMR",
+      "kind": "new_live_report",
+      "path": "company_report/ADMR/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "4bb6f47b944315ca0aaff86e2ff28a59d9a0875fb0a4ca370c45b1b8230fd8ff",
+      "snapshot_sha256": "75060c4851d461b9deaeccdaf885261e7c5583d9116e9e72776343844b37a4f4"
+    },
+    {
+      "symbol": "ADRO",
+      "kind": "new_live_report",
+      "path": "company_report/ADRO/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "08f805b597484ac38734dbf178bf8a3929df0c2d856343befa8abd9a92174e98",
+      "snapshot_sha256": "1da675a9a45ca6a327988d7d2bfa0b891a37235e21f39bb84e4e72275d5f615d"
+    },
+    {
+      "symbol": "AKRA",
+      "kind": "new_live_report",
+      "path": "company_report/AKRA/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "ce93af37b84c3540b8efe89f41cc0b03710aab075436a2a91861525bb070c8b3",
+      "snapshot_sha256": "eaaf28c879b11b25c2c84a5d901e1f35a3ffb0941d599cf1efd94f4428e7c868"
+    },
+    {
+      "symbol": "AMMN",
+      "kind": "new_live_report",
+      "path": "company_report/AMMN/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "9469f155ea91a68c7ddc8226b5fd3302417baf7b4a540fa8ac2d26a525f49370",
+      "snapshot_sha256": "6f285fa5fd7a60b96c94bba8014f08acf8dbc8882e45f6881e71c627c5f597d4"
+    },
+    {
+      "symbol": "AMRT",
+      "kind": "new_live_report",
+      "path": "company_report/AMRT/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "d1061cb7e9493f47d1c916c150549c6ac92b225fffb08c502126a3b9413fa7a7",
+      "snapshot_sha256": "76661c79d3f46bdde249e33badd7174fd9860766a4b2f8e832f5bf2daca78b60"
+    },
+    {
+      "symbol": "ANTM",
+      "kind": "new_live_report",
+      "path": "company_report/ANTM/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "84c6ec0e057d696a11da82c58ffb41c8651b57a7ea27d9b909ea0f2b22d32cea",
+      "snapshot_sha256": "5102c0dd76bedaf7dd381c9b025499bd47a7f72e51151bbf11868499a312c2cf"
+    },
+    {
+      "symbol": "ASII",
+      "kind": "new_live_report",
+      "path": "company_report/ASII/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "9fdc838872e0525981fbef181feccd0ffc648c33db5932947d85a3c7e719231b",
+      "snapshot_sha256": "20272255e70bec0220a87009f26379ee4274677753e4ceea706473d53edad3b6"
+    },
+    {
+      "symbol": "BBCA",
+      "kind": "new_live_report",
+      "path": "company_report/BBCA/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "ab5a0dd0289bca03d1943193feeff47d50669c9c1a910500912075a65e9ab35f",
+      "snapshot_sha256": "6bac691617de3141e8c09e48e0b1ee8af94f40019c3049fe353f500b59f705e3"
+    },
+    {
+      "symbol": "BBNI",
+      "kind": "new_live_report",
+      "path": "company_report/BBNI/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "5d459097f207ab92139994d6385a2a827708fac353f6727ea318e90f30ce59ca",
+      "snapshot_sha256": "e32a1ae8eff1782134dd8000631a5913190649bc8c3ec8235d07bb85de024f91"
+    },
+    {
+      "symbol": "BBRI",
+      "kind": "new_live_report",
+      "path": "company_report/BBRI/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "8cc2e7361f02b01b103c05a7d5b1052e7d74e0bc424ce438c46502e9c81ca4f8",
+      "snapshot_sha256": "2173c2e68fb18e50d1ca6156be33213f01b14c057385caaef5ccbb0a5a94896c"
+    },
+    {
+      "symbol": "BBTN",
+      "kind": "new_live_report",
+      "path": "company_report/BBTN/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "34a168fdac6e38054e0e42c87d275a8b824197910b31e068c85f21c8b91b162b",
+      "snapshot_sha256": "f32e0314c8818d50d814bc17087a67f074445f0b8f49c83485ad7176535c53d4"
+    },
+    {
+      "symbol": "BMRI",
+      "kind": "new_live_report",
+      "path": "company_report/BMRI/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "2b4d6bd607fa5ab4a7edca3996a2e96be80defdf56a7df1c1d5334fb24c07b20",
+      "snapshot_sha256": "514de523e9fa98de3180b4bcd635b130dd01d4daee1f9ff07c35f66254ecadca"
+    },
+    {
+      "symbol": "BRPT",
+      "kind": "new_live_report",
+      "path": "company_report/BRPT/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "e9adfc4ee194f55f884b29d5540282f300db5e2cd103006a3a1f6b0062bc32bf",
+      "snapshot_sha256": "6334b7f53d3f3a565145237c2bce104146fa64996002adf769adfb25c64156e9"
+    },
+    {
+      "symbol": "BUMI",
+      "kind": "new_live_report",
+      "path": "company_report/BUMI/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "1c840e3dae58269b22e33b70d977cb8cbf7aeb5d39cf878a53abd6e5b5fe7e3d",
+      "snapshot_sha256": "1e4cbbde08d2bc899c3d292c40107fb57788a792f4fb3d69f0acfdcab93ea9c1"
+    },
+    {
+      "symbol": "CPIN",
+      "kind": "new_live_report",
+      "path": "company_report/CPIN/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "82a9d88e8db01473916c21b177f50538d4f58e1f76c0fa7f650fd42452fc23fa",
+      "snapshot_sha256": "cffcb0c5e478de1eb29cb76292d591b9eb21c79fac0b2e7d0e9aaee2ec928b7d"
+    },
+    {
+      "symbol": "CUAN",
+      "kind": "new_live_report",
+      "path": "company_report/CUAN/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "2f02316991d398b59d9afc597d7ba4a43af0a2519a7feffc6a52428a992287b8",
+      "snapshot_sha256": "16befeb1593b647c7afd109f48d0d4901f3b0f2e1826a879a6216dde27dab547"
+    },
+    {
+      "symbol": "DEWA",
+      "kind": "new_live_report",
+      "path": "company_report/DEWA/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "bd62343c22139668e03b5eac6983be8f9129b1edf352061d619f3fa547051cca",
+      "snapshot_sha256": "f02c4d445da28b250046b97554112073b1a79186ff8f059ce53f19b2182b7c76"
+    },
+    {
+      "symbol": "EMTK",
+      "kind": "new_live_report",
+      "path": "company_report/EMTK/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "734e7dae17f8ea89bcc8725160c04d5481dd02a57e36d12f37455177dbe16d40",
+      "snapshot_sha256": "e0ab33d07f93bd4b26c631d726ffb14af23efb5c8b1af88d0ec117f23d45f2bd"
+    },
+    {
+      "symbol": "ESSA",
+      "kind": "new_live_report",
+      "path": "company_report/ESSA/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "215ffedd7514321c621ef0b812b04c8bdd0186c02be563a3cc1e265875fb8e99",
+      "snapshot_sha256": "b00c185bb3cf2408c6c6bf55d0c298c7b2c206b49abaa1f021489ab2d7a5e90b"
+    },
+    {
+      "symbol": "EXCL",
+      "kind": "new_live_report",
+      "path": "company_report/EXCL/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "6c16fa97063bf6e7126dde4af713d48871bb29951a4b0c14b8b4ed6678896818",
+      "snapshot_sha256": "bea8e5ae14da806026b9fe4a7e03af6726763cb25165336f3dca6931d6e4f440"
+    },
+    {
+      "symbol": "GOTO",
+      "kind": "new_live_report",
+      "path": "company_report/GOTO/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "146499f9632a1c88e7612d802a99254e0c7e82b0d6c7870fe5e4a1aa858d5f5a",
+      "snapshot_sha256": "58e4f8aa173526fc2cc00b547b82f5058edd0c355c0eb856908c665156e4c0a5"
+    },
+    {
+      "symbol": "HRTA",
+      "kind": "new_live_report",
+      "path": "company_report/HRTA/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "200a46cee45aa83c1f73a945467d58642f4a6c7cc9ec11b32300860baca3d749",
+      "snapshot_sha256": "3097cf63f3b224d320b96ace0c8e9bc53b105c4e42bff5c0effb21dc6fac8414"
+    },
+    {
+      "symbol": "ICBP",
+      "kind": "new_live_report",
+      "path": "company_report/ICBP/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "424209d701bdd505b548cce95911c2d2615bb304a3cef0c7f3635ff0bea6c673",
+      "snapshot_sha256": "fff61398ebb45d54a76b6656ca08659d096c9191d0354363020275c0007de2ac"
+    },
+    {
+      "symbol": "INCO",
+      "kind": "new_live_report",
+      "path": "company_report/INCO/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "9cc1c279942889c2f483e82e2e2ca057e509628ee32a46568ae554f1e0e21a76",
+      "snapshot_sha256": "f17e798e34cbaf3cbe5270680a6667b2dc4a0ba4a0483833d0664ab6e42586ad"
+    },
+    {
+      "symbol": "INDF",
+      "kind": "new_live_report",
+      "path": "company_report/INDF/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "1432dea0f9963d087fff514c098f06f69912c9180230c5af586b382de17047d7",
+      "snapshot_sha256": "122aeba48227c8cd4a29f02ce1103734b0efe7e48933b1d3739ff05ab5e2d5c0"
+    },
+    {
+      "symbol": "INDY",
+      "kind": "new_live_report",
+      "path": "company_report/INDY/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "e0287e4cbe9172be0a50afa2516c859107964a538ca05690c29ba0143ce5c3cc",
+      "snapshot_sha256": "95ee27f290e5286214548e35a3bbc4a0b7201a998a832fb724e6a3f496f1dea6"
+    },
+    {
+      "symbol": "INKP",
+      "kind": "new_live_report",
+      "path": "company_report/INKP/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "0bac2688dd6bd06f62a22dad566b8d365caacbfe7f324d0c7972782c698fd6d5",
+      "snapshot_sha256": "0deefe90a1f1baddfffd3b9433ad8e66943e2e5462da4671fe56b2ec02a0d41f"
+    },
+    {
+      "symbol": "ISAT",
+      "kind": "new_live_report",
+      "path": "company_report/ISAT/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "1f0cf2147c6fd91a6953f70abd989fa719a5064b9059705804a991e54a0cafd8",
+      "snapshot_sha256": "8985b2e15827d33474def058bb917a0f4a9858cef5ccf6a659a1c831fd89e6dc"
+    },
+    {
+      "symbol": "ITMG",
+      "kind": "new_live_report",
+      "path": "company_report/ITMG/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "fe39db6bbc230b8e6edb08f31c33c607579b9b41f238691467108bce3e73edc0",
+      "snapshot_sha256": "8bd06d575617e487ec043e0ee7394cccf3f5ae150f7329a44a834d01de8b974e"
+    },
+    {
+      "symbol": "JPFA",
+      "kind": "new_live_report",
+      "path": "company_report/JPFA/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "6068152c1d2e5ff615048af1d401339d1d26f60cce4c0f58e43262ebec5a6042",
+      "snapshot_sha256": "5ed6bdb7a3b7f4da95601bf0b5a908dc61fd68a15abf9f31b895207f9fa0535d"
+    },
+    {
+      "symbol": "KLBF",
+      "kind": "new_live_report",
+      "path": "company_report/KLBF/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "6168949bdde5eb9848e95cd1258936f0c9df5116ae6b69eedda5462b9c19ddea",
+      "snapshot_sha256": "48988d41cd200b89a8974310f7c680b53537584c57d1799264ec31d0c5d6af03"
+    },
+    {
+      "symbol": "MAPI",
+      "kind": "new_live_report",
+      "path": "company_report/MAPI/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "05933326ad3b3c61a47d2c22333befb2766a2d007e092d375859a884521f0a93",
+      "snapshot_sha256": "1bf9cefc0dadd520c0050347cc37c0ceed7f00b2059557b1f735fce7ad4b4633"
+    },
+    {
+      "symbol": "MBMA",
+      "kind": "new_live_report",
+      "path": "company_report/MBMA/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "f8e13842b99f051769e52f991019a6da50ece497e95101892a92bf619f6daf82",
+      "snapshot_sha256": "fa89fdb1e5fca72af71b8560e3b6839a303ce1d6fb91be51936771f06d09e39b"
+    },
+    {
+      "symbol": "MDKA",
+      "kind": "new_live_report",
+      "path": "company_report/MDKA/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "2c5f05ccebb0b466f4b4c328fcba51c7344514c3388c557ece2779ad8fb0c99f",
+      "snapshot_sha256": "41b91092feae9b77ed0cb0851a4b641a0fbfb3c633585a956b68798f3e0af07f"
+    },
+    {
+      "symbol": "MEDC",
+      "kind": "new_live_report",
+      "path": "company_report/MEDC/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "37e8304efaae46c4e17211bf881f008e6bbff09f76f6a4494db6a41540f7fead",
+      "snapshot_sha256": "f579059fbffed50497e6e769eb85b24d9388ac3757aefaa5aef46fec69575b08"
+    },
+    {
+      "symbol": "NCKL",
+      "kind": "new_live_report",
+      "path": "company_report/NCKL/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "91dc4cc32fd283f893812031818797543e5330912a5e7608f53c86770a8383b6",
+      "snapshot_sha256": "86494e023876231e90786baf5b6db6633c2269a08ed9a70e4ab568de0b7e25ac"
+    },
+    {
+      "symbol": "PGAS",
+      "kind": "new_live_report",
+      "path": "company_report/PGAS/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "75b97e42a98bc98bf8946be59a4c89b14dde15ccd5df63129990d6597c49407b",
+      "snapshot_sha256": "b965e16325e658654ef05f4a2b397cc1473537747a702f67807bace5f95d87ba"
+    },
+    {
+      "symbol": "PGEO",
+      "kind": "new_live_report",
+      "path": "company_report/PGEO/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "6c77e91be98904ab6b079f304f2fb345af1a5d8257083c262c7fcddabaa64f42",
+      "snapshot_sha256": "6168a1dff28cc9d98c517448344f5b8d24bcc406c720e69bfa27f3e55d02d298"
+    },
+    {
+      "symbol": "PTBA",
+      "kind": "new_live_report",
+      "path": "company_report/PTBA/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "630a44752c3818ce0a63015c6a3a6ac6331049b661fe041762cc1967dc19d375",
+      "snapshot_sha256": "edca67e13f2b8f985b43c25448b8650dec72b3dc59363c8d631e43b0ccc39f13"
+    },
+    {
+      "symbol": "SCMA",
+      "kind": "new_live_report",
+      "path": "company_report/SCMA/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "5fc41b867cac0e41287f27f1dfcbecb0dc6da9c6b53ccb864033d3bdd482283d",
+      "snapshot_sha256": "a3e26306dfe007996b3e78c1032bdb093b84fe3ca178739e007937a71fe62da8"
+    },
+    {
+      "symbol": "TLKM",
+      "kind": "new_live_report",
+      "path": "company_report/TLKM/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "7e4ee3dc27aaa0d43188230c9be88d3870c0f434c399fc709eeaab800a0207e0",
+      "snapshot_sha256": "b45fc422070d468832b5529826c0dfffdc2686206fd2d78ac08620294fc912f0"
+    },
+    {
+      "symbol": "UNTR",
+      "kind": "new_live_report",
+      "path": "company_report/UNTR/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "d2249625f9d84de91b49e04e673e7500e1f719f2faa44be6ff55adad77c61bc2",
+      "snapshot_sha256": "18afbbfba3bfaefd770e67fad378ab578730074b96939cee20ae955d56d1647f"
+    },
+    {
+      "symbol": "UNVR",
+      "kind": "new_live_report",
+      "path": "company_report/UNVR/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "063b4c8e2ed439d31213917a2762ca4abe4eddd68b40eea3f4593117fb015121",
+      "snapshot_sha256": "74c0abb916bcbdc43baece53440483ddbc5a7ba4661d0e20325c6751daef77c9"
+    },
+    {
+      "symbol": "WIFI",
+      "kind": "new_live_report",
+      "path": "company_report/WIFI/company_report.json",
+      "top_level_sections_present": [
+        "overview",
+        "valuation",
+        "future",
+        "financials",
+        "dividend",
+        "management",
+        "ownership",
+        "peers"
+      ],
+      "top_level_sections_absent": [],
+      "latest_close_date": "2026-09-25",
+      "sha256": "0f9f0d684b06b1eb30434a9dca214f43117fe3c03f4a08e2f5dbf09165e3865f",
+      "snapshot_sha256": "f504e2574689e8e07e97d794e165d18fa9e1356c95551bb319e8649d5f3596d1"
+    }
+  ],
+  "latest_collection_attempt": {
+    "approved_max_requests": 10,
+    "requests_used": 10,
+    "successful_symbols": 10,
+    "failed_symbols": [],
+    "status": "COMPLETE"
+  },
+  "collection_batches": [
+    {
+      "scope": "initial ten reports",
+      "successful_symbols": 10,
+      "status": "COMPLETE"
+    },
+    {
+      "scope": "approved 35-symbol completion batch",
+      "attempts": 35,
+      "initial_successes": 25,
+      "http_429_failures": 10,
+      "status": "PARTIAL"
+    },
+    {
+      "scope": "approved retry after cooldown",
+      "attempts": 10,
+      "successes": 10,
+      "status": "COMPLETE"
+    }
+  ]
+}

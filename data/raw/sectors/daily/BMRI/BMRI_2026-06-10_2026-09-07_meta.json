@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/BMRI/",
+  "ticker": "BMRI",
+  "start": "2026-06-10",
+  "end": "2026-09-07",
+  "retrieved_at": "2026-09-24T12:32:04.187247",
+  "http_status": 200,
+  "observations_count": 61,
+  "sha256": "af5a972c7ad88bb26e007119be826c61e6bf2d7d745d854f23de02d1958732b7"
+}

@@ -1,0 +1,138 @@
+{
+  "symbol": "MEDC.JK",
+  "corporate_actions": {
+    "agm": [
+      {
+        "agm_date": "2022-02-25",
+        "agm_time": "09:30:00",
+        "agm_place": "Soehana Hallgedung The Energy Lt.2, Scbd Lot.11Ajl. Jend. Sudirmanjakarta Selatan 12190",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2022-07-27",
+        "agm_time": "10:00:00",
+        "agm_place": "Soehana Hallgedung The Energy Lt.2, Scbd Lot.11Ajl. Jend. Sudirmanjakarta Selatan 12190",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2022-09-14",
+        "agm_time": "11:10:00",
+        "agm_place": "",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2023-05-31",
+        "agm_time": "14:00:00",
+        "agm_place": "Soehanna Hall, The Energy Building 2Nd Floor, Scbd Lot. 11 A, Jl. Jend. Sudirman, Jakarta Selatan 12190",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2024-05-30",
+        "agm_time": "14:00:00",
+        "agm_place": "Soehanna Hall, Gedung The Energy Lantai 2Kawasan Pusat Bisnis Sudirman Lot 11 Ajl. Jend. Sudirman Kav. 52-53Jakarta Selatan 12190",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2024-08-26",
+        "agm_time": "11:00:00",
+        "agm_place": "IDX Public Expose",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2025-06-03",
+        "agm_time": null,
+        "agm_place": "",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2026-06-04",
+        "agm_time": "14:00:00",
+        "agm_place": "Soehana Hall Gedung THE Energy LT. 2 / THE Energy Building, 2ND Floor Scbd Lot. 11 A, Jl. Jend. Sudirman Kav. 52-53 Jakarta Selatan /South Jakarta 12190 Kota Adm. Jakarta Selatan",
+        "agm_result": "Agenda #1: Shareholders approved the 2025 Annual Report and audited Financial Statements, granting a release and discharge to the Board of Directors and Commissioners. The audit was performed by KAP Purwanto Susanti dan Surja with an unqualified opinion.\nAgenda #2: The meeting approved the allocation of US$100,923,998 in net profit, with US$87,000,000 designated as cash dividends and US$13,923,998 as retained earnings. The final dividend recording date was set for June 18, 2026.\nAgenda #3: Shareholders approved the appointment of KAP Purwanto Susanti dan Surja to audit the 2026 financial statements and delegated the authority to set fees to the Board of Commissioners.\nAgenda #4: The meeting approved the dismissal of Roberto Lorato and Anthony R. Mathias and the appointment of new members, including Benny Setiawan and Sanjeev Bansal, for terms ending in 2031. The new structure names Hilmi Panigoro as President Director and Yani Y. Panigoro as President Commissioner.\nAgenda #5: Shareholders approved a maximum total remuneration of US$38.81 million for the 2026 fiscal year, including a share-based payment of up to 37,436,700 shares. The Board of Commissioners is authorized to manage the distribution of these funds and benefits.\nAgenda #6: The meeting approved the transfer of treasury shares from previous buybacks to implement share ownership programs for employees, Directors, and Commissioners. The Board of Directors is authorized to execute all necessary actions for this transfer.\nAgenda #7: Shareholders approved amending Article 3 of the Articles of Association to align the company's purpose and objectives with the 2025 Indonesia Standard Industrial Classification (KBLI). This approval includes the restatement of the entire Articles of Association and authorization for the Board of Directors to sign necessary legal deeds.\nAgenda #8: The meeting approved the report regarding the realization of the use of proceeds from the Public Offering. Specific details regarding the utilization of funds were not stated."
+      }
+    ],
+    "bonus": null,
+    "warrant": null,
+    "dividend": [
+      {
+        "ex_date": "2022-08-05",
+        "payment_date": "2022-08-26",
+        "dividend_yield": 0.0278928,
+        "dividend_amount": 20.8656
+      },
+      {
+        "ex_date": "2024-10-14",
+        "payment_date": "2024-11-01",
+        "dividend_yield": 0.0122731,
+        "dividend_amount": 15.75
+      },
+      {
+        "ex_date": "2026-06-15",
+        "payment_date": "2026-07-03",
+        "dividend_yield": null,
+        "dividend_amount": 32.252
+      },
+      {
+        "ex_date": "2025-11-11",
+        "payment_date": "2025-11-28",
+        "dividend_yield": 0.0234176,
+        "dividend_amount": 28.4459
+      },
+      {
+        "ex_date": "2025-06-16",
+        "payment_date": "2025-07-04",
+        "dividend_yield": 0.0205808,
+        "dividend_amount": 25
+      },
+      {
+        "ex_date": "2024-06-10",
+        "payment_date": "2024-06-28",
+        "dividend_yield": 0.0228491,
+        "dividend_amount": 29.322
+      },
+      {
+        "ex_date": "2022-08-19",
+        "payment_date": "2022-09-08",
+        "dividend_yield": 0.0198619,
+        "dividend_amount": 14.858
+      },
+      {
+        "ex_date": "2023-11-30",
+        "payment_date": "2023-12-15",
+        "dividend_yield": 0.0132928,
+        "dividend_amount": 15
+      },
+      {
+        "ex_date": "2023-06-13",
+        "payment_date": "2023-07-03",
+        "dividend_yield": 0.0210813,
+        "dividend_amount": 23.7888
+      }
+    ],
+    "right_issue": [
+      {
+        "price": 600,
+        "ex_date": "2017-12-08",
+        "new_ratio": 1,
+        "old_ratio": 3,
+        "trading_period_end": "2017-12-20",
+        "trading_period_start": "2017-12-14"
+      },
+      {
+        "price": 250,
+        "ex_date": "2020-09-09",
+        "new_ratio": 2,
+        "old_ratio": 5,
+        "trading_period_end": "2020-09-18",
+        "trading_period_start": "2020-09-14"
+      }
+    ],
+    "stock_split": [
+      {
+        "date": "2017-09-11",
+        "split_ratio": 4
+      }
+    ],
+    "upcoming_dividend": null
+  }
+}

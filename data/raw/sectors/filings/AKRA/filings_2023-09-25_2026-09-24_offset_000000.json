@@ -1,0 +1,1104 @@
+{
+  "results": [
+    {
+      "title": "Mery Sofi sells shares of AKR Corporindo",
+      "body": "Mery Sofi sold 135,700 shares of AKR Corporindo. This decreases their holdings from 20,303,000 to 20,167,300 shares. The stated purpose of the transaction was divestiture.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-10092026-8683-00.pdf-0.pdf",
+      "timestamp": "2026-09-10T17:39:02",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "AKRA.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Mery Sofi",
+      "holding_before": 20303000,
+      "holding_after": 20167300,
+      "amount_transaction": 135700,
+      "price": 1524.897,
+      "transaction_value": 206928500.0,
+      "price_transaction": [
+        {
+          "date": "2026-09-08",
+          "type": "sell",
+          "price": 1505,
+          "amount_transacted": 75700
+        },
+        {
+          "date": "2026-09-09",
+          "type": "sell",
+          "price": 1550,
+          "amount_transacted": 60000
+        }
+      ],
+      "share_percentage_before": 0.101,
+      "share_percentage_after": 0.1,
+      "share_percentage_transaction": 0.001,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Bambang Soetiono S sells shares of AKR Corporindo",
+      "body": "This is Bambang Soetiono S's 3rd insider disposal in the last 6 months, totaling a distribution of 8,750,000 shares transacted at an average price of IDR 1,492. Bambang Soetiono S's ownership in AKR Corporindo has decreased from 0.05% to 0.025% in this period.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-10092026-3226-00.pdf-0.pdf",
+      "timestamp": "2026-09-10T17:30:51",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "AKRA.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Bambang Soetiono S",
+      "holding_before": 10030000,
+      "holding_after": 5030000,
+      "amount_transaction": 5000000,
+      "price": 1522.5,
+      "transaction_value": 7612500000.0,
+      "price_transaction": [
+        {
+          "date": "2026-09-08",
+          "type": "sell",
+          "price": 1520,
+          "amount_transacted": 2500000
+        },
+        {
+          "date": "2026-09-08",
+          "type": "sell",
+          "price": 1525,
+          "amount_transacted": 2500000
+        }
+      ],
+      "share_percentage_before": 0.05,
+      "share_percentage_after": 0.025,
+      "share_percentage_transaction": 0.025,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Bambang Soetiono S sells shares of AKR Corporindo",
+      "body": "Bambang Soetiono S sold 1,009,200 shares of AKR Corporindo. This decreases their holdings from 11,039,200 to 10,030,000 shares. The stated purpose of the transaction was divestiture.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-09092026-9257-00.pdf-0.pdf",
+      "timestamp": "2026-09-09T18:53:33",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "AKRA.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Bambang Soetiono S",
+      "holding_before": 11039200,
+      "holding_after": 10030000,
+      "amount_transaction": 1009200,
+      "price": 1459.997,
+      "transaction_value": 1473428500.0,
+      "price_transaction": [
+        {
+          "date": "2026-09-07",
+          "type": "sell",
+          "price": 1445,
+          "amount_transacted": 538000
+        },
+        {
+          "date": "2026-09-08",
+          "type": "sell",
+          "price": 1480,
+          "amount_transacted": 199700
+        },
+        {
+          "date": "2026-09-08",
+          "type": "sell",
+          "price": 1475,
+          "amount_transacted": 271500
+        }
+      ],
+      "share_percentage_before": 0.055,
+      "share_percentage_after": 0.05,
+      "share_percentage_transaction": 0.005,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Nery Polim sells shares of AKR Corporindo",
+      "body": "Nery Polim sold 550,000 shares of AKR Corporindo. This decreases their holdings from 6,565,000 to 6,015,000 shares. The stated purpose of the transaction was divestiture.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-09092026-4898-00.pdf-0.pdf",
+      "timestamp": "2026-09-09T18:33:15",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "AKRA.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Nery Polim",
+      "holding_before": 6565000,
+      "holding_after": 6015000,
+      "amount_transaction": 550000,
+      "price": 1534.545,
+      "transaction_value": 844000000.0,
+      "price_transaction": [
+        {
+          "date": "2026-09-08",
+          "type": "sell",
+          "price": 1540,
+          "amount_transacted": 250000
+        },
+        {
+          "date": "2026-09-08",
+          "type": "sell",
+          "price": 1530,
+          "amount_transacted": 300000
+        }
+      ],
+      "share_percentage_before": 0.033,
+      "share_percentage_after": 0.03,
+      "share_percentage_transaction": 0.003,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Jimmy Tandyo sells shares of AKR Corporindo",
+      "body": "This is Jimmy Tandyo's 4th insider disposal in the last 6 months, totaling a distribution of 6,250,000 shares transacted at an average price of IDR 1,455. Jimmy Tandyo's ownership in AKR Corporindo has decreased from 0.272% to 0.259% in this period.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-09092026-4675-00.pdf-0.pdf",
+      "timestamp": "2026-09-09T18:14:06",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "AKRA.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Jimmy Tandyo",
+      "holding_before": 54614000,
+      "holding_after": 52000000,
+      "amount_transaction": 2614000,
+      "price": 1469.128,
+      "transaction_value": 3840300000.0,
+      "price_transaction": [
+        {
+          "date": "2026-09-07",
+          "type": "sell",
+          "price": 1450,
+          "amount_transacted": 1614000
+        },
+        {
+          "date": "2026-09-08",
+          "type": "sell",
+          "price": 1500,
+          "amount_transacted": 1000000
+        }
+      ],
+      "share_percentage_before": 0.272,
+      "share_percentage_after": 0.259,
+      "share_percentage_transaction": 0.013,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Jimmy Tandyo sells shares of AKR Corporindo",
+      "body": "This is Jimmy Tandyo's 3rd insider disposal in the last 6 months, totaling a distribution of 3,636,000 shares transacted at an average price of IDR 1,446. Jimmy Tandyo's ownership in AKR Corporindo has decreased from 0.282% to 0.272% in this period.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-03092026-8380-00.pdf-0.pdf",
+      "timestamp": "2026-09-03T21:18:25",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "AKRA.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Jimmy Tandyo",
+      "holding_before": 56624700,
+      "holding_after": 54614000,
+      "amount_transaction": 2010700,
+      "price": 1447.125,
+      "transaction_value": 2909734000.0,
+      "price_transaction": [
+        {
+          "date": "2026-09-02",
+          "type": "sell",
+          "price": 1455,
+          "amount_transacted": 1722800
+        },
+        {
+          "date": "2026-09-02",
+          "type": "sell",
+          "price": 1400,
+          "amount_transacted": 287900
+        }
+      ],
+      "share_percentage_before": 0.282,
+      "share_percentage_after": 0.272,
+      "share_percentage_transaction": 0.01,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Arthakencana Rayatama buys shares of AKR Corporindo",
+      "body": "This transaction is part of a cluster-buy transaction amidst other insider buys during the last 6 months. Arthakencana Rayatama's insider purchase comes after Haryanto Adikoesoemo, Soegiarto Adikoesoemo, Mery Sofi, Termurti Tiban and 4 other insiders in AKR Corporindo, totaling an accumulation of 241,417,800 shares transacted at an average price of IDR 1,310.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-13082026-8207-00.pdf-0.pdf",
+      "timestamp": "2026-08-13T16:30:03",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "AKRA.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Arthakencana Rayatama",
+      "holding_before": 12968823600,
+      "holding_after": 12972836400,
+      "amount_transaction": 4012800,
+      "price": 1395.0,
+      "transaction_value": 5597856000.0,
+      "price_transaction": [
+        {
+          "date": "2026-08-12",
+          "type": "buy",
+          "price": 1395,
+          "amount_transacted": 4012800
+        }
+      ],
+      "share_percentage_before": 64.607,
+      "share_percentage_after": 64.627,
+      "share_percentage_transaction": 0.02,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Jimmy Tandyo sells shares of AKR Corporindo",
+      "body": "Jimmy Tandyo sold 1,375,300 shares of AKR Corporindo. This decreases their holdings from 58,000,000 to 56,624,700 shares. The stated purpose of the transaction was divestiture.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-06082026-7681-00.pdf-0.pdf",
+      "timestamp": "2026-08-06T17:32:33",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "AKRA.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Jimmy Tandyo",
+      "holding_before": 58000000,
+      "holding_after": 56624700,
+      "amount_transaction": 1375300,
+      "price": 1450.0,
+      "transaction_value": 1994185000.0,
+      "price_transaction": [
+        {
+          "date": "2026-08-04",
+          "type": "sell",
+          "price": 1450,
+          "amount_transacted": 1000000
+        },
+        {
+          "date": "2026-08-05",
+          "type": "sell",
+          "price": 1450,
+          "amount_transacted": 375300
+        }
+      ],
+      "share_percentage_before": 0.289,
+      "share_percentage_after": 0.282,
+      "share_percentage_transaction": 0.007,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Bambang Soetiono S sells shares of AKR Corporindo",
+      "body": "Bambang Soetiono S sold 2,740,800 shares of AKR Corporindo. This decreases their holdings from 13,780,000 to 11,039,200 shares. The stated purpose of the transaction was divestiture.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-06082026-0085-00.pdf-0.pdf",
+      "timestamp": "2026-08-06T17:25:38",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "AKRA.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Bambang Soetiono S",
+      "holding_before": 13780000,
+      "holding_after": 11039200,
+      "amount_transaction": 2740800,
+      "price": 1448.709,
+      "transaction_value": 3970622000.0,
+      "price_transaction": [
+        {
+          "date": "2026-08-03",
+          "type": "sell",
+          "price": 1440,
+          "amount_transacted": 500000
+        },
+        {
+          "date": "2026-08-04",
+          "type": "sell",
+          "price": 1450,
+          "amount_transacted": 975200
+        },
+        {
+          "date": "2026-08-04",
+          "type": "sell",
+          "price": 1455,
+          "amount_transacted": 941200
+        },
+        {
+          "date": "2026-08-04",
+          "type": "sell",
+          "price": 1440,
+          "amount_transacted": 324400
+        }
+      ],
+      "share_percentage_before": 0.069,
+      "share_percentage_after": 0.055,
+      "share_percentage_transaction": 0.014,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Bambang Soetiono S. buys shares of AKR Corporindo",
+      "body": "This transaction is part of a cluster-buy transaction amidst other insider buys during the last 6 months. Bambang Soetiono S.'s insider purchase comes after Arthakencana Rayatama, Haryanto Adikoesoemo, Soegiarto Adikoesoemo, Mery Sofi and 4 other insiders in AKR Corporindo totaling an accumulation of 237,405,000 shares transacted at an average price of IDR 1,309.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-07052026-7804-00.pdf-0.pdf",
+      "timestamp": "2026-05-07T17:17:17",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "AKRA.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Bambang Soetiono S",
+      "holding_before": 7780000,
+      "holding_after": 13780000,
+      "amount_transaction": 6000000,
+      "price": 499.0,
+      "transaction_value": 2994000000.0,
+      "price_transaction": [
+        {
+          "date": "2026-05-06",
+          "type": "buy",
+          "price": 499,
+          "amount_transacted": 6000000
+        }
+      ],
+      "share_percentage_before": 0.039,
+      "share_percentage_after": 0.069,
+      "share_percentage_transaction": 0.03,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Jimmy Tandyo buys shares of AKR Corporindo",
+      "body": "This transaction is part of a cluster-buy transaction amidst other insider buys during the last 6 months. Jimmy Tandyo's insider purchase comes after Arthakencana Rayatama, Haryanto Adikoesoemo, Soegiarto Adikoesoemo, Mery Sofi and 3 other insiders in AKR Corporindo, totaling an accumulation of 231,405,000 shares transacted at an average price of IDR 1,330.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-07052026-5733-00.pdf-0.pdf",
+      "timestamp": "2026-05-07T17:11:13",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "AKRA.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Jimmy Tandyo",
+      "holding_before": 46000000,
+      "holding_after": 58000000,
+      "amount_transaction": 12000000,
+      "price": 499.0,
+      "transaction_value": 5988000000.0,
+      "price_transaction": [
+        {
+          "date": "2026-05-06",
+          "type": "buy",
+          "price": 499,
+          "amount_transacted": 12000000
+        }
+      ],
+      "share_percentage_before": 0.229,
+      "share_percentage_after": 0.289,
+      "share_percentage_transaction": 0.06,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Vembu Suresh buys shares of AKR Corporindo",
+      "body": "This transaction is part of a cluster-buy transaction amidst other insider buys during the last 6 months. Vembu Suresh's insider purchase comes after Arthakencana Rayatama, Haryanto Adikoesoemo, Soegiarto Adikoesoemo, Mery Sofi and 2 other insiders in AKR Corporindo, totaling an accumulation of 219,405,000 shares transacted at an average price of IDR 1,375.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-07052026-5147-00.pdf-0.pdf",
+      "timestamp": "2026-05-07T15:02:03",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "AKRA.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Vembu Suresh",
+      "holding_before": 2812800,
+      "holding_after": 5212800,
+      "amount_transaction": 2400000,
+      "price": 499.0,
+      "transaction_value": 1197600000.0,
+      "price_transaction": [
+        {
+          "date": "2026-05-06",
+          "type": "buy",
+          "price": 499,
+          "amount_transacted": 2400000
+        }
+      ],
+      "share_percentage_before": 0.014,
+      "share_percentage_after": 0.026,
+      "share_percentage_transaction": 0.012,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Nery Polim buys shares of AKR Corporindo",
+      "body": "This transaction is part of a cluster-buy transaction amidst other insider buys during the last 6 months. Nery Polim's insider purchase comes after Arthakencana Rayatama, Haryanto Adikoesoemo, Soegiarto Adikoesoemo, Mery Sofi and 1 other insiders in AKR Corporindo, totaling an accumulation of 217,005,000 shares transacted at an average price of IDR 1,385.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-07052026-3655-00.pdf-0.pdf",
+      "timestamp": "2026-05-07T14:57:46",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "AKRA.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Nery Polim",
+      "holding_before": 2965000,
+      "holding_after": 6565000,
+      "amount_transaction": 3600000,
+      "price": 499.0,
+      "transaction_value": 1796400000.0,
+      "price_transaction": [
+        {
+          "date": "2026-05-06",
+          "type": "buy",
+          "price": 499,
+          "amount_transacted": 3600000
+        }
+      ],
+      "share_percentage_before": 0.015,
+      "share_percentage_after": 0.033,
+      "share_percentage_transaction": 0.018,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Termurti Tiban buys shares of AKR Corporindo",
+      "body": "This transaction is part of a cluster-buy transaction amidst other insider buys during the last 6 months. Termurti Tiban's insider purchase comes after Arthakencana Rayatama, Haryanto Adikoesoemo, Soegiarto Adikoesoemo and Mery Sofi in AKR Corporindo, totaling an accumulation of 213,405,000 shares transacted at an average price of IDR 1,400.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-07052026-2434-00.pdf-0.pdf",
+      "timestamp": "2026-05-07T14:52:12",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "AKRA.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Termurti Tiban",
+      "holding_before": 1650000,
+      "holding_after": 4050000,
+      "amount_transaction": 2400000,
+      "price": 499.0,
+      "transaction_value": 1197600000.0,
+      "price_transaction": [
+        {
+          "date": "2026-05-06",
+          "type": "buy",
+          "price": 499,
+          "amount_transacted": 2400000
+        }
+      ],
+      "share_percentage_before": 0.008,
+      "share_percentage_after": 0.02,
+      "share_percentage_transaction": 0.012,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Mery Sofi buys shares of AKR Corporindo",
+      "body": "Mery Sofi bought 12,000,000 shares of AKR Corporindo. This increases their holdings from 8,303,000 to 20,303,000 shares. The stated purpose of the transaction was investment.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-07052026-4352-00.pdf-0.pdf",
+      "timestamp": "2026-05-07T14:46:43",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "AKRA.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Mery Sofi",
+      "holding_before": 8303000,
+      "holding_after": 20303000,
+      "amount_transaction": 12000000,
+      "price": 499.0,
+      "transaction_value": 5988000000.0,
+      "price_transaction": [
+        {
+          "date": "2026-05-06",
+          "type": "buy",
+          "price": 499,
+          "amount_transacted": 12000000
+        }
+      ],
+      "share_percentage_before": 0.041,
+      "share_percentage_after": 0.101,
+      "share_percentage_transaction": 0.06,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Soegiarto Adikoesoemo buys shares of AKR Corporindo",
+      "body": "Soegiarto Adikoesoemo bought 6,000,000 shares of AKR Corporindo. This increases their holdings from 145,267,000 to 151,267,000 shares. The stated purpose of the transaction was investment.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-07052026-4147-00.pdf-0.pdf",
+      "timestamp": "2026-05-07T14:27:36",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "AKRA.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Soegiarto Adikoesoemo",
+      "holding_before": 145267000,
+      "holding_after": 151267000,
+      "amount_transaction": 6000000,
+      "price": 499.0,
+      "transaction_value": 2994000000.0,
+      "price_transaction": [
+        {
+          "date": "2026-05-06",
+          "type": "buy",
+          "price": 499,
+          "amount_transacted": 6000000
+        }
+      ],
+      "share_percentage_before": 0.72,
+      "share_percentage_after": 0.75,
+      "share_percentage_transaction": 0.03,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Haryanto Adikoesoemo buys shares of AKR Corporindo",
+      "body": "Haryanto Adikoesoemo bought 12,000,000 shares of AKR Corporindo. This increases their holdings from 212,604,600 to 224,604,600 shares. The stated purpose of the transaction was investment.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-07052026-1401-00.pdf-0.pdf",
+      "timestamp": "2026-05-07T14:19:56",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "AKRA.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Haryanto Adikoesoemo",
+      "holding_before": 212604600,
+      "holding_after": 224604600,
+      "amount_transaction": 12000000,
+      "price": 499.0,
+      "transaction_value": 5988000000.0,
+      "price_transaction": [
+        {
+          "date": "2026-05-06",
+          "type": "buy",
+          "price": 499,
+          "amount_transacted": 12000000
+        }
+      ],
+      "share_percentage_before": 1.059,
+      "share_percentage_after": 1.119,
+      "share_percentage_transaction": 0.06,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Arthakencana Rayatama buys shares of AKR Corporindo",
+      "body": "Arthakencana Rayatama bought 181,005,000 shares of AKR Corporindo. This increases their holdings from 12,787,818,600 to 12,968,823,600 shares. The stated purpose of the transaction was investment.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-06052026-0838-00.pdf-0.pdf",
+      "timestamp": "2026-05-06T16:43:10",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "AKRA.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Arthakencana Rayatama",
+      "holding_before": 12787818600,
+      "holding_after": 12968823600,
+      "amount_transaction": 181005000,
+      "price": 1560.876,
+      "transaction_value": 282526310000.0,
+      "price_transaction": [
+        {
+          "date": "2026-05-04",
+          "type": "buy",
+          "price": 1580,
+          "amount_transacted": 67261000
+        },
+        {
+          "date": "2026-05-05",
+          "type": "buy",
+          "price": 1570,
+          "amount_transacted": 67261000
+        },
+        {
+          "date": "2026-05-06",
+          "type": "buy",
+          "price": 1520,
+          "amount_transacted": 46483000
+        }
+      ],
+      "share_percentage_before": 63.705,
+      "share_percentage_after": 64.607,
+      "share_percentage_transaction": 0.902,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Jimmy Tandyo sells shares of AKR Corporindo",
+      "body": "Jimmy Tandyo sold 250,000 shares of AKR Corporindo. This decreases their holdings from 46,250,000 to 46,000,000 shares. The stated purpose of the transaction was divestment.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-02042026-5896-00.pdf-0.pdf",
+      "timestamp": "2026-04-02T16:48:08",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "AKRA.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Jimmy Tandyo",
+      "holding_before": 46250000,
+      "holding_after": 46000000,
+      "amount_transaction": 250000,
+      "price": 1409.372,
+      "transaction_value": 352343000.0,
+      "price_transaction": [
+        {
+          "date": "2026-03-31",
+          "type": "sell",
+          "price": 1405.0,
+          "amount_transacted": 90700
+        },
+        {
+          "date": "2026-03-31",
+          "type": "sell",
+          "price": 1415.0,
+          "amount_transacted": 59300
+        },
+        {
+          "date": "2026-03-31",
+          "type": "sell",
+          "price": 1410.0,
+          "amount_transacted": 100000
+        }
+      ],
+      "share_percentage_before": 0.23,
+      "share_percentage_after": 0.229,
+      "share_percentage_transaction": 0.001,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Vembu Suresh sells shares of AKR Corporindo",
+      "body": "Vembu Suresh sold 2,114,700 shares of AKR Corporindo. This decreases their holdings from 4,927,500 to 2,812,800 shares. The stated purpose of the transaction was investment.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-02032026-9174-00.pdf-0.pdf",
+      "timestamp": "2026-03-02T20:22:13",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "AKRA.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Vembu Suresh",
+      "holding_before": 4927500,
+      "holding_after": 2812800,
+      "amount_transaction": 2114700,
+      "price": 1348.723,
+      "transaction_value": 2852144500.0,
+      "price_transaction": [
+        {
+          "date": "2026-02-26",
+          "type": "sell",
+          "price": 1305.0,
+          "amount_transacted": 2500
+        },
+        {
+          "date": "2026-02-27",
+          "type": "sell",
+          "price": 1310.0,
+          "amount_transacted": 12200
+        },
+        {
+          "date": "2026-03-02",
+          "type": "sell",
+          "price": 1349.0,
+          "amount_transacted": 2100000
+        }
+      ],
+      "share_percentage_before": 0.025,
+      "share_percentage_after": 0.014,
+      "share_percentage_transaction": 0.011,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Jimmy Tandyo sells shares of AKR Corporindo",
+      "body": "Jimmy Tandyo sold 1,750,000 shares of AKR Corporindo. This decreases their holdings from 48,000,000 to 46,250,000 shares. The stated purpose of the transaction was investment.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-28012026-4618-00.pdf-0.pdf",
+      "timestamp": "2026-01-28T16:32:55",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "AKRA.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Jimmy Tandyo",
+      "holding_before": 48000000,
+      "holding_after": 46250000,
+      "amount_transaction": 1750000,
+      "price": 1359.286,
+      "transaction_value": 2378750000.0,
+      "price_transaction": [
+        {
+          "date": "2026-01-26",
+          "type": "sell",
+          "price": 1340.0,
+          "amount_transacted": 1000000
+        },
+        {
+          "date": "2026-01-27",
+          "type": "sell",
+          "price": 1385.0,
+          "amount_transacted": 750000
+        }
+      ],
+      "share_percentage_before": 0.24,
+      "share_percentage_after": 0.23,
+      "share_percentage_transaction": 0.01,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Termurti Tiban Buy Transaction of AKR Corporindo",
+      "body": "This transaction is part of a cluster-buy transaction amidst other insider buys during the last 6 months. Termurti Tiban's insider purchase comes after Haryanto Adikoesoemo, Soegiarto Adikoesoemo, Mery Sofi, Jimmy Tandyo and 3 other insiders in AKR Corporindo, totaling an accumulation of 28,200,000 shares transacted at an average price of IDR 499.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202508/85772cff0d_e865239867.pdf",
+      "timestamp": "2025-08-06T17:15:00",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [],
+      "symbol": "AKRA.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Termurti Tiban",
+      "holding_before": 450000,
+      "holding_after": 1650000,
+      "amount_transaction": 1200000,
+      "price": 499.0,
+      "transaction_value": 598800000.0,
+      "price_transaction": [
+        {
+          "date": "2025-08-01",
+          "type": "buy",
+          "price": 499,
+          "amount_transacted": 1200000
+        }
+      ],
+      "share_percentage_before": 0.002,
+      "share_percentage_after": 0.008,
+      "share_percentage_transaction": 0.006,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Suresh Vembu Buy Transaction of AKR Corporindo",
+      "body": "This transaction is part of a cluster-buy transaction amidst other insider buys during the last 6 months. Suresh Vembu's insider purchase comes after Haryanto Adikoesoemo, Soegiarto Adikoesoemo, Mery Sofi, Jimmy Tandyo and 2 other insiders in AKR Corporindo, totaling an accumulation of 27,000,000 shares transacted at an average price of IDR 499.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202508/77df895660_d11d219b3f.pdf",
+      "timestamp": "2025-08-06T17:14:00",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [],
+      "symbol": "AKRA.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Suresh Vembu",
+      "holding_before": 3727500,
+      "holding_after": 4927500,
+      "amount_transaction": 1200000,
+      "price": 499.0,
+      "transaction_value": 598800000.0,
+      "price_transaction": [
+        {
+          "date": "2025-08-01",
+          "type": "buy",
+          "price": 499,
+          "amount_transacted": 1200000
+        }
+      ],
+      "share_percentage_before": 0.019,
+      "share_percentage_after": 0.025,
+      "share_percentage_transaction": 0.006,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Nery Polim Buy Transaction of AKR Corporindo",
+      "body": "This transaction is part of a cluster-buy transaction amidst other insider buys during the last 6 months. Nery Polim's insider purchase comes after Haryanto Adikoesoemo, Soegiarto Adikoesoemo, Mery Sofi, Jimmy Tandyo and 1 other insiders in AKR Corporindo, totaling an accumulation of 25,800,000 shares transacted at an average price of IDR 499.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202508/1e1af32537_50e7763505.pdf",
+      "timestamp": "2025-08-06T17:13:00",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "AKRA.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Nery Polim",
+      "holding_before": 1165000,
+      "holding_after": 2965000,
+      "amount_transaction": 1800000,
+      "price": 499.0,
+      "transaction_value": 898200000.0,
+      "price_transaction": [
+        {
+          "date": "2025-08-01",
+          "type": "buy",
+          "price": 499,
+          "amount_transacted": 1800000
+        }
+      ],
+      "share_percentage_before": 0.006,
+      "share_percentage_after": 0.015,
+      "share_percentage_transaction": 0.009,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Bambang Soetiono S. Buys Transaction of AKR Corporindo",
+      "body": "This transaction is part of a cluster-buy transaction amidst other insider buys during the last 6 months. Bambang Soetiono S's insider purchase comes after Haryanto Adikoesoemo, Soegiarto Adikoesoemo, Mery Sofi and Jimmy Tandyo in AKR Corporindo, totaling an accumulation of 24,000,000 shares transacted at an average price of IDR 499.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202508/aaff83aeac_2ebc0a8087.pdf",
+      "timestamp": "2025-08-06T16:59:00",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [],
+      "symbol": "AKRA.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Bambang Soetiono S",
+      "holding_before": 4780000,
+      "holding_after": 7780000,
+      "amount_transaction": 3000000,
+      "price": 499.0,
+      "transaction_value": 1497000000.0,
+      "price_transaction": [
+        {
+          "date": "2025-08-01",
+          "type": "buy",
+          "price": 499,
+          "amount_transacted": 3000000
+        }
+      ],
+      "share_percentage_before": 0.024,
+      "share_percentage_after": 0.039,
+      "share_percentage_transaction": 0.015,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Jimmy Tandyo Buys Transaction of AKR Corporindo",
+      "body": "This transaction is part of a cluster-buy transaction amidst other insider buys during the last 6 months. Jimmy Tandyo's insider purchase comes after Haryanto Adikoesoemo and Soegiarto Adikoesoemo in AKR Corporindo, totaling an accumulation of 15,000,000 shares transacted at an average price of IDR 499.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202508/a3a6e574ed_3345591930.pdf",
+      "timestamp": "2025-08-06T16:52:00",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [],
+      "symbol": "AKRA.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Jimmy Tandyo",
+      "holding_before": 42000000,
+      "holding_after": 48000000,
+      "amount_transaction": 6000000,
+      "price": 499.0,
+      "transaction_value": 2994000000.0,
+      "price_transaction": [
+        {
+          "date": "2025-08-01",
+          "type": "buy",
+          "price": 499,
+          "amount_transacted": 6000000
+        }
+      ],
+      "share_percentage_before": 0.21,
+      "share_percentage_after": 0.24,
+      "share_percentage_transaction": 0.03,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Mery Sofi Buy Transaction of AKR Corporindo",
+      "body": "This transaction is part of a cluster-buy transaction amidst other insider buys during the last 6 months. Mery Sofi's insider purchase comes after Haryanto Adikoesoemo and Soegiarto Adikoesoemo in AKR Corporindo, totaling an accumulation of 15,000,000 shares transacted at an average price of IDR 499.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202508/f28e560ada_3d475bfba6.pdf",
+      "timestamp": "2025-08-06T16:52:00",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [],
+      "symbol": "AKRA.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Mery Sofi",
+      "holding_before": 2303000,
+      "holding_after": 8303000,
+      "amount_transaction": 6000000,
+      "price": 499.0,
+      "transaction_value": 2994000000.0,
+      "price_transaction": [
+        {
+          "date": "2025-08-01",
+          "type": "buy",
+          "price": 499,
+          "amount_transacted": 6000000
+        }
+      ],
+      "share_percentage_before": 0.01,
+      "share_percentage_after": 0.04,
+      "share_percentage_transaction": 0.03,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Soegiarto Adikoesoemo Buy Transaction of AKR Corporindo",
+      "body": "Soegiarto Adikoesoemo acquired 3,000,000 shares of AKR Corporindo at IDR 499 per share, increasing their holding from 142,267,000 to 145,267,000 shares for investment purposes.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202508/af75f976f2_597afaab26.pdf",
+      "timestamp": "2025-08-06T16:51:00",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [],
+      "symbol": "AKRA.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Soegiarto Adikoesoemo",
+      "holding_before": 142267000,
+      "holding_after": 145267000,
+      "amount_transaction": 3000000,
+      "price": 499.0,
+      "transaction_value": 1497000000.0,
+      "price_transaction": [
+        {
+          "date": "2025-08-01",
+          "type": "buy",
+          "price": 499,
+          "amount_transacted": 3000000
+        }
+      ],
+      "share_percentage_before": 0.71,
+      "share_percentage_after": 0.72,
+      "share_percentage_transaction": 0.01,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Haryanto Adikoesoemo Buys AKR Corporindo",
+      "body": "Haryanto Adikoesoemo, an insider, purchased 6,000,000 shares of AKR Corporindo (AKRA.JK) on August 6, 2025, at a price of IDR 499 per share, increasing his ownership stake from 206,604,600 to 212,604,600 shares. The purpose of this transaction is for investment.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202508/bc2b77f100_1d5d8687c6.pdf",
+      "timestamp": "2025-08-06T16:50:00",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [],
+      "symbol": "AKRA.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Haryanto Adikoesoemo",
+      "holding_before": 206604600,
+      "holding_after": 212604600,
+      "amount_transaction": 6000000,
+      "price": 499.0,
+      "transaction_value": 2994000000.0,
+      "price_transaction": [
+        {
+          "date": "2025-08-01",
+          "type": "buy",
+          "price": 499,
+          "amount_transacted": 6000000
+        }
+      ],
+      "share_percentage_before": 1.029,
+      "share_percentage_after": 1.059,
+      "share_percentage_transaction": 0.03,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Arthakencana Rayatama Buy Transaction of AKR Corporindo",
+      "body": "On January 15, 2025, Arthakencana Rayatama, an insider, bought 3626900 shares of AKR Corporindo increasing its holding from 12770472000 to 12774098900 shares. The transaction, valued at approximately IDR 4.3 billion, was made for investment purposes. The purchase was executed in two tranches, with 1577100 shares bought at IDR 1174 and 2049800 shares bought at IDR 1201. This transaction suggests that Arthakencana Rayatama is bullish on AKR Corporindo 's prospects, potentially indicating confidence in the company's future performance.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202501/780f7fa90c_be41a52b2c.pdf",
+      "timestamp": "2025-01-15T16:19:00",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "AKRA.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Arthakencana Rayatama",
+      "holding_before": 12770472000,
+      "holding_after": 12774098900,
+      "amount_transaction": 3626900,
+      "price": 1189.259,
+      "transaction_value": 4313325200.0,
+      "price_transaction": [
+        {
+          "date": "2025-01-10",
+          "type": "buy",
+          "price": 1174,
+          "amount_transacted": 1577100
+        },
+        {
+          "date": "2025-01-13",
+          "type": "buy",
+          "price": 1201,
+          "amount_transacted": 2049800
+        }
+      ],
+      "share_percentage_before": 63.619,
+      "share_percentage_after": 63.637,
+      "share_percentage_transaction": 0.018,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    }
+  ],
+  "pagination": {
+    "total_count": 32,
+    "showing": 30,
+    "limit": 30,
+    "offset": 0,
+    "has_next": true,
+    "has_previous": false,
+    "next_offset": 30,
+    "previous_offset": null
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/corporate-actions/CPIN/",
+  "retrieved_at": "2026-09-26T14:12:02.841745+00:00",
+  "sha256": "95d60d736f1d176c5988bf5ca685f59a4813bb6c0e66d1021c9e7cfb8edbab0e",
+  "http_status": 200,
+  "request_number": 16,
+  "request_budget": 45,
+  "symbol": "CPIN",
+  "query_parameters": {},
+  "history_scope": "complete endpoint history; endpoint called without date filters",
+  "snapshot_sha256": "2d49272e03f1df18eabf7a788e879a6fcce5aee5e7534c0607eb4f84351632a7"
+}

@@ -1,0 +1,11 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/daily/ICBP/",
+  "ticker": "ICBP",
+  "start": "2026-03-12",
+  "end": "2026-06-09",
+  "retrieved_at": "2026-09-24T12:38:03.648568",
+  "http_status": 200,
+  "observations_count": 52,
+  "sha256": "34fc074edea8937a86fc57e48d8c4909ce33b7033f8206a244054018d8a500ca"
+}

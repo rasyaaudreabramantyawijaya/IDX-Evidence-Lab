@@ -1,0 +1,146 @@
+{
+  "results": [
+    {
+      "title": "Alexander Dippo Paris Y S buys shares of Bank Rakyat Indonesia",
+      "body": "Alexander Dippo Paris Y S bought 815,000 shares of Bank Rakyat Indonesia. This increases their holdings from 0 to 815,000 shares. The stated purpose of the transaction was investment.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-05062026-2674-00.pdf-0.pdf",
+      "timestamp": "2026-06-05T15:53:26",
+      "sector": "financials",
+      "sub_sector": "banks",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "BBRI.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Alexander Dippo Paris Y S",
+      "holding_before": 0,
+      "holding_after": 815000,
+      "amount_transaction": 815000,
+      "price": 2940.0,
+      "transaction_value": 2396100000.0,
+      "price_transaction": [
+        {
+          "date": "2026-06-03",
+          "type": "buy",
+          "price": 2940,
+          "amount_transacted": 815000
+        }
+      ],
+      "share_percentage_before": 0.0,
+      "share_percentage_after": 0.0,
+      "share_percentage_transaction": 0.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Change in Perusahaan Perseroan Danantara Asset Management's position in Bank Rakyat Indonesia",
+      "body": "Perusahaan Perseroan Danantara Asset Management executed a transaction for 806,109,768 shares of Bank Rakyat Indonesia. This decreases their holdings from 80,610,976,875 to 79,804,867,107 shares. The stated purpose of the transaction was fulfillment of law number 16 of 2025.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-07012026-8293-00.pdf-0.pdf",
+      "timestamp": "2026-01-07T18:07:48",
+      "sector": "financials",
+      "sub_sector": "banks",
+      "tags": [
+        "share-transfer"
+      ],
+      "symbol": "BBRI.JK",
+      "transaction_type": "others",
+      "holder_type": "insider",
+      "holder_name": "Perusahaan Perseroan Danantara Asset Management",
+      "holding_before": 80610976875,
+      "holding_after": 79804867107,
+      "amount_transaction": 806109768,
+      "price": 50.0,
+      "transaction_value": 40305488400.0,
+      "price_transaction": [
+        {
+          "date": "2026-01-05",
+          "type": "others",
+          "price": 50.0,
+          "amount_transacted": 806109768
+        }
+      ],
+      "share_percentage_before": 53.19,
+      "share_percentage_after": 52.66,
+      "share_percentage_transaction": 0.53,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Change in Negara Republik Indonesia's position in Bank Rakyat Indonesia",
+      "body": "Negara Republik Indonesia executed a transaction for 806,109,768 shares of Bank Rakyat Indonesia. This increases their holdings from 1 to 806,109,769 shares. The stated purpose of the transaction was fulfillment of law number 16 of 2025.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-07012026-8509-00.pdf-0.pdf",
+      "timestamp": "2026-01-07T17:41:19",
+      "sector": "financials",
+      "sub_sector": "banks",
+      "tags": [
+        "share-transfer"
+      ],
+      "symbol": "BBRI.JK",
+      "transaction_type": "others",
+      "holder_type": "insider",
+      "holder_name": "Negara Republik Indonesia",
+      "holding_before": 0,
+      "holding_after": 806109769,
+      "amount_transaction": 806109768,
+      "price": 50.0,
+      "transaction_value": 40305488400.0,
+      "price_transaction": [
+        {
+          "date": "2026-01-05",
+          "type": "others",
+          "price": 50.0,
+          "amount_transacted": 806109768
+        }
+      ],
+      "share_percentage_before": 0.0,
+      "share_percentage_after": 0.53,
+      "share_percentage_transaction": 0.53,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Sunarso Buy Transaction of Bank Rakyat Indonesia",
+      "body": "On January 21, 2025, Sunarso, an insider, purchased 210,000 shares of Bank Rakyat Indonesia increasing their holding from 5,658,656 to 5,868,656 shares. The transaction was a buy, with a total value of 210,000,000 (at a price of 4,200 per share). The purpose of the transaction was for investment. This transaction suggests that Sunarso has confidence in the bank's prospects, potentially indicating a positive outlook for the company.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202501/ba0152105e_8241347807.pdf",
+      "timestamp": "2025-01-21T18:49:00",
+      "sector": "financials",
+      "sub_sector": "banks",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "BBRI.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Sunarso",
+      "holding_before": 5658656,
+      "holding_after": 5868656,
+      "amount_transaction": 210000,
+      "price": 4200.0,
+      "transaction_value": 882000000.0,
+      "price_transaction": [
+        {
+          "date": "2025-01-16",
+          "type": "buy",
+          "price": 4200,
+          "amount_transacted": 210000
+        }
+      ],
+      "share_percentage_before": 0.0,
+      "share_percentage_after": 0.0,
+      "share_percentage_transaction": 0.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    }
+  ],
+  "pagination": {
+    "total_count": 4,
+    "showing": 4,
+    "limit": 30,
+    "offset": 0,
+    "has_next": false,
+    "has_previous": false,
+    "next_offset": null,
+    "previous_offset": null
+  }
+}

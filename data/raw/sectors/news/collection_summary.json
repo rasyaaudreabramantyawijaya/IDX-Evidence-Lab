@@ -1,0 +1,38 @@
+{
+  "provider": "Sectors.app",
+  "endpoint": "/v2/news/",
+  "universe_snapshot": "data/raw/sectors/lq45-universe.json",
+  "symbols_count": 45,
+  "date_start": "2026-09-24",
+  "date_end": "2026-09-25",
+  "extension": "idx",
+  "page_limit": 30,
+  "approved_max_requests": 17,
+  "prior_attempts_in_news_ledger": 0,
+  "requests_attempted_this_run": 2,
+  "requests_attempted_total": 2,
+  "articles_returned_across_pages": 36,
+  "api_total_count": 36,
+  "pages": [
+    {
+      "file": "idx_lq45_2026-09-24_2026-09-25_offset_000000.json",
+      "offset": 0,
+      "rows": 30,
+      "sha256": "931435c6c5e093d953421afd8a729d85a1f2b3acfe5e76214803e378602b4434",
+      "has_next": true,
+      "next_offset": 30
+    },
+    {
+      "file": "idx_lq45_2026-09-24_2026-09-25_offset_000030.json",
+      "offset": 30,
+      "rows": 6,
+      "sha256": "213ae140bf382c60bf39fc684ffa6d77c3355606f5cf1465d243a11b05ab5709",
+      "has_next": false,
+      "next_offset": null
+    }
+  ],
+  "complete": true,
+  "status": "COMPLETE",
+  "errors": [],
+  "created_at_utc": "2026-09-25T04:45:33.722453+00:00"
+}

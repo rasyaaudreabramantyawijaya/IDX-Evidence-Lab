@@ -1,0 +1,14 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/corporate-actions/INCO/",
+  "retrieved_at": "2026-09-26T14:12:05.248577+00:00",
+  "sha256": "480ccd486fc35d4db25ef5f9e0e5b81d4502e634497a72ea00a8e78843885fba",
+  "http_status": 200,
+  "request_number": 25,
+  "request_budget": 45,
+  "symbol": "INCO",
+  "query_parameters": {},
+  "history_scope": "complete endpoint history; endpoint called without date filters",
+  "snapshot_sha256": "bff184b42309073ffcd885f6392f8db61af06c71ce4151af5bd890edd12d37ed"
+}

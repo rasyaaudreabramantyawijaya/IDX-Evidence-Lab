@@ -1,0 +1,123 @@
+{
+  "results": [
+    {
+      "title": "Triputra Investindo Arya buys shares of Alamtri Resources Indonesia",
+      "body": "Triputra Investindo Arya bought 20,479,100 shares of Alamtri Resources Indonesia. This increases their holdings from 188,696,800 to 209,175,900 shares. The stated purpose of the transaction was investment.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-25052026-0814-00.pdf-0.pdf",
+      "timestamp": "2026-05-25T14:46:54",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "ADRO.JK",
+      "transaction_type": "buy",
+      "holder_type": "institution",
+      "holder_name": "Triputra Investindo Arya",
+      "holding_before": 188696800,
+      "holding_after": 209175900,
+      "amount_transaction": 20479100,
+      "price": 2218.656,
+      "transaction_value": 45436088000.0,
+      "price_transaction": [
+        {
+          "date": "2026-05-21",
+          "type": "buy",
+          "price": 2210,
+          "amount_transacted": 6787000
+        },
+        {
+          "date": "2026-05-21",
+          "type": "buy",
+          "price": 2230,
+          "amount_transacted": 4035600
+        },
+        {
+          "date": "2026-05-21",
+          "type": "buy",
+          "price": 2220,
+          "amount_transacted": 9656500
+        }
+      ],
+      "share_percentage_before": 0.64,
+      "share_percentage_after": 0.71,
+      "share_percentage_transaction": 0.07,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Alamtri Resources Indonesia Buy Transaction of Alamtri Minerals Indonesia",
+      "body": "Alamtri Resources Indonesia an institution bought 231,000,000 shares of Alamtri Minerals Indonesia increasing its holdings from 34,525,541,100 to 34,756,541,100. The transaction occurred in the energy sector, specifically oil-gas-coal. The purpose of the transaction is Untuk melakukan investasi tambahan.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202510/4d80ecf450_17be92eba5.pdf",
+      "timestamp": "2025-10-17T22:27:59",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "ADRO.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Alamtri Resources Indonesia",
+      "holding_before": 34525541100,
+      "holding_after": 34756541100,
+      "amount_transaction": 231000000,
+      "price": 1435.0,
+      "transaction_value": 331485000000.0,
+      "price_transaction": [
+        {
+          "date": "2025-10-16",
+          "type": "buy",
+          "price": 1435,
+          "amount_transacted": 231000000
+        }
+      ],
+      "share_percentage_before": 84.451,
+      "share_percentage_after": 85.016,
+      "share_percentage_transaction": 0.565,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Alamtri Resources Indonesia Insider Sells Transaction of Alamtri Resources Indonesia",
+      "body": "On December 13, 2024, an insider trading transaction occurred involving Alamtri Resources Indonesia where an undisclosed holder sold 581,117,829,898 shares, reducing their holding from 7,008,202,240 to 1,197,023,942 shares. The purpose of the transaction is from the implementing of PUPS (public offering or private placement) to separate the thermal coal mining business pillar and some of its supporting businesses from the Minerals and Green business pillars in order to maintain a solid synergy from the integration of businesses that are part of sectors with closer interconnections.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202412/d7e593ab16_e7d31fe278.pdf",
+      "timestamp": "2024-12-13T15:53:00",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [],
+      "symbol": "ADRO.JK",
+      "transaction_type": "sell",
+      "holder_type": "institution",
+      "holder_name": "Alamtri Resources Indonesia",
+      "holding_before": 7008202240,
+      "holding_after": 1197023942,
+      "amount_transaction": 5811178298,
+      "price": 5960.0,
+      "transaction_value": 34634622656080.0,
+      "price_transaction": [
+        {
+          "date": "2024-12-09",
+          "type": "transfer",
+          "price": 5960.0,
+          "amount_transacted": 5811178298
+        }
+      ],
+      "share_percentage_before": null,
+      "share_percentage_after": null,
+      "share_percentage_transaction": null,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    }
+  ],
+  "pagination": {
+    "total_count": 3,
+    "showing": 3,
+    "limit": 30,
+    "offset": 0,
+    "has_next": false,
+    "has_previous": false,
+    "next_offset": null,
+    "previous_offset": null
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/HRTA/?start=2025-03-18&end=2025-06-15",
+  "retrieved_at": "2026-09-25T03:36:04.508067+00:00",
+  "sha256": "1c811aca2b4f313cf8fcc217b37105da45e565d7c83bbc5d5c205f1eb8c4a0b3",
+  "http_status": 200,
+  "request_number": 263,
+  "request_budget": 558,
+  "ticker": "HRTA",
+  "requested_start": "2025-03-18",
+  "requested_end": "2025-06-15",
+  "window_days": 90,
+  "snapshot_sha256": "e9243080c9b65775e831435414ea6afe008a2841a861bec618b7e2e1c6831127"
+}

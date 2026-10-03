@@ -1,0 +1,18 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/filings/?symbol=AADI&start=2024-12-05&end=2026-09-24&limit=30&offset=0",
+  "retrieved_at": "2026-09-26T12:21:25.210336+00:00",
+  "sha256": "1b71727ec4f461ee0bf1c431d8a495a8e3d30cfb37f0dea440c6033e8c252604",
+  "http_status": 200,
+  "request_number": 1,
+  "request_budget": 615,
+  "run_id": "filings_full_20260926T122124Z",
+  "symbol": "AADI",
+  "requested_start": "2024-12-05",
+  "requested_end": "2026-09-24",
+  "limit": 30,
+  "offset": 0,
+  "pagination_followed": true,
+  "snapshot_sha256": "d8d2f3e6138380148701d3b25c10e53fe3a731e302bcc954fe45c6d4a41cd782"
+}

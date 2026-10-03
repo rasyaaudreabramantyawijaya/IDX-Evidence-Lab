@@ -1,0 +1,185 @@
+{
+  "results": [
+    {
+      "title": "Triputra Investindo Arya buys shares of Adaro Andalan Indonesia",
+      "body": "Triputra Investindo Arya's acquisition of AADI shares is the latest in a series of investments, with the firm adding to their position across 2 companies in the last 6 months. Alongside AADI, the firm has also acquired shares of ADRO, totaling IDR 112,121,330,500 across all purchases in this period.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-30062026-7783-00.pdf-0.pdf",
+      "timestamp": "2026-06-30T16:51:56",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "AADI.JK",
+      "transaction_type": "buy",
+      "holder_type": "institution",
+      "holder_name": "Triputra Investindo Arya",
+      "holding_before": 28609200,
+      "holding_after": 36974500,
+      "amount_transaction": 8365300,
+      "price": 7971.65,
+      "transaction_value": 66685242500.0,
+      "price_transaction": [
+        {
+          "date": "2026-06-24",
+          "type": "buy",
+          "price": 7950,
+          "amount_transacted": 2371000
+        },
+        {
+          "date": "2026-06-24",
+          "type": "buy",
+          "price": 8000,
+          "amount_transacted": 1250000
+        },
+        {
+          "date": "2026-06-24",
+          "type": "buy",
+          "price": 7975,
+          "amount_transacted": 4744300
+        }
+      ],
+      "share_percentage_before": 0.37,
+      "share_percentage_after": 0.47,
+      "share_percentage_transaction": 0.1,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Triputra Investindo Arya sells shares of Adaro Andalan Indonesia",
+      "body": "Triputra Investindo Arya sold 3,841,900 shares of Adaro Andalan Indonesia. This decreases their holdings from 38,570,700 to 34,728,800 shares. The stated purpose of the transaction was divestment.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-20022026-8180-00.pdf-0.pdf",
+      "timestamp": "2026-02-20T15:13:30",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "AADI.JK",
+      "transaction_type": "sell",
+      "holder_type": "institution",
+      "holder_name": "Triputra Investindo Arya",
+      "holding_before": 38570700,
+      "holding_after": 34728800,
+      "amount_transaction": 3841900,
+      "price": 8789.0,
+      "transaction_value": 33766459100.0,
+      "price_transaction": [
+        {
+          "date": "2026-02-18",
+          "type": "sell",
+          "price": 8789.0,
+          "amount_transacted": 3841900
+        }
+      ],
+      "share_percentage_before": 0.5,
+      "share_percentage_after": 0.45,
+      "share_percentage_transaction": 0.05,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Garibaldi Thohir Buy Transaction of Adaro Andalan Indonesia",
+      "body": "On December 13, 2024, Garibaldi Thohir, an insider, purchased 450,360,607 shares of Adaro Andalan Indonesia increasing his holding from 0 to 450,360,607 shares. The transaction type was a \"buy\" and its purpose was to support Alamtri Resources Indonesia. This significant transaction suggests that Thohir has confidence in the company's prospects and is willing to invest heavily to support its growth. The implications of this transaction may include a potential increase in the company's value and a signal to other investors about the company's potential.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202412/c3ca6855cd_67340562ca.pdf",
+      "timestamp": "2024-12-13T16:33:00",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [],
+      "symbol": "AADI.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Garibaldi Thohir",
+      "holding_before": 0,
+      "holding_after": 450360607,
+      "amount_transaction": 450360607,
+      "price": 5960.0,
+      "transaction_value": 2684149217720.0,
+      "price_transaction": [
+        {
+          "date": "2024-12-09",
+          "type": "buy",
+          "price": 5960.0,
+          "amount_transacted": 450360607
+        }
+      ],
+      "share_percentage_before": null,
+      "share_percentage_after": null,
+      "share_percentage_transaction": null,
+      "idx_investor_slug": "garibaldi-thohir-92103",
+      "idx_conglomerates_group_slug": "thohir-group"
+    },
+    {
+      "title": "Adaro Strategic Investments Buy Transaction of Adaro Andalan Indonesia",
+      "body": "On December 13, 2024, Adaro Strategic Investments acquired 3,200,142,510 shares of Adaro Andalan Indonesia increasing its holding from 320 shares to 3,200,142,830 shares. This \"buy\" transaction was made to support Alamtri Resources Indonesia. The significant increase in ownership by Adaro Strategic Investments to expand its stake in Adaro Andalan Indonesia is to support Alamtri Resources Indonesia in separating its thermal coal mining business pillar and several of its supporting businesses, with a focus on the Minerals and Green business pillars, in order to maintain solid synergy from the integration of businesses within sectors that have closer interconnections.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202412/4766913ed3_cdf39f9c18.pdf",
+      "timestamp": "2024-12-13T16:33:00",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [],
+      "symbol": "AADI.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Adaro Strategic Investments",
+      "holding_before": 320,
+      "holding_after": 3200142830,
+      "amount_transaction": 3200142510,
+      "price": 5960.0,
+      "transaction_value": 19072849359600.0,
+      "price_transaction": [
+        {
+          "date": "2024-12-09",
+          "type": "buy",
+          "price": 5960.0,
+          "amount_transacted": 3200142510
+        }
+      ],
+      "share_percentage_before": null,
+      "share_percentage_after": null,
+      "share_percentage_transaction": null,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Alamtri Resources Indonesia Insider Sells Transaction of Alamtri Resources Indonesia",
+      "body": "On December 13, 2024, an insider trading transaction occurred involving Alamtri Resources Indonesia where an undisclosed holder sold 581,117,829,898 shares, reducing their holding from 7,008,202,240 to 1,197,023,942 shares. The purpose of the transaction is from the implementing of PUPS (public offering or private placement) to separate the thermal coal mining business pillar and some of its supporting businesses from the Minerals and Green business pillars in order to maintain a solid synergy from the integration of businesses that are part of sectors with closer interconnections.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202412/d7e593ab16_e7d31fe278.pdf",
+      "timestamp": "2024-12-13T15:53:00",
+      "sector": "energy",
+      "sub_sector": "oil-gas-coal",
+      "tags": [],
+      "symbol": "AADI.JK",
+      "transaction_type": "sell",
+      "holder_type": "institution",
+      "holder_name": "Alamtri Resources Indonesia",
+      "holding_before": 7008202240,
+      "holding_after": 1197023942,
+      "amount_transaction": 5811178298,
+      "price": 5960.0,
+      "transaction_value": 34634622656080.0,
+      "price_transaction": [
+        {
+          "date": "2024-12-09",
+          "type": "transfer",
+          "price": 5960.0,
+          "amount_transacted": 5811178298
+        }
+      ],
+      "share_percentage_before": null,
+      "share_percentage_after": null,
+      "share_percentage_transaction": null,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    }
+  ],
+  "pagination": {
+    "total_count": 5,
+    "showing": 5,
+    "limit": 30,
+    "offset": 0,
+    "has_next": false,
+    "has_previous": false,
+    "next_offset": null,
+    "previous_offset": null
+  }
+}

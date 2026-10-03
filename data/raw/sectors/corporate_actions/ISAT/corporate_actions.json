@@ -1,0 +1,121 @@
+{
+  "symbol": "ISAT.JK",
+  "corporate_actions": {
+    "agm": [
+      {
+        "agm_date": "2022-06-28",
+        "agm_time": "14:00:00",
+        "agm_place": "Gedung Indosat Ooredoojl. Medan Merdeka Barat No. 21Jakarta 10110",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2022-08-18",
+        "agm_time": "13:00:00",
+        "agm_place": "",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2023-05-15",
+        "agm_time": "14:00:00",
+        "agm_place": "Kantor Pusat Pt Indosat Tbk, Jl. Medan Merdeka Barat No.21, Gambir, Jakarta Pusat 10110",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2023-09-18",
+        "agm_time": "14:00:00",
+        "agm_place": "Gedung Indosat Ooredoo Hutchisonjl. Medan Merdeka Barat No.21Jakarta Pusat 10110",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2024-05-21",
+        "agm_time": "14:00:00",
+        "agm_place": "Pt Indosat Tbk JL Medan Merdeka Barat NO 21, Jakarta Pusat 10110",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2024-09-24",
+        "agm_time": "13:00:00",
+        "agm_place": "Gedung Indosat Ooredoo Hutchison JL Medan Merdeka Barat NO 21 Kota Adm. Jakarta Pusat",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2025-05-28",
+        "agm_time": null,
+        "agm_place": "",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2025-10-02",
+        "agm_time": "14:00:00",
+        "agm_place": "Rupslb Akan Diselenggarakan Secara Elektronik / Egms Will Be Convened Electronically",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2026-05-04",
+        "agm_time": "16:30:00",
+        "agm_place": "Fisik pada: Kantor Pusat Indosat Ooredoo Hutchison, Jalan Medan Merdeka Barat No. 21, Jakarta 10110Elektronik melalui",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2026-05-05",
+        "agm_time": "16:30:00",
+        "agm_place": "(Fisik pada: Kantor Pusat Indosat Ooredoo Hutchison, Jalan Medan Merdeka Barat No. 21, Jakarta 10110Elektronik melalui); (Gedung Indosat Ooredoo Hutchison Jalan Medan Merdeka Barat NO. 21 Jakarta 10110 Kotaadm. Jakarta Selatan)",
+        "agm_result": "Agenda #1: Shareholders approved the 2025 annual report and ratified the financial statements audited by KAP Rintis, Jumadi, Rianto & Rekan, granting a full discharge of responsibilities to the Board of Directors and Board of Commissioners.\nAgenda #2: The meeting approved a cash dividend of Rp111 per share, totaling Rp3,579,840,016,227, and allocated the remaining Rp1,929,863,318,889 to retained earnings.\nAgenda #3: Shareholders approved a total 2026 remuneration of Rp63,477,342,720 for the Board of Commissioners and delegated the authority to set the Board of Directors' remuneration to the Commissioners.\nAgenda #4: Lok Budianto and KAP Rintis, Jumadi, Rianto & Rekan (PwC network) were appointed to audit the company's financial statements for the fiscal year ending December 31, 2026.\nAgenda #5: The meeting updated the Board compositions, confirming Vikram Sinha as President Director and Nezar Patria as President Commissioner, while appointing new members and dismissing Ahmad Zulfikar. The 9-member Board of Directors and 15-member Board of Commissioners have terms ending in 2027 and 2030 respectively.\nAgenda #6: The Board of Directors and Corporate Secretary were authorized to notarize meeting resolutions and notify the Ministry of Law and Human Rights regarding management changes.\nAgenda #7: The meeting was held on May 5, 2026, and achieved a quorum with 94.2228% of valid shares, representing 30,387,599,006 shares, in attendance."
+      },
+      {
+        "agm_date": "2026-09-29",
+        "agm_time": "14:00:00",
+        "agm_place": "Gedung Indosat Ooredoo Hutchison Jalan Medan Merdeka Barat No. 21 Jakarta 10110",
+        "agm_result": null
+      }
+    ],
+    "bonus": null,
+    "warrant": null,
+    "dividend": [
+      {
+        "ex_date": "2026-05-18",
+        "payment_date": "2026-06-05",
+        "dividend_yield": null,
+        "dividend_amount": 111
+      },
+      {
+        "ex_date": "2024-06-03",
+        "payment_date": "2024-06-21",
+        "dividend_yield": 0.0257625,
+        "dividend_amount": 67.1
+      },
+      {
+        "ex_date": "2025-06-12",
+        "payment_date": "2025-07-02",
+        "dividend_yield": 0.0418021,
+        "dividend_amount": 83.8
+      },
+      {
+        "ex_date": "2021-12-07",
+        "payment_date": "2021-12-16",
+        "dividend_yield": 0.130209,
+        "dividend_amount": 230.035
+      },
+      {
+        "ex_date": "2023-05-25",
+        "payment_date": "2023-06-15",
+        "dividend_yield": 0.0306981,
+        "dividend_amount": 63.925
+      },
+      {
+        "ex_date": "2022-08-29",
+        "payment_date": "2022-09-21",
+        "dividend_yield": 0.0397291,
+        "dividend_amount": 62.0141
+      }
+    ],
+    "right_issue": null,
+    "stock_split": [
+      {
+        "date": "2024-10-14",
+        "split_ratio": 4
+      }
+    ],
+    "upcoming_dividend": null
+  }
+}

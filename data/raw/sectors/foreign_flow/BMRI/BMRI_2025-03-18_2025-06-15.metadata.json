@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/BMRI/?start=2025-03-18&end=2025-06-15",
+  "retrieved_at": "2026-09-25T03:26:53.018132+00:00",
+  "sha256": "6fb134d50cb46ec95a68cae7f149c139f6aa62927afaf9c03b1f80ed3d5b7988",
+  "http_status": 200,
+  "request_number": 133,
+  "request_budget": 558,
+  "ticker": "BMRI",
+  "requested_start": "2025-03-18",
+  "requested_end": "2025-06-15",
+  "window_days": 90,
+  "snapshot_sha256": "b202e00383f803c889b7f631e2c29046eb15eec621ad229b5dee747fd8323c60"
+}

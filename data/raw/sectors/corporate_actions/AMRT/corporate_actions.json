@@ -1,0 +1,97 @@
+{
+  "symbol": "AMRT.JK",
+  "corporate_actions": {
+    "agm": [
+      {
+        "agm_date": "2022-05-25",
+        "agm_time": "14:00:00",
+        "agm_place": "Alfa Tower Lt.17Jl. Jalur Sutera Barat Kav. 9 Alam Suteratangerang 15143",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2023-05-17",
+        "agm_time": "14:00:00",
+        "agm_place": "Alfa Tower Lt.17Jl. Jalur Sutera Barat Kav. 9 Alam Suteratangerang 15143",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2024-05-16",
+        "agm_time": "14:00:00",
+        "agm_place": "Alfa Tower Lt.17Jl. Jalur Sutera Barat Kav. 9 Alam Suteratangerang 15143",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2025-05-22",
+        "agm_time": "14:00:00",
+        "agm_place": "Gedung Alfa Tower, Jl. Jalur Sutera Barat Kav. 9, Kota Tangerang, Banten Kota Tangerangbanten",
+        "agm_result": null
+      },
+      {
+        "agm_date": "2026-06-04",
+        "agm_time": "14:00:00",
+        "agm_place": "Gedung Alfa Tower Lantai 17 Jalan Jalur Sutera Barat KAV 7-9, Alam Sutera, Kota Tangerang",
+        "agm_result": "Agenda #1: The meeting approved the 2025 Annual Report and audited Financial Statements, granting a full release of liability to the Board of Directors and Commissioners. The Board is authorized to notarize these resolutions and notify the relevant authorities.\nAgenda #2: Shareholders approved allocating Rp1 billion to the reserve fund and distributing a cash dividend of Rp41.50 per share starting June 25, 2026. The remaining net profit will be retained for investment and working capital.\nAgenda #3: The meeting appointed Purwanto Susanti dan Surja (Ernst & Young Global Limited) and Benediktio Salim to audit the 2026 financial statements. The Board of Commissioners is authorized to determine audit fees and appoint replacements if necessary.\nAgenda #4: A maximum total of Rp20 billion was approved for the Board of Commissioners' 2026 honorarium and allowances. The specific distribution will be determined by the Board of Commissioners based on recommendations from the Nomination and Remuneration Committee.\nAgenda #5: Shareholders approved amending Article 3 of the Articles of Association to align the company's business activities with the 2025 Indonesia Standard Industrial Classification (KBLI). The Board of Directors was authorized to formalize these changes in a Notarial Deed and notify relevant authorities."
+      }
+    ],
+    "bonus": null,
+    "warrant": null,
+    "dividend": [
+      {
+        "ex_date": "2023-05-29",
+        "payment_date": "2023-06-14",
+        "dividend_yield": 0.00847445,
+        "dividend_amount": 24.06
+      },
+      {
+        "ex_date": "2020-12-14",
+        "payment_date": "2020-12-22",
+        "dividend_yield": 0.00784316,
+        "dividend_amount": 6.03
+      },
+      {
+        "ex_date": "2025-06-04",
+        "payment_date": "2025-06-18",
+        "dividend_yield": 0.0151285,
+        "dividend_amount": 34.11
+      },
+      {
+        "ex_date": "2026-06-15",
+        "payment_date": "2026-06-25",
+        "dividend_yield": null,
+        "dividend_amount": 41.5
+      },
+      {
+        "ex_date": "2024-05-29",
+        "payment_date": "2024-06-12",
+        "dividend_yield": 0.00990075,
+        "dividend_amount": 28.68
+      },
+      {
+        "ex_date": "2022-06-07",
+        "payment_date": "2022-06-24",
+        "dividend_yield": 0.00972361,
+        "dividend_amount": 18.78
+      },
+      {
+        "ex_date": "2021-05-20",
+        "payment_date": "2021-06-04",
+        "dividend_yield": 0.00838067,
+        "dividend_amount": 9.3
+      },
+      {
+        "ex_date": "2020-05-28",
+        "payment_date": "2020-06-12",
+        "dividend_yield": 0.0174032,
+        "dividend_amount": 13.38
+      }
+    ],
+    "right_issue": null,
+    "stock_split": [
+      {
+        "date": "2013-07-29",
+        "split_ratio": 10
+      }
+    ],
+    "upcoming_dividend": null
+  }
+}

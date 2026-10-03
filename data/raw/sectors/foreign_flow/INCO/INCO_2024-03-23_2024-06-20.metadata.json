@@ -1,0 +1,15 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/foreign-flow/INCO/?start=2024-03-23&end=2024-06-20",
+  "retrieved_at": "2026-09-25T03:37:32.912110+00:00",
+  "sha256": "82b2f7f795809633d1947f6f50ce52dac858d3553c87027a625af2f56db38d9d",
+  "http_status": 200,
+  "request_number": 285,
+  "request_budget": 558,
+  "ticker": "INCO",
+  "requested_start": "2024-03-23",
+  "requested_end": "2024-06-20",
+  "window_days": 90,
+  "snapshot_sha256": "5050c6befcff0c225cb0a390b131d641a07a2831e1486329b83eabb6c3e8fe42"
+}

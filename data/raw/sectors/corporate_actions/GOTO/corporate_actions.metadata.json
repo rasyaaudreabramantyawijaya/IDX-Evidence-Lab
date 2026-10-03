@@ -1,0 +1,14 @@
+{
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "endpoint": "https://api.sectors.app/v2/company/corporate-actions/GOTO/",
+  "retrieved_at": "2026-09-26T14:12:04.506886+00:00",
+  "sha256": "64b579776664260c7bc76362598db8b6549b8e8d362390a1e986aca56b34288f",
+  "http_status": 200,
+  "request_number": 22,
+  "request_budget": 45,
+  "symbol": "GOTO",
+  "query_parameters": {},
+  "history_scope": "complete endpoint history; endpoint called without date filters",
+  "snapshot_sha256": "226a7c45b6df512702178a04db5d85e47bcc990eca42324778092168a8c5801d"
+}

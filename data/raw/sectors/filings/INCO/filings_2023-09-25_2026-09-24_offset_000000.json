@@ -1,0 +1,111 @@
+{
+  "results": [
+    {
+      "title": "M Slamet Sugiharto buys shares of Vale Indonesia",
+      "body": "M Slamet Sugiharto bought 8,000 shares of Vale Indonesia. This increases their holdings from 0 to 8,000 shares. The stated purpose of the transaction was investment.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_KSEI/LK-12012026-4091-00.pdf-0.pdf",
+      "timestamp": "2026-01-12T13:37:07",
+      "sector": "basic-materials",
+      "sub_sector": "basic-materials",
+      "tags": [
+        "investment"
+      ],
+      "symbol": "INCO.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "M Slamet Sugiharto",
+      "holding_before": 0,
+      "holding_after": 8000,
+      "amount_transaction": 8000,
+      "price": 5975.0,
+      "transaction_value": 47800000.0,
+      "price_transaction": [
+        {
+          "date": "2026-01-08",
+          "type": "buy",
+          "price": 5975.0,
+          "amount_transacted": 8000
+        }
+      ],
+      "share_percentage_before": 0.0,
+      "share_percentage_after": 0.0,
+      "share_percentage_transaction": 0.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Edi Permadi Sell Transaction of Vale Indonesia",
+      "body": "On July 07, 2025, Edi Permadi, an insider shareholder, sold 131,200 shares of Vale Indonesia changing its holding from 131,200 to 0 shares.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202507/bec4a05540_a1645f4fda.pdf",
+      "timestamp": "2025-07-07T16:12:07",
+      "sector": "basic-materials",
+      "sub_sector": "basic-materials",
+      "tags": [
+        "divestment"
+      ],
+      "symbol": "INCO.JK",
+      "transaction_type": "sell",
+      "holder_type": "insider",
+      "holder_name": "Edi Permadi",
+      "holding_before": 131200,
+      "holding_after": 0,
+      "amount_transaction": 131200,
+      "price": 3900.0,
+      "transaction_value": 511680000.0,
+      "price_transaction": [
+        {
+          "date": "2025-06-04",
+          "type": "sell",
+          "price": 3900,
+          "amount_transacted": 131200
+        }
+      ],
+      "share_percentage_before": 0.0,
+      "share_percentage_after": 0.0,
+      "share_percentage_transaction": 0.0,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    },
+    {
+      "title": "Mineral Industri Indonesia Increases Holdings in Vale Indonesia Through Insider Trading Transaction",
+      "body": "On July 2, 2024, an institutional holder, Mineral Industri Indonesia, increased its stake in Vale Indonesia through a buy transaction, with the amount of the transaction totaling 1,596,265,945. The institution's holding before was 1,987,267,745, which rose to 3,583,533,690 after this transaction. This insider trading activity within the basic materials sector could signal confidence or strategic positioning by the institution, potentially impacting market sentiment.",
+      "source": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202407/0b308d52df_87a6af7ee8.pdf",
+      "timestamp": "2024-07-02T19:43:00",
+      "sector": "basic-materials",
+      "sub_sector": "basic-materials",
+      "tags": [],
+      "symbol": "INCO.JK",
+      "transaction_type": "buy",
+      "holder_type": "insider",
+      "holder_name": "Mineral Industri Indonesia",
+      "holding_before": 1987267745,
+      "holding_after": 3583533690,
+      "amount_transaction": 1596265945,
+      "price": 3050.0,
+      "transaction_value": 4868611132250.0,
+      "price_transaction": [
+        {
+          "date": "2024-06-28",
+          "type": "buy",
+          "price": 3050,
+          "amount_transacted": 1596265945
+        }
+      ],
+      "share_percentage_before": null,
+      "share_percentage_after": null,
+      "share_percentage_transaction": null,
+      "idx_investor_slug": null,
+      "idx_conglomerates_group_slug": null
+    }
+  ],
+  "pagination": {
+    "total_count": 3,
+    "showing": 3,
+    "limit": 30,
+    "offset": 0,
+    "has_next": false,
+    "has_previous": false,
+    "next_offset": null,
+    "previous_offset": null
+  }
+}
