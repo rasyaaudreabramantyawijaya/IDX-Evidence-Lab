@@ -1,0 +1,66 @@
+name: security
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "0 3 * * 1"
+
+permissions:
+  contents: read
+
+jobs:
+  secrets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  pip-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install pip-audit
+      - run: pip-audit -r requirements-portfolio.txt
+
+  # CodeQL and dependency-review on private repos need GitHub Advanced Security.
+  # They are non-blocking until that is confirmed available for this repo.
+  codeql:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    permissions:
+      contents: read
+      security-events: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: github/codeql-action/init@v3
+        with:
+          languages: python,javascript-typescript
+      - uses: github/codeql-action/analyze@v3
+
+  dependency-review:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/dependency-review-action@v4
+
+  # Single required status check for branch protection (CodeQL/dependency-review excluded, see above).
+  security:
+    if: always()
+    needs: [secrets, pip-audit]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify blocking jobs succeeded
+        run: |
+          [ "${{ needs.secrets.result }}" = "success" ] && \
+          [ "${{ needs.pip-audit.result }}" = "success" ]

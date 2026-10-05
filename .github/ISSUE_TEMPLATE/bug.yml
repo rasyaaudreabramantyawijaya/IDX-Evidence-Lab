@@ -1,0 +1,25 @@
+name: Bug report
+description: Something behaves incorrectly
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened vs. what was expected
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: input
+    id: area
+    attributes:
+      label: Workspace / endpoint
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Error text, request/response (remove keys and private data), screenshots go in the comment, not the repo.

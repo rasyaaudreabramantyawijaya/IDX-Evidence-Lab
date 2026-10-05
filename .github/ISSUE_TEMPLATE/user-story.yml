@@ -1,0 +1,59 @@
+name: User story
+description: A user-facing requirement with acceptance criteria
+labels: ["user-story"]
+body:
+  - type: dropdown
+    id: workspace
+    attributes:
+      label: Workspace
+      options:
+        - Dashboard
+        - Screener
+        - Watchlist
+        - Studies
+        - Riset emiten
+        - Portfolio Lab
+        - Market overview
+        - News Universe
+        - Dossier emiten
+        - Sumber/metode
+        - Pengaturan
+        - Cross-cutting
+    validations:
+      required: true
+  - type: input
+    id: persona
+    attributes:
+      label: As a
+      placeholder: retail investor researching an LQ45 issuer
+    validations:
+      required: true
+  - type: textarea
+    id: want
+    attributes:
+      label: I want
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: So that
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Given / When / Then, one per line.
+    validations:
+      required: true
+  - type: textarea
+    id: data-limits
+    attributes:
+      label: Data limits and status states
+      description: How READY / PARTIAL / INSUFFICIENT_EVIDENCE / missing / stale must be shown. Snapshot date caveats.
+  - type: textarea
+    id: design
+    attributes:
+      label: Design standard reference
+      description: Link to the relevant GSM section (tokens, components, accessibility).
