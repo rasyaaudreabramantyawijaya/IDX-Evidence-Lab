@@ -15,6 +15,7 @@ from idx_evidence_lab.market_data import (  # noqa: E402
     load_lq45_index_snapshot,
     load_issuer_daily,
     load_lq45_universe,
+    load_local_news,
     load_sector_heatmap,
 )
 from idx_evidence_lab.market_overview_analytics import load_foreign_flow, load_valuation_snapshot  # noqa: E402
@@ -46,6 +47,7 @@ def build_payload() -> dict[str, object]:
         "source_class": "sectors_source_data",
         "generated_from_local_snapshots": True,
         "universe": universe,
+        "news": load_local_news(ROOT),
         "ihsg": ihsg,
         "signal_baseline": signal_baseline,
         "lq45_index": load_lq45_index_snapshot(ROOT),
