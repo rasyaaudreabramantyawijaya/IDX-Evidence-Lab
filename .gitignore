@@ -11,6 +11,9 @@ Business & Corporate Law/
 **/__pycache__/
 *.py[cod]
 .pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
 .venv/
 venv/
 node_modules/
@@ -19,6 +22,15 @@ node_modules/
 **/*.md
 !README.md
 !**/README.md
+# Team-facing documentation that is meant to be tracked
+!SECURITY.md
+!CONTRIBUTING.md
+!.github/**/*.md
+!docs/design-system/**/*.md
+!docs/user-stories/**/*.md
+!docs/architecture/**/*.md
+!docs/security/**/*.md
+!docs/runbooks/**/*.md
 .agents*/
 .superpowers/
 **/skills/

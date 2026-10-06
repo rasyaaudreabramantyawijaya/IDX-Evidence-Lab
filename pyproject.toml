@@ -1,0 +1,54 @@
+[project]
+name = "idx-evidence-lab"
+version = "0.1.0"
+description = "Prototype riset pasar saham Indonesia untuk Sectors Hackathon Track 03"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=2.0,<3",
+    "scipy>=1.13,<2",
+    "matplotlib>=3.8,<4",
+    "certifi>=2024.2.2",
+    "PyMuPDF>=1.24,<2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8,<10",
+    "pytest-cov>=5",
+    "ruff>=0.6",
+    "pip-audit>=2.7",
+]
+notebooks = [
+    "pandas>=2.2,<4",
+    "nbformat>=5.10,<6",
+    "ipython>=8,<10",
+    "httpx>=0.27,<1",
+    "scikit-learn>=1.4,<2",
+    "xgboost>=2,<4",
+]
+
+# Source lives in src/ and is run with PYTHONPATH=src (see README); not built as a wheel yet.
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.coverage.run]
+source = ["src/idx_evidence_lab"]
+branch = false
+
+[tool.coverage.report]
+show_missing = false
+skip_empty = true
+
+# Baseline lint: only syntax errors and real bugs. Stricter rules are enabled later
+# in their own PRs so existing code is never reformatted as a side effect.
+[tool.ruff]
+target-version = "py310"
+line-length = 120
+extend-exclude = ["data", "notebooks", "docs/prototypes", "reports"]
+
+[tool.ruff.lint]
+select = ["E9", "F"]
+# 15 pre-existing findings (unused imports/variables) in src/ and tests/ at baseline.
+# Ignored so adopting CI does not touch application code; clean them up in a dedicated PR, then remove this.
+ignore = ["F401", "F841"]
