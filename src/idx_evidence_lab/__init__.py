@@ -1,7 +1,8 @@
 """Offline-first building blocks for IDX Evidence Lab.
 
-This package deliberately contains no network client. Live Sectors and
-OpenRouter adapters are approval-gated and are not part of the offline MVP.
+Everything runs offline by default. The live Sectors client and the OpenRouter
+adapter (openrouter_live) only make network calls when their keys are configured
+on the local server; without a key the app answers from local evidence.
 """
 
 __version__ = "0.1.0-offline"

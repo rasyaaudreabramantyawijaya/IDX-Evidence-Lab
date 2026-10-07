@@ -88,3 +88,47 @@ def test_scenario_mdd_is_zero_only_when_path_never_falls():
     result = simulate_portfolio_scenarios([[.1]] * 8, [1.0], horizons=(2,), simulations=10)
     for percentile in ('p10', 'p50', 'p90'):
         assert result['horizons']['2']['max_drawdown'][percentile] == 0
+
+
+def _gbm_sample(sessions=800, seed=1):
+    import numpy as np
+    generator = np.random.default_rng(seed)
+    log_returns = generator.multivariate_normal([0.0003, 0.0003], [[0.0003, 0.0001], [0.0001, 0.0003]], size=sessions)
+    return [f"d{i:05d}" for i in range(sessions)], np.expm1(log_returns).tolist()
+
+
+def test_gbm_forecast_is_bounded_reproducible_and_carries_forecast_metadata():
+    from idx_evidence_lab.portfolio_scenarios import forecast_gbm
+    dates, returns = _gbm_sample()
+    first = forecast_gbm(dates, returns, [0.5, 0.5], (20, 120), 300, 7, 252, -0.1, oos_simulations=200)
+    assert first == forecast_gbm(dates, returns, [0.5, 0.5], (20, 120), 300, 7, 252, -0.1, oos_simulations=200)
+    for horizon in ("20", "120"):
+        mdd = first["horizons"][horizon]["max_drawdown"]
+        assert -1 < mdd["p10"] <= mdd["p50"] <= mdd["p90"] <= 0
+        meta = mdd["forecast_metadata"]
+        assert all(meta[field] for field in ("target", "horizon", "input_cutoff", "method_version", "baseline", "diagnostics", "validation_status"))
+        assert meta["input_cutoff"] == dates[-1]
+    # 120-session windows overlap heavily on 800 sessions, so they must not pass as predictive.
+    assert first["horizons"]["120"]["max_drawdown"]["forecast_metadata"]["validation_status"] == "INSUFFICIENT_OOS_FOLDS"
+    assert first["horizons"]["20"]["max_drawdown"]["forecast_metadata"]["diagnostics"]["effective_folds"] >= 10
+
+
+def test_gbm_oos_folds_only_fit_on_prior_sessions():
+    from idx_evidence_lab.portfolio_scenarios import forecast_gbm
+    dates, returns = _gbm_sample()
+    base = forecast_gbm(dates, returns, [0.5, 0.5], (20,), 50, 3, 252, oos_simulations=100)
+    shocked = forecast_gbm(dates, [*returns[:400], *[[-0.2, -0.2]] * 400], [0.5, 0.5], (20,), 50, 3, 252, oos_simulations=100)
+    folds, changed = (r["horizons"]["20"]["cumulative_return"]["oos_folds"] for r in (base, shocked))
+    # Folds whose window ends before the shock are identical: no future session leaked into fitting or scoring.
+    early = [i for i, fold in enumerate(folds) if dates.index(fold["origin"]) + 20 <= 400]
+    assert early and all(folds[i] == changed[i] for i in early)
+
+
+def test_gbm_oos_coverage_is_roughly_nominal_on_true_gbm_data():
+    from idx_evidence_lab.portfolio_scenarios import forecast_gbm
+    coverage = []
+    for seed in range(8):
+        dates, returns = _gbm_sample(seed=100 + seed)
+        result = forecast_gbm(dates, returns, [0.5, 0.5], (20,), 50, seed, 252, oos_simulations=300)
+        coverage.append(result["horizons"]["20"]["cumulative_return"]["forecast_metadata"]["diagnostics"]["coverage"])
+    assert 0.65 <= sum(coverage) / len(coverage) <= 0.9

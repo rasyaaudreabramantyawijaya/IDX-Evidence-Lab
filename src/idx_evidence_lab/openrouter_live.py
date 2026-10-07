@@ -1,7 +1,14 @@
-"""Small, constrained OpenRouter adapter for search-query interpretation.
+"""Small, constrained OpenRouter adapter for search, issuer research and research chat.
 
-The model may rewrite a query and classify intent. It is never used as a
-market/legal data source; results are retrieved from the local index.
+The model may rewrite a query, classify intent and compose text from supplied
+local evidence. It is never used as a market/legal data source; results are
+retrieved from the local index and every model answer is validated locally.
+
+Each call tries the configured models in order (OPENROUTER_MODEL, then
+OPENROUTER_FALLBACK_MODELS). An answer rejected by local validation gets one
+repair turn naming the rejection code before the next model is tried. Research
+chat can stream: completed answer blocks are validated one by one and only
+validated blocks are forwarded.
 """
 
 from __future__ import annotations
@@ -34,7 +41,29 @@ def _verified_tls_context() -> ssl.SSLContext:
 
 
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
-DEFAULT_MODEL = "qwen/qwen3.8-27b:free"
+# Free models that accept response_format=json_object (checked against /api/v1/models, 2026-10-07).
+# The free catalog changes often; override with OPENROUTER_MODEL / OPENROUTER_FALLBACK_MODELS.
+DEFAULT_MODEL = "apodex/apodex-1.1-mini:free"
+# Gemma :free was left out: its only upstream (Google AI Studio) answered HTTP 429 on every test call.
+DEFAULT_FALLBACK_MODELS = ("nvidia/nemotron-3-super-120b-a12b:free", "dots-studio/dots-3-note-preview:free")
+APP_REFERER = "http://127.0.0.1:5500"
+MAX_RESPONSE_BYTES = 256 * 1024
+MAX_REPAIR_CONTENT = 16 * 1024
+REPAIR_HINTS = {
+    "UNSUPPORTED_NUMBER": "Angka kutipan sumber hanya boleh di blok claim_kind observation yang mencantumkan evidence_ids "
+                          "sumber itu; angka metrik wajib numeric_claims. Hapus angka dari blok inference/scenario/concept.",
+    "UNSUPPORTED_DATE": "Tanggal YYYY-MM-DD hanya boleh jika muncul di excerpt evidence atau periode metrik yang dirujuk blok itu.",
+    "MISSING_EVIDENCE": "Setiap blok selain concept wajib mencantumkan evidence_ids atau metric_ids.",
+    "INVALID_EVIDENCE": "Gunakan hanya ID evidence dan metrik yang ada di evidence_pack.",
+    "INVALID_NUMBER": "numeric_claims hanya untuk metric_ids dari evidence_pack.metrics (salin value, unit dan display persis). "
+                      "Angka kutipan excerpt jangan dimasukkan ke numeric_claims; tulis persis di teks blok observation.",
+    "UNSUPPORTED_FORECAST": "Jangan memakai claim_kind forecast/predictive_probability tanpa metrik prediktif yang sesuai.",
+    "INVALID_TABLE": "Untuk kind text, columns dan rows harus []. Untuk tabel, setiap sel berupa string dan jumlah sel = jumlah columns.",
+    "NON_TEXT_OUTPUT": "Tanpa HTML, URL, gambar atau teks lebih dari 24.000 karakter per blok.",
+    "TRUNCATED_OUTPUT": "Jawaban terpotong; ringkas menjadi paling banyak 8 blok.",
+    "INVALID_SECTION_COUNT": "Kembalikan 2-5 sections.",
+    "UNCITED_SECTION": "Setiap section wajib heading, text, kind fact/inference dan source_ids dari S yang diberikan.",
+}
 ALLOWED_INTENTS = {
     "COMPARE", "FIND_RULE", "ASSESS_EVENT", "NAVIGATE", "FILTER_SCREEN",
     "FIND_EVIDENCE", "EXPLAIN_METRIC", "SEARCH_LOCAL", "UNKNOWN",
@@ -113,7 +142,7 @@ def load_local_openrouter_config(path: Path) -> bool:
         lines = path.read_text(encoding="utf-8").splitlines()
     except (OSError, UnicodeError):
         return bool(os.environ.get("OPENROUTER_API_KEY", "").strip())
-    allowed = {"OPENROUTER_API_KEY", "OPENROUTER_MODEL"}
+    allowed = {"OPENROUTER_API_KEY", "OPENROUTER_MODEL", "OPENROUTER_FALLBACK_MODELS"}
     for line in lines:
         candidate = line.strip()
         if candidate.startswith("export "):
@@ -129,21 +158,169 @@ def load_local_openrouter_config(path: Path) -> bool:
     return bool(os.environ.get("OPENROUTER_API_KEY", "").strip())
 
 
+class _StreamedBlocks:
+    """Return each complete object of the top-level "blocks" array from a partially streamed JSON reply."""
+
+    def __init__(self):
+        self.text, self.position, self.depth = "", 0, 0
+        self.in_string = self.escaped = self.in_blocks = False
+        self.string_start = self.block_start = None
+        self.last_key = None
+
+    def feed(self, delta: str) -> list[str]:
+        self.text += delta
+        found = []
+        for index in range(self.position, len(self.text)):
+            char = self.text[index]
+            if self.in_string:
+                if self.escaped:
+                    self.escaped = False
+                elif char == "\\":
+                    self.escaped = True
+                elif char == '"':
+                    self.in_string = False
+                    if self.depth == 1:
+                        self.last_key = self.text[self.string_start + 1:index]
+                continue
+            if char == '"':
+                self.in_string, self.string_start = True, index
+            elif char in "{[":
+                self.depth += 1
+                if self.depth == 2 and char == "[":
+                    self.in_blocks = self.last_key == "blocks"
+                elif self.depth == 3 and char == "{" and self.in_blocks:
+                    self.block_start = index
+            elif char in "}]":
+                if self.depth == 3 and char == "}" and self.block_start is not None:
+                    found.append(self.text[self.block_start:index + 1])
+                    self.block_start = None
+                elif self.depth == 2:
+                    self.in_blocks = False
+                self.depth -= 1
+        self.position = len(self.text)
+        return found
+
+
 class OpenRouterSearchAdapter:
-    def __init__(self, api_key: str | None = None, *, model: str | None = None):
+    def __init__(self, api_key: str | None = None, *, model: str | None = None,
+                 fallback_models: list[str] | tuple[str, ...] | None = None):
         self.api_key = (api_key or os.environ.get("OPENROUTER_API_KEY", "")).strip()
         self.model = model or os.environ.get("OPENROUTER_MODEL", "").strip() or DEFAULT_MODEL
+        if fallback_models is None:
+            configured = os.environ.get("OPENROUTER_FALLBACK_MODELS", "")
+            fallback_models = [item.strip() for item in configured.split(",") if item.strip()] or DEFAULT_FALLBACK_MODELS
+        self.models = list(dict.fromkeys([self.model, *fallback_models]))
         if not self.api_key:
             raise OpenRouterError(
                 "OPENROUTER_API_KEY belum tersedia di environment server lokal."
             )
         SourcePolicy().validate(SourceClass.MODEL_INFERENCE, "OpenRouter", network=True)
 
-    def compose_chat(self, query, context, pack, history):
-        """Compose text from bounded public local evidence; validate before returning."""
+    def _request(self, model, body, title, timeout, on_delta=None):
+        """POST one chat completion and return (content, finish_reason); stream SSE deltas to on_delta."""
+        payload = {**body, "model": model, **({"stream": True} if on_delta else {})}
+        request = Request(OPENROUTER_URL, data=json.dumps(payload).encode("utf-8"), headers={
+            "Authorization": f"Bearer {self.api_key}", "Content-Type": "application/json",
+            "HTTP-Referer": APP_REFERER, "X-Title": title}, method="POST")
+        with urlopen(request, timeout=timeout, context=_verified_tls_context()) as response:
+            if not on_delta:
+                raw = response.read(MAX_RESPONSE_BYTES + 1)
+                if len(raw) > MAX_RESPONSE_BYTES:
+                    raise ValueError("OUTPUT_TOO_LARGE")
+                choice = json.loads(raw)["choices"][0]
+                return choice["message"]["content"], choice.get("finish_reason")
+            # SSE: "data: {json}" chunks, ": OPENROUTER PROCESSING" keep-alive comments, "data: [DONE]".
+            # Cap the answer text, not the wire bytes: each SSE chunk wraps a few characters in ~200 bytes of JSON.
+            parts, finish, size = [], None, 0
+            for line in response:
+                if len(line) > MAX_RESPONSE_BYTES:
+                    raise ValueError("OUTPUT_TOO_LARGE")
+                line = line.decode("utf-8").strip()
+                if not line.startswith("data:"):
+                    continue
+                data = line[5:].strip()
+                if data == "[DONE]":
+                    break
+                chunk = json.loads(data)
+                if isinstance(chunk.get("error"), dict):
+                    # Mid-stream provider failure: HTTP status is already 200, so carry the code ourselves.
+                    code = chunk["error"].get("code")
+                    raise OpenRouterError("Provider menghentikan stream sebelum jawaban selesai.",
+                                          status_code=code if isinstance(code, int) else None)
+                choice = chunk["choices"][0]
+                delta = (choice.get("delta") or {}).get("content") or ""
+                if delta:
+                    size += len(delta.encode("utf-8"))
+                    if size > MAX_RESPONSE_BYTES:
+                        raise ValueError("OUTPUT_TOO_LARGE")
+                    parts.append(delta)
+                    on_delta(delta)
+                finish = choice.get("finish_reason") or finish
+            return "".join(parts), finish
+
+    def _complete(self, body, title, timeout, parse, errors, *, repair=True, budget=120.0, on_event=None, stream=None):
+        """Try each configured model; a locally rejected answer gets one repair turn naming its rejection code.
+
+        HTTP 401/402/403 and network failures stop immediately because another model cannot fix them.
+        Other HTTP errors (404 retired model, 429, 5xx) and rejected output move to the next model.
+        stream() returns a fresh delta handler per attempt; it may raise ValueError to reject mid-stream.
+        """
+        deadline = time.monotonic() + budget
+        last = None
+        for model in self.models:
+            messages = list(body["messages"])
+            for attempt in range(2 if repair else 1):
+                if time.monotonic() >= deadline:
+                    raise last or OpenRouterError(errors["timeout"])
+                if on_event:
+                    on_event("status", {"model": model, "attempt": attempt + 1})
+                content, received = None, []
+                if stream:
+                    handler = stream()
+                    def forward(delta, handler=handler):
+                        received.append(delta)
+                        handler(delta)
+                try:
+                    content, finish = self._request(model, {**body, "messages": messages}, title, timeout,
+                                                    forward if stream else None)
+                    return parse(content, finish, model)
+                except HTTPError as exc:
+                    last = _http_error(exc)
+                    if exc.code in (401, 402, 403):
+                        raise last from None
+                    break
+                except OpenRouterError as exc:
+                    last = exc
+                    break
+                except TimeoutError:
+                    last = OpenRouterError(errors["timeout"])
+                    break
+                except (URLError, OSError):
+                    raise OpenRouterError(errors["network"]) from None
+                except (ValueError, KeyError, IndexError, TypeError, AttributeError, UnicodeDecodeError) as exc:
+                    code = exc.args[0] if exc.args and isinstance(exc.args[0], str) and re.fullmatch(r"[A-Z_]{3,40}", exc.args[0]) else "INVALID_FORMAT"
+                    last = OpenRouterError(errors["invalid"], diagnostics={"rejection": code})
+                    if on_event:
+                        on_event("reset", {"model": model, "rejection": code})
+                    content = content or "".join(received)
+                    if not content:
+                        break
+                    messages = [*body["messages"], {"role": "assistant", "content": content[:MAX_REPAIR_CONTENT]},
+                                {"role": "user", "content": f"Jawaban ditolak validator lokal: {code}. "
+                                 + REPAIR_HINTS.get(code, "Ikuti skema JSON persis.")
+                                 + " Kirim ulang seluruh jawaban sebagai JSON lengkap; pertahankan sumber (ID) di setiap blok"
+                                 " dan aturan sistem tetap berlaku."}]
+        raise last
+
+    def compose_chat(self, query, context, pack, history, on_event=None):
+        """Compose text from bounded public local evidence; validate before returning.
+
+        With on_event, the reply is streamed: on_event(name, data) receives "status" (model/attempt),
+        "block" (one validated answer block) and "reset" (attempt rejected; drop streamed blocks).
+        """
         from .research_context import public_model_context
         from .research_types import EvidenceItem, MetricRecord, EvidencePack
-        from .research_validation import validate_research_reply
+        from .research_validation import validate_answer_block, validate_research_reply
         public = public_model_context(pack)
         safe_history = []
         for message in history[-8:]:
@@ -173,37 +350,46 @@ class OpenRouterSearchAdapter:
             'Return JSON {blocks:[{kind:"text"|"table",claim_kind:"concept"|"observation"|"derived_metric"|"inference"|"scenario"|"historical_frequency"|"forecast"|"predictive_probability",'
             'text:string,evidence_ids:[supplied IDs],metric_ids:[supplied IDs],numeric_claims:[{metric_id:string,value:exact metric value,unit:exact metric unit,display:exact numeric text}],columns:[string],rows:[[string]]}]}. '
             'Setiap klaim empiris perlu sumber. Setiap angka dari metrik perlu numeric_claims; angka kutipan sumber hanya observation. '
+            'numeric_claims HANYA untuk metric_ids dari evidence_pack.metrics; jika metrics kosong, numeric_claims harus []. '
+            'Angka dari excerpt evidence tidak masuk numeric_claims: salin persis seperti tertulis di excerpt (format, pemisah, tanpa Rp/x tambahan) '
+            'di blok observation yang mencantumkan evidence_ids sumber itu. Blok inference/scenario/concept tanpa angka. '
+            'Untuk kind text, columns dan rows adalah []; sel tabel selalu string. '
+            'text boleh memakai Markdown sederhana: **tebal**, *miring*, heading "### ", daftar "- " (bukan daftar bernomor) '
+            'dan tabel pipa (| Kolom | Kolom | lalu |---|---|); aturan sumber dan angka tetap berlaku untuk setiap sel. '
             'Tanggal harus berasal dari sumber atau periode metrik. Jika tidak cukup, jelaskan gap, jangan mengisi nol. '
             'Tidak ada heading bernomor, angka ordinal, confidence universal atau angka ilustrasi tanpa dukungan. '
             'Jangan menyalin seluruh evidence; pilih yang relevan dan jelaskan asumsi serta batas inferensi.'
         )
-        body = {'model': self.model, 'temperature': 0, 'max_tokens': 6000, 'reasoning': {'enabled': False},
+        body = {'temperature': 0, 'max_tokens': 6000, 'reasoning': {'enabled': False},
                 'response_format': {'type': 'json_object'}, 'messages': [{'role': 'system', 'content': system}, {'role': 'user', 'content': encoded}]}
-        request = Request(OPENROUTER_URL, data=json.dumps(body).encode(), headers={
-            'Authorization': f'Bearer {self.api_key}', 'Content-Type': 'application/json', 'X-Title': 'IDX Evidence Lab Research Chat'}, method='POST')
-        try:
-            with urlopen(request, timeout=45, context=_verified_tls_context()) as response:
-                response_bytes = response.read(256 * 1024 + 1)
-            if len(response_bytes) > 256 * 1024:
-                raise ValueError('OUTPUT_TOO_LARGE')
-            payload = json.loads(response_bytes)
-            choice = payload['choices'][0]
-            if choice.get('finish_reason') != 'stop':
+        public_pack = EvidencePack([EvidenceItem(**i) for i in public['items']], [MetricRecord(**m) for m in public['metrics']],
+                                   pack.coverage, pack.missing_inputs, pack.truncated)
+        evidence = {i.id: i for i in public_pack.items}
+        metrics = {m.id: m for m in public_pack.metrics}
+
+        def stream():
+            scanner, count = _StreamedBlocks(), [0]
+            def handle(delta):
+                for raw in scanner.feed(delta):
+                    count[0] += 1
+                    if count[0] > 20:
+                        raise ValueError('INVALID_FORMAT')
+                    on_event('block', validate_answer_block(json.loads(raw), evidence, metrics).to_dict())
+            return handle
+
+        def parse(content, finish, model):
+            if finish != 'stop':
                 raise ValueError('TRUNCATED_OUTPUT')
-            public_pack = EvidencePack([EvidenceItem(**i) for i in public['items']], [MetricRecord(**m) for m in public['metrics']],
-                                       pack.coverage, pack.missing_inputs, pack.truncated)
-            reply = validate_research_reply(json.loads(choice['message']['content']), public_pack, context)
+            reply = validate_research_reply(json.loads(content), public_pack, context)
             reply.evidence = pack.items
-            reply.model_status.update(model=self.model, private_evidence_omitted=public['private_evidence_omitted'], history_truncated=user['history_truncated'])
+            reply.model_status.update(model=model, private_evidence_omitted=public['private_evidence_omitted'], history_truncated=user['history_truncated'])
             return reply
-        except HTTPError as exc:
-            raise _http_error(exc) from None
-        except TimeoutError:
-            raise OpenRouterError('TIMEOUT: inferensi melewati batas waktu; bukti lokal tetap tersedia.') from None
-        except (URLError, OSError):
-            raise OpenRouterError('NETWORK: OpenRouter tidak dapat dijangkau; bukti lokal tetap tersedia.') from None
-        except (ValueError, KeyError, IndexError, TypeError, AttributeError, UnicodeDecodeError):
-            raise OpenRouterError('INVALID_OUTPUT: jawaban tidak lengkap atau gagal validasi format/sumber/angka; tidak ditampilkan.') from None
+
+        return self._complete(body, 'IDX Evidence Lab Research Chat', 45, parse, {
+            'timeout': 'TIMEOUT: inferensi melewati batas waktu; bukti lokal tetap tersedia.',
+            'network': 'NETWORK: OpenRouter tidak dapat dijangkau; bukti lokal tetap tersedia.',
+            'invalid': 'INVALID_OUTPUT: jawaban tidak lengkap atau gagal validasi format/sumber/angka; tidak ditampilkan.',
+        }, budget=150, on_event=on_event, stream=stream if on_event else None)
 
     def compose_research(self, ticker: str, query: str, evidence: list[dict[str, Any]]) -> dict[str, Any]:
         """Compose a cited interpretation from at most six public Sectors snippets.
@@ -228,22 +414,18 @@ class OpenRouterSearchAdapter:
             "facts from your interpretation; association is not causation. Source dates are snapshot "
             "dates, not a claim of current conditions. Do not imply corporate actions will occur."
         )
-        body = {"model": self.model, "temperature": 0, "max_tokens": 1200,
+        body = {"temperature": 0, "max_tokens": 1200,
                 "reasoning": {"enabled": False},
                 "response_format": {"type": "json_object"}, "messages": [
                     {"role": "system", "content": system},
                     {"role": "user", "content": json.dumps(
                         {"ticker": ticker, "question": query[:500], "sources": sources}, ensure_ascii=False)}]}
-        request = Request(OPENROUTER_URL, data=json.dumps(body).encode("utf-8"), headers={
-            "Authorization": f"Bearer {self.api_key}", "Content-Type": "application/json",
-            "X-Title": "IDX Evidence Lab Issuer Research"}, method="POST")
-        try:
-            with urlopen(request, timeout=40, context=_verified_tls_context()) as response:
-                payload = json.loads(response.read().decode("utf-8"))
-            sections = json.loads(payload["choices"][0]["message"]["content"])["sections"]
-            allowed = {source["id"] for source in sources}
+        allowed = {source["id"] for source in sources}
+
+        def parse(content, _finish, model):
+            sections = json.loads(content)["sections"]
             if not isinstance(sections, list) or not 2 <= len(sections) <= 5:
-                raise ValueError("Invalid section count")
+                raise ValueError("INVALID_SECTION_COUNT")
             clean = []
             for section in sections:
                 ids = section.get("source_ids")
@@ -251,19 +433,19 @@ class OpenRouterSearchAdapter:
                         or section.get("kind") not in {"fact", "inference"}
                         or not isinstance(section.get("text"), str) or not section["text"].strip()
                         or not isinstance(section.get("heading"), str)):
-                    raise ValueError("Invalid or uncited section")
+                    raise ValueError("UNCITED_SECTION")
                 clean.append({"heading": section["heading"][:120], "text": section["text"][:2500],
                               "kind": section["kind"], "source_ids": list(dict.fromkeys(ids))})
-        except HTTPError as exc:
-            raise _http_error(exc) from None
-        except (URLError, TimeoutError, OSError):
-            raise OpenRouterError("OpenRouter tidak dapat dijangkau; kutipan lokal tetap tersedia.") from None
-        except (ValueError, KeyError, IndexError, TypeError, AttributeError, UnicodeDecodeError):
-            raise OpenRouterError("Jawaban model tidak memenuhi format dan rujukan sumber; tidak ditampilkan.") from None
-        return {"provider": "OpenRouter", "model": self.model,
-                "source_class": SourceClass.MODEL_INFERENCE.value, "sections": clean,
-                "sources": [{"id": source["id"], "source_id": item["source_id"]}
-                            for source, item in zip(sources, excerpts)]}
+            return {"provider": "OpenRouter", "model": model,
+                    "source_class": SourceClass.MODEL_INFERENCE.value, "sections": clean,
+                    "sources": [{"id": source["id"], "source_id": item["source_id"]}
+                                for source, item in zip(sources, excerpts)]}
+
+        unreachable = "OpenRouter tidak dapat dijangkau; kutipan lokal tetap tersedia."
+        return self._complete(body, "IDX Evidence Lab Issuer Research", 40, parse, {
+            "timeout": unreachable, "network": unreachable,
+            "invalid": "Jawaban model tidak memenuhi format dan rujukan sumber; tidak ditampilkan.",
+        }, budget=90)
 
     def interpret(self, query: str, known_tickers: list[str], app_context=(), history=()) -> dict[str, Any]:
         clean_query = query.strip()[:500]
@@ -291,7 +473,6 @@ class OpenRouterSearchAdapter:
             ensure_ascii=False,
         )
         body = {
-            "model": self.model,
             "temperature": 0,
             "max_tokens": 800,
             "reasoning": {"enabled": False},
@@ -301,53 +482,42 @@ class OpenRouterSearchAdapter:
                 {"role": "user", "content": user},
             ],
         }
-        request = Request(
-            OPENROUTER_URL,
-            data=json.dumps(body).encode("utf-8"),
-            headers={
-                "Authorization": f"Bearer {self.api_key}",
-                "Content-Type": "application/json",
-                "HTTP-Referer": "http://127.0.0.1:8765",
-                "X-Title": "IDX Evidence Lab Local Search",
-            },
-            method="POST",
-        )
-        try:
-            with urlopen(request, timeout=25, context=_verified_tls_context()) as response:
-                payload = json.loads(response.read().decode("utf-8"))
-        except HTTPError as exc:
-            raise _http_error(exc) from None
-        except (URLError, TimeoutError, OSError):
-            raise OpenRouterError("OpenRouter tidak dapat dijangkau. Pencarian lokal masih tersedia.") from None
-        except (json.JSONDecodeError, UnicodeDecodeError, KeyError, TypeError):
-            raise OpenRouterError("Respons OpenRouter tidak terbaca sebagai JSON yang valid.") from None
+        # Search must stay fast (the browser aborts at 30 s): no repair turn, short per-model timeout.
+        unreachable = "OpenRouter tidak dapat dijangkau. Pencarian lokal masih tersedia."
+        return self._complete(body, "IDX Evidence Lab Local Search", 12,
+                              lambda content, _finish, model: _interpreted_plan(content, model, clean_query, safe_tickers), {
+            "timeout": unreachable, "network": unreachable,
+            "invalid": "Respons OpenRouter tidak terbaca sebagai JSON yang valid.",
+        }, repair=False, budget=25)
 
-        try:
-            content = payload["choices"][0]["message"]["content"]
-            plan = json.loads(content)
-        except (KeyError, IndexError, TypeError, json.JSONDecodeError):
-            # Deterministic fallback: use the user's original query, never model prose.
-            return _fallback_plan(clean_query, safe_tickers)
 
-        if not isinstance(plan, dict):
-            return _fallback_plan(clean_query, safe_tickers)
-        intent = str(plan.get("intent", "UNKNOWN")).upper()
-        search_query = str(plan.get("search_query", clean_query)).strip()[:300] or clean_query
-        entities = [
-            str(item).upper()
-            for item in plan.get("entities", [])
-            if isinstance(item, str) and str(item).upper() in safe_tickers
-        ] if isinstance(plan.get("entities", []), list) else []
-        return {
-            "intent": intent if intent in ALLOWED_INTENTS else "UNKNOWN",
-            "search_query": search_query,
-            "entities": sorted(set(entities)),
-            "needs_clarification": bool(plan.get("needs_clarification", False)),
-            "provider": "OpenRouter",
-            "model": self.model,
-            "source_class": SourceClass.MODEL_INFERENCE.value,
-            "navigation": plan.get("navigation") if isinstance(plan.get("navigation"), dict) else None,
-        }
+def _interpreted_plan(content, model, clean_query, safe_tickers):
+    """Normalise a model query plan; unparseable content falls back to the deterministic local plan."""
+    try:
+        plan = json.loads(content)
+    except (TypeError, json.JSONDecodeError):
+        # Deterministic fallback: use the user's original query, never model prose.
+        return _fallback_plan(clean_query, safe_tickers)
+
+    if not isinstance(plan, dict):
+        return _fallback_plan(clean_query, safe_tickers)
+    intent = str(plan.get("intent", "UNKNOWN")).upper()
+    search_query = str(plan.get("search_query", clean_query)).strip()[:300] or clean_query
+    entities = [
+        str(item).upper()
+        for item in plan.get("entities", [])
+        if isinstance(item, str) and str(item).upper() in safe_tickers
+    ] if isinstance(plan.get("entities", []), list) else []
+    return {
+        "intent": intent if intent in ALLOWED_INTENTS else "UNKNOWN",
+        "search_query": search_query,
+        "entities": sorted(set(entities)),
+        "needs_clarification": bool(plan.get("needs_clarification", False)),
+        "provider": "OpenRouter",
+        "model": model,
+        "source_class": SourceClass.MODEL_INFERENCE.value,
+        "navigation": plan.get("navigation") if isinstance(plan.get("navigation"), dict) else None,
+    }
 
 
 def _fallback_plan(query: str, known_tickers: list[str]) -> dict[str, Any]:

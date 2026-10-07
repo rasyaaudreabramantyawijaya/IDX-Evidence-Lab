@@ -27,6 +27,16 @@ Periksa `http://127.0.0.1:5500/api/health`. Respons kesehatan lokal tidak membuk
 
 Dashboard, Screener, Watchlist, Studies, Riset emiten, Portfolio Lab, Market overview, News Universe, dossier per emiten, sumber/metode dan pengaturan existing. Studies menghitung widget allowlist dari target dan window. Portfolio Lab menghitung alokasi dan risiko. Riset emiten menyediakan percakapan teks dengan target emiten/sektor, lampiran lokal, Instant dan Agent.
 
+### Portfolio Lab · prediksi GBM
+
+Section **Prediktif GBM · return & maximum drawdown** (`forecast_gbm` di `portfolio_scenarios.py`, field `forecast` pada `POST /api/portfolio-analysis`) memprediksi distribusi return kumulatif dan maximum drawdown untuk horizon skenario (default 20/60/120 sesi).
+
+- Model: geometric Brownian motion multivariat. Rerata dan kovarians log-return harian dikalibrasi dari 252 sesi terakhir (atau lookback bila lebih pendek). Bobot awal dibiarkan drift (buy-and-hold), sama seperti bootstrap.
+- Uji out-of-sample: setiap 21 sesi, GBM dikalibrasi hanya dari sesi sebelum titik asal, lalu realisasi return dan MDD sesudahnya dinilai terhadap p10–p90 (coverage nominal 80%), PIT dan pinball loss. Baseline adalah semua jendela bergulir di sampel kalibrasi yang sama.
+- Status per horizon dan target: `OOS_CALIBRATED` (boleh dibaca prediktif), `OOS_CALIBRATED_BELOW_BASELINE`, `OOS_MISCALIBRATED` (coverage meleset lebih dari 15 poin) atau `INSUFFICIENT_OOS_FOLDS`. Fold efektif = fold × 21 ÷ horizon dan minimal 10. Dengan snapshot ~700 sesi, horizon 60/120 belum bisa lolos.
+- Batas: volatilitas konstan dan log-return normal, jadi fat tail dan perubahan rezim tidak tertangkap. MDD sering gagal kalibrasi karena drawdown nyata lebih dalam. Bobot yang sama dipakai di semua fold, jadi uji menilai GBM, bukan optimizer. Bruto tanpa biaya dan belum dividend-adjusted.
+- Skenario bootstrap blok tetap ditampilkan sebagai pembanding eksploratif.
+
 READY berarti perhitungan tersedia untuk input tersebut, bukan prediksi akurat atau data lengkap. PARTIAL, INSUFFICIENT_EVIDENCE, missing dan stale tetap perlu dibaca. Auto-Agent untuk seluruh query kompleks, executor chat lintas workspace, paste panjang dan Profil belum boleh dianggap selesai hanya karena source/UI yang terkait ada.
 
 ## Struktur
@@ -80,6 +90,45 @@ python3 scripts/configure_openrouter.py
 
 Key berada di `.env.local` dan tidak masuk Git. OpenRouter membantu menafsirkan instruksi dan menyusun jawaban dari bukti yang diizinkan, bukan mencari fakta pasar di luar snapshot. HTTP 429 adalah kegagalan provider/rate limit; key terkonfigurasi bukan bukti request berhasil. Uji offline tidak membuktikan limit provider sudah teratasi.
 
+### Konfigurasi model
+
+`.env.local` hanya membaca tiga variabel berikut. Environment proses didahulukan bila sudah terisi. Nama variabel harus persis; `OPENROUTER=...` tidak terbaca.
+
+| Variabel | Default | Fungsi |
+|---|---|---|
+| `OPENROUTER_API_KEY` | — | Wajib. |
+| `OPENROUTER_MODEL` | `apodex/apodex-1.1-mini:free` | Model utama. |
+| `OPENROUTER_FALLBACK_MODELS` | `nvidia/nemotron-3-super-120b-a12b:free,dots-studio/dots-3-note-preview:free` | Model cadangan, dipisah koma, dicoba berurutan. |
+
+Katalog model `:free` sering berubah. Jika model hilang (HTTP 404), ganti di `.env.local` dengan model dari `https://openrouter.ai/api/v1/models` yang mencantumkan `response_format` di `supported_parameters`. Default dipilih dan diuji pada 2026-10-07.
+
+### Model cadangan dan perbaikan jawaban
+
+Ketiga fitur (penafsiran pencarian, riset emiten, Agent) memakai alur yang sama di `openrouter_live.py`:
+
+- Model dicoba berurutan. HTTP 404 (model dipensiunkan), 429, 5xx dan error di tengah stream pindah ke model berikutnya. HTTP 401/402/403 dan jaringan putus langsung berhenti karena model lain tidak membantu.
+- Jawaban yang ditolak validasi lokal mendapat satu giliran perbaikan pada model yang sama. Model menerima kode penolakan (misalnya `UNSUPPORTED_NUMBER`) beserta petunjuknya, lalu mengirim ulang JSON lengkap. Jika masih ditolak, model berikutnya dicoba. Penafsiran pencarian tidak memakai giliran perbaikan karena harus selesai sebelum batas 30 detik browser dan sudah punya fallback lokal.
+- Angka dicocokkan berdasarkan nilai dan satuan, bukan string: `381.0` sah untuk kutipan `381,0`, `6250` untuk `Rp6.250`. Parafrase (`60 juta` untuk `60.000.000`), satuan berbeda (`%` vs `pp`) dan angka tanpa sumber tetap ditolak.
+- Aturan validasi tidak dilonggarkan. Jika semua model gagal, UI menampilkan hasil mesin lokal dan `model_status.diagnostics.rejection` mencatat kode penolakan terakhir.
+
+Batas free tier: akun tanpa kredit dibatasi sekitar 50 request model `:free` per hari. Satu pertanyaan Agent dapat memakai hingga 6 request (3 model × jawaban + perbaikan). Kurangi `OPENROUTER_FALLBACK_MODELS` untuk menghemat kuota.
+
+### Streaming Agent
+
+`POST /api/research-chat` dengan `"stream": true` mengembalikan `text/event-stream`. Tanpa `stream`, respons JSON tetap seperti sebelumnya.
+
+| Event | Data | Arti |
+|---|---|---|
+| `status` | `{model, attempt}` | Model dan percobaan yang sedang berjalan. |
+| `block` | satu blok jawaban | Blok sudah lolos `validate_answer_block`. |
+| `reset` | `{model, rejection}` | Percobaan ditolak; blok yang sudah tampil ditarik. |
+| `done` | payload respons JSON | Jawaban akhir, divalidasi ulang secara utuh. |
+| `error` | `{error}` | Kode error yang sama dengan respons JSON, misalnya `SESSION_EXPIRED`. |
+
+Teks blok ditampilkan sebagai Markdown sederhana: heading `###`, **tebal**, *miring*, `kode`, daftar `-` dan tabel pipa. Renderer membangun elemen dengan `textContent`, jadi HTML dari model tampil sebagai teks; link, gambar dan HTML tetap ditolak validator. Daftar bernomor tidak diminta karena angka urutan tanpa sumber ditolak sebagai `UNSUPPORTED_NUMBER`.
+
+Teks model yang belum lolos validasi tidak pernah dikirim ke browser. Sesi riset tetap di memori server; fitur ini tidak menambah database, skema maupun dependensi.
+
 Korpus `Business & Corporate Law/` dan file pengguna privat tidak disertakan. Pemilik mesin harus menyediakan korpus hukum secara lokal jika membutuhkan retrieval hukum. Tanpanya website tetap berjalan, tetapi tidak memiliki bukti hukum privat. PDF text-layer dapat diekstrak lokal; OCR/vision foto atau scan belum tersedia. File terunggah belum tentu terbaca.
 
 API key harus berada di server. File privat utuh tidak boleh masuk prompt, log, export atau commit. Aplikasi tidak mengeksekusi transaksi saham. Output mendukung riset, bukan jaminan return, identifikasi pemilik manfaat atau kepastian hukum.
@@ -90,7 +139,7 @@ API key harus berada di server. File privat utuh tidak boleh masuk prompt, log, 
 PYTHONPATH=src python3 -m pytest -q
 ```
 
-Tes memakai fixture/mocks untuk koneksi eksternal dan server loopback lokal. Jalankan dari root repo. Hasil tes terpisah dari kualitas data, probabilitas forecasting dan hasil notebook.
+Tes memakai fixture/mocks untuk koneksi eksternal dan server loopback lokal. Tes OpenRouter memalsukan `urlopen`, termasuk respons SSE, sehingga tidak ada request jaringan. Jalankan dari root repo. Di Windows, `.gitattributes` menjaga snapshot `data/raw/` dan sumber `studies_*.py` tetap LF; tanpa itu `core.autocrlf` mengubah hash dan Portfolio Lab/Studies menjadi BLOCKED/NOT_TESTED. Hasil tes terpisah dari kualitas data, probabilitas forecasting dan hasil notebook.
 
 ## Yang tidak masuk Git
 

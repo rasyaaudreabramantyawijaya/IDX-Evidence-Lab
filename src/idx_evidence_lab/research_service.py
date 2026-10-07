@@ -31,7 +31,8 @@ class ResearchService:
                    for r in rows if isinstance(r, dict) and isinstance(r.get('sector'), str)]
         return {'tickers': self.known_tickers, 'sectors': [r for r in sectors if r['members']]}
 
-    def answer(self, session_id, expected_revision, query, use_model, artifact_refs, *, request_id=None, target=None, attachment_ids=None, share_attachments=False):
+    def answer(self, session_id, expected_revision, query, use_model, artifact_refs, *, request_id=None, target=None, attachment_ids=None, share_attachments=False, on_event=None):
+        """Answer one turn; on_event(name, data) streams validated model blocks when the model is used."""
         if not isinstance(query, str) or not 1 <= len(query.strip()) <= 4000 or not isinstance(use_model, bool):
             raise ValueError('INVALID_QUERY')
         if not isinstance(expected_revision, int) or isinstance(expected_revision, bool) or expected_revision < 0:
@@ -119,7 +120,9 @@ class ResearchService:
                     elif m.get('reply', {}).get('model_status', {}).get('provider') == 'OpenRouter':
                         history.append({'role': 'assistant', 'source_model': 'OpenRouter', 'content': '\n'.join(b['text'] for b in m['reply']['blocks'])})
                 try:
-                    reply = self.adapter_factory().compose_chat(query, plan.context, pack, history)
+                    adapter = self.adapter_factory()
+                    # Only streaming callers pass on_event, so non-streaming adapters keep the 4-argument contract.
+                    reply =adapter.compose_chat(query, plan.context, pack, history, on_event=on_event) if on_event else adapter.compose_chat(query, plan.context, pack, history)
                 except OpenRouterError as exc:
                     status = 'RATE_LIMIT' if exc.status_code == 429 else 'AUTH' if exc.status_code in {401, 403} else 'CREDIT' if exc.status_code == 402 else 'UNAVAILABLE'
                     reply.model_status = {'provider': 'local', 'status': status, 'notice': str(exc), 'http_status': exc.status_code, 'retry_after': exc.retry_after, 'diagnostics': exc.diagnostics}

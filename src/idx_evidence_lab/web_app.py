@@ -17,7 +17,7 @@ from .portfolio_analytics import calculate_portfolio_metrics
 from .portfolio_amounts import allocate_amounts, allocate_lots
 from .portfolio_data import _current_classifications, load_portfolio_inputs
 from .portfolio_optimization import equal_weight_portfolio, optimize_portfolio
-from .portfolio_scenarios import run_walk_forward, simulate_portfolio_scenarios
+from .portfolio_scenarios import forecast_gbm, run_walk_forward, simulate_portfolio_scenarios
 from .portfolio_factors import _published_artifact, build_factor_zoo_payload, read_factor_zoo_view, write_factor_zoo_artifact
 from .schemas import SearchDocument, SourceClass
 from .search import LocalSearchIndex
@@ -284,6 +284,12 @@ def build_portfolio_analysis(root: Path, request: dict[str, Any]) -> dict[str, A
         seed=scenario_config["seed"], drawdown_threshold=scenario_config["drawdown_threshold"],
         risk_free_annual=request.get("risk_free_annual"),
     )
+    # Uses the full common history so the OOS check has folds before the selected lookback; only prior sessions fit each fold.
+    forecast = forecast_gbm(
+        inputs["return_dates"], inputs["return_matrix"], weights, horizons=tuple(scenario_config["horizons"]),
+        simulations=scenario_config["simulations"], seed=scenario_config["seed"],
+        estimation_window=min(252, lookback), drawdown_threshold=scenario_config["drawdown_threshold"],
+    )
     return {
         "status": "READY", "calculation_state": "PROVISIONAL_PRICE_RETURNS",
         "selection": {"tickers": inputs["tickers"], "profile": request["profile"],
@@ -294,7 +300,7 @@ def build_portfolio_analysis(root: Path, request: dict[str, Any]) -> dict[str, A
         "metrics": metrics, "metrics_scope": "IN_SAMPLE_STATIC_TARGET_WEIGHTS_DAILY_REBALANCED",
         "historical_capm": historical_capm,
         "market_history": market_history,
-        "walk_forward": walk_forward, "scenarios": scenarios,
+        "walk_forward": walk_forward, "scenarios": scenarios, "forecast": forecast,
         "total_capital": request.get("total_capital"),
         "lot_allocation": allocate_lots(allocation["weights"], request["total_capital"],
             dict(zip(inputs["tickers"], inputs["close_matrix"][inputs["dates"].index(window_dates[-1])]))
@@ -402,6 +408,38 @@ class SearchHandler(BaseHTTPRequestHandler):
             self.send_header("Vary", "Origin")
         self.end_headers()
         self.wfile.write(encoded)
+
+    def _stream_research(self, service, args, kwargs) -> None:
+        """Research chat as server-sent events: status/block/reset while the model writes, then done or error.
+
+        "done" carries the same payload as the JSON response; "error" carries the same error codes.
+        """
+        self.send_response(200)
+        self.send_header("Content-Type", "text/event-stream; charset=utf-8")
+        self.send_header("Cache-Control", "no-store")
+        self.end_headers()
+        connected = [True]
+
+        def emit(name, data):
+            if not connected[0]:
+                return
+            try:
+                self.wfile.write(f"event: {name}\ndata: {json.dumps(data, ensure_ascii=False)}\n\n".encode("utf-8"))
+                self.wfile.flush()
+            except OSError:
+                # A closed tab only stops forwarding; the model call still finishes so the turn is
+                # recorded. Abort upstream instead if free-tier quota becomes the bottleneck.
+                connected[0] = False
+
+        try:
+            emit("done", service.answer(*args, **kwargs, on_event=emit))
+        except KeyError:
+            emit("error", {"error": "SESSION_EXPIRED"})
+        except (ValueError, TypeError) as exc:
+            code = str(exc)
+            emit("error", {"error": code if code.isupper() else "INVALID_REQUEST"})
+        except Exception:
+            emit("error", {"error": "RESEARCH_PROCESSING_FAILED"})
 
     def do_OPTIONS(self) -> None:
         route = urlparse(self.path).path
@@ -586,10 +624,14 @@ class SearchHandler(BaseHTTPRequestHandler):
                     self._send_json(200, service.cancel(body.get('session_id'), body.get('expected_revision')))
                 else:
                     load_local_openrouter_config(OPENROUTER_ENV_FILE)
-                    result = service.answer(body.get('session_id'), body.get('expected_revision'), body.get('query'),
-                        body.get('use_model', False), body.get('artifact_refs', []), request_id=body.get('request_id'), target=body.get('target'),
-                        attachment_ids=body.get('attachment_ids'), share_attachments=body.get('share_attachments', False))
-                    self._send_json(200, result)
+                    args = (body.get('session_id'), body.get('expected_revision'), body.get('query'),
+                            body.get('use_model', False), body.get('artifact_refs', []))
+                    kwargs = dict(request_id=body.get('request_id'), target=body.get('target'),
+                                  attachment_ids=body.get('attachment_ids'), share_attachments=body.get('share_attachments', False))
+                    if body.get('stream') is True:
+                        self._stream_research(service, args, kwargs)
+                    else:
+                        self._send_json(200, service.answer(*args, **kwargs))
             except KeyError:
                 self._send_json(404, {'error': 'SESSION_EXPIRED'})
             except (ValueError, TypeError) as exc:
@@ -678,7 +720,7 @@ class SearchHandler(BaseHTTPRequestHandler):
                     "model": None,
                     "source_class": "model_inference",
                 }
-                notice = f"Qwen tidak tersedia ({exc}); hasil berikut memakai pencarian lokal tanpa model."
+                notice = f"Model OpenRouter tidak tersedia ({exc}); hasil berikut memakai pencarian lokal tanpa model."
             search_text = " ".join([query, plan["search_query"], *plan["entities"]])
             matches = self.server.search_index.search(search_text, limit=8)
             self._send_json(200, {

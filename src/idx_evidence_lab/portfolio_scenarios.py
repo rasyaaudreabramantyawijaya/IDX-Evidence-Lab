@@ -1,4 +1,4 @@
-"""Timestamp-safe walk-forward replay and exploratory block-bootstrap paths."""
+"""Timestamp-safe walk-forward replay, exploratory block-bootstrap paths and an OOS-checked GBM forecast."""
 
 from __future__ import annotations
 
@@ -196,4 +196,165 @@ def simulate_portfolio_scenarios(
         "seed": seed, "horizons": by_horizon, "fan": fan, "first_passage": first_passage,
         "assumptions": {"risk_free_annual": risk_free_annual, "annualization_sessions": 252},
         "limitation": "Historical joint return blocks; not a calibrated prediction or exact future drawdown date.",
+    }
+
+
+GBM_METHOD_VERSION = "multivariate_gbm_fixed_share_v1"
+GBM_BASELINE = "historical_rolling_window_empirical"
+QUANTILES = (0.1, 0.5, 0.9)
+
+
+def _gbm_paths(training: np.ndarray, weights: np.ndarray, horizon: int, simulations: int,
+               generator: np.random.Generator, batch_size: int = 256) -> tuple[np.ndarray, np.ndarray]:
+    """Simulate fixed-share portfolio wealth and running drawdown under GBM fitted to `training`.
+
+    Daily asset log-returns are N(mean, covariance) of the training log-returns, which is the discrete form of a
+    multivariate geometric Brownian motion. Returns (wealth, drawdown), both shaped (simulations, horizon).
+    """
+    log_returns = np.log1p(training)
+    mean = log_returns.mean(axis=0)
+    covariance = np.atleast_2d(np.cov(log_returns, rowvar=False, ddof=1))
+    wealth = np.empty((simulations, horizon))
+    for first in range(0, simulations, batch_size):
+        last = min(first + batch_size, simulations)
+        steps = generator.multivariate_normal(mean, covariance, size=(last - first, horizon), method="eigh")
+        wealth[first:last] = np.exp(np.cumsum(steps, axis=1)) @ weights
+    peak = np.maximum.accumulate(np.concatenate((np.ones((simulations, 1)), wealth), axis=1), axis=1)[:, 1:]
+    return wealth, wealth / peak - 1
+
+
+def _realized(window: np.ndarray, weights: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
+    """Fixed-share wealth and drawdown of observed return rows, same convention as the simulated paths."""
+    wealth = np.cumprod(1 + window, axis=0) @ weights
+    peak = np.maximum.accumulate(np.concatenate(([1.0], wealth)))[1:]
+    return wealth, wealth / peak - 1
+
+
+def _pinball(quantiles: np.ndarray, realized: float) -> float:
+    """Mean quantile (pinball) loss over p10/p50/p90; lower is better and it rewards calibration and sharpness."""
+    return float(np.mean([max(q * (realized - v), (q - 1) * (realized - v)) for q, v in zip(QUANTILES, quantiles)]))
+
+
+def _empirical_windows(training: np.ndarray, weights: np.ndarray, horizon: int) -> tuple[np.ndarray, np.ndarray]:
+    """Baseline: every rolling `horizon` window inside the training sample, replayed with fixed shares."""
+    returns, drawdowns = [], []
+    for start in range(0, len(training) - horizon + 1):
+        wealth, drawdown = _realized(training[start:start + horizon], weights)
+        returns.append(wealth[-1] - 1)
+        drawdowns.append(drawdown.min())
+    return np.array(returns), np.array(drawdowns)
+
+
+def _oos_summary(rows: list[dict[str, Any]], horizon: int, step: int, minimum_folds: int,
+                 nominal: float = 0.8) -> dict[str, Any]:
+    if not rows:
+        return {"folds": 0, "effective_folds": 0.0, "validation_status": "INSUFFICIENT_OOS_FOLDS"}
+    # Overlapping windows share realised sessions; count roughly independent windows instead of origins.
+    effective = len(rows) * min(1.0, step / horizon)
+    coverage = float(np.mean([r["inside"] for r in rows]))
+    baseline_rows = [r for r in rows if r["baseline_inside"] is not None]
+    pinball = float(np.mean([r["pinball"] for r in rows]))
+    baseline_pinball = float(np.mean([r["baseline_pinball"] for r in baseline_rows])) if baseline_rows else None
+    if effective < minimum_folds:
+        status = "INSUFFICIENT_OOS_FOLDS"
+    elif abs(coverage - nominal) > 0.15:
+        status = "OOS_MISCALIBRATED"
+    elif baseline_pinball is not None and pinball > baseline_pinball:
+        status = "OOS_CALIBRATED_BELOW_BASELINE"
+    else:
+        status = "OOS_CALIBRATED"
+    return {
+        "folds": len(rows), "effective_folds": round(effective, 1), "minimum_effective_folds": minimum_folds,
+        "nominal_coverage": nominal, "coverage": coverage,
+        "baseline_coverage": float(np.mean([r["baseline_inside"] for r in baseline_rows])) if baseline_rows else None,
+        "pinball_loss": pinball, "baseline_pinball_loss": baseline_pinball,
+        "mean_pit": float(np.mean([r["pit"] for r in rows])),
+        "validation_status": status,
+    }
+
+
+def forecast_gbm(
+    dates: list[str], returns: list[list[float]], weights: list[float], horizons: tuple[int, ...] = (20, 60, 120),
+    simulations: int = 2000, seed: int = 42, estimation_window: int = 252,
+    drawdown_threshold: float | None = None, *, oos_simulations: int = 500, oos_step: int = 21,
+    minimum_folds: int = 10,
+) -> dict[str, Any]:
+    """Predictive return and maximum-drawdown distributions from a GBM, scored out of sample before use.
+
+    Forward forecast: fit on the last `estimation_window` sessions, simulate each horizon.
+    OOS check: every `oos_step` sessions, fit only on the prior window, simulate, and score the realised
+    cumulative return and maximum drawdown of the next `horizon` sessions against p10/p50/p90 (80% coverage,
+    PIT, pinball loss). Baseline: the empirical distribution of rolling windows inside the same training sample.
+    Origins overlap when `oos_step` < horizon, so folds are autocorrelated and coverage is approximate.
+    """
+    values = _validate_matrix(dates, returns, len(weights))
+    weights_array = np.asarray(weights, dtype=float)
+    if not np.isfinite(weights_array).all() or np.any(weights_array < 0) or abs(float(weights_array.sum()) - 1) > 1e-8:
+        raise ValueError("weights must be nonnegative and sum to 1")
+    if not isinstance(estimation_window, int) or estimation_window < 20:
+        raise ValueError("estimation_window must be at least 20 sessions")
+    horizons = tuple(sorted(set(horizons)))
+    if not horizons or any(not isinstance(h, int) or not 2 <= h <= 252 for h in horizons):
+        raise ValueError("horizons must contain 2–252 session lengths")
+    if len(values) < estimation_window:
+        return {"status": "INSUFFICIENT_HISTORY", "reason": f"Need {estimation_window} sessions, have {len(values)}"}
+    generator = np.random.default_rng(seed)
+    max_horizon = max(horizons)
+
+    oos_rows: dict[int, dict[str, list[dict[str, Any]]]] = {h: {"cumulative_return": [], "max_drawdown": []} for h in horizons}
+    for origin in range(estimation_window, len(values) - min(horizons) + 1, oos_step):
+        training = values[origin - estimation_window:origin]
+        fitting = [h for h in horizons if origin + h <= len(values)]
+        wealth, drawdown = _gbm_paths(training, weights_array, max(fitting), oos_simulations, generator)
+        actual_wealth, actual_drawdown = _realized(values[origin:origin + max(fitting)], weights_array)
+        for h in fitting:
+            baseline_return, baseline_drawdown = _empirical_windows(training, weights_array, h)
+            for target, simulated, realized, baseline in (
+                ("cumulative_return", wealth[:, h - 1] - 1, actual_wealth[h - 1] - 1, baseline_return),
+                ("max_drawdown", drawdown[:, :h].min(axis=1), actual_drawdown[:h].min(), baseline_drawdown),
+            ):
+                predicted = np.quantile(simulated, QUANTILES)
+                # A baseline with fewer than 20 windows has no meaningful p10/p90.
+                base = np.quantile(baseline, QUANTILES) if len(baseline) >= 20 else None
+                oos_rows[h][target].append({
+                    "origin": dates[origin], "realized": float(realized),
+                    "inside": bool(predicted[0] <= realized <= predicted[2]),
+                    "pit": float(np.mean(simulated <= realized)), "pinball": _pinball(predicted, realized),
+                    "baseline_inside": None if base is None else bool(base[0] <= realized <= base[2]),
+                    "baseline_pinball": None if base is None else _pinball(base, realized),
+                })
+
+    training = values[-estimation_window:]
+    wealth, drawdown = _gbm_paths(training, weights_array, max_horizon, simulations, generator)
+    log_returns = np.log1p(training @ weights_array)
+    by_horizon: dict[str, Any] = {}
+    for h in horizons:
+        targets = {"cumulative_return": wealth[:, h - 1] - 1, "max_drawdown": drawdown[:, :h].min(axis=1)}
+        entry: dict[str, Any] = {}
+        for target, simulated in targets.items():
+            diagnostics = _oos_summary(oos_rows[h][target], h, oos_step, minimum_folds)
+            entry[target] = {
+                **_quantiles(simulated, status=diagnostics["validation_status"]),
+                "forecast_metadata": {
+                    "target": target, "horizon": h, "input_cutoff": dates[-1], "method_version": GBM_METHOD_VERSION,
+                    "baseline": GBM_BASELINE, "diagnostics": diagnostics,
+                    "validation_status": diagnostics["validation_status"],
+                },
+                "oos_folds": oos_rows[h][target],
+            }
+        if drawdown_threshold is not None:
+            entry["drawdown_threshold_probability"] = float(np.mean(targets["max_drawdown"] <= drawdown_threshold))
+        by_horizon[str(h)] = entry
+    fan = [{"session": i + 1, **{k: v for k, v in _quantiles(wealth[:, i] - 1).items() if k in {"p10", "p50", "p90"}}}
+           for i in range(max_horizon)]
+    return {
+        "status": "READY", "method": "multivariate_geometric_brownian_motion", "method_version": GBM_METHOD_VERSION,
+        "holding_policy": "fixed_share_buy_and_hold", "cost_status": "GROSS_OF_COSTS",
+        "weights_policy": "Same starting weights in every fold; OOS scores the GBM forecast, not the weight optimiser.",
+        "estimation_window": estimation_window, "calibration_start": dates[-estimation_window], "input_cutoff": dates[-1],
+        "simulations": simulations, "seed": seed, "oos_simulations": oos_simulations, "oos_step": oos_step,
+        "drift_daily_log": float(log_returns.mean()), "volatility_annual": float(log_returns.std(ddof=1) * math.sqrt(252)),
+        "drawdown_threshold": drawdown_threshold, "horizons": by_horizon, "fan": fan,
+        "limitation": "GBM assumes constant drift/volatility and normal log-returns; fat tails, regime shifts and "
+                      "dividends are not modelled. Quantiles are predictive only where OOS validation_status allows.",
     }

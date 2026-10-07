@@ -6,7 +6,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-from idx_evidence_lab.openrouter_live import OpenRouterError, OpenRouterSearchAdapter
+from idx_evidence_lab.openrouter_live import DEFAULT_MODEL, OpenRouterError, OpenRouterSearchAdapter
 from idx_evidence_lab.schemas import SourceClass
 from idx_evidence_lab.web_app import build_local_index, load_tickers, build_issuer_research, build_source_report
 
@@ -21,7 +21,7 @@ class FakeResponse:
     def __exit__(self, *_args):
         return False
 
-    def read(self):
+    def read(self, *_args):
         return self.payload
 
 
@@ -82,12 +82,12 @@ class OpenRouterSearchTest(unittest.TestCase):
         adapter = OpenRouterSearchAdapter("test-key")
         result = adapter.interpret("cek flow BCA", ["BBCA"])
         self.assertEqual(result["provider"], "OpenRouter")
-        self.assertEqual(result["model"], "qwen/qwen3.8-27b:free")
+        self.assertEqual(result["model"], DEFAULT_MODEL)
         self.assertEqual(result["source_class"], SourceClass.MODEL_INFERENCE.value)
         self.assertEqual(result["entities"], ["BBCA"])
         request = mocked_urlopen.call_args.args[0]
         body = json.loads(request.data)
-        self.assertEqual(body["model"], "qwen/qwen3.8-27b:free")
+        self.assertEqual(body["model"], DEFAULT_MODEL)
         self.assertEqual(body["temperature"], 0)
         self.assertNotIn("evidence", body["messages"][1]["content"].casefold())
 

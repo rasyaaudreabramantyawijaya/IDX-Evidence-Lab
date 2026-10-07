@@ -3,29 +3,46 @@ from decimal import Decimal, InvalidOperation
 import re
 from .research_types import AnswerBlock, CLAIMS, ResearchReply
 
-NUMBERS = re.compile(r'(?<![\w])[-+]?\d+(?:[.,]\d+)*(?:\s*(?:%|pp))?(?![\w])')
+# 'Rp6.250' tokenises as 6.250, not as 250 after the letter.
+NUMBERS = re.compile(r'(?:(?<=Rp)|(?<![\w]))[-+]?\d+(?:[.,]\d+)*(?:\s*(?:%|pp))?(?![\w])')
 DATES = re.compile(r'\b\d{4}-\d{2}-\d{2}\b')
 FORECAST_FIELDS = {'target', 'horizon', 'input_cutoff', 'method_version', 'baseline', 'diagnostics', 'validation_status'}
+LIST_FIELDS = {'evidence_ids', 'metric_ids', 'numeric_claims', 'columns', 'rows'}
 
 
-def _decimal(display):
+def _values(display):
+    """Possible values of a displayed number under Indonesian (1.234,5) and English (1,234.5) separators.
+
+    A thousands reading needs 3-digit groups, so '381,0' is only 381.0 while '6.250' is 6.25 or 6250.
+    """
     text = display.strip().replace(' ', '')
-    if ',' in text:
-        text = text.replace('.', '').replace(',', '.')
-    return Decimal(text)
+    values = set()
+    for thousands, decimal in (('.', ','), (',', '.')):
+        whole, _, frac = text.partition(decimal)
+        groups = whole.split(thousands)
+        if any(len(g) != 3 for g in groups[1:]):
+            continue
+        try:
+            values.add(Decimal(''.join(groups) + ('.' + frac if frac else '')))
+        except InvalidOperation:
+            pass
+    return values
+
+
+def _split_unit(token):
+    match = re.fullmatch(r'(.*?)\s*(%|pp)?', token.strip())
+    return match[2] or '', _values(match[1])
 
 
 def _display_valid(display, metric):
     text = display.strip()
-    try:
-        if text.endswith('pp'):
-            return metric.unit == 'pp' and _decimal(text[:-2]) == Decimal(str(metric.value))
-        if text.endswith('%'):
-            return metric.unit in {'fraction', 'fraction/year', 'fraction/day', 'percent'} and _decimal(text[:-1]) == (
-                Decimal(str(metric.value)) * 100 if metric.unit.startswith('fraction') else Decimal(str(metric.value)))
-        return _decimal(text) == Decimal(str(metric.value))
-    except (InvalidOperation, ValueError):
-        return False
+    value = Decimal(str(metric.value))
+    if text.endswith('pp'):
+        return metric.unit == 'pp' and value in _values(text[:-2])
+    if text.endswith('%'):
+        return metric.unit in {'fraction', 'fraction/year', 'fraction/day', 'percent'} and (
+            value * 100 if metric.unit.startswith('fraction') else value) in _values(text[:-1])
+    return value in _values(text)
 
 
 def validate_research_reply(raw, pack, context):
@@ -33,58 +50,66 @@ def validate_research_reply(raw, pack, context):
         raise ValueError('INVALID_FORMAT')
     evidence = {i.id: i for i in pack.items}
     metrics = {m.id: m for m in pack.metrics}
-    blocks = []
-    for value in raw['blocks']:
-        if not isinstance(value, dict):
-            raise ValueError('INVALID_FORMAT')
-        try:
-            block = AnswerBlock(**value)
-        except TypeError as exc:
-            raise ValueError('INVALID_FORMAT') from exc
-        if block.kind not in {'text', 'table'} or block.claim_kind not in CLAIMS or not isinstance(block.text, str):
-            raise ValueError('INVALID_FORMAT')
-        if not all(isinstance(ids, list) and all(isinstance(i, str) for i in ids) for ids in [block.evidence_ids, block.metric_ids]):
-            raise ValueError('INVALID_FORMAT')
-        if any(i not in evidence for i in block.evidence_ids) or any(i not in metrics for i in block.metric_ids):
-            raise ValueError('INVALID_EVIDENCE')
-        if block.claim_kind != 'concept' and not (block.evidence_ids or block.metric_ids):
-            raise ValueError('MISSING_EVIDENCE')
-        if block.claim_kind in {'forecast', 'predictive_probability'}:
-            selected = [metrics[i] for i in block.metric_ids]
-            if not selected or any(m.claim_kind != block.claim_kind or not m.forecast_metadata or
-                not all(m.forecast_metadata.get(f) for f in FORECAST_FIELDS) for m in selected):
-                raise ValueError('UNSUPPORTED_FORECAST')
-        if not isinstance(block.columns, list) or any(not isinstance(c, str) for c in block.columns) or not isinstance(block.rows, list):
-            raise ValueError('INVALID_TABLE')
-        if any(not isinstance(row, list) or len(row) != len(block.columns) or any(not isinstance(c, str) for c in row) for row in block.rows):
-            raise ValueError('INVALID_TABLE')
-        text = '\n'.join([block.text, *block.columns, *(c for row in block.rows for c in row)])
-        if len(text) > 24000 or re.search(r'<[^>]+>|!\[|data:image|https?://', text, re.I):
-            raise ValueError('NON_TEXT_OUTPUT')
-        remaining = text
-        valid_dates = {d for i in block.evidence_ids for d in DATES.findall(evidence[i].excerpt)}
-        valid_dates.update(d for i in block.metric_ids for d in DATES.findall(str(metrics[i].period)))
-        for date in DATES.findall(text):
-            if date not in valid_dates:
-                raise ValueError('UNSUPPORTED_DATE')
-            remaining = remaining.replace(date, '')
-        if not isinstance(block.numeric_claims, list):
-            raise ValueError('INVALID_FORMAT')
-        for claim in block.numeric_claims:
-            if not isinstance(claim, dict) or not isinstance(claim.get('display'), str):
-                raise ValueError('INVALID_NUMBER')
-            id = claim.get('metric_id')
-            if id not in block.metric_ids or claim.get('value') != metrics[id].value or claim.get('unit') != metrics[id].unit or not _display_valid(claim['display'], metrics[id]):
-                raise ValueError('INVALID_NUMBER')
-            # Match a complete displayed number, never erase digits inside another value.
-            remaining = re.sub(r'(?<![\w])(?<!\d[.,])' + re.escape(claim['display']) + r'(?![\w%]|[.,]\d)', '', remaining)
-        for token in NUMBERS.findall(remaining):
-            # Source-quoted numbers retain reported-number status. They cannot substantiate forecasts.
-            if block.claim_kind != 'observation' or not any(token in NUMBERS.findall(evidence[i].excerpt) for i in block.evidence_ids):
-                raise ValueError('UNSUPPORTED_NUMBER')
-        blocks.append(block)
+    blocks = [validate_answer_block(value, evidence, metrics) for value in raw['blocks']]
     return ResearchReply('MODEL_INFERENCE', blocks, pack.items, pack.metrics, pack.coverage, pack.missing_inputs,
                          {'provider': 'OpenRouter', 'status': 'GENERATED', 'semantic_validation': 'NOT_GUARANTEED'}, context)
+
+
+def validate_answer_block(value, evidence, metrics):
+    """Validate one model block against evidence/metric dicts keyed by ID; streaming checks blocks one by one."""
+    if not isinstance(value, dict):
+        raise ValueError('INVALID_FORMAT')
+    # Models often send null for unused list fields; null and [] carry the same (empty) claim.
+    value = {k: [] if v is None and k in LIST_FIELDS else v for k, v in value.items()}
+    try:
+        block = AnswerBlock(**value)
+    except TypeError as exc:
+        raise ValueError('INVALID_FORMAT') from exc
+    if block.kind not in {'text', 'table'} or block.claim_kind not in CLAIMS or not isinstance(block.text, str):
+        raise ValueError('INVALID_FORMAT')
+    if not all(isinstance(ids, list) and all(isinstance(i, str) for i in ids) for ids in [block.evidence_ids, block.metric_ids]):
+        raise ValueError('INVALID_FORMAT')
+    if any(i not in evidence for i in block.evidence_ids) or any(i not in metrics for i in block.metric_ids):
+        raise ValueError('INVALID_EVIDENCE')
+    if block.claim_kind != 'concept' and not (block.evidence_ids or block.metric_ids):
+        raise ValueError('MISSING_EVIDENCE')
+    if block.claim_kind in {'forecast', 'predictive_probability'}:
+        selected = [metrics[i] for i in block.metric_ids]
+        if not selected or any(m.claim_kind != block.claim_kind or not m.forecast_metadata or
+            not all(m.forecast_metadata.get(f) for f in FORECAST_FIELDS) for m in selected):
+            raise ValueError('UNSUPPORTED_FORECAST')
+    if not isinstance(block.columns, list) or any(not isinstance(c, str) for c in block.columns) or not isinstance(block.rows, list):
+        raise ValueError('INVALID_TABLE')
+    if any(not isinstance(row, list) or len(row) != len(block.columns) or any(not isinstance(c, str) for c in row) for row in block.rows):
+        raise ValueError('INVALID_TABLE')
+    text = '\n'.join([block.text, *block.columns, *(c for row in block.rows for c in row)])
+    if len(text) > 24000 or re.search(r'<[^>]+>|!\[|data:image|https?://', text, re.I):
+        raise ValueError('NON_TEXT_OUTPUT')
+    remaining = text
+    valid_dates = {d for i in block.evidence_ids for d in DATES.findall(evidence[i].excerpt)}
+    valid_dates.update(d for i in block.metric_ids for d in DATES.findall(str(metrics[i].period)))
+    for date in DATES.findall(text):
+        if date not in valid_dates:
+            raise ValueError('UNSUPPORTED_DATE')
+        remaining = remaining.replace(date, '')
+    if not isinstance(block.numeric_claims, list):
+        raise ValueError('INVALID_FORMAT')
+    for claim in block.numeric_claims:
+        if not isinstance(claim, dict) or not isinstance(claim.get('display'), str):
+            raise ValueError('INVALID_NUMBER')
+        id = claim.get('metric_id')
+        if id not in block.metric_ids or claim.get('value') != metrics[id].value or claim.get('unit') != metrics[id].unit or not _display_valid(claim['display'], metrics[id]):
+            raise ValueError('INVALID_NUMBER')
+        # Match a complete displayed number, never erase digits inside another value.
+        remaining = re.sub(r'(?<![\w])(?<!\d[.,])' + re.escape(claim['display']) + r'(?![\w%]|[.,]\d)', '', remaining)
+    # Source-quoted numbers retain reported-number status. They cannot substantiate forecasts.
+    # Matching is by value and unit, so '381.0' quotes '381,0'; a paraphrase like '60 juta' for '60.000.000' does not.
+    quoted = [_split_unit(t) for i in block.evidence_ids for t in NUMBERS.findall(evidence[i].excerpt)]
+    for token in NUMBERS.findall(remaining):
+        unit, values = _split_unit(token)
+        if block.claim_kind != 'observation' or not any(unit == u and values & v for u, v in quoted):
+            raise ValueError('UNSUPPORTED_NUMBER')
+    return block
 
 
 def compose_local_reply(plan, pack):

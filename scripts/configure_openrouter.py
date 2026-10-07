@@ -10,6 +10,9 @@ import sys
 
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "src"))
+from idx_evidence_lab.openrouter_live import DEFAULT_MODEL  # noqa: E402
+
 CONFIG = ROOT / ".env.local"
 
 
@@ -24,8 +27,8 @@ def main() -> int:
     if not re.fullmatch(r"[A-Za-z0-9._-]+", key):
         print("Format key tidak dikenali; nilai tidak disimpan.", file=sys.stderr)
         return 1
-    model = input("Model OpenRouter [qwen/qwen3.8-27b:free]: ").strip()
-    model = model or "qwen/qwen3.8-27b:free"
+    model = input(f"Model OpenRouter [{DEFAULT_MODEL}]: ").strip()
+    model = model or DEFAULT_MODEL
     if not re.fullmatch(r"[A-Za-z0-9._:/-]+", model):
         print("Format model tidak valid; nilai tidak disimpan.", file=sys.stderr)
         return 1

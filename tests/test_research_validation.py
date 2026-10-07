@@ -63,6 +63,28 @@ def test_unsupported_probability_returns_gap_not_fake_zero():
     assert reply.missing_inputs and not any('0%' in b.text for b in reply.blocks)
 
 
+@pytest.mark.parametrize('quote', ['381.0', '381', 'Rp 6250', 'naik 6,250', '12,5 %'])
+def test_quoted_numbers_match_by_value_across_separator_formats(quote):
+    from idx_evidence_lab.research_types import EvidenceItem
+    pack = EvidencePack(items=[EvidenceItem('E1', 'news/a', 'sectors_source_data', 'BBCA', 'Laba 381,0 miliar, harga Rp6.250, yield 12,5%')])
+    assert validate({'text': quote, 'claim_kind': 'observation', 'evidence_ids': ['E1']}, pack).blocks
+
+
+@pytest.mark.parametrize('quote', ['60 juta', '382', '12,5 pp', '6.25%'])
+def test_paraphrased_or_different_numbers_still_rejected(quote):
+    from idx_evidence_lab.research_types import EvidenceItem
+    pack = EvidencePack(items=[EvidenceItem('E1', 'news/a', 'sectors_source_data', 'BBCA', 'Laba 60.000.000, harga 381,0 dan Rp6.250, yield 12,5%')])
+    with pytest.raises(ValueError, match='UNSUPPORTED_NUMBER'):
+        validate({'text': quote, 'claim_kind': 'observation', 'evidence_ids': ['E1']}, pack)
+
+
+def test_metric_display_accepts_thousands_separator():
+    pack = EvidencePack(metrics=[MetricRecord('M1', 'price', 6250, 'IDR')])
+    result = validate({'text': 'Harga 6.250', 'claim_kind': 'derived_metric', 'metric_ids': ['M1'],
+                       'numeric_claims': [{'metric_id': 'M1', 'value': 6250, 'unit': 'IDR', 'display': '6.250'}]}, pack)
+    assert result.blocks
+
+
 def test_numeric_display_cannot_remove_substring_of_unsupported_number():
     pack = EvidencePack(metrics=[MetricRecord('M1', 'beta', 1, 'ratio')])
     with pytest.raises(ValueError, match='UNSUPPORTED_NUMBER'):

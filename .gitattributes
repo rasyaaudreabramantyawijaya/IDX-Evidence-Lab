@@ -1,0 +1,4 @@
+# Hashed market snapshots must stay byte-identical to the committed LF files (core.autocrlf would break their hashes).
+data/raw/** -text
+# Studies reference manifest hashes these sources byte-for-byte.
+src/idx_evidence_lab/studies_*.py text eol=lf

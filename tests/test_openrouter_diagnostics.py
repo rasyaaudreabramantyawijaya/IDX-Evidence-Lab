@@ -14,7 +14,8 @@ def reject(body, headers=None):
                       io.BytesIO(json.dumps(body).encode()))
     with patch('idx_evidence_lab.openrouter_live.urlopen', side_effect=error):
         with pytest.raises(OpenRouterError) as caught:
-            OpenRouterSearchAdapter('test-key').interpret('analisa BBCA', ['BBCA'])
+            # One model: the single mocked HTTPError body can only be read once.
+            OpenRouterSearchAdapter('test-key', fallback_models=()).interpret('analisa BBCA', ['BBCA'])
     return caught.value
 
 

@@ -79,7 +79,8 @@ def test_ath_scenario_and_historical_capm_render_as_separate_windows():
 
 def test_simulated_drawdown_quantile_visual_is_honest_and_zero_anchored():
     source = HTML.read_text(encoding="utf-8")
-    assert "Rentang maximum drawdown skenario" in source
+    assert "Rentang maximum drawdown prediktif" in source
+    assert "function gbmForecastPanel" in source and "Uji out-of-sample" in source
     assert "p10–median–p90" in source
     assert "Distribusi maximum drawdown" not in source
     assert 'scenario-mdd-track' in source

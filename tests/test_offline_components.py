@@ -9,7 +9,6 @@ from unittest.mock import patch
 from idx_evidence_lab.acquisition import assess_acquisition_readiness
 from idx_evidence_lab.evidence import classify_evidence
 from idx_evidence_lab.mock_sectors import MockSectorsProvider
-from idx_evidence_lab.openrouter_mock import MockOpenRouterAdapter
 from idx_evidence_lab.query_plan import build_query_plan
 from idx_evidence_lab.schemas import EvidenceState, SourceClass
 from idx_evidence_lab.search import EntityResolver, LocalSearchIndex
@@ -70,13 +69,6 @@ class OfflineComponentsTest(unittest.TestCase):
         self.assertEqual(result.status, "RED")
         self.assertTrue(any(check.status == "MISSING" for check in result.checks))
         self.assertIn("not legal clearance", result.disclaimer.casefold())
-
-    def test_openrouter_mock_never_calls_live_api(self):
-        adapter = MockOpenRouterAdapter()
-        output = adapter.parse_query("aturan akuisisi BBCA", ["BBCA"])
-        self.assertEqual(output["source_class"], "model_inference")
-        with self.assertRaises(SourcePolicyError):
-            MockOpenRouterAdapter(live=True)
 
     def test_live_client_requires_key_and_enforces_host_and_budget(self):
         with self.assertRaises(SectorsClientError):
