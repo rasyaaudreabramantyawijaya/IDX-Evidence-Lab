@@ -13,6 +13,9 @@ permissions:
 jobs:
   secrets:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: read # gitleaks-action lists the PR's commits through the API
     steps:
       - uses: actions/checkout@v4
         with:
@@ -31,9 +34,11 @@ jobs:
       - run: python -m pip install pip-audit
       - run: pip-audit -r requirements-portfolio.txt
 
-  # CodeQL and dependency-review on private repos need GitHub Advanced Security.
-  # They are non-blocking until that is confirmed available for this repo.
+  # CodeQL and dependency-review on private repos need GitHub Advanced Security, which is not enabled
+  # for this repo yet (code scanning / dependency graph disabled). They are skipped until the repository
+  # variable ENABLE_ADVANCED_SECURITY is set to "true" (Settings > Secrets and variables > Actions > Variables).
   codeql:
+    if: vars.ENABLE_ADVANCED_SECURITY == 'true'
     runs-on: ubuntu-latest
     continue-on-error: true
     permissions:
@@ -47,7 +52,7 @@ jobs:
       - uses: github/codeql-action/analyze@v3
 
   dependency-review:
-    if: github.event_name == 'pull_request'
+    if: github.event_name == 'pull_request' && vars.ENABLE_ADVANCED_SECURITY == 'true'
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:

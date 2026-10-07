@@ -57,14 +57,44 @@ jobs:
             exit 1
           fi
 
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build image
+        run: docker build -t idxel:ci .
+      - name: Run and smoke-test
+        run: |
+          docker run -d --name idxel -p 5500:5500 -v "$PWD/data:/app/data:ro" idxel:ci
+          for i in $(seq 1 60); do
+            curl -sf -o /dev/null http://127.0.0.1:5500/api/health && break
+            sleep 1
+          done
+          curl -s -D headers.txt -o body.json http://127.0.0.1:5500/api/health
+          grep -qi '^x-content-type-options: nosniff' headers.txt
+          grep -qi '^x-frame-options: DENY' headers.txt
+          grep -qi '^content-security-policy:' headers.txt
+          grep -q '"ok": true' body.json
+      - name: Container logs on failure
+        if: failure()
+        run: docker logs idxel
+      # Report-only for now: surfaces image CVEs without blocking merges.
+      - uses: aquasecurity/trivy-action@0.28.0
+        with:
+          image-ref: idxel:ci
+          severity: HIGH,CRITICAL
+          exit-code: "0"
+          ignore-unfixed: true
+
   # Single required status check for branch protection.
   ci:
     if: always()
-    needs: [lint, test, hygiene]
+    needs: [lint, test, hygiene, docker]
     runs-on: ubuntu-latest
     steps:
       - name: Verify all jobs succeeded
         run: |
           [ "${{ needs.lint.result }}" = "success" ] && \
           [ "${{ needs.test.result }}" = "success" ] && \
-          [ "${{ needs.hygiene.result }}" = "success" ]
+          [ "${{ needs.hygiene.result }}" = "success" ] && \
+          [ "${{ needs.docker.result }}" = "success" ]

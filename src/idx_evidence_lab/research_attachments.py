@@ -13,6 +13,8 @@ def read_attachment(value):
         raise ValueError('INVALID_ATTACHMENT')
     name = PurePosixPath(value['name'].replace('\\', '/')).name[:160]
     suffix = PurePosixPath(name).suffix.lower()
+    if any(ord(ch) < 32 or ord(ch) == 127 for ch in name):
+        raise ValueError('INVALID_ATTACHMENT')
     if not name or suffix in VIDEO_EXTENSIONS or value['mime'].lower().startswith('video/'):
         raise ValueError('VIDEO_NOT_ALLOWED')
     if len(value['data']) > (MAX_FILE_BYTES + 2) // 3 * 4:

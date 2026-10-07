@@ -93,11 +93,42 @@ def test_zero_volume_path_is_not_a_tradable_outcome():
     assert result['excluded']['invalid_20d'] == 1
 
 
+def assert_same_up_to_float_noise(published, fresh, path='root'):
+    """Exact for structure, strings and ints; floats may differ in the last digits.
+
+    Different numpy/scipy releases (e.g. on Python 3.10 vs 3.13) change float results by ~1e-16,
+    which an exact == comparison reports as a stale snapshot.
+    """
+    if isinstance(published, dict) and isinstance(fresh, dict):
+        assert published.keys() == fresh.keys(), path
+        for key in published:
+            assert_same_up_to_float_noise(published[key], fresh[key], f'{path}/{key}')
+    elif isinstance(published, list) and isinstance(fresh, list):
+        assert len(published) == len(fresh), path
+        for index, (a, b) in enumerate(zip(published, fresh)):
+            assert_same_up_to_float_noise(a, b, f'{path}[{index}]')
+    elif isinstance(published, float) and isinstance(fresh, float):
+        assert math.isclose(published, fresh, rel_tol=1e-9, abs_tol=1e-12), f'{path}: {published!r} != {fresh!r}'
+    else:
+        assert published == fresh and type(published) is type(fresh), f'{path}: {published!r} != {fresh!r}'
+
+
+def test_float_noise_helper_tolerates_rounding_but_not_real_differences():
+    assert_same_up_to_float_noise({'a': [1.0000000000000002, 'x', None, 3]}, {'a': [1.0, 'x', None, 3]})
+    for changed in ({'a': [1.001, 'x', None, 3]}, {'a': [1.0, 'y', None, 3]}, {'a': [1.0, 'x', None, 4]},
+                    {'a': [1.0, 'x', None]}, {'b': [1.0, 'x', None, 3]}):
+        try:
+            assert_same_up_to_float_noise(changed, {'a': [1.0, 'x', None, 3]})
+        except AssertionError:
+            continue
+        raise AssertionError(f'real difference was not detected: {changed}')
+
+
 def test_published_snapshot_matches_fresh_local_recalculation():
     root = Path(__file__).resolve().parents[1]
     bundle = json.loads((root/'docs/prototypes/market-overview-data.json').read_text())
     fresh = build_screener_analysis(root)
-    assert bundle['screener_analysis'] == fresh
+    assert_same_up_to_float_noise(bundle['screener_analysis'], fresh)
     assert fresh['summary']['computed_count'] == 45
     assert len({r['regime']['label'] for r in fresh['rows']}) > 1
     assert sum(fresh['summary']['regimes'].values()) == 45
