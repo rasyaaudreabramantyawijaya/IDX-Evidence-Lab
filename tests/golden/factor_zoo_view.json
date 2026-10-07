@@ -1,0 +1,24 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/api/portfolio-factor-zoo-view",
+  "headers": {},
+  "body": null
+ },
+ "status": 409,
+ "headers": {
+  "content-type": "application/json; charset=utf-8",
+  "cache-control": "no-store",
+  "x-content-type-options": "nosniff",
+  "x-frame-options": "DENY",
+  "referrer-policy": "no-referrer",
+  "permissions-policy": "camera=(), microphone=(), geolocation=()",
+  "cross-origin-opener-policy": "same-origin",
+  "content-security-policy": "frame-ancestors 'none'; object-src 'none'; base-uri 'self'",
+  "content-security-policy-report-only": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'"
+ },
+ "body": {
+  "status": "SYNC_ERROR",
+  "error": "MATLAB camera state belongs to a different or missing data artifact"
+ }
+}

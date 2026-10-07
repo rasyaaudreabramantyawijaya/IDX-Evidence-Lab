@@ -1,0 +1,161 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/api/research-targets",
+  "headers": {},
+  "body": null
+ },
+ "status": 200,
+ "headers": {
+  "content-type": "application/json; charset=utf-8",
+  "cache-control": "no-store",
+  "x-content-type-options": "nosniff",
+  "x-frame-options": "DENY",
+  "referrer-policy": "no-referrer",
+  "permissions-policy": "camera=(), microphone=(), geolocation=()",
+  "cross-origin-opener-policy": "same-origin",
+  "content-security-policy": "frame-ancestors 'none'; object-src 'none'; base-uri 'self'",
+  "content-security-policy-report-only": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'"
+ },
+ "body": {
+  "tickers": [
+   "AADI",
+   "ADMR",
+   "ADRO",
+   "AKRA",
+   "AMMN",
+   "AMRT",
+   "ANTM",
+   "ASII",
+   "BBCA",
+   "BBNI",
+   "BBRI",
+   "BBTN",
+   "BMRI",
+   "BRPT",
+   "BUMI",
+   "CPIN",
+   "CUAN",
+   "DEWA",
+   "EMTK",
+   "ESSA",
+   "EXCL",
+   "GOTO",
+   "HRTA",
+   "ICBP",
+   "INCO",
+   "INDF",
+   "INDY",
+   "INKP",
+   "ISAT",
+   "ITMG",
+   "JPFA",
+   "KLBF",
+   "MAPI",
+   "MBMA",
+   "MDKA",
+   "MEDC",
+   "NCKL",
+   "PGAS",
+   "PGEO",
+   "PTBA",
+   "SCMA",
+   "TLKM",
+   "UNTR",
+   "UNVR",
+   "WIFI"
+  ],
+  "sectors": [
+   {
+    "value": "Basic Materials",
+    "members": [
+     "AMMN",
+     "ANTM",
+     "BRPT",
+     "ESSA",
+     "INCO",
+     "INKP",
+     "MBMA",
+     "MDKA",
+     "NCKL"
+    ]
+   },
+   {
+    "value": "Consumer Cyclicals",
+    "members": [
+     "HRTA",
+     "MAPI",
+     "SCMA"
+    ]
+   },
+   {
+    "value": "Consumer Non-Cyclicals",
+    "members": [
+     "AMRT",
+     "CPIN",
+     "ICBP",
+     "INDF",
+     "JPFA",
+     "UNVR"
+    ]
+   },
+   {
+    "value": "Energy",
+    "members": [
+     "AADI",
+     "ADMR",
+     "ADRO",
+     "AKRA",
+     "BUMI",
+     "CUAN",
+     "DEWA",
+     "INDY",
+     "ITMG",
+     "MEDC",
+     "PGAS",
+     "PTBA"
+    ]
+   },
+   {
+    "value": "Financials",
+    "members": [
+     "BBCA",
+     "BBNI",
+     "BBRI",
+     "BBTN",
+     "BMRI"
+    ]
+   },
+   {
+    "value": "Healthcare",
+    "members": [
+     "KLBF"
+    ]
+   },
+   {
+    "value": "Industrials",
+    "members": [
+     "ASII",
+     "UNTR"
+    ]
+   },
+   {
+    "value": "Infrastructures",
+    "members": [
+     "EXCL",
+     "ISAT",
+     "PGEO",
+     "TLKM"
+    ]
+   },
+   {
+    "value": "Technology",
+    "members": [
+     "EMTK",
+     "GOTO",
+     "WIFI"
+    ]
+   }
+  ]
+ }
+}

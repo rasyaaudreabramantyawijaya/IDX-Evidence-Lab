@@ -1,0 +1,227 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/api/studies-catalog",
+  "headers": {},
+  "body": null
+ },
+ "status": 200,
+ "headers": {
+  "content-type": "application/json; charset=utf-8",
+  "cache-control": "no-store",
+  "x-content-type-options": "nosniff",
+  "x-frame-options": "DENY",
+  "referrer-policy": "no-referrer",
+  "permissions-policy": "camera=(), microphone=(), geolocation=()",
+  "cross-origin-opener-policy": "same-origin",
+  "content-security-policy": "frame-ancestors 'none'; object-src 'none'; base-uri 'self'",
+  "content-security-policy-report-only": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'"
+ },
+ "body": {
+  "widgets": [
+   {
+    "id": "price_risk",
+    "verification": "NOT_TESTED"
+   },
+   {
+    "id": "trend_momentum",
+    "verification": "NOT_TESTED"
+   },
+   {
+    "id": "liquidity_proxy",
+    "verification": "NOT_TESTED"
+   },
+   {
+    "id": "portfolio_risk",
+    "verification": "NOT_TESTED"
+   },
+   {
+    "id": "quality_valuation",
+    "verification": "NOT_TESTED"
+   },
+   {
+    "id": "fragility",
+    "verification": "NOT_TESTED"
+   },
+   {
+    "id": "issuer_flow",
+    "verification": "NOT_TESTED"
+   },
+   {
+    "id": "event_timeline",
+    "verification": "NOT_TESTED"
+   },
+   {
+    "id": "market_context",
+    "verification": "NOT_TESTED"
+   },
+   {
+    "id": "market_breadth",
+    "verification": "NOT_TESTED"
+   },
+   {
+    "id": "capm_benchmark",
+    "verification": "NOT_TESTED"
+   },
+   {
+    "id": "factor_exposure",
+    "verification": "NOT_TESTED"
+   },
+   {
+    "id": "issuer_compare",
+    "verification": "NOT_TESTED"
+   },
+   {
+    "id": "event_outcomes",
+    "verification": "NOT_TESTED"
+   },
+   {
+    "id": "custom_engineering",
+    "verification": "NOT_TESTED"
+   },
+   {
+    "id": "evidence_trace",
+    "verification": "NOT_TESTED"
+   }
+  ],
+  "tickers": [
+   "AADI",
+   "ADMR",
+   "ADRO",
+   "AKRA",
+   "AMMN",
+   "AMRT",
+   "ANTM",
+   "ASII",
+   "BBCA",
+   "BBNI",
+   "BBRI",
+   "BBTN",
+   "BMRI",
+   "BRPT",
+   "BUMI",
+   "CPIN",
+   "CUAN",
+   "DEWA",
+   "EMTK",
+   "ESSA",
+   "EXCL",
+   "GOTO",
+   "HRTA",
+   "ICBP",
+   "INCO",
+   "INDF",
+   "INDY",
+   "INKP",
+   "ISAT",
+   "ITMG",
+   "JPFA",
+   "KLBF",
+   "MAPI",
+   "MBMA",
+   "MDKA",
+   "MEDC",
+   "NCKL",
+   "PGAS",
+   "PGEO",
+   "PTBA",
+   "SCMA",
+   "TLKM",
+   "UNTR",
+   "UNVR",
+   "WIFI"
+  ],
+  "sectors": [
+   {
+    "value": "Basic Materials",
+    "members": [
+     "AMMN",
+     "ANTM",
+     "BRPT",
+     "ESSA",
+     "INCO",
+     "INKP",
+     "MBMA",
+     "MDKA",
+     "NCKL"
+    ]
+   },
+   {
+    "value": "Consumer Cyclicals",
+    "members": [
+     "HRTA",
+     "MAPI",
+     "SCMA"
+    ]
+   },
+   {
+    "value": "Consumer Non-Cyclicals",
+    "members": [
+     "AMRT",
+     "CPIN",
+     "ICBP",
+     "INDF",
+     "JPFA",
+     "UNVR"
+    ]
+   },
+   {
+    "value": "Energy",
+    "members": [
+     "AADI",
+     "ADMR",
+     "ADRO",
+     "AKRA",
+     "BUMI",
+     "CUAN",
+     "DEWA",
+     "INDY",
+     "ITMG",
+     "MEDC",
+     "PGAS",
+     "PTBA"
+    ]
+   },
+   {
+    "value": "Financials",
+    "members": [
+     "BBCA",
+     "BBNI",
+     "BBRI",
+     "BBTN",
+     "BMRI"
+    ]
+   },
+   {
+    "value": "Healthcare",
+    "members": [
+     "KLBF"
+    ]
+   },
+   {
+    "value": "Industrials",
+    "members": [
+     "ASII",
+     "UNTR"
+    ]
+   },
+   {
+    "value": "Infrastructures",
+    "members": [
+     "EXCL",
+     "ISAT",
+     "PGEO",
+     "TLKM"
+    ]
+   },
+   {
+    "value": "Technology",
+    "members": [
+     "EMTK",
+     "GOTO",
+     "WIFI"
+    ]
+   }
+  ]
+ }
+}

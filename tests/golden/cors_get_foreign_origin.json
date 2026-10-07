@@ -1,0 +1,472 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/api/portfolio-data",
+  "headers": {
+   "Origin": "http://evil.example"
+  },
+  "body": null
+ },
+ "status": 200,
+ "headers": {
+  "content-type": "application/json; charset=utf-8",
+  "cache-control": "no-store",
+  "x-content-type-options": "nosniff",
+  "x-frame-options": "DENY",
+  "referrer-policy": "no-referrer",
+  "permissions-policy": "camera=(), microphone=(), geolocation=()",
+  "cross-origin-opener-policy": "same-origin",
+  "content-security-policy": "frame-ancestors 'none'; object-src 'none'; base-uri 'self'",
+  "content-security-policy-report-only": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'"
+ },
+ "body": {
+  "status": "AVAILABLE_WITH_CAVEAT",
+  "provider": "Sectors.app",
+  "tickers": [
+   {
+    "ticker": "AADI",
+    "company": "PT Adaro Andalan Indonesia Tbk",
+    "sub_sector": "Oil, Gas & Coal",
+    "daily_quality": "VERIFIED",
+    "observations": 424,
+    "coverage_start": "2024-12-05",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "ADMR",
+    "company": "PT Alamtri Minerals Indonesia Tbk",
+    "sub_sector": "Oil, Gas & Coal",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "ADRO",
+    "company": "Alamtri Resources Indonesia Tbk",
+    "sub_sector": "Oil, Gas & Coal",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "AKRA",
+    "company": "PT AKR Corporindo Tbk.",
+    "sub_sector": "Oil, Gas & Coal",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "AMMN",
+    "company": "PT Amman Mineral Internasional Tbk.",
+    "sub_sector": "Basic Materials",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "AMRT",
+    "company": "PT Sumber Alfaria Trijaya Tbk.",
+    "sub_sector": "Food & Staples Retailing",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "ANTM",
+    "company": "Aneka Tambang Tbk.",
+    "sub_sector": "Basic Materials",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "ASII",
+    "company": "Astra International Tbk",
+    "sub_sector": "Multi-sector Holdings",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "BBCA",
+    "company": "PT Bank Central Asia Tbk.",
+    "sub_sector": "Banks",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "BBNI",
+    "company": "PT Bank Negara Indonesia (Persero) Tbk",
+    "sub_sector": "Banks",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "BBRI",
+    "company": "PT Bank Rakyat Indonesia (Persero) Tbk",
+    "sub_sector": "Banks",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "BBTN",
+    "company": "PT Bank Tabungan Negara (Persero) Tbk",
+    "sub_sector": "Banks",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "BMRI",
+    "company": "PT Bank Mandiri (Persero) Tbk",
+    "sub_sector": "Banks",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "BRPT",
+    "company": "Barito Pacific Tbk",
+    "sub_sector": "Basic Materials",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "BUMI",
+    "company": "Bumi Resources Tbk",
+    "sub_sector": "Oil, Gas & Coal",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "CPIN",
+    "company": "Charoen Pokphand Indonesia Tbk",
+    "sub_sector": "Food & Beverage",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "CUAN",
+    "company": "PT Petrindo Jaya Kreasi Tbk",
+    "sub_sector": "Oil, Gas & Coal",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "DEWA",
+    "company": "Darma Henwa Tbk",
+    "sub_sector": "Oil, Gas & Coal",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "EMTK",
+    "company": "Elang Mahkota Teknologi Tbk",
+    "sub_sector": "Software & IT Services",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "ESSA",
+    "company": "ESSA Industries Indonesia Tbk",
+    "sub_sector": "Basic Materials",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "EXCL",
+    "company": "PT XLSMART Telecom Sejahtera Tbk",
+    "sub_sector": "Telecommunication",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "GOTO",
+    "company": "PT GoTo Gojek Tokopedia Tbk",
+    "sub_sector": "Software & IT Services",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "HRTA",
+    "company": "PT Hartadinata Abadi Tbk",
+    "sub_sector": "Apparel & Luxury Goods",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "ICBP",
+    "company": "Indofood CBP Sukses Makmur Tbk",
+    "sub_sector": "Food & Beverage",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "INCO",
+    "company": "Vale Indonesia Tbk",
+    "sub_sector": "Basic Materials",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "INDF",
+    "company": "Indofood Sukses Makmur Tbk",
+    "sub_sector": "Food & Beverage",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "INDY",
+    "company": "Indika Energy Tbk",
+    "sub_sector": "Oil, Gas & Coal",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "INKP",
+    "company": "Indah Kiat Pulp & Paper Tbk",
+    "sub_sector": "Basic Materials",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "ISAT",
+    "company": "PT Indosat Tbk",
+    "sub_sector": "Telecommunication",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "ITMG",
+    "company": "Indo Tambangraya Megah Tbk",
+    "sub_sector": "Oil, Gas & Coal",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "JPFA",
+    "company": "JAPFA Comfeed Indonesia Tbk",
+    "sub_sector": "Food & Beverage",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "KLBF",
+    "company": "Kalbe Farma Tbk",
+    "sub_sector": "Pharmaceuticals & Health Care Research",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "MAPI",
+    "company": "Mitra Adiperkasa Tbk",
+    "sub_sector": "Retailing",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "MBMA",
+    "company": "PT Merdeka Battery Materials Tbk",
+    "sub_sector": "Basic Materials",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "MDKA",
+    "company": "PT Merdeka Copper Gold Tbk",
+    "sub_sector": "Basic Materials",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "MEDC",
+    "company": "PT Medco Energi Internasional Tbk",
+    "sub_sector": "Oil, Gas & Coal",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "NCKL",
+    "company": "PT Trimegah Bangun Persada Tbk",
+    "sub_sector": "Basic Materials",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "PGAS",
+    "company": "PT Perusahaan Gas Negara Tbk",
+    "sub_sector": "Oil, Gas & Coal",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "PGEO",
+    "company": "PT Pertamina Geothermal Energy Tbk",
+    "sub_sector": "Utilities",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "PTBA",
+    "company": "Bukit Asam Tbk",
+    "sub_sector": "Oil, Gas & Coal",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "SCMA",
+    "company": "Surya Citra Media Tbk",
+    "sub_sector": "Media & Entertainment",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "TLKM",
+    "company": "PT Telkom Indonesia (Persero) Tbk",
+    "sub_sector": "Telecommunication",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "UNTR",
+    "company": "United Tractors Tbk",
+    "sub_sector": "Industrial Goods",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "UNVR",
+    "company": "Unilever Indonesia Tbk",
+    "sub_sector": "Nondurable Household Products",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   },
+   {
+    "ticker": "WIFI",
+    "company": "PT Solusi Sinergi Digital Tbk",
+    "sub_sector": "Software & IT Services",
+    "daily_quality": "VERIFIED",
+    "observations": 712,
+    "coverage_start": "2023-09-25",
+    "coverage_end": "2026-09-24"
+   }
+  ],
+  "benchmarks": [
+   "IHSG",
+   "LQ45"
+  ],
+  "universe_quality": "PARTIAL",
+  "universe_issues": [
+   "Universe snapshot hash is missing or mismatched."
+  ],
+  "universe_as_of": "2026-09-18T12:05:48.047234+00:00",
+  "risk_free_rate": {
+   "status": "UNAVAILABLE",
+   "reason": "No approved local Indonesian risk-free series; user annual assumption only"
+  },
+  "factors": {
+   "momentum": {
+    "status": "PARTIAL",
+    "reason": "Price-based characteristic only; corporate actions unverified"
+   },
+   "size": {
+    "status": "PARTIAL",
+    "reason": "Daily market cap exists, but point-in-time factor portfolio not validated"
+   },
+   "value": {
+    "status": "UNAVAILABLE",
+    "reason": "Book equity publication availability not audited"
+   },
+   "quality": {
+    "status": "UNAVAILABLE",
+    "reason": "Profitability availability and sector comparability not audited"
+   },
+   "apt": {
+    "status": "UNAVAILABLE",
+    "reason": "No validated multiple factor returns and premia"
+   },
+   "black_litterman": {
+    "status": "RESEARCH_SUPPORTED",
+    "reason": "Selected-universe capitalization prior and historical sample views; requires valid selected caps; parameters not calibrated"
+   }
+  }
+ }
+}
