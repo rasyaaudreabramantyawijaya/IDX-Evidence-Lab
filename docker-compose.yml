@@ -1,0 +1,17 @@
+services:
+  app:
+    build: .
+    ports:
+      # Loopback only: the app has no authentication yet.
+      - "127.0.0.1:5500:5500"
+    volumes:
+      # Snapshots stay out of the image (about 300 MB, provider-licensed).
+      - ./data:/app/data:ro
+    environment:
+      # Optional: enables the Agent mode. Pass through from your shell, never commit it.
+      OPENROUTER_API_KEY: ${OPENROUTER_API_KEY:-}
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    restart: unless-stopped

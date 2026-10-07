@@ -6,12 +6,15 @@ import json
 import math
 import os
 import re
+import sys
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from typing import Any
 from urllib.parse import parse_qs, urlparse
 
+from .config import Settings, load_settings
 from .openrouter_live import OpenRouterError, OpenRouterSearchAdapter, load_local_openrouter_config
+from .security import SECURITY_HEADERS, RateLimiter
 from .market_data import load_ihsg_snapshot, load_issuer_daily, load_local_news, load_lq45_universe, load_sector_heatmap, load_news_universe
 from .portfolio_analytics import calculate_portfolio_metrics
 from .portfolio_amounts import allocate_amounts, allocate_lots
@@ -385,8 +388,46 @@ def build_local_index(root: Path = ROOT) -> LocalSearchIndex:
     return LocalSearchIndex(documents)
 
 
+COSTLY_POST_ROUTES = frozenset({"/api/research-chat", "/api/issuer-research"})
+
+
 class SearchHandler(BaseHTTPRequestHandler):
     server_version = "IDXEvidenceLab/0.1"
+    # Drop stalled or slow clients instead of pinning a handler thread forever.
+    timeout = 30
+
+    def end_headers(self) -> None:
+        # Single choke point: covers JSON, static assets and send_error() responses alike.
+        for name, value in SECURITY_HEADERS:
+            self.send_header(name, value)
+        super().end_headers()
+
+    def _rate_limited(self, route: str) -> bool:
+        """Send 429 and return True when this client exceeded its POST budget."""
+        limiter = getattr(self.server, "rate_limiter", None)
+        if limiter is None:
+            with RESEARCH_SERVICE_LOCK:
+                if not hasattr(self.server, "rate_limiter"):
+                    try:
+                        settings = load_settings()
+                    except ValueError:
+                        settings = Settings()
+                    self.server.rate_limiter = RateLimiter(
+                        {"chat": settings.chat_per_min, "post": settings.post_per_min})
+                limiter = self.server.rate_limiter
+        bucket = "chat" if route in COSTLY_POST_ROUTES else "post"
+        allowed, retry_after = limiter.check(self.client_address[0], bucket)
+        if allowed:
+            return False
+        encoded = json.dumps({"error": "RATE_LIMITED"}).encode("utf-8")
+        self.send_response(429)
+        self.send_header("Content-Type", "application/json; charset=utf-8")
+        self.send_header("Content-Length", str(len(encoded)))
+        self.send_header("Retry-After", str(retry_after))
+        self.send_header("Cache-Control", "no-store")
+        self.end_headers()
+        self.wfile.write(encoded)
+        return True
 
     def _send_json(self, status: int, payload: dict[str, Any]) -> None:
         encoded = json.dumps(payload, ensure_ascii=False).encode("utf-8")
@@ -526,6 +567,8 @@ class SearchHandler(BaseHTTPRequestHandler):
 
     def do_POST(self) -> None:
         route = urlparse(self.path).path
+        if self._rate_limited(route):
+            return
         if route == '/api/studies-run':
             try:
                 length = int(self.headers.get('Content-Length', '0'))
@@ -1203,11 +1246,17 @@ RESEARCH_SERVICE_LOCK = RLock()
 
 def main() -> None:
     load_local_openrouter_config(OPENROUTER_ENV_FILE)
-    port = int(os.environ.get("IDXEL_PORT", "5500"))
-    server = ThreadingHTTPServer(("127.0.0.1", port), SearchHandler)
+    try:
+        settings = load_settings()
+    except ValueError as exc:
+        raise SystemExit(f"Konfigurasi tidak valid: {exc}") from None
+    if not settings.is_loopback:
+        print(f"PERINGATAN: server mendengarkan di {settings.host}. Aplikasi belum memiliki autentikasi; "
+              "jangan buka ke jaringan publik.", file=sys.stderr)
+    server = ThreadingHTTPServer((settings.host, settings.port), SearchHandler)
     server.search_index = build_local_index()
     server.tickers = load_tickers()
-    print(f"IDX Evidence Lab lokal: http://127.0.0.1:{port}")
+    print(f"IDX Evidence Lab lokal: http://{settings.host}:{settings.port}")
     print(f"Indeks lokal: {len(server.search_index.as_records())} dokumen; API key {'tersedia' if os.environ.get('OPENROUTER_API_KEY') else 'belum disetel'}.")
     try:
         server.serve_forever()
