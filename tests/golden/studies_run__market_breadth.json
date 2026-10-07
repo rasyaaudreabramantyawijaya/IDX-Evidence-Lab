@@ -1,0 +1,208 @@
+{
+ "request": {
+  "method": "POST",
+  "path": "/api/studies-run",
+  "headers": {
+   "Content-Type": "application/json"
+  },
+  "body": {
+   "widget_id": "market_breadth",
+   "targets": [
+    "BBCA"
+   ],
+   "window": "available"
+  }
+ },
+ "status": 200,
+ "headers": {
+  "content-type": "application/json; charset=utf-8",
+  "cache-control": "no-store",
+  "x-content-type-options": "nosniff",
+  "x-frame-options": "DENY",
+  "referrer-policy": "no-referrer",
+  "permissions-policy": "camera=(), microphone=(), geolocation=()",
+  "cross-origin-opener-policy": "same-origin",
+  "content-security-policy": "frame-ancestors 'none'; object-src 'none'; base-uri 'self'",
+  "content-security-policy-report-only": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'"
+ },
+ "body": {
+  "widget_id": "market_breadth",
+  "target": {
+   "kind": "issuer",
+   "targets": [
+    "BBCA"
+   ],
+   "entities": [
+    "BBCA"
+   ]
+  },
+  "status": "READY",
+  "verification": "NOT_TESTED",
+  "formula_version": "studies-daily-v1",
+  "period": {
+   "start": "2023-09-25",
+   "end": "2026-09-24"
+  },
+  "cutoff": "2026-09-24",
+  "sources": [
+   {
+    "id": "data/raw/sectors/index_daily/ihsg/ihsg_2023-09-25_2023-12-23.json",
+    "sha256": "7645a363aa12fa0a53c0606094ce72ba44b412e0bf30d01bde012e57b8579174"
+   },
+   {
+    "id": "data/raw/sectors/index_daily/ihsg/ihsg_2023-12-24_2024-03-22.json",
+    "sha256": "c000c8fb67f5617941aaa50219b2d1ae1a940614e40ee883fc0c46f9a2a9a8f9"
+   },
+   {
+    "id": "data/raw/sectors/index_daily/ihsg/ihsg_2024-03-23_2024-06-20.json",
+    "sha256": "abd4debc8e75956ca00d8d4e5278d1f30985fa633b7fda2c6ef8e251170d5c3c"
+   },
+   {
+    "id": "data/raw/sectors/index_daily/ihsg/ihsg_2024-06-21_2024-09-18.json",
+    "sha256": "e63bfe31c970abf28707a334a46236f885fece5b12329317302113cdf76ff233"
+   },
+   {
+    "id": "data/raw/sectors/index_daily/ihsg/ihsg_2024-09-19_2024-12-17.json",
+    "sha256": "779286939a49f35014006e8f6fc55ce0c729ab74c1ce445e62722840d9014053"
+   },
+   {
+    "id": "data/raw/sectors/index_daily/ihsg/ihsg_2024-12-18_2025-03-17.json",
+    "sha256": "be740d79daeb415aac37ebe2d57c5834ddffc3699b8869617151c0acdfd3ab78"
+   },
+   {
+    "id": "data/raw/sectors/index_daily/ihsg/ihsg_2025-03-18_2025-06-15.json",
+    "sha256": "d78427e0fce3f90fd8c1440b41a5e55665c1d4412206b5c2ef781cb5d9ea2f6c"
+   },
+   {
+    "id": "data/raw/sectors/index_daily/ihsg/ihsg_2025-06-16_2025-09-13.json",
+    "sha256": "22df5e26ba19f39a1f4ad0c9a0d44d0bf6720d9b54eaa8a93282e266b0497f02"
+   },
+   {
+    "id": "data/raw/sectors/index_daily/ihsg/ihsg_2025-09-14_2025-12-12.json",
+    "sha256": "52c7530cc3bf52df721e0a95bcedcf771b812d2e9c05f27c7cb0804228722d59"
+   },
+   {
+    "id": "data/raw/sectors/index_daily/ihsg/ihsg_2025-12-13_2026-03-12.json",
+    "sha256": "d7d1fa0e29b011cbdc6a92eae4235024bd9bf5506e24f9e1b54e4bb077528eac"
+   },
+   {
+    "id": "data/raw/sectors/index_daily/ihsg/ihsg_2026-03-13_2026-06-10.json",
+    "sha256": "dc5629092a56b869f2292940eaf1a9e7cc4ab830a937d7549860ad0a7e098790"
+   },
+   {
+    "id": "data/raw/sectors/index_daily/ihsg/ihsg_2026-06-11_2026-09-08.json",
+    "sha256": "4361729c40862b6b1f825282505c89c7c60bd6bd4b7d42343bbb30d95c32188f"
+   },
+   {
+    "id": "data/raw/sectors/index_daily/ihsg/ihsg_2026-09-09_2026-09-24.json",
+    "sha256": "1cdf9ed837ed685793ab223d654966305a619be74ef21a9cd6c6a209167fafbf"
+   },
+   {
+    "id": "data/raw/sectors/daily/BBCA/BBCA_2023-09-24_2023-12-22.json",
+    "sha256": "fa47b93284067f1ae6297785127ce5fddc86103ed7062cd12ceea20a8155339a"
+   },
+   {
+    "id": "data/raw/sectors/daily/BBCA/BBCA_2023-12-23_2024-03-21.json",
+    "sha256": "1412fa4d76cc74153add573705acc16db2b765aa72a2b9a50d6894f4bca72107"
+   },
+   {
+    "id": "data/raw/sectors/daily/BBCA/BBCA_2024-03-22_2024-06-19.json",
+    "sha256": "42087e334a4b3b03b713cfe9f14e282d852e0a69e0aca45767885f677bfae52f"
+   },
+   {
+    "id": "data/raw/sectors/daily/BBCA/BBCA_2024-06-20_2024-09-17.json",
+    "sha256": "442520b3de5c784c9a795e2df362ccc5b71232b7fb7c8797533df35e2fc6bb9d"
+   },
+   {
+    "id": "data/raw/sectors/daily/BBCA/BBCA_2024-09-18_2024-12-16.json",
+    "sha256": "4a2ff99eddd299cc0fabf0fe677ff0324cc96cca3a0c10757e7bccc7f11da964"
+   },
+   {
+    "id": "data/raw/sectors/daily/BBCA/BBCA_2024-12-17_2025-03-16.json",
+    "sha256": "a00f7295dd9df3090c432d9a22f115fa1831ce28bc66ad7479ed2a25b26f4746"
+   },
+   {
+    "id": "data/raw/sectors/daily/BBCA/BBCA_2025-03-17_2025-06-14.json",
+    "sha256": "6c8028f5be7d680045e3e128efddd7f9e0a7d22b2f10a9bbd2b321e777949756"
+   },
+   {
+    "id": "data/raw/sectors/daily/BBCA/BBCA_2025-06-15_2025-09-12.json",
+    "sha256": "93130ffd2bf0467202d8885438a3bd63ec6d8c1ce0060b70ae8507a1f778b8e0"
+   },
+   {
+    "id": "data/raw/sectors/daily/BBCA/BBCA_2025-09-13_2025-12-11.json",
+    "sha256": "aead1ea0fcbd5b1616417ba67924a9ff1ec42fb421be9056fde548f2bbbef8eb"
+   },
+   {
+    "id": "data/raw/sectors/daily/BBCA/BBCA_2025-12-12_2026-03-11.json",
+    "sha256": "115ae7a97c7db6f5e09724799d9f19aa6efc67885d7f0d366bb17df66264655a"
+   },
+   {
+    "id": "data/raw/sectors/daily/BBCA/BBCA_2026-03-12_2026-06-09.json",
+    "sha256": "d55bee92dfd41a53e0e0dfaf7a53410dea974afa98715fe687f2df6201c03de8"
+   },
+   {
+    "id": "data/raw/sectors/daily/BBCA/BBCA_2026-06-10_2026-09-07.json",
+    "sha256": "e49cb5eb5a0511995efe209f0cbb0dfb54de732179a09f9e1ca24cf24be2708e"
+   },
+   {
+    "id": "data/raw/sectors/daily/BBCA/BBCA_2026-09-08_2026-09-24.json",
+    "sha256": "89f5c76f67943ff6b4fbb0e3f501358b544ee395559babd33d0cb8b831d042ec"
+   }
+  ],
+  "coverage": {
+   "requested_issuers": 1,
+   "usable_issuers": 1
+  },
+  "metrics": [
+   {
+    "id": "advancers",
+    "value": 0,
+    "unit": "issuers",
+    "status": "READY",
+    "reason": null
+   },
+   {
+    "id": "decliners",
+    "value": 1,
+    "unit": "issuers",
+    "status": "READY",
+    "reason": null
+   },
+   {
+    "id": "unchanged",
+    "value": 0,
+    "unit": "issuers",
+    "status": "READY",
+    "reason": null
+   },
+   {
+    "id": "above_sma20",
+    "value": 0,
+    "unit": "issuers",
+    "status": "READY",
+    "reason": null
+   },
+   {
+    "id": "above_sma50",
+    "value": 0,
+    "unit": "issuers",
+    "status": "READY",
+    "reason": null
+   }
+  ],
+  "series": [],
+  "tables": [
+   {
+    "target_count": 1,
+    "valid_price_pairs": 1,
+    "valid_sma20": 1,
+    "valid_sma50": 1,
+    "membership": "current snapshot, not historical"
+   }
+  ],
+  "warnings": [],
+  "request_fingerprint": "798de8714b9de71558f5dd7cf8b625e47bc3d4587480b7903b24096c7345d6b9",
+  "verification_scope": null
+ }
+}

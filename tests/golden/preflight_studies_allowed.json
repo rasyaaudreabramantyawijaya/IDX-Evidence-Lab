@@ -1,0 +1,28 @@
+{
+ "request": {
+  "method": "OPTIONS",
+  "path": "/api/studies-run",
+  "headers": {
+   "Origin": "http://127.0.0.1:5500",
+   "Access-Control-Request-Method": "POST"
+  },
+  "body": null
+ },
+ "status": 204,
+ "headers": {
+  "vary": "Origin",
+  "access-control-allow-origin": "http://127.0.0.1:5500",
+  "access-control-allow-methods": "POST, OPTIONS",
+  "access-control-allow-headers": "Content-Type",
+  "access-control-max-age": "600",
+  "x-content-type-options": "nosniff",
+  "x-frame-options": "DENY",
+  "referrer-policy": "no-referrer",
+  "permissions-policy": "camera=(), microphone=(), geolocation=()",
+  "cross-origin-opener-policy": "same-origin",
+  "content-security-policy": "frame-ancestors 'none'; object-src 'none'; base-uri 'self'",
+  "content-security-policy-report-only": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'"
+ },
+ "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+ "body_bytes": 0
+}

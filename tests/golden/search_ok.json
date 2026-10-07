@@ -1,0 +1,147 @@
+{
+ "request": {
+  "method": "POST",
+  "path": "/api/search",
+  "headers": {
+   "Content-Type": "application/json"
+  },
+  "body": {
+   "query": "BBCA laba bersih"
+  }
+ },
+ "status": 200,
+ "headers": {
+  "content-type": "application/json; charset=utf-8",
+  "cache-control": "no-store",
+  "x-content-type-options": "nosniff",
+  "x-frame-options": "DENY",
+  "referrer-policy": "no-referrer",
+  "permissions-policy": "camera=(), microphone=(), geolocation=()",
+  "cross-origin-opener-policy": "same-origin",
+  "content-security-policy": "frame-ancestors 'none'; object-src 'none'; base-uri 'self'",
+  "content-security-policy-report-only": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'"
+ },
+ "body": {
+  "plan": {
+   "intent": "SEARCH_LOCAL",
+   "search_query": "BBCA laba bersih",
+   "entities": [],
+   "needs_clarification": false,
+   "provider": "local-fallback",
+   "model": null,
+   "source_class": "model_inference"
+  },
+  "navigation": {
+   "page": "studies",
+   "tickers": [
+    "BBCA"
+   ],
+   "screen_mode": "",
+   "news_topic": "",
+   "widgets": [
+    "trend_momentum",
+    "evidence_trace"
+   ],
+   "query": "BBCA laba bersih"
+  },
+  "results": [
+   {
+    "title": "BBCA · PT Bank Central Asia Tbk.",
+    "snippet": "BBCA PT Bank Central Asia Tbk. · Buka profil emiten, harga historis, berita dan dossier snapshot lokal.",
+    "source_id": "data/raw/sectors/lq45-universe.json",
+    "source_class": "sectors_source_data",
+    "ticker": "BBCA",
+    "scopes": [
+     "EMITEN"
+    ],
+    "page": "issuer"
+   },
+   {
+    "title": "BBCA 2023-09-24 2023-12-22",
+    "snippet": "Daily OHLCV BBCA • 64 observasi • 2023-09-25–2023-12-22. Contoh observasi terbaru: 2023-12-20: close 9300, volume 72938100; 2023-12-21: close 9325, volume 88116700; 2023-12-22: close 9325, volume 64449600. Field: symbol, date, close, open, high, low, volume, market_cap.",
+    "source_id": "data/raw/sectors/daily/BBCA/BBCA_2023-09-24_2023-12-22.json",
+    "source_class": "sectors_source_data",
+    "ticker": "BBCA",
+    "scopes": [
+     "EVIDENCE",
+     "EMITEN"
+    ],
+    "page": "issuer"
+   },
+   {
+    "title": "BBCA 2023-12-23 2024-03-21",
+    "snippet": "Daily OHLCV BBCA • 56 observasi • 2023-12-27–2024-03-21. Contoh observasi terbaru: 2024-03-19: close 10175, volume 55004800; 2024-03-20: close 10125, volume 66269700; 2024-03-21: close 10125, volume 90279400. Field: symbol, date, close, open, high, low, volume, market_cap.",
+    "source_id": "data/raw/sectors/daily/BBCA/BBCA_2023-12-23_2024-03-21.json",
+    "source_class": "sectors_source_data",
+    "ticker": "BBCA",
+    "scopes": [
+     "EVIDENCE",
+     "EMITEN"
+    ],
+    "page": "issuer"
+   },
+   {
+    "title": "BBCA 2024-03-22 2024-06-19",
+    "snippet": "Daily OHLCV BBCA • 50 observasi • 2024-03-22–2024-06-19. Contoh observasi terbaru: 2024-06-13: close 9200, volume 84652200; 2024-06-14: close 9200, volume 52986300; 2024-06-19: close 9050, volume 100051000. Field: symbol, date, close, open, high, low, volume, market_cap.",
+    "source_id": "data/raw/sectors/daily/BBCA/BBCA_2024-03-22_2024-06-19.json",
+    "source_class": "sectors_source_data",
+    "ticker": "BBCA",
+    "scopes": [
+     "EVIDENCE",
+     "EMITEN"
+    ],
+    "page": "issuer"
+   },
+   {
+    "title": "BBCA 2024-06-20 2024-09-17",
+    "snippet": "Daily OHLCV BBCA • 63 observasi • 2024-06-20–2024-09-17. Contoh observasi terbaru: 2024-09-12: close 10475, volume 70759100; 2024-09-13: close 10425, volume 70057100; 2024-09-17: close 10500, volume 89745000. Field: symbol, date, close, open, high, low, volume, market_cap.",
+    "source_id": "data/raw/sectors/daily/BBCA/BBCA_2024-06-20_2024-09-17.json",
+    "source_class": "sectors_source_data",
+    "ticker": "BBCA",
+    "scopes": [
+     "EVIDENCE",
+     "EMITEN"
+    ],
+    "page": "issuer"
+   },
+   {
+    "title": "BBCA 2024-09-18 2024-12-16",
+    "snippet": "Daily OHLCV BBCA • 63 observasi • 2024-09-18–2024-12-16. Contoh observasi terbaru: 2024-12-12: close 10175, volume 44780100; 2024-12-13: close 10050, volume 75126400; 2024-12-16: close 10100, volume 57746100. Field: symbol, date, close, open, high, low, volume, market_cap.",
+    "source_id": "data/raw/sectors/daily/BBCA/BBCA_2024-09-18_2024-12-16.json",
+    "source_class": "sectors_source_data",
+    "ticker": "BBCA",
+    "scopes": [
+     "EVIDENCE",
+     "EMITEN"
+    ],
+    "page": "issuer"
+   },
+   {
+    "title": "BBCA 2024-12-17 2025-03-16",
+    "snippet": "Daily OHLCV BBCA • 57 observasi • 2024-12-17–2025-03-14. Contoh observasi terbaru: 2025-03-12: close 9125, volume 87968900; 2025-03-13: close 8975, volume 83030700; 2025-03-14: close 8750, volume 111397800. Field: symbol, date, close, open, high, low, volume, market_cap.",
+    "source_id": "data/raw/sectors/daily/BBCA/BBCA_2024-12-17_2025-03-16.json",
+    "source_class": "sectors_source_data",
+    "ticker": "BBCA",
+    "scopes": [
+     "EVIDENCE",
+     "EMITEN"
+    ],
+    "page": "issuer"
+   },
+   {
+    "title": "BBCA 2025-03-17 2025-06-14",
+    "snippet": "Daily OHLCV BBCA • 50 observasi • 2025-03-17–2025-06-13. Contoh observasi terbaru: 2025-06-11: close 9050, volume 56632600; 2025-06-12: close 9125, volume 41337300; 2025-06-13: close 9025, volume 83318000. Field: symbol, date, close, open, high, low, volume, market_cap.",
+    "source_id": "data/raw/sectors/daily/BBCA/BBCA_2025-03-17_2025-06-14.json",
+    "source_class": "sectors_source_data",
+    "ticker": "BBCA",
+    "scopes": [
+     "EVIDENCE",
+     "EMITEN"
+    ],
+    "page": "issuer"
+   }
+  ],
+  "evidence_state": "FOUND",
+  "notice": "Qwen tidak tersedia (OPENROUTER_API_KEY belum tersedia di environment server lokal.); hasil berikut memakai pencarian lokal tanpa model."
+ }
+}

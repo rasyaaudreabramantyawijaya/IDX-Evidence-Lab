@@ -1,0 +1,396 @@
+{
+ "request": {
+  "method": "POST",
+  "path": "/api/studies-run",
+  "headers": {
+   "Content-Type": "application/json"
+  },
+  "body": {
+   "widget_id": "event_outcomes",
+   "targets": [
+    "BBCA"
+   ],
+   "window": "available"
+  }
+ },
+ "status": 200,
+ "headers": {
+  "content-type": "application/json; charset=utf-8",
+  "cache-control": "no-store",
+  "x-content-type-options": "nosniff",
+  "x-frame-options": "DENY",
+  "referrer-policy": "no-referrer",
+  "permissions-policy": "camera=(), microphone=(), geolocation=()",
+  "cross-origin-opener-policy": "same-origin",
+  "content-security-policy": "frame-ancestors 'none'; object-src 'none'; base-uri 'self'",
+  "content-security-policy-report-only": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'"
+ },
+ "body": {
+  "widget_id": "event_outcomes",
+  "target": {
+   "kind": "issuer",
+   "targets": [
+    "BBCA"
+   ],
+   "entities": [
+    "BBCA"
+   ]
+  },
+  "status": "PARTIAL",
+  "verification": "NOT_TESTED",
+  "formula_version": "foreign-net-buy-z20-v1-cohort-window-v1",
+  "period": {
+   "start": "2023-09-25",
+   "end": "2026-09-24"
+  },
+  "cutoff": "2026-09-24",
+  "sources": [
+   {
+    "id": "data/raw/sectors/index_daily/ihsg/ihsg_2023-09-25_2023-12-23.json",
+    "sha256": "7645a363aa12fa0a53c0606094ce72ba44b412e0bf30d01bde012e57b8579174"
+   },
+   {
+    "id": "data/raw/sectors/index_daily/ihsg/ihsg_2023-12-24_2024-03-22.json",
+    "sha256": "c000c8fb67f5617941aaa50219b2d1ae1a940614e40ee883fc0c46f9a2a9a8f9"
+   },
+   {
+    "id": "data/raw/sectors/index_daily/ihsg/ihsg_2024-03-23_2024-06-20.json",
+    "sha256": "abd4debc8e75956ca00d8d4e5278d1f30985fa633b7fda2c6ef8e251170d5c3c"
+   },
+   {
+    "id": "data/raw/sectors/index_daily/ihsg/ihsg_2024-06-21_2024-09-18.json",
+    "sha256": "e63bfe31c970abf28707a334a46236f885fece5b12329317302113cdf76ff233"
+   },
+   {
+    "id": "data/raw/sectors/index_daily/ihsg/ihsg_2024-09-19_2024-12-17.json",
+    "sha256": "779286939a49f35014006e8f6fc55ce0c729ab74c1ce445e62722840d9014053"
+   },
+   {
+    "id": "data/raw/sectors/index_daily/ihsg/ihsg_2024-12-18_2025-03-17.json",
+    "sha256": "be740d79daeb415aac37ebe2d57c5834ddffc3699b8869617151c0acdfd3ab78"
+   },
+   {
+    "id": "data/raw/sectors/index_daily/ihsg/ihsg_2025-03-18_2025-06-15.json",
+    "sha256": "d78427e0fce3f90fd8c1440b41a5e55665c1d4412206b5c2ef781cb5d9ea2f6c"
+   },
+   {
+    "id": "data/raw/sectors/index_daily/ihsg/ihsg_2025-06-16_2025-09-13.json",
+    "sha256": "22df5e26ba19f39a1f4ad0c9a0d44d0bf6720d9b54eaa8a93282e266b0497f02"
+   },
+   {
+    "id": "data/raw/sectors/index_daily/ihsg/ihsg_2025-09-14_2025-12-12.json",
+    "sha256": "52c7530cc3bf52df721e0a95bcedcf771b812d2e9c05f27c7cb0804228722d59"
+   },
+   {
+    "id": "data/raw/sectors/index_daily/ihsg/ihsg_2025-12-13_2026-03-12.json",
+    "sha256": "d7d1fa0e29b011cbdc6a92eae4235024bd9bf5506e24f9e1b54e4bb077528eac"
+   },
+   {
+    "id": "data/raw/sectors/index_daily/ihsg/ihsg_2026-03-13_2026-06-10.json",
+    "sha256": "dc5629092a56b869f2292940eaf1a9e7cc4ab830a937d7549860ad0a7e098790"
+   },
+   {
+    "id": "data/raw/sectors/index_daily/ihsg/ihsg_2026-06-11_2026-09-08.json",
+    "sha256": "4361729c40862b6b1f825282505c89c7c60bd6bd4b7d42343bbb30d95c32188f"
+   },
+   {
+    "id": "data/raw/sectors/index_daily/ihsg/ihsg_2026-09-09_2026-09-24.json",
+    "sha256": "1cdf9ed837ed685793ab223d654966305a619be74ef21a9cd6c6a209167fafbf"
+   },
+   {
+    "id": "data/raw/sectors/daily/BBCA/BBCA_2023-09-24_2023-12-22.json",
+    "sha256": "fa47b93284067f1ae6297785127ce5fddc86103ed7062cd12ceea20a8155339a"
+   },
+   {
+    "id": "data/raw/sectors/daily/BBCA/BBCA_2023-12-23_2024-03-21.json",
+    "sha256": "1412fa4d76cc74153add573705acc16db2b765aa72a2b9a50d6894f4bca72107"
+   },
+   {
+    "id": "data/raw/sectors/daily/BBCA/BBCA_2024-03-22_2024-06-19.json",
+    "sha256": "42087e334a4b3b03b713cfe9f14e282d852e0a69e0aca45767885f677bfae52f"
+   },
+   {
+    "id": "data/raw/sectors/daily/BBCA/BBCA_2024-06-20_2024-09-17.json",
+    "sha256": "442520b3de5c784c9a795e2df362ccc5b71232b7fb7c8797533df35e2fc6bb9d"
+   },
+   {
+    "id": "data/raw/sectors/daily/BBCA/BBCA_2024-09-18_2024-12-16.json",
+    "sha256": "4a2ff99eddd299cc0fabf0fe677ff0324cc96cca3a0c10757e7bccc7f11da964"
+   },
+   {
+    "id": "data/raw/sectors/daily/BBCA/BBCA_2024-12-17_2025-03-16.json",
+    "sha256": "a00f7295dd9df3090c432d9a22f115fa1831ce28bc66ad7479ed2a25b26f4746"
+   },
+   {
+    "id": "data/raw/sectors/daily/BBCA/BBCA_2025-03-17_2025-06-14.json",
+    "sha256": "6c8028f5be7d680045e3e128efddd7f9e0a7d22b2f10a9bbd2b321e777949756"
+   },
+   {
+    "id": "data/raw/sectors/daily/BBCA/BBCA_2025-06-15_2025-09-12.json",
+    "sha256": "93130ffd2bf0467202d8885438a3bd63ec6d8c1ce0060b70ae8507a1f778b8e0"
+   },
+   {
+    "id": "data/raw/sectors/daily/BBCA/BBCA_2025-09-13_2025-12-11.json",
+    "sha256": "aead1ea0fcbd5b1616417ba67924a9ff1ec42fb421be9056fde548f2bbbef8eb"
+   },
+   {
+    "id": "data/raw/sectors/daily/BBCA/BBCA_2025-12-12_2026-03-11.json",
+    "sha256": "115ae7a97c7db6f5e09724799d9f19aa6efc67885d7f0d366bb17df66264655a"
+   },
+   {
+    "id": "data/raw/sectors/daily/BBCA/BBCA_2026-03-12_2026-06-09.json",
+    "sha256": "d55bee92dfd41a53e0e0dfaf7a53410dea974afa98715fe687f2df6201c03de8"
+   },
+   {
+    "id": "data/raw/sectors/daily/BBCA/BBCA_2026-06-10_2026-09-07.json",
+    "sha256": "e49cb5eb5a0511995efe209f0cbb0dfb54de732179a09f9e1ca24cf24be2708e"
+   },
+   {
+    "id": "data/raw/sectors/daily/BBCA/BBCA_2026-09-08_2026-09-24.json",
+    "sha256": "89f5c76f67943ff6b4fbb0e3f501358b544ee395559babd33d0cb8b831d042ec"
+   },
+   {
+    "id": "data/raw/sectors/foreign_flow/BBCA/BBCA_2023-09-25_2023-12-23.json",
+    "sha256": "c4c4772251644a0b17b60d2367376c701dfe4df986252c6ec08178861d5fb8a6"
+   },
+   {
+    "id": "data/raw/sectors/foreign_flow/BBCA/BBCA_2023-12-24_2024-03-22.json",
+    "sha256": "4bc9dc5a95ecd0b8d37a54a03f94eb4132395c54d8a99e1b038c8f55a06f020e"
+   },
+   {
+    "id": "data/raw/sectors/foreign_flow/BBCA/BBCA_2024-03-23_2024-06-20.json",
+    "sha256": "9a367fc53f403b27aa4dcc2ea80f06c65c8bb0a24e308e00325ad6dfc2adea75"
+   },
+   {
+    "id": "data/raw/sectors/foreign_flow/BBCA/BBCA_2024-06-21_2024-09-18.json",
+    "sha256": "165584f5dc9a9671c7258cbe87c382262ac0c06aeb4df5db16bd81bebe9bba38"
+   },
+   {
+    "id": "data/raw/sectors/foreign_flow/BBCA/BBCA_2024-09-19_2024-12-17.json",
+    "sha256": "6744426a961948f75ada20a8fdbda0034f6a52459c005c0d25e4c26ba2c7d4de"
+   },
+   {
+    "id": "data/raw/sectors/foreign_flow/BBCA/BBCA_2024-12-18_2025-03-17.json",
+    "sha256": "5fe40b0a27339576ba21894030f928c48445385d25dfd304b3c5240e004a5a02"
+   },
+   {
+    "id": "data/raw/sectors/foreign_flow/BBCA/BBCA_2025-03-18_2025-06-15.json",
+    "sha256": "5e481f7d5da5eb85b4dc683e5680a5465e2d4a9276d78d600985787c2061d96c"
+   },
+   {
+    "id": "data/raw/sectors/foreign_flow/BBCA/BBCA_2025-06-16_2025-09-13.json",
+    "sha256": "8ef9f2818e7f38a5c1611000d5c7bc7186293d5e08961ce508a130f860adb914"
+   },
+   {
+    "id": "data/raw/sectors/foreign_flow/BBCA/BBCA_2025-09-14_2025-12-12.json",
+    "sha256": "908514255b4246ab9c21ef3771d4d8de895ab214b638bc7436ca0330e626363c"
+   },
+   {
+    "id": "data/raw/sectors/foreign_flow/BBCA/BBCA_2025-12-13_2026-03-12.json",
+    "sha256": "53fe3b3c0fc89cde403d43b4c8e28a1b4e317a12bc4b4d765e48cd75a7601ca8"
+   },
+   {
+    "id": "data/raw/sectors/foreign_flow/BBCA/BBCA_2026-03-13_2026-06-10.json",
+    "sha256": "dc455aa861fc3be32e274b99b3f7e33eb7493fc9365974aa81d0f341e12c847f"
+   },
+   {
+    "id": "data/raw/sectors/foreign_flow/BBCA/BBCA_2026-06-11_2026-09-08.json",
+    "sha256": "174df1d57df3ea1492cda5ad78bab8f0af41e5aefddc396e88343dbc19bb5f2b"
+   },
+   {
+    "id": "data/raw/sectors/foreign_flow/BBCA/BBCA_2026-09-09_2026-09-24.json",
+    "sha256": "6835b64be4efdf19a8b3f9d7eea861f35ab06bc5c93ff879f364a2813aa04a6a"
+   }
+  ],
+  "coverage": {
+   "requested_issuers": 1,
+   "usable_issuers": 1
+  },
+  "metrics": [
+   {
+    "id": "BBCA.outcome_5d",
+    "value": -0.003662215625957791,
+    "unit": "fraction",
+    "status": "READY",
+    "reason": null
+   },
+   {
+    "id": "BBCA.outcome_20d",
+    "value": -0.011650621326299525,
+    "unit": "fraction",
+    "status": "READY",
+    "reason": null
+   },
+   {
+    "id": "BBCA.baseline_delta_20d",
+    "value": -0.019368612895346325,
+    "unit": "fraction",
+    "status": "READY",
+    "reason": null
+   },
+   {
+    "id": "BBCA.hit_rate",
+    "value": 0.6,
+    "unit": "fraction",
+    "status": "READY",
+    "reason": null
+   },
+   {
+    "id": "BBCA.mae",
+    "value": null,
+    "unit": "fraction",
+    "status": "INSUFFICIENT_DATA",
+    "reason": "EXCURSION_FORMULA_NOT_REFERENCE_VERIFIED"
+   },
+   {
+    "id": "BBCA.mfe",
+    "value": null,
+    "unit": "fraction",
+    "status": "INSUFFICIENT_DATA",
+    "reason": "EXCURSION_FORMULA_NOT_REFERENCE_VERIFIED"
+   }
+  ],
+  "series": [],
+  "tables": [
+   {
+    "ticker": "BBCA",
+    "detected": 6,
+    "mature_5d": 6,
+    "mature_20d": 5,
+    "immature_5d": 0,
+    "immature_20d": 1,
+    "overlap": 3,
+    "invalid_5d": 0,
+    "invalid_20d": 0
+   },
+   {
+    "ticker": "BBCA",
+    "event_date": "2025-03-26",
+    "net": 764544902500.0,
+    "z20": 2.219115269037076,
+    "entry_date": "2025-03-27",
+    "outcomes": {
+     "5": {
+      "exit_date": "2025-04-14",
+      "stock_return": -0.0117647058823529,
+      "market_return": -0.021825878334167825,
+      "excess_return": 0.010061172451814926
+     },
+     "20": {
+      "exit_date": "2025-05-14",
+      "stock_return": 0.09117647058823519,
+      "market_return": 0.07207608491971573,
+      "excess_return": 0.01910038566851946
+     }
+    }
+   },
+   {
+    "ticker": "BBCA",
+    "event_date": "2025-08-11",
+    "net": 425114237500.0,
+    "z20": 2.3964130532087493,
+    "entry_date": "2025-08-12",
+    "outcomes": {
+     "5": {
+      "exit_date": "2025-08-20",
+      "stock_return": -0.03672316384180796,
+      "market_return": 0.019524622354556875,
+      "excess_return": -0.056247786196364835
+     },
+     "20": {
+      "exit_date": "2025-09-11",
+      "stock_return": -0.11299435028248583,
+      "market_return": -0.005621366325705535,
+      "excess_return": -0.1073729839567803
+     }
+    }
+   },
+   {
+    "ticker": "BBCA",
+    "event_date": "2025-10-21",
+    "net": 1301548490000.0,
+    "z20": 5.608457320182816,
+    "entry_date": "2025-10-22",
+    "outcomes": {
+     "5": {
+      "exit_date": "2025-10-29",
+      "stock_return": 0.04878048780487809,
+      "market_return": 0.0016768980220061014,
+      "excess_return": 0.04710358978287199
+     },
+     "20": {
+      "exit_date": "2025-11-19",
+      "stock_return": 0.03353658536585358,
+      "market_return": 0.03115882840626716,
+      "excess_return": 0.002377756959586419
+     }
+    }
+   },
+   {
+    "ticker": "BBCA",
+    "event_date": "2026-01-06",
+    "net": 269072435000.0,
+    "z20": 2.2144230272828764,
+    "entry_date": "2026-01-07",
+    "outcomes": {
+     "5": {
+      "exit_date": "2026-01-14",
+      "stock_return": -0.018404907975460127,
+      "market_return": 0.009812502508437015,
+      "excess_return": -0.028217410483897143
+     },
+     "20": {
+      "exit_date": "2026-02-05",
+      "stock_return": -0.042944785276073594,
+      "market_return": -0.09401359201137016,
+      "excess_return": 0.05106880673529657
+     }
+    }
+   },
+   {
+    "ticker": "BBCA",
+    "event_date": "2026-07-17",
+    "net": 698291762500.0,
+    "z20": 2.450576577044703,
+    "entry_date": "2026-07-20",
+    "outcomes": {
+     "5": {
+      "exit_date": "2026-07-27",
+      "stock_return": -0.027027027027026973,
+      "market_return": -0.007381037199644336,
+      "excess_return": -0.019645989827382637
+     },
+     "20": {
+      "exit_date": "2026-08-18",
+      "stock_return": -0.027027027027026973,
+      "market_return": 0.03499000285632681,
+      "excess_return": -0.06201702988335378
+     }
+    }
+   },
+   {
+    "ticker": "BBCA",
+    "event_date": "2026-08-28",
+    "net": 322555402500.0,
+    "z20": 2.09321449314266,
+    "entry_date": "2026-08-31",
+    "outcomes": {
+     "5": {
+      "exit_date": "2026-09-07",
+      "stock_return": 0.02316602316602312,
+      "market_return": 0.014434957868220577,
+      "excess_return": 0.008731065297802543
+     }
+    }
+   }
+  ],
+  "warnings": [
+   {
+    "ticker": "BBCA",
+    "reason": "DESCRIPTIVE_EVENT_SAMPLE_NOT_FORECAST"
+   }
+  ],
+  "request_fingerprint": "1e5432056ca28c77e2b639eea45f2916a26973fe3a40e6c0fc1b91e4617dc4f6",
+  "verification_scope": null
+ }
+}

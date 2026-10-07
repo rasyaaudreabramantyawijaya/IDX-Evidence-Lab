@@ -1,0 +1,37 @@
+{
+ "request": {
+  "method": "POST",
+  "path": "/api/research-attachments",
+  "headers": {
+   "Content-Type": "application/json"
+  },
+  "body": {
+   "session_id": "{session_id}",
+   "file": {
+    "name": "catatan.txt",
+    "mime": "text/plain",
+    "data": "Q2F0YXRhbiBwZW5nZ3VuYTogQkJDQQo="
+   }
+  }
+ },
+ "status": 201,
+ "headers": {
+  "content-type": "application/json; charset=utf-8",
+  "cache-control": "no-store",
+  "x-content-type-options": "nosniff",
+  "x-frame-options": "DENY",
+  "referrer-policy": "no-referrer",
+  "permissions-policy": "camera=(), microphone=(), geolocation=()",
+  "cross-origin-opener-policy": "same-origin",
+  "content-security-policy": "frame-ancestors 'none'; object-src 'none'; base-uri 'self'",
+  "content-security-policy-report-only": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'"
+ },
+ "body": {
+  "id": "U:4e0d86d05dd9b296feca88d4516c6b2fc284fc68bf39d1bcb58ee7108e3b1cf3",
+  "name": "catatan.txt",
+  "sha256": "4e0d86d05dd9b296feca88d4516c6b2fc284fc68bf39d1bcb58ee7108e3b1cf3",
+  "bytes": 23,
+  "status": "READABLE",
+  "notice": "Teks UTF-8 lokal; maksimum 24.000 karakter. Klaim pengguna belum diverifikasi."
+ }
+}

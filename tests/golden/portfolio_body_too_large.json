@@ -1,0 +1,26 @@
+{
+ "request": {
+  "method": "POST",
+  "path": "/api/portfolio-analysis",
+  "headers": {
+   "Content-Type": "application/json"
+  },
+  "body": "<16385 x bytes>"
+ },
+ "status": 413,
+ "headers": {
+  "content-type": "application/json; charset=utf-8",
+  "cache-control": "no-store",
+  "x-content-type-options": "nosniff",
+  "x-frame-options": "DENY",
+  "referrer-policy": "no-referrer",
+  "permissions-policy": "camera=(), microphone=(), geolocation=()",
+  "cross-origin-opener-policy": "same-origin",
+  "content-security-policy": "frame-ancestors 'none'; object-src 'none'; base-uri 'self'",
+  "content-security-policy-report-only": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'"
+ },
+ "body": {
+  "status": "INVALID_REQUEST",
+  "error": "Portfolio request exceeds 16 KB or is empty"
+ }
+}
