@@ -132,7 +132,7 @@ def test_portfolio_factor_exposures_have_zero_centered_visual_scale_and_coverage
 
 def test_portfolio_lab_has_weighted_subsector_circle_composition():
     source = HTML.read_text(encoding="utf-8")
-    api_source = Path(web_app.__file__).read_text(encoding="utf-8")
+    api_source = (Path(web_app.__file__).parent / "portfolio" / "portfolio_service.py").read_text(encoding="utf-8")
     assert '"sub_sectors": inputs["sub_sectors"]' in api_source
     assert "function portfolioSubsectorBubbles" in source
     assert "portfolioSubsectorBubbles(portfolioState.result.allocation,portfolioState.result.sub_sectors" in source
