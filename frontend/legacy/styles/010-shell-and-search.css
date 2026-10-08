@@ -28,3 +28,5 @@
     @media(max-width:620px){#idxel-journey .issuer-validation-grid{grid-template-columns:1fr}.history-control{min-width:66px;padding:7px 8px}.issuer-chart-toolbar .sub{width:100%;margin-left:0}.issuer-price-canvas{height:220px}}
     #idxel-journey .dashboard-layout{display:grid;gap:12px;min-width:0}
     #idxel-journey .dashboard-alerts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;align-items:stretch}
+    /* Charts stretch with their card; keep line weight constant in screen pixels instead of scaling with the viewBox. */
+    #idxel-journey svg :is(polyline,line,path){vector-effect:non-scaling-stroke}

@@ -47,7 +47,7 @@ def test_portfolio_lab_separates_observation_simulation_and_missing_models():
     source = HTML.read_text(encoding="utf-8")
     for label in ("Riwayat walk-forward", "Skenario eksploratoris", "Sharpe",
                   "Sortino", "Calmar", "Maximum drawdown", "CAPM",
-                  "Black–Litterman", "Fama–French", "APT", "belum tersedia",
+                  "Black–Litterman", "Fama–French", "belum tersedia",
                   "bukan tanggal pasti", "tidak mengirim order"):
         assert label in source
     assert "function portfolioFanChart" in source

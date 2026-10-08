@@ -96,7 +96,7 @@
         if(a==='portfolio-run'){if(!portfolioState.selected.length){portfolioState.error='Pilih setidaknya satu emiten LQ45.';render();return}runPortfolioAnalysis({...portfolioState});return}
         if(a==='factor-zoo-retry'){factorZooState.attempted=false;factorZooState.error=null;loadFactorZooData();render();return}
         if(a==='history-back'){travelViewHistory(-1);return}if(a==='history-forward'){travelViewHistory(1);return}
-        if(a==='select-news'){selectNewsStory(b.dataset.newsId);return}if(a==='toggle-news-list'){newsExpanded=!newsExpanded;render();return}
+        if(a==='select-news'){selectNewsStory(b.dataset.newsId);return}if(a==='open-news'){openNewsFromDashboard(b.dataset.newsTitle);return}if(a==='toggle-news-list'){newsExpanded=!newsExpanded;render();return}
         if(a==='screener-reset'){screenerFilters={sector:'',regime:'',query:''};render();return}
         if(a==='news-zoom-in'||a==='news-zoom-out'){graphView.zoom=Math.max(.35,Math.min(2.5,graphView.zoom+(a==='news-zoom-in'?.15:-.15)));drawNewsGraph(root.querySelector('.news-graph canvas'),newsGraph);return}
         if(a==='news-graph-reset'){graphView={rotateX:-.25,rotateY:.45,zoom:1,graphOffsetX:0,graphOffsetY:0,panMode:false};render();return}
