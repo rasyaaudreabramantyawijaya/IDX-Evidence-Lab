@@ -49,6 +49,7 @@ PUBLIC_PROTOTYPE_ASSETS = {
     "/docs/prototypes/news-universe.json": (PROTOTYPE.parent / "news-universe.json", "application/json; charset=utf-8"),
     "/docs/prototypes/ihsg-evt-tail-surface.fig": (PROTOTYPE.parent / "ihsg-evt-tail-surface.fig", "application/octet-stream"),
 }
+ISSUER_DOSSIER_ROUTE = re.compile(r"/docs/prototypes/issuer-dossiers/([A-Z0-9]{2,8})\.json")
 MAX_BODY_BYTES = 4096
 MAX_PORTFOLIO_BODY_BYTES = 16_384
 
@@ -245,8 +246,13 @@ class SearchHandler(BaseHTTPRequestHandler):
         self._send_json(200, build_source_report(ROOT))
 
     def _serve_prototype(self, route: str) -> None:
+        dossier = ISSUER_DOSSIER_ROUTE.fullmatch(route)
         if route in PUBLIC_PROTOTYPE_ASSETS:
             asset_path, content_type = PUBLIC_PROTOTYPE_ASSETS[route]
+        elif dossier:
+            # Pre-built per-issuer snapshots; the pattern excludes dots and slashes, so no path traversal.
+            asset_path = PROTOTYPE.parent / "issuer-dossiers" / f"{dossier.group(1)}.json"
+            content_type = "application/json; charset=utf-8"
         elif route in {"/", "/index.html"}:
             asset_path, content_type = PROTOTYPE, "text/html; charset=utf-8"
         else:

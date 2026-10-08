@@ -35,11 +35,11 @@ placeholder (`GSM §?`), and **Status**: `Exists` (behavior is in the app today,
 > exist, verify the acceptance criteria" and fix the wording of any story that turns out wrong.
 
 ## Findings from reading the live app (inputs to the stories and the GSM)
-1. **Opening `http://127.0.0.1:5500/` degrades the Dashboard and Market overview.** The page loads
-   `./market-overview-data.json` and `./ihsg-evt-tail-surface-data.json` relative to its own URL. At `/` those become
-   `/market-overview-data.json` (404), so panels show "DATA REQUIRED" (2 on Dashboard, 4 on Market). Opening
-   `/docs/prototypes/idx-evidence-lab-user-journey.html` shows none. The README, Docker and compose all point people to `/`.
-   See MKT-01 and CC-02. This is a bug, not intended behavior.
+1. **(Fixed) Opening `http://127.0.0.1:5500/` degraded the Dashboard, Market overview, Screener and Watchlist, and issuer
+   dossiers never opened.** The page fetched `./market-overview-data.json` and similar files relative to its own URL, which
+   404ed at `/`. Separately, the server did not serve `docs/prototypes/issuer-dossiers/<TICKER>.json` at all, so every
+   dossier showed "HTTP 404" from any URL. Both are fixed: absolute paths in the page, and a safe dossier route
+   (`[A-Z0-9]{2,8}.json` only). `frontend/e2e/legacy/entry-urls.spec.ts` guards both. See CC-02.
 2. **Settings shows a fake account** ("Rasya A • sesi lokal simulasi", a "Keluar" button and a logged-out screen) while the
    same screen says there is no authentication. See EVD-04.
 3. **Mixed language.** Navigation groups and controls are English ("Workspace", "Research", "Market", "Evidence", "Back",

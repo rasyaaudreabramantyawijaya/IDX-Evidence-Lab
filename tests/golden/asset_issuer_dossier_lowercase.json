@@ -1,14 +1,13 @@
 {
  "request": {
   "method": "GET",
-  "path": "/docs/prototypes/app.js",
+  "path": "/docs/prototypes/issuer-dossiers/bbca.json",
   "headers": {},
   "body": null
  },
- "status": 200,
+ "status": 404,
  "headers": {
-  "content-type": "text/javascript; charset=utf-8",
-  "cache-control": "no-store",
+  "content-type": "text/html;charset=utf-8",
   "x-content-type-options": "nosniff",
   "x-frame-options": "DENY",
   "referrer-policy": "no-referrer",
@@ -16,6 +15,5 @@
   "cross-origin-opener-policy": "same-origin",
   "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self'; style-src-attr 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; object-src 'none'; base-uri 'self'"
  },
- "body_sha256": "75b5a0234c805fd106e0468eb589947a4412e4a2f62fac6b648f57718570a060",
- "body_bytes": 365792
+ "body_note": "stdlib error page; text differs between Python versions, not compared"
 }

@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 class MarketOverviewPrototypeTests(unittest.TestCase):
     def test_live_server_has_static_market_data_fallback(self):
         source = LEGACY_PAGE.read_text(encoding="utf-8")
-        self.assertIn("fetch('./market-overview-data.json'", source)
+        self.assertIn("fetch('/docs/prototypes/market-overview-data.json'", source)
         self.assertIn("function marketRsiPanel()", source)
         self.assertIn("data-action=\"market-rsi-period\"", source)
         self.assertIn("function wilderRsi(closes,period)", source)

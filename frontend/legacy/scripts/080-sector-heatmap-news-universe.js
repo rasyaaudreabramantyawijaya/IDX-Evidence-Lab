@@ -92,7 +92,7 @@
           newsData=await response.json();
         }catch(apiError){
           try{
-            const response=await fetch('./news-universe.json',{cache:'no-store'});
+            const response=await fetch('/docs/prototypes/news-universe.json',{cache:'no-store'});
             if(!response.ok)throw new Error('static export HTTP '+response.status);
             newsData=await response.json();
             newsData.runtime_source='verified static snapshot';

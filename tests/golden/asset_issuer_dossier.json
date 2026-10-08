@@ -1,13 +1,13 @@
 {
  "request": {
   "method": "GET",
-  "path": "/docs/prototypes/app.js",
+  "path": "/docs/prototypes/issuer-dossiers/BBCA.json",
   "headers": {},
   "body": null
  },
  "status": 200,
  "headers": {
-  "content-type": "text/javascript; charset=utf-8",
+  "content-type": "application/json; charset=utf-8",
   "cache-control": "no-store",
   "x-content-type-options": "nosniff",
   "x-frame-options": "DENY",
@@ -16,6 +16,6 @@
   "cross-origin-opener-policy": "same-origin",
   "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self'; style-src-attr 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; object-src 'none'; base-uri 'self'"
  },
- "body_sha256": "75b5a0234c805fd106e0468eb589947a4412e4a2f62fac6b648f57718570a060",
- "body_bytes": 365792
+ "body_sha256": "3caa443ab83a1d55a5bf04a48660e5be22b1a556bece32c64b2454a5270658ec",
+ "body_bytes": 140424
 }
