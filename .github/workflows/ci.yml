@@ -16,10 +16,10 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           lfs: false
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
       - run: python -m pip install ruff
@@ -32,8 +32,8 @@ jobs:
       matrix:
         python-version: ["3.10", "3.12", "3.13"]
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: ${{ matrix.python-version }}
           cache: pip
@@ -47,7 +47,7 @@ jobs:
   hygiene:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Fail if forbidden files are tracked
         run: |
           bad=$(git ls-files | grep -Ei '(^|/)\.env|\.(pem|key|pdf|docx|png|jpe?g|webp|gif|heic|tiff|svg|zip)$|^data/usage-log' || true)
@@ -60,7 +60,7 @@ jobs:
   docker:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Build image
         run: docker build -t idxel:ci .
       - name: Run and smoke-test
@@ -79,7 +79,7 @@ jobs:
         if: failure()
         run: docker logs idxel
       # Report-only for now: surfaces image CVEs without blocking merges.
-      - uses: aquasecurity/trivy-action@0.28.0
+      - uses: aquasecurity/trivy-action@v0.36.0
         with:
           image-ref: idxel:ci
           severity: HIGH,CRITICAL
