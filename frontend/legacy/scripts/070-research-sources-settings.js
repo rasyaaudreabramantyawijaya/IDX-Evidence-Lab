@@ -30,7 +30,7 @@
           // static study rather than requiring a disruptive server restart.
           if(!sourceReport.screener_analysis){
             try{
-              const snapshot=await fetch('./market-overview-data.json',{cache:'no-store'});
+              const snapshot=await fetch('/docs/prototypes/market-overview-data.json',{cache:'no-store'});
               if(snapshot.ok){const bundle=await snapshot.json();if(bundle.screener_analysis?.as_of===bundle.ihsg?.coverage_end)sourceReport.screener_analysis=bundle.screener_analysis}
             }catch(_snapshotError){/* Keep the successfully loaded source report. */}
           }

@@ -1,33 +1,24 @@
 {
   "desktop/dashboard": {
-    "dom_sha256": "5e9b9fd54102bbda1426236d3d0a03e3050f4a68ae812a1ba5b8e08f3a3031d1",
-    "text_sha256": "042d580b33fd6a0f7ef1ce775d8f3e37713a80ff50b8a7f149b7ec4cfaea9220",
-    "styles_sha256": "cac117318a5de397eadc16b1e775afc99a6cbe69a779b437d6db4dbcdd774e63",
-    "nodes": 899,
-    "failed_requests": [
-      "404 /ihsg-evt-tail-surface-data.json",
-      "404 /market-overview-data.json"
-    ]
+    "dom_sha256": "99d6bb7e16a2f2984aa9df7fd1db8886210beba69ff18145599638e293ad51ff",
+    "text_sha256": "2fff9a2184e6048388d2e6fd14885754cac5fbf9e19ac8a64e1acac0a80caa72",
+    "styles_sha256": "4a3d76a8c54cfa4cc2a9616b77322edd63b6b8b40c29e7aaa7bd99cd26610786",
+    "nodes": 1675,
+    "failed_requests": []
   },
   "desktop/market": {
-    "dom_sha256": "d40b2f5f58596488217029c733e3df8db10bff91ef0e393412aa3f23d1296c6a",
-    "text_sha256": "7679ffab9089131efffcb17459b3c65d4e992ccdcfe35713a0b5ef56ffb01823",
-    "styles_sha256": "2621fe56f646af2ba712619bf54cff18a8ebd44b282d999ddf28b1fa57ea9c66",
-    "nodes": 885,
-    "failed_requests": [
-      "404 /ihsg-evt-tail-surface-data.json",
-      "404 /market-overview-data.json"
-    ]
+    "dom_sha256": "0a05ad233b354b745a7df4706394487bad70a6afb44e8738ac9b7ddffa03e3a8",
+    "text_sha256": "0dd20a3c249135f0107e66978dd3885430c234ec06c200e55e1f6626e4cb904b",
+    "styles_sha256": "8918fb750a88b2b32b632dceb075d3ae1c24f70b59bab76dd4b59e66454c7cd3",
+    "nodes": 2894,
+    "failed_requests": []
   },
   "desktop/news-universe": {
     "dom_sha256": "8be6909a30dfc035c6fb5f7d6f639e5ffc50caae0f548a9ed7dcc85e2c5efb7a",
     "text_sha256": "95ca45373370ceac1ce75b87f0e17999a58c9d05d2369a993c2a90f0407463d6",
     "styles_sha256": "f129f3517fb37caaca0084b8e589d6e9877a10dea342c112a3cf3393ed2d157e",
     "nodes": 620,
-    "failed_requests": [
-      "404 /ihsg-evt-tail-surface-data.json",
-      "404 /market-overview-data.json"
-    ]
+    "failed_requests": []
   },
   "desktop/portfolio-lab": {
     "dom_sha256": "5f25c5b5ed7a90c95a37a8207aa5ea63fa0b1ef093fd77082d78dc8ba9f55c91",
@@ -35,8 +26,6 @@
     "styles_sha256": "c4232de7486d3c70d23e5488797a64ea5fb048ad0db531b7f8338f7d587dc228",
     "nodes": 432,
     "failed_requests": [
-      "404 /ihsg-evt-tail-surface-data.json",
-      "404 /market-overview-data.json",
       "409 /api/portfolio-factor-zoo-view"
     ]
   },
@@ -45,90 +34,63 @@
     "text_sha256": "aa16d42d541d520b111d61febf5a1b8e8163fe6dcf6f5e20e70bc4c34355af1b",
     "styles_sha256": "507fdb0a89432f8d1a63bdbd6fe9c4f7fd8ffca318c082cbf4f6d7dcf26ea518",
     "nodes": 170,
-    "failed_requests": [
-      "404 /ihsg-evt-tail-surface-data.json",
-      "404 /market-overview-data.json"
-    ]
+    "failed_requests": []
   },
   "desktop/screener": {
-    "dom_sha256": "5df76776c7f9af86938700277cceae5f0c91082cadd672ce0a88186a10452625",
-    "text_sha256": "b9ee3310b6f541687ed9a7e7bc7ecd1e45b722ae6d252c1278b1f8f5c1d775c9",
-    "styles_sha256": "85d2f8fcd8434c91b505da5b8252eb7705e6485b4153fdeefa85a26102faf4e6",
-    "nodes": 823,
-    "failed_requests": [
-      "404 /ihsg-evt-tail-surface-data.json",
-      "404 /market-overview-data.json"
-    ]
+    "dom_sha256": "cf6896558e027124de5b663b8929a2914eb0165f49f88fde3b680370cd45f448",
+    "text_sha256": "a5448c3a0003233ef3f32ece1649ab5f67b75f12460eecb978f7375ad7fa570b",
+    "styles_sha256": "a8bdbe863e86af9870ba6e2641031d3beee9be0ef770e41398a1c5556c60f516",
+    "nodes": 937,
+    "failed_requests": []
   },
   "desktop/settings": {
     "dom_sha256": "e8f25f515c7ff4a1383f82801ebe493e28f32320f42378fd0d165f69446af07b",
     "text_sha256": "9e643837de16272e77ac11da415bdcb785f550ad7930332880b62aaecfedd100",
     "styles_sha256": "e87c9e480754b520f91faad709164dc7236697f51e9223188efe52223e4f44b0",
     "nodes": 103,
-    "failed_requests": [
-      "404 /ihsg-evt-tail-surface-data.json",
-      "404 /market-overview-data.json"
-    ]
+    "failed_requests": []
   },
   "desktop/sources": {
     "dom_sha256": "38066a709541431d366475ca39ccffc3eff858464df1c1767bd2f0482cb57eea",
     "text_sha256": "a5a88764c74a3296bf9f88bbadfd1efce70768f9c645390f19529cb10d45e71a",
     "styles_sha256": "0ce53d343f0dae1ae2aa73e0bafa41d2f01bffc7670f8dee565510c7fa6105b4",
     "nodes": 1824,
-    "failed_requests": [
-      "404 /ihsg-evt-tail-surface-data.json",
-      "404 /market-overview-data.json"
-    ]
+    "failed_requests": []
   },
   "desktop/studies": {
     "dom_sha256": "dd6f518d31d5a6d4278f2a9da05caf5f3b6c2b0f4111ecd70ed8e80e0c1cd0a8",
     "text_sha256": "9307a762dc69228980fa265356643fb3ca0f42656fb40458aaaa6914a93f36f5",
     "styles_sha256": "8b8eb94cef75b98b0158a95f66fe0e9098987b024f0bb0461854d4f1d464e9c4",
     "nodes": 242,
-    "failed_requests": [
-      "404 /ihsg-evt-tail-surface-data.json",
-      "404 /market-overview-data.json"
-    ]
+    "failed_requests": []
   },
   "desktop/watchlist": {
-    "dom_sha256": "0a80af2777597d1e487a57d872d56e6072e53d3a7335ac60717971c55a6430da",
-    "text_sha256": "c003cf63a29bc4c1e8ed50eccbacaef99d546dad7b9f4521b9d7a251943936fd",
+    "dom_sha256": "a5f94e8ecba629ffe413246b0b385e8679e3cb90a7d6da21970923e48467670b",
+    "text_sha256": "3403381c9bdb3ab3f80567edc1ad93ab56b4099e1d256353469fabe831c51545",
     "styles_sha256": "f4024f4a997077d7c3055939a4216044b76780efafb0699edfeb8cda4fd86683",
     "nodes": 89,
-    "failed_requests": [
-      "404 /ihsg-evt-tail-surface-data.json",
-      "404 /market-overview-data.json"
-    ]
+    "failed_requests": []
   },
   "mobile/dashboard": {
-    "dom_sha256": "5e9b9fd54102bbda1426236d3d0a03e3050f4a68ae812a1ba5b8e08f3a3031d1",
-    "text_sha256": "f8b3ef106e73181a7f45c98fefe7aeea40bba448bd23c84c3db060faa14bb98d",
-    "styles_sha256": "11813a11d48358d6d5492367f088796032bdb48a2bda3af31da144d242f4fcce",
-    "nodes": 899,
-    "failed_requests": [
-      "404 /ihsg-evt-tail-surface-data.json",
-      "404 /market-overview-data.json"
-    ]
+    "dom_sha256": "99d6bb7e16a2f2984aa9df7fd1db8886210beba69ff18145599638e293ad51ff",
+    "text_sha256": "d813bc5abc12dff5b96162e75ea16edaab3bd9afc2d392ef9523725625d998e2",
+    "styles_sha256": "1035908787791864729ad3395932338e74838406bc3af419d1154997543a667b",
+    "nodes": 1675,
+    "failed_requests": []
   },
   "mobile/market": {
-    "dom_sha256": "d40b2f5f58596488217029c733e3df8db10bff91ef0e393412aa3f23d1296c6a",
-    "text_sha256": "0f7e03f68a750ad46b75b64f067e7bcfe9b53555eda3f13e0684a0d44d22ed36",
-    "styles_sha256": "fba7aa00e6fbe877e0a62075acc9d27dd231f5f8fc58310b220024549f1aa45b",
-    "nodes": 885,
-    "failed_requests": [
-      "404 /ihsg-evt-tail-surface-data.json",
-      "404 /market-overview-data.json"
-    ]
+    "dom_sha256": "7881edb5b6782639cd3808679855e60bd804d4bd02a9896f15a2fa1772bd3011",
+    "text_sha256": "6ff829e0ce686de1252320bc000fd104f84dfd4024a710ecb98e1b74d5c7ab5f",
+    "styles_sha256": "79271e95a5fe6efc4aec105acba9af3e6dac2a0d1fdc4723b3c97ebe073355c4",
+    "nodes": 2894,
+    "failed_requests": []
   },
   "mobile/news-universe": {
     "dom_sha256": "889fd83800f4d0926c5089a263a9acfca3edbea7ac203de0a3589ab35b8f74cd",
     "text_sha256": "2f12a8ab1964bc8a17c26e5b1e4b76b3dd809598f78764f12136de55a4379910",
     "styles_sha256": "0633af8d90074c4ebcf423b23feb25a54e59df43dfc9babf992fec9e9902eccb",
     "nodes": 620,
-    "failed_requests": [
-      "404 /ihsg-evt-tail-surface-data.json",
-      "404 /market-overview-data.json"
-    ]
+    "failed_requests": []
   },
   "mobile/portfolio-lab": {
     "dom_sha256": "431cc5c5fe7af112877429f39d8c9aeab9667ace4f35e9b2ed1682a3b1d779b3",
@@ -136,8 +98,6 @@
     "styles_sha256": "7b8a1cee6858a8b48de86a878f53d5ffe667d378585eb2a4b2aeb9f70afdac07",
     "nodes": 432,
     "failed_requests": [
-      "404 /ihsg-evt-tail-surface-data.json",
-      "404 /market-overview-data.json",
       "409 /api/portfolio-factor-zoo-view"
     ]
   },
@@ -146,59 +106,41 @@
     "text_sha256": "f1e3bd6f3c30e257d36a519f94251e66a7ee11a87aa78b4850b99a816b8ac073",
     "styles_sha256": "189c9ca7069f98fb0d6bedd1dd2a385587d4301cc1a0b76daa08ccae2dce1be3",
     "nodes": 170,
-    "failed_requests": [
-      "404 /ihsg-evt-tail-surface-data.json",
-      "404 /market-overview-data.json"
-    ]
+    "failed_requests": []
   },
   "mobile/screener": {
-    "dom_sha256": "5df76776c7f9af86938700277cceae5f0c91082cadd672ce0a88186a10452625",
-    "text_sha256": "40a947954499fc35ad634d3ea0d6b9d160cc26bc41fdcbffece5344158a5306d",
-    "styles_sha256": "d421f88a83d5e33fb99747deef83608dda19a5ecd999ebddb9c933fae27ac4c4",
-    "nodes": 823,
-    "failed_requests": [
-      "404 /ihsg-evt-tail-surface-data.json",
-      "404 /market-overview-data.json"
-    ]
+    "dom_sha256": "cf6896558e027124de5b663b8929a2914eb0165f49f88fde3b680370cd45f448",
+    "text_sha256": "76f8b133bfba53c32be5ac976b00ca21f3c401c051b8927c21e9d9d24d64bf5d",
+    "styles_sha256": "125f03a31337cdb308f461a970c0989739d1ac82cb061457d575d90f46a6c6f9",
+    "nodes": 937,
+    "failed_requests": []
   },
   "mobile/settings": {
     "dom_sha256": "e8f25f515c7ff4a1383f82801ebe493e28f32320f42378fd0d165f69446af07b",
     "text_sha256": "0eea8f7d0ad943f2fa5612c7ef3aa674385c4dbd998004df3a5661fb67b442f1",
     "styles_sha256": "e41714ad416b4e8bade322179781c3cad494d559836d46fa4c0d482a534fac8f",
     "nodes": 103,
-    "failed_requests": [
-      "404 /ihsg-evt-tail-surface-data.json",
-      "404 /market-overview-data.json"
-    ]
+    "failed_requests": []
   },
   "mobile/sources": {
     "dom_sha256": "38066a709541431d366475ca39ccffc3eff858464df1c1767bd2f0482cb57eea",
     "text_sha256": "bf268d75f8fceefcba419e270e450f82c17815a06e790f08f626b90a919e1b4d",
     "styles_sha256": "a4c74f3bc9182f5e56cae2160a2b789a20c684f46704a842b07ef1bf075a02ed",
     "nodes": 1824,
-    "failed_requests": [
-      "404 /ihsg-evt-tail-surface-data.json",
-      "404 /market-overview-data.json"
-    ]
+    "failed_requests": []
   },
   "mobile/studies": {
     "dom_sha256": "dd6f518d31d5a6d4278f2a9da05caf5f3b6c2b0f4111ecd70ed8e80e0c1cd0a8",
     "text_sha256": "1dd5a7f08ac9b2f6c13daa95795863de9af170defe8660d269bd2f053a875a6e",
     "styles_sha256": "ebc90e172917884dfef3b9085d04970b5eed7156c11d0c5128e396d6720020d0",
     "nodes": 242,
-    "failed_requests": [
-      "404 /ihsg-evt-tail-surface-data.json",
-      "404 /market-overview-data.json"
-    ]
+    "failed_requests": []
   },
   "mobile/watchlist": {
-    "dom_sha256": "0a80af2777597d1e487a57d872d56e6072e53d3a7335ac60717971c55a6430da",
-    "text_sha256": "0e94244fa2a193423b130db058898cb594d1b83661491ed845e034bb46996aef",
-    "styles_sha256": "d02fbf85bca8f062b3678aac92d28f3e356963c26fa2374b49e8cd5e2372e227",
+    "dom_sha256": "a5f94e8ecba629ffe413246b0b385e8679e3cb90a7d6da21970923e48467670b",
+    "text_sha256": "85b4c78986698cd9c9501545b372b3d62017d830bef4a52aa5dae6a4e958b3dd",
+    "styles_sha256": "7e49b855531c4fd279d3cf95296ffb16b2a1f026528f0425c5ff58bacbea7966",
     "nodes": 89,
-    "failed_requests": [
-      "404 /ihsg-evt-tail-surface-data.json",
-      "404 /market-overview-data.json"
-    ]
+    "failed_requests": []
   }
 }

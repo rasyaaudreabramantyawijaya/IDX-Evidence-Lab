@@ -2,7 +2,7 @@
       async function loadDossier(code){
         if(dossierPending.has(code)||dossierErrors[code])return;
         dossierPending.add(code);
-        try{const response=await fetch('./issuer-dossiers/'+encodeURIComponent(code)+'.json');if(!response.ok)throw new Error('HTTP '+response.status);const d=await response.json();if(d.ticker!==code||d.version!=='issuer-dossier-v1'||d.source_fingerprint!==dashboardData.screener_analysis?.source_fingerprint)throw new Error('Snapshot dossier tidak sesuai bundle aktif. Jalankan export_issuer_dossiers.py sesudah memperbarui bundle.');dossierCache[code]=d}
+        try{const response=await fetch('/docs/prototypes/issuer-dossiers/'+encodeURIComponent(code)+'.json');if(!response.ok)throw new Error('HTTP '+response.status);const d=await response.json();if(d.ticker!==code||d.version!=='issuer-dossier-v1'||d.source_fingerprint!==dashboardData.screener_analysis?.source_fingerprint)throw new Error('Snapshot dossier tidak sesuai bundle aktif. Jalankan export_issuer_dossiers.py sesudah memperbarui bundle.');dossierCache[code]=d}
         catch(error){dossierErrors[code]=error.message}
         finally{dossierPending.delete(code);if(page==='issuer'&&ticker===code)render()}
       }

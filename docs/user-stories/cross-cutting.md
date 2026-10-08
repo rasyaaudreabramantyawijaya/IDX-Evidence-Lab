@@ -13,7 +13,7 @@
 - **Design:** GSM §? status tokens and badge component.
 
 ### CC-02 · The app works from either entry URL
-- **Status:** Gap (finding 1 in README.md)
+- **Status:** Exists (fixed; finding 1 in README.md, guarded by `entry-urls.spec.ts`)
 - **I want** `http://127.0.0.1:5500/` and `/docs/prototypes/idx-evidence-lab-user-journey.html` to show the same data
 - **So that** the URL in the README, Docker and compose gives a complete app
 - **Acceptance**
