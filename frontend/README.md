@@ -61,7 +61,7 @@ python scripts/build_legacy_ui.py --check   # CI: committed output must match a 
 - **File order is behavior.** The chunks are slices of one closure and several functions are declared twice (the last
   one wins). Do not reorder or rename chunk files; edit inside them, rebuild, commit chunk and output together.
 - Browser guard for this page (needs a backend; `python tests/golden_master.py serve` prints a throwaway one):
-  `LEGACY_BASE_URL=<url> npm run e2e -- e2e/legacy`. It compares DOM, text and computed styles of every workspace at
+  `LEGACY_BASE_URL=<url> npm run e2e -- e2e/legacy`. It compares DOM, text and layout-independent computed styles (colors, fonts, borders, display; not widths or margins, which differ per OS) of every workspace at
   desktop and mobile width with `e2e/legacy/legacy-fingerprints.json`, and fails on any CSP violation.
   After an intentional UI change: `UPDATE_LEGACY=1 LEGACY_BASE_URL=<url> npm run e2e -- e2e/legacy/legacy.spec.ts`.
 - Tests that assert on the page source read it through `tests/legacy_source.py` (markup + css + js).
