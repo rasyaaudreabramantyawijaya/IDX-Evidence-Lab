@@ -1,0 +1,28 @@
+/* Design tokens. Placeholder values: replace with the Graphic Standard Manual (docs/design-system/). */
+:root {
+  --color-bg: #ffffff;
+  --color-surface: #f5f6f8;
+  --color-text: #14171f;
+  --color-text-muted: #5b6272;
+  --color-accent: #1f5eff;
+  --color-positive: #0a7d3c;
+  --color-negative: #b3261e;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --radius: 8px;
+  --font-sans: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #0e1116;
+    --color-surface: #171b22;
+    --color-text: #e8ebf0;
+    --color-text-muted: #9aa3b2;
+    --color-accent: #6b93ff;
+    --color-positive: #4ccf85;
+    --color-negative: #ff8a80;
+  }
+}

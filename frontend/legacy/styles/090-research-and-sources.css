@@ -1,0 +1,18 @@
+    #idxel-journey .research-source{border:1px solid var(--line);border-radius:8px;background:#0c1826;padding:11px 12px}
+    #idxel-journey .research-source h3{font-size:12px;margin:0 0 6px}
+    #idxel-journey .research-source p{margin:0 0 6px;font-size:11px;line-height:1.55;color:#c6d3e1}
+    #idxel-journey .research-source small{font-size:10px;color:var(--muted);overflow-wrap:anywhere}
+    #idxel-journey .research-prompt{white-space:normal;text-align:left}
+    #idxel-journey .source-report{max-width:1050px;margin:0 auto}
+    #idxel-journey .source-report h2{font-size:17px;margin:20px 0 8px}
+    #idxel-journey .source-report code{color:#a8dff0;overflow-wrap:anywhere}
+    #idxel-journey .source-report .source-table-wrap{max-height:62vh;overflow:auto}
+    #idxel-journey .source-report .source-manifest{margin-top:10px;border:1px solid var(--line);border-radius:8px;padding:10px}
+    #idxel-journey .source-report .source-manifest summary{cursor:pointer;font-weight:650}
+    #idxel-journey .source-report .source-manifest-table{max-height:60vh;overflow:auto;margin-top:10px}
+    #idxel-journey .source-report .source-manifest table{min-width:1250px}
+    #idxel-journey .market-valuation-pair>.forward-pe-panel{position:absolute;top:0;right:0;bottom:0;width:calc(50% - 6px);align-self:stretch;min-height:0;min-width:0;display:flex;flex-direction:column}
+    #idxel-journey .forward-pe-panel>.section-body{display:flex;flex:1;flex-direction:column;min-height:0;overflow:hidden}
+    #idxel-journey .pe-snapshot-summary{display:flex;flex:1;min-height:0;flex-direction:column;gap:9px}
+    #idxel-journey .pe-snapshot-counts{display:flex;align-items:baseline;gap:7px;flex-wrap:wrap;color:var(--muted);font-size:12px}
+    #idxel-journey .pe-snapshot-counts b{color:var(--text);font-size:18px}

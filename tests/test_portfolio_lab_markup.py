@@ -3,9 +3,10 @@
 from pathlib import Path
 
 from idx_evidence_lab import web_app
+from legacy_source import LEGACY_PAGE
 
 
-HTML = Path(__file__).resolve().parents[1] / "docs/prototypes/idx-evidence-lab-user-journey.html"
+HTML = LEGACY_PAGE
 
 
 def test_portfolio_lab_has_own_destination_and_preserves_existing_pages():

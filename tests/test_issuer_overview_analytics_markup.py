@@ -1,8 +1,9 @@
 import unittest
 from pathlib import Path
+from legacy_source import LEGACY_PAGE
 
 
-HTML = Path(__file__).parents[1] / "docs" / "prototypes" / "idx-evidence-lab-user-journey.html"
+HTML = LEGACY_PAGE
 
 
 class IssuerOverviewAnalyticsMarkupTest(unittest.TestCase):

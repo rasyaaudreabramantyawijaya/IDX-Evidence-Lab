@@ -7,9 +7,10 @@ from urllib.request import urlopen
 import json
 
 from idx_evidence_lab import web_app
+from legacy_source import LEGACY_PAGE
 
 
-HTML = Path(__file__).parents[1] / "docs" / "prototypes" / "idx-evidence-lab-user-journey.html"
+HTML = LEGACY_PAGE
 
 
 class SectorHeatmapMarkupTest(unittest.TestCase):

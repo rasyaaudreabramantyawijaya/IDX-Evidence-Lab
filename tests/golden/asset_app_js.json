@@ -1,0 +1,21 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/docs/prototypes/app.js",
+  "headers": {},
+  "body": null
+ },
+ "status": 200,
+ "headers": {
+  "content-type": "text/javascript; charset=utf-8",
+  "cache-control": "no-store",
+  "x-content-type-options": "nosniff",
+  "x-frame-options": "DENY",
+  "referrer-policy": "no-referrer",
+  "permissions-policy": "camera=(), microphone=(), geolocation=()",
+  "cross-origin-opener-policy": "same-origin",
+  "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self'; style-src-attr 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; object-src 'none'; base-uri 'self'"
+ },
+ "body_sha256": "c3b93851a814ab612ce37bd7cc887acab5190bf4266376badf16f8bed17fdaef",
+ "body_bytes": 365687
+}

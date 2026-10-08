@@ -7,10 +7,11 @@ import shutil
 import subprocess
 
 import pytest
+from legacy_source import LEGACY_PAGE
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PROTOTYPE = ROOT / "docs/prototypes/idx-evidence-lab-user-journey.html"
+PROTOTYPE = LEGACY_PAGE
 
 
 def test_static_market_export_includes_source_linked_latest_news():

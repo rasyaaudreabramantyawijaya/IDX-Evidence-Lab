@@ -2,9 +2,10 @@
 
 from pathlib import Path
 import subprocess
+from legacy_source import LEGACY_PAGE
 
 
-HTML = Path(__file__).resolve().parents[1] / "docs/prototypes/idx-evidence-lab-user-journey.html"
+HTML = LEGACY_PAGE
 
 
 def test_factor_zoo_layout_has_unnumbered_horizontal_controls_then_chart_then_results():
@@ -79,7 +80,7 @@ def test_factor_zoo_hover_names_xyz_scores_and_snapshot_date_and_hides_on_drag()
     assert "Z · Quality ${factorScoreLabel(s.quality.score)}σ" in source
     check = r"""
 const fs=require('fs'),vm=require('vm'),assert=require('assert/strict');
-const text=fs.readFileSync('docs/prototypes/idx-evidence-lab-user-journey.html','utf8');
+const text=fs.readFileSync('docs/prototypes/app.js','utf8');
 const fn=text.match(/function factorTooltipDates\(data,r\)\{[^\n]+\}/);
 assert(fn,'Date formatter missing');vm.runInThisContext(fn[0]);
 const out=factorTooltipDates({as_of:{price:'2026-09-24'}},{report_as_of:'2026-09-25',data_quality:{daily_coverage_start:'2024-12-05',daily_coverage_end:'2026-09-23'}});

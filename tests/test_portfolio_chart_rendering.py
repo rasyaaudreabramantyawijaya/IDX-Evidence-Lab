@@ -7,9 +7,10 @@ import shutil
 import subprocess
 
 import pytest
+from legacy_source import LEGACY_PAGE
 
 
-HTML = Path(__file__).resolve().parents[1] / "docs/prototypes/idx-evidence-lab-user-journey.html"
+HTML = LEGACY_PAGE
 
 
 def render(function_name, call):

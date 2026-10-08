@@ -1,9 +1,10 @@
 """3D chart coordinate and stale-hover contracts."""
 
 from pathlib import Path
+from legacy_source import LEGACY_PAGE
 
 
-HTML = Path(__file__).resolve().parents[1] / "docs/prototypes/idx-evidence-lab-user-journey.html"
+HTML = LEGACY_PAGE
 
 
 def test_both_3d_charts_have_explicit_axis_titles_and_observed_hover_values():
