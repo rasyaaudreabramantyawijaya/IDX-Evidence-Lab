@@ -30,15 +30,17 @@ export interface PageFingerprint {
   failed_requests: string[];
 }
 
+// Only properties whose computed value does not depend on text metrics or layout. Used values such as width, height,
+// margin, padding, top/left, grid-template-* and transform are px numbers that differ between macOS and Linux fonts,
+// so they would make the hash differ per machine. Layout is covered by same-machine screenshots instead.
 const STYLE_PROPS = [
   "display", "position", "visibility", "opacity", "overflow", "z-index",
-  "width", "height", "min-width", "max-width", "min-height", "max-height",
-  "margin", "padding", "border", "border-radius", "box-shadow",
+  "min-width", "max-width", "min-height", "max-height",
+  "border-top-style", "border-top-color", "border-right-color", "border-bottom-color", "border-left-color",
+  "border-radius", "box-shadow",
   "color", "background-color", "background-image", "font-family", "font-size", "font-weight", "font-style",
   "line-height", "letter-spacing", "text-align", "text-transform", "text-decoration", "white-space",
-  "flex", "flex-direction", "flex-wrap", "align-items", "justify-content", "gap",
-  "grid-template-columns", "grid-template-rows", "grid-column", "grid-row",
-  "top", "left", "right", "bottom", "transform", "cursor", "pointer-events",
+  "flex-direction", "flex-wrap", "align-items", "justify-content", "cursor", "pointer-events",
 ];
 
 const sha = (text: string) => createHash("sha256").update(text).digest("hex");

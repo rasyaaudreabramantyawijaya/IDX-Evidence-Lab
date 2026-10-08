@@ -150,12 +150,13 @@ def build_source_report(root: Path) -> dict[str, Any]:
         factor_report["reason"] = f"{type(exc).__name__}: {exc}"
 
     def response_json_files(folder: Path) -> list[Path]:
-        return [
+        # Sorted: rglob order depends on the filesystem (macOS vs Linux), and the first file picks the endpoint example.
+        return sorted((
             path for path in folder.rglob("*.json")
             if not path.name.endswith((".metadata.json", "_meta.json"))
             and "collection_summary" not in path.name.casefold()
             and "manifest" not in path.name.casefold()
-        ] if folder.exists() else []
+        ), key=lambda path: path.as_posix()) if folder.exists() else []
 
     counts = {
         "universe": 1 if (sectors / "lq45-universe.json").exists() else 0,

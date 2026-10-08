@@ -5,7 +5,7 @@ Each has today's behavior, the options, and a recommendation. Reply on the PR or
 
 ## A. GitHub settings (admin only, 10 minutes)
 - [ ] **Branch protection on `main`** following `docs/security/branch-protection.md`: required checks `ci` and `security`,
-  1 review, Code Owners review, no force-push. (The API reports no protection rule today, so merges are not gated yet.)
+  1 review, Code Owners review, no force-push. (The API reports no protection rule today, so merges are not gated yet. Evidence: PR #13 was merged while the Linux `test` jobs were red; see the fix for the filesystem-order bug in the source report.)
 - [ ] **Dependabot alerts and security updates**, and secret scanning with push protection if the plan offers it.
 - [ ] **Packages:** confirm the container package `hackathon_sectors` is **private**, and who gets `read:packages`
   (image contains prototype data JSON; `data/` itself is never in the image).
