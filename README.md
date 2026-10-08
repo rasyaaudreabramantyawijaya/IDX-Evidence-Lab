@@ -1,38 +1,38 @@
 # IDX Evidence Lab
 
-Prototype riset saham Indonesia untuk **Sectors Hackathon Track 03: Market Intelligence**. Anda dapat menyaring emiten, menyusun studi, membaca arus asing dan berita, menguji alokasi portofolio, lalu mengajukan pertanyaan berdasarkan bukti yang tersedia.
+An evidence-first research prototype for Indonesian equities, built for the Sectors Hackathon Track 03: Market Intelligence. Explore issuers, market context, historical events, portfolio risk, and research evidence in one local web application.
 
-**Data pasar pada prototype berasal dari snapshot lokal.** Startup tidak mengambil data Sectors baru. Agent OpenRouter dan riwayat bersama Supabase merupakan sambungan opsional; clone baru dapat berjalan tanpa keduanya. Aplikasi mendukung riset dan tidak mengirim order saham.
+> **Data and deployment notice:** The application reads market snapshots included in this repository. Starting the server does not fetch fresh Sectors data. This is not a live market feed, an order-execution system, or investment advice. The app has no authentication; keep it on a trusted machine and do not expose it to the public internet.
 
-![Dashboard IDX Evidence Lab dengan ringkasan pasar dan grafik IHSG/LQ45](docs/assets/readme/dashboard.png)
+![Dashboard with market summaries and IHSG/LQ45 charts](docs/assets/readme/dashboard.png)
 
-Snapshot UI dalam README ini diambil pada 8 Oktober 2026 dari aplikasi lokal. Tanggal data mengikuti snapshot yang tersedia, bukan tanggal pengambilan gambar. Gambar tidak memuat API key, lampiran privat, atau percakapan pengguna.
+The screenshots below are illustrative snapshots of the local prototype, captured on 8 October 2026. Dates shown inside charts refer to the underlying snapshot, not the screenshot date. UI details can differ between commits.
 
-## Daftar isi
+## Contents
 
-- [Menjalankan di macOS dan Windows](#menjalankan-di-macos-dan-windows)
-- [Workspace dan fitur](#workspace-dan-fitur)
-- [Studies: paket dan 14 fitur](#studies-paket-dan-14-fitur)
-- [Portfolio Lab dan Monte Carlo GBM](#portfolio-lab-dan-monte-carlo-gbm)
-- [Riset emiten, Agent dan riwayat](#riset-emiten-agent-dan-riwayat)
-- [Performa: bukti nyata dan contoh mock](#performa-bukti-nyata-dan-contoh-mock)
-- [Struktur repo dan notebook](#struktur-repo-dan-notebook)
-- [Pengujian dan troubleshooting](#pengujian-dan-troubleshooting)
+- [Run locally](#run-locally)
+- [Workspaces](#workspaces)
+- [Studies](#studies)
+- [Portfolio Lab and Monte Carlo GBM](#portfolio-lab-and-monte-carlo-gbm)
+- [Issuer research and OpenRouter](#issuer-research-and-openrouter)
+- [Performance evidence and mock example](#performance-evidence-and-mock-example)
+- [Repository layout and notebooks](#repository-layout-and-notebooks)
+- [Testing and limitations](#testing-and-limitations)
 
-## Menjalankan di macOS dan Windows
+## Run locally
 
-### Kebutuhan
+### Requirements
 
-- Git dan Python **3.10 atau lebih baru**.
-- Browser desktop: Safari, Chrome, atau Edge.
-- Koneksi internet untuk clone dan instalasi dependensi. Analisis snapshot lokal tidak memerlukan API key.
-- Terminal tetap terbuka selama server berjalan.
+- Git and Python 3.10 or newer.
+- Safari, Chrome, or Edge.
+- Internet access to clone the repository and install Python packages. Snapshot-based analysis does not require an API key.
+- Keep the terminal open while the server is running.
 
-Frontend menggunakan HTML, CSS, dan JavaScript. Anda tidak perlu Node.js, npm, MATLAB, GPU, atau build frontend untuk menjalankan website. Helper pengujian browser dan notebook mempunyai kebutuhan tambahan.
+The current application is served by the Python backend and legacy HTML/CSS/JavaScript UI. Node.js, npm, MATLAB, a GPU, and an OpenRouter key are not required to run the core website. The separate frontend React workspace is an early development shell and is not the default application UI.
 
-### macOS: MacBook, iMac, Mac mini, Apple Silicon maupun Intel
+### macOS
 
-Buka Terminal. Pastikan `python3 --version` menunjukkan Python 3.10+. Jika Python belum tersedia, gunakan installer dari [python.org](https://www.python.org/downloads/macos/).
+Open Terminal and run:
 
 ```bash
 git clone https://github.com/rasyaaudreabramantyawijaya/IDX-Evidence-Lab.git
@@ -43,18 +43,14 @@ source .venv/bin/activate
 python3 -m pip install --upgrade pip
 python3 -m pip install -r requirements-portfolio.txt
 
-IDXEL_RESEARCH_HISTORY_MODE=local IDXEL_ALLOW_PROVIDER_REQUESTS=0 IDXEL_PORT=5500 PYTHONPATH=src python3 -m idx_evidence_lab.web_app
+PYTHONPATH=src python3 -m idx_evidence_lab.web_app
 ```
 
-Buka **http://127.0.0.1:5500**. Server Python melayani UI dan API pada alamat yang sama. Gunakan Safari atau browser pilihan Anda. Hentikan server dengan **Control+C**.
+Open http://127.0.0.1:5500. Stop the server with Control+C. To start it again, return to the repository root, activate the virtual environment, and rerun the final command.
 
-Untuk menjalankan lagi, masuk ke folder repo, aktifkan `.venv`, lalu ulangi perintah server terakhir. Flag `local` menyimpan riwayat pada komputer sendiri; flag `0` mencegah pemakaian kredit provider selama mencoba UI.
+### Windows (PowerShell)
 
-**iPhone/iPad:** repo ini berupa aplikasi web, bukan aplikasi native iOS/iPadOS. Jalankan backend di Mac atau server. Alamat `127.0.0.1` pada iPhone menunjuk iPhone itu sendiri, sehingga tidak membuka server Mac. Akses lintas perangkat membutuhkan hosting atau koneksi jaringan yang diatur dengan aman; deployment publik belum menjadi bagian dari setup lokal ini.
-
-### Windows: PowerShell
-
-Install Python dari [python.org](https://www.python.org/downloads/windows/) dan Git. Buka PowerShell; cek `py -3 --version`.
+Install Git and Python 3.10 or newer. In PowerShell:
 
 ```powershell
 git clone https://github.com/rasyaaudreabramantyawijaya/IDX-Evidence-Lab.git
@@ -65,359 +61,195 @@ py -3 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements-portfolio.txt
 
 $env:PYTHONPATH = "src"
-$env:IDXEL_PORT = "5500"
-$env:IDXEL_RESEARCH_HISTORY_MODE = "local"
-$env:IDXEL_ALLOW_PROVIDER_REQUESTS = "0"
 .\.venv\Scripts\python.exe -m idx_evidence_lab.web_app
 ```
 
-Buka **http://127.0.0.1:5500** di Edge atau Chrome. Perintah di atas memakai Python virtual environment langsung, sehingga Anda tidak perlu mengubah execution policy untuk menjalankan `Activate.ps1`. Hentikan dengan **Ctrl+C**.
+Open http://127.0.0.1:5500 in Edge or Chrome. Stop the server with Ctrl+C. If the py launcher is unavailable but python reports a supported version, replace py -3 -m venv .venv with python -m venv .venv. Run commands from the repository root.
 
-Jika `py` tidak dikenali tetapi `python --version` sudah menunjukkan versi yang sesuai, ganti `py -3 -m venv .venv` dengan `python -m venv .venv`. Jalankan perintah dari root repo, bukan dari `src/`.
+**Windows note:** These PowerShell instructions follow the repository structure but have not been verified on a physical Windows machine.
 
-### Alternatif: VS Code Live Server pada port 5500
+### Optional: VS Code Live Server
 
-Gunakan alternatif ini jika ingin **Go Live** untuk frontend. Jangan jalankan server mandiri Python 5500 pada waktu yang sama.
+To use the Live Server extension, start the API sidecar on port 5501, then start **Go Live**:
 
-1. Buka root repo di VS Code dan install extension Live Server.
-2. Jalankan backend di terminal pada **5514**:
-   - macOS, setelah mengaktifkan venv: `IDXEL_PORT=5514 PYTHONPATH=src IDXEL_RESEARCH_HISTORY_MODE=local IDXEL_ALLOW_PROVIDER_REQUESTS=0 python3 -m idx_evidence_lab.web_app`.
-   - Windows: gunakan environment PowerShell di atas, ubah `$env:IDXEL_PORT = "5514"`, lalu jalankan modul dengan Python venv.
-3. Buka `docs/prototypes/idx-evidence-lab-user-journey.html` dan pilih **Go Live**.
-4. Buka http://127.0.0.1:5500/docs/prototypes/idx-evidence-lab-user-journey.html.
+1. Open the repository root in VS Code.
+2. Run the task **IDX Evidence Lab: Local API (5501)**, or start the backend manually.
+   - macOS: IDXEL_PORT=5501 PYTHONPATH=src python3 -m idx_evidence_lab.web_app
+   - PowerShell:
 
-Pada checkout ini, `.vscode/settings.json` meneruskan `/api` ke `http://127.0.0.1:5514/api`. Restart Go Live setelah mengubah proxy. Task **IDX Evidence Lab Seva: Local API (5514)** di `.vscode/tasks.json` juga dapat menyalakan sidecar melalui `scripts/run_portfolio_api_sidecar.py`. Task memakai executable `python3`; jika executable itu tidak tersedia di Windows, gunakan perintah terminal Windows di atas.
+§§§powershell
+$env:IDXEL_PORT = "5501"
+$env:PYTHONPATH = "src"
+.\.venv\Scripts\python.exe -m idx_evidence_lab.web_app
+§§§
 
-Cek http://127.0.0.1:5500/api/health. Health menunjukkan backend yang terhubung; health yang sukses belum membuktikan provider model menerima request.
+3. Open docs/prototypes/idx-evidence-lab-user-journey.html and choose **Go Live**.
+4. Open http://127.0.0.1:5500/docs/prototypes/idx-evidence-lab-user-journey.html.
 
-## Workspace dan fitur
+The VS Code settings proxy /api to http://127.0.0.1:5501/api. Do not run the standalone Python server on port 5500 at the same time as Live Server. Check http://127.0.0.1:5500/api/health; a successful health response confirms a local backend, not a successful OpenRouter request.
 
-| Workspace | Isi dan tujuan |
+## Workspaces
+
+| Workspace | Purpose |
 |---|---|
-| Dashboard | Ringkasan kondisi pasar untuk menentukan area riset. |
-| Screener | Menyaring universe snapshot LQ45 dan memeriksa hasil event historis. |
-| Watchlist | Menyimpan emiten pantauan di browser Anda. |
-| Studies | Memilih paket analisis dan fitur engineering per emiten. |
-| Riset emiten | Percakapan berbasis bukti, hasil perhitungan, dan konteks prototype. |
-| Portfolio Lab | Alokasi, risiko, walk-forward, skenario, dan forecasting GBM. |
-| Market overview | Indeks, arus asing, breadth, RSI, sektor, dan konteks tail loss. |
-| News Universe | Menelusuri arsip berita lokal dengan filter. |
-| Dossier emiten | Detail emiten yang Anda buka melalui ticker. |
-| Sumber & metode · PDF | Pemeriksaan definisi, sumber dan asumsi, serta tampilan laporan untuk cetak/PDF. |
+| Dashboard | Market summary, market regime, LQ45 breadth, capitalization snapshot, index charts, and recent news. |
+| Screener | Filter the local issuer universe and inspect historical event outcomes and issuer regimes. |
+| Watchlist | Keep selected tickers in the current browser’s local storage. It is not synced across users or devices. |
+| Studies | Compose allowlisted analytical panels for issuer, sector, or universe targets; inspect inputs, formulas, coverage, and outputs. |
+| Issuer research | Ask questions using local evidence and calculations; optionally use OpenRouter to draft a validated response. |
+| Portfolio Lab | Compare allocation methods, portfolio risk, historical walk-forward results, bootstrap scenarios, and GBM forecasts. |
+| Market overview | Inspect IHSG/LQ45 snapshots, RSI and breadth, sector context, and available risk distributions. Panels without valid source inputs explicitly show that data is unavailable. |
+| News Universe | Search and filter the locally bundled news archive. It is not a live news feed. |
+| Issuer dossier | Review issuer overview, available price/flow history, evidence, and event context. |
+| Sources and methods | Inspect data provenance, definitions, assumptions, and limitations; use the browser print dialog for PDF output. |
 
-### Dashboard
+Dashboard cards link to related research areas. Historical events, flows, market breadth, and regime labels are descriptive context, not buy/sell recommendations. Some Market Overview panels, such as intraday metrics or calculations requiring unavailable inputs, are marked unavailable rather than inferred from unrelated data. Snapshot and issuer coverage can be partial.
 
-- **Unusual Flow:** emiten dengan deviasi arus asing terhadap pembanding historis.
-- **Market Regime IHSG:** posisi close/SMA50 terhadap SMA200 dan volatilitas 20 sesi.
-- **Market Breadth LQ45:** jumlah naik, tetap, turun, serta proporsi di atas SMA.
-- **Market capitalization:** agregat kapitalisasi universe snapshot yang tersedia.
-- Grafik IHSG/LQ45, berita terbaru, dan **Signal vs Market Baseline** untuk membandingkan aturan regime dengan buy-and-hold historis.
+![Market Overview with index charts, breadth, and regime context](docs/assets/readme/market-overview.png)
 
-Kartu membawa Anda ke workspace terkait. Hasil historis dan anomali flow membantu penelusuran; keduanya tidak menetapkan rekomendasi beli/jual.
+### Search and charts
 
-### Screener
+Global search helps navigate issuers, sectors, workspaces, features, and news. Natural-language interpretation may use the optional provider path; local navigation remains available when a model is not configured.
 
-Cari ticker/nama, pilih sektor atau regime, lalu buka emiten. Tabel memuat:
+Charts with pointer interaction show a crosshair and tooltip for the nearest available date/session and value. Combined price charts can show close and moving-average series on the same time axis. Exact hover fields depend on the chart and available input data.
 
-- Flow strength **Z20 asing** dan jumlah sampel event.
-- Rerata outcome **5D/20D**, hit rate ungguli IHSG 20D, confidence interval 95%, dan baseline delta.
-- Regime teknikal per emiten, dihitung dari histori emiten tersebut.
-- Ringkasan breadth LQ45 dan jumlah emiten yang sesuai filter.
+## Studies
 
-Definisi event memakai net buy asing positif dengan Z20 ≥ 2. Entry berada pada close sesi berikutnya; perbandingan IHSG memakai tanggal identik. Kolom Data/As of yang berulang tidak ditampilkan pada tabel utama.
+Studies has **16 allowlisted analytical panels** and six preset layouts. Choose issuer, sector, or universe targets; select a supported lookback; add panels; and run them locally. It does not execute user-provided code or call an LLM to calculate results.
 
-### Watchlist
+![Studies workspace and analytical panel layout](docs/assets/readme/studies.png)
 
-Tambah/hapus emiten pilihan, cari melalui picker, dan urutkan kolom analisis. Watchlist tetap tersimpan lewat `localStorage` pada browser yang sama. Hasilnya memakai snapshot dan perhitungan yang tersedia; watchlist belum menjadi daftar pantauan cloud lintas pengguna.
-
-### Dossier emiten
-
-Klik ticker untuk membuka detail, lalu pilih tab:
-
-| Tab | Yang dapat diperiksa |
+| Panel | What it examines |
 |---|---|
-| Overview | Ringkasan emiten, harga dan arus asing pada sumbu waktu bersama. |
-| Flow | Net flow, akumulasi beberapa sesi, serta arsip broker yang tersedia. |
-| Evidence | Bukti dan interpretasi outcome historis beserta pembanding. |
-| Historical Analog | Kemiripan episode historis untuk konteks penelitian. |
-| Event Study | Pilih event dan baca lintasan setelah entry. |
-| Outcomes | Evaluasi historis per event, pembanding IHSG dan asumsi biaya yang tersedia. |
+| Price & volatility | Returns, realized volatility, downside deviation, drawdown, and ATR when input fields are available. |
+| Trend & momentum | Moving averages, RSI, MACD, slopes, and related price/volume measures. |
+| Liquidity proxy | Turnover and OHLCV-based liquidity/downside proxies; not order-book depth or spread. |
+| Portfolio risk | Portfolio ratios and risk measures from a linked portfolio artifact when available. |
+| Valuation & quality | Comparable valuation, profitability, growth, leverage, and company-report coverage. |
+| Financial fragility | Cash, leverage, margins, profitability, and cash-flow direction when comparable report fields exist. |
+| Issuer flow | Available issuer-level foreign-flow and price-response history; source coverage varies. |
+| Event timeline | Available filings, news, corporate actions, and suspension history. |
+| IHSG context & regime | Benchmark-relative returns, IHSG trend, and volatility context. |
+| Market breadth | Advancers/decliners and shares above selected moving averages for the current snapshot universe. |
+| CAPM benchmark | Historical beta and benchmark estimates using the supplied risk-free assumption. |
+| Factor characteristics | Descriptive value, quality, momentum, and low-volatility characteristics; not a Fama–French model. |
+| Compare issuers | Compare like-for-like fields, periods, and coverage. |
+| Event outcomes | Historical forward outcomes and related event metrics where the sample is sufficient. |
+| Custom engineering | Allowlisted transforms such as differences, percentage changes, rolling mean/std, and robust z-score. No arbitrary code execution. |
+| Evidence & methodology | Input IDs, coverage, source, formula/model version, and status where recorded. |
 
-Kemiripan episode tidak membuktikan hasil masa depan. Cakupan data broker berbeda dari arus asing dan tidak mengungkap pemilik manfaat.
+The six preset layouts are Volatility, Issuer Quality, Flow & Events, Risk Ratios, Factor Map, and Evidence Review. A preset arranges panels; it does not certify that data are complete or results are predictive.
 
-### Market overview
+![Close, SMA, and EMA comparison with a date crosshair](docs/assets/readme/studies-trend.png)
 
-![Market Overview dengan grafik indeks dan regime IHSG](docs/assets/readme/market-overview.png)
+## Portfolio Lab and Monte Carlo GBM
 
-Anda dapat membaca grafik IHSG/LQ45, regime IHSG, unusual foreign flow, beli/jual asing harian, Z-score flow bulanan, RSI market breadth, dan heatmap sektor. Panel tail-loss memuat surface historis 3D dan histogram distribusi kerugian harian dengan ambang empiris p95.
+Portfolio Lab supports allocation methods, risk ratios, walk-forward comparisons, exploratory block-bootstrap paths, and a Geometric Brownian Motion forecast.
 
-Surface 3D mendukung rotasi/zoom. Data visual berasal dari artifact numerik yang tersedia; MATLAB desktop hanya diperlukan bila ingin membangun ulang atau memakai sinkronisasi lokal yang terkait. Parameter tail dan ambang historis membutuhkan pemeriksaan ketidakpastian sebelum interpretasi prediktif.
+### GBM method
 
-### News Universe
+The forecast uses `multivariate_gbm_fixed_share_v1` in `src/idx_evidence_lab/portfolio/portfolio_scenarios.py`.
 
-Filter berita menurut emiten, sektor, tanggal, dan topik yang dikenali. Buka item untuk membaca ringkasan serta metadata sumber. Arsip berita dalam repo mempunyai cakupan terbatas; jangan menganggapnya feed berita live atau arsip lengkap.
+- It estimates daily multivariate log-return means and covariance from a trailing window (default 252 sessions), then simulates correlated asset paths.
+- Initial portfolio weights are held as fixed shares, so portfolio weights may drift with prices.
+- Default horizons are 20, 60, and 120 trading sessions. The UI requests 300 forward simulations with seed 42; the API function has its own defaults.
+- The chart shows simulated paths, the median, and the p10–p90 range. Quantiles are descriptive unless the corresponding out-of-sample (OOS) status supports interpretation.
+- OOS scoring uses rolling origins. Each fit uses only data available before that origin and compares realized cumulative return and maximum drawdown with simulated quantiles. It reports coverage, PIT, and pinball loss against a historical rolling-window baseline.
+- The minimum effective fold count is 10. Overlapping horizons reduce the effective count, and folds may remain autocorrelated.
 
-### Sumber & metode · PDF
+The model assumes constant drift/covariance and normally distributed log returns. It does not model regime shifts, fat tails, or dividends, and results are gross of costs. Return and drawdown validation statuses can differ. READY means the calculation ran; it does not by itself establish predictive reliability.
 
-Periksa sumber snapshot, definisi indikator/event, cakupan, metode dan asumsi. Gunakan tampilan cetak browser untuk menyimpan laporan sebagai PDF. Panel ringkas pada workspace tidak menggantikan pemeriksaan sumber ketika Anda ingin menyimpulkan hasil penelitian.
+![Monte Carlo GBM forecast with sample paths, median, quantile band, and crosshair](docs/assets/readme/portfolio-gbm.png)
 
-### Pencarian bahasa alami dan interaksi grafik
+Block bootstrap is a separate exploratory scenario method, not the GBM forecast or a validated prediction interval.
 
-Search box mencari workspace, emiten, fitur, paket, dan berita dalam katalog prototype. Tujuan yang Anda sebutkan secara eksplisit mendapat prioritas. Contoh:
+## Issuer research and OpenRouter
 
-> Aku mau masukkan BBCA ADMR BMRI BBRI ke Portfolio Lab dengan profil risiko agresif modal 1 milyar.
+Issuer research offers a local mode and an optional OpenRouter Agent mode.
 
-Query tersebut menyiapkan **Portfolio Lab**, empat ticker, profil agresif dan modal **Rp1.000.000.000**. Navigasi/prefill tidak menjalankan analisis atau mengirim prompt Agent; tekan tombol analisis ketika input sudah sesuai. Pencarian lokal ini tidak melatih LLM.
+![Issuer research workspace with the local conversation interface](docs/assets/readme/research.png)
 
-Pada grafik 2D yang mendukungnya, crosshair menunjukkan posisi X/Y, label tanggal/sesi/ticker, nilai dan tooltip. Grafik harga gabungan menampilkan nilai close, SMA dan EMA pada tanggal yang sama. Gunakan hover; grafik yang dapat difokuskan juga mendukung tombol panah/Home/End. Grafik 3D memakai interaksi rotasi dan tooltip titik.
-
-## Studies: paket dan 14 fitur
-
-![Studies dengan carousel paket dan katalog feature engineering](docs/assets/readme/studies.png)
-
-Pilih maksimal **5 emiten** dari universe snapshot **45 simbol LQ45**. Pilih satu paket, tambah/kurangi fitur dengan tombol +/centang, atur periode, lalu tekan **Jalankan analisis** atau Enter/Return. Carousel mendukung geser manual, tombol navigasi, putaran otomatis dan jeda interaksi.
-
-| Paket | Fitur yang disertakan |
-|---|---|
-| Issuer Quality | Valuation & quality, financial fragility, compare issuers, evidence & methodology. |
-| Risk Ratios | Price & volatility, IHSG context & regime, market breadth, evidence & methodology. |
-| Volatility | Price & volatility, trend & momentum, liquidity proxy. |
-| Flow & Events | Issuer flow, event timeline, event outcomes, price & volatility, evidence & methodology. |
-| Factor Map | Factor characteristics, valuation & quality, trend & momentum, evidence & methodology. |
-| Evidence Review | Price & volatility, valuation & quality, issuer flow, timeline, IHSG context, breadth, compare issuers, evidence & methodology. |
-
-Nama **Risk Ratios** adalah label paket Studies. Rasio portofolio Sharpe/Sortino/Calmar dan CAPM berada di Portfolio Lab.
-
-### Katalog fitur engineering
-
-| Fitur | Isi perhitungan/tampilan | Visual utama ketika input tersedia |
-|---|---|---|
-| Price & volatility | Return kumulatif, volatilitas tahunan, downside deviation, drawdown, ATR14. | Deret harga/risiko; perbandingan return periode vs volatilitas tahunan lintas emiten. |
-| Trend & momentum | SMA14, EMA14, RSI14, MACD12/26. | Close + SMA + EMA pada satu grafik; indikator pada panel terkait. |
-| Liquidity proxy | Close × volume dan rerata turnover proxy. | Deret turnover. Ini proxy transaksi, bukan depth/spread order book. |
-| Valuation & quality | Earnings yield, dividend yield, ROE, debt-to-equity. | Perbandingan metrik yang seunit; field mengikuti laporan. |
-| Financial fragility | Leverage/profitabilitas dan field kas, utang, laba, arus kas bila tersedia. | Perbandingan tahunan pada definisi dan satuan yang cocok. |
-| Issuer flow & response | Net arus asing harian dan flow strength Z20. | Harga/flow dan batang Z-score. |
-| Event timeline | Filings, berita terpilih, aksi korporasi, suspensi. | Daftar kronologis untuk membaca bukti peristiwa. |
-| IHSG context & regime | IHSG close, SMA50/200, volatilitas dan return relatif benchmark. | Overlay indeks/moving average serta konteks benchmark. |
-| Market breadth · LQ45 | Naik/turun/tetap; di atas SMA20/SMA50. | Batang jumlah dan proporsi partisipasi emiten. |
-| Factor characteristics & exposure | Value, quality, momentum, low volatility. | Profil karakteristik/skor; exposure bila bobot tersedia. |
-| Compare issuers | Valuasi, ROE, leverage dan return pada periode bersama. | Batang peer comparison per metrik sejenis. |
-| Event study & outcomes | Outcome 5/20D, delta IHSG, hit rate/CI95, MAE/MFE close 20D. | Lintasan event, batang outcome/excursion dan interval hit rate. |
-| Custom feature engineering | Difference, pct change, rolling mean/std, robust Z. | Deret hasil transform allowlist pada close, volume atau foreign flow. |
-| Evidence & methodology | Observasi, snapshot dan cakupan input perhitungan. | Ringkasan/tabulasi; tidak perlu chart untuk metadata. |
-
-![Overlay harga BBCA, SMA14 dan EMA14 dengan crosshair dan label tanggal tepat](docs/assets/readme/studies-trend.png)
-
-Hasil tersusun per emiten. Compare issuers memakai pilihan bersama; market breadth memakai universe LQ45. Anda dapat menyimpan susunan studi pada browser. Target return pada grafik gabungan merupakan input pembanding untuk periode yang sama, bukan forecast.
-
-Periode deteksi event terpisah dari window indikator. Default Event study & outcomes memakai histori tersedia, sama dengan Screener. MAE/MFE mengukur minimum/maksimum `close / entry_close - 1`, termasuk entry 0, hingga exit 20 sesi. Keduanya memakai harga close, bukan high/low intraday.
-
-UI dapat menampilkan **0 sebagai placeholder** bila data tidak tersedia. Engine tetap mempertahankan null dan alasan missing; placeholder tidak menjadi observasi untuk training/perhitungan. Field bank dan nonbank, tanggal laporan, serta jumlah event matang dapat berbeda.
-
-## Portfolio Lab dan Monte Carlo GBM
-
-Pilih emiten, profil **Konservatif/Moderat/Agresif**, asumsi risk-free tahunan, dan modal opsional. Tekan **Jalankan analisis lokal**.
-
-| Bagian | Isi |
-|---|---|
-| Alokasi | Bobot long-only, nominal, ilustrasi lot 100 saham, dan sisa kas. |
-| Risiko | Sharpe, Sortino, Calmar, volatilitas, downside deviation dan maximum drawdown. |
-| Konsentrasi | Distribusi sektor dan karakteristik eksposur portofolio. |
-| Optimizer | Markowitz long-only dengan estimasi Black–Litterman dan batas diversifikasi yang mengikuti profil. |
-| Audit model | Metode pembanding dan baseline; HRP tersedia dalam jalur audit. |
-| Walk-forward | Estimasi dari sesi sebelumnya, rebalance bulanan, pembanding equal-weight pada tanggal identik. |
-| Bootstrap | Skenario eksploratif dengan blok return historis. |
-| GBM | Monte Carlo multivariat, lintasan contoh, median/p10–p90, return dan maximum drawdown per horizon. |
-| CAPM | Beta/IHSG historis dan hurdle berbasis risk-free/premi asumsi. |
-| Factor Zoo | Scatter 3D value–momentum–quality, warna low-volatility, leaderboard dan exposure berbobot. |
-
-Factor Zoo menyajikan karakteristik relatif, belum merupakan faktor return Fama–French atau attribution return. CAPM memakai asumsi manual dan histori yang tersedia. Biaya transaksi belum masuk seluruh hasil Portfolio Lab; alokasi lot merupakan ilustrasi.
-
-### Model GBM yang digunakan
-
-Model tetap **geometric Brownian motion multivariat**, versi `multivariate_gbm_fixed_share_v1` pada [portfolio_scenarios.py](src/idx_evidence_lab/portfolio_scenarios.py). Engine mengestimasi rerata/kovarians log-return dari jendela trailing, default 252 sesi, dan mensimulasikan aset berkorelasi. Bobot awal mengikuti buy-and-hold/fixed-share sehingga dapat drift.
-
-Default UI: **300 lintasan**, **seed 42**, horizon **20/60/120 sesi bursa**. Grafik menampilkan 20 lintasan contoh dari simulasi tersebut, median dan pita p10–p90. Seluruh jalur bermula dari indeks portofolio 100. Bootstrap tetap menjadi pembanding skenario terpisah.
-
-![Monte Carlo GBM dengan lintasan, median, pita kuantil, dan crosshair](docs/assets/readme/portfolio-gbm.png)
-
-Pengujian out-of-sample mengkalibrasi GBM dari sesi sebelum setiap origin, dengan langkah 21 sesi. Engine membandingkan realisasi berikutnya terhadap kuantil melalui coverage, PIT dan pinball loss. Coverage nominal p10–p90 adalah 80%; pinball lebih kecil lebih baik. Baseline berasal dari jendela historis dalam sampel kalibrasi yang sama.
-
-Minimum fold efektif = **10**, dengan estimasi `fold × 21 / horizon`. Status return dan drawdown dapat berbeda. Label internal `OOS_CALIBRATED` memakai kriteria kode dan tidak menjamin prediksi pada data baru. GBM mengasumsikan parameter konstan dan log-return normal; fat tail/perubahan regime dapat menyebabkan miscalibration.
-
-## Riset emiten, Agent dan riwayat
-
-![Riset emiten dengan sidebar riwayat dan composer; mode lokal tanpa percakapan contoh](docs/assets/readme/research.png)
-
-- **Instant:** retrieval dan analisis lokal dari snapshot serta hasil perhitungan.
-- **Agent:** OpenRouter menyusun jawaban dari konteks yang diizinkan dan validasi sumber/angka.
-- **Cek konteks · tanpa API:** lihat bukti, metrik dan celah data sebelum mengirim prompt.
-- Template **Analisis emiten / Bandingkan emiten / Jelaskan portofolio / Ringkas untuk video** mengisi draft; Anda memilih Kirim.
-- Sidebar menyimpan prompt dan jawaban asli. Label Agent hanya berlaku pada respons provider yang berhasil; fallback tetap mendapat identitas hasil lokal.
-
-Konteks menggabungkan snapshot, hasil Studies/Portfolio yang tercatat dan dokumentasi metode terpilih. Aplikasi tidak mengirim seluruh repo, API key, dokumen internal atau file privat ke satu prompt; persiapan konteks tidak melatih model. Analisis lama yang hanya berada di memori browser perlu dijalankan ulang agar engine mencatat artifact lokalnya.
-
-Contoh prompt untuk dicoba sendiri:
-
-> Bandingkan BBCA dan BMRI berdasarkan valuasi, kualitas, arus asing dan risiko yang tersedia. Sebutkan periode serta sumber tiap angka. Pisahkan temuan historis, asumsi dan interpretasi; jelaskan bagian yang belum memiliki data.
-
-### Mengaktifkan OpenRouter pada mesin sendiri
-
-Jalankan helper dari root repo:
+- **Local mode** retrieves permitted local evidence and calculations without contacting an LLM.
+- **Agent mode** sends the prompt and selected context to OpenRouter. The server validates the returned structure and cited numbers against available evidence; model output is not an independent source of market facts.
+- API credentials stay on the server. Configure them locally with:
 
 ```bash
-# macOS, venv aktif
 python3 scripts/configure_openrouter.py
 ```
 
-```powershell
-# Windows
-.\.venv\Scripts\python.exe scripts/configure_openrouter.py
-```
+The helper hides key input and writes .env.local, which is excluded from Git. Restart the backend after changing configuration. OPENROUTER_API_KEY is required; OPENROUTER_MODEL and OPENROUTER_FALLBACK_MODELS can select a primary model and fallbacks. Model availability and provider limits can change. A saved key or healthy local API does not prove that a provider request will succeed.
 
-Tempel key pada input tersembunyi. Pilih model yang tersedia untuk akun Anda, atau tekan Enter untuk default kode. Helper membuat `.env.local`; helper menolak overwrite jika file itu sudah ada. Pertahankan konfigurasi lain saat mengedit file yang sudah ada, jangan menghapusnya untuk mengulang setup.
+Research sessions are held in server memory, bounded by session/message limits, and expire. They are not durable history shared across users or server restarts. Review the context sent to the model and do not enter private material without authorization. Attachments may be unreadable; the local reader does not provide image OCR or vision.
 
-Restart backend dengan **`IDXEL_ALLOW_PROVIDER_REQUESTS=1`** untuk mengizinkan prompt:
-- macOS: ganti `IDXEL_ALLOW_PROVIDER_REQUESTS=0` pada perintah server dengan `1`.
-- Windows: set `$env:IDXEL_ALLOW_PROVIDER_REQUESTS = "1"` sebelum memulai backend.
+## Performance evidence and mock example
 
-| Variabel | Fungsi |
-|---|---|
-| `OPENROUTER_API_KEY` | Key milik operator server; simpan privat. |
-| `OPENROUTER_MODEL` | Model utama. |
-| `OPENROUTER_FALLBACK_MODELS` | Model cadangan untuk jalur lokal yang mendukungnya. |
-| `IDXEL_ALLOW_PROVIDER_REQUESTS` | `0` memblokir transport provider; `1` mengizinkannya. |
+### What is measured
 
-Periksa [katalog model OpenRouter](https://openrouter.ai/models) bila model default tidak tersedia. Biaya dan kuota mengikuti akun/model Anda. Key yang terbaca tidak membuktikan request berhasil. Jalur lokal dapat mencoba fallback atau repair dalam batas kode; satu prompt lokal dapat memakai lebih dari satu request. Jalur bersama di bawah membatasi satu percobaan.
+- Automated tests cover calculations, API contracts, UI behavior, and offline provider/error handling. Fixtures and mocks do not measure live model quality or investment returns.
+- The GBM engine includes an OOS evaluation path for return and maximum drawdown, using coverage, PIT, pinball loss, and a rolling-window baseline. Results depend on portfolio, cutoff, snapshot, and horizon.
+- OOS status is horizon- and target-specific. INSUFFICIENT_OOS_FOLDS means the effective-fold threshold is not met. OOS_MISCALIBRATED indicates that observed coverage missed the nominal target by the engine’s tolerance. Other statuses distinguish calibration and relative baseline performance.
+- The repository does not support a universal claim that the model “performs well.” Inspect the actual OOS diagnostics for the inputs you use.
 
-Markdown jawaban mendukung heading, teks, daftar dan tabel. Mode lokal mendukung streaming blok tervalidasi; mode bersama menunggu jawaban akhir yang lolos proyeksi publik. Aplikasi tidak menyediakan web search untuk mengambil fakta pasar baru.
+### MOCK: presentation illustration only
 
-Lampiran teks/PDF text-layer tersedia pada mode lokal sesuai batas UI. OCR/vision untuk scan atau gambar belum tersedia. Korpus hukum privat tidak termasuk clone; file yang diterima belum tentu dapat diekstrak atau menjadi bukti.
+**Every value below is fictional and is not a measured result.** This table is only a mock layout; it is not based on training, backtesting, OpenRouter output, or Portfolio Lab results.
 
-### Riwayat lokal vs riwayat bersama Supabase
+| Illustrative metric | MOCK model | MOCK baseline | Interpretation |
+|---|---:|---:|---|
+| p10–p90 coverage | 80% | 75% | Fictional example near an 80% nominal target. |
+| Pinball loss | 0.025 | 0.030 | Fictional example where the model loss is lower. |
+| Effective folds | 12 | 12 | Fictional example above the minimum threshold. |
 
-| Mode | Penyimpanan dan perilaku |
-|---|---|
-| `IDXEL_RESEARCH_HISTORY_MODE=local` | SQLite privat di folder data aplikasi, terpisah per checkout. Rename/pin lokal tersedia. `IDXEL_RESEARCH_HISTORY_PATH` dapat mengatur lokasi alternatif. |
-| `IDXEL_RESEARCH_HISTORY_MODE=shared` | PostgreSQL Supabase: pengguna aplikasi membaca dan melanjutkan thread yang sama. Pesan lama tetap immutable; pin hanya milik browser sendiri. |
+Use a caption such as: **“MOCK: illustrative evaluation layout; these figures are not benchmark results.”** Replace the mock with actual OOS diagnostics before presenting model performance as measured evidence.
 
-Clone tidak menerima credential operator atau otomatis terhubung ke database bersama. Untuk mengaktifkan mode bersama, operator menerapkan [migration SQL](supabase/migrations/202610080001_shared_research_history.sql), lalu menyediakan `SUPABASE_URL`, `SUPABASE_SECRET_KEY`, dan mode `shared` di environment **backend**. Pada macOS, file konfigurasi privat memerlukan permission 0600. Pada Windows, gunakan environment backend/secret store untuk mode bersama karena pemeriksaan permission file saat ini memakai bit POSIX.
-
-Jangan letakkan Supabase secret/service key pada frontend. Mode bersama menolak lampiran privat dan kredensial yang terdeteksi; jangan mengirim informasi rahasia pada thread publik. Dua kiriman bersamaan tidak boleh menimpa thread: UI mempertahankan draft saat konflik. Opening, polling dan replay riwayat tidak mengirim request model.
-
-Batas awal bersama adalah **20 giliran Agent per jam UTC** untuk instalasi bersama, termasuk percobaan yang gagal. Satu pengiriman memakai satu percobaan model tanpa fallback/repair otomatis. Pembatalan tidak menjamin pengembalian kredit provider. Migrasi riwayat lama harus melewati preview dan pemeriksaan privasi melalui [script migrasi](scripts/migrate_shared_research_history.py); pemeriksaan aktivasi lokal pada 8 Oktober 2026 menemukan 0 sesi lama.
-
-Operator telah mengaktifkan mode bersama pada prototype lokal. Pengguna lain memerlukan akses ke instance aplikasi yang terhubung ke database itu; menyalin repo saja tidak menyamakan riwayat. Deployment Vercel, data pasar live dan autentikasi production masih merupakan pekerjaan terpisah.
-
-## Performa: bukti nyata dan contoh mock
-
-### Bukti yang tersedia
-
-| Jenis bukti | Hasil/sumber | Yang dapat disimpulkan |
-|---|---|---|
-| Agreement rumus Studies | **57/57 kasus referensi** pada 4 kelompok, [manifest](reports/studies-reference-manifest.json) dan [JUnit XML](reports/studies-reference-tests.xml). | Formula cocok pada kasus dan toleransi yang tercatat. Ini bukan 100% akurasi prediksi pasar atau cakupan 14 fitur. |
-| Kelompok referensi | Price/risk 4, trend/momentum 24, custom transforms 15, event outcomes 14 kasus. | Ruang lingkup deterministik yang diperiksa. |
-| Suite software | Run lokal 8 Oktober 2026: **483 tes lulus**, 5 warning deprecation PyMuPDF. | Pemeriksaan kode/API/privasi dan mock provider; bukan evaluasi kualitas LLM nyata. |
-| Browser | Snapshot UI, overlay SMA/EMA dan crosshair serta lintasan GBM berhasil dirender dari data lokal. | Bukti fitur visual; tidak membuktikan profitability. |
-| OpenRouter | Penyusunan README/snapshot mengirim **0 prompt model**. | Tidak ada benchmark LLM nyata baru untuk diklaim. |
-
-Contoh **hasil GBM nyata dari snapshot lokal**, sesuai gambar di atas: BBCA, ADMR, BMRI, BBRI; profil agresif; lookback 252; risk-free manual 7,129% p.a.; modal Rp1 miliar; cutoff **2026-09-24**, 300 simulasi, seed 42.
-
-| Horizon | Coverage return p10–p90 | Status return | Coverage MDD p10–p90 | Status MDD |
-|---|---|---|---|---|
-| 20 sesi | 71,4% | `OOS_CALIBRATED` menurut kriteria engine | 61,9% | `OOS_MISCALIBRATED` |
-| 60 sesi | 52,6% | `INSUFFICIENT_OOS_FOLDS` | 57,9% | `INSUFFICIENT_OOS_FOLDS` |
-| 120 sesi | 43,8% | `INSUFFICIENT_OOS_FOLDS` | 68,8% | `INSUFFICIENT_OOS_FOLDS` |
-
-Target coverage nominal adalah 80%. Hasil ini berubah dengan input, periode dan snapshot. MDD 20 sesi belum terkalibrasi pada contoh ini; horizon panjang belum memiliki fold efektif yang cukup. Return yang lolos kriteria internal tidak menetapkan bahwa keseluruhan model “bagus” atau siap dipakai untuk keputusan investasi.
-
-### MOCK: contoh kartu performa yang baik, bukan hasil pengujian
-
-**Seluruh angka tabel berikut fiktif untuk ilustrasi presentasi.** Tabel tidak berasal dari training, backtest, OpenRouter, atau hasil Portfolio Lab. Jangan menggunakannya sebagai bukti performa pada judging video.
-
-| Metrik ilustratif | Model MOCK | Baseline MOCK | Cara membaca |
-|---|---|---|---|
-| Coverage p10–p90 | 80% | 75% | Contoh coverage model dekat nominal 80%. |
-| Pinball loss | 0,025 | 0,030 | Contoh loss model lebih rendah dari pembanding. |
-| Fold efektif | 12 | 12 | Contoh jumlah fold memenuhi batas minimum 10. |
-
-Contoh caption: **“MOCK: ilustrasi format evaluasi model; hasil benchmark belum diwakili oleh angka ini.”** Untuk menampilkan hasil asli, gunakan tabel OOS dari input yang Anda jalankan, termasuk kegagalan kalibrasi dan jumlah sampelnya.
-
-## Struktur repo dan notebook
+## Repository layout and notebooks
 
 ```text
-src/idx_evidence_lab/       Backend, retrieval, engine numerik, adapter provider/storage
-docs/prototypes/           HTML/JS, JSON tampilan, dossier emiten, artifact chart
-docs/assets/readme/        Enam screenshot UI yang aman untuk README
-data/raw/sectors/          Snapshot sumber lokal dan metadata/hash
-configs/                  Schema query dan policy sumber/provider
-scripts/                  Startup, konfigurasi key, export, verifikasi, migrasi
-supabase/migrations/       Schema/RPC untuk riwayat bersama
-tests/                    Tes formula, API, UI, privasi dan storage
-reports/                  Manifest/XML referensi rumus yang dipakai Studies
-notebooks/                Notebook analisis dan validasi
-fetch.ipynb               Notebook pengambilan data legacy
-.vscode/                  Task dan proxy Live Server
+src/idx_evidence_lab/       Python server, evidence retrieval, analyses, provider adapters
+docs/prototypes/           Current prototype UI, local snapshots, and issuer dossiers
+docs/assets/readme/        Sanitized README screenshots
+data/raw/sectors/          Bundled local market snapshots and metadata
+configs/                   Runtime schemas and source policies
+scripts/                   Startup, local provider setup, exports, and helpers
+frontend/                  React/TypeScript development shell and legacy UI source chunks
+tests/                     Calculation, API, UI, security, and offline provider tests
+reports/                   Studies reference manifest and test artifacts
+notebooks/                 Analysis and validation notebooks
+fetch.ipynb                Legacy data-fetch notebook
 ```
 
-Website membutuhkan `docs/prototypes/` saat runtime. File `.fig` merupakan artifact chart MATLAB. Simpan definisi/periode sumber; data mentah kosong tidak boleh menjadi observasi nol. Keanggotaan LQ45 saat ini tidak otomatis mewakili membership historis atau seluruh IDX.
+The local website requires its prototype assets under docs/prototypes/. Market snapshots have finite coverage and an as-of date; running the server does not refresh them.
 
-Untuk dependensi notebook tambahan:
+For notebook dependencies:
 
 ```bash
-# macOS, venv aktif
 python3 -m pip install -r requirements-notebooks.txt
+```
+
+The Portfolio Lab export script can build a notebook bundle from available local snapshots without making a provider request:
+
+```bash
 python3 scripts/export_portfolio_lab_notebook_data.py
 ```
 
-```powershell
-# Windows
-.\.venv\Scripts\python.exe -m pip install -r requirements-notebooks.txt
-.\.venv\Scripts\python.exe scripts/export_portfolio_lab_notebook_data.py
-```
+The generated bundle is local output and is not committed. Notebooks may require repository files and additional setup described in their own cells. Review any notebook before running it; some legacy notebooks can fetch data or execute training code.
 
-Export membangun `data/processed/portfolio_lab_bundle.zip` dari snapshot yang tersedia tanpa fetch baru. Upload bundle ke Colab atau lampirkan sebagai dataset Kaggle sesuai sel setup. Notebook membutuhkan package lokal, data dan artifact yang disebutkan di dalamnya; path laptop pengembang tidak tersedia pada mesin orang lain.
+## Testing and limitations
 
-Notebook `engine-smart-money_lq45-wXGBOOST.ipynb` masih mengimpor `backend.src.*` yang tidak tersedia di checkout ini. `fetch.ipynb` memerlukan setup credential dan dapat melakukan request API. Notebook legacy bukan runtime website atau bukti model tervalidasi. Periksa sel sebelum training/fetch; penulisan README ini tidak menjalankan notebook tersebut.
-
-Panduan integrasi quant-lab dan rencana Vercel milik maintainer merupakan referensi pengembangan lokal. Runtime tidak membutuhkan sibling quant-lab, folder skill atau path absolut komputer pengembang.
-
-## Pengujian dan troubleshooting
-
-Jalankan dari root repo:
+Run the Python tests from the repository root:
 
 ```bash
-# macOS, venv aktif
-python3 -m pytest -q
+PYTHONPATH=src python3 -m pytest -q
 ```
 
-```powershell
-# Windows
-.\.venv\Scripts\python.exe -m pytest -q
-```
+For the React development workspace, see frontend/README.md. CI runs Python and frontend checks, a Docker smoke test, secret scanning, and dependency auditing. Browser end-to-end and container vulnerability checks have separate reporting/gating behavior; see the workflow files for the current configuration.
 
-Tes memakai fixture/mocks provider dan koneksi server loopback. Tes referensi dan browser tidak mengukur kualitas respons OpenRouter nyata. Helper browser di `scripts/verify_*_browser.mjs` memerlukan Node.js, Playwright dan browser, serta konfigurasi helper yang sesuai; semuanya opsional untuk menjalankan website.
+Known limitations:
 
-| Masalah | Pemeriksaan |
-|---|---|
-| `No module named idx_evidence_lab` | Jalankan dari root repo dan set `PYTHONPATH=src`. |
-| `Address already in use` | Pilih server mandiri atau Go Live; jangan memakai port 5500 untuk dua listener. |
-| API 404 saat Go Live | Pastikan backend 5514 hidup dan proxy `/api` sesuai. Stop/start Go Live setelah perubahan. |
-| UI/API contract berbeda | Pastikan frontend dan backend berasal dari checkout/versi yang sama; restart dan reload. |
-| Agent belum tersambung | Periksa konfigurasi model/key dan flag provider. Jangan tampilkan nilai key pada log/screenshot. |
-| HTTP 401/402/429 | Periksa authentication, kredit atau rate limit pada akun provider; status health tidak membuktikan pemulihan. |
-| Riwayat bersama tidak tersedia | Periksa migration/RPC, environment backend dan permission konfigurasi. Shared mode gagal tertutup, tanpa fallback diam-diam ke SQLite. |
-| Hash/Studies reference gagal di Windows | Pertahankan LF melalui `.gitattributes`; jangan mengedit/menormalisasi snapshot sumber atau manifest secara sembarang. |
-| Panel kosong atau nol placeholder | Periksa input, warm-up indikator, periode, field laporan dan kematangan event. |
-| Data belum terbaru | Website membaca snapshot. Menjalankan ulang server tidak melakukan refresh Sectors. |
-
-Server dan UI telah diperiksa pada macOS dengan dependensi yang tersedia; instalasi ulang pada Mac bersih belum diuji pada pembaruan README ini. Instruksi PowerShell mengikuti struktur repo tetapi **belum diuji pada mesin Windows nyata**. Karena branch dapat berbeda, sesuaikan proxy dengan file konfigurasi pada clone Anda.
-
-## Privasi, publikasi dan batas penggunaan
-
-API key, `.env.local`, database lokal, lampiran pengguna, korpus hukum, usage log, rencana internal dan cache tetap di luar Git. Enam screenshot README mendapat pengecualian spesifik dalam `.gitignore`; gambar tersebut tidak menyertakan identitas percakapan atau key.
-
-Repo yang dapat diakses publik tidak otomatis memberikan hak redistribusi data provider. Periksa lisensi dan ketentuan sumber sebelum menyebarkan data atau mengaktifkan layanan live. Aplikasi tidak menyediakan jaminan return, penetapan pemilik manfaat, kepastian hukum, atau eksekusi transaksi.
-
-`README` ini mendokumentasikan prototype pada checkout saat ini. **Supabase bersama, deployment aplikasi, dan pembaruan data Sectors adalah tiga kemampuan berbeda.** Operator harus menyiapkan secret server, persistence, akses pengguna, refresh tervalidasi dan pengujian cloud sebelum menyebut layanan Vercel/data live siap.
+- The application has no authentication or production identity/authorization layer. The default server binds to loopback; do not expose it directly to an untrusted network.
+- Research sessions are ephemeral in-memory sessions; there is no Supabase-backed shared history in this branch.
+- Bundled market data is a local snapshot, not a live feed. Review provider terms before redistributing it.
+- Some dashboard or feature panels may report partial/unavailable data. Missing values are not zero.
+- Historical index membership is not reconstructed; current-universe studies can have survivorship limitations.
+- Financial and technical metrics are research context, not recommendations. Portfolio results can omit costs and distributions unless explicitly stated.
+- Model output and OOS checks do not guarantee future performance.
