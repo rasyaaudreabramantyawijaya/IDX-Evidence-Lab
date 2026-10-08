@@ -135,92 +135,114 @@ class SearchHandler(BaseHTTPRequestHandler):
             return
         self.send_error(403)
 
+    GET_ROUTES = {
+        "/api/studies-catalog": "_get_studies_catalog",
+        "/api/portfolio-factor-zoo-data": "_get_factor_zoo_data",
+        "/api/portfolio-factor-zoo-view": "_get_factor_zoo_view",
+        "/api/portfolio-data": "_get_portfolio_data",
+        "/api/issuer-daily": "_get_issuer_daily",
+        "/api/dashboard-data": "_get_dashboard_data",
+        "/api/screener-analysis": "_get_screener_analysis",
+        "/api/sector-heatmap": "_get_sector_heatmap",
+        "/api/news-universe": "_get_news_universe",
+        "/api/health": "_get_health",
+        "/api/research-targets": "_get_research_targets",
+        "/api/source-report": "_get_source_report",
+    }
+
     def do_GET(self) -> None:
         route = urlparse(self.path).path
-        if route == '/api/studies-catalog':
-            tickers=[item['ticker'] for item in load_lq45_universe(ROOT)['symbols']]
-            classifications,_,_,verified=_current_classifications(ROOT,tickers)
-            sectors={}
-            for ticker in verified:
-                if classifications.get(ticker): sectors.setdefault(classifications[ticker],[]).append(ticker)
-            self._send_json(200, {'widgets': studies_catalog(), 'tickers':tickers,
-                'sectors':[{'value':s,'members':sorted(m)} for s,m in sorted(sectors.items())]})
+        handler = self.GET_ROUTES.get(route)
+        if handler:
+            getattr(self, handler)()
             return
-        if route == "/api/portfolio-factor-zoo-data":
-            try:
-                payload = build_factor_zoo_payload(ROOT)
-                published = _published_artifact(payload)
-                artifact_path = ROOT / "docs/prototypes/portfolio-factor-zoo-data.json"
-                current = None
-                if artifact_path.is_file():
-                    try:
-                        current = json.loads(artifact_path.read_text(encoding="utf-8"))
-                    except (OSError, json.JSONDecodeError):
-                        current = None
-                if (isinstance(current, dict)
-                        and current.get("artifact_fingerprint") == published.get("artifact_fingerprint")):
-                    # Avoid touching a watched prototype file on every browser GET.
-                    # Live Server reloads clients when this JSON is rewritten, which
-                    # otherwise creates a reload → API → rewrite loop.
-                    published = current
-                else:
-                    write_factor_zoo_artifact(ROOT, payload)
-                    published = json.loads(artifact_path.read_text(encoding="utf-8"))
-            except (OSError, ValueError) as exc:
-                self._send_json(503, {"status": "UNAVAILABLE", "error": str(exc)})
-                return
-            self._send_json(200, published)
+        self._serve_prototype(route)
+
+    def _get_studies_catalog(self) -> None:
+        tickers=[item['ticker'] for item in load_lq45_universe(ROOT)['symbols']]
+        classifications,_,_,verified=_current_classifications(ROOT,tickers)
+        sectors={}
+        for ticker in verified:
+            if classifications.get(ticker): sectors.setdefault(classifications[ticker],[]).append(ticker)
+        self._send_json(200, {'widgets': studies_catalog(), 'tickers':tickers,
+            'sectors':[{'value':s,'members':sorted(m)} for s,m in sorted(sectors.items())]})
+
+    def _get_factor_zoo_data(self) -> None:
+        try:
+            payload = build_factor_zoo_payload(ROOT)
+            published = _published_artifact(payload)
+            artifact_path = ROOT / "docs/prototypes/portfolio-factor-zoo-data.json"
+            current = None
+            if artifact_path.is_file():
+                try:
+                    current = json.loads(artifact_path.read_text(encoding="utf-8"))
+                except (OSError, json.JSONDecodeError):
+                    current = None
+            if (isinstance(current, dict)
+                    and current.get("artifact_fingerprint") == published.get("artifact_fingerprint")):
+                # Avoid touching a watched prototype file on every browser GET.
+                # Live Server reloads clients when this JSON is rewritten, which
+                # otherwise creates a reload → API → rewrite loop.
+                published = current
+            else:
+                write_factor_zoo_artifact(ROOT, payload)
+                published = json.loads(artifact_path.read_text(encoding="utf-8"))
+        except (OSError, ValueError) as exc:
+            self._send_json(503, {"status": "UNAVAILABLE", "error": str(exc)})
             return
-        if route == "/api/portfolio-factor-zoo-view":
-            try:
-                self._send_json(200, read_factor_zoo_view(ROOT))
-            except (OSError, ValueError) as exc:
-                self._send_json(409, {"status": "SYNC_ERROR", "error": str(exc)})
-            return
-        if route == "/api/portfolio-data":
-            self._send_json(200, portfolio_data_catalog(ROOT))
-            return
-        if route == "/api/issuer-daily":
-            requested = parse_qs(urlparse(self.path).query).get("ticker", [""])[0]
-            payload = load_issuer_daily(ROOT, requested)
-            self._send_json(200 if payload["ok"] else 404, payload)
-            return
-        if route == "/api/dashboard-data":
-            self._send_json(200, {
-                "ihsg": load_ihsg_snapshot(ROOT),
-                "news": load_local_news(ROOT),
-                "universe": load_lq45_universe(ROOT),
-            })
-            return
-        if route == "/api/screener-analysis":
-            self._send_json(200, build_screener_analysis(ROOT))
-            return
-        if route == "/api/sector-heatmap":
-            self._send_json(200, load_sector_heatmap(ROOT))
-            return
-        if route == "/api/news-universe":
-            self._send_json(200, load_news_universe(ROOT))
-            return
-        if route == "/api/health":
-            openrouter_configured = load_local_openrouter_config(OPENROUTER_ENV_FILE)
-            self._send_json(200, {
-                "ok": True,
-                "openrouter_configured": openrouter_configured,
-                "openrouter_last_request": getattr(self.server, 'openrouter_last_request', {'status': 'NOT_TESTED'}),
-                "research_model_status": getattr(getattr(self.server, 'research_service', None), 'last_model_status', {'status': 'NOT_TESTED'}),
-                "local_documents": len(self.server.search_index.as_records()),
-            })
-            return
-        if route == '/api/research-targets':
-            from .research.research_service import ResearchService
-            from .research.research_sessions import ResearchSessionStore
-            service = ResearchService(ROOT, self.server.search_index, ResearchSessionStore(), OpenRouterSearchAdapter,
-                                      known_tickers=list(self.server.tickers))
-            self._send_json(200, service.targets())
-            return
-        if route == "/api/source-report":
-            self._send_json(200, build_source_report(ROOT))
-            return
+        self._send_json(200, published)
+
+    def _get_factor_zoo_view(self) -> None:
+        try:
+            self._send_json(200, read_factor_zoo_view(ROOT))
+        except (OSError, ValueError) as exc:
+            self._send_json(409, {"status": "SYNC_ERROR", "error": str(exc)})
+
+    def _get_portfolio_data(self) -> None:
+        self._send_json(200, portfolio_data_catalog(ROOT))
+
+    def _get_issuer_daily(self) -> None:
+        requested = parse_qs(urlparse(self.path).query).get("ticker", [""])[0]
+        payload = load_issuer_daily(ROOT, requested)
+        self._send_json(200 if payload["ok"] else 404, payload)
+
+    def _get_dashboard_data(self) -> None:
+        self._send_json(200, {
+            "ihsg": load_ihsg_snapshot(ROOT),
+            "news": load_local_news(ROOT),
+            "universe": load_lq45_universe(ROOT),
+        })
+
+    def _get_screener_analysis(self) -> None:
+        self._send_json(200, build_screener_analysis(ROOT))
+
+    def _get_sector_heatmap(self) -> None:
+        self._send_json(200, load_sector_heatmap(ROOT))
+
+    def _get_news_universe(self) -> None:
+        self._send_json(200, load_news_universe(ROOT))
+
+    def _get_health(self) -> None:
+        openrouter_configured = load_local_openrouter_config(OPENROUTER_ENV_FILE)
+        self._send_json(200, {
+            "ok": True,
+            "openrouter_configured": openrouter_configured,
+            "openrouter_last_request": getattr(self.server, 'openrouter_last_request', {'status': 'NOT_TESTED'}),
+            "research_model_status": getattr(getattr(self.server, 'research_service', None), 'last_model_status', {'status': 'NOT_TESTED'}),
+            "local_documents": len(self.server.search_index.as_records()),
+        })
+
+    def _get_research_targets(self) -> None:
+        from .research.research_service import ResearchService
+        from .research.research_sessions import ResearchSessionStore
+        service = ResearchService(ROOT, self.server.search_index, ResearchSessionStore(), OpenRouterSearchAdapter,
+                                  known_tickers=list(self.server.tickers))
+        self._send_json(200, service.targets())
+
+    def _get_source_report(self) -> None:
+        self._send_json(200, build_source_report(ROOT))
+
+    def _serve_prototype(self, route: str) -> None:
         if route in PUBLIC_PROTOTYPE_ASSETS:
             asset_path, content_type = PUBLIC_PROTOTYPE_ASSETS[route]
         elif route in {"/", "/index.html"}:
@@ -240,105 +262,122 @@ class SearchHandler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(content)
 
+    POST_ROUTES = {
+        "/api/studies-run": "_post_studies_run",
+        "/api/research-sessions": "_post_research",
+        "/api/research-chat": "_post_research",
+        "/api/research-cancel": "_post_research",
+        "/api/research-attachments": "_post_research",
+        "/api/portfolio-analysis": "_post_portfolio_analysis",
+        "/api/search": "_post_search",
+        "/api/issuer-research": "_post_search",
+    }
+
     def do_POST(self) -> None:
         route = urlparse(self.path).path
         if self._rate_limited(route):
             return
-        if route == '/api/studies-run':
-            try:
-                length = int(self.headers.get('Content-Length', '0'))
-                if length < 1 or length > MAX_PORTFOLIO_BODY_BYTES:
-                    self._send_json(413, {'error': 'INVALID_STUDIES_BODY_SIZE'})
-                    return
-                payload = json.loads(self.rfile.read(length))
-                tickers = [item['ticker'] for item in load_lq45_universe(ROOT)['symbols']]
-                classification, _, _, verified = _current_classifications(ROOT, tickers)
-                sectors = {}
-                for ticker in verified:
-                    sector = classification.get(ticker)
-                    if sector:
-                        sectors.setdefault(sector, []).append(ticker)
-                request = parse_study_request(payload, known_tickers=tickers, sectors=sectors)
-                store=getattr(self.server,'studies_artifacts',None)
-                artifact=store.get(request.portfolio_artifact_ref) if store and request.portfolio_artifact_ref else None
-                result = run_study(ROOT, request, portfolio_artifact=artifact)
-            except (ValueError, TypeError, KeyError):
-                self._send_json(400, {'error': 'INVALID_STUDIES_REQUEST'})
-                return
-            except Exception:
-                self._send_json(500, {'error': 'STUDIES_PROCESSING_FAILED'})
-                return
-            self._send_json(200, result)
-            return
-        if route in {'/api/research-sessions', '/api/research-chat', '/api/research-cancel', '/api/research-attachments'}:
-            try:
-                from .research.research_service import ResearchService
-                from .research.research_sessions import ResearchSessionStore
-                # Server attribute creation is protected across handler threads.
-                from threading import RLock
-                with RESEARCH_SERVICE_LOCK:
-                    if not hasattr(self.server, 'research_service'):
-                        self.server.research_service = ResearchService(ROOT, self.server.search_index,
-                            ResearchSessionStore(), OpenRouterSearchAdapter, known_tickers=list(self.server.tickers))
-                service = self.server.research_service
-                length = int(self.headers.get('Content-Length', '0'))
-                limit = 7 * 1024 * 1024 if route == '/api/research-attachments' else 64 * 1024
-                if not 1 <= length <= limit:
-                    raise ValueError('INVALID_BODY_SIZE')
-                body = json.loads(self.rfile.read(length))
-                if not isinstance(body, dict):
-                    raise ValueError('INVALID_BODY')
-                if route == '/api/research-attachments':
-                    from .research.research_attachments import read_attachment
-                    service.store.get(body.get('session_id'))
-                    if 'remove_id' in body:
-                        service.store.remove_attachment(body.get('session_id'), body['remove_id'])
-                        self._send_json(200, {'status': 'REMOVED'})
-                    else:
-                        item = service.store.add_attachment(body.get('session_id'), read_attachment(body.get('file')))
-                        self._send_json(201, {k: v for k, v in item.items() if k != 'text'})
-                elif route == '/api/research-sessions':
-                    session = service.store.create()
-                    self._send_json(201, {'session_id': session.id, 'revision': 0, 'context': session.context.to_dict(), 'history_persistent': False})
-                elif route == '/api/research-cancel':
-                    self._send_json(200, service.cancel(body.get('session_id'), body.get('expected_revision')))
-                else:
-                    load_local_openrouter_config(OPENROUTER_ENV_FILE)
-                    result = service.answer(body.get('session_id'), body.get('expected_revision'), body.get('query'),
-                        body.get('use_model', False), body.get('artifact_refs', []), request_id=body.get('request_id'), target=body.get('target'),
-                        attachment_ids=body.get('attachment_ids'), share_attachments=body.get('share_attachments', False))
-                    self._send_json(200, result)
-            except KeyError:
-                self._send_json(404, {'error': 'SESSION_EXPIRED'})
-            except (ValueError, TypeError) as exc:
-                code = str(exc)
-                self._send_json(409 if code in {'REVISION_CONFLICT', 'REQUEST_PENDING', 'STALE_RESPONSE'} else 400, {'error': code if code.isupper() else 'INVALID_REQUEST'})
-            except Exception:
-                self._send_json(502, {'error': 'RESEARCH_PROCESSING_FAILED'})
-            return
-        if route == "/api/portfolio-analysis":
-            try:
-                length = int(self.headers.get("Content-Length", "0"))
-                if length < 1 or length > MAX_PORTFOLIO_BODY_BYTES:
-                    self._send_json(413, {"status": "INVALID_REQUEST", "error": "Portfolio request exceeds 16 KB or is empty"})
-                    return
-                request = _portfolio_request(json.loads(self.rfile.read(length)))
-                result = build_portfolio_analysis(ROOT, request)
-                with RESEARCH_SERVICE_LOCK:
-                    if not hasattr(self.server,'studies_artifacts'):
-                        self.server.studies_artifacts=StudyArtifactStore()
-                result['studies_artifact_ref']=self.server.studies_artifacts.save(ROOT,result)
-            except PortfolioUnavailable as exc:
-                self._send_json(422, {"status": "UNAVAILABLE", "error": str(exc)})
-                return
-            except (ValueError, TypeError, json.JSONDecodeError) as exc:
-                self._send_json(400, {"status": "INVALID_REQUEST", "error": str(exc)})
-                return
-            self._send_json(200, result)
-            return
-        if route not in {"/api/search", "/api/issuer-research"}:
+        handler = self.POST_ROUTES.get(route)
+        if handler is None:
             self.send_error(404)
             return
+        getattr(self, handler)()
+
+    def _post_studies_run(self) -> None:
+        try:
+            length = int(self.headers.get('Content-Length', '0'))
+            if length < 1 or length > MAX_PORTFOLIO_BODY_BYTES:
+                self._send_json(413, {'error': 'INVALID_STUDIES_BODY_SIZE'})
+                return
+            payload = json.loads(self.rfile.read(length))
+            tickers = [item['ticker'] for item in load_lq45_universe(ROOT)['symbols']]
+            classification, _, _, verified = _current_classifications(ROOT, tickers)
+            sectors = {}
+            for ticker in verified:
+                sector = classification.get(ticker)
+                if sector:
+                    sectors.setdefault(sector, []).append(ticker)
+            request = parse_study_request(payload, known_tickers=tickers, sectors=sectors)
+            store=getattr(self.server,'studies_artifacts',None)
+            artifact=store.get(request.portfolio_artifact_ref) if store and request.portfolio_artifact_ref else None
+            result = run_study(ROOT, request, portfolio_artifact=artifact)
+        except (ValueError, TypeError, KeyError):
+            self._send_json(400, {'error': 'INVALID_STUDIES_REQUEST'})
+            return
+        except Exception:
+            self._send_json(500, {'error': 'STUDIES_PROCESSING_FAILED'})
+            return
+        self._send_json(200, result)
+
+    def _post_research(self) -> None:
+        route = urlparse(self.path).path
+        try:
+            from .research.research_service import ResearchService
+            from .research.research_sessions import ResearchSessionStore
+            # Server attribute creation is protected across handler threads.
+            from threading import RLock
+            with RESEARCH_SERVICE_LOCK:
+                if not hasattr(self.server, 'research_service'):
+                    self.server.research_service = ResearchService(ROOT, self.server.search_index,
+                        ResearchSessionStore(), OpenRouterSearchAdapter, known_tickers=list(self.server.tickers))
+            service = self.server.research_service
+            length = int(self.headers.get('Content-Length', '0'))
+            limit = 7 * 1024 * 1024 if route == '/api/research-attachments' else 64 * 1024
+            if not 1 <= length <= limit:
+                raise ValueError('INVALID_BODY_SIZE')
+            body = json.loads(self.rfile.read(length))
+            if not isinstance(body, dict):
+                raise ValueError('INVALID_BODY')
+            if route == '/api/research-attachments':
+                from .research.research_attachments import read_attachment
+                service.store.get(body.get('session_id'))
+                if 'remove_id' in body:
+                    service.store.remove_attachment(body.get('session_id'), body['remove_id'])
+                    self._send_json(200, {'status': 'REMOVED'})
+                else:
+                    item = service.store.add_attachment(body.get('session_id'), read_attachment(body.get('file')))
+                    self._send_json(201, {k: v for k, v in item.items() if k != 'text'})
+            elif route == '/api/research-sessions':
+                session = service.store.create()
+                self._send_json(201, {'session_id': session.id, 'revision': 0, 'context': session.context.to_dict(), 'history_persistent': False})
+            elif route == '/api/research-cancel':
+                self._send_json(200, service.cancel(body.get('session_id'), body.get('expected_revision')))
+            else:
+                load_local_openrouter_config(OPENROUTER_ENV_FILE)
+                result = service.answer(body.get('session_id'), body.get('expected_revision'), body.get('query'),
+                    body.get('use_model', False), body.get('artifact_refs', []), request_id=body.get('request_id'), target=body.get('target'),
+                    attachment_ids=body.get('attachment_ids'), share_attachments=body.get('share_attachments', False))
+                self._send_json(200, result)
+        except KeyError:
+            self._send_json(404, {'error': 'SESSION_EXPIRED'})
+        except (ValueError, TypeError) as exc:
+            code = str(exc)
+            self._send_json(409 if code in {'REVISION_CONFLICT', 'REQUEST_PENDING', 'STALE_RESPONSE'} else 400, {'error': code if code.isupper() else 'INVALID_REQUEST'})
+        except Exception:
+            self._send_json(502, {'error': 'RESEARCH_PROCESSING_FAILED'})
+
+    def _post_portfolio_analysis(self) -> None:
+        try:
+            length = int(self.headers.get("Content-Length", "0"))
+            if length < 1 or length > MAX_PORTFOLIO_BODY_BYTES:
+                self._send_json(413, {"status": "INVALID_REQUEST", "error": "Portfolio request exceeds 16 KB or is empty"})
+                return
+            request = _portfolio_request(json.loads(self.rfile.read(length)))
+            result = build_portfolio_analysis(ROOT, request)
+            with RESEARCH_SERVICE_LOCK:
+                if not hasattr(self.server,'studies_artifacts'):
+                    self.server.studies_artifacts=StudyArtifactStore()
+            result['studies_artifact_ref']=self.server.studies_artifacts.save(ROOT,result)
+        except PortfolioUnavailable as exc:
+            self._send_json(422, {"status": "UNAVAILABLE", "error": str(exc)})
+            return
+        except (ValueError, TypeError, json.JSONDecodeError) as exc:
+            self._send_json(400, {"status": "INVALID_REQUEST", "error": str(exc)})
+            return
+        self._send_json(200, result)
+
+    def _post_search(self) -> None:
+        route = urlparse(self.path).path
         try:
             length = int(self.headers.get("Content-Length", "0"))
             if length < 1 or length > MAX_BODY_BYTES:
