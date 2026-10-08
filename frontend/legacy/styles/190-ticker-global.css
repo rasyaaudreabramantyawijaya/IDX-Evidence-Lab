@@ -1,0 +1,105 @@
+    /* Ticker design system (ticker-design-system.md), every page. Tokens live in 180-ticker-dashboard.css (:root); hard-coded legacy colours in 010-170 were remapped onto the same tokens. Dense pages keep 13px tables/controls; the Dashboard layer (180) uses the full 15px scale. */
+    html,body{background:var(--tk-bg-000)}
+    #idxel-journey{background:var(--tk-bg-000);color:var(--tk-ink);font-family:var(--tk-font-sans);font-variant-numeric:tabular-nums}
+    #idxel-journey :focus-visible{outline:2px solid var(--tk-link);outline-offset:2px}
+    #idxel-journey a{color:var(--tk-link)}
+    #idxel-journey ::selection{background:var(--tk-bg-300);color:var(--tk-ink)}
+    #idxel-journey *{scrollbar-color:var(--tk-line-strong) var(--tk-bg-000)}
+
+    /* Shell: top bar, sidebar, splitter */
+    #idxel-journey .top{background:var(--tk-bg-000);border-bottom:1px solid var(--tk-line)}
+    #idxel-journey .brand{color:var(--tk-ink);font-weight:700}
+    #idxel-journey .brand small{color:var(--tk-ink-muted)}
+    #idxel-journey .brand-mark{background:var(--tk-bg-200);border:1px solid var(--tk-line-strong);border-radius:var(--tk-radius-lg);color:var(--tk-price)}
+    #idxel-journey .search{background:var(--tk-bg-200);border:1px solid var(--tk-line);border-radius:var(--tk-radius-lg);color:var(--tk-ink-muted)}
+    #idxel-journey .search:hover{border-color:var(--tk-line-strong)}
+    #idxel-journey .top-right{color:var(--tk-ink-muted)}
+    #idxel-journey .side{background:var(--tk-bg-000);border-right:1px solid var(--tk-line);padding:var(--tk-space-3) var(--tk-space-2)}
+    #idxel-journey .side-splitter{background:var(--tk-bg-000);border-color:var(--tk-line)}
+    #idxel-journey .side-splitter:after{background:var(--tk-line-strong)}
+    #idxel-journey .side-splitter:hover:after{background:var(--tk-link)}
+    #idxel-journey .nav-group{color:var(--tk-ink-faint);font:600 12px/16px var(--tk-font-sans);letter-spacing:.06em}
+    #idxel-journey .nav-item{color:var(--tk-ink-muted);border-radius:var(--tk-radius-md);font-weight:500}
+    #idxel-journey .nav-item:hover{background:var(--tk-bg-200);color:var(--tk-ink)}
+    #idxel-journey .nav-item.active{background:var(--tk-bg-300);color:var(--tk-ink);box-shadow:none}
+    #idxel-journey .nav-icon{color:var(--tk-ink-faint)}
+    #idxel-journey .nav-item.active .nav-icon,#idxel-journey .nav-item:hover .nav-icon{color:var(--tk-ink)}
+
+    /* Page frame */
+    #idxel-journey .main{background:var(--tk-bg-000);padding:var(--tk-space-6)}
+    #idxel-journey .page-head{margin-bottom:var(--tk-space-6)}
+    #idxel-journey .page-head h1{font:700 22px/28px var(--tk-font-sans);letter-spacing:0;color:var(--tk-ink)}
+    #idxel-journey .sub,#idxel-journey .note,#idxel-journey .muted{color:var(--tk-ink-muted)}
+
+    /* Button: secondary by default, primary = accent, never up/down */
+    #idxel-journey .action,#idxel-journey .filter{background:var(--tk-bg-200);border:1px solid var(--tk-line-strong);border-radius:var(--tk-radius-md);color:var(--tk-ink);font-weight:500;transition:background-color .15s ease,border-color .15s ease}
+    #idxel-journey .action:hover,#idxel-journey .filter:hover{background:var(--tk-bg-300);border-color:var(--tk-line-strong)}
+    #idxel-journey .action.active,#idxel-journey .filter.active,#idxel-journey .filter.on,#idxel-journey .action.is-on,#idxel-journey .filter.is-on{background:var(--tk-bg-300);border-color:var(--tk-line-strong);color:var(--tk-ink)}
+    #idxel-journey .primary,#idxel-journey .action.primary{background:var(--tk-accent);border-color:var(--tk-accent);color:var(--tk-white)!important;font-weight:600}
+    #idxel-journey .primary:hover,#idxel-journey .action.primary:hover{background:var(--tk-accent-hover);border-color:var(--tk-accent-hover)}
+    #idxel-journey .ghost{background:transparent}
+    #idxel-journey button:disabled,#idxel-journey .action:disabled{opacity:.45;cursor:not-allowed}
+
+    /* Controls */
+    #idxel-journey input:not([type=checkbox]):not([type=radio]):not([type=range]),#idxel-journey select,#idxel-journey textarea{background:var(--tk-bg-200);color:var(--tk-ink);border:1px solid var(--tk-line-strong);border-radius:var(--tk-radius-md)}
+    #idxel-journey input::placeholder,#idxel-journey textarea::placeholder{color:var(--tk-ink-faint)}
+    #idxel-journey input[type=checkbox],#idxel-journey input[type=radio],#idxel-journey input[type=range]{accent-color:var(--tk-accent)}
+
+    /* Cards */
+    #idxel-journey .section{background:var(--tk-bg-100);border:1px solid var(--tk-line);border-radius:var(--tk-radius-lg);box-shadow:none;margin:var(--tk-space-4) 0}
+    #idxel-journey .section-head{border-bottom:1px solid var(--tk-line);padding:var(--tk-space-3) var(--tk-space-5)}
+    #idxel-journey .section-head h2{font:600 16px/22px var(--tk-font-sans);color:var(--tk-ink)}
+    #idxel-journey .section-body{padding:var(--tk-space-4) var(--tk-space-5)}
+    #idxel-journey details>summary{color:var(--tk-ink)}
+
+    /* StatTile */
+    #idxel-journey .metrics{gap:var(--tk-space-3)}
+    #idxel-journey .metric{background:var(--tk-bg-200);border:1px solid var(--tk-line);border-radius:var(--tk-radius-lg);padding:var(--tk-space-3) var(--tk-space-4)}
+    #idxel-journey .metric label{color:var(--tk-ink-muted);font-size:12px;line-height:16px}
+    #idxel-journey .metric strong{color:var(--tk-ink);font:500 22px/28px var(--tk-font-sans);font-variant-numeric:tabular-nums}
+    #idxel-journey .metric .hint{color:var(--tk-ink-faint);font-size:12px;line-height:16px}
+
+    /* Delta / direction: up/down only for market direction; warn uses price yellow */
+    #idxel-journey .good,#idxel-journey .positive,#idxel-journey .up{color:var(--tk-up)}
+    #idxel-journey .bad,#idxel-journey .negative,#idxel-journey .down{color:var(--tk-down)}
+    #idxel-journey .warn{color:var(--tk-price)}
+
+    /* Badge: neutral chip; tone carried by text colour only */
+    #idxel-journey .state{background:var(--tk-bg-200);border:1px solid var(--tk-line);border-radius:var(--tk-radius-sm);color:var(--tk-ink-muted);font-weight:600;padding:1px var(--tk-space-2)}
+    #idxel-journey .state.good{background:var(--tk-bg-200);color:var(--tk-up)}
+    #idxel-journey .state.warn{background:var(--tk-bg-200);color:var(--tk-price)}
+    #idxel-journey .state.missing,#idxel-journey .state.bad{background:var(--tk-bg-200);color:var(--tk-down)}
+    #idxel-journey .study-chip,#idxel-journey .pe-chip,#idxel-journey .portfolio-chips button,#idxel-journey .study-ticker-pill{background:var(--tk-bg-200);border:1px solid var(--tk-line);border-radius:var(--tk-radius-md);color:var(--tk-ink)}
+
+    /* DataTable: symbol left, numbers right-aligned by existing markup, hairline rows */
+    #idxel-journey table{font-variant-numeric:tabular-nums;font-size:13px;line-height:18px}
+    #idxel-journey th{color:var(--tk-ink-muted);font-weight:600;border-bottom:1px solid var(--tk-line);padding:var(--tk-space-2) var(--tk-space-3)}
+    #idxel-journey td{color:var(--tk-ink);border-bottom:1px solid var(--tk-line);padding:var(--tk-space-2) var(--tk-space-3)}
+    #idxel-journey tbody tr:last-child td{border-bottom:0}
+    #idxel-journey tr[data-action]:hover,#idxel-journey tbody tr:hover{background:var(--tk-bg-200)}
+    #idxel-journey .ticker{color:var(--tk-ink);font-weight:600}
+    #idxel-journey .table-wrap,#idxel-journey .screener-table-wrap,#idxel-journey .watchlist-table-wrap,#idxel-journey .source-table-wrap{border-radius:var(--tk-radius-lg)}
+    #idxel-journey .muted-cell,#idxel-journey .empty-cell{color:var(--tk-ink-faint)}
+
+    /* Floating: tooltips, popovers, dialogs */
+    #idxel-journey .chart-interaction-tooltip,#idxel-journey .sector-heatmap-tooltip,#idxel-journey .factor-zoo-tooltip,#idxel-journey .evt-surface-tooltip,#idxel-journey .study-dock-popover{background:var(--tk-bg-100);border:1px solid var(--tk-line);border-radius:var(--tk-radius-lg);box-shadow:var(--tk-shadow-pop);color:var(--tk-ink)}
+    #idxel-journey .watchlist-dialog,#idxel-journey dialog{background:var(--tk-bg-100);border:1px solid var(--tk-line);border-radius:var(--tk-radius-xl);box-shadow:var(--tk-shadow-pop);color:var(--tk-ink)}
+
+    /* Charts: hairline grid, muted axes */
+    #idxel-journey svg text{font-family:var(--tk-font-sans)}
+
+    @media(max-width:620px){#idxel-journey .main{padding:var(--tk-space-4)}}
+
+    /* Selected option in button groups (range pickers, segment-like filters): SegmentedControl "is-on" */
+    #idxel-journey .filter.study-selected,#idxel-journey .action.study-selected,#idxel-journey .filter[aria-pressed=true],#idxel-journey .action[aria-pressed=true],#idxel-journey .filter.selected,#idxel-journey .action.selected{background:var(--tk-bg-300);border-color:var(--tk-ink-faint);color:var(--tk-ink);font-weight:600}
+    #idxel-journey .filter:not(.study-selected):not(.selected):not([aria-pressed=true]){color:var(--tk-ink-muted)}
+    #idxel-journey .filter:hover{color:var(--tk-ink)}
+
+    /* Index charts on every page: price = yellow, second index = series-2 */
+    #idxel-journey .ihsg-chart .grid,#idxel-journey .lq45-index-chart .grid{stroke:var(--tk-line);stroke-dasharray:4 4;vector-effect:non-scaling-stroke}
+    #idxel-journey .ihsg-chart .line{stroke:var(--tk-price);stroke-width:2}
+    #idxel-journey .ihsg-chart stop{stop-color:var(--tk-price)}
+    #idxel-journey .ihsg-chart stop:first-child{stop-opacity:.18}
+    #idxel-journey .lq45-index-chart .line{stroke:var(--tk-series-2);stroke-width:2}
+    #idxel-journey .lq45-index-chart stop{stop-color:var(--tk-series-2)}
+    #idxel-journey .lq45-index-chart stop:first-child{stop-opacity:.18}

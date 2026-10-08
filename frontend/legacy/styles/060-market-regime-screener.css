@@ -1,27 +1,27 @@
-    #idxel-journey .market-regime-state{padding:14px;border:1px solid var(--line);border-left:3px solid var(--regime-color);border-radius:8px;background:#0a1624}
+    #idxel-journey .market-regime-state{padding:14px;border:1px solid var(--line);border-left:3px solid var(--regime-color);border-radius:8px;background:var(--tk-bg-100)}
     #idxel-journey .market-regime-state strong{display:block;font-size:22px;color:var(--regime-color)}
     #idxel-journey .market-regime-state small{display:block;margin-top:5px;color:var(--muted)}
     #idxel-journey .market-regime-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
-    #idxel-journey .market-regime-metrics div{padding:9px;background:#0a1624;border-radius:7px;min-width:0}
+    #idxel-journey .market-regime-metrics div{padding:9px;background:var(--tk-bg-100);border-radius:7px;min-width:0}
     #idxel-journey .market-regime-metrics small{display:block;color:var(--muted);font-size:10px}
     #idxel-journey .market-regime-metrics b{display:block;margin-top:4px;font-size:12px;overflow-wrap:anywhere}
     #idxel-journey .market-regime-vol{display:grid;gap:6px}
-    #idxel-journey .market-regime-vol-track{height:9px;position:relative;border-radius:5px;background:linear-gradient(90deg,#49c99e,#ffc86b 50%,#e4777b)}
-    #idxel-journey .market-regime-vol-marker{position:absolute;top:-4px;width:3px;height:17px;background:#f4f8fc;border:1px solid #0b1725;transform:translateX(-50%)}
+    #idxel-journey .market-regime-vol-track{height:9px;position:relative;border-radius:5px;background:linear-gradient(90deg,var(--tk-up),var(--tk-price) 50%,var(--tk-down))}
+    #idxel-journey .market-regime-vol-marker{position:absolute;top:-4px;width:3px;height:17px;background:var(--tk-ink);border:1px solid var(--tk-bg-100);transform:translateX(-50%)}
     #idxel-journey .market-regime-vol-labels{display:flex;justify-content:space-between;color:var(--muted);font-size:10px}
     #idxel-journey .screener-breadth-overview{margin:12px 0}
     #idxel-journey .screener-breadth-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:14px}
     #idxel-journey .screener-breadth-heading strong{font-size:18px}
     #idxel-journey .screener-breadth-counts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
-    #idxel-journey .screener-breadth-count{padding:10px 12px;background:#0a1624;border:1px solid var(--line);border-radius:7px}
+    #idxel-journey .screener-breadth-count{padding:10px 12px;background:var(--tk-bg-100);border:1px solid var(--line);border-radius:7px}
     #idxel-journey .screener-breadth-count small{display:block;color:var(--muted);font-size:10px}
     #idxel-journey .screener-breadth-count b{display:block;font-size:22px;margin-top:3px}
-    #idxel-journey .screener-breadth-bar{display:flex;height:12px;margin:10px 0 5px;overflow:hidden;border-radius:7px;background:#1b2d3e}
+    #idxel-journey .screener-breadth-bar{display:flex;height:12px;margin:10px 0 5px;overflow:hidden;border-radius:7px;background:var(--tk-bg-300)}
     #idxel-journey .screener-breadth-bar span{height:100%;min-width:0}
     #idxel-journey .screener-breadth-sma{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:14px}
     #idxel-journey .screener-breadth-sma-item{display:grid;grid-template-columns:112px minmax(0,1fr) 88px;align-items:center;gap:8px;font-size:11px}
-    #idxel-journey .screener-breadth-sma-track{height:8px;background:#1b2d3e;border-radius:5px;overflow:hidden}
-    #idxel-journey .screener-breadth-sma-track span{display:block;height:100%;background:#49c99e}
+    #idxel-journey .screener-breadth-sma-track{height:8px;background:var(--tk-bg-300);border-radius:5px;overflow:hidden}
+    #idxel-journey .screener-breadth-sma-track span{display:block;height:100%;background:var(--tk-up)}
     @media(max-width:600px){#idxel-journey .screener-breadth-heading{flex-direction:column}#idxel-journey .screener-breadth-sma{grid-template-columns:1fr}#idxel-journey .screener-breadth-sma-item{grid-template-columns:85px minmax(0,1fr) 78px}}
     #idxel-journey .market-valuation-pair{grid-column:1/-1;position:relative;display:block;min-width:0}
     #idxel-journey .market-valuation-stack{display:grid;width:calc(50% - 6px);grid-template-rows:max-content max-content;align-content:start;gap:12px;min-width:0}
@@ -30,13 +30,13 @@
     #idxel-journey .market-rsi-toolbar select{max-width:210px}
     #idxel-journey .market-rsi-summary{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 14px}
     #idxel-journey .market-rsi-summary span{border:1px solid var(--line);border-radius:20px;padding:5px 9px;font-size:11px}
-    #idxel-journey .market-rsi-chart-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:8px;background:#0a1522}
+    #idxel-journey .market-rsi-chart-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:8px;background:var(--tk-bg-000)}
     #idxel-journey .market-rsi-chart{display:block;width:100%;min-width:900px;height:470px}
     #idxel-journey .market-rsi-legend{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;color:var(--muted);font-size:11px;margin:8px 0}
     #idxel-journey .market-rsi-legend span{display:inline-flex;align-items:center;gap:5px}
     #idxel-journey .market-rsi-legend i{width:9px;height:9px;border-radius:50%;display:inline-block}
     #idxel-journey .evt-overview{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin:2px 0 12px}
-    #idxel-journey .evt-stat{border:1px solid var(--line);border-radius:8px;padding:10px 12px;background:#0b1724;min-width:0}
+    #idxel-journey .evt-stat{border:1px solid var(--line);border-radius:8px;padding:10px 12px;background:var(--tk-bg-100);min-width:0}
     #idxel-journey .evt-stat small{display:block;color:var(--muted);font-size:10px;letter-spacing:.04em;text-transform:uppercase;margin-bottom:5px}
     #idxel-journey .evt-stat strong{font-size:19px;font-variant-numeric:tabular-nums;color:var(--text)}
     #idxel-journey .evt-interactive{display:grid;grid-template-columns:minmax(0,1fr);gap:9px;margin:8px 0 12px}

@@ -16,6 +16,6 @@
   "cross-origin-opener-policy": "same-origin",
   "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self'; style-src-attr 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; object-src 'none'; base-uri 'self'"
  },
- "body_sha256": "d6ade2b14c5ebb1a0055cd29c0b963ff8e0ea84c2216d773598e20f559613f0c",
- "body_bytes": 94002
+ "body_sha256": "86cc6057874e150e485bd4964613e0bd688c671bf939c6946deae036b4a9a887",
+ "body_bytes": 131751
 }

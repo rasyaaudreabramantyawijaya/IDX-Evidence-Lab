@@ -1,0 +1,125 @@
+    /* Ticker design system (ticker-design-system.md), Tokens are global (:root); the rules below are the Dashboard-specific layer, 190-ticker-global.css styles every page. */
+    :root,#idxel-journey{--tk-bg-000:#050507;--tk-bg-100:#0e0e11;--tk-bg-200:#17171b;--tk-bg-300:#222228;--tk-line:#2a2a30;--tk-line-strong:#4a4e57;--tk-ink:#f4f5f7;--tk-ink-muted:#8a8f98;--tk-ink-faint:#5d616b;--tk-ink-inverse:#0b0b0e;--tk-up:#22c07a;--tk-down:#f0475a;--tk-accent:#1f6feb;--tk-accent-hover:#2563eb;--tk-link:#5b8cff;--tk-price:#f2c14e;--tk-series-1:#f2c14e;--tk-series-2:#4f7cff;--tk-series-3:#19c2ff;--tk-series-4:#f08fb5;--tk-series-5:#b8b5ff;--tk-series-6:#2fbfa0;--tk-series-7:#b0743f;--tk-white:#ffffff;--tk-new:#f0589c;--tk-heat-up-strong:#1d6b43;--tk-heat-up:#3fbf7f;--tk-heat-down:#ec7b7b;--tk-heat-down-strong:#d93a47;--tk-heat-down-deep:#7a1f22;--tk-space-1:4px;--tk-space-2:8px;--tk-space-3:12px;--tk-space-4:16px;--tk-space-5:20px;--tk-space-6:24px;--tk-space-8:32px;--tk-radius-sm:4px;--tk-radius-md:6px;--tk-radius-lg:8px;--tk-radius-xl:12px;--tk-shadow-pop:0 8px 24px rgba(0,0,0,.6);--tk-font-sans:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+    /* Semantic aliases read by inline styles in 030-dashboard.js / 120-market-overview-screener.js, plus the legacy variables remapped onto Ticker. */
+    #idxel-journey .main.is-dashboard{--tk-flat:var(--tk-ink);--tk-kpi:var(--tk-ink);--tk-fill:var(--tk-series-2);--tk-empty:var(--tk-bg-300);--tk-signal:var(--tk-series-2);--tk-market:var(--tk-price);--bg:var(--tk-bg-000);--panel:var(--tk-bg-100);--panel2:var(--tk-bg-200);--line:var(--tk-line);--text:var(--tk-ink);--muted:var(--tk-ink-muted);--green:var(--tk-up);--red:var(--tk-down);--cyan:var(--tk-link);--amber:var(--tk-price)}
+    #idxel-journey .main.is-dashboard{background:var(--tk-bg-000);color:var(--tk-ink);font:400 15px/22px var(--tk-font-sans);font-variant-numeric:tabular-nums;padding:var(--tk-space-6)}
+    #idxel-journey .main.is-dashboard :focus-visible{outline:2px solid var(--tk-link);outline-offset:2px}
+
+    /* Page head */
+    #idxel-journey .main.is-dashboard .page-head{gap:var(--tk-space-2);margin-bottom:var(--tk-space-6);align-items:center}
+    #idxel-journey .main.is-dashboard .page-head h1{font:700 22px/28px var(--tk-font-sans);letter-spacing:0;margin:0 0 var(--tk-space-1)}
+    #idxel-journey .main.is-dashboard .page-head .sub{font-size:13px;line-height:18px;color:var(--tk-ink-muted)}
+
+    /* Button: secondary variant for every legacy .action / .filter on this page */
+    #idxel-journey .main.is-dashboard .action,#idxel-journey .main.is-dashboard .filter{font:500 15px/22px var(--tk-font-sans);padding:var(--tk-space-2) var(--tk-space-5);border-radius:var(--tk-radius-md);border:1px solid var(--tk-line-strong);background:var(--tk-bg-200);color:var(--tk-ink)}
+    #idxel-journey .main.is-dashboard .action:hover,#idxel-journey .main.is-dashboard .filter:hover{background:var(--tk-bg-300);border-color:var(--tk-line-strong)}
+    #idxel-journey .main.is-dashboard .action.primary{background:var(--tk-accent);border-color:var(--tk-accent);color:#fff}
+    #idxel-journey .main.is-dashboard .action.primary:hover{background:var(--tk-accent-hover)}
+    #idxel-journey .main.is-dashboard .section-head .action{font-size:13px;line-height:18px;padding:var(--tk-space-1) var(--tk-space-3)}
+    /* Summary tiles are narrow: title on its own line, action as an inline link below it, the same in all four. */
+    #idxel-journey .main.is-dashboard .dashboard-alerts .section-head{flex-direction:column;align-items:flex-start;gap:2px}
+    #idxel-journey .main.is-dashboard .dashboard-alerts .section-head .action{background:none;border:0;padding:0;font:500 13px/18px var(--tk-font-sans);color:var(--tk-link)}
+    #idxel-journey .main.is-dashboard .dashboard-alerts .section-head .action:hover{background:none;text-decoration:underline}
+
+    /* Cards */
+    #idxel-journey .main.is-dashboard .dashboard-layout{gap:var(--tk-space-4)}
+    #idxel-journey .main.is-dashboard .dashboard-alerts,#idxel-journey .main.is-dashboard .dashboard-indices,#idxel-journey .main.is-dashboard .dashboard-bottom{gap:var(--tk-space-4)}
+    #idxel-journey .main.is-dashboard .section,#idxel-journey .main.is-dashboard .dashboard-stock-list{background:var(--tk-bg-100);border:1px solid var(--tk-line);border-radius:var(--tk-radius-lg);box-shadow:none}
+    #idxel-journey .main.is-dashboard .section-head{padding:var(--tk-space-4) var(--tk-space-5);border-bottom:1px solid var(--tk-line);gap:var(--tk-space-2)}
+    #idxel-journey .main.is-dashboard .section-head h2,#idxel-journey .main.is-dashboard .dashboard-alerts .section-head h2{font:600 16px/22px var(--tk-font-sans);color:var(--tk-ink)}
+    #idxel-journey .main.is-dashboard .section-head .sub,#idxel-journey .main.is-dashboard .signal-baseline-panel .section-head .sub{font-size:12px;line-height:16px;color:var(--tk-ink-muted)}
+    #idxel-journey .main.is-dashboard .section-body,#idxel-journey .main.is-dashboard .dashboard-market-card .section-body{padding:var(--tk-space-5)}
+    #idxel-journey .main.is-dashboard .dashboard-meta,#idxel-journey .main.is-dashboard .dashboard-flow-summary .dashboard-meta,#idxel-journey .main.is-dashboard .dashboard-regime-summary .dashboard-meta{font-size:12px;line-height:16px;color:var(--tk-ink-muted)}
+    #idxel-journey .main.is-dashboard .note,#idxel-journey .main.is-dashboard .signal-baseline-panel .note{font-size:13px;line-height:18px;color:var(--tk-ink-muted)}
+    #idxel-journey .main.is-dashboard .dashboard-placeholder,#idxel-journey .main.is-dashboard .market-data-placeholder{background:var(--tk-bg-200);border:1px dashed var(--tk-line-strong);border-radius:var(--tk-radius-lg);color:var(--tk-ink-muted);font-size:13px;line-height:18px}
+    #idxel-journey .main.is-dashboard .dashboard-placeholder strong,#idxel-journey .main.is-dashboard .market-data-placeholder strong{color:var(--tk-ink);font:600 15px/22px var(--tk-font-sans)}
+
+    /* Badge (neutral) */
+    #idxel-journey .main.is-dashboard .state,#idxel-journey .main.is-dashboard .state.good,#idxel-journey .main.is-dashboard .state.warn,#idxel-journey .main.is-dashboard .state.missing{font:600 12px/16px var(--tk-font-sans);padding:2px var(--tk-space-2);border-radius:var(--tk-radius-sm);background:var(--tk-bg-200);border:1px solid var(--tk-line);color:var(--tk-ink-muted)}
+
+    /* Direction colours: Delta */
+    #idxel-journey .main.is-dashboard .positive,#idxel-journey .main.is-dashboard .good{color:var(--tk-up)}
+    #idxel-journey .main.is-dashboard .negative,#idxel-journey .main.is-dashboard .bad{color:var(--tk-down)}
+
+    /* Summary tiles (Unusual Flow, Regime, Breadth, Capitalization) */
+    #idxel-journey .main.is-dashboard .dashboard-summary-kpi{font:600 26px/32px var(--tk-font-sans);margin-bottom:var(--tk-space-1)}
+    #idxel-journey .main.is-dashboard .dashboard-summary-counts{gap:var(--tk-space-3);margin-bottom:var(--tk-space-3)}
+    #idxel-journey .main.is-dashboard .dashboard-summary-counts small{font-size:13px;line-height:18px;color:var(--tk-ink-muted)}
+    #idxel-journey .main.is-dashboard .dashboard-summary-counts b{font:500 26px/32px var(--tk-font-sans)}
+    #idxel-journey .main.is-dashboard .dashboard-summary-pair{font-size:13px;line-height:18px;margin:var(--tk-space-3) 0 var(--tk-space-2);color:var(--tk-ink-muted)}
+    #idxel-journey .main.is-dashboard .dashboard-summary-pair b{font-weight:500;color:var(--tk-ink)}
+    #idxel-journey .main.is-dashboard .dashboard-mini-z{grid-template-columns:48px minmax(0,1fr) 52px;gap:var(--tk-space-2);font-size:13px;line-height:18px;margin:var(--tk-space-2) 0}
+    #idxel-journey .main.is-dashboard .dashboard-mini-z>b:first-child{font-weight:600;color:var(--tk-ink)}
+    #idxel-journey .main.is-dashboard .dashboard-mini-z>b:last-child{font-weight:500;text-align:right}
+    #idxel-journey .main.is-dashboard .dashboard-mini-z-track{height:6px;background:var(--tk-bg-300);border-radius:var(--tk-radius-sm)}
+    #idxel-journey .main.is-dashboard .dashboard-mini-z-track:after{background:var(--tk-line-strong);height:10px}
+    #idxel-journey .main.is-dashboard .dashboard-mini-z-track i{height:6px;border-radius:var(--tk-radius-sm)}
+    #idxel-journey .main.is-dashboard .screener-breadth-bar{height:8px;gap:2px;border-radius:var(--tk-radius-sm);background:var(--tk-bg-300)}
+    #idxel-journey .main.is-dashboard .market-regime-vol-track{height:6px;border-radius:var(--tk-radius-sm);background:linear-gradient(90deg,var(--tk-bg-300),var(--tk-line-strong))}
+    #idxel-journey .main.is-dashboard .market-regime-vol-marker{top:-5px;height:16px;background:var(--tk-ink);border-color:var(--tk-bg-100)}
+    #idxel-journey .main.is-dashboard .market-regime-vol-labels{font-size:12px;line-height:16px;color:var(--tk-ink-muted);margin-top:var(--tk-space-1)}
+
+    /* Index cards (IHSG = price series, LQ45 = series-2) */
+    #idxel-journey .main.is-dashboard .ihsg-headline{gap:var(--tk-space-3)}
+    #idxel-journey .main.is-dashboard .ihsg-last{font:600 32px/38px var(--tk-font-sans);letter-spacing:0;color:var(--tk-ink)}
+    #idxel-journey .main.is-dashboard .ihsg-change{font:500 15px/22px var(--tk-font-sans)}
+    #idxel-journey .main.is-dashboard .ihsg-change small{font-size:12px!important;line-height:16px;color:var(--tk-ink-muted)!important}
+    #idxel-journey .main.is-dashboard .ihsg-chart,#idxel-journey .main.is-dashboard .lq45-index-chart{margin:var(--tk-space-3) 0 var(--tk-space-2)}
+    #idxel-journey .main.is-dashboard .ihsg-chart .grid,#idxel-journey .main.is-dashboard .lq45-index-chart .grid{stroke:var(--tk-line);stroke-dasharray:4 4;vector-effect:non-scaling-stroke}
+    #idxel-journey .main.is-dashboard .ihsg-chart .line{stroke:var(--tk-price);stroke-width:2}
+    #idxel-journey .main.is-dashboard .ihsg-chart stop{stop-color:var(--tk-price)}
+    #idxel-journey .main.is-dashboard .ihsg-chart stop:first-child{stop-opacity:.18}
+    #idxel-journey .main.is-dashboard .lq45-index-chart .line{stroke:var(--tk-series-2);stroke-width:2}
+    #idxel-journey .main.is-dashboard .lq45-index-chart stop{stop-color:var(--tk-series-2)}
+    #idxel-journey .main.is-dashboard .lq45-index-chart stop:first-child{stop-opacity:.18}
+
+    /* Signal vs Market Baseline */
+    #idxel-journey .main.is-dashboard .signal-baseline-toolbar{font-size:13px;line-height:18px;color:var(--tk-ink-muted);gap:var(--tk-space-2)}
+    #idxel-journey .main.is-dashboard .signal-baseline-toolbar .sub{font-size:13px}
+    #idxel-journey .main.is-dashboard .signal-baseline-toolbar select{font:500 13px/18px var(--tk-font-sans);background:var(--tk-bg-200);color:var(--tk-ink);border:1px solid var(--tk-line-strong);border-radius:var(--tk-radius-md);padding:var(--tk-space-1) var(--tk-space-2)}
+    #idxel-journey .main.is-dashboard .signal-baseline-stats{gap:var(--tk-space-3);margin:var(--tk-space-4) 0 var(--tk-space-2)}
+    #idxel-journey .main.is-dashboard .signal-baseline-stats>div{background:var(--tk-bg-200);border:1px solid var(--tk-line);border-radius:var(--tk-radius-lg);padding:var(--tk-space-3) var(--tk-space-4)}
+    #idxel-journey .main.is-dashboard .signal-baseline-stats small{font-size:13px;line-height:18px;color:var(--tk-ink-muted)}
+    #idxel-journey .main.is-dashboard .signal-baseline-stats strong{font:500 26px/32px var(--tk-font-sans);margin-top:var(--tk-space-1)}
+    #idxel-journey .main.is-dashboard .signal-baseline-verdict{font-size:15px;line-height:22px;font-weight:600;margin:var(--tk-space-3) 0}
+    #idxel-journey .main.is-dashboard .signal-baseline-rule{background:var(--tk-bg-200);border:1px solid var(--tk-line);border-left:2px solid var(--tk-line-strong);border-radius:var(--tk-radius-md);color:var(--tk-ink-muted);font-size:13px;line-height:18px;padding:var(--tk-space-3)}
+    #idxel-journey .main.is-dashboard .signal-baseline-chart line{stroke:var(--tk-line);stroke-dasharray:4 4}
+    #idxel-journey .main.is-dashboard .signal-baseline-chart line[stroke-dasharray="0"]{stroke:var(--tk-line-strong);stroke-dasharray:none}
+    #idxel-journey .main.is-dashboard .signal-baseline-chart text{fill:var(--tk-ink-muted);font-size:12px;font-family:var(--tk-font-sans)}
+    #idxel-journey .main.is-dashboard .signal-baseline-chart .signal-baseline-signal_wealth{stroke:var(--tk-signal);stroke-width:2}
+    #idxel-journey .main.is-dashboard .signal-baseline-chart .signal-baseline-market_wealth{stroke:var(--tk-market);stroke-width:2}
+    #idxel-journey .main.is-dashboard .flow-legend{font-size:13px;line-height:18px;color:var(--tk-ink-muted);gap:var(--tk-space-4)}
+    #idxel-journey .main.is-dashboard .flow-legend i{border-radius:var(--tk-radius-sm)}
+    #idxel-journey .main.is-dashboard .chart-interaction-tooltip{background:var(--tk-bg-100);border:1px solid var(--tk-line);border-radius:var(--tk-radius-lg);box-shadow:var(--tk-shadow-pop);color:var(--tk-ink);font-size:13px;line-height:18px;padding:var(--tk-space-2) var(--tk-space-3)}
+    #idxel-journey .main.is-dashboard .signal-baseline-details{font-size:13px}
+    #idxel-journey .main.is-dashboard .signal-baseline-details summary{color:var(--tk-ink);font-weight:600;padding:var(--tk-space-2) 0}
+
+    /* DataTable (signal details, 45-issuer list) */
+    #idxel-journey .main.is-dashboard table{font-size:15px;line-height:22px}
+    #idxel-journey .main.is-dashboard th{font:600 13px/18px var(--tk-font-sans);color:var(--tk-ink);padding:var(--tk-space-3) var(--tk-space-4);border-bottom:1px solid var(--tk-line)}
+    #idxel-journey .main.is-dashboard td{color:var(--tk-ink);padding:var(--tk-space-3) var(--tk-space-4);border-bottom:1px solid var(--tk-line)}
+    #idxel-journey .main.is-dashboard tbody tr:last-child td{border-bottom:0}
+    #idxel-journey .main.is-dashboard tbody tr:hover,#idxel-journey .main.is-dashboard tbody tr:hover td{background:var(--tk-bg-200)}
+    #idxel-journey .main.is-dashboard .ticker{color:var(--tk-ink);font-weight:600}
+    #idxel-journey .main.is-dashboard .screener-table .muted-cell{color:var(--tk-ink-muted)}
+    #idxel-journey .main.is-dashboard .screener-table-wrap{background:var(--tk-bg-100);border:1px solid var(--tk-line);border-radius:var(--tk-radius-lg)}
+    #idxel-journey .main.is-dashboard .screener-table th,#idxel-journey .main.is-dashboard .screener-table th:first-child,#idxel-journey .main.is-dashboard .screener-table td:first-child{background:var(--tk-bg-100)}
+
+    /* Latest News */
+    #idxel-journey .main.is-dashboard .dashboard-news-item{padding:var(--tk-space-3) 0;border-bottom:1px solid var(--tk-line)}
+    #idxel-journey .main.is-dashboard .dashboard-news-item:last-child{border-bottom:0}
+    #idxel-journey .main.is-dashboard .dashboard-news-item a{color:var(--tk-ink);font:400 15px/22px var(--tk-font-sans)}
+    #idxel-journey .main.is-dashboard .dashboard-news-item a:hover{color:var(--tk-link)}
+    #idxel-journey .main.is-dashboard .dashboard-news-item small{font-size:12px;line-height:16px;color:var(--tk-ink-muted);margin-top:var(--tk-space-1)}
+
+    /* 45-issuer list */
+    #idxel-journey .main.is-dashboard .dashboard-stock-list>summary{font:600 16px/22px var(--tk-font-sans);color:var(--tk-ink);padding:var(--tk-space-4) var(--tk-space-5)}
+    #idxel-journey .main.is-dashboard .dashboard-stock-list>summary:after{color:var(--tk-ink-muted)}
+    #idxel-journey .main.is-dashboard .dashboard-stock-list[open]>summary{border-bottom-color:var(--tk-line)}
+    #idxel-journey .main.is-dashboard .dashboard-stock-list .screener-toolbar,#idxel-journey .main.is-dashboard .dashboard-stock-list>.dashboard-meta{margin:var(--tk-space-4) var(--tk-space-5)}
+    #idxel-journey .main.is-dashboard .dashboard-stock-list .screener-table-wrap{margin:0 var(--tk-space-5) var(--tk-space-5)}
+    #idxel-journey .main.is-dashboard .screener-toolbar{gap:var(--tk-space-2)}
+    #idxel-journey .main.is-dashboard .screener-toolbar input{font:400 15px/22px var(--tk-font-sans);background:var(--tk-bg-200);color:var(--tk-ink);border:1px solid var(--tk-line-strong);border-radius:var(--tk-radius-md);padding:var(--tk-space-2) var(--tk-space-3)}
+    #idxel-journey .main.is-dashboard .screener-toolbar input::placeholder{color:var(--tk-ink-muted)}
+
+    @media(max-width:620px){#idxel-journey .main.is-dashboard{padding:var(--tk-space-4)}#idxel-journey .main.is-dashboard .page-head{flex-wrap:wrap}#idxel-journey .main.is-dashboard .signal-baseline-stats{grid-template-columns:1fr}#idxel-journey .main.is-dashboard .ihsg-last{font-size:26px;line-height:32px}}

@@ -1,12 +1,12 @@
     #idxel-journey .study-canvas-world-inner{position:absolute;left:0;top:0;transform-origin:top left}
     #idxel-journey .study-window{resize:none;overflow:hidden;min-width:360px;min-height:190px;max-width:none}
     #idxel-journey .study-window-body{height:calc(100% - 47px);overflow:auto;padding:10px 14px 24px 10px}
-    #idxel-journey .study-resize-grip{position:absolute;right:1px;bottom:1px;width:25px;height:25px;border:0!important;border-radius:0 0 7px 0!important;background:linear-gradient(135deg,transparent 48%,#7893aa 49%,#7893aa 54%,transparent 55%),linear-gradient(135deg,transparent 64%,#7893aa 65%,#7893aa 70%,transparent 71%),linear-gradient(135deg,transparent 80%,#7893aa 81%,#7893aa 86%,transparent 87%)!important;cursor:nwse-resize!important;touch-action:none;z-index:2}
+    #idxel-journey .study-resize-grip{position:absolute;right:1px;bottom:1px;width:25px;height:25px;border:0!important;border-radius:0 0 7px 0!important;background:linear-gradient(135deg,transparent 48%,var(--tk-ink-muted) 49%,var(--tk-ink-muted) 54%,transparent 55%),linear-gradient(135deg,transparent 64%,var(--tk-ink-muted) 65%,var(--tk-ink-muted) 70%,transparent 71%),linear-gradient(135deg,transparent 80%,var(--tk-ink-muted) 81%,var(--tk-ink-muted) 86%,transparent 87%)!important;cursor:nwse-resize!important;touch-action:none;z-index:2}
     #idxel-journey .study-zoom-controls{display:flex;align-items:center;gap:5px;margin-left:auto}
     #idxel-journey .study-zoom-controls output{min-width:46px;text-align:center;font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums}
     #idxel-journey .study-canvas.is-panning{cursor:grabbing}
     @media(max-width:760px){#idxel-journey .main.is-studies{overflow:auto}#idxel-journey .main.is-studies>.study-workspace{flex:none;min-height:65vh}#idxel-journey .main.is-studies>.study-workspace>.study-canvas{height:58vh;min-height:360px;flex:none}}
     #idxel-journey .sector-heatmap-intro{margin:0 0 14px;max-width:100ch}
-    #idxel-journey .sector-heatmap-shell{position:relative;padding:18px 18px 14px;background:#081522;border:1px solid #294158;border-radius:8px}
-    #idxel-journey .sector-heatmap-kicker{display:flex;justify-content:space-between;gap:12px;color:#dfeaf3;font-size:12px;font-weight:700;margin:0 0 12px}
+    #idxel-journey .sector-heatmap-shell{position:relative;padding:18px 18px 14px;background:var(--tk-bg-000);border:1px solid var(--tk-line);border-radius:8px}
+    #idxel-journey .sector-heatmap-kicker{display:flex;justify-content:space-between;gap:12px;color:var(--tk-ink);font-size:12px;font-weight:700;margin:0 0 12px}
     #idxel-journey .sector-heatmap-kicker span:last-child{color:var(--muted);font-weight:500}

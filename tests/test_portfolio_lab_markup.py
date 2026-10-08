@@ -23,7 +23,7 @@ def test_portfolio_lab_renders_accessible_controls_and_local_api_contract():
                      "async function runPortfolioAnalysis(formState)",
                      "portfolioApiUrl('/api/portfolio-data')", "portfolioApiUrl('/api/portfolio-analysis')",
                      "aria-label=\"Cari emiten LQ45\"", "data-portfolio-ticker",
-                     "portfolio-profile", "Metode & asumsi"):
+                     "portfolio-profile", "Methodology & Assumptions"):
         assert behavior in source
     for obsolete_control in ('Metode konstruksi<select', 'Sampel estimasi<select', 'Benchmark<select',
                              'data-portfolio-field="method"', 'data-portfolio-field="lookback"',
@@ -39,13 +39,13 @@ def test_portfolio_catalog_failure_is_visible_and_retryable():
     assert "portfolioState.catalogAttempted=false" in source
     assert "IDX Evidence Lab: Local API (5501)" in source
     assert "localApiFailureMessage('/api/portfolio-data',error)" in source
-    assert "<summary>Metode & asumsi</summary>" in source
+    assert "<summary>Methodology & Assumptions</summary>" in source
     assert "Black–Litterman memakai prior kapitalisasi" in source
 
 
 def test_portfolio_lab_separates_observation_simulation_and_missing_models():
     source = HTML.read_text(encoding="utf-8")
-    for label in ("Riwayat walk-forward", "Skenario eksploratoris", "Sharpe",
+    for label in ("Walk-Forward History", "Exploratory Scenarios", "Sharpe",
                   "Sortino", "Calmar", "Maximum drawdown", "CAPM",
                   "Black–Litterman", "Fama–French", "APT", "belum tersedia",
                   "bukan tanggal pasti", "tidak mengirim order"):
@@ -80,7 +80,7 @@ def test_ath_scenario_and_historical_capm_render_as_separate_windows():
 
 def test_simulated_drawdown_quantile_visual_is_honest_and_zero_anchored():
     source = HTML.read_text(encoding="utf-8")
-    assert "Rentang maximum drawdown skenario" in source
+    assert "Scenario Maximum Drawdown Range" in source
     assert "p10–median–p90" in source
     assert "Distribusi maximum drawdown" not in source
     assert 'scenario-mdd-track' in source

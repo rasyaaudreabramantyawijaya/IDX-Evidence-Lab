@@ -8,11 +8,11 @@
     #idxel-journey .dashboard-summary-pair{display:flex;justify-content:space-between;gap:8px;font-size:11px;margin:12px 0 8px;color:var(--muted)}
     #idxel-journey .dashboard-summary-pair b{color:var(--text);font-variant-numeric:tabular-nums}
     #idxel-journey .dashboard-mini-z{display:grid;grid-template-columns:42px minmax(0,1fr) 46px;align-items:center;gap:8px;font-size:11px;margin:8px 0}
-    #idxel-journey .dashboard-mini-z-track{position:relative;height:8px;background:#1c3042;border-radius:3px}
-    #idxel-journey .dashboard-mini-z-track:after{content:'';position:absolute;left:50%;height:12px;top:-2px;width:1px;background:#91a5bb}
+    #idxel-journey .dashboard-mini-z-track{position:relative;height:8px;background:var(--tk-bg-300);border-radius:3px}
+    #idxel-journey .dashboard-mini-z-track:after{content:'';position:absolute;left:50%;height:12px;top:-2px;width:1px;background:var(--tk-ink-muted)}
     #idxel-journey .dashboard-mini-z-track i{position:absolute;height:8px;border-radius:3px}
     #idxel-journey .dashboard-flow-summary .dashboard-meta,#idxel-journey .dashboard-regime-summary .dashboard-meta{font-size:10px;line-height:1.5}
     #idxel-journey .dashboard-alerts .section-head{flex-wrap:wrap;gap:5px}
     #idxel-journey .dashboard-alerts .section-head h2{font-size:13px}
     #idxel-journey .dashboard-alerts .section-head .action{font-size:10px;padding:5px 7px}
-    #idxel-journey .watchlist-empty{display:grid;justify-items:center;text-align:center;padding:36px 18px;border:1px dashed #35516b;border-radius:9px;background:#0c1725}
+    #idxel-journey .watchlist-empty{display:grid;justify-items:center;text-align:center;padding:36px 18px;border:1px dashed var(--tk-line-strong);border-radius:9px;background:var(--tk-bg-100)}

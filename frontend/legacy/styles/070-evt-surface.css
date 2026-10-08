@@ -2,53 +2,53 @@
     #idxel-journey .evt-panel .section-body{display:flex!important;flex-direction:column!important;align-items:stretch;gap:14px;width:100%;min-width:0;box-sizing:border-box}
     #idxel-journey .evt-panel .section-body>*{flex:0 0 auto;min-width:0;width:100%;box-sizing:border-box}
     #idxel-journey .evt-visual-stack{display:flex;flex-direction:column;gap:14px;width:100%;min-width:0}
-    #idxel-journey .evt-primary-visual,#idxel-journey .evt-secondary-visual{min-width:0;width:100%;border:1px solid var(--line);border-radius:10px;background:#0a1522;overflow:hidden}
-    #idxel-journey .evt-visual-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;padding:13px 16px;border-bottom:1px solid var(--line);background:linear-gradient(105deg,rgba(39,91,126,.2),rgba(10,21,34,.15))}
+    #idxel-journey .evt-primary-visual,#idxel-journey .evt-secondary-visual{min-width:0;width:100%;border:1px solid var(--line);border-radius:10px;background:var(--tk-bg-000);overflow:hidden}
+    #idxel-journey .evt-visual-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;padding:13px 16px;border-bottom:1px solid var(--line);background:linear-gradient(105deg,rgba(74,78,87,.2),rgba(5,5,7,.15))}
     #idxel-journey .evt-visual-heading h3{margin:0;color:var(--text);font-size:14px;font-weight:700}
     #idxel-journey .evt-visual-heading p{margin:5px 0 0;color:var(--muted);font-size:11px;line-height:1.5}
     #idxel-journey .evt-visual-heading .evt-visual-meta{color:var(--muted);font-size:10px;text-align:right;white-space:nowrap}
     #idxel-journey .evt-primary-visual>.evt-interactive{padding:12px 14px 8px;margin:0}
     #idxel-journey .evt-primary-visual .evt-surface-frame{border-radius:8px}
     #idxel-journey .evt-primary-visual .evt-surface-canvas{height:clamp(560px,65vh,820px)}
-    #idxel-journey .evt-surface-explanation{padding:12px 16px 14px;border-top:1px solid var(--line);color:var(--muted);font-size:12px;line-height:1.6;background:#0d1a28}
+    #idxel-journey .evt-surface-explanation{padding:12px 16px 14px;border-top:1px solid var(--line);color:var(--muted);font-size:12px;line-height:1.6;background:var(--tk-bg-100)}
     #idxel-journey .evt-surface-explanation strong{color:var(--text)}
     #idxel-journey .evt-secondary-visual .evt-chart-wrap{border:0;border-radius:0;background:transparent}
     #idxel-journey .evt-secondary-visual .evt-chart{height:auto;min-height:0}
-    #idxel-journey .evt-secondary-visual .evt-note{margin:0;padding:12px 16px 14px;border-top:1px solid var(--line);border-left:0;background:#0d1a28}
+    #idxel-journey .evt-secondary-visual .evt-note{margin:0;padding:12px 16px 14px;border-top:1px solid var(--line);border-left:0;background:var(--tk-bg-100)}
     #idxel-journey .evt-surface-toolbar{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
     #idxel-journey .evt-surface-toolbar .sub{margin-left:auto}
-    #idxel-journey .evt-live-status{color:#8fe0c2;font-size:11px;padding:5px 8px;border:1px solid #285247;border-radius:16px;background:#102b29}
+    #idxel-journey .evt-live-status{color:var(--tk-up);font-size:11px;padding:5px 8px;border:1px solid var(--tk-line);border-radius:16px;background:var(--tk-bg-100)}
     #idxel-journey .evt-surface-toolbar button{min-width:34px;padding:6px 9px}
-    #idxel-journey .evt-surface-frame{position:relative;min-width:0;width:100%;border:1px solid var(--line);border-radius:8px;background:#0a1522;overflow:hidden}
+    #idxel-journey .evt-surface-frame{position:relative;min-width:0;width:100%;border:1px solid var(--line);border-radius:8px;background:var(--tk-bg-000);overflow:hidden}
     #idxel-journey .evt-surface-canvas{display:block;width:100%;height:620px;touch-action:none;cursor:grab}
-    #idxel-journey .evt-surface-colorbar{position:absolute;z-index:1;right:14px;top:50%;transform:translateY(-50%);height:min(68%,460px);min-height:260px;display:flex;align-items:stretch;gap:8px;padding:8px 6px;border:1px solid rgba(112,139,164,.55);border-radius:7px;background:rgba(8,17,29,.88);pointer-events:none;backdrop-filter:blur(5px)}
-    #idxel-journey .evt-colorbar-scale{position:relative;display:block;width:52px;height:100%;color:#d0dbe7;font-size:10px;font-variant-numeric:tabular-nums}
-    #idxel-journey .evt-colorbar-scale i{position:absolute;left:0;top:0;bottom:0;width:14px;border:1px solid rgba(220,233,246,.65);border-radius:2px;background:linear-gradient(to top,#231749 0%,#2860be 14.3%,#1cb5db 28.6%,#28dc9a 42.9%,#a9ee37 57.1%,#fabe2d 71.4%,#ef561c 85.7%,#7a0403 100%)}
+    #idxel-journey .evt-surface-colorbar{position:absolute;z-index:1;right:14px;top:50%;transform:translateY(-50%);height:min(68%,460px);min-height:260px;display:flex;align-items:stretch;gap:8px;padding:8px 6px;border:1px solid rgba(138,143,152,.55);border-radius:7px;background:rgba(5,5,7,.88);pointer-events:none;backdrop-filter:blur(5px)}
+    #idxel-journey .evt-colorbar-scale{position:relative;display:block;width:52px;height:100%;color:var(--tk-ink);font-size:10px;font-variant-numeric:tabular-nums}
+    #idxel-journey .evt-colorbar-scale i{position:absolute;left:0;top:0;bottom:0;width:14px;border:1px solid rgba(244,245,247,.65);border-radius:2px;background:linear-gradient(to top,#231749 0%,#2860be 14.3%,#1cb5db 28.6%,#28dc9a 42.9%,#a9ee37 57.1%,#fabe2d 71.4%,#ef561c 85.7%,#7a0403 100%)}
     #idxel-journey .evt-colorbar-scale span{position:absolute;left:19px;transform:translateY(-50%);white-space:nowrap}
-    #idxel-journey .evt-colorbar-title{align-self:center;writing-mode:vertical-rl;transform:rotate(180deg);color:#d0dbe7;font-size:10px;letter-spacing:.01em;white-space:nowrap}
+    #idxel-journey .evt-colorbar-title{align-self:center;writing-mode:vertical-rl;transform:rotate(180deg);color:var(--tk-ink);font-size:10px;letter-spacing:.01em;white-space:nowrap}
     #idxel-journey .evt-surface-canvas:active{cursor:grabbing}
-    #idxel-journey .evt-surface-tooltip{position:absolute;z-index:2;pointer-events:none;max-width:260px;padding:8px 10px;border:1px solid #48617a;border-radius:7px;background:#101c2bf2;color:var(--text);font-size:11px;line-height:1.5;box-shadow:0 8px 24px #0007}
+    #idxel-journey .evt-surface-tooltip{position:absolute;z-index:2;pointer-events:none;max-width:260px;padding:8px 10px;border:1px solid var(--tk-line-strong);border-radius:7px;background:#0e0e11f2;color:var(--text);font-size:11px;line-height:1.5;box-shadow:0 8px 24px #0007}
     #idxel-journey .evt-surface-axes{display:flex;gap:8px 18px;flex-wrap:wrap;color:var(--muted);font-size:11px}
     #idxel-journey .evt-surface-axes span{display:inline-flex;align-items:center;gap:6px}
-    #idxel-journey .evt-surface-axes i{width:10px;height:10px;border-radius:2px;background:#33b9d7;display:inline-block}
-    #idxel-journey .evt-surface-axes i.high{background:#efaa55}
-    #idxel-journey .evt-data-table{border:1px solid var(--line);border-radius:8px;padding:10px;background:#0b1724}
+    #idxel-journey .evt-surface-axes i{width:10px;height:10px;border-radius:2px;background:var(--tk-link);display:inline-block}
+    #idxel-journey .evt-surface-axes i.high{background:var(--tk-price)}
+    #idxel-journey .evt-data-table{border:1px solid var(--line);border-radius:8px;padding:10px;background:var(--tk-bg-100)}
     #idxel-journey .evt-data-table summary{cursor:pointer;font-weight:600}
     #idxel-journey .evt-data-table .table-wrap{max-height:320px;margin-top:8px}
     #idxel-journey .evt-data-table table{min-width:680px}
-    #idxel-journey .evt-matlab-link{color:#86cfff;text-decoration:underline;font-size:11px}
+    #idxel-journey .evt-matlab-link{color:var(--tk-link);text-decoration:underline;font-size:11px}
     #idxel-journey .evt-legend{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;color:var(--muted);font-size:11px;margin:8px 0}
     #idxel-journey .evt-legend span{display:inline-flex;align-items:center;gap:6px}
     #idxel-journey .evt-legend i{width:10px;height:10px;border-radius:2px;display:inline-block}
-    #idxel-journey .evt-chart-wrap{position:relative;border:1px solid var(--line);border-radius:8px;background:#0a1522;overflow:hidden}
+    #idxel-journey .evt-chart-wrap{position:relative;border:1px solid var(--line);border-radius:8px;background:var(--tk-bg-000);overflow:hidden}
     #idxel-journey .evt-chart{display:block;width:100%;height:auto;aspect-ratio:1120/390}
-    #idxel-journey .evt-note{border-left:2px solid var(--amber);padding:8px 10px;margin:10px 0 0;color:var(--muted);font-size:11px;line-height:1.55;background:#0b1724}
+    #idxel-journey .evt-note{border-left:2px solid var(--amber);padding:8px 10px;margin:10px 0 0;color:var(--muted);font-size:11px;line-height:1.55;background:var(--tk-bg-100)}
     @media(max-width:760px){#idxel-journey .evt-overview{grid-template-columns:repeat(2,minmax(0,1fr))}#idxel-journey .evt-surface-canvas{height:460px}#idxel-journey .evt-surface-colorbar{right:6px;height:min(62%,320px);min-height:200px;padding:6px 4px;gap:4px}#idxel-journey .evt-colorbar-scale{font-size:9px}#idxel-journey .evt-colorbar-title{font-size:9px}#idxel-journey .evt-visual-heading{flex-direction:column}#idxel-journey .evt-visual-heading .evt-visual-meta{text-align:left;white-space:normal}}
-    #idxel-journey .market-data-placeholder{min-height:180px;display:grid;place-items:center;text-align:center;border:1px dashed #3a526c;border-radius:7px;padding:18px;color:var(--muted);font-size:12px;background:repeating-linear-gradient(135deg,#0b1724 0 18px,#0d1b2a 19px 20px)}
+    #idxel-journey .market-data-placeholder{min-height:180px;display:grid;place-items:center;text-align:center;border:1px dashed var(--tk-line-strong);border-radius:7px;padding:18px;color:var(--muted);font-size:12px;background:repeating-linear-gradient(135deg,var(--tk-bg-100) 0 18px,var(--tk-bg-100) 19px 20px)}
     #idxel-journey .market-data-placeholder strong{display:block;color:var(--text);margin-bottom:6px}
     @media(max-width:760px){#idxel-journey .market-overview-grid{grid-template-columns:1fr}#idxel-journey .market-overview-grid .market-wide{grid-column:auto}#idxel-journey .market-rsi-toolbar{align-items:flex-start;flex-direction:column}}
-    #idxel-journey .flow-toolbar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:9px}.flow-toolbar input[type=range]{width:min(260px,55vw);accent-color:var(--cyan)}.flow-chart-scroll{overflow-x:auto;overscroll-behavior-inline:contain;border:1px solid var(--line);border-radius:8px;background:#0a1522}.flow-chart-scroll svg{display:block;height:270px}.flow-legend{display:flex;gap:16px;flex-wrap:wrap;color:var(--muted);font-size:11px;margin:8px 0}.flow-legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px}.flow-list{display:flex;flex-wrap:wrap;gap:7px;margin:12px 0}.flow-list span{border:1px solid var(--line);border-radius:7px;padding:6px 9px;background:#0b1827;font-size:11px}.flow-kpi{font-size:28px;font-weight:700;color:var(--cyan)}.flow-caveat{font-size:11px;color:var(--muted);line-height:1.55;margin:9px 0 0}.flow-kpi-small{font-size:20px;font-weight:700}.flow-status{border-left:2px solid var(--amber);padding-left:10px;color:var(--muted)}
+    #idxel-journey .flow-toolbar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:9px}.flow-toolbar input[type=range]{width:min(260px,55vw);accent-color:var(--cyan)}.flow-chart-scroll{overflow-x:auto;overscroll-behavior-inline:contain;border:1px solid var(--line);border-radius:8px;background:var(--tk-bg-000)}.flow-chart-scroll svg{display:block;height:270px}.flow-legend{display:flex;gap:16px;flex-wrap:wrap;color:var(--muted);font-size:11px;margin:8px 0}.flow-legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px}.flow-list{display:flex;flex-wrap:wrap;gap:7px;margin:12px 0}.flow-list span{border:1px solid var(--line);border-radius:7px;padding:6px 9px;background:var(--tk-bg-100);font-size:11px}.flow-kpi{font-size:28px;font-weight:700;color:var(--cyan)}.flow-caveat{font-size:11px;color:var(--muted);line-height:1.55;margin:9px 0 0}.flow-kpi-small{font-size:20px;font-weight:700}.flow-status{border-left:2px solid var(--amber);padding-left:10px;color:var(--muted)}
     #idxel-journey .zscore-overview{display:grid;grid-template-columns:minmax(150px,.55fr) minmax(0,1fr);gap:14px;align-items:center;margin-bottom:14px}
     #idxel-journey .zscore-value{font-size:36px;font-weight:760;letter-spacing:-.04em;font-variant-numeric:tabular-nums;line-height:1}
-    #idxel-journey .zscore-value.positive{color:#48d1a0}#idxel-journey .zscore-value.negative{color:#ff8585}
+    #idxel-journey .zscore-value.positive{color:var(--tk-up)}#idxel-journey .zscore-value.negative{color:var(--tk-down)}
     #idxel-journey .zscore-unit{font-size:15px;color:var(--muted);font-weight:600;margin-left:4px}

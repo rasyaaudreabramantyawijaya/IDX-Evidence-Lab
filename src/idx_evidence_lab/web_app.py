@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 import math
 import os
+os.environ.setdefault("OPENBLAS_NUM_THREADS", "1")
 import re
 import sys
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
