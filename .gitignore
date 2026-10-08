@@ -50,6 +50,13 @@ scripts/protect-agents.sh
 *.heic
 *.tiff
 *.svg
+# Owner-approved, sanitized README screenshots only.
+!docs/assets/readme/dashboard.png
+!docs/assets/readme/studies.png
+!docs/assets/readme/studies-trend.png
+!docs/assets/readme/portfolio-gbm.png
+!docs/assets/readme/market-overview.png
+!docs/assets/readme/research.png
 *.pdf
 *.docx
 *.zip
