@@ -52,3 +52,17 @@ select = ["E9", "F"]
 # 15 pre-existing findings (unused imports/variables) in src/ and tests/ at baseline.
 # Ignored so adopting CI does not touch application code; clean them up in a dedicated PR, then remove this.
 ignore = ["F401", "F841"]
+
+# Module boundaries (docs/architecture/backend-modules.md). Run: make arch
+[tool.importlinter]
+root_package = "idx_evidence_lab"
+
+[[tool.importlinter.contracts]]
+name = "Domain packages only depend downward"
+type = "layers"
+layers = [
+    "idx_evidence_lab.research | idx_evidence_lab.studies",
+    "idx_evidence_lab.portfolio",
+    "idx_evidence_lab.market | idx_evidence_lab.providers",
+    "idx_evidence_lab.core",
+]

@@ -1,10 +1,10 @@
 """Tiny offline smoke demo for the package."""
 
-from .mock_sectors import MockSectorsProvider
-from .openrouter_mock import MockOpenRouterAdapter
-from .query_plan import build_query_plan
-from .search import EntityResolver, LocalSearchIndex
-from .schemas import SearchDocument, SourceClass
+from .providers.mock_sectors import MockSectorsProvider
+from .providers.openrouter_mock import MockOpenRouterAdapter
+from .providers.query_plan import build_query_plan
+from .core.search import EntityResolver, LocalSearchIndex
+from .core.schemas import SearchDocument, SourceClass
 
 
 def build_demo_index() -> LocalSearchIndex:

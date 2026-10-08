@@ -1,4 +1,4 @@
-.PHONY: setup lint test cov run audit
+.PHONY: setup lint arch test cov run audit
 
 VENV ?= .venv
 PY := $(VENV)/bin/python
@@ -6,10 +6,13 @@ PY := $(VENV)/bin/python
 setup:
 	python3 -m venv $(VENV)
 	$(PY) -m pip install -r requirements-portfolio.txt
-	$(PY) -m pip install pytest-cov ruff pip-audit
+	$(PY) -m pip install pytest-cov ruff pip-audit import-linter
 
 lint:
 	$(PY) -m ruff check .
+
+arch:
+	PYTHONPATH=src $(VENV)/bin/lint-imports
 
 test:
 	PYTHONPATH=src $(PY) -m pytest -q

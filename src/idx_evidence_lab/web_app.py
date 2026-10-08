@@ -13,22 +13,23 @@ from typing import Any
 from urllib.parse import parse_qs, urlparse
 
 from .config import Settings, load_settings
-from .openrouter_live import OpenRouterError, OpenRouterSearchAdapter, load_local_openrouter_config
+from .research.legal_corpus import search_legal_corpus
+from .research.openrouter_live import OpenRouterError, OpenRouterSearchAdapter, load_local_openrouter_config
 from .security import SECURITY_HEADERS, RateLimiter
-from .market_data import load_ihsg_snapshot, load_issuer_daily, load_local_news, load_lq45_universe, load_sector_heatmap, load_news_universe
-from .portfolio_analytics import calculate_portfolio_metrics
-from .portfolio_amounts import allocate_amounts, allocate_lots
-from .portfolio_data import _current_classifications, load_portfolio_inputs
-from .portfolio_optimization import equal_weight_portfolio, optimize_portfolio
-from .portfolio_scenarios import run_walk_forward, simulate_portfolio_scenarios
-from .portfolio_factors import _published_artifact, build_factor_zoo_payload, read_factor_zoo_view, write_factor_zoo_artifact
-from .schemas import SearchDocument, SourceClass
-from .search import LocalSearchIndex
-from .task_navigation import build_navigation, CAPABILITIES
-from .screener_analysis import build_screener_analysis
-from .studies_registry import catalog as studies_catalog, parse_study_request
+from .market.market_data import load_ihsg_snapshot, load_issuer_daily, load_local_news, load_lq45_universe, load_sector_heatmap, load_news_universe
+from .portfolio.portfolio_analytics import calculate_portfolio_metrics
+from .portfolio.portfolio_amounts import allocate_amounts, allocate_lots
+from .portfolio.portfolio_data import _current_classifications, load_portfolio_inputs
+from .portfolio.portfolio_optimization import equal_weight_portfolio, optimize_portfolio
+from .portfolio.portfolio_scenarios import run_walk_forward, simulate_portfolio_scenarios
+from .portfolio.portfolio_factors import _published_artifact, build_factor_zoo_payload, read_factor_zoo_view, write_factor_zoo_artifact
+from .core.schemas import SearchDocument, SourceClass
+from .core.search import LocalSearchIndex
+from .research.task_navigation import build_navigation, CAPABILITIES
+from .market.screener_analysis import build_screener_analysis
+from .studies.studies_registry import catalog as studies_catalog, parse_study_request
 from .studies_service import run_study
-from .studies_artifacts import StudyArtifactStore
+from .studies.studies_artifacts import StudyArtifactStore
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -537,8 +538,8 @@ class SearchHandler(BaseHTTPRequestHandler):
             })
             return
         if route == '/api/research-targets':
-            from .research_service import ResearchService
-            from .research_sessions import ResearchSessionStore
+            from .research.research_service import ResearchService
+            from .research.research_sessions import ResearchSessionStore
             service = ResearchService(ROOT, self.server.search_index, ResearchSessionStore(), OpenRouterSearchAdapter,
                                       known_tickers=list(self.server.tickers))
             self._send_json(200, service.targets())
@@ -597,8 +598,8 @@ class SearchHandler(BaseHTTPRequestHandler):
             return
         if route in {'/api/research-sessions', '/api/research-chat', '/api/research-cancel', '/api/research-attachments'}:
             try:
-                from .research_service import ResearchService
-                from .research_sessions import ResearchSessionStore
+                from .research.research_service import ResearchService
+                from .research.research_sessions import ResearchSessionStore
                 # Server attribute creation is protected across handler threads.
                 from threading import RLock
                 with RESEARCH_SERVICE_LOCK:
@@ -614,7 +615,7 @@ class SearchHandler(BaseHTTPRequestHandler):
                 if not isinstance(body, dict):
                     raise ValueError('INVALID_BODY')
                 if route == '/api/research-attachments':
-                    from .research_attachments import read_attachment
+                    from .research.research_attachments import read_attachment
                     service.store.get(body.get('session_id'))
                     if 'remove_id' in body:
                         service.store.remove_attachment(body.get('session_id'), body['remove_id'])
@@ -921,45 +922,6 @@ def build_issuer_research(root: Path, ticker: str, question: str,
         "source_boundary": "Sectors.app snapshots and manually curated local legal PDFs only; no web search or model-generated facts.",
         "analysis_boundary": "This prototype retrieves evidence; it does not estimate event probabilities or provide legal clearance.",
     }
-
-
-def search_legal_corpus(root: Path, query: str, *, limit: int = 5) -> list[dict[str, Any]]:
-    """Search text extracted locally from curated PDFs; no PDF content leaves this process."""
-    try:
-        import fitz
-    except ImportError:
-        return []
-    terms = {token.casefold() for token in TOKEN_RE.split(query) if len(token) > 2}
-    if not terms:
-        return []
-    matches = []
-    legal_root = root / "Business & Corporate Law"
-    for path in sorted(legal_root.rglob("*.pdf")) if legal_root.exists() else []:
-        try:
-            with fitz.open(path) as pdf:
-                pages = [pdf.load_page(i).get_text("text") for i in range(min(pdf.page_count, 100))]
-        except Exception:
-            continue
-        text = " ".join(pages)
-        tokens = {token.casefold() for token in TOKEN_RE.split(text) if len(token) > 2}
-        title_tokens = {token.casefold() for token in TOKEN_RE.split(path.stem + " " + path.parent.name) if len(token) > 2}
-        score = len(terms & tokens) + 3 * len(terms & title_tokens)
-        if score < 1:
-            continue
-        lower_text = text.casefold()
-        offsets = [lower_text.find(term) for term in sorted(terms) if lower_text.find(term) >= 0]
-        offset = min(offsets) if offsets else 0
-        start = max(0, offset - 140)
-        excerpt = " ".join(text[start:start + 420].split())
-        matches.append({
-            "title": path.stem.replace("_", " "),
-            "excerpt": excerpt or "Teks PDF tidak dapat diekstrak; hanya nama berkas yang tersedia.",
-            "source_id": path.relative_to(root).as_posix(),
-            "source_class": SourceClass.PRIVATE_LEGAL_REFERENCE.value,
-            "category": "rujukan_hukum_lokal",
-            "score": float(score),
-        })
-    return sorted(matches, key=lambda item: (-item["score"], item["source_id"]))[:limit]
 
 
 def build_source_report(root: Path) -> dict[str, Any]:
