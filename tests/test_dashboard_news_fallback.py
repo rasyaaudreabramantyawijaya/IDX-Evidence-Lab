@@ -7,10 +7,11 @@ import shutil
 import subprocess
 
 import pytest
+from legacy_source import LEGACY_PAGE
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PROTOTYPE = ROOT / "docs/prototypes/idx-evidence-lab-user-journey.html"
+PROTOTYPE = LEGACY_PAGE
 
 
 def test_static_market_export_includes_source_linked_latest_news():
@@ -41,7 +42,7 @@ const getEvtSurfaceFingerprint=()=>'',render=()=>{},toast=()=>{};
 const news=title=>({ok:true,articles:[{title,source:'https://example.org/article'}]});
 async function fetch(url){
   if(url==='/api/dashboard-data')return {ok:API_AVAILABLE,status:500,json:async()=>({news:news('API article')})};
-  if(url==='./market-overview-data.json')return {ok:true,json:async()=>({news:news('Static article')})};
+  if(url==='/docs/prototypes/market-overview-data.json')return {ok:true,json:async()=>({news:news('Static article')})};
   return {ok:false,status:404};
 }
 """.replace("API_AVAILABLE", json.dumps(api_available))

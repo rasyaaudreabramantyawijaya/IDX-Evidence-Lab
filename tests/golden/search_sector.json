@@ -1,0 +1,59 @@
+{
+ "request": {
+  "method": "POST",
+  "path": "/api/search",
+  "headers": {
+   "Content-Type": "application/json"
+  },
+  "body": {
+   "query": "perbankan kredit"
+  }
+ },
+ "status": 200,
+ "headers": {
+  "content-type": "application/json; charset=utf-8",
+  "cache-control": "no-store",
+  "x-content-type-options": "nosniff",
+  "x-frame-options": "DENY",
+  "referrer-policy": "no-referrer",
+  "permissions-policy": "camera=(), microphone=(), geolocation=()",
+  "cross-origin-opener-policy": "same-origin",
+  "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self'; style-src-attr 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; object-src 'none'; base-uri 'self'"
+ },
+ "body": {
+  "plan": {
+   "intent": "SEARCH_LOCAL",
+   "search_query": "perbankan kredit",
+   "entities": [],
+   "needs_clarification": false,
+   "provider": "local-fallback",
+   "model": null,
+   "source_class": "model_inference"
+  },
+  "navigation": {
+   "page": "research",
+   "tickers": [],
+   "screen_mode": "",
+   "news_topic": "",
+   "widgets": [],
+   "query": "perbankan kredit"
+  },
+  "results": [
+   {
+    "title": "CreditSights: Village Co‑op Loan Program Pressures Profitability of Bank Mandiri and Bank Negara Indonesia (BNI)",
+    "snippet": "…pressure the profitability of Bank Mandiri and Bank Negara Indonesia (BNI), the state‑owned banks ('perbankan BUMN') involved. Both banks have each extended about Rp55 trillion to PT Agrinas Pangan Nusantara, representing roughly 3 % of Bank Mandiri’s and 6 % of BNI’s gross loan portfolios, and the KDMP loan carries a net interest margin of about 1.4 % versus 4.4 % for Bank Mandiri and 3.6 % for BNI in Q2‑2026. The K…",
+    "source_id": "data/raw/sectors/news/idx_lq45_2026-09-21_2026-09-23_offset_000030.json",
+    "source_class": "sectors_source_data",
+    "ticker": "BMRI",
+    "scopes": [
+     "EVIDENCE",
+     "EMITEN",
+     "NEWS"
+    ],
+    "page": "issuer"
+   }
+  ],
+  "evidence_state": "FOUND",
+  "notice": "Model OpenRouter tidak tersedia (OPENROUTER_API_KEY belum tersedia di environment server lokal.); hasil berikut memakai pencarian lokal tanpa model."
+ }
+}

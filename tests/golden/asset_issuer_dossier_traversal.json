@@ -1,0 +1,19 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/docs/prototypes/issuer-dossiers/..%2f..%2fREADME.md",
+  "headers": {},
+  "body": null
+ },
+ "status": 404,
+ "headers": {
+  "content-type": "text/html;charset=utf-8",
+  "x-content-type-options": "nosniff",
+  "x-frame-options": "DENY",
+  "referrer-policy": "no-referrer",
+  "permissions-policy": "camera=(), microphone=(), geolocation=()",
+  "cross-origin-opener-policy": "same-origin",
+  "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self'; style-src-attr 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; object-src 'none'; base-uri 'self'"
+ },
+ "body_note": "stdlib error page; text differs between Python versions, not compared"
+}

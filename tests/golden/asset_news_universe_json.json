@@ -1,0 +1,21 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/docs/prototypes/news-universe.json",
+  "headers": {},
+  "body": null
+ },
+ "status": 200,
+ "headers": {
+  "content-type": "application/json; charset=utf-8",
+  "cache-control": "no-store",
+  "x-content-type-options": "nosniff",
+  "x-frame-options": "DENY",
+  "referrer-policy": "no-referrer",
+  "permissions-policy": "camera=(), microphone=(), geolocation=()",
+  "cross-origin-opener-policy": "same-origin",
+  "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self'; style-src-attr 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; object-src 'none'; base-uri 'self'"
+ },
+ "body_sha256": "12d1feb9cf4c5e8e53ec52e231ddbd46811b2ef4ec25fb36a9ffc556bdd6d2e7",
+ "body_bytes": 762568
+}

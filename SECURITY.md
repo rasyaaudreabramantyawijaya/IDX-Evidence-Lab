@@ -18,6 +18,9 @@ steps to reproduce and impact. Expect an acknowledgement within a few days.
   forbidden file types are tracked.
 
 ## Known gaps (tracked for later phases)
-- No authentication or rate limiting. Do not expose the server beyond localhost.
-- No Content-Security-Policy or other security response headers yet.
-- Attachment upload (`/api/research-attachments`) has a size limit but no content-type verification.
+- No authentication. Do not expose the server beyond localhost.
+- The strict Content-Security-Policy is report-only until inline scripts/styles are removed (frontend split).
+- Rate limiting is in memory per process and per client IP; it is not a substitute for a gateway in front of a public deployment.
+- Attachment upload (`/api/research-attachments`) has a size limit and basic name checks but no content-type verification.
+
+See `docs/security/headers-and-rate-limits.md` for what is enforced today.

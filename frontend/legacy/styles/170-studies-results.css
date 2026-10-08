@@ -1,0 +1,13 @@
+    #idxel-journey .study-result-table{max-width:100%;overflow:auto;max-height:260px}
+    #idxel-journey .study-result-table table{width:100%;font-size:12px}
+    #idxel-journey .study-result-table td{white-space:normal;overflow-wrap:anywhere;padding:8px}
+    #idxel-journey .study-result-table small{display:block;color:var(--muted)}
+    #idxel-journey .study-records pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#0a1521;padding:10px;border-radius:6px;font-size:11px}
+    #idxel-journey .study-run-controls{display:flex;gap:8px;margin-bottom:10px}
+    #idxel-journey .study-chart svg{width:100%;height:auto;display:block}
+    #idxel-journey .study-output :focus-visible{outline:2px solid #45c5e4;outline-offset:2px}
+    #idxel-journey .study-window-body{overflow:auto;min-width:0}
+    #idxel-journey .study-config-row{flex-wrap:wrap}
+    #idxel-journey .study-warnings{color:#d9bc82}
+    #idxel-journey .study-toolbar .action:hover{border-color:#45c5e4}
+    @media(prefers-reduced-motion:reduce){#idxel-journey .study-window{transition:none}}

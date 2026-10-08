@@ -1,0 +1,48 @@
+    #idxel-journey .research-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 24px;border-bottom:1px solid var(--line)}
+    #idxel-journey .research-eyebrow{display:block;color:#6fbad0;font-size:10px;font-weight:700;letter-spacing:.13em;margin-bottom:8px}
+    #idxel-journey #research-chat-transcript{padding:24px;min-height:220px;overflow-wrap:anywhere}
+    #idxel-journey .research-empty{padding:26px 0;max-width:550px}
+    #idxel-journey .research-empty h2{font-size:25px;letter-spacing:-.03em;margin:8px 0 12px}
+    #idxel-journey .research-message{padding:18px 20px;border-radius:10px;line-height:1.7}
+    #idxel-journey .research-message details{border-top:1px solid var(--line);padding-top:12px;margin-top:16px}
+    #idxel-journey .research-message details small{display:block;overflow-wrap:anywhere}
+    #idxel-journey .research-composer{padding:22px 24px;background:#0f1d2a;border-top:1px solid #284052}
+    #idxel-journey .research-target-label,#idxel-journey .research-question-label{display:block;color:#b8cbd8;font-size:12px;font-weight:600;margin:0 0 8px}
+    #idxel-journey #research-target{width:100%;min-height:44px;padding:10px 12px;border:1px solid #355065;border-radius:10px;background:#132533;color:var(--text);margin-bottom:20px}
+    #idxel-journey .research-composer .research-question{margin:0;min-height:110px;border-radius:10px;line-height:1.6;padding:14px;background:#09131e;width:100%;box-sizing:border-box}
+    #idxel-journey .research-composer-actions{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:16px;flex-wrap:wrap}
+    #idxel-journey .research-mode-switch{display:flex;padding:4px;border:1px solid #304658;border-radius:12px;background:#0a1520;gap:4px}
+    #idxel-journey .research-mode-switch button{border:1px solid transparent;background:transparent;color:#a0b3c3;border-radius:8px;min-width:96px;min-height:48px;font:inherit;font-size:13px;font-weight:600;cursor:pointer;padding:7px 12px}
+    #idxel-journey .research-mode-switch button span{display:block;font-size:10px;font-weight:400;margin-top:2px}
+    #idxel-journey .research-mode-switch button[aria-pressed=true]{background:#17394b;border-color:#357089;color:#ecf9ff}
+    #idxel-journey .research-privacy{font-size:11px;line-height:1.7;color:var(--muted);margin:12px 0 0}
+    #idxel-journey .research-fallback{border-left:3px solid #e2b66a;padding:10px 14px;background:#282419;color:#f0d7a9}
+    #idxel-journey .research-chat-shell button:focus-visible,#idxel-journey #research-target:focus-visible{outline:2px solid #6fd6ef;outline-offset:3px}
+    #idxel-journey .research-attachments{margin-top:12px}#idxel-journey .research-add-file{min-height:42px;border-radius:10px;font-size:18px}#idxel-journey .research-add-file span{font-size:12px}#idxel-journey .research-attachments>.row{flex-wrap:wrap}#idxel-journey .research-file-list{padding:0;margin:10px 0;list-style:none}#idxel-journey .research-file-list li{display:flex;align-items:center;justify-content:space-between;gap:12px;border:1px solid #284052;border-radius:10px;padding:10px 12px;margin:6px 0;overflow-wrap:anywhere}#idxel-journey .research-file-list li>div{min-width:0}#idxel-journey .research-file-list strong{font-size:12px}#idxel-journey .research-file-list small{display:block;color:#94adbf;font-size:11px;margin-top:4px}#idxel-journey .research-share-label{display:block;font-size:12px;line-height:1.6;color:#b8cbd8}#idxel-journey .research-dragging{outline:2px dashed #6fd6ef;outline-offset:-6px;background:#153447}
+    @media(max-width:600px){#idxel-journey .research-toolbar,#idxel-journey .research-composer,#idxel-journey #research-chat-transcript{padding:16px}#idxel-journey .research-composer-actions{align-items:stretch}#idxel-journey .research-mode-switch{flex:1}#idxel-journey .research-mode-switch button{min-width:0;flex:1}#idxel-journey .research-composer-actions>.row{width:100%;justify-content:flex-end}#idxel-journey .research-message{padding:14px}}
+    #idxel-journey .watchlist-table-wrap{overflow:auto;border:1px solid var(--line);border-radius:8px}
+    #idxel-journey .watchlist-table{min-width:1120px;margin:0}
+    #idxel-journey .watchlist-table th{white-space:nowrap;background:#132236}
+    #idxel-journey .watchlist-table td{font-variant-numeric:tabular-nums}
+    #idxel-journey .watchlist-sort{border:0;background:transparent;color:inherit;padding:2px 0;text-align:left;white-space:nowrap}
+    #idxel-journey .watchlist-sort:hover{color:var(--text)}
+    #idxel-journey .watchlist-sort-indicator{color:#6e879f;margin-left:4px}
+    #idxel-journey .watchlist-remove{border:1px solid #354c63;background:#0c1725;color:var(--muted);border-radius:6px;padding:4px 7px}
+    #idxel-journey .watchlist-dialog{width:min(560px,100%);max-height:min(78vh,720px);display:flex;flex-direction:column;gap:12px}
+    #idxel-journey .watchlist-dialog-head{display:flex;align-items:center;gap:10px}
+    #idxel-journey .watchlist-dialog-head h2{margin:0}
+    #idxel-journey .watchlist-dialog-close{margin-left:auto;border:0;background:transparent;color:var(--muted);font-size:20px;padding:2px 7px}
+    #idxel-journey .watchlist-picker-search{width:100%;border:1px solid var(--line);border-radius:7px;background:#0b1522;color:var(--text);padding:10px 12px;outline:none}
+    #idxel-journey .watchlist-picker-list{overflow:auto;min-height:100px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    #idxel-journey .watchlist-picker-row{display:flex;align-items:center;gap:10px;padding:9px 4px;border-bottom:1px solid #1b2c3f}
+    #idxel-journey .watchlist-picker-row:last-child{border-bottom:0}
+    #idxel-journey .watchlist-picker-row .ticker{min-width:54px}
+    #idxel-journey .watchlist-picker-row .sub{flex:1}
+    #idxel-journey .watchlist-picker-row button{min-width:76px}
+    #idxel-journey .watchlist-picker-foot{display:flex;align-items:center;gap:10px}
+    #idxel-journey .watchlist-picker-foot .sub{flex:1}
+    @media(max-width:620px){#idxel-journey .watchlist-empty{padding:28px 14px}.watchlist-dialog{padding:14px}}
+    #idxel-journey .study-output{min-width:0;font-size:13px;overflow-wrap:anywhere}
+    #idxel-journey .study-output p{margin:8px 0;line-height:1.5}
+    #idxel-journey .study-output details{margin:9px 0;border-top:1px solid var(--line);padding-top:8px}
+    #idxel-journey .study-output summary{cursor:pointer;color:var(--text);padding:4px 0}

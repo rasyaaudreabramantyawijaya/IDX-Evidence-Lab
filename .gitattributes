@@ -2,3 +2,6 @@
 data/raw/** -text
 # Studies reference manifest hashes these sources byte-for-byte.
 src/idx_evidence_lab/studies_*.py text eol=lf
+src/idx_evidence_lab/studies/*.py text eol=lf
+# Served assets are hashed by the golden-master snapshots.
+docs/prototypes/** text eol=lf

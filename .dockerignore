@@ -1,0 +1,19 @@
+.git
+.github
+.venv
+venv
+.vscode
+.env
+.env.*
+**/__pycache__
+*.pyc
+.pytest_cache
+.ruff_cache
+.coverage
+data
+notebooks
+tests
+fetch.ipynb
+Business & Corporate Law
+uv.lock
+frontend

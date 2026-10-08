@@ -1,0 +1,34 @@
+{
+ "request": {
+  "method": "GET",
+  "path": "/api/issuer-daily?ticker=ZZZZ",
+  "headers": {},
+  "body": null
+ },
+ "status": 404,
+ "headers": {
+  "content-type": "application/json; charset=utf-8",
+  "cache-control": "no-store",
+  "x-content-type-options": "nosniff",
+  "x-frame-options": "DENY",
+  "referrer-policy": "no-referrer",
+  "permissions-policy": "camera=(), microphone=(), geolocation=()",
+  "cross-origin-opener-policy": "same-origin",
+  "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self'; style-src-attr 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; object-src 'none'; base-uri 'self'"
+ },
+ "body": {
+  "ok": false,
+  "ticker": "ZZZZ",
+  "provider": "Sectors.app",
+  "source_class": "sectors_source_data",
+  "data_quality": "MISSING",
+  "snapshot_count": 0,
+  "observation_count": 0,
+  "coverage_start": null,
+  "coverage_end": null,
+  "retrieved_at": null,
+  "series": [],
+  "issues": [],
+  "source_files": []
+ }
+}

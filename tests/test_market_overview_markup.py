@@ -1,6 +1,7 @@
 import json
 from pathlib import Path
 import unittest
+from legacy_source import LEGACY_PAGE
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -8,19 +9,19 @@ ROOT = Path(__file__).resolve().parents[1]
 
 class MarketOverviewPrototypeTests(unittest.TestCase):
     def test_live_server_has_static_market_data_fallback(self):
-        source = (ROOT / "docs/prototypes/idx-evidence-lab-user-journey.html").read_text(encoding="utf-8")
-        self.assertIn("fetch('./market-overview-data.json'", source)
+        source = LEGACY_PAGE.read_text(encoding="utf-8")
+        self.assertIn("fetch('/docs/prototypes/market-overview-data.json'", source)
         self.assertIn("function marketRsiPanel()", source)
         self.assertIn("data-action=\"market-rsi-period\"", source)
         self.assertIn("function wilderRsi(closes,period)", source)
 
     def test_forward_pe_snapshot_omits_positive_distribution_chart(self):
-        source = (ROOT / "docs/prototypes/idx-evidence-lab-user-journey.html").read_text(encoding="utf-8")
+        source = LEGACY_PAGE.read_text(encoding="utf-8")
         self.assertNotIn("const peDistribution=", source)
         self.assertNotIn("class=\"pe-distribution\"", source)
 
     def test_valuation_cards_keep_intrinsic_left_heights_and_forward_panel_matches_the_stack(self):
-        source = (ROOT / "docs/prototypes/idx-evidence-lab-user-journey.html").read_text(encoding="utf-8")
+        source = LEGACY_PAGE.read_text(encoding="utf-8")
         self.assertIn("class=\"market-valuation-pair\"><div class=\"market-valuation-stack\">${monthlyForeignPanel()}${ratioPanel}</div>${pePanel}</div>", source)
         self.assertIn(".market-valuation-pair{grid-column:1/-1;position:relative;display:block;min-width:0", source)
         self.assertIn(".market-valuation-stack{display:grid;width:calc(50% - 6px);grid-template-rows:max-content max-content;align-content:start", source)
@@ -45,7 +46,7 @@ class MarketOverviewPrototypeTests(unittest.TestCase):
         self.assertEqual(payload["sectorHeatmap"]["data_quality"], "PARTIAL")
 
     def test_issuer_tabs_stay_inside_dossier_and_flow_is_ticker_scoped(self):
-        source = (ROOT / "docs/prototypes/idx-evidence-lab-user-journey.html").read_text(encoding="utf-8")
+        source = LEGACY_PAGE.read_text(encoding="utf-8")
         self.assertNotIn('data-page="flow"', source)
         self.assertIn("if(a==='issuer-tab'){issuerTab=b.dataset.tab;page='issuer';dossierReport=false;render()", source)
         self.assertIn('role="tabpanel"', source)

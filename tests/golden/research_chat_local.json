@@ -1,0 +1,83 @@
+{
+ "request": {
+  "method": "POST",
+  "path": "/api/research-chat",
+  "headers": {
+   "Content-Type": "application/json"
+  },
+  "body": {
+   "session_id": "{session_id}",
+   "expected_revision": 0,
+   "query": "ringkas BBCA",
+   "use_model": false,
+   "artifact_refs": []
+  }
+ },
+ "status": 200,
+ "headers": {
+  "content-type": "application/json; charset=utf-8",
+  "cache-control": "no-store",
+  "x-content-type-options": "nosniff",
+  "x-frame-options": "DENY",
+  "referrer-policy": "no-referrer",
+  "permissions-policy": "camera=(), microphone=(), geolocation=()",
+  "cross-origin-opener-policy": "same-origin",
+  "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self'; style-src-attr 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; object-src 'none'; base-uri 'self'"
+ },
+ "body": {
+  "session_id": "<session_id>",
+  "request_id": "<uuid>",
+  "revision": 1,
+  "reply": {
+   "status": "INSUFFICIENT_EVIDENCE",
+   "blocks": [
+    {
+     "kind": "text",
+     "claim_kind": "concept",
+     "text": "Belum ditemukan bukti atau hasil perhitungan lokal yang relevan. Ini tidak membuktikan kejadian tersebut tidak terjadi.",
+     "evidence_ids": [],
+     "metric_ids": [],
+     "numeric_claims": [],
+     "columns": [],
+     "rows": []
+    },
+    {
+     "kind": "text",
+     "claim_kind": "concept",
+     "text": "Batas interpretasi: arsip lokal bukan data live; kecocokan sumber tidak membuktikan sebab-akibat atau niat. Periksa periode, kualitas input, alternatif penjelasan, dan bukti yang dapat membatalkan kesimpulan.",
+     "evidence_ids": [],
+     "metric_ids": [],
+     "numeric_claims": [],
+     "columns": [],
+     "rows": []
+    }
+   ],
+   "evidence": [],
+   "metrics": [],
+   "coverage": {
+    "categories": [],
+    "source_dates": [],
+    "unknown_source_dates": 0,
+    "truncated": false
+   },
+   "missing_inputs": [
+    "Belum ada bukti lokal relevan."
+   ],
+   "model_status": {
+    "provider": "local",
+    "status": "NOT_REQUESTED"
+   },
+   "context": {
+    "entities": [
+     "BBCA"
+    ],
+    "scope": "issuer",
+    "topic": "method",
+    "period": {},
+    "artifact_refs": [],
+    "assumptions": []
+   }
+  },
+  "history_truncated": false
+ }
+}

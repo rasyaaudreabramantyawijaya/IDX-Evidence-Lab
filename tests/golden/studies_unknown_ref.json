@@ -1,0 +1,63 @@
+{
+ "request": {
+  "method": "POST",
+  "path": "/api/studies-run",
+  "headers": {
+   "Content-Type": "application/json"
+  },
+  "body": {
+   "widget_id": "portfolio_risk",
+   "targets": [
+    "BBCA"
+   ],
+   "window": "available",
+   "portfolio_artifact_ref": "00000000000000000000000000000000"
+  }
+ },
+ "status": 200,
+ "headers": {
+  "content-type": "application/json; charset=utf-8",
+  "cache-control": "no-store",
+  "x-content-type-options": "nosniff",
+  "x-frame-options": "DENY",
+  "referrer-policy": "no-referrer",
+  "permissions-policy": "camera=(), microphone=(), geolocation=()",
+  "cross-origin-opener-policy": "same-origin",
+  "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self'; style-src-attr 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; object-src 'none'; base-uri 'self'"
+ },
+ "body": {
+  "widget_id": "portfolio_risk",
+  "target": {
+   "kind": "issuer",
+   "targets": [
+    "BBCA"
+   ],
+   "entities": [
+    "BBCA"
+   ]
+  },
+  "status": "INSUFFICIENT_DATA",
+  "verification": "NOT_TESTED",
+  "formula_version": "studies-daily-v1",
+  "period": {
+   "start": null,
+   "end": null
+  },
+  "cutoff": null,
+  "sources": [],
+  "coverage": {
+   "requested_issuers": 1,
+   "usable_issuers": 0
+  },
+  "metrics": [],
+  "series": [],
+  "tables": [],
+  "warnings": [
+   {
+    "reason": "MATCHING_PORTFOLIO_ARTIFACT_REQUIRED"
+   }
+  ],
+  "request_fingerprint": "aa0a6e41ac815b0e476f5c472039f7dd61b4b95a445e87635dddd87299c17681",
+  "verification_scope": null
+ }
+}

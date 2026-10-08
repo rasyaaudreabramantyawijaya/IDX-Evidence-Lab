@@ -15,6 +15,13 @@ make run       # local server on http://127.0.0.1:5500
 ```
 Python 3.10+ is required.
 
+Frontend (`frontend/`, Node 22+): `make web-install`, `make web-dev` (http://127.0.0.1:5173/app/, proxies `/api` to the Python server on :5500), `make web-check` (typecheck, lint, format, unit tests). See `frontend/README.md`.
+
+The current UI's CSS/JS are built from `frontend/legacy/` (`make legacy-build`); never edit `docs/prototypes/app.js` or `app.css` by hand, CI checks they match the chunks.
+
+## Releases
+Every merge to `main` publishes a container image to GHCR (workflow `release`). Tag `vX.Y.Z` for a versioned release. How to run, deploy and roll back: `docs/runbooks/deploy.md`.
+
 ## Rules
 - Do not commit keys, `.env*`, provider data outside `data/raw/sectors/`, screenshots, PDFs or private corpora.
 - Do not change calculation output silently. If a number or API field changes, say so in the PR.

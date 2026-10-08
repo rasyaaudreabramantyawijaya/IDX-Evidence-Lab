@@ -1,0 +1,31 @@
+{
+ "request": {
+  "method": "POST",
+  "path": "/api/research-attachments",
+  "headers": {
+   "Content-Type": "application/json"
+  },
+  "body": {
+   "session_id": "{session_id}",
+   "file": {
+    "name": "bad\u0000.txt",
+    "mime": "text/plain",
+    "data": "Q2F0YXRhbiBwZW5nZ3VuYTogQkJDQQo="
+   }
+  }
+ },
+ "status": 400,
+ "headers": {
+  "content-type": "application/json; charset=utf-8",
+  "cache-control": "no-store",
+  "x-content-type-options": "nosniff",
+  "x-frame-options": "DENY",
+  "referrer-policy": "no-referrer",
+  "permissions-policy": "camera=(), microphone=(), geolocation=()",
+  "cross-origin-opener-policy": "same-origin",
+  "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self'; style-src-attr 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; object-src 'none'; base-uri 'self'"
+ },
+ "body": {
+  "error": "INVALID_ATTACHMENT"
+ }
+}

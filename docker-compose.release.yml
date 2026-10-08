@@ -1,0 +1,20 @@
+# Runs the published image instead of building from source.
+#   export IDXEL_IMAGE=ghcr.io/<owner>/<repo>:latest      # lowercase; or pin sha-<commit> / vX.Y.Z
+#   docker compose -f docker-compose.release.yml up -d
+# Needs a ./data directory (market snapshots) next to this file. See docs/runbooks/deploy.md.
+services:
+  app:
+    image: ${IDXEL_IMAGE:?set IDXEL_IMAGE to the ghcr.io image reference}
+    pull_policy: always
+    ports:
+      # Loopback only: the app has no authentication yet.
+      - "127.0.0.1:5500:5500"
+    volumes:
+      - ./data:/app/data:ro
+    environment:
+      OPENROUTER_API_KEY: ${OPENROUTER_API_KEY:-}
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    restart: unless-stopped

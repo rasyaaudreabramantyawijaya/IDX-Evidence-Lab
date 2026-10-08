@@ -7,6 +7,6 @@ on the local server; without a key the app answers from local evidence.
 
 __version__ = "0.1.0-offline"
 
-from .schemas import EvidenceState, SourceClass
+from .core.schemas import EvidenceState, SourceClass
 
 __all__ = ["EvidenceState", "SourceClass"]

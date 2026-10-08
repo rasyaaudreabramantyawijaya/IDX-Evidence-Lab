@@ -1,0 +1,18 @@
+    #idxel-journey .signal-baseline-chart-frame{min-width:0;position:relative}
+    #idxel-journey .signal-baseline-chart-frame .chart-interaction-tooltip{width:min(320px,calc(100% - 8px));box-sizing:border-box;overflow-wrap:anywhere}
+    #idxel-journey .dashboard-alerts>.section{margin:0;min-width:0}
+    #idxel-journey .dashboard-summary-kpi{font-size:24px;font-weight:750;line-height:1.3;margin-bottom:5px;font-variant-numeric:tabular-nums}
+    #idxel-journey .dashboard-summary-counts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-bottom:10px}
+    #idxel-journey .dashboard-summary-counts small{display:block;color:var(--muted);font-size:11px}
+    #idxel-journey .dashboard-summary-counts b{display:block;font-size:22px;font-variant-numeric:tabular-nums}
+    #idxel-journey .dashboard-summary-pair{display:flex;justify-content:space-between;gap:8px;font-size:11px;margin:12px 0 8px;color:var(--muted)}
+    #idxel-journey .dashboard-summary-pair b{color:var(--text);font-variant-numeric:tabular-nums}
+    #idxel-journey .dashboard-mini-z{display:grid;grid-template-columns:42px minmax(0,1fr) 46px;align-items:center;gap:8px;font-size:11px;margin:8px 0}
+    #idxel-journey .dashboard-mini-z-track{position:relative;height:8px;background:#1c3042;border-radius:3px}
+    #idxel-journey .dashboard-mini-z-track:after{content:'';position:absolute;left:50%;height:12px;top:-2px;width:1px;background:#91a5bb}
+    #idxel-journey .dashboard-mini-z-track i{position:absolute;height:8px;border-radius:3px}
+    #idxel-journey .dashboard-flow-summary .dashboard-meta,#idxel-journey .dashboard-regime-summary .dashboard-meta{font-size:10px;line-height:1.5}
+    #idxel-journey .dashboard-alerts .section-head{flex-wrap:wrap;gap:5px}
+    #idxel-journey .dashboard-alerts .section-head h2{font-size:13px}
+    #idxel-journey .dashboard-alerts .section-head .action{font-size:10px;padding:5px 7px}
+    #idxel-journey .watchlist-empty{display:grid;justify-items:center;text-align:center;padding:36px 18px;border:1px dashed #35516b;border-radius:9px;background:#0c1725}

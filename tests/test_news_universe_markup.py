@@ -7,9 +7,10 @@ from unittest.mock import patch
 from urllib.request import urlopen
 
 from idx_evidence_lab import web_app
+from legacy_source import LEGACY_PAGE
 
 
-HTML = Path(__file__).parents[1] / "docs" / "prototypes" / "idx-evidence-lab-user-journey.html"
+HTML = LEGACY_PAGE
 
 
 class NewsUniverseMarkupTest(unittest.TestCase):

@@ -1,0 +1,62 @@
+{
+ "request": {
+  "method": "POST",
+  "path": "/api/studies-run",
+  "headers": {
+   "Content-Type": "application/json"
+  },
+  "body": {
+   "widget_id": "capm_benchmark",
+   "targets": [
+    "BBCA"
+   ],
+   "window": "available"
+  }
+ },
+ "status": 200,
+ "headers": {
+  "content-type": "application/json; charset=utf-8",
+  "cache-control": "no-store",
+  "x-content-type-options": "nosniff",
+  "x-frame-options": "DENY",
+  "referrer-policy": "no-referrer",
+  "permissions-policy": "camera=(), microphone=(), geolocation=()",
+  "cross-origin-opener-policy": "same-origin",
+  "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self'; style-src-attr 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; object-src 'none'; base-uri 'self'"
+ },
+ "body": {
+  "widget_id": "capm_benchmark",
+  "target": {
+   "kind": "issuer",
+   "targets": [
+    "BBCA"
+   ],
+   "entities": [
+    "BBCA"
+   ]
+  },
+  "status": "INSUFFICIENT_DATA",
+  "verification": "NOT_TESTED",
+  "formula_version": "studies-daily-v1",
+  "period": {
+   "start": null,
+   "end": null
+  },
+  "cutoff": null,
+  "sources": [],
+  "coverage": {
+   "requested_issuers": 1,
+   "usable_issuers": 0
+  },
+  "metrics": [],
+  "series": [],
+  "tables": [],
+  "warnings": [
+   {
+    "reason": "MATCHING_PORTFOLIO_ARTIFACT_REQUIRED"
+   }
+  ],
+  "request_fingerprint": "4d2f62c4c0aaee635bab3e83c86456380dafaffa1356dc1eff44c8b4a78f76d9",
+  "verification_scope": null
+ }
+}

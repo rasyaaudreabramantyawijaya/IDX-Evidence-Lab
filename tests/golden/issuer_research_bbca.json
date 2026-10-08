@@ -1,0 +1,42 @@
+{
+ "request": {
+  "method": "POST",
+  "path": "/api/issuer-research",
+  "headers": {
+   "Content-Type": "application/json"
+  },
+  "body": {
+   "ticker": "BBCA",
+   "query": "kinerja arus kas"
+  }
+ },
+ "status": 200,
+ "headers": {
+  "content-type": "application/json; charset=utf-8",
+  "cache-control": "no-store",
+  "x-content-type-options": "nosniff",
+  "x-frame-options": "DENY",
+  "referrer-policy": "no-referrer",
+  "permissions-policy": "camera=(), microphone=(), geolocation=()",
+  "cross-origin-opener-policy": "same-origin",
+  "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self'; style-src-attr 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; object-src 'none'; base-uri 'self'"
+ },
+ "body": {
+  "ticker": "BBCA",
+  "question": "kinerja arus kas",
+  "answer": "Belum ditemukan sumber lokal yang cocok dengan pertanyaan ini. Tidak ada kesimpulan atau perkiraan yang dibuat. Coba sebut ticker, nama aksi korporasi, atau istilah peraturan yang lebih spesifik.",
+  "evidence_state": "INSUFFICIENT_EVIDENCE",
+  "evidence": [],
+  "retrieval": {
+   "sectors_snapshots": 0,
+   "private_legal_documents": 0
+  },
+  "as_of": "2026-09-24 for daily/index snapshots; each event/report retains its own source date",
+  "source_boundary": "Sectors.app snapshots and manually curated local legal PDFs only; no web search or model-generated facts.",
+  "analysis_boundary": "This prototype retrieves evidence; it does not estimate event probabilities or provide legal clearance.",
+  "inference": {
+   "provider": "local",
+   "status": "NOT_REQUESTED"
+  }
+ }
+}

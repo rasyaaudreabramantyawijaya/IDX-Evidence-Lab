@@ -1,0 +1,26 @@
+      const root=document.getElementById('idxel-journey');
+      const main=root.querySelector('#idxel-main');
+      let navWidth=Number(localStorage.getItem('idxel-sidebar-width'))||220;
+      if(navWidth<100)root.classList.add('is-side-collapsed');else root.style.setProperty('--side-width',Math.max(180,Math.min(420,navWidth))+'px');
+      const validPages=new Set(['dashboard','screener','watchlist','studies','portfolio-lab','market','news-universe','settings','issuer','research','sources']);
+      let page=(()=>{try{const saved=sessionStorage.getItem('idxel-active-page');return saved==='ledger'||saved==='library'?'sources':validPages.has(saved)?saved:'dashboard'}catch(_error){return'dashboard'}})(), issuerTab='Overview';
+      let dashboardData={ihsg:null,news:null,universe:null,sectorHeatmap:null,evt_surface:null,loading:true,error:null};
+      let watchlistTickers=[];
+      try{const savedWatchlist=JSON.parse(localStorage.getItem('idxel-watchlist')||'[]');if(Array.isArray(savedWatchlist))watchlistTickers=[...new Set(savedWatchlist.filter(value=>typeof value==='string'&&/^[A-Z0-9.-]{1,12}$/.test(value)))];}catch(_error){}
+      let watchlistQuery='',watchlistSort={key:'ticker',direction:'asc'};
+      let evtSurfacePollTimer=null,evtSurfacePollBusy=false,evtSurfaceFingerprint='',evtSurfaceLastMatlabView='',evtSurfaceFollowMatlab=true,evtSurfaceRedraw=null,evtSurfaceViewState={yaw:43*Math.PI/180,pitch:29*Math.PI/180,zoom:1};
+      let factorZooState={data:null,loading:false,attempted:false,error:null,fingerprint:'',viewStatus:'Sudut MATLAB menunggu…'};
+      let factorZooPollTimer=null,factorZooPollBusy=false,factorZooFollowMatlab=true,factorZooLastMatlabView='',factorZooView={yaw:-37.5*Math.PI/180,pitch:28*Math.PI/180,zoom:1},factorZooDraw=null,factorZooResizeObserver=null;
+      let sectorHeatmapLoading=false;
+      let screenerFilters={sector:'',regime:'',query:''};
+      let newsData=null,newsLoading=false,newsExpanded=false,selectedNewsId=null,newsFilters={sector:'',symbol:'',date:''};
+      let researchTicker='',researchQuestion='',researchResult=null,researchLoading=false,sourceReport=null,sourceReportLoading=false;
+      let researchChat={sessionId:null,revision:0,messages:[],context:null,loading:false,error:null,requestGeneration:0};
+      let researchHealth=null,researchHealthRequested=false,researchUseModel=false;
+      let researchTarget='',researchTargets=null,researchTargetsRequested=false;
+      let researchAttachments=[],researchShareAttachments=false,researchUploading=false;
+      const researchVideoExtensions=/\.(mp4|mov|m4v|avi|mkv|webm|mpg|mpeg|wmv|flv|3gp|ts|mts|m2ts|vob|ogv)$/i;
+      root.addEventListener('change',e=>{if(e.target.matches('#research-files'))uploadResearchFiles(e.target.files);if(e.target.matches('#research-share-attachments'))researchShareAttachments=e.target.checked});
+      root.addEventListener('dragover',e=>{if(page==='research'&&e.dataTransfer?.types.includes('Files')){e.preventDefault();root.querySelector('.research-composer')?.classList.add('research-dragging')}});
+      root.addEventListener('dragleave',e=>{if(!root.contains(e.relatedTarget))root.querySelector('.research-composer')?.classList.remove('research-dragging')});
+      root.addEventListener('drop',e=>{if(page==='research'&&e.dataTransfer?.files.length){e.preventDefault();root.querySelector('.research-composer')?.classList.remove('research-dragging');uploadResearchFiles(e.dataTransfer.files)}});
