@@ -1,0 +1,125 @@
+name: release
+
+# Builds the runtime image, smoke-tests it, and publishes it to GitHub Container Registry.
+#   push to main  -> ghcr.io/<owner>/<repo>:latest and :sha-<commit>
+#   tag vX.Y.Z    -> also :X.Y.Z and :X.Y
+# The image never contains data/ (provider-licensed); it is mounted at runtime. See docs/runbooks/deploy.md.
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  workflow_dispatch:
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  image:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    env:
+      SMOKE_TAG: idxel:smoke
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: docker/setup-buildx-action@v4
+
+      - id: meta
+        uses: docker/metadata-action@v6
+        with:
+          # metadata-action lowercases the name; GHCR requires lowercase.
+          images: ghcr.io/${{ github.repository }}
+          tags: |
+            type=raw,value=latest,enable={{is_default_branch}}
+            type=sha,prefix=sha-
+            type=semver,pattern={{version}}
+            type=semver,pattern={{major}}.{{minor}}
+          labels: |
+            org.opencontainers.image.title=IDX Evidence Lab
+            org.opencontainers.image.description=Local research prototype for Indonesian equities (no authentication, data mounted at runtime)
+
+      # 1. Build once into the local Docker store and test exactly what will be published.
+      - name: Build image for the smoke test
+        uses: docker/build-push-action@v7
+        with:
+          context: .
+          load: true
+          push: false
+          tags: ${{ env.SMOKE_TAG }}
+          labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Smoke test the image
+        run: |
+          docker run -d --name idxel -p 5500:5500 -v "$PWD/data:/app/data:ro" "$SMOKE_TAG"
+          for i in $(seq 1 90); do
+            curl -sf -o /dev/null http://127.0.0.1:5500/api/health && break
+            sleep 1
+          done
+          curl -s -D headers.txt -o body.json http://127.0.0.1:5500/api/health
+          grep -q '"ok": true' body.json
+          grep -qi '^x-content-type-options: nosniff' headers.txt
+          grep -qi "^content-security-policy:.*script-src 'self'" headers.txt
+          curl -sf -o /dev/null http://127.0.0.1:5500/docs/prototypes/app.js
+          curl -sf -o /dev/null http://127.0.0.1:5500/docs/prototypes/app.css
+          curl -sf -X POST -H 'Content-Type: application/json' -d '{"query":"BBCA","use_model":false}' \
+            http://127.0.0.1:5500/api/search | grep -q '"results"'
+          # Runs as a non-root user and reports healthy through its own HEALTHCHECK.
+          [ "$(docker exec idxel id -u)" != "0" ]
+          for i in $(seq 1 30); do
+            [ "$(docker inspect -f '{{.State.Health.Status}}' idxel)" = "healthy" ] && exit 0
+            sleep 2
+          done
+          docker inspect -f '{{json .State.Health}}' idxel
+          exit 1
+
+      - name: Container logs on failure
+        if: failure()
+        run: docker logs idxel
+
+      # Report-only, like the CI docker job. Make it blocking once the base image is stable.
+      - uses: aquasecurity/trivy-action@v0.36.0
+        with:
+          image-ref: ${{ env.SMOKE_TAG }}
+          severity: HIGH,CRITICAL
+          exit-code: "0"
+          ignore-unfixed: true
+
+      # 2. Publish. Layers come from the cache of step 1, so this does not rebuild from scratch.
+      - uses: docker/login-action@v4
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - id: push
+        name: Push image
+        uses: docker/build-push-action@v7
+        with:
+          context: .
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          sbom: true
+          cache-from: type=gha
+
+      - name: Summary
+        run: |
+          {
+            echo "### Image published"
+            echo ""
+            echo "Digest: \`${{ steps.push.outputs.digest }}\`"
+            echo ""
+            echo "Tags:"
+            echo '```'
+            echo "${{ steps.meta.outputs.tags }}"
+            echo '```'
+            echo "Deploy and rollback: docs/runbooks/deploy.md"
+          } >> "$GITHUB_STEP_SUMMARY"
