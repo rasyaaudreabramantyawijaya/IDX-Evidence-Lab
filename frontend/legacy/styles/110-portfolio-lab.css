@@ -2,73 +2,73 @@
     #idxel-journey .portfolio-control-card{min-width:0}
     #idxel-journey .portfolio-control-card .section-body{display:grid;gap:8px}
     #idxel-journey .portfolio-controls-row .portfolio-field{min-width:0}
-    #idxel-journey .portfolio-picker-details{border:1px solid var(--line);border-radius:7px;background:#0a1522}
+    #idxel-journey .portfolio-picker-details{border:1px solid var(--line);border-radius:7px;background:var(--tk-bg-000)}
     #idxel-journey .portfolio-picker-details summary{padding:8px 10px;cursor:pointer;color:var(--muted);font-size:11px}
     #idxel-journey .portfolio-controls-row .portfolio-ticker-list{max-height:190px;border:0;border-top:1px solid var(--line);border-radius:0 0 7px 7px}
     #idxel-journey .portfolio-controls-row .portfolio-ticker-list button{padding:5px 7px;min-height:30px}
     #idxel-journey .portfolio-field{display:grid;gap:5px;color:var(--muted);font-size:11px}
-    #idxel-journey .portfolio-field input,#idxel-journey .portfolio-field select{min-height:38px;width:100%;padding:8px 10px;border:1px solid #36516b;border-radius:7px;background:#0a1522;color:var(--text)}
-    #idxel-journey .portfolio-ticker-list{max-height:215px;overflow:auto;border:1px solid var(--line);border-radius:8px;background:#0a1522;padding:5px;display:grid;align-content:start;gap:2px}
+    #idxel-journey .portfolio-field input,#idxel-journey .portfolio-field select{min-height:38px;width:100%;padding:8px 10px;border:1px solid var(--tk-line-strong);border-radius:7px;background:var(--tk-bg-000);color:var(--text)}
+    #idxel-journey .portfolio-ticker-list{max-height:215px;overflow:auto;border:1px solid var(--line);border-radius:8px;background:var(--tk-bg-000);padding:5px;display:grid;align-content:start;gap:2px}
     #idxel-journey .portfolio-ticker-list button{display:flex;justify-content:space-between;gap:8px;width:100%;text-align:left;border:1px solid transparent;background:transparent;border-radius:6px;padding:7px 9px;font-size:11px;min-height:34px}
-    #idxel-journey .portfolio-ticker-list button:hover,#idxel-journey .portfolio-ticker-list button[aria-pressed=true]{background:#143047;border-color:#346883}
+    #idxel-journey .portfolio-ticker-list button:hover,#idxel-journey .portfolio-ticker-list button[aria-pressed=true]{background:var(--tk-bg-300);border-color:var(--tk-line-strong)}
     #idxel-journey .portfolio-ticker-list small{color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
     #idxel-journey .portfolio-chips{display:flex;flex-wrap:wrap;gap:5px;min-height:24px}
-    #idxel-journey .portfolio-chips span{border:1px solid #2d5d73;border-radius:20px;color:#94dcf1;padding:3px 8px;background:#102b3d;font-size:10px}
-    #idxel-journey .portfolio-chips button{border:1px solid #2d5d73;border-radius:20px;color:#94dcf1;padding:3px 8px;background:#102b3d;font-size:10px}
+    #idxel-journey .portfolio-chips span{border:1px solid var(--tk-line-strong);border-radius:20px;color:var(--tk-link);padding:3px 8px;background:var(--tk-bg-200);font-size:10px}
+    #idxel-journey .portfolio-chips button{border:1px solid var(--tk-line-strong);border-radius:20px;color:var(--tk-link);padding:3px 8px;background:var(--tk-bg-200);font-size:10px}
     #idxel-journey .portfolio-profiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}
-    #idxel-journey .portfolio-profiles button{min-height:72px;text-align:left;border:1px solid #33516a;background:#0b1929;border-radius:8px;padding:8px;font-size:11px}
+    #idxel-journey .portfolio-profiles button{min-height:72px;text-align:left;border:1px solid var(--tk-line-strong);background:var(--tk-bg-100);border-radius:8px;padding:8px;font-size:11px}
     #idxel-journey .portfolio-profiles button strong{display:block;margin-bottom:4px}.portfolio-profiles button small{display:block;color:var(--muted);font-size:10px}
-    #idxel-journey .portfolio-profiles button[aria-pressed=true]{border-color:var(--cyan);background:linear-gradient(155deg,#153f50,#102338);box-shadow:inset 0 2px var(--cyan)}
+    #idxel-journey .portfolio-profiles button[aria-pressed=true]{border-color:var(--cyan);background:linear-gradient(155deg,var(--tk-bg-300),var(--tk-bg-200));box-shadow:inset 0 2px var(--cyan)}
     #idxel-journey .portfolio-form-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
     #idxel-journey .portfolio-run{width:100%;min-height:42px;font-weight:700}.portfolio-run:disabled{opacity:.55;cursor:not-allowed}
     #idxel-journey .portfolio-work{display:grid;gap:13px;min-width:0}
-    #idxel-journey .portfolio-state{border:1px dashed #3d596f;border-radius:9px;padding:22px;color:var(--muted);background:repeating-linear-gradient(135deg,#0c1a29 0 18px,#0e1e2e 19px 20px);min-height:130px}
+    #idxel-journey .portfolio-state{border:1px dashed var(--tk-line-strong);border-radius:9px;padding:22px;color:var(--muted);background:repeating-linear-gradient(135deg,var(--tk-bg-100) 0 18px,var(--tk-bg-100) 19px 20px);min-height:130px}
     #idxel-journey .portfolio-state strong{color:var(--text);display:block;font-size:15px;margin-bottom:5px}
     #idxel-journey .portfolio-results-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
     #idxel-journey .portfolio-results-grid .portfolio-wide{grid-column:1/-1}
     #idxel-journey .portfolio-kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
-    #idxel-journey .portfolio-kpi{border:1px solid var(--line);border-radius:8px;padding:10px;background:#0b1725;min-width:0}
+    #idxel-journey .portfolio-kpi{border:1px solid var(--line);border-radius:8px;padding:10px;background:var(--tk-bg-100);min-width:0}
     #idxel-journey .portfolio-kpi small{color:var(--muted);display:block;font-size:10px}.portfolio-kpi strong{display:block;font-size:20px;font-variant-numeric:tabular-nums;margin:5px 0}.portfolio-kpi em{color:var(--muted);font-style:normal;font-size:10px}
     #idxel-journey .portfolio-risk-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
     #idxel-journey .historical-chart-frame{position:relative}
-    #idxel-journey .chart-interaction-tooltip{position:absolute;z-index:8;pointer-events:none;max-width:min(280px,80%);padding:7px 9px;border:1px solid #3b5872;border-radius:7px;background:#0b1725;color:#e4edf7;box-shadow:0 8px 24px #0008;font-size:11px;line-height:1.45;white-space:pre-line;font-variant-numeric:tabular-nums}
-    #idxel-journey .historical-crosshair{stroke:#e6edf5;stroke-width:1;stroke-dasharray:3 3;pointer-events:none;opacity:.78}
+    #idxel-journey .chart-interaction-tooltip{position:absolute;z-index:8;pointer-events:none;max-width:min(280px,80%);padding:7px 9px;border:1px solid var(--tk-line-strong);border-radius:7px;background:var(--tk-bg-100);color:var(--tk-ink);box-shadow:0 8px 24px #0008;font-size:11px;line-height:1.45;white-space:pre-line;font-variant-numeric:tabular-nums}
+    #idxel-journey .historical-crosshair{stroke:var(--tk-ink);stroke-width:1;stroke-dasharray:3 3;pointer-events:none;opacity:.78}
     #idxel-journey [data-chart-point]:focus{outline:none;stroke:#fff;stroke-width:2}
-    #idxel-journey .portfolio-risk-card{border:1px solid var(--line);border-radius:9px;padding:12px;background:#0b1725;min-width:0}
+    #idxel-journey .portfolio-risk-card{border:1px solid var(--line);border-radius:9px;padding:12px;background:var(--tk-bg-100);min-width:0}
     #idxel-journey .portfolio-risk-card h3{font-size:12px;margin:0;color:var(--text)}
     #idxel-journey .portfolio-risk-card strong{display:block;font-size:22px;margin:5px 0;font-variant-numeric:tabular-nums}
     #idxel-journey .portfolio-risk-card .risk-sub{font-size:10px;color:var(--muted);min-height:27px}
     #idxel-journey .capm-equation{display:grid;grid-template-columns:minmax(0,1fr) 20px minmax(0,1fr) 20px minmax(0,1fr) 20px minmax(0,1fr);gap:4px;align-items:stretch;margin-top:10px}
     #idxel-journey .capm-history-equation{grid-template-columns:repeat(5,minmax(0,1fr))}
-    #idxel-journey .capm-term{border:1px solid #284158;border-radius:7px;padding:9px 8px;background:#0d1b2a;min-width:0}
+    #idxel-journey .capm-term{border:1px solid var(--tk-line);border-radius:7px;padding:9px 8px;background:var(--tk-bg-100);min-width:0}
     #idxel-journey .capm-term small{display:block;color:var(--muted);font-size:9px;line-height:1.35;min-height:25px}
     #idxel-journey .capm-term b{display:block;margin-top:4px;font-size:13px;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
-    #idxel-journey .capm-term.operator{display:grid;place-items:center;border:0;background:transparent;color:#8da4bb;font-size:18px;padding:0}
-    #idxel-journey .capm-term.missing{border-color:#8b6635;background:#211d17}
-    #idxel-journey .capm-term.result{border-color:#315c72;background:#102637}
-    #idxel-journey .capm-status{margin-top:9px;padding:8px 10px;border-left:2px solid #f1ae53;background:#151e29;color:#a9bbcd;font-size:10px;line-height:1.5}
+    #idxel-journey .capm-term.operator{display:grid;place-items:center;border:0;background:transparent;color:var(--tk-ink-muted);font-size:18px;padding:0}
+    #idxel-journey .capm-term.missing{border-color:var(--tk-line-strong);background:var(--tk-bg-100)}
+    #idxel-journey .capm-term.result{border-color:var(--tk-line-strong);background:var(--tk-bg-200)}
+    #idxel-journey .capm-status{margin-top:9px;padding:8px 10px;border-left:2px solid var(--tk-price);background:var(--tk-bg-100);color:var(--tk-ink-muted);font-size:10px;line-height:1.5}
     @media(max-width:680px){#idxel-journey .capm-equation{grid-template-columns:minmax(0,1fr) 16px minmax(0,1fr)}#idxel-journey .capm-history-equation{grid-template-columns:repeat(2,minmax(0,1fr))}#idxel-journey .capm-term.operator:nth-of-type(4){display:none}}
-    #idxel-journey .portfolio-risk-formula{font-size:10px;color:#a9bbcd;margin:5px 0 0;font-variant-numeric:tabular-nums}
+    #idxel-journey .portfolio-risk-formula{font-size:10px;color:var(--tk-ink-muted);margin:5px 0 0;font-variant-numeric:tabular-nums}
     #idxel-journey .portfolio-risk-components{display:grid;gap:5px;margin-top:8px}
-    #idxel-journey .portfolio-risk-component{display:grid;grid-template-columns:minmax(92px,1fr) minmax(80px,2fr) auto;align-items:center;gap:8px;font-size:10px;color:#a9bbcd}
-    #idxel-journey .portfolio-risk-track{height:9px;background:#1b2d3e;border-radius:5px;position:relative;overflow:hidden}
-    #idxel-journey .portfolio-risk-zero{position:absolute;left:50%;top:0;bottom:0;width:1px;background:#91a4b7}
-    #idxel-journey .portfolio-risk-fill{position:absolute;top:1px;bottom:1px;border-radius:4px;background:#49c99e}
-    #idxel-journey .portfolio-risk-fill.negative{background:#e4777b}
-    #idxel-journey .portfolio-risk-fill.risk{background:#f1ae53}
-    #idxel-journey .portfolio-risk-value{color:#e6eef7;font-variant-numeric:tabular-nums;text-align:right;min-width:56px}
+    #idxel-journey .portfolio-risk-component{display:grid;grid-template-columns:minmax(92px,1fr) minmax(80px,2fr) auto;align-items:center;gap:8px;font-size:10px;color:var(--tk-ink-muted)}
+    #idxel-journey .portfolio-risk-track{height:9px;background:var(--tk-bg-300);border-radius:5px;position:relative;overflow:hidden}
+    #idxel-journey .portfolio-risk-zero{position:absolute;left:50%;top:0;bottom:0;width:1px;background:var(--tk-ink-muted)}
+    #idxel-journey .portfolio-risk-fill{position:absolute;top:1px;bottom:1px;border-radius:4px;background:var(--tk-up)}
+    #idxel-journey .portfolio-risk-fill.negative{background:var(--tk-down)}
+    #idxel-journey .portfolio-risk-fill.risk{background:var(--tk-price)}
+    #idxel-journey .portfolio-risk-value{color:var(--tk-ink);font-variant-numeric:tabular-nums;text-align:right;min-width:56px}
     #idxel-journey .portfolio-risk-meta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin-top:8px}
     #idxel-journey .portfolio-risk-meta span{border-top:1px solid var(--line);padding-top:5px;font-size:10px;color:var(--muted)}
     #idxel-journey .portfolio-risk-meta b{display:block;color:var(--text);font-variant-numeric:tabular-nums;margin-top:2px}
     #idxel-journey .portfolio-risk-svg{display:block;width:100%;height:auto;margin-top:8px;overflow:visible}
     #idxel-journey .portfolio-risk-range{max-width:1000px;margin:12px auto 0}
     #idxel-journey .scenario-mdd-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:18px}
-    #idxel-journey .scenario-mdd-summary div{padding:10px 12px;background:#091624;border:1px solid var(--line);border-radius:8px}
+    #idxel-journey .scenario-mdd-summary div{padding:10px 12px;background:var(--tk-bg-000);border:1px solid var(--line);border-radius:8px}
     #idxel-journey .scenario-mdd-summary small{display:block;color:var(--muted);font-size:11px}
     #idxel-journey .scenario-mdd-summary strong{display:block;margin-top:4px;font-size:24px;font-variant-numeric:tabular-nums}
     #idxel-journey .scenario-mdd-row{display:grid;grid-template-columns:110px minmax(0,1fr) 65px;align-items:center;gap:12px;margin:14px 0;font-size:12px}
     #idxel-journey .scenario-mdd-row b{text-align:right;font-variant-numeric:tabular-nums}
-    #idxel-journey .scenario-mdd-track{position:relative;height:14px;background:#1b2d3e;border-right:2px solid #91a4b7;border-radius:3px;overflow:hidden}
+    #idxel-journey .scenario-mdd-track{position:relative;height:14px;background:var(--tk-bg-300);border-right:2px solid var(--tk-ink-muted);border-radius:3px;overflow:hidden}
     #idxel-journey .scenario-mdd-fill{position:absolute;right:0;height:100%;background:var(--mdd-color);border-radius:3px}
     #idxel-journey .scenario-mdd-axis{display:flex;justify-content:space-between;margin:4px 77px 12px 122px;color:var(--muted);font-size:11px}
     #idxel-journey .scenario-mdd-history{padding-top:12px;border-top:1px solid var(--line)}
@@ -79,18 +79,18 @@
     #idxel-journey .portfolio-risk-input .portfolio-field{font-size:10px}
     #idxel-journey .portfolio-risk-input input{min-height:34px;padding:6px 8px}
     #idxel-journey .portfolio-risk-input small{grid-column:1/-1;color:var(--muted);font-size:10px;line-height:1.4}
-    #idxel-journey .portfolio-chart{display:block;width:100%;height:auto;min-height:170px;border:1px solid var(--line);border-radius:8px;background:#091624}
+    #idxel-journey .portfolio-chart{display:block;width:100%;height:auto;min-height:170px;border:1px solid var(--line);border-radius:8px;background:var(--tk-bg-000)}
     #idxel-journey .portfolio-comparison{width:100%;border-collapse:collapse;font-size:11px}.portfolio-comparison th,.portfolio-comparison td{padding:8px;border-bottom:1px solid var(--line);text-align:left;font-variant-numeric:tabular-nums}.portfolio-comparison th{color:var(--muted)}
-    #idxel-journey .portfolio-bar-row{display:grid;grid-template-columns:66px minmax(0,1fr) 47px;align-items:center;gap:8px;margin:8px 0;font-size:11px}.portfolio-bar-track{height:13px;background:#183047;border-radius:4px;overflow:hidden}.portfolio-bar-fill{height:100%;background:linear-gradient(90deg,#1c91bb,#54d2c2)}
+    #idxel-journey .portfolio-bar-row{display:grid;grid-template-columns:66px minmax(0,1fr) 47px;align-items:center;gap:8px;margin:8px 0;font-size:11px}.portfolio-bar-track{height:13px;background:var(--tk-bg-300);border-radius:4px;overflow:hidden}.portfolio-bar-fill{height:100%;background:linear-gradient(90deg,var(--tk-link),var(--tk-series-6))}
     #idxel-journey .portfolio-subsector-groups{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
-    #idxel-journey .portfolio-subsector-group{border:1px solid var(--line);border-radius:9px;background:#0a1624;padding:10px;min-width:0}
+    #idxel-journey .portfolio-subsector-group{border:1px solid var(--line);border-radius:9px;background:var(--tk-bg-100);padding:10px;min-width:0}
     #idxel-journey .portfolio-subsector-head{display:flex;justify-content:space-between;gap:8px;align-items:baseline;margin-bottom:9px;font-size:11px}
     #idxel-journey .portfolio-subsector-head span{color:var(--muted);white-space:nowrap}
     #idxel-journey .portfolio-bubbles{display:flex;align-items:center;align-content:center;flex-wrap:wrap;gap:7px;min-height:90px}
-    #idxel-journey .portfolio-bubble{display:flex;flex-direction:column;align-items:center;justify-content:center;flex:0 0 auto;border:1px solid #76c9d6;border-radius:50%;background:radial-gradient(circle at 32% 28%,#34778b,#174158 72%);color:#f3f7fb;padding:3px;line-height:1.1;font-size:10px;font-weight:750;overflow:hidden;cursor:help}
-    #idxel-journey .portfolio-bubble small{font-size:9px;font-weight:550;color:#d6e8f1}
-    #idxel-journey .portfolio-bubble:focus-visible{outline:2px solid #ffe08a;outline-offset:2px}
+    #idxel-journey .portfolio-bubble{display:flex;flex-direction:column;align-items:center;justify-content:center;flex:0 0 auto;border:1px solid var(--tk-link);border-radius:50%;background:radial-gradient(circle at 32% 28%,var(--tk-line-strong),var(--tk-line) 72%);color:var(--tk-ink);padding:3px;line-height:1.1;font-size:10px;font-weight:750;overflow:hidden;cursor:help}
+    #idxel-journey .portfolio-bubble small{font-size:9px;font-weight:550;color:var(--tk-ink)}
+    #idxel-journey .portfolio-bubble:focus-visible{outline:2px solid var(--tk-price);outline-offset:2px}
     #idxel-journey .portfolio-allocation-table{width:100%;border-collapse:collapse;font-size:11px;margin-top:12px}.portfolio-allocation-table th,.portfolio-allocation-table td{padding:7px;border-bottom:1px solid var(--line);text-align:left}.portfolio-allocation-table th{color:var(--muted)}
-    #idxel-journey .portfolio-note{border-left:2px solid var(--amber);padding:9px 12px;margin:9px 0;color:var(--muted);background:#0b1724;font-size:11px;line-height:1.55}
-    #idxel-journey .portfolio-cluster{display:flex;flex-wrap:wrap;gap:6px}.portfolio-cluster span{border:1px solid #36516b;padding:6px 9px;border-radius:6px;background:#122439;font-size:11px}
-    #idxel-journey .portfolio-keyboard:focus-visible,#idxel-journey .portfolio-controls button:focus-visible,#idxel-journey .portfolio-controls input:focus-visible,#idxel-journey .portfolio-controls select:focus-visible,#idxel-journey .portfolio-controls-row button:focus-visible,#idxel-journey .portfolio-controls-row input:focus-visible{outline:2px solid #61d6f1;outline-offset:2px}
+    #idxel-journey .portfolio-note{border-left:2px solid var(--amber);padding:9px 12px;margin:9px 0;color:var(--muted);background:var(--tk-bg-100);font-size:11px;line-height:1.55}
+    #idxel-journey .portfolio-cluster{display:flex;flex-wrap:wrap;gap:6px}.portfolio-cluster span{border:1px solid var(--tk-line-strong);padding:6px 9px;border-radius:6px;background:var(--tk-bg-200);font-size:11px}
+    #idxel-journey .portfolio-keyboard:focus-visible,#idxel-journey .portfolio-controls button:focus-visible,#idxel-journey .portfolio-controls input:focus-visible,#idxel-journey .portfolio-controls select:focus-visible,#idxel-journey .portfolio-controls-row button:focus-visible,#idxel-journey .portfolio-controls-row input:focus-visible{outline:2px solid var(--tk-link);outline-offset:2px}

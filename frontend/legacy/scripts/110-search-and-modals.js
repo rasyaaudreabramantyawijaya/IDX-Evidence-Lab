@@ -10,21 +10,21 @@
       }
       function addSearchText(parent,tag,text,className){const el=document.createElement(tag);if(className)el.className=className;el.textContent=String(text||'');parent.appendChild(el);return el}
       let searchSequence=0,searchTimer,searchController;
-      const searchPages=[['dashboard','Dashboard','ringkasan pasar IHSG'],['screener','Screener','filter saham sektor'],['watchlist','Watchlist','pantauan'],['studies','Studies','studi dossier'],['research','Riset emiten','akuisisi aksi korporasi'],['portfolio-lab','Portfolio Lab','portofolio optimasi alokasi risiko faktor simulasi'],['market','Market overview','IHSG sektor heatmap EVT'],['news-universe','News Universe','berita'],['sources','Sumber & metode PDF','hukum dokumen provenance'],['settings','Settings','pengaturan koneksi OpenRouter']];
+      const searchPages=[['dashboard','Dashboard','ringkasan pasar IHSG'],['screener','Screener','filter saham sektor'],['watchlist','Watchlist','pantauan'],['studies','Studies','studi dossier'],['research','Issuer Research','akuisisi aksi korporasi'],['portfolio-lab','Portfolio Lab','portofolio optimasi alokasi risiko faktor simulasi'],['market','Market overview','IHSG sektor heatmap EVT'],['news-universe','News Universe','berita'],['sources','Sumber & metode PDF','hukum dokumen provenance'],['settings','Settings','pengaturan koneksi OpenRouter']];
       let taskNavigation=null,taskScreenMode='',recentAppQueries=[];
       function taskScreenerSection(){
         if(!taskScreenMode)return '';
         const data=factorZooState.data,key=taskScreenMode==='value'?'value':'low_volatility';
         const explanation=key==='value'?'Valuasi relatif: earnings/dividend yield. Bukan estimasi nilai intrinsik atau kepastian undervalued.':'Karakteristik risiko rendah: beta IHSG dan volatilitas residual harian. Bukan volatilitas realized total atau prediksi risiko.';
-        if(!data)return section('Hasil filter '+(key==='value'?'valuasi relatif':'risiko rendah'),'<p class="note">'+escapeHTML(factorZooState.error||'Memuat artefak faktor lokal…')+'</p>');
+        if(!data)return section('Filter Results '+(key==='value'?'valuasi relatif':'risiko rendah'),'<p class="note">'+escapeHTML(factorZooState.error||'Memuat artefak faktor lokal…')+'</p>');
         const records=data.records.filter(r=>r.scores?.[key]?.status==='AVAILABLE'&&Number.isFinite(r.scores[key].score)&&(!screenerFilters.query||r.ticker===screenerFilters.query)).sort((a,b)=>b.scores[key].score-a.scores[key].score);
-        return section(key==='value'?'Valuasi relatif · skor tertinggi':'Risiko rendah · proxy beta/residual','<p class="note">'+explanation+' Harga as-of: '+escapeHTML(data.as_of?.price||'—')+'; laporan: '+escapeHTML((data.as_of?.company_report_dates||[]).join(', '))+' · '+escapeHTML(data.formula_version)+' · hanya skor lengkap; '+records.length+' emiten. Universe quality: '+escapeHTML(data.universe?.quality||'UNKNOWN')+'.</p><div class="table-wrap"><table><thead><tr><th>Ticker</th><th>Skor relatif</th><th>Beta IHSG</th><th>Volatilitas residual harian</th><th>Earnings yield</th></tr></thead><tbody>'+records.map(r=>'<tr data-action="open-issuer" data-ticker="'+escapeHTML(r.ticker)+'"><td>'+escapeHTML(r.ticker)+'</td><td>'+r.scores[key].score.toFixed(3)+'</td><td>'+taskMetric(r.components?.beta_ihsg?.value)+'</td><td>'+taskMetric(r.components?.idiosyncratic_volatility?.value,true)+'</td><td>'+taskMetric(r.components?.earnings_yield?.value,true)+'</td></tr>').join('')+'</tbody></table></div><p class="note">Snapshot Sectors.app; bukan rekomendasi. Skor parsial tidak dimasukkan. Provenance dan audit artefak tersedia di Portfolio Lab.</p>','LOKAL · DESKRIPTIF');
+        return section(key==='value'?'Valuasi relatif · skor tertinggi':'Risiko rendah · proxy beta/residual','<p class="note">'+explanation+' Harga as-of: '+escapeHTML(data.as_of?.price||'—')+'; laporan: '+escapeHTML((data.as_of?.company_report_dates||[]).join(', '))+' · '+escapeHTML(data.formula_version)+' · hanya skor lengkap; '+records.length+' emiten. Universe quality: '+escapeHTML(data.universe?.quality||'UNKNOWN')+'.</p><div class="table-wrap"><table><thead><tr><th>Ticker</th><th>Relative Score</th><th>Beta IHSG</th><th>Daily Residual Volatility</th><th>Earnings yield</th></tr></thead><tbody>'+records.map(r=>'<tr data-action="open-issuer" data-ticker="'+escapeHTML(r.ticker)+'"><td>'+escapeHTML(r.ticker)+'</td><td>'+r.scores[key].score.toFixed(3)+'</td><td>'+taskMetric(r.components?.beta_ihsg?.value)+'</td><td>'+taskMetric(r.components?.idiosyncratic_volatility?.value,true)+'</td><td>'+taskMetric(r.components?.earnings_yield?.value,true)+'</td></tr>').join('')+'</tbody></table></div><p class="note">Snapshot Sectors.app; bukan rekomendasi. Skor parsial tidak dimasukkan. Provenance dan audit artefak tersedia di Portfolio Lab.</p>','LOKAL · DESKRIPTIF');
       }
       function taskMetric(value,percent=false){return Number.isFinite(value)?(value*(percent?100:1)).toFixed(3)+(percent?'%':''):'—'}
       function applyWorkspacePlan(plan,query,provider,notice){
         if(!plan||!validPages.has(plan.page))throw new Error('Tujuan workspace tidak valid');
         const symbols=(plan.tickers||[]).filter(s=>lq45Tickers.includes(s));
-        page=plan.page;taskNavigation={page,query,provider:provider||'Lokal',notice:notice||''};taskScreenMode='';
+        page=plan.page;taskNavigation={page,query,provider:provider||'Local',notice:notice||''};taskScreenMode='';
         if(page==='issuer'&&symbols.length){ticker=symbols[0];issuerTab='Overview';dossierReport=false;dossierEvent=''}
         if(page==='screener'){taskScreenMode=['low_volatility','value'].includes(plan.screen_mode)?plan.screen_mode:'';screenerFilters={sector:'',regime:'',query:symbols[0]||''};if(taskScreenMode)loadFactorZooData()}
         if(page==='news-universe'){newsFilters={sector:'',date:'',symbol:symbols[0]||'',topic:plan.news_topic||'',grouped:true};selectedNewsId=null;newsGraph={nodes:[],edges:[]}}
@@ -37,7 +37,7 @@
       }
       async function navigateFromSearch(query){
         const clean=String(query||'').trim();if(!clean)return;closeSearchResults();const sequence=searchSequence;
-        const symbol=clean.toUpperCase();if(lq45Tickers.includes(symbol)){applyWorkspacePlan({page:'issuer',tickers:[symbol]},clean,'Lokal');return}
+        const symbol=clean.toUpperCase();if(lq45Tickers.includes(symbol)){applyWorkspacePlan({page:'issuer',tickers:[symbol]},clean,'Local');return}
         const input=root.querySelector('.search');input.setAttribute('aria-busy','true');toast(researchUseModel?'Memahami tujuan dengan OpenRouter dan aturan lokal…':'Memahami tujuan dengan aturan lokal…');
         const controller=new AbortController();searchController=controller;const timeout=setTimeout(()=>controller.abort(),30000);
         try{const response=await fetch('/api/search',{method:'POST',headers:{'Content-Type':'application/json'},signal:controller.signal,body:JSON.stringify({query:clean,use_model:researchUseModel===true,navigate:true,history:recentAppQueries.slice(-6)})});const payload=await response.json();if(!response.ok)throw new Error(payload.error||'Navigasi gagal');if(sequence!==searchSequence)return;recentAppQueries.push(clean);recentAppQueries=recentAppQueries.slice(-6);applyWorkspacePlan(payload.navigation,clean,payload.plan?.provider,payload.notice)}
@@ -54,7 +54,7 @@
         if(!clean){panel.classList.add('hidden');return}panel.classList.remove('hidden');
         const head=document.createElement('div');head.className='search-results-head';addSearchText(head,'strong','Cari di prototype');
         const status=addSearchText(head,'span','Menelusuri indeks lokal…','search-status');
-        const close=document.createElement('button');close.type='button';close.className='action ghost search-close';close.textContent='Tutup';close.addEventListener('click',closeSearchResults);head.appendChild(close);panel.appendChild(head);
+        const close=document.createElement('button');close.type='button';close.className='action ghost search-close';close.textContent='Close';close.addEventListener('click',closeSearchResults);head.appendChild(close);panel.appendChild(head);
         const normalized=clean.toLocaleLowerCase(),shortcuts=document.createElement('div');
         screenerRows().filter(item=>((item.ticker||'')+' '+(item.company||'')).toLocaleLowerCase().includes(normalized)).slice(0,6).forEach(item=>searchLink(shortcuts,item.ticker+' · '+item.company,'issuer',item.ticker));
         searchPages.filter(item=>item.slice(1).join(' ').toLocaleLowerCase().includes(normalized)).forEach(item=>searchLink(shortcuts,item[1],item[0]));panel.appendChild(shortcuts);
@@ -152,10 +152,15 @@
         if(a.startsWith('filter-')||a==='clear-filters'||a==='flow-period'||a==='horizon'||a==='select-index'){toast('Kontrol filter dibuka. Pilihan hanya mengubah tampilan lokal prototype.');return}
         if(a==='run-study'){toast('Perlu menjalankan pipeline offline untuk menghasilkan metrik.');return}
         if(a==='account'){openModal('Menu akun','Lanjutkan ke pengaturan akun. Tombol Keluar tersedia di halaman Settings.','account');return}
+        if(a==='notif-toggle'){root.querySelector('#idxel-notif-dropdown')?.classList.toggle('hidden');return}
         if(a==='preferences'||a==='audit-data'){toast('Panel pengaturan/audit lokal dibuka.');return}
       });
       root.addEventListener('change',e=>{if(e.target.matches('[data-screener-filter]')){screenerFilters[e.target.dataset.screenerFilter]=e.target.value;render();return}if(e.target.matches('#research-ticker')){researchTicker=e.target.value;researchResult=null}if(e.target.matches('#study-sector-select')){studySector=e.target.value;studyRunner.invalidate();render()}if(e.target.matches('#study-window-select')){studyWindow=e.target.value;studyRunner.invalidate();render()}if(e.target.matches('[data-action="custom-field"]')){studyCustomField=e.target.value;studyRunner.invalidate();render()}if(e.target.matches('[data-action="custom-transform"]')){studyCustomTransform=e.target.value;studyRunner.invalidate();render()}});
-      root.addEventListener('click',e=>{if(e.target.closest('[data-action="add-study-ticker"],[data-action="remove-study-ticker"]')){studySector='';studyRunner.invalidate()}});
+      root.addEventListener('click',e=>{
+        if(e.target.closest('[data-action="add-study-ticker"],[data-action="remove-study-ticker"]')){studySector='';studyRunner.invalidate()}
+        if(e.target.closest('[data-action="expand-section"]')){e.target.closest('.fade-section')?.classList.add('is-expanded')}
+        if(!e.target.closest('[data-action="notif-toggle"], #idxel-notif-dropdown')){root.querySelector('#idxel-notif-dropdown')?.classList.add('hidden')}
+      });
       root.addEventListener('keydown',e=>{if(e.key==='Enter'&&e.target.matches('#research-question')&&!e.shiftKey){e.preventDefault();sendResearchMessage(e.target.value)}if(e.key==='Enter'&&e.target.matches('#study-query-input'))buildStudyFromQuery(e.target.value);if(e.key==='Enter'&&e.target.matches('#study-ticker-input'))addStudyTicker(e.target.value);if(['ArrowLeft','ArrowRight','Home','End'].includes(e.key)&&e.target.matches('.tabbar [role="tab"]')){const tabs=[...main.querySelectorAll('.tabbar [role="tab"]')],index=tabs.indexOf(e.target);if(index<0)return;e.preventDefault();const next=e.key==='Home'?0:e.key==='End'?tabs.length-1:(index+(e.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length;issuerTab=tabs[next].dataset.tab;page='issuer';render();main.querySelectorAll('.tabbar [role="tab"]')[next]?.focus()}});
       let dragState=null,resizeState=null,canvasPan=null,sidebarResize=null;
       root.querySelector('.side-splitter').addEventListener('pointerdown',e=>{sidebarResize={pointerId:e.pointerId};e.currentTarget.setPointerCapture(e.pointerId);e.preventDefault()});

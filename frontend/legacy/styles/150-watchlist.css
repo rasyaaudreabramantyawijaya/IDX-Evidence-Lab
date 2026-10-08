@@ -1,6 +1,6 @@
-    #idxel-journey .watchlist-empty-mark{width:42px;height:42px;border:1px solid #35516b;border-radius:50%;display:grid;place-items:center;color:#79cdec;font-size:19px;margin-bottom:10px}
+    #idxel-journey .watchlist-empty-mark{width:42px;height:42px;border:1px solid var(--tk-line-strong);border-radius:50%;display:grid;place-items:center;color:var(--tk-link);font-size:19px;margin-bottom:10px}
     #idxel-journey .watchlist-empty h2{font-size:16px;margin:0 0 5px}
     #idxel-journey .watchlist-empty p{max-width:410px;margin:0 0 14px;color:var(--muted);font-size:12px}
-    #idxel-journey .watchlist-more{display:block;margin:14px auto 2px;border:0;background:transparent;color:#75b8ff;font-weight:600;padding:8px 12px}
+    #idxel-journey .watchlist-more{display:block;margin:14px auto 2px;border:0;background:transparent;color:var(--tk-link);font-weight:600;padding:8px 12px}
     #idxel-journey .watchlist-more:hover{text-decoration:underline}
-    #idxel-journey .research-chat-shell{max-width:1000px;margin:12px auto;border:1px solid #284052;border-radius:18px;background:#0b1622;overflow:hidden}
+    #idxel-journey .research-chat-shell{max-width:1000px;margin:12px auto;border:1px solid var(--tk-line);border-radius:18px;background:var(--tk-bg-000);overflow:hidden}

@@ -17,7 +17,7 @@
     "company_report_dates": [
       "2026-09-25"
     ],
-    "computed_at_utc": "2026-10-02T19:48:10.859005+00:00"
+    "computed_at_utc": "2026-10-08T12:05:33.348655+00:00"
   },
   "sources": {
     "files": [
@@ -666,10 +666,24 @@
       "data/raw/sectors/index_daily/ihsg/ihsg_2026-06-11_2026-09-08.json",
       "data/raw/sectors/index_daily/ihsg/ihsg_2026-09-09_2026-09-24.json"
     ],
-    "sha256": "5273cf2dac657f4fbec65e64f825923db205592cccf1e14e22ea3354a06f8b04",
-    "ihsg_quality": "VERIFIED",
-    "ihsg_sessions": 708,
-    "ihsg_issues": []
+    "sha256": "6183ca8ee2650aa804d290a47105f3575e2ba951e432897464fd88f417ef5cc5",
+    "ihsg_quality": "PARTIAL",
+    "ihsg_sessions": 0,
+    "ihsg_issues": [
+      "ihsg_2023-09-25_2023-12-23.json: snapshot hash missing or mismatched",
+      "ihsg_2023-12-24_2024-03-22.json: snapshot hash missing or mismatched",
+      "ihsg_2024-03-23_2024-06-20.json: snapshot hash missing or mismatched",
+      "ihsg_2024-06-21_2024-09-18.json: snapshot hash missing or mismatched",
+      "ihsg_2024-09-19_2024-12-17.json: snapshot hash missing or mismatched",
+      "ihsg_2024-12-18_2025-03-17.json: snapshot hash missing or mismatched",
+      "ihsg_2025-03-18_2025-06-15.json: snapshot hash missing or mismatched",
+      "ihsg_2025-06-16_2025-09-13.json: snapshot hash missing or mismatched",
+      "ihsg_2025-09-14_2025-12-12.json: snapshot hash missing or mismatched",
+      "ihsg_2025-12-13_2026-03-12.json: snapshot hash missing or mismatched",
+      "ihsg_2026-03-13_2026-06-10.json: snapshot hash missing or mismatched",
+      "ihsg_2026-06-11_2026-09-08.json: snapshot hash missing or mismatched",
+      "ihsg_2026-09-09_2026-09-24.json: snapshot hash missing or mismatched"
+    ]
   },
   "method": {
     "standardization": "cross-sectional p5/p95 winsorized population z-score; clipped to [-3, 3]",
@@ -689,8 +703,8 @@
     {
       "ticker": "AADI",
       "company": "PT Adaro Andalan Indonesia Tbk",
-      "sector": "Energy",
-      "sub_sector": "Oil, Gas & Coal",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -700,28 +714,28 @@
         "earnings_yield": {
           "value": null,
           "status": "UNAVAILABLE",
-          "reason": "Forward P/E missing or invalid in company report.",
+          "reason": "Company-report source is not verified.",
           "source_value": null,
           "score": null
         },
         "dividend_yield": {
-          "value": 0.0478293348524306,
+          "value": null,
           "source_value": 0.0478293348524306,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.30384697880288036
+          "status": "UNAVAILABLE",
+          "reason": "TTM dividend yield missing in verified company report.",
+          "score": null
         },
         "roe": {
-          "value": 0.20828972158258321,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 1.0910761823535193
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 0.563522638471647,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.5629394933162533
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": 0.3793103448275863,
@@ -736,38 +750,40 @@
           "score": 1.7369335096888139
         },
         "beta_ihsg": {
-          "value": 0.56265257725563,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 1.1157675625874954
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.031012376556129363,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.48688751784396256
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 424,
         "daily_coverage_start": "2024-12-05",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 414,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": 0.30384697880288036,
-          "status": "PARTIAL",
-          "available_components": 1
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": 0.8270078378348863,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": 1.4370237057107578,
@@ -775,9 +791,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": 0.31444002237176644,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -803,8 +819,8 @@
     {
       "ticker": "ADMR",
       "company": "PT Alamtri Minerals Indonesia Tbk",
-      "sector": "Energy",
-      "sub_sector": "Oil, Gas & Coal",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -812,30 +828,30 @@
       },
       "components": {
         "earnings_yield": {
-          "value": 0.11286557056864754,
-          "status": "AVAILABLE",
-          "reason": null,
-          "source_value": 8.86009785767021,
-          "score": -0.052316410285822394
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Company-report source is not verified.",
+          "source_value": null,
+          "score": null
         },
         "dividend_yield": {
-          "value": 0.0,
+          "value": null,
           "source_value": 0.0,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -1.0486719826062854
+          "status": "UNAVAILABLE",
+          "reason": "TTM dividend yield missing in verified company report.",
+          "score": null
         },
         "roe": {
-          "value": 0.15791910032019127,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.4959151485688158
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 0.6835084903963,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.41336409932532364
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": 0.6439024390243901,
@@ -850,38 +866,40 @@
           "score": 0.056835811354527005
         },
         "beta_ihsg": {
-          "value": 1.0577950039121982,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.1449537891164526
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.031062829972139397,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.4930944272582319
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": -0.5504941964460539,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": 0.4546396239470697,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": 1.0158589210470532,
@@ -889,9 +907,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": -0.3190241081873422,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -917,8 +935,8 @@
     {
       "ticker": "ADRO",
       "company": "Alamtri Resources Indonesia Tbk",
-      "sector": "Energy",
-      "sub_sector": "Oil, Gas & Coal",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -926,30 +944,30 @@
       },
       "components": {
         "earnings_yield": {
-          "value": 0.19859999436598544,
-          "status": "AVAILABLE",
-          "reason": null,
-          "source_value": 5.0352468699328,
-          "score": 1.5163020434685688
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Company-report source is not verified.",
+          "source_value": null,
+          "score": null
         },
         "dividend_yield": {
-          "value": 0.0558230766883263,
+          "value": null,
           "source_value": 0.0558230766883263,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.5298941826583448
+          "status": "UNAVAILABLE",
+          "reason": "TTM dividend yield missing in verified company report.",
+          "score": null
         },
         "roe": {
-          "value": 0.08946806654658827,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.3128774968922862
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 0.36232154858368976,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.8137585007963527
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": 0.4829545454545454,
@@ -964,38 +982,40 @@
           "score": 1.6038952884412985
         },
         "beta_ihsg": {
-          "value": 0.6843034651397532,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.8060226012339141
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.02648590040187493,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.06997125758007475
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": 1.0230981130634569,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": 0.25044050195203327,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": 1.534586988223578,
@@ -1003,9 +1023,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": 0.4379969294069944,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -1031,8 +1051,8 @@
     {
       "ticker": "AKRA",
       "company": "PT AKR Corporindo Tbk.",
-      "sector": "Energy",
-      "sub_sector": "Oil, Gas & Coal",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -1040,30 +1060,30 @@
       },
       "components": {
         "earnings_yield": {
-          "value": 0.09632081952925059,
-          "status": "AVAILABLE",
-          "reason": null,
-          "source_value": 10.3819714666809,
-          "score": -0.35502331194433734
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Company-report source is not verified.",
+          "source_value": null,
+          "score": null
         },
         "dividend_yield": {
-          "value": 0.068259385665529,
+          "value": null,
           "source_value": 0.068259385665529,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.8815683958479288
+          "status": "UNAVAILABLE",
+          "reason": "TTM dividend yield missing in verified company report.",
+          "score": null
         },
         "roe": {
-          "value": 0.15840000513200891,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.5015973458056231
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 1.3422421276641225,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.40781891307922485
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": 0.10975609756097571,
@@ -1078,38 +1098,40 @@
           "score": 1.6845282340875116
         },
         "beta_ihsg": {
-          "value": 0.6138438877195844,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.9854253122588303
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.02311966689653273,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.48409398875018456
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": 0.2632725419517957,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": 0.04688921636319912,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": 0.9840812628454141,
@@ -1117,9 +1139,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": 0.7347596505045074,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -1145,8 +1167,8 @@
     {
       "ticker": "AMMN",
       "company": "PT Amman Mineral Internasional Tbk.",
-      "sector": "Basic Materials",
-      "sub_sector": "Basic Materials",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -1156,7 +1178,7 @@
         "earnings_yield": {
           "value": null,
           "status": "UNAVAILABLE",
-          "reason": "Forward P/E missing or invalid in company report.",
+          "reason": "Company-report source is not verified.",
           "source_value": null,
           "score": null
         },
@@ -1168,16 +1190,16 @@
           "score": null
         },
         "roe": {
-          "value": 0.04584309806168608,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.828334338431877
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 1.5539241319273107,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.6717035184770256
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": -0.45634674922600615,
@@ -1192,27 +1214,29 @@
           "score": -0.13372858819401165
         },
         "beta_ihsg": {
-          "value": 1.5631545920815646,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -1.4316898650280818
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.03384349059160634,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.835178471149821
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
@@ -1221,9 +1245,9 @@
           "available_components": 0
         },
         "quality": {
-          "score": -0.7500189284544513,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": -0.792801740482786,
@@ -1231,9 +1255,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": -1.1334341680889515,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -1259,8 +1283,8 @@
     {
       "ticker": "AMRT",
       "company": "PT Sumber Alfaria Trijaya Tbk.",
-      "sector": "Consumer Non-Cyclicals",
-      "sub_sector": "Food & Staples Retailing",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -1268,30 +1292,30 @@
       },
       "components": {
         "earnings_yield": {
-          "value": 0.09157088122605372,
-          "status": "AVAILABLE",
-          "reason": null,
-          "source_value": 10.9205020920502,
-          "score": -0.44192937075453
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Company-report source is not verified.",
+          "source_value": null,
+          "score": null
         },
         "dividend_yield": {
-          "value": 0.0318007662835249,
+          "value": null,
           "source_value": 0.0318007662835249,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.14940922851379426
+          "status": "UNAVAILABLE",
+          "reason": "TTM dividend yield missing in verified company report.",
+          "score": null
         },
         "roe": {
-          "value": 0.17597415907436334,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.7092471894265213
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 1.1967356582455142,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.2264292980337389
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": -0.33653846153846156,
@@ -1306,38 +1330,40 @@
           "score": -0.7074994084553043
         },
         "beta_ihsg": {
-          "value": 0.8995350328265243,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.2580044587053347
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.02347010782410461,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.4409818416547616
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": -0.2956692996341621,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": 0.2414089456963912,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": -0.9184755088071649,
@@ -1345,9 +1371,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": 0.3494931501800482,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -1373,8 +1399,8 @@
     {
       "ticker": "ANTM",
       "company": "Aneka Tambang Tbk.",
-      "sector": "Basic Materials",
-      "sub_sector": "Basic Materials",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -1382,30 +1408,30 @@
       },
       "components": {
         "earnings_yield": {
-          "value": 0.04387306709407658,
-          "status": "AVAILABLE",
-          "reason": null,
-          "source_value": 22.7930269350832,
-          "score": -1.3146205038754308
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Company-report source is not verified.",
+          "source_value": null,
+          "score": null
         },
         "dividend_yield": {
-          "value": 0.0650119698822683,
+          "value": null,
           "source_value": 0.0650119698822683,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.7897379023654069
+          "status": "UNAVAILABLE",
+          "reason": "TTM dividend yield missing in verified company report.",
+          "score": null
         },
         "roe": {
-          "value": 0.19696329108784655,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.9572471781960679
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 0.43526143769956005,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.7228310082865513
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": -0.06784660766961648,
@@ -1420,38 +1446,40 @@
           "score": 0.45880103001714406
         },
         "beta_ihsg": {
-          "value": 1.0272036399077498,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.06706269414691172
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.026811240921116954,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.029947027479877732
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": -0.262441300755012,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": 0.8400390932413095,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": 0.0900492333875213,
@@ -1459,9 +1487,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": -0.018557833333516995,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -1487,8 +1515,8 @@
     {
       "ticker": "ASII",
       "company": "Astra International Tbk",
-      "sector": "Industrials",
-      "sub_sector": "Multi-sector Holdings",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -1496,30 +1524,30 @@
       },
       "components": {
         "earnings_yield": {
-          "value": 0.16372281137559977,
-          "status": "AVAILABLE",
-          "reason": null,
-          "source_value": 6.10788436625291,
-          "score": 0.8781803832237784
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Company-report source is not verified.",
+          "source_value": null,
+          "score": null
         },
         "dividend_yield": {
-          "value": 0.0831556503198294,
+          "value": null,
           "source_value": 0.0831556503198294,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 1.302805288672638
+          "status": "UNAVAILABLE",
+          "reason": "TTM dividend yield missing in verified company report.",
+          "score": null
         },
         "roe": {
-          "value": 0.11268104479870157,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.03860134568538054
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 0.744652902906345,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.33714094930529387
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": -0.13090909090909086,
@@ -1534,38 +1562,40 @@
           "score": -0.6880974315293248
         },
         "beta_ihsg": {
-          "value": 0.7385641409442757,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.6678651966936342
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.0179926070815273,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 1.1148381157078084
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": 1.0904928359482082,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": 0.14926980180995666,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": -0.5832361976214725,
@@ -1573,9 +1603,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": 0.8913516562007213,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -1601,8 +1631,8 @@
     {
       "ticker": "BBCA",
       "company": "PT Bank Central Asia Tbk.",
-      "sector": "Financials",
-      "sub_sector": "Banks",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -1610,30 +1640,30 @@
       },
       "components": {
         "earnings_yield": {
-          "value": 0.07719680175781263,
-          "status": "AVAILABLE",
-          "reason": null,
-          "source_value": 12.9539045301031,
-          "score": -0.7049211226197265
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Company-report source is not verified.",
+          "source_value": null,
+          "score": null
         },
         "dividend_yield": {
-          "value": 0.06096,
+          "value": null,
           "source_value": 0.06096,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.6751562107375493
+          "status": "UNAVAILABLE",
+          "reason": "TTM dividend yield missing in verified company report.",
+          "score": null
         },
         "roe": {
-          "value": 0.20425924389879418,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 1.250413872797326
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 4.633289532439585,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.9708284598141462
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": -0.20625000000000004,
@@ -1648,38 +1678,40 @@
           "score": 0.038232720804847076
         },
         "beta_ihsg": {
-          "value": 0.8696000344133332,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.33422432925363266
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.013747246936713543,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 1.454210482423191
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": -0.014882455941088613,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": 1.1106211663057362,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": -0.3393456837544621,
@@ -1687,9 +1719,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": 0.8942174058384118,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -1710,13 +1742,13 @@
           "data/raw/sectors/daily/BBCA/BBCA_2026-09-08_2026-09-24.json"
         ]
       },
-      "peer_group": "financial"
+      "peer_group": "non_financial"
     },
     {
       "ticker": "BBNI",
       "company": "PT Bank Negara Indonesia (Persero) Tbk",
-      "sector": "Financials",
-      "sub_sector": "Banks",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -1724,30 +1756,30 @@
       },
       "components": {
         "earnings_yield": {
-          "value": 0.19272856794084808,
-          "status": "AVAILABLE",
-          "reason": null,
-          "source_value": 5.18864437526936,
-          "score": 1.4088769575765516
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Company-report source is not verified.",
+          "source_value": null,
+          "score": null
         },
         "dividend_yield": {
-          "value": 0.0,
+          "value": null,
           "source_value": 0.0,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -1.0486719826062854
+          "status": "UNAVAILABLE",
+          "reason": "TTM dividend yield missing in verified company report.",
+          "score": null
         },
         "roe": {
-          "value": 0.11364849056281068,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.9947231303748403
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 6.724079900297704,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.25247176664423254
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": -0.1578947368421053,
@@ -1762,38 +1794,40 @@
           "score": -0.11112651919514982
         },
         "beta_ihsg": {
-          "value": 1.0564164147439299,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.14144365403996664
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.017008417701050042,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 1.23591563263735
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": 0.18010248748513313,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": -0.37112568186530387,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": -0.33747256610294757,
@@ -1801,9 +1835,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": 0.5472359892986917,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -1824,13 +1858,13 @@
           "data/raw/sectors/daily/BBNI/BBNI_2026-09-08_2026-09-24.json"
         ]
       },
-      "peer_group": "financial"
+      "peer_group": "non_financial"
     },
     {
       "ticker": "BBRI",
       "company": "PT Bank Rakyat Indonesia (Persero) Tbk",
-      "sector": "Financials",
-      "sub_sector": "Banks",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -1838,30 +1872,30 @@
       },
       "components": {
         "earnings_yield": {
-          "value": 0.13974285791790667,
-          "status": "AVAILABLE",
-          "reason": null,
-          "source_value": 7.15600077813966,
-          "score": 0.43943715911550835
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Company-report source is not verified.",
+          "source_value": null,
+          "score": null
         },
         "dividend_yield": {
-          "value": 0.10984126984127,
+          "value": null,
           "source_value": 0.10984126984127,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 2.057421812424376
+          "status": "UNAVAILABLE",
+          "reason": "TTM dividend yield missing in verified company report.",
+          "score": null
         },
         "roe": {
-          "value": 0.17118552764837539,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.5404267276076087
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 5.452414882568013,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.7265379462395425
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": -0.21750000000000003,
@@ -1876,38 +1910,40 @@
           "score": 0.23504761468548183
         },
         "beta_ihsg": {
-          "value": 1.0695623516831096,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.17491556534291966
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.015545436534513504,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 1.4158953504362066
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": 1.248429485769942,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": 0.6334823369235756,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": -0.2587484655738844,
@@ -1915,9 +1951,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": 0.6204898925466434,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -1938,13 +1974,13 @@
           "data/raw/sectors/daily/BBRI/BBRI_2026-09-08_2026-09-24.json"
         ]
       },
-      "peer_group": "financial"
+      "peer_group": "non_financial"
     },
     {
       "ticker": "BBTN",
       "company": "PT Bank Tabungan Negara (Persero) Tbk",
-      "sector": "Financials",
-      "sub_sector": "Banks",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -1952,30 +1988,30 @@
       },
       "components": {
         "earnings_yield": {
-          "value": 0.257095019310308,
-          "status": "AVAILABLE",
-          "reason": null,
-          "source_value": 3.88961249689953,
-          "score": 1.7836090863366532
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Company-report source is not verified.",
+          "source_value": null,
+          "score": null
         },
         "dividend_yield": {
-          "value": 0.0,
+          "value": null,
           "source_value": 0.0,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -1.0486719826062854
+          "status": "UNAVAILABLE",
+          "reason": "TTM dividend yield missing in verified company report.",
+          "score": null
         },
         "roe": {
-          "value": 0.09668946893083688,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -1.3567110389441206
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 13.575784294261304,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -1.8594975937414577
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": -0.05859375,
@@ -1990,38 +2026,40 @@
           "score": -0.10019486768717459
         },
         "beta_ihsg": {
-          "value": 1.128866000180073,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.3259132820987186
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.020287868866852594,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.8324690887877146
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": 0.3674685518651839,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": -1.6081043163427893,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": -0.17480022552888852,
@@ -2029,9 +2067,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": 0.253277903344498,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -2052,13 +2090,13 @@
           "data/raw/sectors/daily/BBTN/BBTN_2026-09-08_2026-09-24.json"
         ]
       },
-      "peer_group": "financial"
+      "peer_group": "non_financial"
     },
     {
       "ticker": "BMRI",
       "company": "PT Bank Mandiri (Persero) Tbk",
-      "sector": "Financials",
-      "sub_sector": "Banks",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -2066,30 +2104,30 @@
       },
       "components": {
         "earnings_yield": {
-          "value": 0.16261764227175243,
-          "status": "AVAILABLE",
-          "reason": null,
-          "source_value": 6.14939428483957,
-          "score": 0.8579599329771884
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Company-report source is not verified.",
+          "source_value": null,
+          "score": null
         },
         "dividend_yield": {
-          "value": 0.133077673818551,
+          "value": null,
           "source_value": 0.133077673818551,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 2.057421812424376
+          "status": "UNAVAILABLE",
+          "reason": "TTM dividend yield missing in verified company report.",
+          "score": null
         },
         "roe": {
-          "value": 0.1719413758739493,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.5605935689140271
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 7.6436613560311875,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.09034057895646389
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": -0.11111111111111116,
@@ -2104,38 +2142,40 @@
           "score": -0.13282639065111437
         },
         "beta_ihsg": {
-          "value": 1.0751202654504608,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.18906700981667102
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.016069729192507255,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 1.3513955149030394
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": 1.4576908727007822,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": 0.23512649497878163,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": -0.27425787281056957,
@@ -2143,9 +2183,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": 0.5811642525431842,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -2166,13 +2206,13 @@
           "data/raw/sectors/daily/BMRI/BMRI_2026-09-08_2026-09-24.json"
         ]
       },
-      "peer_group": "financial"
+      "peer_group": "non_financial"
     },
     {
       "ticker": "BRPT",
       "company": "Barito Pacific Tbk",
-      "sector": "Basic Materials",
-      "sub_sector": "Basic Materials",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -2182,28 +2222,28 @@
         "earnings_yield": {
           "value": null,
           "status": "UNAVAILABLE",
-          "reason": "Forward P/E missing or invalid in company report.",
+          "reason": "Company-report source is not verified.",
           "source_value": null,
           "score": null
         },
         "dividend_yield": {
-          "value": 0.00107947019551763,
+          "value": null,
           "source_value": 0.00107947019551763,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -1.0181467011609495
+          "status": "UNAVAILABLE",
+          "reason": "TTM dividend yield missing in verified company report.",
+          "score": null
         },
         "roe": {
-          "value": 0.08101832860485057,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.4127165427999688
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 1.870371699766046,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -1.0661897756290237
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": -0.20454545454545459,
@@ -2218,38 +2258,40 @@
           "score": -1.4532409046819026
         },
         "beta_ihsg": {
-          "value": 2.2640233601108544,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -2.4586986183369746
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.04079681069065621,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -1.69059385025194
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": -1.0181467011609495,
-          "status": "PARTIAL",
-          "available_components": 1
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": -0.7394531592144963,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": -1.0823839769887855,
@@ -2257,9 +2299,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": -2.074646234294457,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -2285,8 +2327,8 @@
     {
       "ticker": "BUMI",
       "company": "Bumi Resources Tbk",
-      "sector": "Energy",
-      "sub_sector": "Oil, Gas & Coal",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -2296,7 +2338,7 @@
         "earnings_yield": {
           "value": null,
           "status": "UNAVAILABLE",
-          "reason": "Forward P/E missing or invalid in company report.",
+          "reason": "Company-report source is not verified.",
           "source_value": null,
           "score": null
         },
@@ -2308,16 +2350,16 @@
           "score": null
         },
         "roe": {
-          "value": 0.028051930499948544,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -1.0385483364511217
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 0.4607765887515208,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.691023601745556
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": 0.6428571428571428,
@@ -2332,27 +2374,29 @@
           "score": -0.9544595491912173
         },
         "beta_ihsg": {
-          "value": 1.7362570880299502,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -1.8724398410480996
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.03936933787793966,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -1.514982461756429
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
@@ -2361,9 +2405,9 @@
           "available_components": 0
         },
         "quality": {
-          "score": -0.17376236735278283,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": 0.5085563995421495,
@@ -2371,9 +2415,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": -1.6937111514022642,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -2399,8 +2443,8 @@
     {
       "ticker": "CPIN",
       "company": "Charoen Pokphand Indonesia Tbk",
-      "sector": "Consumer Non-Cyclicals",
-      "sub_sector": "Food & Beverage",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -2408,30 +2452,30 @@
       },
       "components": {
         "earnings_yield": {
-          "value": 0.07632225771679053,
-          "status": "AVAILABLE",
-          "reason": null,
-          "source_value": 13.1023377703357,
-          "score": -0.7209219990542725
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Company-report source is not verified.",
+          "source_value": null,
+          "score": null
         },
         "dividend_yield": {
-          "value": 0.0,
+          "value": null,
           "source_value": 0.0,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -1.0486719826062854
+          "status": "UNAVAILABLE",
+          "reason": "TTM dividend yield missing in verified company report.",
+          "score": null
         },
         "roe": {
-          "value": 0.16526155794599143,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.5826709709424882
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 0.342796309834174,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.8380988311926376
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": -0.3429203539823009,
@@ -2446,38 +2490,40 @@
           "score": -1.0806118917797378
         },
         "beta_ihsg": {
-          "value": 0.6303836583886208,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.9433120920778342
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.021308301982802612,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.7069327740065187
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": -0.8847969908302789,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": 0.7103849010675629,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": -1.1151351250778112,
@@ -2485,9 +2531,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": 0.8251224330421765,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -2513,8 +2559,8 @@
     {
       "ticker": "CUAN",
       "company": "PT Petrindo Jaya Kreasi Tbk",
-      "sector": "Energy",
-      "sub_sector": "Oil, Gas & Coal",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -2524,28 +2570,28 @@
         "earnings_yield": {
           "value": null,
           "status": "UNAVAILABLE",
-          "reason": "Forward P/E missing or invalid in company report.",
+          "reason": "Company-report source is not verified.",
           "source_value": null,
           "score": null
         },
         "dividend_yield": {
-          "value": 0.0,
+          "value": null,
           "source_value": 0.0,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -1.0486719826062854
+          "status": "UNAVAILABLE",
+          "reason": "TTM dividend yield missing in verified company report.",
+          "score": null
         },
         "roe": {
-          "value": 0.21482256030395427,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 1.1682658407201691
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 3.296084034418352,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -2.3753838321443306
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": -0.49673202614379086,
@@ -2560,38 +2606,40 @@
           "score": -1.5452303091368809
         },
         "beta_ihsg": {
-          "value": 2.2386779115046216,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -2.4586986183369746
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.04937910106849093,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -1.7033423185781555
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": -1.0486719826062854,
-          "status": "PARTIAL",
-          "available_components": 1
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": -0.6035589957120807,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": -1.4985526009542207,
@@ -2599,9 +2647,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": -2.081020468457565,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -2627,8 +2675,8 @@
     {
       "ticker": "DEWA",
       "company": "Darma Henwa Tbk",
-      "sector": "Energy",
-      "sub_sector": "Oil, Gas & Coal",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -2638,28 +2686,28 @@
         "earnings_yield": {
           "value": null,
           "status": "UNAVAILABLE",
-          "reason": "Forward P/E missing or invalid in company report.",
+          "reason": "Company-report source is not verified.",
           "source_value": null,
           "score": null
         },
         "dividend_yield": {
-          "value": 0.00421348314606742,
+          "value": null,
           "source_value": 0.00421348314606742,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.9295230154250174
+          "status": "UNAVAILABLE",
+          "reason": "TTM dividend yield missing in verified company report.",
+          "score": null
         },
         "roe": {
-          "value": 0.5012999635372668,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 2.325847294492033
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 0.9479353718846755,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.08372727676682942
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": 0.8918918918918919,
@@ -2674,38 +2722,40 @@
           "score": -1.1582917262317984
         },
         "beta_ihsg": {
-          "value": 2.0240700861631145,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -2.4586986183369746
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.040926344515991774,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -1.7033423185781555
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": -0.9295230154250174,
-          "status": "PARTIAL",
-          "available_components": 1
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": 1.2047872856294313,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": 0.4640158700182959,
@@ -2713,9 +2763,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": -2.081020468457565,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -2741,8 +2791,8 @@
     {
       "ticker": "EMTK",
       "company": "Elang Mahkota Teknologi Tbk",
-      "sector": "Technology",
-      "sub_sector": "Software & IT Services",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -2750,30 +2800,30 @@
       },
       "components": {
         "earnings_yield": {
-          "value": 0.015642857551574706,
-          "status": "AVAILABLE",
-          "reason": null,
-          "source_value": 63.9269389689823,
-          "score": -1.6162772417475018
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Company-report source is not verified.",
+          "source_value": null,
+          "score": null
         },
         "dividend_yield": {
-          "value": 0.0119047619047619,
+          "value": null,
           "source_value": 0.0119047619047619,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.7120288689830206
+          "status": "UNAVAILABLE",
+          "reason": "TTM dividend yield missing in verified company report.",
+          "score": null
         },
         "roe": {
-          "value": 0.12716058816874903,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.1324836992251549
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 0.13819802335503717,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 1.0132382119078545
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": -0.6168582375478927,
@@ -2788,38 +2838,40 @@
           "score": -1.5452303091368809
         },
         "beta_ihsg": {
-          "value": 1.4138619996044106,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -1.0515641701687084
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.033606060464170126,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.8059692042704114
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": -1.1641530553652613,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": 0.5728609555665047,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": -1.4985526009542207,
@@ -2827,9 +2879,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": -0.9287666872195599,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -2855,8 +2907,8 @@
     {
       "ticker": "ESSA",
       "company": "ESSA Industries Indonesia Tbk",
-      "sector": "Basic Materials",
-      "sub_sector": "Basic Materials",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -2864,30 +2916,30 @@
       },
       "components": {
         "earnings_yield": {
-          "value": 0.08453448065396045,
-          "status": "AVAILABLE",
-          "reason": null,
-          "source_value": 11.8294924421843,
-          "score": -0.5706691149147536
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Company-report source is not verified.",
+          "source_value": null,
+          "score": null
         },
         "dividend_yield": {
-          "value": 0.0896551724137931,
+          "value": null,
           "source_value": 0.0896551724137931,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 1.4865989144737501
+          "status": "UNAVAILABLE",
+          "reason": "TTM dividend yield missing in verified company report.",
+          "score": null
         },
         "roe": {
-          "value": 0.0690333015013115,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.554327286168062
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 0.10779111916595394,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 1.0132382119078545
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": 0.0,
@@ -2902,38 +2954,40 @@
           "score": -0.15412342498214449
         },
         "beta_ihsg": {
-          "value": 0.8352434052291179,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.42170246413614
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.03164999909202744,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.5653294873635073
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": 0.4579648997794983,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": 0.2294554628698962,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": -0.10900289605272886,
@@ -2941,9 +2995,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": -0.07181351161368366,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -2969,8 +3023,8 @@
     {
       "ticker": "EXCL",
       "company": "PT XLSMART Telecom Sejahtera Tbk",
-      "sector": "Infrastructures",
-      "sub_sector": "Telecommunication",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -2978,30 +3032,30 @@
       },
       "components": {
         "earnings_yield": {
-          "value": 0.07205579372946287,
-          "status": "AVAILABLE",
-          "reason": null,
-          "source_value": 13.8781345432756,
-          "score": -0.7989822908994777
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Company-report source is not verified.",
+          "source_value": null,
+          "score": null
         },
         "dividend_yield": {
-          "value": 0.0682403433476395,
+          "value": null,
           "source_value": 0.0682403433476395,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.8810299167723951
+          "status": "UNAVAILABLE",
+          "reason": "TTM dividend yield missing in verified company report.",
+          "score": null
         },
         "roe": {
-          "value": -0.1475111157734615,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -1.6325728773638695
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 2.842832487156728,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -2.278467749085697
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": -0.014598540145985384,
@@ -3016,38 +3070,40 @@
           "score": -0.8354408751533553
         },
         "beta_ihsg": {
-          "value": 0.9573718663087888,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.11074151584180286
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.024047608507668138,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.36993621753201633
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": 0.04102381293645868,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": -1.9555203132247834,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": -0.4727730290990671,
@@ -3055,9 +3111,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": 0.2403388666869096,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -3083,8 +3139,8 @@
     {
       "ticker": "GOTO",
       "company": "PT GoTo Gojek Tokopedia Tbk",
-      "sector": "Technology",
-      "sub_sector": "Software & IT Services",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -3093,9 +3149,9 @@
       "components": {
         "earnings_yield": {
           "value": null,
-          "status": "NOT_COMPARABLE",
-          "reason": "Forward P/E is non-positive; not inverted.",
-          "source_value": -9.39849593733858,
+          "status": "UNAVAILABLE",
+          "reason": "Company-report source is not verified.",
+          "source_value": null,
           "score": null
         },
         "dividend_yield": {
@@ -3106,16 +3162,16 @@
           "score": null
         },
         "roe": {
-          "value": -0.04129521329960162,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -1.6325728773638695
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 0.5936956198661749,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.5253255954476812
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": -0.15254237288135597,
@@ -3130,27 +3186,29 @@
           "score": -0.030762525678371094
         },
         "beta_ihsg": {
-          "value": 0.7763409850317138,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.5716785817379787
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.03128548232653068,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.5204856943689786
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
@@ -3159,9 +3217,9 @@
           "available_components": 0
         },
         "quality": {
-          "score": -0.5536236409580941,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": -0.28881707365155085,
@@ -3169,9 +3227,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": 0.025596443684500036,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -3197,8 +3255,8 @@
     {
       "ticker": "HRTA",
       "company": "PT Hartadinata Abadi Tbk",
-      "sector": "Consumer Cyclicals",
-      "sub_sector": "Apparel & Luxury Goods",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -3208,28 +3266,28 @@
         "earnings_yield": {
           "value": null,
           "status": "UNAVAILABLE",
-          "reason": "Forward P/E missing or invalid in company report.",
+          "reason": "Company-report source is not verified.",
           "source_value": null,
           "score": null
         },
         "dividend_yield": {
-          "value": 0.0174672489082969,
+          "value": null,
           "source_value": 0.0174672489082969,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.5547327416568675
+          "status": "UNAVAILABLE",
+          "reason": "TTM dividend yield missing in verified company report.",
+          "score": null
         },
         "roe": {
-          "value": 0.3028714195982466,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 2.2086193008884396
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 2.900812716413712,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -2.3507464010741317
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": 1.7784431137724552,
@@ -3244,38 +3302,40 @@
           "score": 1.0555606449449773
         },
         "beta_ihsg": {
-          "value": 1.0809145186475815,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.20382021683250937
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.03911560420983875,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -1.4837674912390824
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": -0.5547327416568675,
-          "status": "PARTIAL",
-          "available_components": 1
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": -0.07106355009284604,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": 1.5709420556066838,
@@ -3283,9 +3343,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": -0.8437938540357959,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -3311,8 +3371,8 @@
     {
       "ticker": "ICBP",
       "company": "Indofood CBP Sukses Makmur Tbk",
-      "sector": "Consumer Non-Cyclicals",
-      "sub_sector": "Food & Beverage",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -3320,30 +3380,30 @@
       },
       "components": {
         "earnings_yield": {
-          "value": 0.13617443572309684,
-          "status": "AVAILABLE",
-          "reason": null,
-          "source_value": 7.34352226017991,
-          "score": 0.37414841443581015
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Company-report source is not verified.",
+          "source_value": null,
+          "score": null
         },
         "dividend_yield": {
-          "value": 0.0398496240601504,
+          "value": null,
           "source_value": 0.0398496240601504,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.0781965451010648
+          "status": "UNAVAILABLE",
+          "reason": "TTM dividend yield missing in verified company report.",
+          "score": null
         },
         "roe": {
-          "value": 0.12519748787658005,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.10928841653796931
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 0.8395605993479853,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.21882819942421283
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": -0.15135135135135136,
@@ -3358,38 +3418,40 @@
           "score": 0.26488713812563786
         },
         "beta_ihsg": {
-          "value": 0.5184249810116638,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 1.2058566713650534
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.017297732185105278,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 1.2003234183379305
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": 0.22617247976843746,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": 0.16405830798109106,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": -0.1391066981133546,
@@ -3397,9 +3459,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": 1.2030900448514918,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -3425,8 +3487,8 @@
     {
       "ticker": "INCO",
       "company": "Vale Indonesia Tbk",
-      "sector": "Basic Materials",
-      "sub_sector": "Basic Materials",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -3434,30 +3496,30 @@
       },
       "components": {
         "earnings_yield": {
-          "value": 0.04346367599617725,
-          "status": "AVAILABLE",
-          "reason": null,
-          "source_value": 23.0077179870371,
-          "score": -1.322110825761604
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Company-report source is not verified.",
+          "source_value": null,
+          "score": null
         },
         "dividend_yield": {
-          "value": 0.0,
+          "value": null,
           "source_value": 0.0,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -1.0486719826062854
+          "status": "UNAVAILABLE",
+          "reason": "TTM dividend yield missing in verified company report.",
+          "score": null
         },
         "roe": {
-          "value": 0.027409339419893364,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -1.0461409601258274
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 0.20567761027085385,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 1.0090321802643833
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": 0.329923273657289,
@@ -3472,38 +3534,40 @@
           "score": -0.27453711773761447
         },
         "beta_ihsg": {
-          "value": 1.192683445291152,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.4884039339420848
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.03156390526207751,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.5547380022692088
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": -1.1853914041839446,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": -0.018554389930722004,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": 0.353102166636073,
@@ -3511,9 +3575,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": -0.5215709681056468,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -3539,8 +3603,8 @@
     {
       "ticker": "INDF",
       "company": "Indofood Sukses Makmur Tbk",
-      "sector": "Consumer Non-Cyclicals",
-      "sub_sector": "Food & Beverage",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -3548,30 +3612,30 @@
       },
       "components": {
         "earnings_yield": {
-          "value": 0.19259407552083332,
-          "status": "AVAILABLE",
-          "reason": null,
-          "source_value": 5.19226771278241,
-          "score": 1.4064162506331663
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Company-report source is not verified.",
+          "source_value": null,
+          "score": null
         },
         "dividend_yield": {
-          "value": 0.042962962962963,
+          "value": null,
           "source_value": 0.042962962962963,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.1662356096696758
+          "status": "UNAVAILABLE",
+          "reason": "TTM dividend yield missing in verified company report.",
+          "score": null
         },
         "roe": {
-          "value": 0.08886456564604554,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.3200082451509976
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 0.8129605954899398,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.25198799279490036
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": -0.03322259136212624,
@@ -3586,38 +3650,40 @@
           "score": 0.9301688874625139
         },
         "beta_ihsg": {
-          "value": 0.45099022795713706,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 1.2058566713650534
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.015156126580759677,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 1.454210482423191
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": 0.786325930151421,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": -0.034010126178048605,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": 0.3805475310895272,
@@ -3625,9 +3691,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": 1.330033576894122,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -3653,8 +3719,8 @@
     {
       "ticker": "INDY",
       "company": "Indika Energy Tbk",
-      "sector": "Energy",
-      "sub_sector": "Oil, Gas & Coal",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -3662,30 +3728,30 @@
       },
       "components": {
         "earnings_yield": {
-          "value": 0.12215241499549834,
-          "status": "AVAILABLE",
-          "reason": null,
-          "source_value": 8.18649389810961,
-          "score": 0.11759801731375526
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Company-report source is not verified.",
+          "source_value": null,
+          "score": null
         },
         "dividend_yield": {
-          "value": 0.0,
+          "value": null,
           "source_value": 0.0,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -1.0486719826062854
+          "status": "UNAVAILABLE",
+          "reason": "TTM dividend yield missing in verified company report.",
+          "score": null
         },
         "roe": {
-          "value": 0.004481000573417816,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -1.3170539151149865
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 1.1808081960066583,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.20657398674963384
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": 0.6878980891719746,
@@ -3700,38 +3766,40 @@
           "score": 0.6854775894358041
         },
         "beta_ihsg": {
-          "value": 1.1545840741485534,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.3913961073045933
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.036707504018331394,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -1.1875167924519483
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": -0.46553698264626503,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": -0.7618139509323102,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": 1.385900527852097,
@@ -3739,9 +3807,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": -0.7894564498782708,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -3767,8 +3835,8 @@
     {
       "ticker": "INKP",
       "company": "Indah Kiat Pulp & Paper Tbk",
-      "sector": "Basic Materials",
-      "sub_sector": "Basic Materials",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -3776,30 +3844,30 @@
       },
       "components": {
         "earnings_yield": {
-          "value": 0.18453252635828257,
-          "status": "AVAILABLE",
-          "reason": null,
-          "source_value": 5.4190988425446,
-          "score": 1.2589201315466576
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Company-report source is not verified.",
+          "source_value": null,
+          "score": null
         },
         "dividend_yield": {
-          "value": 0.00911854103343465,
+          "value": null,
           "source_value": 0.00911854103343465,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.7908176828097421
+          "status": "UNAVAILABLE",
+          "reason": "TTM dividend yield missing in verified company report.",
+          "score": null
         },
         "roe": {
-          "value": 0.0662421752135547,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.5873062243906341
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 0.8041747877676676,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.2629404561937739
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": 0.10443037974683533,
@@ -3814,38 +3882,40 @@
           "score": 0.18130458744151462
         },
         "beta_ihsg": {
-          "value": 1.1167403583375897,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.29503922495690016
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.02507302064586149,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.24378737058788696
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": 0.23405122436845777,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": -0.1621828840984301,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": 0.22403812818200122,
@@ -3853,9 +3923,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": -0.025625927184506597,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -3881,8 +3951,8 @@
     {
       "ticker": "ISAT",
       "company": "PT Indosat Tbk",
-      "sector": "Infrastructures",
-      "sub_sector": "Telecommunication",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -3890,30 +3960,30 @@
       },
       "components": {
         "earnings_yield": {
-          "value": 0.0848042524621843,
-          "status": "AVAILABLE",
-          "reason": null,
-          "source_value": 11.7918615041848,
-          "score": -0.5657333024611361
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Company-report source is not verified.",
+          "source_value": null,
+          "score": null
         },
         "dividend_yield": {
-          "value": 0.0472340425531915,
+          "value": null,
           "source_value": 0.0472340425531915,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.28701329033980905
+          "status": "UNAVAILABLE",
+          "reason": "TTM dividend yield missing in verified company report.",
+          "score": null
         },
         "roe": {
-          "value": 0.139453996278529,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.2777381609726149
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 2.0025955280994956,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -1.2310211361663004
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": 0.2620865139949109,
@@ -3928,38 +3998,40 @@
           "score": 1.6835796029917343
         },
         "beta_ihsg": {
-          "value": 0.9197547172342825,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.2065215186759256
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.027142902851118898,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.01085487888210902
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": -0.1393600060606635,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": -0.47664148759684277,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": 1.224766019631286,
@@ -3967,9 +4039,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": 0.0978333198969083,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -3995,8 +4067,8 @@
     {
       "ticker": "ITMG",
       "company": "Indo Tambangraya Megah Tbk",
-      "sector": "Energy",
-      "sub_sector": "Oil, Gas & Coal",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -4004,30 +4076,30 @@
       },
       "components": {
         "earnings_yield": {
-          "value": 0.16138078278186274,
-          "status": "AVAILABLE",
-          "reason": null,
-          "source_value": 6.19652465902147,
-          "score": 0.8353300425013577
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Company-report source is not verified.",
+          "source_value": null,
+          "score": null
         },
         "dividend_yield": {
-          "value": 0.0289434168198529,
+          "value": null,
           "source_value": 0.0289434168198529,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.23020941820726007
+          "status": "UNAVAILABLE",
+          "reason": "TTM dividend yield missing in verified company report.",
+          "score": null
         },
         "roe": {
-          "value": 0.10005601753574196,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.18777409934750788
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 0.26082058091599414,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.9402904792406944
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": 0.12304250559284124,
@@ -4042,38 +4114,40 @@
           "score": 1.1279382766574337
         },
         "beta_ihsg": {
-          "value": 0.30080552062398475,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 1.2058566713650534
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.015041871161858372,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 1.454210482423191
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": 0.3025603121470488,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": 0.37625818994659327,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": 0.7268204144808434,
@@ -4081,9 +4155,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": 1.330033576894122,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -4109,8 +4183,8 @@
     {
       "ticker": "JPFA",
       "company": "JAPFA Comfeed Indonesia Tbk",
-      "sector": "Consumer Non-Cyclicals",
-      "sub_sector": "Food & Beverage",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -4118,30 +4192,30 @@
       },
       "components": {
         "earnings_yield": {
-          "value": 0.09743661656625928,
-          "status": "AVAILABLE",
-          "reason": null,
-          "source_value": 10.2630821475618,
-          "score": -0.3346084103753523
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Company-report source is not verified.",
+          "source_value": null,
+          "score": null
         },
         "dividend_yield": {
-          "value": 0.0657276995305164,
+          "value": null,
           "source_value": 0.0657276995305164,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.8099773207784995
+          "status": "UNAVAILABLE",
+          "reason": "TTM dividend yield missing in verified company report.",
+          "score": null
         },
         "roe": {
-          "value": 0.20001042012328615,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.9932509522484172
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 1.001124733920953,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.01742096102138313
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": 0.21590909090909083,
@@ -4156,38 +4230,40 @@
           "score": 0.03913878151540016
         },
         "beta_ihsg": {
-          "value": 0.7246061727470866,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.7034046851018985
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.025322572954300085,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.21308680172467895
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": 0.23768445520157358,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": 0.5053359566349002,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": 0.32944067834256396,
@@ -4195,9 +4271,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": 0.4582457434132887,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -4223,8 +4299,8 @@
     {
       "ticker": "KLBF",
       "company": "Kalbe Farma Tbk",
-      "sector": "Healthcare",
-      "sub_sector": "Pharmaceuticals & Health Care Research",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -4232,30 +4308,30 @@
       },
       "components": {
         "earnings_yield": {
-          "value": 0.10178230960352895,
-          "status": "AVAILABLE",
-          "reason": null,
-          "source_value": 9.82489004125849,
-          "score": -0.2550985240229717
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Company-report source is not verified.",
+          "source_value": null,
+          "score": null
         },
         "dividend_yield": {
-          "value": 0.0,
+          "value": null,
           "source_value": 0.0,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -1.0486719826062854
+          "status": "UNAVAILABLE",
+          "reason": "TTM dividend yield missing in verified company report.",
+          "score": null
         },
         "roe": {
-          "value": 0.14820945691698362,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.3811895156362615
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 0.2414559830006693,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.9644305533927663
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": -0.31779661016949157,
@@ -4270,38 +4346,40 @@
           "score": -1.042599122522141
         },
         "beta_ihsg": {
-          "value": 0.5810834920764835,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 1.0688391504879937
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.02156799197129563,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.6749850415864143
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": -0.6518852533146285,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": 0.6728100345145139,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": -1.0563545515950368,
@@ -4309,9 +4387,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": 0.871912096037204,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -4337,8 +4415,8 @@
     {
       "ticker": "MAPI",
       "company": "Mitra Adiperkasa Tbk",
-      "sector": "Consumer Cyclicals",
-      "sub_sector": "Retailing",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -4346,30 +4424,30 @@
       },
       "components": {
         "earnings_yield": {
-          "value": 0.09136424285686574,
-          "status": "AVAILABLE",
-          "reason": null,
-          "source_value": 10.9452009750317,
-          "score": -0.4457100780224552
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Company-report source is not verified.",
+          "source_value": null,
+          "score": null
         },
         "dividend_yield": {
-          "value": 0.00662251655629139,
+          "value": null,
           "source_value": 0.00662251655629139,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.8614003167496348
+          "status": "UNAVAILABLE",
+          "reason": "TTM dividend yield missing in verified company report.",
+          "score": null
         },
         "roe": {
-          "value": 0.12963182777451543,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.16168297216713387
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 0.9071109096177244,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.1346194022140997
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": 0.2435897435897436,
@@ -4384,38 +4462,40 @@
           "score": 1.7369335096888139
         },
         "beta_ihsg": {
-          "value": 0.6126724449242195,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.9884080155476372
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.029181095543374204,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.26159860269930824
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": -0.653555197386045,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": 0.1481511871906168,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": 1.2221601541147225,
@@ -4423,9 +4503,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": 0.3634047064241645,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -4451,8 +4531,8 @@
     {
       "ticker": "MBMA",
       "company": "PT Merdeka Battery Materials Tbk",
-      "sector": "Basic Materials",
-      "sub_sector": "Basic Materials",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -4460,11 +4540,11 @@
       },
       "components": {
         "earnings_yield": {
-          "value": 0.03129999923706053,
-          "status": "AVAILABLE",
-          "reason": null,
-          "source_value": 31.9488825678934,
-          "score": -1.5446604969993356
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Company-report source is not verified.",
+          "source_value": null,
+          "score": null
         },
         "dividend_yield": {
           "value": null,
@@ -4474,16 +4554,16 @@
           "score": null
         },
         "roe": {
-          "value": 0.012590961358472402,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -1.221229553139323
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 0.590821104879465,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.528908990529461
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": 0.27336448598130847,
@@ -4498,38 +4578,40 @@
           "score": -0.5937103436784201
         },
         "beta_ihsg": {
-          "value": 1.39168184857651,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.9950895307933033
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.038741326868492326,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -1.4377229270199072
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": -1.5446604969993356,
-          "status": "PARTIAL",
-          "available_components": 1
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": -0.34616028130493093,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": 0.10397555838720235,
@@ -4537,9 +4619,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": -1.2164062289066053,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -4565,8 +4647,8 @@
     {
       "ticker": "MDKA",
       "company": "PT Merdeka Copper Gold Tbk",
-      "sector": "Basic Materials",
-      "sub_sector": "Basic Materials",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -4574,30 +4656,30 @@
       },
       "components": {
         "earnings_yield": {
-          "value": 0.015289901832804223,
-          "status": "AVAILABLE",
-          "reason": null,
-          "source_value": 65.4026435836571,
-          "score": -1.6162772417475018
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Company-report source is not verified.",
+          "source_value": null,
+          "score": null
         },
         "dividend_yield": {
-          "value": 0.00400169105405528,
+          "value": null,
           "source_value": 0.00400169105405528,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.9355120767658605
+          "status": "UNAVAILABLE",
+          "reason": "TTM dividend yield missing in verified company report.",
+          "score": null
         },
         "roe": {
-          "value": -0.02121867854061474,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -1.6207120238717818
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 0.9513508902060006,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.07946946227953254
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": 0.15267175572519087,
@@ -4612,38 +4694,40 @@
           "score": 1.2880906342542755
         },
         "beta_ihsg": {
-          "value": 1.4222806434365494,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -1.0729995460528472
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.034575944106037634,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.9252867923254191
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": -1.275894659256681,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": -0.7706212807961247,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": 0.8538035908647484,
@@ -4651,9 +4735,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": -0.9991431691891332,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -4679,8 +4763,8 @@
     {
       "ticker": "MEDC",
       "company": "PT Medco Energi Internasional Tbk",
-      "sector": "Energy",
-      "sub_sector": "Oil, Gas & Coal",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -4688,30 +4772,30 @@
       },
       "components": {
         "earnings_yield": {
-          "value": 0.23740688981681013,
-          "status": "AVAILABLE",
-          "reason": null,
-          "source_value": 4.21217767003994,
-          "score": 1.7836090863366532
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Company-report source is not verified.",
+          "source_value": null,
+          "score": null
         },
         "dividend_yield": {
-          "value": 0.0418606199067214,
+          "value": null,
           "source_value": 0.0418606199067214,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.1350635289760065
+          "status": "UNAVAILABLE",
+          "reason": "TTM dividend yield missing in verified company report.",
+          "score": null
         },
         "roe": {
-          "value": 0.042716396129471056,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.8652783170383729
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 2.5433338822085108,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -1.9051102147074381
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": 0.05600000000000005,
@@ -4726,38 +4810,40 @@
           "score": 1.0329840954375258
         },
         "beta_ihsg": {
-          "value": 0.6281340616340412,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.9490399685605124
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.028321433112425843,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.15584071239737535
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": 0.9593363076563298,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": -1.3851942658729055,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": 0.5732062250944776,
@@ -4765,9 +4851,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": 0.39659962808156857,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -4793,8 +4879,8 @@
     {
       "ticker": "NCKL",
       "company": "PT Trimegah Bangun Persada Tbk",
-      "sector": "Basic Materials",
-      "sub_sector": "Basic Materials",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -4802,30 +4888,30 @@
       },
       "components": {
         "earnings_yield": {
-          "value": 0.1235027587216203,
-          "status": "AVAILABLE",
-          "reason": null,
-          "source_value": 8.09698512285087,
-          "score": 0.14230424374986433
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Company-report source is not verified.",
+          "source_value": null,
+          "score": null
         },
         "dividend_yield": {
-          "value": 0.0471160214250259,
+          "value": null,
           "source_value": 0.0471160214250259,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.2836758863348531
+          "status": "UNAVAILABLE",
+          "reason": "TTM dividend yield missing in verified company report.",
+          "score": null
         },
         "roe": {
-          "value": 0.19145225951867215,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.892130823389881
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 0.3211198851737638,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.8651208484295665
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": -0.08737864077669899,
@@ -4840,38 +4926,40 @@
           "score": -0.41198036915994807
         },
         "beta_ihsg": {
-          "value": 1.0154274451811702,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.03707839198586944
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.027511960873566273,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.05625734902376674
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": 0.2129900650423587,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": 0.8786258359097238,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": -0.376263242003687,
@@ -4879,9 +4967,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": -0.04666787050481809,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -4907,8 +4995,8 @@
     {
       "ticker": "PGAS",
       "company": "PT Perusahaan Gas Negara Tbk",
-      "sector": "Energy",
-      "sub_sector": "Oil, Gas & Coal",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -4916,30 +5004,30 @@
       },
       "components": {
         "earnings_yield": {
-          "value": 0.142244757805671,
-          "status": "AVAILABLE",
-          "reason": null,
-          "source_value": 7.03013605159467,
-          "score": 0.48521254500566274
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Company-report source is not verified.",
+          "source_value": null,
+          "score": null
         },
         "dividend_yield": {
-          "value": 0.0,
+          "value": null,
           "source_value": 0.0,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -1.0486719826062854
+          "status": "UNAVAILABLE",
+          "reason": "TTM dividend yield missing in verified company report.",
+          "score": null
         },
         "roe": {
-          "value": 0.05969362927480317,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.6646814735540569
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 0.7274579426024166,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.35857633456832955
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": -0.14124293785310738,
@@ -4954,38 +5042,40 @@
           "score": -0.852286259403733
         },
         "beta_ihsg": {
-          "value": 0.6641448649764642,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.8573500098301251
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.019362511159798954,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.9463089814589176
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": -0.2817297188003113,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": -0.1530525694928637,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": -0.6816904496067719,
@@ -4993,9 +5083,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": 0.9018294956445214,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -5021,8 +5111,8 @@
     {
       "ticker": "PGEO",
       "company": "PT Pertamina Geothermal Energy Tbk",
-      "sector": "Infrastructures",
-      "sub_sector": "Utilities",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -5030,30 +5120,30 @@
       },
       "components": {
         "earnings_yield": {
-          "value": 0.06136274524763506,
-          "status": "AVAILABLE",
-          "reason": null,
-          "source_value": 16.2965329527616,
-          "score": -0.9946249794785115
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Company-report source is not verified.",
+          "source_value": null,
+          "score": null
         },
         "dividend_yield": {
-          "value": 0.0,
+          "value": null,
           "source_value": 0.0,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -1.0486719826062854
+          "status": "UNAVAILABLE",
+          "reason": "TTM dividend yield missing in verified company report.",
+          "score": null
         },
         "roe": {
-          "value": 0.0673149641443456,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.574630538582506
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 0.48343072298433243,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.6627827633546758
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": -0.3044982698961938,
@@ -5068,38 +5158,40 @@
           "score": 0.9255611946576617
         },
         "beta_ihsg": {
-          "value": 0.9322354716654406,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.17474328124435848
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.026836315553850607,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.026862281465001244
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": -1.0216484810423985,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": 0.04407611238608489,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": -0.05122137234804264,
@@ -5107,9 +5199,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": 0.10080278135467986,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -5135,8 +5227,8 @@
     {
       "ticker": "PTBA",
       "company": "Bukit Asam Tbk",
-      "sector": "Energy",
-      "sub_sector": "Oil, Gas & Coal",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -5144,30 +5236,30 @@
       },
       "components": {
         "earnings_yield": {
-          "value": 0.13233333451848195,
-          "status": "AVAILABLE",
-          "reason": null,
-          "source_value": 7.55667499529635,
-          "score": 0.30387066641548427
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Company-report source is not verified.",
+          "source_value": null,
+          "score": null
         },
         "dividend_yield": {
-          "value": 0.0370576062248748,
+          "value": null,
           "source_value": 0.0370576062248748,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.0007561953970798914
+          "status": "UNAVAILABLE",
+          "reason": "TTM dividend yield missing in verified company report.",
+          "score": null
         },
         "roe": {
-          "value": 0.12954780828641504,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.16069022829892946
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 0.9417893361665074,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.09138897770307483
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": 0.004149377593360981,
@@ -5182,38 +5274,40 @@
           "score": 1.7369335096888139
         },
         "beta_ihsg": {
-          "value": 0.5919750615714364,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 1.041107262698506
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.016969247869288235,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 1.2407344064042116
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": 0.1515572355092022,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": 0.12603960300100214,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": 0.8430945814292656,
@@ -5221,9 +5315,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": 1.1409208345513588,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -5249,8 +5343,8 @@
     {
       "ticker": "SCMA",
       "company": "Surya Citra Media Tbk",
-      "sector": "Consumer Cyclicals",
-      "sub_sector": "Media & Entertainment",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -5258,30 +5352,30 @@
       },
       "components": {
         "earnings_yield": {
-          "value": 0.08766081737495973,
-          "status": "AVAILABLE",
-          "reason": null,
-          "source_value": 11.4076052442291,
-          "score": -0.5134688765973913
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Company-report source is not verified.",
+          "source_value": null,
+          "score": null
         },
         "dividend_yield": {
-          "value": 0.0526315789473684,
+          "value": null,
           "source_value": 0.0526315789473684,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.43964494078077937
+          "status": "UNAVAILABLE",
+          "reason": "TTM dividend yield missing in verified company report.",
+          "score": null
         },
         "roe": {
-          "value": 0.10146763279257796,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.17109496427811288
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 0.2864231230835503,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.9083741301840872
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": -0.36645962732919257,
@@ -5296,38 +5390,40 @@
           "score": -1.5452303091368809
         },
         "beta_ihsg": {
-          "value": 1.2019095324848692,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.5118952053250346
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.033748708381627385,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.8235181191271432
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": -0.03691196790830595,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": 0.36863958295298715,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": -1.3847100975915994,
@@ -5335,9 +5431,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": -0.667706662226089,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -5363,8 +5459,8 @@
     {
       "ticker": "TLKM",
       "company": "PT Telkom Indonesia (Persero) Tbk",
-      "sector": "Infrastructures",
-      "sub_sector": "Telecommunication",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -5372,30 +5468,30 @@
       },
       "components": {
         "earnings_yield": {
-          "value": 0.10834439226205918,
-          "status": "AVAILABLE",
-          "reason": null,
-          "source_value": 9.22982702769922,
-          "score": -0.13503701900179013
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Company-report source is not verified.",
+          "source_value": null,
+          "score": null
         },
         "dividend_yield": {
-          "value": 0.0925999495003728,
+          "value": null,
           "source_value": 0.0925999495003728,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 1.5698713843713716
+          "status": "UNAVAILABLE",
+          "reason": "TTM dividend yield missing in verified company report.",
+          "score": null
         },
         "roe": {
-          "value": 0.11833635584607106,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.028219763226363104
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 0.91154998438922,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.12908561346108413
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": -0.17460317460317465,
@@ -5410,38 +5506,40 @@
           "score": -0.9727560482959084
         },
         "beta_ihsg": {
-          "value": 0.8984291818839946,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.2608201533822445
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.01927228497821144,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.9574088391137043
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": 0.7174171826847907,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": 0.07865268834372362,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": -0.7947389838748842,
@@ -5449,9 +5547,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": 0.6091144962479744,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -5477,8 +5575,8 @@
     {
       "ticker": "UNTR",
       "company": "United Tractors Tbk",
-      "sector": "Industrials",
-      "sub_sector": "Industrial Goods",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -5486,30 +5584,30 @@
       },
       "components": {
         "earnings_yield": {
-          "value": 0.20514427728328158,
-          "status": "AVAILABLE",
-          "reason": null,
-          "source_value": 4.87461806511478,
-          "score": 1.6360378799737079
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Company-report source is not verified.",
+          "source_value": null,
+          "score": null
         },
         "dividend_yield": {
-          "value": 0.0686480908152735,
+          "value": null,
           "source_value": 0.0686480908152735,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.8925602084468052
+          "status": "UNAVAILABLE",
+          "reason": "TTM dividend yield missing in verified company report.",
+          "score": null
         },
         "roe": {
-          "value": 0.14360056252926529,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.3267324873198968
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 0.722354393029893,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.36493846331782426
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": -0.059171597633136064,
@@ -5524,38 +5622,40 @@
           "score": -0.14062620858912803
         },
         "beta_ihsg": {
-          "value": 0.6467180057257923,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.9017219165132505
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.018748412989720253,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 1.021856922799281
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": 1.2642990442102566,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": 0.3458354753188605,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": -0.195930704738481,
@@ -5563,9 +5663,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": 0.9617894196562657,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -5591,8 +5691,8 @@
     {
       "ticker": "UNVR",
       "company": "Unilever Indonesia Tbk",
-      "sector": "Consumer Non-Cyclicals",
-      "sub_sector": "Nondurable Household Products",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -5600,30 +5700,30 @@
       },
       "components": {
         "earnings_yield": {
-          "value": 0.06517791279985842,
-          "status": "AVAILABLE",
-          "reason": null,
-          "source_value": 15.3426207904309,
-          "score": -0.9248217200464658
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Company-report source is not verified.",
+          "source_value": null,
+          "score": null
         },
         "dividend_yield": {
-          "value": 0.123312883435583,
+          "value": null,
           "source_value": 0.123312883435583,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 2.057421812424376
+          "status": "UNAVAILABLE",
+          "reason": "TTM dividend yield missing in verified company report.",
+          "score": null
         },
         "roe": {
-          "value": 1.7074769871989968,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 2.325847294492033
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 3.47303043182325,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -2.3753838321443306
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": 0.035190615835777095,
@@ -5638,38 +5738,40 @@
           "score": -0.77330039917823
         },
         "beta_ihsg": {
-          "value": 0.7038209294429354,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.7563276394341484
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.027223032075339847,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.02071258279012958
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": 0.5663000461889551,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": -0.024768268826148798,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": -0.3628800126413218,
@@ -5677,9 +5779,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": 0.3678075283220094,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -5705,8 +5807,8 @@
     {
       "ticker": "WIFI",
       "company": "PT Solusi Sinergi Digital Tbk",
-      "sector": "Technology",
-      "sub_sector": "Software & IT Services",
+      "sector": null,
+      "sub_sector": null,
       "report_as_of": "2026-09-25",
       "financial_ratio_years": {
         "roe": "2025",
@@ -5716,28 +5818,28 @@
         "earnings_yield": {
           "value": null,
           "status": "UNAVAILABLE",
-          "reason": "Forward P/E missing or invalid in company report.",
+          "reason": "Company-report source is not verified.",
           "source_value": null,
           "score": null
         },
         "dividend_yield": {
-          "value": 0.00115942028985507,
+          "value": null,
           "source_value": 0.00115942028985507,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -1.0158858706708023
+          "status": "UNAVAILABLE",
+          "reason": "TTM dividend yield missing in verified company report.",
+          "score": null
         },
         "roe": {
-          "value": 0.047963592018477774,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.8032793491577892
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid ROE in historical financial ratios.",
+          "score": null
         },
         "debt_to_equity": {
-          "value": 0.7809063674319288,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": 0.29194706891883293
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "No valid debt-to-equity ratio in historical financial ratios.",
+          "score": null
         },
         "momentum_12_1": {
           "value": -0.23643410852713176,
@@ -5752,38 +5854,40 @@
           "score": -1.2649417619953551
         },
         "beta_ihsg": {
-          "value": 1.3817219511636278,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -0.9697298470877689
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         },
         "idiosyncratic_volatility": {
-          "value": 0.04645727011430984,
-          "status": "AVAILABLE",
-          "reason": null,
-          "score": -1.7033423185781555
+          "value": null,
+          "status": "UNAVAILABLE",
+          "reason": "Only 0 aligned daily returns; 126 required.",
+          "score": null
         }
       },
       "data_quality": {
-        "company_report": "VERIFIED",
+        "company_report": "UNVERIFIED",
         "daily": "VERIFIED",
         "daily_issues": [],
         "daily_observation_count": 712,
         "daily_coverage_start": "2023-09-25",
         "daily_coverage_end": "2026-09-24",
-        "aligned_ihsg_returns": 700,
-        "feature_notes": []
+        "aligned_ihsg_returns": 0,
+        "feature_notes": [
+          "IHSG daily snapshot is not fully verified."
+        ]
       },
       "scores": {
         "value": {
-          "score": -1.0158858706708023,
-          "status": "PARTIAL",
-          "available_components": 1
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "quality": {
-          "score": -0.25566614011947814,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         },
         "momentum": {
           "score": -1.0387183365125212,
@@ -5791,9 +5895,9 @@
           "available_components": 2
         },
         "low_volatility": {
-          "score": -1.3365360828329622,
-          "status": "AVAILABLE",
-          "available_components": 2
+          "score": null,
+          "status": "UNAVAILABLE",
+          "available_components": 0
         }
       },
       "source_files": {
@@ -5818,70 +5922,8 @@
     }
   ],
   "leaderboards": {
-    "value": [
-      {
-        "ticker": "BMRI",
-        "score": 1.4576908727007822,
-        "components": 2,
-        "as_of": "2026-09-25"
-      },
-      {
-        "ticker": "UNTR",
-        "score": 1.2642990442102566,
-        "components": 2,
-        "as_of": "2026-09-25"
-      },
-      {
-        "ticker": "BBRI",
-        "score": 1.248429485769942,
-        "components": 2,
-        "as_of": "2026-09-25"
-      },
-      {
-        "ticker": "ASII",
-        "score": 1.0904928359482082,
-        "components": 2,
-        "as_of": "2026-09-25"
-      },
-      {
-        "ticker": "ADRO",
-        "score": 1.0230981130634569,
-        "components": 2,
-        "as_of": "2026-09-25"
-      }
-    ],
-    "quality": [
-      {
-        "ticker": "DEWA",
-        "score": 1.2047872856294313,
-        "components": 2,
-        "as_of": "2026-09-25"
-      },
-      {
-        "ticker": "BBCA",
-        "score": 1.1106211663057362,
-        "components": 2,
-        "as_of": "2026-09-25"
-      },
-      {
-        "ticker": "NCKL",
-        "score": 0.8786258359097238,
-        "components": 2,
-        "as_of": "2026-09-25"
-      },
-      {
-        "ticker": "ANTM",
-        "score": 0.8400390932413095,
-        "components": 2,
-        "as_of": "2026-09-25"
-      },
-      {
-        "ticker": "AADI",
-        "score": 0.8270078378348863,
-        "components": 2,
-        "as_of": "2026-09-25"
-      }
-    ],
+    "value": [],
+    "quality": [],
     "momentum": [
       {
         "ticker": "HRTA",
@@ -5914,52 +5956,21 @@
         "as_of": "2026-09-25"
       }
     ],
-    "low_volatility": [
-      {
-        "ticker": "INDF",
-        "score": 1.330033576894122,
-        "components": 2,
-        "as_of": "2026-09-25"
-      },
-      {
-        "ticker": "ITMG",
-        "score": 1.330033576894122,
-        "components": 2,
-        "as_of": "2026-09-25"
-      },
-      {
-        "ticker": "ICBP",
-        "score": 1.2030900448514918,
-        "components": 2,
-        "as_of": "2026-09-25"
-      },
-      {
-        "ticker": "PTBA",
-        "score": 1.1409208345513588,
-        "components": 2,
-        "as_of": "2026-09-25"
-      },
-      {
-        "ticker": "UNTR",
-        "score": 0.9617894196562657,
-        "components": 2,
-        "as_of": "2026-09-25"
-      }
-    ]
+    "low_volatility": []
   },
   "coverage": {
     "issuer_count": 45,
-    "index_daily_status": "VERIFIED",
+    "index_daily_status": "PARTIAL",
     "factors": {
       "value": {
-        "AVAILABLE": 35,
-        "PARTIAL": 7,
-        "UNAVAILABLE": 3
+        "AVAILABLE": 0,
+        "PARTIAL": 0,
+        "UNAVAILABLE": 45
       },
       "quality": {
-        "AVAILABLE": 45,
+        "AVAILABLE": 0,
         "PARTIAL": 0,
-        "UNAVAILABLE": 0
+        "UNAVAILABLE": 45
       },
       "momentum": {
         "AVAILABLE": 45,
@@ -5967,14 +5978,14 @@
         "UNAVAILABLE": 0
       },
       "low_volatility": {
-        "AVAILABLE": 45,
+        "AVAILABLE": 0,
         "PARTIAL": 0,
-        "UNAVAILABLE": 0
+        "UNAVAILABLE": 45
       }
     },
     "quality_groups": {
-      "financial": 5,
-      "non_financial": 40
+      "financial": 0,
+      "non_financial": 45
     }
   },
   "chart": {
@@ -5989,5 +6000,5 @@
     ],
     "plottable_status": "AVAILABLE"
   },
-  "artifact_fingerprint": "007f24fe3c254a7080a2d26b540a163f6b685ae2b02d761ecd4ed636910940af"
+  "artifact_fingerprint": "74f49525d5158903242a7e2c2f7cfda0e522ada36534e3c328f32c59042f5093"
 }

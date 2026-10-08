@@ -1,11 +1,11 @@
-    #idxel-journey .research-source{border:1px solid var(--line);border-radius:8px;background:#0c1826;padding:11px 12px}
+    #idxel-journey .research-source{border:1px solid var(--line);border-radius:8px;background:var(--tk-bg-100);padding:11px 12px}
     #idxel-journey .research-source h3{font-size:12px;margin:0 0 6px}
-    #idxel-journey .research-source p{margin:0 0 6px;font-size:11px;line-height:1.55;color:#c6d3e1}
+    #idxel-journey .research-source p{margin:0 0 6px;font-size:11px;line-height:1.55;color:var(--tk-ink)}
     #idxel-journey .research-source small{font-size:10px;color:var(--muted);overflow-wrap:anywhere}
     #idxel-journey .research-prompt{white-space:normal;text-align:left}
     #idxel-journey .source-report{max-width:1050px;margin:0 auto}
     #idxel-journey .source-report h2{font-size:17px;margin:20px 0 8px}
-    #idxel-journey .source-report code{color:#a8dff0;overflow-wrap:anywhere}
+    #idxel-journey .source-report code{color:var(--tk-ink);overflow-wrap:anywhere}
     #idxel-journey .source-report .source-table-wrap{max-height:62vh;overflow:auto}
     #idxel-journey .source-report .source-manifest{margin-top:10px;border:1px solid var(--line);border-radius:8px;padding:10px}
     #idxel-journey .source-report .source-manifest summary{cursor:pointer;font-weight:650}

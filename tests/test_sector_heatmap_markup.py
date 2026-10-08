@@ -24,7 +24,7 @@ class SectorHeatmapMarkupTest(unittest.TestCase):
         market = self.source[start:end]
         self.assertIn("sectorHeatmapPanel", self.source)
         self.assertIn("market:()=>{loadSectorHeatmap();return market()+sectorHeatmapPanel()}", self.source)
-        self.assertIn("IHSG terakhir", market)
+        self.assertIn("Last IHSG", market)
         self.assertIn("Breadth & regime", market)
         self.assertIn("Provenance IHSG", market)
         self.assertIn("Return harian equal-weighted", self.source)
