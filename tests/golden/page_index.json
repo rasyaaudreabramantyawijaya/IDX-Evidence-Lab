@@ -14,9 +14,8 @@
   "referrer-policy": "no-referrer",
   "permissions-policy": "camera=(), microphone=(), geolocation=()",
   "cross-origin-opener-policy": "same-origin",
-  "content-security-policy": "frame-ancestors 'none'; object-src 'none'; base-uri 'self'",
-  "content-security-policy-report-only": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'"
+  "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self'; style-src-attr 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; object-src 'none'; base-uri 'self'"
  },
- "body_sha256": "d1e646bdf3dbba417fb10ac4bd3fdc6bdd133784d492202f716eef8321e231e4",
- "body_bytes": 464222
+ "body_sha256": "6bdc55337adfd8bdf464a8ba0573875944a94517783c93fe9050c3c14c02498e",
+ "body_bytes": 4597
 }

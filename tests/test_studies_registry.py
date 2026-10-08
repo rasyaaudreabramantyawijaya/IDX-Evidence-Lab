@@ -5,6 +5,7 @@ import pytest
 
 from idx_evidence_lab.studies_registry import catalog, parse_study_request
 from idx_evidence_lab.studies_types import request_fingerprint
+from legacy_source import LEGACY_PAGE
 
 
 def parse(payload):
@@ -13,7 +14,7 @@ def parse(payload):
 
 
 def test_catalog_matches_all_16_ui_ids():
-    html = (Path(__file__).resolve().parents[1] / 'docs/prototypes/idx-evidence-lab-user-journey.html').read_text()
+    html = (LEGACY_PAGE).read_text()
     section = html.split('const studyCatalog=[')[1].split('];')[0]
     ids = re.findall(r"id:'([^']+)'", section)
     assert len(ids) == 16

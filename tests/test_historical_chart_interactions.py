@@ -1,9 +1,10 @@
 """Interaction contracts for date-indexed charts: observed values only."""
 
 from pathlib import Path
+from legacy_source import LEGACY_PAGE
 
 
-HTML = Path(__file__).resolve().parents[1] / "docs/prototypes/idx-evidence-lab-user-journey.html"
+HTML = LEGACY_PAGE
 
 
 def test_shared_historical_interaction_helper_uses_observed_metadata_and_no_interpolation():

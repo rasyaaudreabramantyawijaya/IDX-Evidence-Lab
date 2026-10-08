@@ -10,12 +10,14 @@ Implemented in `src/idx_evidence_lab/security.py`, `config.py` and `web_app.py` 
 | `Referrer-Policy` | `no-referrer` | No URL leakage to other origins |
 | `Permissions-Policy` | camera, microphone, geolocation off | Denies unused browser features |
 | `Cross-Origin-Opener-Policy` | `same-origin` | Isolates the browsing context |
-| `Content-Security-Policy` (enforced) | `frame-ancestors 'none'; object-src 'none'; base-uri 'self'` | Only rules the current page already satisfies |
-| `Content-Security-Policy-Report-Only` | `default-src 'self'; script-src 'self'; style-src 'self'; ...` | The strict target policy. Violations show in the browser console but nothing is blocked |
+| `Content-Security-Policy` | `default-src 'self'; script-src 'self'; style-src 'self'; style-src-attr 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; object-src 'none'; base-uri 'self'` | Enforced. Only same-origin script, style, image and fetch. No `unsafe-eval`, no inline `<script>` or `<style>` |
 
-**Why CSP is report-only:** the page still has an inline `<script>` and `<style>` in
-`docs/prototypes/idx-evidence-lab-user-journey.html`. An enforced strict policy would break it. After the frontend split
-(Phase 4) there is no inline code; move the report-only value into `Content-Security-Policy` then.
+**Inline style attributes:** `style-src-attr 'unsafe-inline'` is deliberate. Charts set per-data-point widths, colors and
+positions through `style="..."`, which cannot become static classes. This only allows style *attributes*; it does not
+allow inline scripts or `<style>` elements, so it does not weaken script injection protection.
+
+**Where the page code lives:** `docs/prototypes/app.js` and `app.css` are generated from the chunks in `frontend/legacy/`
+(`python scripts/build_legacy_ui.py`; CI fails if the committed files are stale). The HTML has no inline script or style.
 
 ## Rate limiting
 Per client IP, in memory, fixed 60-second window, per server process.

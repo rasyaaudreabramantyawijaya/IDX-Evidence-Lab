@@ -12,6 +12,7 @@ from urllib.request import urlopen
 import pytest
 
 from idx_evidence_lab import web_app
+from legacy_source import LEGACY_PAGE
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -52,7 +53,7 @@ def test_portfolio_requests_use_the_page_origin_on_port_5500():
     node = shutil.which("node")
     if not node:
         pytest.skip("Node.js is needed for the embedded browser-JavaScript contract")
-    source = (ROOT / "docs/prototypes/idx-evidence-lab-user-journey.html").read_text(encoding="utf-8")
+    source = LEGACY_PAGE.read_text(encoding="utf-8")
     function = source.split("function portfolioApiUrl(path)", 1)[1].split("\n", 1)[0]
     script = "const location={port:'5500'};function portfolioApiUrl(path)" + function + "\nprocess.stdout.write(portfolioApiUrl('/api/portfolio-data'))"
     result = subprocess.run([node, "-e", script], check=True, capture_output=True, text=True)
@@ -63,7 +64,7 @@ def test_all_portfolio_api_routes_stay_relative_for_the_live_server_proxy():
     node = shutil.which("node")
     if not node:
         pytest.skip("Node.js is needed for the embedded browser-JavaScript contract")
-    source = (ROOT / "docs/prototypes/idx-evidence-lab-user-journey.html").read_text(encoding="utf-8")
+    source = LEGACY_PAGE.read_text(encoding="utf-8")
     function = source.split("function portfolioApiUrl(path)", 1)[1].split("\n", 1)[0]
     paths = [
         "/api/health",

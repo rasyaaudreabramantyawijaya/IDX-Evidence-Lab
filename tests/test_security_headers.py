@@ -36,8 +36,13 @@ def fetch(base, path, *, method="GET", body=None, headers=None):
 def assert_hardened(headers):
     for name, value in SECURITY_HEADERS:
         assert headers.get(name) == value, name
-    assert "script-src" not in headers["Content-Security-Policy"]
-    assert "script-src 'self'" in headers["Content-Security-Policy-Report-Only"]
+    csp = headers["Content-Security-Policy"]
+    assert "script-src 'self';" in csp
+    assert "style-src 'self';" in csp
+    assert "'unsafe-eval'" not in csp
+    # Only inline style="" attributes are allowed; inline scripts and <style> elements are not.
+    assert csp.count("'unsafe-inline'") == 1 and "style-src-attr 'unsafe-inline'" in csp
+    assert "Content-Security-Policy-Report-Only" not in headers
 
 
 def test_headers_on_json_static_and_error_responses():

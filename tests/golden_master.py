@@ -189,6 +189,8 @@ def scenario(base: str) -> dict[str, dict]:
     for name, path in (("page_root", "/"), ("page_index", "/index.html"),
                        ("asset_user_journey_html", "/docs/prototypes/idx-evidence-lab-user-journey.html"),
                        ("asset_studies_ui_js", "/docs/prototypes/studies-ui.js"),
+                       ("asset_app_js", "/docs/prototypes/app.js"),
+                       ("asset_app_css", "/docs/prototypes/app.css"),
                        ("asset_market_overview_json", "/docs/prototypes/market-overview-data.json"),
                        ("asset_news_universe_json", "/docs/prototypes/news-universe.json"),
                        ("asset_evt_surface_json", "/docs/prototypes/ihsg-evt-tail-surface-data.json"),
@@ -441,6 +443,15 @@ def _run_server(cwd: Path):
 
 
 def main(argv: list[str]) -> int:
+    if argv and argv[0] == "serve":
+        # Isolated server for browser tests: prints the base URL, runs until interrupted.
+        with local_server() as base:
+            print(base, flush=True)
+            try:
+                while True:
+                    time.sleep(3600)
+            except KeyboardInterrupt:
+                return 0
     if not argv or argv[0] not in {"capture", "check"}:
         print(__doc__)
         return 2

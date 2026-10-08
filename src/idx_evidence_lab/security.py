@@ -9,11 +9,11 @@ SECURITY_HEADERS = (
     ("Referrer-Policy", "no-referrer"),
     ("Permissions-Policy", "camera=(), microphone=(), geolocation=()"),
     ("Cross-Origin-Opener-Policy", "same-origin"),
-    # Enforced: only directives the current page cannot violate.
-    ("Content-Security-Policy", "frame-ancestors 'none'; object-src 'none'; base-uri 'self'"),
-    # Report-only: the strict policy the page does not satisfy yet (inline script/style). Observed, never blocked.
-    ("Content-Security-Policy-Report-Only",
-     "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'"),
+    # Strict policy: only same-origin scripts, styles and connections. Inline style="" attributes stay allowed
+    # (style-src-attr) because charts set widths and colors per data point; inline <script>/<style> are not.
+    ("Content-Security-Policy",
+     "default-src 'self'; script-src 'self'; style-src 'self'; style-src-attr 'unsafe-inline'; "
+     "img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; object-src 'none'; base-uri 'self'"),
 )
 
 
