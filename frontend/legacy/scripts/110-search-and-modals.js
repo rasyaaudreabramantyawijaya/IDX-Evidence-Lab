@@ -152,10 +152,15 @@
         if(a.startsWith('filter-')||a==='clear-filters'||a==='flow-period'||a==='horizon'||a==='select-index'){toast('Kontrol filter dibuka. Pilihan hanya mengubah tampilan lokal prototype.');return}
         if(a==='run-study'){toast('Perlu menjalankan pipeline offline untuk menghasilkan metrik.');return}
         if(a==='account'){openModal('Menu akun','Lanjutkan ke pengaturan akun. Tombol Keluar tersedia di halaman Settings.','account');return}
+        if(a==='notif-toggle'){root.querySelector('#idxel-notif-dropdown')?.classList.toggle('hidden');return}
         if(a==='preferences'||a==='audit-data'){toast('Panel pengaturan/audit lokal dibuka.');return}
       });
       root.addEventListener('change',e=>{if(e.target.matches('[data-screener-filter]')){screenerFilters[e.target.dataset.screenerFilter]=e.target.value;render();return}if(e.target.matches('#research-ticker')){researchTicker=e.target.value;researchResult=null}if(e.target.matches('#study-sector-select')){studySector=e.target.value;studyRunner.invalidate();render()}if(e.target.matches('#study-window-select')){studyWindow=e.target.value;studyRunner.invalidate();render()}if(e.target.matches('[data-action="custom-field"]')){studyCustomField=e.target.value;studyRunner.invalidate();render()}if(e.target.matches('[data-action="custom-transform"]')){studyCustomTransform=e.target.value;studyRunner.invalidate();render()}});
-      root.addEventListener('click',e=>{if(e.target.closest('[data-action="add-study-ticker"],[data-action="remove-study-ticker"]')){studySector='';studyRunner.invalidate()}});
+      root.addEventListener('click',e=>{
+        if(e.target.closest('[data-action="add-study-ticker"],[data-action="remove-study-ticker"]')){studySector='';studyRunner.invalidate()}
+        if(e.target.closest('[data-action="expand-section"]')){e.target.closest('.fade-section')?.classList.add('is-expanded')}
+        if(!e.target.closest('[data-action="notif-toggle"], #idxel-notif-dropdown')){root.querySelector('#idxel-notif-dropdown')?.classList.add('hidden')}
+      });
       root.addEventListener('keydown',e=>{if(e.key==='Enter'&&e.target.matches('#research-question')&&!e.shiftKey){e.preventDefault();sendResearchMessage(e.target.value)}if(e.key==='Enter'&&e.target.matches('#study-query-input'))buildStudyFromQuery(e.target.value);if(e.key==='Enter'&&e.target.matches('#study-ticker-input'))addStudyTicker(e.target.value);if(['ArrowLeft','ArrowRight','Home','End'].includes(e.key)&&e.target.matches('.tabbar [role="tab"]')){const tabs=[...main.querySelectorAll('.tabbar [role="tab"]')],index=tabs.indexOf(e.target);if(index<0)return;e.preventDefault();const next=e.key==='Home'?0:e.key==='End'?tabs.length-1:(index+(e.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length;issuerTab=tabs[next].dataset.tab;page='issuer';render();main.querySelectorAll('.tabbar [role="tab"]')[next]?.focus()}});
       let dragState=null,resizeState=null,canvasPan=null,sidebarResize=null;
       root.querySelector('.side-splitter').addEventListener('pointerdown',e=>{sidebarResize={pointerId:e.pointerId};e.currentTarget.setPointerCapture(e.pointerId);e.preventDefault()});

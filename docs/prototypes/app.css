@@ -27,7 +27,7 @@
     @media(max-width:900px){#idxel-journey .issuer-analytics-grid{grid-template-columns:1fr}.issuer-price-canvas{height:260px}}
     @media(max-width:620px){#idxel-journey .issuer-validation-grid{grid-template-columns:1fr}.history-control{min-width:66px;padding:7px 8px}.issuer-chart-toolbar .sub{width:100%;margin-left:0}.issuer-price-canvas{height:220px}}
     #idxel-journey .dashboard-layout{display:grid;gap:12px;min-width:0}
-    #idxel-journey .dashboard-alerts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;align-items:stretch}
+    #idxel-journey .dashboard-alerts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--tk-space-4);align-items:stretch}
     #idxel-journey .dashboard-indices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;align-items:stretch}
     #idxel-journey .dashboard-indices>.section,#idxel-journey .dashboard-bottom>.section{margin:0;min-width:0}
     #idxel-journey .dashboard-stock-list{border:1px solid var(--line);border-radius:9px;background:var(--panel);overflow:hidden}
@@ -538,21 +538,21 @@
     #idxel-journey .main.is-dashboard .action:hover,#idxel-journey .main.is-dashboard .filter:hover{background:var(--tk-bg-300);border-color:var(--tk-line-strong)}
     #idxel-journey .main.is-dashboard .action.primary{background:var(--tk-accent);border-color:var(--tk-accent);color:#fff}
     #idxel-journey .main.is-dashboard .action.primary:hover{background:var(--tk-accent-hover)}
-    #idxel-journey .main.is-dashboard .section-head .action{font-size:13px;line-height:18px;padding:var(--tk-space-1) var(--tk-space-3)}
-    /* Summary tiles are narrow: title on its own line, action as an inline link below it, the same in all four. */
-    #idxel-journey .main.is-dashboard .dashboard-alerts .section-head{flex-direction:column;align-items:flex-start;gap:2px}
-    #idxel-journey .main.is-dashboard .dashboard-alerts .section-head .action{background:none;border:0;padding:0;font:500 13px/18px var(--tk-font-sans);color:var(--tk-link)}
-    #idxel-journey .main.is-dashboard .dashboard-alerts .section-head .action:hover{background:none;text-decoration:underline}
+    #idxel-journey .main.is-dashboard .section-head{padding:24px 24px 12px 24px;border-bottom:none;gap:4px;flex-direction:column;align-items:flex-start}
+    #idxel-journey .main.is-dashboard .section-head .action{background:none;border:0;padding:0;font:600 13px/16px var(--tk-font-sans);color:var(--tk-link);text-decoration:underline;text-underline-offset:2px;cursor:pointer}
+    #idxel-journey .main.is-dashboard .section-head .action:hover{color:var(--tk-ink-muted);background:none}
 
     /* Cards */
     #idxel-journey .main.is-dashboard .dashboard-layout{gap:var(--tk-space-4)}
     #idxel-journey .main.is-dashboard .dashboard-alerts,#idxel-journey .main.is-dashboard .dashboard-indices,#idxel-journey .main.is-dashboard .dashboard-bottom{gap:var(--tk-space-4)}
-    #idxel-journey .main.is-dashboard .section,#idxel-journey .main.is-dashboard .dashboard-stock-list{background:var(--tk-bg-100);border:1px solid var(--tk-line);border-radius:var(--tk-radius-lg);box-shadow:none}
-    #idxel-journey .main.is-dashboard .section-head{padding:var(--tk-space-4) var(--tk-space-5);border-bottom:1px solid var(--tk-line);gap:var(--tk-space-2)}
-    #idxel-journey .main.is-dashboard .section-head h2,#idxel-journey .main.is-dashboard .dashboard-alerts .section-head h2{font:600 16px/22px var(--tk-font-sans);color:var(--tk-ink)}
+    #idxel-journey .main.is-dashboard .section,#idxel-journey .main.is-dashboard .dashboard-stock-list{background:var(--tk-bg-100);border:1px solid var(--tk-line);border-radius:12px;box-shadow:none;display:flex;flex-direction:column;height:100%}
+    #idxel-journey .main.is-dashboard .section-head h2{font:700 16px/20px var(--tk-font-sans);color:var(--tk-ink);margin:0}
+    #idxel-journey .main.is-dashboard .dashboard-alerts .section-head h2{font:700 14px/18px var(--tk-font-sans);color:var(--tk-ink);margin:0}
     #idxel-journey .main.is-dashboard .section-head .sub,#idxel-journey .main.is-dashboard .signal-baseline-panel .section-head .sub{font-size:12px;line-height:16px;color:var(--tk-ink-muted)}
-    #idxel-journey .main.is-dashboard .section-body,#idxel-journey .main.is-dashboard .dashboard-market-card .section-body{padding:var(--tk-space-5)}
-    #idxel-journey .main.is-dashboard .dashboard-meta,#idxel-journey .main.is-dashboard .dashboard-flow-summary .dashboard-meta,#idxel-journey .main.is-dashboard .dashboard-regime-summary .dashboard-meta{font-size:12px;line-height:16px;color:var(--tk-ink-muted)}
+    #idxel-journey .main.is-dashboard .section-body,#idxel-journey .main.is-dashboard .dashboard-market-card .section-body{padding:0 24px 24px 24px;display:flex;flex-direction:column;flex:1}
+    #idxel-journey .main.is-dashboard .dashboard-meta{font-size:12px;line-height:16px;color:var(--tk-ink-muted);margin-bottom:12px}
+    #idxel-journey .main.is-dashboard .dashboard-alerts .dashboard-meta{font-size:11px;line-height:15px;margin-bottom:8px}
+    #idxel-journey .main.is-dashboard .dashboard-footnote{font-size:11px;line-height:16px;color:var(--tk-ink-faint);margin-top:auto;padding-top:16px;margin-bottom:0}
     #idxel-journey .main.is-dashboard .note,#idxel-journey .main.is-dashboard .signal-baseline-panel .note{font-size:13px;line-height:18px;color:var(--tk-ink-muted)}
     #idxel-journey .main.is-dashboard .dashboard-placeholder,#idxel-journey .main.is-dashboard .market-data-placeholder{background:var(--tk-bg-200);border:1px dashed var(--tk-line-strong);border-radius:var(--tk-radius-lg);color:var(--tk-ink-muted);font-size:13px;line-height:18px}
     #idxel-journey .main.is-dashboard .dashboard-placeholder strong,#idxel-journey .main.is-dashboard .market-data-placeholder strong{color:var(--tk-ink);font:600 15px/22px var(--tk-font-sans)}
@@ -564,23 +564,30 @@
     #idxel-journey .main.is-dashboard .positive,#idxel-journey .main.is-dashboard .good{color:var(--tk-up)}
     #idxel-journey .main.is-dashboard .negative,#idxel-journey .main.is-dashboard .bad{color:var(--tk-down)}
 
+    /* Dashboard Alerts Custom Links */
+    #idxel-journey .main.is-dashboard .dashboard-alerts .card-action-link{background:none;border:0;padding:0;font:600 13px/16px var(--tk-font-sans);color:var(--tk-link);text-decoration:underline;text-underline-offset:2px;cursor:pointer;margin-bottom:12px;display:inline-block;text-align:left}
+    #idxel-journey .main.is-dashboard .dashboard-alerts .card-action-link:hover{color:var(--tk-ink-muted)}
+
     /* Summary tiles (Unusual Flow, Regime, Breadth, Capitalization) */
-    #idxel-journey .main.is-dashboard .dashboard-summary-kpi{font:600 26px/32px var(--tk-font-sans);margin-bottom:var(--tk-space-1)}
-    #idxel-journey .main.is-dashboard .dashboard-summary-counts{gap:var(--tk-space-3);margin-bottom:var(--tk-space-3)}
-    #idxel-journey .main.is-dashboard .dashboard-summary-counts small{font-size:13px;line-height:18px;color:var(--tk-ink-muted)}
-    #idxel-journey .main.is-dashboard .dashboard-summary-counts b{font:500 26px/32px var(--tk-font-sans)}
-    #idxel-journey .main.is-dashboard .dashboard-summary-pair{font-size:13px;line-height:18px;margin:var(--tk-space-3) 0 var(--tk-space-2);color:var(--tk-ink-muted)}
-    #idxel-journey .main.is-dashboard .dashboard-summary-pair b{font-weight:500;color:var(--tk-ink)}
-    #idxel-journey .main.is-dashboard .dashboard-mini-z{grid-template-columns:48px minmax(0,1fr) 52px;gap:var(--tk-space-2);font-size:13px;line-height:18px;margin:var(--tk-space-2) 0}
-    #idxel-journey .main.is-dashboard .dashboard-mini-z>b:first-child{font-weight:600;color:var(--tk-ink)}
-    #idxel-journey .main.is-dashboard .dashboard-mini-z>b:last-child{font-weight:500;text-align:right}
+    #idxel-journey .main.is-dashboard .dashboard-summary-kpi{font:700 26px/32px var(--tk-font-sans);margin:4px 0 16px 0}
+    #idxel-journey .main.is-dashboard .dashboard-alerts .dashboard-summary-kpi{font:700 18px/24px var(--tk-font-sans);margin:4px 0 10px 0}
+    #idxel-journey .main.is-dashboard .dashboard-summary-counts{display:grid;grid-template-columns:1fr 1fr 1fr;gap:var(--tk-space-2);margin-bottom:12px;text-align:left}
+    #idxel-journey .main.is-dashboard .dashboard-summary-counts span{display:flex;flex-direction:column}
+    #idxel-journey .main.is-dashboard .dashboard-summary-counts small{font-size:11px;line-height:16px;color:var(--tk-ink-muted);margin-bottom:4px}
+    #idxel-journey .main.is-dashboard .dashboard-summary-counts b{font:700 24px/28px var(--tk-font-sans)}
+    #idxel-journey .main.is-dashboard .dashboard-summary-pair{display:flex;justify-content:space-between;align-items:center;font-size:13px;line-height:18px;margin:12px 0 8px;color:var(--tk-ink-muted)}
+    #idxel-journey .main.is-dashboard .dashboard-summary-pair b{font-weight:600;color:var(--tk-ink)}
+    #idxel-journey .main.is-dashboard .dashboard-mini-z{display:grid;grid-template-columns:56px 1fr 56px;gap:12px;font-size:13px;line-height:18px;margin-bottom:8px;align-items:center}
+    #idxel-journey .main.is-dashboard .dashboard-mini-z>b:first-child{font-weight:600;color:var(--tk-ink);text-align:left}
+    #idxel-journey .main.is-dashboard .dashboard-mini-z>b:last-child{font-weight:600;text-align:right}
     #idxel-journey .main.is-dashboard .dashboard-mini-z-track{height:6px;background:var(--tk-bg-300);border-radius:var(--tk-radius-sm)}
     #idxel-journey .main.is-dashboard .dashboard-mini-z-track:after{background:var(--tk-line-strong);height:10px}
     #idxel-journey .main.is-dashboard .dashboard-mini-z-track i{height:6px;border-radius:var(--tk-radius-sm)}
-    #idxel-journey .main.is-dashboard .screener-breadth-bar{height:8px;gap:2px;border-radius:var(--tk-radius-sm);background:var(--tk-bg-300)}
-    #idxel-journey .main.is-dashboard .market-regime-vol-track{height:6px;border-radius:var(--tk-radius-sm);background:linear-gradient(90deg,var(--tk-bg-300),var(--tk-line-strong))}
-    #idxel-journey .main.is-dashboard .market-regime-vol-marker{top:-5px;height:16px;background:var(--tk-ink);border-color:var(--tk-bg-100)}
-    #idxel-journey .main.is-dashboard .market-regime-vol-labels{font-size:12px;line-height:16px;color:var(--tk-ink-muted);margin-top:var(--tk-space-1)}
+    #idxel-journey .main.is-dashboard .screener-breadth-bar{display:flex;height:6px;gap:2px;border-radius:3px;background:var(--tk-bg-300);overflow:hidden}
+    #idxel-journey .main.is-dashboard .screener-breadth-bar span{height:100%}
+    #idxel-journey .main.is-dashboard .market-regime-vol-track{height:4px;border-radius:2px;background:linear-gradient(90deg,var(--tk-bg-300),var(--tk-line-strong));margin:12px 0;position:relative}
+    #idxel-journey .main.is-dashboard .market-regime-vol-marker{position:absolute;top:-6px;width:2px;height:16px;background:var(--tk-ink);border:none}
+    #idxel-journey .main.is-dashboard .market-regime-vol-labels{display:flex;justify-content:space-between;font-size:11px;line-height:16px;color:var(--tk-ink-muted)}
 
     /* Index cards (IHSG = price series, LQ45 = series-2) */
     #idxel-journey .main.is-dashboard .ihsg-headline{gap:var(--tk-space-3)}
@@ -613,9 +620,17 @@
     #idxel-journey .main.is-dashboard .signal-baseline-chart .signal-baseline-market_wealth{stroke:var(--tk-market);stroke-width:2}
     #idxel-journey .main.is-dashboard .flow-legend{font-size:13px;line-height:18px;color:var(--tk-ink-muted);gap:var(--tk-space-4)}
     #idxel-journey .main.is-dashboard .flow-legend i{border-radius:var(--tk-radius-sm)}
-    #idxel-journey .main.is-dashboard .chart-interaction-tooltip{background:var(--tk-bg-100);border:1px solid var(--tk-line);border-radius:var(--tk-radius-lg);box-shadow:var(--tk-shadow-pop);color:var(--tk-ink);font-size:13px;line-height:18px;padding:var(--tk-space-2) var(--tk-space-3)}
+    #idxel-journey .main.is-dashboard .chart-interaction-tooltip{background:var(--tk-bg-100);border:1px solid var(--tk-line);border-radius:6px;box-shadow:var(--tk-shadow-pop);color:var(--tk-ink);font-size:10px;line-height:14px;padding:6px 8px;pointer-events:none}
     #idxel-journey .main.is-dashboard .signal-baseline-details{font-size:13px}
-    #idxel-journey .main.is-dashboard .signal-baseline-details summary{color:var(--tk-ink);font-weight:600;padding:var(--tk-space-2) 0}
+    #idxel-journey .fade-section{position:relative}
+    #idxel-journey .fade-section:not(.is-expanded) .fade-section-content{max-height:280px;overflow:hidden}
+    #idxel-journey .dashboard-stock-list:not(.is-expanded) .fade-section-content{max-height:480px}
+    #idxel-journey .fade-section:not(.is-expanded) .fade-section-overlay{position:absolute;bottom:0;left:0;right:0;height:140px;background:linear-gradient(to bottom, transparent, var(--tk-bg-100) 75%);display:flex;align-items:flex-end;justify-content:center;padding-bottom:24px;z-index:2;border-bottom-left-radius:12px;border-bottom-right-radius:12px}
+    #idxel-journey .fade-section.is-expanded .fade-section-overlay{display:none}
+    #idxel-journey .fade-section-header{font:600 16px/22px var(--tk-font-sans);color:var(--tk-ink);padding:var(--tk-space-4) 0}
+    #idxel-journey .dashboard-stock-list .fade-section-header{padding:var(--tk-space-4) var(--tk-space-5);border-bottom:1px solid var(--tk-line);margin-bottom:var(--tk-space-4)}
+    #idxel-journey .fade-section-btn{background:transparent;border:none;color:var(--tk-ink);font:600 14px/20px var(--tk-font-sans);cursor:pointer;padding:8px 16px;text-decoration:underline;text-underline-offset:4px}
+    #idxel-journey .fade-section-btn:hover{color:var(--tk-ink-muted)}
 
     /* DataTable (signal details, 45-issuer list) */
     #idxel-journey .main.is-dashboard table{font-size:15px;line-height:22px}

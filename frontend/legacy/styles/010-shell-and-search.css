@@ -27,4 +27,4 @@
     @media(max-width:900px){#idxel-journey .issuer-analytics-grid{grid-template-columns:1fr}.issuer-price-canvas{height:260px}}
     @media(max-width:620px){#idxel-journey .issuer-validation-grid{grid-template-columns:1fr}.history-control{min-width:66px;padding:7px 8px}.issuer-chart-toolbar .sub{width:100%;margin-left:0}.issuer-price-canvas{height:220px}}
     #idxel-journey .dashboard-layout{display:grid;gap:12px;min-width:0}
-    #idxel-journey .dashboard-alerts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;align-items:stretch}
+    #idxel-journey .dashboard-alerts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--tk-space-4);align-items:stretch}
