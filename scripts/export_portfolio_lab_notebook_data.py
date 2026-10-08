@@ -14,8 +14,14 @@ from typing import Any
 
 
 MODULES = (
-    "__init__.py", "market_data.py", "portfolio_data.py", "portfolio_analytics.py",
-    "portfolio_optimization.py", "portfolio_scenarios.py", "portfolio_factors.py", "portfolio_amounts.py",
+    # Real implementations (the notebooks import through these packages).
+    "__init__.py", "core/__init__.py", "core/schemas.py", "market/__init__.py", "market/market_data.py",
+    "market/news_analysis.py", "portfolio/__init__.py", "portfolio/portfolio_data.py",
+    "portfolio/portfolio_analytics.py", "portfolio/portfolio_optimization.py",
+    "portfolio/portfolio_scenarios.py", "portfolio/portfolio_factors.py", "portfolio/portfolio_amounts.py",
+    # Old import paths, kept as aliases of the modules above.
+    "market_data.py", "portfolio_data.py", "portfolio_analytics.py", "portfolio_optimization.py",
+    "portfolio_scenarios.py", "portfolio_factors.py", "portfolio_amounts.py",
 )
 
 
